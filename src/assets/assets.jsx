@@ -36,6 +36,24 @@ import contactUsTabletBanner from './images/contactUsTabletSize.png'
 import handDrag from './svgs/handDrag.svg'
 import handImage from './images/handImage.png'
 import bos from './images/bos.png'
+import drDivyaBanner from './images/dr-divya-banner.png'
+import microsurgeryColor from './svgs/microsurgery-color.svg'
+import traumaCareColor from './svgs/trauma-care-color.svg'
+import arthroscopyColor from './svgs/arthroscopy-color.svg'
+import birthDefectsColor from './svgs/birth-defects-color.svg'
+import eyelidColor from './svgs/eyelid-color.svg'
+import facialCosmeticColor from './svgs/facial-cosmetic-procedures-color.svg'
+import fingertipInjuriescolor from './svgs/fingertip-injuries-color.svg'
+import fractureColor from './svgs/fracture-color.svg'
+import jointRepalcementColor from './svgs/joint-replacement-color.svg'
+import keyHoleWristSurgeryColor from './svgs/key-hole-wrist-surgery-color.svg'
+import opthalmicOncologyColor from './svgs/ophthalmic-oncology-color.svg'
+import plasticSurgeryCOlor from './svgs/ophthalmic-plastic-surgery-color.svg'
+import thyroidEyeDiseaseColor from './svgs/thyroid-eye-disease-color.svg'
+import drDarshanBannerMobile from './images/drDarshanBannerMobile.png'
+import drDivyaBannerTablet from './images/drDivyaBannerTablet.png'
+import drDarshanBannerTablet from './images/drDarshanBannerTablet.png'
+import drDivyaBannerMobile from './images/drDivyaBannerMobile.png'
 
 export const assets = {
     logo,
@@ -75,5 +93,23 @@ export const assets = {
     contactUsTabletBanner,
     handDrag,
     handImage,
-    bos
+    bos,
+    drDivyaBanner,
+    microsurgeryColor,
+    traumaCareColor,
+    arthroscopyColor,
+    birthDefectsColor,
+    eyelidColor,
+    facialCosmeticColor,
+    fingertipInjuriescolor,
+    fractureColor,
+    jointRepalcementColor,
+    keyHoleWristSurgeryColor,
+    opthalmicOncologyColor,
+    thyroidEyeDiseaseColor,
+    plasticSurgeryCOlor,
+    drDarshanBannerMobile,
+    drDivyaBannerTablet,
+    drDarshanBannerTablet,
+    drDivyaBannerMobile
 }

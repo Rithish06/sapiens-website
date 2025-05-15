@@ -23,7 +23,7 @@ const Timeline = (props) => {
             {/* Content */}
             <div className="pl-5">
               <h3 className="font-[700] text-[12px] lg:text-[18px] font-para">{item.title}</h3>
-              {item.subtitle && <p className="text-sm font-[400] text-[10px] lg:text-[16px] text-white/90 mt-2">{item.subtitle}</p>}
+              {item.subtitle && <p className="text-sm font-[400] text-[10px] lg:text-[16px] text-white/90">{item.subtitle}</p>}
             </div>
           </div>
         ))}

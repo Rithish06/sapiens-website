@@ -1,14 +1,20 @@
 import React, { useEffect, useState } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
 import { assets } from '../../assets/assets';
 import { FaHome } from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
 import { TfiEmail } from "react-icons/tfi";
 
 const Navbar = () => {
+    const location = useLocation();
     const [isOpen, setIsOpen] = useState(false);
     const [isFixed, setIsFixed] = useState(false);
-    const [mobileFixed, setMobileFixed] = useState(false)
+    const [mobileFixed, setMobileFixed] = useState(false);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const [isLogoColor, setLogoColor] = useState(false)
+
+    const shouldShowSimpleLogo = location.pathname === '/' && windowWidth > 1024;
+    const logoToShow = shouldShowSimpleLogo ? assets.logo : assets.colorLogo;
 
     useEffect(() => {
         const handleResize = () => {
@@ -28,7 +34,7 @@ const Navbar = () => {
             setMobileFixed(window.scrollY > 50);
         };
 
-        if (window.innerWidth > 1024) {
+        if (window.innerWidth >= 1024) {
             handleScroll();
             window.addEventListener('scroll', handleScroll);
         } else {
@@ -42,12 +48,19 @@ const Navbar = () => {
         };
     }, [windowWidth]);
 
+    const closeMobileMenu = () => {
+        setIsOpen(false);
+    };
+
     return (
-        <div className={`w-full ${mobileFixed ? 'fixed' : 'absolute z-100'}`}>
+        <div className={`w-full bg-[#FFF6E0] md:bg-transparent ${mobileFixed ? 'fixed z-100' : 'absolute z-100'}`}>
             {/* Header */}
             <div className="px-4 py-1 flex items-center justify-between lg:px-8 font-poppins">
                 {/* Logo */}
-                <img src={assets.colorLogo} className='w-[85px] h-auto lg:w-[180px] mxl:w-[224px] mxl:h-auto' alt="logo" />
+                <NavLink to="/">
+                    <img src={logoToShow} className='w-[85px] h-auto md:w-[180px] mxl:w-[224px] mxl:h-auto' alt="logo" />
+                    {/* <img src={assets.logo} className='w-[85px] h-auto lg:w-[180px] mxl:w-[224px] mxl:h-auto' alt="logo" /> */}
+                </NavLink>
 
                 {/* Header Details */}
                 <div className="hidden lg:flex gap-8 items-center">
@@ -61,7 +74,7 @@ const Navbar = () => {
                         </div>
                     </div>
 
-                    <div className="flex items-center gap-5">
+                    <a href="tel:+917892556378" className="flex items-center gap-5 cursor-pointer">
                         <div className="flex justify-center items-center lg:w-[40px] lg:h-[40px] mxl:w-[50px] mxl:h-[50px] border border-orange-500 rounded-full">
                             <IoCall className="text-orange-500 lg:text-xl mxl:text-3xl" />
                         </div>
@@ -69,9 +82,9 @@ const Navbar = () => {
                             <div className="lg:text-[14px] mxl:text-[16px] font-[500]">Phone Number</div>
                             <div className="lg:text-[12px] mxl:text-[14px] text-[#808080]">+91 78925 56378</div>
                         </div>
-                    </div>
+                    </a>
 
-                    <div className="flex items-center gap-5">
+                    <a href="mailto:sapiensclinic@gmail.com" className="flex items-center gap-5 cursor-pointer">
                         <div className="flex justify-center items-center lg:w-[40px] lg:h-[40px] mxl:w-[50px] mxl:h-[50px] border border-orange-500 rounded-full">
                             <TfiEmail className="text-orange-500 lg:text-xl mxl:text-3xl" />
                         </div>
@@ -79,7 +92,7 @@ const Navbar = () => {
                             <div className="lg:text-[14px] mxl:text-[16px] font-[500]">Email Us Here</div>
                             <div className="lg:text-[12px] mxl:text-[14px] text-[#808080]">sapiensclinic@gmail.com</div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 {/* Mobile Menu Icon */}
@@ -99,41 +112,104 @@ const Navbar = () => {
             {/* Desktop Navs */}
             <div className={`hidden lg:flex px-16 w-full ${isFixed ? 'fixed top-0' : 'absolute mt-2 lg:mt-0'} z-[100] lg:bg-transparent`}>
                 <div className="bg-[#001F3F] w-[80%] flex items-center px-2 lg:py-3 mxl:py-5 pl-10 gap-14">
-                    <div className='text-white lg:text-[14px] mxl:text-[16px] cursor-pointer hover:text-orange-500 transition-colors font-medium'>Home</div>
+                    <NavLink
+                        to="/"
+                        className={({ isActive }) =>
+                            `lg:text-[14px] mxl:text-[16px] cursor-pointer transition-colors font-medium ${isActive ? 'text-orange-500' : 'text-white hover:text-orange-500'
+                            }`
+                        }
+                    >
+                        Home
+                    </NavLink>
 
-                    <div className="text-white hover:text-orange-500 transition-colors">
+                    <NavLink
+                        to="/dr-darshan"
+                        className={({ isActive }) =>
+                            `transition-colors ${isActive ? 'text-orange-500' : 'text-white hover:text-orange-500'
+                            }`
+                        }
+                    >
                         <div className='lg:text-[14px] mxl:text-[16px] cursor-pointer font-medium'>Dr. Darshan Kumar A. Jain</div>
                         <div className='lg:text-[10px] mxl:text-[12px] cursor-pointer'>-Hand Surgeon</div>
-                    </div>
+                    </NavLink>
 
-                    <div className="text-white hover:text-orange-500 transition-colors">
+                    <NavLink
+                        to="/dr-divya-sundaresh"
+                        className={({ isActive }) =>
+                            `transition-colors ${isActive ? 'text-orange-500' : 'text-white hover:text-orange-500'
+                            }`
+                        }
+                    >
                         <div className='lg:text-[14px] mxl:text-[16px] cursor-pointer font-medium'>Dr. Divya D Sundaresh</div>
                         <div className='lg:text-[10px] mxl:text-[12px] cursor-pointer'>-Oculoplasty & Cataract Surgeon</div>
-                    </div>
+                    </NavLink>
 
-                    <div className='text-white lg:text-[14px] mxl:text-[16px] cursor-pointer hover:text-orange-500 transition-colors font-medium'>Contact Us</div>
+                    <NavLink
+                        to="/contact"
+                        className={({ isActive }) =>
+                            `lg:text-[14px] mxl:text-[16px] cursor-pointer transition-colors font-medium ${isActive ? 'text-orange-500' : 'text-white hover:text-orange-500'
+                            }`
+                        }
+                    >
+                        Contact Us
+                    </NavLink>
                 </div>
-                <div className='bg-orange-500 w-[20%] text-white font-bold flex items-center justify-center lg:text-[14px] mxl:text-[16px] cursor-pointer'>
+                <NavLink
+                    to="/book-appointment"
+                    className='bg-orange-500 w-[20%] text-white font-bold flex items-center justify-center lg:text-[14px] mxl:text-[16px] cursor-pointer hover:bg-orange-600 transition-colors'
+                >
                     Book Appointment
-                </div>
+                </NavLink>
             </div>
 
             {/* Mobile Navs */}
-            <div className={`transform p-5 w-full bg-white fixed top-20 transition-all duration-500 ${isOpen ? "translate-x-0" : "-translate-x-full"} lg:hidden md:w-[50vw] md:shadow-2xl md:shadow-gray-800`}>
+            <div className={`transform p-5 w-full h-full bg-white fixed top-20 transition-all duration-500 ${isOpen ? "translate-x-0" : "-translate-x-full"} lg:hidden md:w-[50vw] md:shadow-2xl md:shadow-gray-800`}>
                 <div className='flex flex-col gap-5'>
-                    <div className='text-[#1E1E1E] text-[16px] cursor-pointer hover:text-orange-500 transition-colors font-medium'>Home</div>
+                    <NavLink
+                        to="/"
+                        onClick={closeMobileMenu}
+                        className={({ isActive }) =>
+                            `text-[16px] cursor-pointer transition-colors font-medium ${isActive ? 'text-orange-500' : 'text-[#1E1E1E] hover:text-orange-500'
+                            }`
+                        }
+                    >
+                        Home
+                    </NavLink>
 
-                    <div className="text-[#1E1E1E] hover:text-orange-500 transition-colors">
+                    <NavLink
+                        to="/dr-darshan"
+                        onClick={closeMobileMenu}
+                        className={({ isActive }) =>
+                            `transition-colors ${isActive ? 'text-orange-500' : 'text-[#1E1E1E] hover:text-orange-500'
+                            }`
+                        }
+                    >
                         <div className='text-[16px] cursor-pointer font-medium'>Dr. Darshan Kumar A. Jain</div>
                         <div className='text-[12px] cursor-pointer'>-Hand Surgeon</div>
-                    </div>
+                    </NavLink>
 
-                    <div className="text-[#1E1E1E] hover:text-orange-500 transition-colors">
+                    <NavLink
+                        to="/dr-divya-sundaresh"
+                        onClick={closeMobileMenu}
+                        className={({ isActive }) =>
+                            `transition-colors ${isActive ? 'text-orange-500' : 'text-[#1E1E1E] hover:text-orange-500'
+                            }`
+                        }
+                    >
                         <div className='text-[16px] cursor-pointer font-medium'>Dr. Divya D Sundaresh</div>
                         <div className='text-[12px] cursor-pointer'>-Oculoplasty & Cataract Surgeon</div>
-                    </div>
+                    </NavLink>
 
-                    <div className='text-[#1E1E1E] text-[16px] cursor-pointer hover:text-orange-500 transition-colors font-medium'>Contact Us</div>
+                    <NavLink
+                        to="/contact"
+                        onClick={closeMobileMenu}
+                        className={({ isActive }) =>
+                            `text-[16px] cursor-pointer transition-colors font-medium ${isActive ? 'text-orange-500' : 'text-[#1E1E1E] hover:text-orange-500'
+                            }`
+                        }
+                    >
+                        Contact Us
+                    </NavLink>
                 </div>
 
                 <div className='flex flex-col gap-5 mt-12'>
@@ -168,9 +244,13 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                <div className='bg-orange-500 w-full h-14 text-white font-bold flex items-center justify-center text-[16px] cursor-pointer mt-12'>
+                <NavLink
+                    to="/book-appointment"
+                    onClick={closeMobileMenu}
+                    className='bg-orange-500 w-full h-14 text-white font-bold flex items-center justify-center text-[16px] cursor-pointer mt-12 hover:bg-orange-600 transition-colors'
+                >
                     Book Appointment
-                </div>
+                </NavLink>
             </div>
         </div>
     );

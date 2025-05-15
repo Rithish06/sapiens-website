@@ -9,36 +9,43 @@ const Home = () => {
 	const cards = [
 		{
 			img1 : assets.fracture,
+			img2 : assets.fractureColor,
 			name : "Fracture",	
 			bgColor : "#FEE9B4"
 		},
 		{
 			img1 : assets.microsurgery,
+			img2 : assets.microsurgeryColor,
 			name : "Microsurgery",
 			bgColor : "#B6FEB4"
 		},
 		{
 			img1 : assets.arthroscopy,
+			img2 : assets.arthroscopyColor,
 			name : "Arthroscopy",
 			bgColor : "#FCB4FE"
 		},
 				{
 			img1 : assets.fingertipInjuries,
+			img2 : assets.fingertipInjuriescolor,
 			name : "Fingertip Injuries",
 			bgColor : "#FEB4B5"
 		},
 				{
 			img1 : assets.jointReplacement,
+			img2 : assets.jointRepalcementColor,
 			name : "Joint Replacement",
 			bgColor : "#B4C0FE"
 		},
 				{
 			img1 : assets.birthDefects,
+			img2 : assets.birthDefectsColor,
 			name : "Birth Defects",
 			bgColor : "#B4FEFD"
 		},
 		{
 			img1 : assets.keyHoleWristSurgery,
+			img2 : assets.keyHoleWristSurgeryColor,
 			name : "Key-hole wrist Surgery",
 			bgColor : "#FEFAB4"
 		},
@@ -47,31 +54,37 @@ const Home = () => {
 	const divyaCards = [
 		{
 			img1 : assets.traumaCare,
+			img2 : assets.traumaCareColor,
 			name : "Trauma Care",
 			bgColor : "#B4C0FE"
 		},
 		{
 			img1 : assets.plasticSurgery,
+			img2 : assets.plasticSurgeryCOlor,
 			name : "Ophthalmic Plastic Surgery",
 			bgColor : "#B4FEFD"
 		},
 		{
 			img1 : assets.opthalmic,
+			img2 : assets.opthalmicOncologyColor,
 			name : "Ophthalmic oncology",
 			bgColor : "#FEB4B5"
 		},
 		{
 			img1 : assets.eyelid,
+			img2 : assets.eyelidColor,
 			name : "Eyelid reconstructive surgeries",
 			bgColor : "#FCB4FE"
 		},
 		{
 			img1 : assets.facial,
+			img2 : assets.facialCosmeticColor,
 			name : "Facial Cosmetic procedures",
 			bgColor : "#B6FEB4"
 		},
 		{
 			img1 : assets.eyeDisease,
+			img2 : assets.thyroidEyeDiseaseColor,
 			name : "Thyroid Eye Disease",
 			bgColor : "#FEE9B4"
 		}

@@ -477,21 +477,23 @@ const DrDarshan = () => {
 
     return (
         <>
-            <div className='relative hidden lg:block'>
-                <img src={assets.drDarshanDesktopBanner} className='relative w-full lg:h-[700px h-auto' alt="" />
+            <div className='relative'>
+                <img src={assets.drDarshanDesktopBanner} className='relative w-full h-auto hidden lg:block' alt="" />
+                <img src={assets.drDarshanBannerTablet} className='relative w-full h-auto hidden md:block lg:hidden' alt="" />
+                <img src={assets.drDarshanBannerMobile} className="relative w-full h-auto md:hidden" alt='' />
 
-                <div className='flex justify-end absolute w-full lg:top-45 mxl:top-75'>
-                    <div className="md:w-[60%]">
-                        <div className='font-heading lg:text-[30px] mxl:text-[44px] font-700 font-black'>Dr. Darshan Kumar A. Jain</div>
-                        <div className='font-heading lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[32px] mt-2'>MBBS, MS Ortho (KMC Manipal),</div>
-                        <div className='font-heading lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[32px]'>FNB, Clinical Fellow National University Hospital, (Singapore),</div>
-                        <div className='font-heading lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[32px]'>MNAMS, PGDHHM, Diploma in Tissue Banking (Singapore)</div>
+                <div className='flex justify-end absolute w-full top-20 md:top-28 lg:top-45 mxl:top-75'>
+                    <div className="w-full px-5 md:w-[60%]">
+                        <div className='font-heading text-[18px] s:text-[24px] lg:text-[30px] mxl:text-[44px] font-700 font-black'>Dr. Darshan Kumar A. Jain</div>
+                        <div className='font-heading text-[10px] s:text-[12px] lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[32px] mt-2'>MBBS, MS Ortho (KMC Manipal),</div>
+                        <div className='font-heading text-[10px] s:text-[12px] lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[32px]'>FNB, Clinical Fellow National University Hospital, (Singapore),</div>
+                        <div className='font-heading text-[10px] s:text-[12px] lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[32px]'>MNAMS, PGDHHM, Diploma in Tissue Banking (Singapore)</div>
                         <ul className='mt-5 ml-5 list-disc '>
-                            <li className='font-heading lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[40px]'>Consultant Hand & Microsurgeon</li>
-                            <li className='font-heading lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[40px]'>Consultant Upper Limb/ Upper Extremity Surgeon</li>
-                            <li className='font-heading lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[40px]'>Specialist in Wrist & Elbow arthroscopy</li>
-                            <li className='font-heading lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[40px]'>Specialist in Shoulder Surgery</li>
-                            <li className='font-heading lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[40px]'>Professor in Orthopedics </li>
+                            <li className='font-heading text-[10px] s:text-[12px] lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[40px]'>Consultant Hand & Microsurgeon</li>
+                            <li className='font-heading text-[10px] s:text-[12px] lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[40px]'>Consultant Upper Limb/ Upper Extremity Surgeon</li>
+                            <li className='font-heading text-[10px] s:text-[12px] lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[40px]'>Specialist in Wrist & Elbow arthroscopy</li>
+                            <li className='font-heading text-[10px] s:text-[12px] lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[40px]'>Specialist in Shoulder Surgery</li>
+                            <li className='font-heading text-[10px] s:text-[12px] lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[40px]'>Professor in Orthopedics </li>
                         </ul>
                     </div>
                 </div>
@@ -664,10 +666,10 @@ const DrDarshan = () => {
                     Reconstructive Surgery
                 </div>
                 <div className='bg-[#FEF0C3] w-full lg:w-[70%] p-5 rounded-2xl'>
-                    <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient">
+                    {/* <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient">
                         Peripheral nerve surgery
-                    </div>
-                    <div className='grid grid-cols-1 gap-0 sm:grid-cols-2 lg:grid-cols-2 lg:gap-4 mt-8 z-10 relative'>
+                    </div> */}
+                    <div className='grid grid-cols-1 gap-0 sm:grid-cols-2 lg:grid-cols-2 lg:gap-4 z-10 relative'>
                         {
                             nerve.map((surgery, index) => (
                                 <div className="flex items-center gap-3 mt-5" key={index}>
