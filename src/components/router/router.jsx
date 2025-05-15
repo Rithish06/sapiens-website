@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from '../../pages/home/home'
+import Home from '../../pages/home/Home'
 import Contact from '../../pages/contactUs/Contact'
 import DrDarshan from '../../pages/drDarshan/DrDarshan'
 import DeQuervain from '../../pages/services/DeQuervain'
