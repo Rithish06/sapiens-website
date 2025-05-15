@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Nada Qonita';
+  src: url('/fonts/NadaQonita.woff2') format('woff2'),
+       url('/fonts/NadaQonita.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@theme {
+    /* fonts */
+    --font-poppins: "poppins";
+    --font-logo: "Nada Qonita";
+    --font-para: "Montserrat";
+    --font-heading: "Rubik";
+    --font-lobster: "lobster two";
+
+    /* break points */
+    --breakpoint-xs: 330px;
+    --breakpoint-s: 360px;
+    --breakpoint-sm: 640px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-sxl : 1100px;
+    --breakpoint-mxl : 1400px;
+    --breakpoint-xl: 1280px;
+    --breakpoint-2xl: 1536px;
+    
+    /* colors */
+    --color-orange: #EF7F1A;
+    --color-blue: #001F3F;
+    --color-green: #F0FFF0;
+}
+
+
+
+@layer utilities{
+    .font-poppins { font-family: var(--font-poppins);}
+    .font-logo { font-family: var(--font-logo);}
+    .font-para { font-family: var(--font-para);}
+    .font-heading { font-family: var(--font-heading);}
+    .font-lobster { font-family: var(--font-lobster); }
+
+    /* colors */
+    .bg-orange-gradient {
+        background-image: linear-gradient(180deg, #EF7F1A 0%, #B22726 100%);
+        webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-fill-color: transparent;
+    }
+
+    .gradient-button-bg {
+        background: linear-gradient(90deg, #EF7F1A 0%, #FFD466 100%);
+    }
+
+    .text-orange {color: var(--color-orange);}
+    .text-blue {color: var(--color-blue);}
+    .text-green {color: var(--color-green);}
+    .bg-green {background-color: var(--color-green);}
+    
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.swiper-pagination {
+  position: relative;
+  bottom: auto;
+  left: auto;
+  width: auto;
+  margin-top: 20px;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #999;
+  opacity: 1;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background: #EF7F1A;
+  transform: scale(1.2);
+}
