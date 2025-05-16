@@ -1,5 +1,7 @@
 import React from 'react'
 import { assets } from '../../assets/assets'
+import { Link } from 'react-router-dom';
+
 
 const Footer = () => {
     return (
@@ -18,16 +20,16 @@ const Footer = () => {
                 <div className="flex gap-10 lg:gap-20 justify-center mt-14 lg:mt-0 lg:w-[50%]">
                     <div className='text-white'>
                         <div className='text-[20px] md:text-[24px] font-[700] font-poppins'>Menu</div>
-                        <div className='text-[12px] md:text-[16px] font-[400] font-poppins mt-3 cursor-pointer hover:text-orange'>Home</div>
-                        <div className='text-[12px] md:text-[16px] font-[400] font-poppins mt-3 cursor-pointer hover:text-orange'>Dr. Darshan Kumar A. Jain</div>
-                        <div className='text-[12px] md:text-[16px] font-[400] font-poppins mt-3 cursor-pointer hover:text-orange'>Dr. Divya D Sundaresh</div>
-                        <div className='text-[12px] md:text-[16px] font-[400] font-poppins mt-3 cursor-pointer hover:text-orange'>Contact Us</div>
+                        <Link to="/"><div className='text-[12px] md:text-[16px] font-[400] font-poppins mt-3 cursor-pointer hover:text-orange'>Home</div></Link>
+                        <Link to="/dr-darshan"><div className='text-[12px] md:text-[16px] font-[400] font-poppins mt-3 cursor-pointer hover:text-orange'>Dr. Darshan Kumar A. Jain</div></Link>
+                        <Link to="/dr-divya-sundaresh"><div className='text-[12px] md:text-[16px] font-[400] font-poppins mt-3 cursor-pointer hover:text-orange'>Dr. Divya D Sundaresh</div></Link>
+                        <Link to="/contact"><div className='text-[12px] md:text-[16px] font-[400] font-poppins mt-3 cursor-pointer hover:text-orange'>Contact Us</div></Link>   
                     </div>
                     <div className='text-white'>
                         <div className='text-[20px] md:text-[24px] font-[700] font-poppins'>Follow us</div>
-                        <div className='text-[12px] md:text-[16px] font-[400] font-poppins mt-3 cursor-pointer hover:text-orange'>Facebook</div>
-                        <div className='text-[12px] md:text-[16px] font-[400] font-poppins mt-3 cursor-pointer hover:text-orange'>Instagram</div>
-                        <div className='text-[12px] md:text-[16px] font-[400] font-poppins mt-3 cursor-pointer hover:text-orange'>Youtube</div>
+                        <a href="https://www.facebook.com/profile.php?id=100089038095094" target='_blank'><div className='text-[12px] md:text-[16px] font-[400] font-poppins mt-3 cursor-pointer hover:text-orange'>Facebook</div></a>
+                        <a href="https://www.instagram.com/sapiensclinicmalleswaram/" target='_blank'><div className='text-[12px] md:text-[16px] font-[400] font-poppins mt-3 cursor-pointer hover:text-orange'>Instagram</div></a>
+                        <a href="https://www.youtube.com/@SapiensClinicMalleshwaram" target='_blank'><div className='text-[12px] md:text-[16px] font-[400] font-poppins mt-3 cursor-pointer hover:text-orange'>Youtube</div></a>
                     </div>
                 </div>
             </div>

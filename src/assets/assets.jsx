@@ -54,6 +54,7 @@ import drDarshanBannerMobile from './images/drDarshanBannerMobile.png'
 import drDivyaBannerTablet from './images/drDivyaBannerTablet.png'
 import drDarshanBannerTablet from './images/drDarshanBannerTablet.png'
 import drDivyaBannerMobile from './images/drDivyaBannerMobile.png'
+import homeContainer2 from './images/sapience-clinic-bangalore.png'
 
 export const assets = {
     logo,
@@ -111,5 +112,6 @@ export const assets = {
     drDarshanBannerMobile,
     drDivyaBannerTablet,
     drDarshanBannerTablet,
-    drDivyaBannerMobile
+    drDivyaBannerMobile,
+    homeContainer2
 }

@@ -1,10 +1,19 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Homebanner from '../../components/hero-section/Homebanner'
 import { assets } from '../../assets/assets'
 import Flip from '../../components/flip-animation/Flip'
 import Faqs from '../../components/faqs/faqs'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
+
+	useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation duration in ms
+      once: true,     // whether animation should happen only once
+    });
+  }, []);
 
 	const cards = [
 		{
@@ -161,18 +170,20 @@ const Home = () => {
 			<div className="px-[5%] pt-[3%] lg:px-[10%] lg:pt-5%">
 				<div className="flex flex-col gap-10 items-center justify-center my-5 md:flex-row ">
 					<img src={assets.sapiensClinicImage} className='w-full h-auto md:w-[50%]' alt="" />
-					<img src={assets.sapiensClinicImage} className='w-full h-auto md:w-[50%]' alt="" />
+					<img src={assets.homeContainer2} className='w-full h-auto md:w-[50%]' alt="" />
 				</div>
 
 				<div className='my-10'>
-					<div className='font-heading text-[22px] lg:text-[40px] font-[700] color-black text-center'>Welcome to <span className='font-logo bg-orange-gradient w-[100%] pb-10'>Sapiens</span> Clinic</div>
+					<div className='font-heading text-[22px lg:text-[40px] font-[700] color-black text-center '>Welcome to <span className='font-logo bg-orange-gradient w-[100%] pb-10'>Sapiens</span> Clinic</div>
 					<div className="font-para text-[12px] md:text-[16px] color-black mt-5 text-center">Sapiens clinic is a center providing specialty care in Hand Surgery & Ophthalmology.<br />It is a “Center of Excellence in Hand Surgery”, with services provided by Dr. Darshan Kumar A. Jain & his team. Apart from treating Orthopedic problems, they are Super-specialized in the managing of problems of Hand, Wrist, Elbow, Shoulder & Nerves (Peripheral nerves & Brachial plexus).</div>
 					<div className="font-para text-[12px] md:text-[16px] color-black mt-5 text-center">Dr. Divya Sundaresh is an Ophthalmologist, who routinely treats cataracts & super-specialized in oculoplasty, ophthalmic plastic surgery, trauma care, eyelid reconstructive surgeries, orbital surgeries, lacrimal surgeries, ophthalmic oncology, and facial cosmetic procedures.</div>
 				</div>
 
-				<div className="flex flex-col lg:flex-row gap-1 lg:gap-10 items-center my-10 lg:px-10">
-					<div className='font-heading text-[22px] md:text-[40px] font-[700] color-black text-center w-full] lg:w-[33%]'>Advanced Care in<br /><span className='bg-orange-gradient' >Hand Surgery &Ophthalmology</span></div>
-					<div className="font-para text-[12px] md:text-[16px] color-black mt-5 text-center w-full lg:w-[65%]">At Sapiens Clinic, we are committed to providing specialized medical care in hand surgery and ophthalmology in Malleshwaram, Bangalore. Our team of expert doctors ensures precise diagnosis and effective treatments for a range of conditions, from hand injuries, wrist pain, and limb surgeries to advanced eye care, including cataract surgery and retina treatments. With state-of-the-art technology and patient-centric care, we aim to be the best orthopedic and eye hospital in Bangalore</div>
+				<div className="my-5 lg:px-5">
+					<div className='bg-[#FFEDEDCC] rounded-2xl flex flex-col lg:flex-row gap-1 lg:gap-10 items-center lg:p-10 '>
+						<div className='font-heading text-[22px] md:text-[40px] font-[700] color-black text-center w-full] lg:w-[33%]'>Advanced Care in<br /><span className='bg-orange-gradient' >Hand Surgery &Ophthalmology</span></div>
+						<div className="font-para text-[12px] md:text-[16px] color-black mt-5 text-center w-full lg:w-[65%]">At Sapiens Clinic, we are committed to providing specialized medical care in hand surgery and ophthalmology in Malleshwaram, Bangalore. Our team of expert doctors ensures precise diagnosis and effective treatments for a range of conditions, from hand injuries, wrist pain, and limb surgeries to advanced eye care, including cataract surgery and retina treatments. With state-of-the-art technology and patient-centric care, we aim to be the best orthopedic and eye hospital in Bangalore</div>
+					</div>
 				</div>
 
 				<div className=''>
@@ -200,8 +211,8 @@ const Home = () => {
 
 				<div className='mt-15 flex items-center flex-col gap-1 lg:flex-row md:gap-1 mxl:gap-35'>
 					<div className='flex flex-col gap-1 text-center'>
-						<div className='text-[50px] md:text-[58px] font-[600] font-heading p-0 relative top-4'>Why Choose</div>
-						<div className='text-[62px] md:text-[70px] bg-orange-gradient font-logo font-[400] p-0 relative bottom-4'>Sapiens Clinic?</div>
+						<div className='text-[44px] md:text-[58px] font-[600] font-heading p-0 relative top-4'>Why Choose</div>
+						<div className='text-[58px] md:text-[70px] bg-orange-gradient font-logo font-[400] p-0 relative bottom-4'>Sapiens Clinic?</div>
 					</div>
 					<ul className='ml-2 list-disc'>
 						<li className='font-para font-[700] text-[12px] md:text-[16px] color-black mt-2'>Top Orthopedic & Eye Specialists in Bangalore</li>

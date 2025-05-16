@@ -66,9 +66,9 @@ const Contact = () => {
                     {/* form */}
 
                     <div className="w-full flex justify-center md:w-[50%]">
-                        <div className="mt-4 max-w-[400px] bg-white rounded-2xl w-[90%] py-2 px-4">
+                        <div className="mt-4 max-w-[400px] bg-white rounded-2xl w-[90%] py-2 px-4 lg:py-3 lg:px-6 shadow-2xl shadow-gray-400">
                             <div className="text-[28px] font-[700] font-para text-[#2b2a29] mxl:text-[34px]">Ask A Question</div>
-                            <div className="text-[12px] text-[#2B2A29] font-[400] font-para mt-2 mxl:text-[16px]">If you have any question, you can contact us. Please, fill out the form below.</div>
+                            <div className="text-[12px] text-[#2B2A29] font-[400] font-para mt-2 mxl:text-[16px] leading-6">If you have any question, you can contact us. Please, fill out the form below.</div>
 
                             <form onSubmit={handleSubmit(onSubmit)}>
 
@@ -100,7 +100,7 @@ const Contact = () => {
                                     <textarea {...register("message", { required: true })} placeholder='Message*' className='w-full h-[100px] outline-none focus:border-b-blacke focus:outline-none focus:ring-0 border-b-2 border-black placeholder-[#565B5D] placeholder:text-[10px] placeholder:font-para py-2 text-[12px] font-[500] '></textarea><br />
                                 </div>
                                 {errors.message && <span className='text-[12px] text-red-400'>message is required</span>}
-                                <button type="submit" className='w-[50%] outline-none focus:border-none focus:outline-none focus:ring-0 text-white font-para font-[600] text-[12px] px-2 py-2 bg-[#EF7F1A] mt-4 rounded-sm flex items-center justify-center gap-2 cursor-pointer mxl:mt-10'>Submit Now <FaArrowRight className='text-white text-[12px]' /></button>
+                                <button type="submit" className='w-[50%] outline-none focus:border-none focus:outline-none focus:ring-0 text-white font-para font-[600] text-[12px] px-1 py-3 bg-[#EF7F1A] mt-4 rounded-sm flex items-center justify-center gap-2 cursor-pointer mxl:mt-8'>Submit Now <FaArrowRight className='text-white text-[12px]' /></button>
                             </form>
                         </div>
                     </div>
@@ -110,7 +110,7 @@ const Contact = () => {
 
             {/* container 2 */}
             <div className="mt-20 px-10 lg:px-20 mxl:px-30">
-                <div className="text-[40px] font-[700] font-lobster bg-orange-gradient text-center md:text-[48px]">Location For</div>
+                <div className="text-[40px] font-[700] font-heading bg-orange-gradient text-center md:text-[48px]">Location For</div>
 
                 <div className="flex flex-col gap-15 items-center lg:flex-row lg:gap-20 mxl:gap-30 mt-10">
                     <div className='w-full lg:width-[50%]'>
@@ -147,20 +147,20 @@ const Contact = () => {
             {/* container 3 */}
             <div className="mt-20 px-5 lg:px-20 mxl:px-30 flex flex-col gap-10 lg:flex-row lg:gap-0 items-center">
                 <div>
-                    <div className="text-[40px] font-[700] font-lobster bg-orange-gradient text-center md:text-[48px]">Orthopedic</div>
+                    <div className="text-[40px] font-[700] font-heading bg-orange-gradient text-center md:text-[48px]">Orthopedic</div>
                     <div className='flex flex-col gap-5 items-center mt-5'>
                         <div className='w-[95%] border-1 border-black rounded-xl p-3 text-center  max-w-[390px] mxl:max-w-[590px]'>
-                            <div className='bg-orange-gradient text-[24px] font-[700] mxl:text-[36px] font-lobster'>Sapiens Clinic</div>
+                            <div className='bg-orange-gradient text-[24px] font-[700] mxl:text-[36px] font-heading'>Sapiens Clinic</div>
                             <div className='text-[16px] font-para font-[600] mxl:text-[24px]'>Mon to sat 12:00 noon to 8:00 PM, Sunday Holiday</div>
                         </div>
 
                         <div className='w-[95%] border-1 border-black rounded-xl p-3 text-center  max-w-[390px] mxl:max-w-[590px]'>
-                            <div className='bg-orange-gradient text-[24px] font-[700] mxl:text-[36px] font-lobster'>Appollo Spectra - Koramangala</div>
+                            <div className='bg-orange-gradient text-[24px] font-[700] mxl:text-[36px] font-heading'>Appollo Spectra - Koramangala</div>
                             <div className='text-[16px] font-para font-[600] mxl:text-[24px]'>Wednesday and Saturday, 10:00 AM to 1:00 PM</div>
                         </div>
 
                         <div className='w-[95%] border-1 border-black rounded-xl p-3 text-center  max-w-[390px] mxl:max-w-[590px]'>
-                            <div className='bg-orange-gradient text-[24px] font-[700] mxl:text-[36px] font-lobster'>Rxdx Healthcare, Whitefiled:</div>
+                            <div className='bg-orange-gradient text-[24px] font-[700] mxl:text-[36px] font-heading'>Rxdx Healthcare, Whitefiled:</div>
                             <div className='text-[16px] font-para font-[600] mxl:text-[24px]'>Every Monday Morning, 10:00 AM to 12:00 PM</div>
                         </div>
                     </div>
@@ -169,11 +169,11 @@ const Contact = () => {
                 <div className='h-[2px] bg-black w-[80%] mx-auto lg:w-[2px] lg:h-[450px]'></div>
 
                 <div>
-                    <div className="text-[40px] font-[700] font-lobster bg-orange-gradient text-center md:text-[48px]">Opthalmology</div>
+                    <div className="text-[40px] font-[700] font-heading bg-orange-gradient text-center md:text-[48px]">Opthalmology</div>
 
                     <div className='flex flex-col gap-5 items-center mt-5'>
                         <div className='w-[95%] border-1 border-black rounded-xl p-3 text-center max-w-[390px]  mxl:max-w-[590px]'>
-                            <div className='bg-orange-gradient text-[24px] font-[700] mxl:text-[36px] font-lobster'>Sapiens Clinic</div>
+                            <div className='bg-orange-gradient text-[24px] font-[700] mxl:text-[36px] font-heading'>Sapiens Clinic</div>
                             <div className='text-[16px] font-para font-[600] mxl:text-[24px]'>Ophthalmology : Morning 10:00am to 03:00pm</div>
                         </div>
                         <div className='w-[95%] flex justify-center'>
@@ -184,12 +184,12 @@ const Contact = () => {
             </div>
 
             {/* container 4 */}
-            <div className='flex flex-col md:flex-row mt-10 mb-10'>
+            <div className='flex flex-col md:flex-row mt-14 mb-10'>
                 <div className='md:w-[50%]'>
                     <div className='bg-[#FFF6E0] w-full'>
-                        <div className="text-[40px] font-[700] font-lobster bg-orange-gradient text-center md:text-[48px]">Contact Information</div>
+                        <div className="text-[40px] font-[700] font-heading bg-orange-gradient text-center md:text-[48px]">Contact Information</div>
                     </div>
-                    <div className="flex flex-col gap-5 mt-8 md:w-[95%]">
+                    <div className="flex flex-col gap-5 mt-8 md:w-[95%] lg:pl-10">
                         <div className='px-4 lg:px-14'>
                             <div className="text-[18px] font-[700] mt-4 font-para lg:text-[24px]">ADDRESS : </div>
                             <div className='flex gap-3 mt-6'>
@@ -206,9 +206,10 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="text-[18px] font-[700] px-4 mt-5 font-para text-center md:text-left lg:text-[24px] lg:px-14">For Emergency Contact Details:</div>
 
-                    <div className="flex flex-col items-center md:items-start md:w-[95%]">
+                    <div className="text-[18px] font-[700] px-4 mt-14 font-para text-center md:text-left lg:text-[24px] lg:px-14 lg:ml-10">For Emergency Contact Details:</div>
+
+                    <div className="flex flex-col items-center md:items-start md:w-[95%]  lg:pl-10">
                         <div className='flex gap-3 mt-6 px-4  lg:px-14'>
                             <img src={assets.handicon} className='w-[20px] h-[20px]' alt="" />
                             <div className='lg:flex lg:items-center gap-5'>
@@ -233,7 +234,7 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className='md:w-[50%]'>
-                    <img src={assets.contactUsImage} className='w-full h-auto mt-4 md:mt-0' alt="" />
+                    <img src={assets.contactUsImage} className='w-full h-auto lg:h-[85%] object-cover mt-4 md:mt-0' alt="" />
                 </div>
             </div>
         </div>

@@ -36,15 +36,15 @@ const Flip = (props) => {
                             onMouseOver={() => handleFlip(index, true)}
                             onMouseLeave={() => handleFlip(index, false)}>
                             <div className="absolute inset-0 flex items-center justify-center backface-hidden w-[57px] h-[57px] lg:w-[100px] lg:h-[100px] bg rounded-full" style={{background : card.bgColor }}>
-                                <img src={card.img1} className='w-[32px] h-[32px]' alt="" />
+                                <img src={card.img1} className='w-[55px] h-[55px]' alt="" />
                             </div>
 
                             <div className="absolute inset-0 flex items-center justify-center backface-hidden w-[57px] h-[57px] lg:w-[100px] lg:h-[100px] bg rounded-full" style={{background : "white", transform: "rotateY(180deg)"}}>
-                                <img src={card.img2} className='w-[32px] h-[32px]' alt="" />
+                                <img src={card.img2} className='w-[32px] h-[32px] lg:w-[55px] lg:h-[55px]' alt="" />
                             </div>
 
                         </div>
-                        <div className="font-heading font-[600] text-[12px] lg:text-[16px] text-center">{card.name}</div>
+                        <div className="font-heading font-[600] text-[11px] lg:text-[15px] text-center">{card.name}</div>
                     </div>
                 ))
             }

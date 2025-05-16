@@ -4,6 +4,7 @@ import { assets } from '../../assets/assets';
 import { FaHome } from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
 import { TfiEmail } from "react-icons/tfi";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const location = useLocation();
@@ -11,9 +12,9 @@ const Navbar = () => {
     const [isFixed, setIsFixed] = useState(false);
     const [mobileFixed, setMobileFixed] = useState(false);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-    const [isLogoColor, setLogoColor] = useState(false)
+    const [navBg, setNavBg] = useState(false)
 
-    const shouldShowSimpleLogo = location.pathname === '/' && windowWidth > 1024;
+    const shouldShowSimpleLogo = location.pathname === '/' && windowWidth > 767;
     const logoToShow = shouldShowSimpleLogo ? assets.logo : assets.colorLogo;
 
     useEffect(() => {
@@ -53,12 +54,12 @@ const Navbar = () => {
     };
 
     return (
-        <div className={`w-full bg-[#FFF6E0] md:bg-transparent ${mobileFixed ? 'fixed z-100' : 'absolute z-100'}`}>
+        <div className={`w-full bg-[#FFF6E0] lg:bg-transparent ${mobileFixed ? 'fixed z-100 md:bg-[#FFF6E0]' : 'absolute z-100 md:bg-transparent'}`}>
             {/* Header */}
-            <div className="px-4 py-1 flex items-center justify-between lg:px-8 font-poppins">
+            <div className="px-4 py-1 flex items-center justify-between lg:px-20 font-poppins">
                 {/* Logo */}
                 <NavLink to="/">
-                    <img src={logoToShow} className='w-[85px] h-auto md:w-[180px] mxl:w-[224px] mxl:h-auto' alt="logo" />
+                    <img src={logoToShow} className='w-[130px] h-auto md:w-[180px] mxl:h-auto' alt="logo" />
                     {/* <img src={assets.logo} className='w-[85px] h-auto lg:w-[180px] mxl:w-[224px] mxl:h-auto' alt="logo" /> */}
                 </NavLink>
 
@@ -66,7 +67,7 @@ const Navbar = () => {
                 <div className="hidden lg:flex gap-8 items-center">
                     <div className="flex items-center gap-2">
                         <div className="flex justify-center items-center lg:w-[40px] lg:h-[40px] mxl:w-[50px] mxl:h-[50px] border border-orange-500 rounded-full">
-                            <FaHome className="text-orange-500 lg:text-xl mxl:text-3xl" />
+                            <FaHome className="text-orange-500 lg:text-xl mxl:text-2xl" />
                         </div>
                         <div>
                             <div className="lg:text-[14px] mxl:text-[16px] font-[500]">Evening OPD Consultation</div>
@@ -76,7 +77,7 @@ const Navbar = () => {
 
                     <a href="tel:+917892556378" className="flex items-center gap-5 cursor-pointer">
                         <div className="flex justify-center items-center lg:w-[40px] lg:h-[40px] mxl:w-[50px] mxl:h-[50px] border border-orange-500 rounded-full">
-                            <IoCall className="text-orange-500 lg:text-xl mxl:text-3xl" />
+                            <IoCall className="text-orange-500 lg:text-xl mxl:text-2xl" />
                         </div>
                         <div>
                             <div className="lg:text-[14px] mxl:text-[16px] font-[500]">Phone Number</div>
@@ -86,7 +87,7 @@ const Navbar = () => {
 
                     <a href="mailto:sapiensclinic@gmail.com" className="flex items-center gap-5 cursor-pointer">
                         <div className="flex justify-center items-center lg:w-[40px] lg:h-[40px] mxl:w-[50px] mxl:h-[50px] border border-orange-500 rounded-full">
-                            <TfiEmail className="text-orange-500 lg:text-xl mxl:text-3xl" />
+                            <TfiEmail className="text-orange-500 lg:text-xl mxl:text-2xl" />
                         </div>
                         <div>
                             <div className="lg:text-[14px] mxl:text-[16px] font-[500]">Email Us Here</div>
@@ -101,7 +102,7 @@ const Navbar = () => {
                     onClick={() => setIsOpen(!isOpen)}
                     aria-label="Menu"
                 >
-                    <div className="relative w-full h-full flex flex-col justify-center items-center gap-3">
+                    <div className="relative w-full h-full flex flex-col justify-center items-center">
                         <span className={`absolute left-0 w-9 h-1 bg-[#1E1E1E] transition-all duration-300 ease-in-out rounded ${isOpen ? 'rotate-45 top-1/2' : 'top-3'}`} />
                         <span className={`absolute left-0 w-9 h-1 bg-[#1E1E1E] transition-all duration-300 ease-in-out rounded ${isOpen ? 'opacity-0' : 'top-4.6'}`} />
                         <span className={`absolute left-0 w-9 h-1 bg-[#1E1E1E] transition-all duration-300 ease-in-out rounded ${isOpen ? '-rotate-45 top-1/2' : 'bottom-3'}`} />
@@ -155,7 +156,7 @@ const Navbar = () => {
                     </NavLink>
                 </div>
                 <NavLink
-                    to="/book-appointment"
+                    to="/contact"
                     className='bg-orange-500 w-[20%] text-white font-bold flex items-center justify-center lg:text-[14px] mxl:text-[16px] cursor-pointer hover:bg-orange-600 transition-colors'
                 >
                     Book Appointment
@@ -245,7 +246,7 @@ const Navbar = () => {
                 </div>
 
                 <NavLink
-                    to="/book-appointment"
+                    to="/contact"
                     onClick={closeMobileMenu}
                     className='bg-orange-500 w-full h-14 text-white font-bold flex items-center justify-center text-[16px] cursor-pointer mt-12 hover:bg-orange-600 transition-colors'
                 >

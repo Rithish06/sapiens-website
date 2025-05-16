@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { assets } from "../../assets/assets";
+import { Link } from 'react-router-dom';
 
 const HomeBanner = () => {
 	const slidesRef = useRef([]);
@@ -54,15 +55,15 @@ const HomeBanner = () => {
 					<div className="relative">
 						<img
 							src={assets.homeBannerDesktop}
-							className="hidden md:block w-full h-auto md:mt-18 lg:mt-0"
+							className="hidden md:block w-full h-auto md:mt-0 lg:mt-0"
 							alt="Slide 1"
 						/>
 						<img
 							src={assets.homeBannerBgMobile}
-							className="md:hidden w-full h-auto s:h-[500px] mt-8"
+							className="md:hidden w-full h-auto s:h-[500px] mt-5"
 							alt="Slide 1 Mobile"
 						/>
-						<div className="absolute inset-0 flex flex-col justify-start gap-2 lg:gap-1.5 mxl:gap-2 s:mt-[10%] px-2 md:px-10 z-20 top-[10%] md:-top-10 lg:top-[12%] mxl:top-[20%]">
+						<div className="absolute inset-0 flex flex-col justify-start gap-2 lg:gap-1.5 mxl:gap-2 s:mt-[10%] px-2 md:px-5 lg:px-10 z-20 top-[10%] md:top-4 lg:top-[12%] mxl:top-[20%]">
 							<div className="text-[16px] font-heading font-[700] s:text-[19px] md:text-[22px] lg:text-[28px] mxl:text-[44px] text-white">
 								Dr. Darshan Kumar A. Jain
 							</div>
@@ -79,9 +80,11 @@ const HomeBanner = () => {
 								<button className="bg-[#EF7F1A] px-3 py-2 text-[12px] rounded-sm font-para font-[800] lg:text-[14px] lg:px-4 lg:py-2.5 text-white cursor-pointer">
 									Learn More
 								</button>
-								<button className="bg-white px-3 py-2 text-[12px] rounded-sm font-para font-[800] lg:text-[14px] lg:px-4 lg:py-2.5 text-[#001F3F] cursor-pointer">
-									Contact Us
-								</button>
+								<Link to="/contact">
+									<button className="bg-white px-3 py-2 text-[12px] rounded-sm font-para font-[800] lg:text-[14px] lg:px-4 lg:py-2.5 text-[#001F3F] cursor-pointer">
+										Contact Us
+									</button>
+								</Link>
 							</div>
 						</div>
 					</div>
