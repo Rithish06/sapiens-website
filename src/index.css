@@ -90,3 +90,7 @@ body{
   background: #EF7F1A;
   transform: scale(1.2);
 }
+
+body{
+  overflow-x: hidden  ;
+}

@@ -1,12 +1,119 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useLayoutEffect } from 'react'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { assets } from '../../assets/assets';
 import TimeLine from '../../components/timline/Timeline'
 import { Outlet } from 'react-router-dom';
 
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
+
+import PageTransition from "../../components/PageTransition";
 
 const DrDarshan = () => {
+
+    useEffect(() => {
+
+        const reveal = gsap.fromTo(".reveal-container",
+            {
+                clipPath: "inset(0% 100% 10% 0%)",
+                opacity: 0,
+            },
+            {
+                clipPath: "inset(0% 0% 0% 0%)",
+                opacity: 1,
+                ease: "power2.out",
+                duration: 3,
+                scrollTrigger: {
+                    trigger: ".reveal-container",
+                    start: "top 80%",
+                    end: "top 20%",
+                    scrub: true,
+                    markers: false,
+                }
+            }
+        );
+
+        const fadeIn = gsap.fromTo(
+            ".fadex",
+            {
+                scale: 0.5,
+                opacity: 0,
+                // x: -500
+            },
+            {
+                opacity: 1,
+                // x: 0,
+                scale: 1,
+                duration: 1.5,
+                scrollTrigger: {
+                    trigger: ".fadex",
+                    start: "top 85%",
+                    end: "top 40%",
+                    scrub: true,
+                    toggleActions: "none none none none",
+                    markers: false
+                }
+            }
+        )
+
+        gsap.utils.toArray(".bounce").forEach((el) => {
+            gsap.fromTo(el,
+                { y: 50, opacity: 0 },
+                {
+                    y: 0,
+                    opacity: 1,
+                    duration: 3,
+                    ease: "bounce.out",
+                    scrollTrigger: {
+                        trigger: el,
+                        start: "top 60%",
+                        end: "top 30%",
+                        toggleActions: "play none none none",
+                        // scrub: 3,
+                        markers: false,
+                    }
+                }
+            );
+        });
+
+        gsap.fromTo(".sideScroll",
+			{ y: -100, scale : 0.5, opacity : 0.5 },
+			{
+				y: 0,
+                scale : 1,
+				duration: 2,
+                opacity : 1,
+				// ease: "bounce.out",
+				scrollTrigger: {
+					trigger: ".sideScroll",
+					start: "top 60%",
+					end: "top 30%",
+					toggleActions: "restart none none none",
+					scrub: true,
+					markers: false,
+				}
+			}
+		);
+
+    }, [])
+
+    useLayoutEffect(() => {
+      gsap.fromTo(
+        ".anime",
+        {
+          opacity: 0,
+          y: 100,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          ease: "power2.out",
+        }
+      );
+    }, []);
 
     const educationData = [
         {
@@ -435,29 +542,29 @@ const DrDarshan = () => {
 
     const professional = [
         {
-            img : assets.bos,
-            bgColor : "#FEF0C3",
-            text : 'Bangalore Orthodontic Society (BOS)'
+            img: assets.bos,
+            bgColor: "#FEF0C3",
+            text: 'Bangalore Orthodontic Society (BOS)'
         },
         {
-            img : "",
-            bgColor : "#D3C0FF",
-            text : ''
+            img: "",
+            bgColor: "#D3C0FF",
+            text: ''
         },
         {
-            img : "",
-            bgColor : "#FEE6DC",
-            text : ""
+            img: "",
+            bgColor: "#FEE6DC",
+            text: ""
         },
         {
-            img : "",
-            bgColor : "#BDC4FF",
-            text : ""
+            img: "",
+            bgColor: "#BDC4FF",
+            text: ""
         },
         {
-            img : "",
-            bgColor : "#DFF7EA",
-            text : ""
+            img: "",
+            bgColor: "#DFF7EA",
+            text: ""
         },
     ]
 
@@ -476,13 +583,13 @@ const DrDarshan = () => {
     }, []);
 
     return (
-        <>
+        <PageTransition>
             <div className='relative'>
                 <img src={assets.drDarshanDesktopBanner} className='relative w-full h-auto hidden lg:block' alt="" />
                 <img src={assets.drDarshanBannerTablet} className='relative w-full h-auto hidden md:block lg:hidden' alt="" />
                 <img src={assets.drDarshanBannerMobile} className="relative w-full h-auto md:hidden" alt='' />
 
-                <div className='flex justify-end absolute w-full top-20 md:top-28 lg:top-45 mxl:top-75'>
+                <div className='flex justify-end absolute w-full top-20 md:top-28 lg:top-45 mxl:top-75 anime'>
                     <div className="w-full px-5 md:w-[60%]">
                         <div className='font-heading text-[18px] s:text-[24px] lg:text-[30px] mxl:text-[44px] font-700 font-black'>Dr. Darshan Kumar A. Jain</div>
                         <div className='font-heading text-[10px] s:text-[12px] lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[32px] mt-2'>MBBS, MS Ortho (KMC Manipal),</div>
@@ -500,7 +607,7 @@ const DrDarshan = () => {
             </div>
 
             {/* container 2 */}
-            <div className="flex flex-col mt-10 lg:flex-row lg:gap-0">
+            <div className="flex flex-col mt-10 lg:flex-row lg:gap-0 reveal-container">
                 <div className="w-full p-5 md:p-10 mxl:pl-20 lg:50%">
                     <div className="font-heading text-[28px] lg:text-[38px] font-[700] bg-orange-gradient">Hand Surgeon & Upper Elbow Microsurgery</div>
                     <div className='font-para text-[12px] lg:text-[16px] font-[500] mt-4'>Dr. Darshan Kumar A. Jain is a Hand & Microsurgeon and, Upper Limb Surgeon with expertise in managing various complex problems of hand. He has more than fifteen years of experience in treating the complex problems of Hand, wrist, elbow, shoulder & nerves.</div>
@@ -512,7 +619,7 @@ const DrDarshan = () => {
             </div>
 
             {/* container 3 */}
-            <div className="lg:gap-0 p-5 md:p-10 mxl:p-20">
+            <div className="lg:gap-0 p-5 md:p-10 mxl:p-20 fadex">
 
                 <div className="font-heading text-[28px] text-center lg:text-[38px] font-[700] bg-orange-gradient">Specialty : Hand Surgery & Microsurgery</div>
 
@@ -535,24 +642,24 @@ const DrDarshan = () => {
 
             {/* container 4 */}
 
-            <div className='relative lg:gap-0 px-5 md:p-10 mxl:px-20 mxl:py-10'>
+            <div className='relative lg:gap-0 px-5 md:p-10 mxl:px-20 mxl:py-10 bounce'>
                 {/* Section Title */}
                 <div className="font-heading text-[28px] text-center lg:text-[38px] font-[700] bg-orange-gradient">
                     Services provided
                 </div>
 
                 {/* Content Card */}
-                <div className='relative bg-[#BDC4FF] p-5 mt-10 rounded-2xl overflow-hidden'>
-                    <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient">
+                <div className='relative bg-[#BDC4FF] p-5 md:p-10 mt-10 rounded-2xl overflow-hidden'>
+                    <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient bounce">
                         Upper limb Surgery : Hand & Wrist
                     </div>
 
                     {/* Grid List */}
-                    <div className="grid grid-cols-1 gap-0 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4 mt-8 z-10 relative">
+                    <div className="grid grid-cols-1 gap-0 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4 mt-8 z-10 relative bounce">
                         <div>
                             {
                                 upperLimbSurgery.map((surgery, index) => (
-                                    <div className="flex items-center gap-3 mt-5" key={index}>
+                                    <div className="flex items-center gap-3 mt-5" key={index} >
                                         <img src={assets.handDrag} className='w-[24px] h-[24px] lg:w-[30px] lg:h-[30px]' alt="" />
                                         <div className="text-[12px] lg:text-[16px] font-text font-[700]">{surgery.text}</div>
                                     </div>
@@ -592,11 +699,11 @@ const DrDarshan = () => {
             {/* container 5 */}
 
             <div className='grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4 z-10 relative p-5 md:px-10 mxl:px-20'>
-                <div className='bg-[#FEF0C3] p-3 rounded-2xl flex flex-col gap-4'>
-                    <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient">
+                <div className='bg-[#FEF0C3] p-5 md:p-8 rounded-2xl flex flex-col gap-4'>
+                    <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient bounce">
                         Elbow
                     </div>
-                    <div>
+                    <div className='bounce'>
                         {
                             elbow.map((surgery, index) => (
                                 <div className="flex items-center gap-3 mt-5" key={index}>
@@ -607,11 +714,11 @@ const DrDarshan = () => {
                         }
                     </div>
                 </div>
-                <div className='bg-[#FEE6DC] p-3 rounded-2xl flex flex-col gap-4'>
-                    <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient">
+                <div className='bg-[#FEE6DC] p-5 md:p-8 rounded-2xl flex flex-col gap-4'>
+                    <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient bounce">
                         Shoulder
                     </div>
-                    <div>
+                    <div className='bounce'>
                         {
                             Shoulder.map((surgery, index) => (
                                 <div className="flex items-center gap-3 mt-5" key={index}>
@@ -622,11 +729,11 @@ const DrDarshan = () => {
                         }
                     </div>
                 </div>
-                <div className='bg-[#DFF7EA] p-3 rounded-2xl flex flex-col gap-4'>
-                    <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient">
+                <div className='bg-[#DFF7EA] p-5 md:p-8 rounded-2xl flex flex-col gap-4'>
+                    <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient bounce">
                         Congenital
                     </div>
-                    <div>
+                    <div className='bounce'>
                         {
                             congenital.map((surgery, index) => (
                                 <div className="flex items-center gap-3 mt-5" key={index}>
@@ -641,12 +748,12 @@ const DrDarshan = () => {
 
             {/* container 6 */}
 
-            <div className='p-5 md:px-10 mxl:px-20'>
-                <div className='bg-[#D3C0FF] p-5 rounded-2xl'>
-                    <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient">
+            <div className='p-5 md:px-10 mxl:px-20 bounce'>
+                <div className='bg-[#D3C0FF] p-5 md:p-10 rounded-2xl'>
+                    <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient bounce">
                         Peripheral nerve surgery
                     </div>
-                    <div className='grid grid-cols-1 gap-0 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4 mt-8 z-10 relative'>
+                    <div className='grid grid-cols-1 gap-0 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4 mt-8 z-10 relative bounce'>
                         {
                             nerve.map((surgery, index) => (
                                 <div className="flex items-center gap-3 mt-5" key={index}>
@@ -661,17 +768,17 @@ const DrDarshan = () => {
 
             {/* container 7 */}
 
-            <div className='mt-5 p-5 md:px-10 mxl:px-20 flex flex-col items-center'>
-                <div className="font-heading text-[28px] text-center lg:text-[38px] font-[700] bg-orange-gradient mb-5">
+            <div className='mt-5 p-5 md:px-10 mxl:px-20 flex flex-col items-center bounce'>
+                <div className="font-heading text-[28px] text-center lg:text-[38px] font-[700] bg-orange-gradient mb-5 bounce">
                     Reconstructive Surgery
                 </div>
                 <div className='bg-[#FEF0C3] w-full lg:w-[70%] p-5 rounded-2xl'>
                     {/* <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient">
                         Peripheral nerve surgery
                     </div> */}
-                    <div className='grid grid-cols-1 gap-0 sm:grid-cols-2 lg:grid-cols-2 lg:gap-4 z-10 relative'>
+                    <div className='grid grid-cols-1 gap-0 sm:grid-cols-2 lg:grid-cols-2 lg:gap-4 z-10 relative bounce'>
                         {
-                            nerve.map((surgery, index) => (
+                            reconstructive.map((surgery, index) => (
                                 <div className="flex items-center gap-3 mt-5" key={index}>
                                     <img src={assets.handDrag} className='w-[24px] h-[24px] lg:w-[30px] lg:h-[30px]' alt="" />
                                     <div className="text-[12px] lg:text-[16px] font-text font-[700]">{surgery.text}</div>
@@ -684,11 +791,10 @@ const DrDarshan = () => {
 
             {/* container 8 */}
 
-            <div className='p-10 mt-10 bg-[#B6FEB433]'>
+            <div className='p-10 md:p-20 mt-10 bg-[#B6FEB433]'>
                 <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient">
                     Publications:
                 </div>
-
                 <div>
                     {
                         publications.map((surgery, index) => (
@@ -701,24 +807,24 @@ const DrDarshan = () => {
                 </div>
             </div>
 
-            <div className='mt-10 lg:px-20'>
+            <div className='mt-10 lg:px-20 sideScroll'>
                 <div className="font-heading text-[28px] text-center lg:text-[38px] font-[700] bg-orange-gradient mb-5">
                     Consultation Locations
                 </div>
 
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 justify-center mt-10'>
                     <div className='w-[85%] border-1 border-black rounded-xl p-3 text-center mx-auto max-w-[390px] mxl:max-w-[590px]'>
-                        <div className='bg-orange-gradient text-[24px] font-[700] mxl:text-[36px] font-lobster'>Sapiens Clinic</div>
+                        <div className='bg-orange-gradient text-[24px] font-[700] mxl:text-[32px] font-heading'>Sapiens Clinic</div>
                         <div className='text-[16px] font-para font-[600] mxl:text-[24px]'>Mon to sat 12:00 noon to 8:00 PM, Sunday Holiday</div>
                     </div>
 
                     <div className='w-[85%] border-1 border-black rounded-xl p-3 text-center mx-auto  max-w-[390px] mxl:max-w-[590px]'>
-                        <div className='bg-orange-gradient text-[24px] font-[700] mxl:text-[36px] font-lobster'>Appollo Spectra - Koramangala</div>
+                        <div className='bg-orange-gradient text-[24px] font-[700] mxl:text-[32px] font-heading'>Appollo Spectra - Koramangala</div>
                         <div className='text-[16px] font-para font-[600] mxl:text-[24px]'>Wednesday and Saturday, 10:00 AM to 1:00 PM</div>
                     </div>
 
                     <div className='w-[85%] border-1 border-black rounded-xl p-3 text-center mx-auto max-w-[390px] mxl:max-w-[590px]'>
-                        <div className='bg-orange-gradient text-[24px] font-[700] mxl:text-[36px] font-lobster'>Rxdx Healthcare, Whitefiled:</div>
+                        <div className='bg-orange-gradient text-[24px] font-[700] mxl:text-[32px] font-heading'>Rxdx Healthcare, Whitefiled:</div>
                         <div className='text-[16px] font-para font-[600] mxl:text-[24px]'>Every Monday Morning, 10:00 AM to 12:00 PM</div>
                     </div>
                 </div>
@@ -733,14 +839,14 @@ const DrDarshan = () => {
                 />
             </div>
 
-            <div className='p-5 lg:px-20 mt-5'>
-                <div className="font-lobster text-[28px] text-center lg:text-[38px] font-[700] bg-orange-gradient mb-5">
-                    Consultation Locations
+            <div className='p-5 lg:px-20 mt-5 '>
+                <div className="font-heading text-[28px] text-center lg:text-[38px] font-[700] bg-orange-gradient mb-5">
+                    Professional Memberships
                 </div>
 
                 <div className='flex gap-10 flex-col items-center md:flex-row md:justify-center md:flex-wrap mt-10'>
                     {professional.map((prof, index) => (
-                        <div key={index} className='w-[230px] h-[260px] rounded-2xl flex flex-col gap-3 items-center justify-center' style={{background : prof.bgColor}}>
+                        <div key={index} className='w-[230px] h-[260px] rounded-2xl flex flex-col gap-3 items-center justify-center' style={{ background: prof.bgColor }}>
                             <img src={prof.img} className='w-[124px] h-auto' alt="" />
                             <div className='text-center text-black font-[700]'>{prof.text}</div>
                         </div>
@@ -750,7 +856,7 @@ const DrDarshan = () => {
             </div>
 
             <Outlet />
-        </>
+        </PageTransition>
     )
 }
 

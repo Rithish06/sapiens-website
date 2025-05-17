@@ -14,8 +14,9 @@ const Navbar = () => {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     const [navBg, setNavBg] = useState(false)
 
-    const shouldShowSimpleLogo = location.pathname === '/' && windowWidth > 767;
+    const shouldShowSimpleLogo = location.pathname === '/' && windowWidth > 760;
     const logoToShow = shouldShowSimpleLogo ? assets.logo : assets.colorLogo;
+    
 
     useEffect(() => {
         const handleResize = () => {
@@ -59,7 +60,7 @@ const Navbar = () => {
             <div className="px-4 py-1 flex items-center justify-between lg:px-20 font-poppins">
                 {/* Logo */}
                 <NavLink to="/">
-                    <img src={logoToShow} className='w-[130px] h-auto md:w-[180px] mxl:h-auto' alt="logo" />
+                    <img src={logoToShow} className='w-[130px] h-auto md:w-[140px] lg:w-[180px] mxl:h-auto' alt="logo" />
                     {/* <img src={assets.logo} className='w-[85px] h-auto lg:w-[180px] mxl:w-[224px] mxl:h-auto' alt="logo" /> */}
                 </NavLink>
 
@@ -111,7 +112,7 @@ const Navbar = () => {
             </div>
 
             {/* Desktop Navs */}
-            <div className={`hidden lg:flex px-16 w-full ${isFixed ? 'fixed top-0' : 'absolute mt-2 lg:mt-0'} z-[100] lg:bg-transparent`}>
+            <div className={`hidden lg:flex px-16 w-full ${isFixed ? 'fixed top-0 transition-top duration-300' : 'absolute mt-2 lg:mt-0'} z-[100] lg:bg-transparent`}>
                 <div className="bg-[#001F3F] w-[80%] flex items-center px-2 lg:py-3 mxl:py-5 pl-10 gap-14">
                     <NavLink
                         to="/"
@@ -155,12 +156,12 @@ const Navbar = () => {
                         Contact Us
                     </NavLink>
                 </div>
-                <NavLink
-                    to="/contact"
+                <a  target='_blank'
+                    href="https://book-appointment.healthplix.com/dr-darshan-kumar-a-jain-orthopaedician-80-16th-cross"
                     className='bg-orange-500 w-[20%] text-white font-bold flex items-center justify-center lg:text-[14px] mxl:text-[16px] cursor-pointer hover:bg-orange-600 transition-colors'
                 >
                     Book Appointment
-                </NavLink>
+                </a>
             </div>
 
             {/* Mobile Navs */}
@@ -223,35 +224,39 @@ const Navbar = () => {
                             <div className="text-[14px] text-[#808080]">Mon to Sat 4:00 PM to 7:30 PM</div>
                         </div>
                     </div>
+                    
+                    <a target='_blank' href="tel:+917892556378" className="flex items-center gap-5 cursor-pointer">
+                        <div className="flex items-center gap-5">
+                            <div className="flex justify-center items-center w-[50px] h-[50px] border border-orange-500 rounded-full">
+                                <IoCall className="text-orange-500 text-3xl" />
+                            </div>
+                            <div>
+                                <div className="text-[16px] font-[500]">Phone Number</div>
+                                <div className="text-[14px] text-[#808080]">+91 78925 56378</div>
+                            </div>
+                        </div>
+                    </a>
 
-                    <div className="flex items-center gap-5">
-                        <div className="flex justify-center items-center w-[50px] h-[50px] border border-orange-500 rounded-full">
-                            <IoCall className="text-orange-500 text-3xl" />
+                    <a href="mailto:sapiensclinic@gmail.com" className="flex items-center gap-5 cursor-pointer">
+                        <div className="flex items-center gap-5">
+                            <div className="flex justify-center items-center w-[50px] h-[50px] border border-orange-500 rounded-full">
+                                <TfiEmail className="text-orange-500 text-3xl" />
+                            </div>
+                            <div>
+                                <div className="text-[16px] font-[500]">Email Us Here</div>
+                                <div className="text-[14px] text-[#808080]">sapiensclinic@gmail.com</div>
+                            </div>
                         </div>
-                        <div>
-                            <div className="text-[16px] font-[500]">Phone Number</div>
-                            <div className="text-[14px] text-[#808080]">+91 78925 56378</div>
-                        </div>
-                    </div>
-
-                    <div className="flex items-center gap-5">
-                        <div className="flex justify-center items-center w-[50px] h-[50px] border border-orange-500 rounded-full">
-                            <TfiEmail className="text-orange-500 text-3xl" />
-                        </div>
-                        <div>
-                            <div className="text-[16px] font-[500]">Email Us Here</div>
-                            <div className="text-[14px] text-[#808080]">sapiensclinic@gmail.com</div>
-                        </div>
-                    </div>
+                    </a>
                 </div>
 
-                <NavLink
-                    to="/contact"
+                <a target='_blank'
+                    href="https://book-appointment.healthplix.com/dr-darshan-kumar-a-jain-orthopaedician-80-16th-cross"
                     onClick={closeMobileMenu}
                     className='bg-orange-500 w-full h-14 text-white font-bold flex items-center justify-center text-[16px] cursor-pointer mt-12 hover:bg-orange-600 transition-colors'
                 >
                     Book Appointment
-                </NavLink>
+                </a>
             </div>
         </div>
     );

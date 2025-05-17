@@ -1,11 +1,100 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useLayoutEffect } from 'react'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { assets } from '../../assets/assets';
 import TimeLine from '../../components/timline/Timeline'
 import { Outlet } from 'react-router-dom';
 
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
+
+import PageTransition from "../../components/PageTransition";
+
 const DrDivya = () => {
+
+    useEffect(() => {
+
+        const reveal = gsap.fromTo(".reveal-container",
+            {
+                clipPath: "inset(0% 100% 10% 0%)",
+                opacity: 0,
+            },
+            {
+                clipPath: "inset(0% 0% 0% 0%)",
+                opacity: 1,
+                ease: "power2.out",
+                duration: 3,
+                scrollTrigger: {
+                    trigger: ".reveal-container",
+                    start: "top 80%",
+                    end: "top 20%",
+                    scrub: true,
+                    markers: false,
+                }
+            }
+        );
+
+        const fadeIn = gsap.fromTo(
+            ".fadex",
+            {
+                scale: 0.5,
+                opacity: 0,
+                // x: -500
+            },
+            {
+                opacity: 1,
+                // x: 0,
+                scale: 1,
+                duration: 1.5,
+                scrollTrigger: {
+                    trigger: ".fadex",
+                    start: "top 85%",
+                    end: "top 40%",
+                    scrub: true,
+                    toggleActions: "none none none none",
+                    markers: false
+                }
+            }
+        )
+
+        gsap.utils.toArray(".bounce").forEach((el) => {
+            gsap.fromTo(el,
+                { y: 50, opacity: 0 },
+                {
+                    y: 0,
+                    opacity: 1,
+                    duration: 3,
+                    ease: "bounce.out",
+                    scrollTrigger: {
+                        trigger: el,
+                        start: "top 60%",
+                        end: "top 30%",
+                        toggleActions: "play none none none",
+                        scrub: 3,
+                        markers: false,
+                    }
+                }
+            );
+        });
+
+    }, [])
+
+    useLayoutEffect(() => {
+        gsap.fromTo(
+            ".anime",
+            {
+                opacity: 0,
+                y: 100,
+            },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 1,
+                ease: "power2.out",
+            }
+        );
+    }, []);
 
     const educationData = [
         {
@@ -294,127 +383,128 @@ const DrDivya = () => {
         },
     ]
     return (
-        <div>
-            {/* container 1 */}
+        <PageTransition>
+            <div>
+                {/* container 1 */}
 
-            <div className='relative'>
-                <img src={assets.drDivyaBanner} className='relative w-full h-auto hidden lg:block' alt="" />
-                <img src={assets.drDivyaBannerTablet} className='relative w-full h-auto hidden md:block lg:hidden' alt="" />
-                <img src={assets.drDivyaBannerMobile} className="relative w-full h-auto md:hidden" alt='' />
+                <div className='relative'>
+                    <img src={assets.drDivyaBanner} className='relative w-full h-auto hidden lg:block' alt="" />
+                    <img src={assets.drDivyaBannerTablet} className='relative w-full h-auto hidden md:block lg:hidden' alt="" />
+                    <img src={assets.drDivyaBannerMobile} className="relative w-full h-auto md:hidden" alt='' />
 
-                <div className='flex justify-end absolute w-full top-20 md:top-28 lg:top-45 mxl:top-75'>
-                    <div className="w-full px-5 md:w-[60%]">
-                        <div className='font-heading text-[18px] s:text-[24px] lg:text-[30px] mxl:text-[44px] font-700 font-black'>Dr. Divya Sundaresh</div>
-                        <div className='font-heading text-[10px] s:text-[12px] lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[32px] mt-2'>DO, DNB, FICO, FRCS (Glas), FAICO (Oculoplasty),</div>
-                        <div className='font-heading text-[10px] s:text-[12px] lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[32px]'>Ex Medical Officer, Aravind Eye Hospital</div>
-                        {/* <div className='font-heading text-[10px] s:text-[12px] lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[32px]'>MNAMS, PGDHHM, Diploma in Tissue Banking (Singapore)</div> */}
-                        <ul className='mt-5 ml-5 list-disc '>
-                            <li className='font-heading text-[10px] s:text-[12px] lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[40px]'>Ophthalmology Consultant</li>
-                            <li className='font-heading text-[10px] s:text-[12px] lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[40px]'>Specialist in Orbit & Oculoplasty</li>
-                            <li className='font-heading text-[10px] s:text-[12px] lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[40px]'>Specialist in Lacrimal Surgeries</li>
-                            <li className='font-heading text-[10px] s:text-[12px] lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[40px]'>Specialsit in Ocular Oncology </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            {/* container 2 */}
-            <div className="flex flex-col mt-10 lg:flex-row lg:gap-0">
-                <div className="w-full p-5 md:p-10 mxl:pl-20 lg:50%">
-                    <div className="font-heading text-[28px] lg:text-[38px] font-[700] bg-orange-gradient">About Doctor :</div>
-                    <div className='font-para text-[12px] lg:text-[16px] font-[500] mt-4'>Dr. Divya Sundaresh has over 10 years of ophthalmology expertise. She did a Senior Housemanship in Ophthalmology at Regional Institute of Ophthalmology, Egmore, Chennai under Prof. Velayutham after graduating from Ramaiah Medical College. She earned her post-graduation ophthalmology degree from Aravind Eye Hospital in Madurai.</div>
-                    <div className='font-para text-[12px] lg:text-[16px] font-[500] mt-3'>She specialises in orbital infections, orbital disorders such thyroid orbitopathy, eye lid reconstructions, face cosmetic procedures, and eye malignancies.</div>
-                    <div className='flex justify-center mt-10'>
-                        <img src={assets.contactOpthalmology} className='w-[100%] h-auto max-w-[500px]' alt="" />
-                    </div>
-                </div>
-                <div className="w-full lg:50%">
-                    <TimeLine educationData={educationData} />
-                </div>
-            </div>
-
-            {/* container 3 */}
-            <div className="lg:gap-0 p-5 md:p-10 mxl:p-20">
-
-                <div className="font-heading text-[28px] text-center lg:text-[38px] font-[700] bg-orange-gradient">Specialty : Hand Surgery & Microsurgery</div>
-
-                <div className="flex flex-col mt-10 lg:flex-row lg:gap-0">
-                    <div className="w-full">
-                        {speciality.map((speciality, index) => (
-                            <div
-                                key={index}
-                                className="flex items-center gap-4 mt-4"
-                            >
-                                <div
-                                    style={{ background: speciality.color }}
-                                    className="w-[30px] h-[30px] rounded-r-full flex-shrink-0"
-                                ></div>
-
-                                <div className="font-para text-[12px] lg:text-[16px] font-[500]">
-                                    {speciality.text}
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </div>
-
-            {/* container 4 */}
-            <div className='p-5 lg:px-20'>
-                <div className="font-heading text-[28px] text-center lg:text-[38px] font-[700] bg-orange-gradient">
-                    Services provided
-                </div>
-
-                {/* Grid List */}
-                <div className="grid grid-cols-1 gap-0 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4 mt-8 z-10 relative  bg-[#BDC4FF] p-5 rounded-2xl overflow-hidden">
-                    {
-                        services.map((surgery, index) => (
-                            <div className="flex items-center gap-3 mt-5" key={index}>
-                                <img src={assets.handDrag} className='w-[24px] h-[24px] lg:w-[30px] lg:h-[30px]' alt="" />
-                                <div className="text-[12px] lg:text-[16px] font-text font-[700]">{surgery.text}</div>
-                            </div>
-                        ))
-                    }
-                </div>
-            </div>
-
-            {/* container 5 */}
-            <div className='p-10 mt-10 bg-[#FFD46633]'>
-                <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient">
-                    Paper presentations:
-                </div>
-
-                <div>
-                    {
-                        presentations.map((surgery, index) => (
-                            <ul className="flex items-center gap-3 mt-3 list-disc" key={index}>
-                                {/* <img src={assets.handDrag} className='w-[24px] h-[24px] lg:w-[30px] lg:h-[30px]' alt="" /> */}
-                                <li className="text-[12px] lg:text-[16px] font-text font-[600]">{surgery.text}</li>
+                    <div className='flex justify-end absolute w-full top-20 md:top-28 lg:top-45 mxl:top-75 anime'>
+                        <div className="w-full px-5 md:w-[60%]">
+                            <div className='font-heading text-[18px] s:text-[24px] lg:text-[30px] mxl:text-[44px] font-700 font-black'>Dr. Divya Sundaresh</div>
+                            <div className='font-heading text-[10px] s:text-[12px] lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[32px] mt-2'>DO, DNB, FICO, FRCS (Glas), FAICO (Oculoplasty),</div>
+                            <div className='font-heading text-[10px] s:text-[12px] lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[32px]'>Ex Medical Officer, Aravind Eye Hospital</div>
+                            {/* <div className='font-heading text-[10px] s:text-[12px] lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[32px]'>MNAMS, PGDHHM, Diploma in Tissue Banking (Singapore)</div> */}
+                            <ul className='mt-5 ml-5 list-disc '>
+                                <li className='font-heading text-[10px] s:text-[12px] lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[40px]'>Ophthalmology Consultant</li>
+                                <li className='font-heading text-[10px] s:text-[12px] lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[40px]'>Specialist in Orbit & Oculoplasty</li>
+                                <li className='font-heading text-[10px] s:text-[12px] lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[40px]'>Specialist in Lacrimal Surgeries</li>
+                                <li className='font-heading text-[10px] s:text-[12px] lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[40px]'>Specialsit in Ocular Oncology </li>
                             </ul>
-                        ))
-                    }
+                        </div>
+                    </div>
+                </div>
+
+                {/* container 2 */}
+                <div className="flex flex-col mt-10 lg:flex-row lg:gap-0 reveal-container">
+                    <div className="w-full p-5 md:p-10 mxl:pl-20 lg:50%">
+                        <div className="font-heading text-[28px] lg:text-[38px] font-[700] bg-orange-gradient">About Doctor :</div>
+                        <div className='font-para text-[12px] lg:text-[16px] font-[500] mt-4'>Dr. Divya Sundaresh has over 10 years of ophthalmology expertise. She did a Senior Housemanship in Ophthalmology at Regional Institute of Ophthalmology, Egmore, Chennai under Prof. Velayutham after graduating from Ramaiah Medical College. She earned her post-graduation ophthalmology degree from Aravind Eye Hospital in Madurai.</div>
+                        <div className='font-para text-[12px] lg:text-[16px] font-[500] mt-3'>She specialises in orbital infections, orbital disorders such thyroid orbitopathy, eye lid reconstructions, face cosmetic procedures, and eye malignancies.</div>
+                        <div className='flex justify-center mt-10'>
+                            <img src={assets.contactOpthalmology} className='w-[100%] h-auto max-w-[500px]' alt="" />
+                        </div>
+                    </div>
+                    <div className="w-full lg:50%">
+                        <TimeLine educationData={educationData} />
+                    </div>
+                </div>
+
+                {/* container 3 */}
+                <div className="lg:gap-0 p-5 md:p-10 mxl:p-20 fadex">
+
+                    <div className="font-heading text-[28px] text-center lg:text-[38px] font-[700] bg-orange-gradient">Specialised Expertise in Orbit & Oculoplasty</div>
+
+                    <div className="flex flex-col mt-10 lg:flex-row lg:gap-0">
+                        <div className="w-full">
+                            {speciality.map((speciality, index) => (
+                                <div
+                                    key={index}
+                                    className="flex items-center gap-4 mt-4"
+                                >
+                                    <div
+                                        style={{ background: speciality.color }}
+                                        className="w-[30px] h-[30px] rounded-r-full flex-shrink-0"
+                                    ></div>
+
+                                    <div className="font-para text-[12px] lg:text-[16px] font-[500]">
+                                        {speciality.text}
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+
+                {/* container 4 */}
+                <div className='p-5 lg:px-20 bounce'>
+                    <div className="font-heading text-[28px] text-center lg:text-[38px] font-[700] bg-orange-gradient bounce">
+                        Services provided
+                    </div>
+
+                    {/* Grid List */}
+                    <div className="grid grid-cols-1 gap-0 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4 mt-8 z-10 relative  bg-[#BDC4FF] p-5 rounded-2xl overflow-hidden bounce">
+                        {
+                            services.map((surgery, index) => (
+                                <div className="flex items-center gap-3 mt-5" key={index}>
+                                    <img src={assets.handDrag} className='w-[24px] h-[24px] lg:w-[30px] lg:h-[30px]' alt="" />
+                                    <div className="text-[12px] lg:text-[16px] font-text font-[700]">{surgery.text}</div>
+                                </div>
+                            ))
+                        }
+                    </div>
+                </div>
+
+                {/* container 5 */}
+                <div className='p-10 md:p-20 mt-10 bg-[#FFD46633]'>
+                    <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient">
+                        Paper presentations:
+                    </div>
+
+                    <div>
+                        {
+                            presentations.map((surgery, index) => (
+                                <ul className="flex items-center gap-3 mt-3 list-disc" key={index}>
+                                    {/* <img src={assets.handDrag} className='w-[24px] h-[24px] lg:w-[30px] lg:h-[30px]' alt="" /> */}
+                                    <li className="text-[12px] lg:text-[16px] font-text font-[600]">{surgery.text}</li>
+                                </ul>
+                            ))
+                        }
+                    </div>
+                </div>
+
+                {/* container 6 */}
+                <div className='p-10  md:p-20 mt-10 bg-[#B6FEB433]'>
+                    <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient">
+                        Publications:
+                    </div>
+
+                    <div>
+                        {
+                            publications.map((surgery, index) => (
+                                <div className="flex items-center gap-3 mt-3" key={index}>
+                                    {/* <img src={assets.handDrag} className='w-[24px] h-[24px] lg:w-[30px] lg:h-[30px]' alt="" /> */}
+                                    <div className="text-[12px] lg:text-[16px] font-text font-[600]">{index + 1}. {surgery.text}</div>
+                                </div>
+                            ))
+                        }
+                    </div>
                 </div>
             </div>
-
-            {/* container 6 */}
-            <div className='p-10 mt-10 bg-[#B6FEB433]'>
-                <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient">
-                    Publications:
-                </div>
-
-                <div>
-                    {
-                        publications.map((surgery, index) => (
-                            <div className="flex items-center gap-3 mt-3" key={index}>
-                                {/* <img src={assets.handDrag} className='w-[24px] h-[24px] lg:w-[30px] lg:h-[30px]' alt="" /> */}
-                                <div className="text-[12px] lg:text-[16px] font-text font-[600]">{index + 1}. {surgery.text}</div>
-                            </div>
-                        ))
-                    }
-                </div>
-            </div>
-
-        </div>
+        </PageTransition>
     )
 }
 

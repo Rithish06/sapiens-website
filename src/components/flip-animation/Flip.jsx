@@ -1,6 +1,10 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { gsap } from 'gsap';
 
+// import gsap from 'gsap'
+// import { ScrollTrigger } from 'gsap/ScrollTrigger'
+// gsap.registerPlugin(ScrollTrigger)
+
 const Flip = (props) => {
     const cardRefs = useRef([]);
     const [flippedStates, setFlippedStates] = useState([]);

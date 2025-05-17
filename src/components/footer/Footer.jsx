@@ -14,7 +14,7 @@ const Footer = () => {
                     </div>
                     <div className="text-[12px] md:text-[16px] text-white max-w-[700px]  font-poppins leading-[26px] mt-4 md:w-[90%]">Specializing in upper limb surgery and comprehensive eye care, we focus on accurate diagnosis, modern treatment techniques and patient-centered outcomes. Every procedure is backed by clinical expertise and delivered with precision and care.</div>
                     <div className='flex justify-center lg:justify-start lg:w-[90%]'>
-                        <button className='border-none outline-nonefocus:outline-none focus:ring-0 gradient-button-bg px-4 py-2 rounded-sm text-white text-[16px] font-[400] mt-6 cursor-pointer'>Book Appointment</button>
+                        <a target='_blank' href="https://book-appointment.healthplix.com/dr-darshan-kumar-a-jain-orthopaedician-80-16th-cross" className='border-none outline-nonefocus:outline-none focus:ring-0 gradient-button-bg px-4 py-2 rounded-sm text-white text-[16px] font-[400] mt-6 cursor-pointer'>Book Appointment</a>
                     </div>
                 </div>
                 <div className="flex gap-10 lg:gap-20 justify-center mt-14 lg:mt-0 lg:w-[50%]">
@@ -36,8 +36,8 @@ const Footer = () => {
             <div className="flex gap-2 justify-center text-white mt-14 md:gap-8">
                 <div className='text-[10px] md:text-[16px] font-[400] font-poppins cursor-pointer hover:text-orange'>Privacy Policy</div>
                 <div className='text-[10px] md:text-[16px] font-[400] font-poppins cursor-pointer hover:text-orange'>Terms of Use</div>
-                <div className='text-[10px] md:text-[16px] font-[400] font-poppins cursor-pointer hover:text-orange'>Clinic Map</div>
-                <div className='text-[10px] md:text-[16px] font-[400] font-poppins cursor-pointer hover:text-orange'>Parking Location</div>
+                <a target='_blank' href='https://maps.app.goo.gl/wMhxex5pi2v5qLas9' className='text-[10px] md:text-[16px] font-[400] font-poppins cursor-pointer hover:text-orange'>Clinic Map</a>
+                <a target='_blank' href='https://maps.app.goo.gl/rZYZCTqmQ8UNRcwY8' className='text-[10px] md:text-[16px] font-[400] font-poppins cursor-pointer hover:text-orange'>Parking Location</a>
             </div>
             <div className='text-[12px] text-center font-[300] font-poppins text-white mt-8 md:text-[16px]'>© 2025 All Rights Reserved</div>
         </div>
