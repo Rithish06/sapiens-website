@@ -44,7 +44,7 @@ const DrDarshan = () => {
                         end: "top 20%",
                         scrub: true,
                         onEnter: () => ScrollTrigger.refresh(),
-                        markers: true // Enable temporarily for debugging
+                        markers: false // Enable temporarily for debugging
                     }
                 }
             );
@@ -65,7 +65,7 @@ const DrDarshan = () => {
                         end: "top 40%",
                         scrub: true,
                         // toggleActions: "play none none none",
-                        markers: true // Enable temporarily for debugging
+                        markers: false // Enable temporarily for debugging
                     }
                 }
             );
@@ -89,7 +89,7 @@ const DrDarshan = () => {
                             start: "top 60%",
                             end: "top 30%",
                             // toggleActions: "play none none none",
-                            markers: true // Enable temporarily for debugging
+                            markers: false // Enable temporarily for debugging
                         }
                     }
                 );
@@ -111,7 +111,7 @@ const DrDarshan = () => {
                         end: "top 30%",
                         // toggleActions: "restart none none none",
                         scrub: true,
-                        markers: true // Enable temporarily for debugging
+                        markers: false // Enable temporarily for debugging
                     }
                 }
             );
