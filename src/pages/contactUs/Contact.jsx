@@ -230,8 +230,8 @@ const Contact = () => {
                 </div>
 
                 {/* container 2 */}
-                <div className="mt-20 px-10 lg:px-20 mxl:px-30">
-                    <div className="text-[40px] font-[700] font-heading bg-orange-gradient text-center md:text-[48px]">Location For</div>
+                <div className="mt-20 px-10 lg:px-20 mxl:px-30 overflow-x-hidden" >
+                    <div className="text-[36px] font-[700] font-heading bg-orange-gradient text-center md:text-[48px]">Location For</div>
 
                     <div className="flex flex-col gap-15 items-center lg:flex-row lg:gap-20 mxl:gap-30 mt-10">
                         <div className='w-full lg:width-[50%] rotate' ref={rotateRef}>
@@ -268,7 +268,7 @@ const Contact = () => {
                 {/* container 3 */}
                 <div className="mt-20 px-5 lg:px-20 mxl:px-30 flex flex-col gap-10 lg:flex-row lg:gap-0 items-center pin" ref={pinRef}>
                     <div>
-                        <div className="text-[40px] font-[700] font-heading bg-orange-gradient text-center md:text-[48px]">Orthopedic</div>
+                        <div className="text-[36px] font-[700] font-heading bg-orange-gradient text-center md:text-[48px]">Orthopedic</div>
                         <div className='flex flex-col gap-5 items-center mt-5'>
                             <div className='w-[95%] border-1 border-black rounded-xl p-3 text-center  max-w-[390px] mxl:max-w-[590px]'>
                                 <div className='bg-orange-gradient text-[24px] font-[700] mxl:text-[36px] font-heading'>Sapiens Clinic</div>
@@ -290,7 +290,7 @@ const Contact = () => {
                     <div className='h-[2px] bg-black w-[80%] mx-auto lg:w-[2px] lg:h-[450px]'></div>
 
                     <div>
-                        <div className="text-[40px] font-[700] font-heading bg-orange-gradient text-center md:text-[48px]">Opthalmology</div>
+                        <div className="text-[36px] font-[700] font-heading bg-orange-gradient text-center md:text-[48px]">Opthalmology</div>
 
                         <div className='flex flex-col gap-5 items-center mt-5'>
                             <div className='w-[95%] border-1 border-black rounded-xl p-3 text-center max-w-[390px]  mxl:max-w-[590px]'>
@@ -308,7 +308,7 @@ const Contact = () => {
                 <div className='flex flex-col md:flex-row mt-14 mb-10 fadeIn' ref={fadeInRef}>
                     <div className='md:w-[50%]'>
                         <div className='bg-[#FFF6E0] w-full'>
-                            <div className="text-[40px] font-[700] font-heading bg-orange-gradient text-center md:text-[48px]">Contact Information</div>
+                            <div className="text-[36px] font-[700] font-heading bg-orange-gradient text-center md:text-[48px]">Contact Information</div>
                         </div>
                         <div className="flex flex-col gap-5 mt-8 md:w-[95%] lg:pl-10">
                             <div className='px-4 lg:px-14'>

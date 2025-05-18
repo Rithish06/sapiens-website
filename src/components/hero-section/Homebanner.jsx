@@ -98,7 +98,7 @@ const HomeBanner = ({learnMoreFunction}) => {
 				>
 					<div className="relative">
 						<img
-							src={assets.homeBannerDesktop}
+							src={assets.drDivyaHomeBanner}
 							className="hidden md:block w-full h-auto md:mt-0 lg:mt-0"
 							alt="Slide 1"
 						/>
@@ -112,13 +112,13 @@ const HomeBanner = ({learnMoreFunction}) => {
 								Dr. Divya Sundaresh
 							</div>
 							<div className="text-[10px] font-heading font-[600] s:text-[12px] md:text-[16px] lg:text-[18px] mxl:text-[24px] text-white">
-								MBBS, MS, FNB, MNAMS, PGDHHM
+								DO, DNB, FICO, FRCS (Glas), FAICO (Oculoplasty),
 							</div>
 							<div className="font-para text-[8px] text-white w-[230px] s:w-[280px] lg:w-1/2 s:text-[9px] lg:text-[12px] mxl:text-[16px]  mt-2">
-								Dr. Darshan Kumar A. Jain is a highly experienced hand surgeon in Malleshwaram, Bangalore, specializing in the treatment of various upper limb conditions. With expertise in managing hand injuries, wrist pain, elbow issues, brachial nerve conditions and shoulder-related problems, Dr. Darshan Kumar A. Jain is committed to delivering advanced care for patients seeking effective solutions.
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quos ex a fugit ratione. Omnis velit a dicta maiores eius aliquid vero dolore. Suscipit voluptatibus, praesentium voluptatum nesciunt voluptate quis?
 							</div>
 							<div className="font-para text-[8px] text-white w-[230px] s:w-[280px] lg:w-1/2 s:text-[9px] lg:text-[12px] mxl:text-[16px] mt-2">
-								As a board-certified Hand Surgery Specialist, Dr. Darshan Kumar A. Jain provides personalized treatment plans that focus on improving mobility, reducing pain, and enhancing overall quality of life. Whether you're dealing with finger pain, hand cramps, or require microsurgery for hand injuries, Dr. Darshan Kumar A. Jain ensures comprehensive care designed to meet your specific needs.
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus iste laboriosam delectus nam illo magni quam. Labore error fugit maxime quaerat, obcaecati aperiam et aliquam nesciunt! Nesciunt magnam necessitatibus porro!
 							</div>
 							<div className="flex gap-6 mt-3 lg:mt-4 mxl:mt-6">
 								<button onClick={learnMoreFunction} className="bg-[#EF7F1A] px-3 py-2 text-[12px] rounded-sm font-para font-[800] lg:text-[14px] lg:px-4 lg:py-2.5 text-white cursor-pointer">
