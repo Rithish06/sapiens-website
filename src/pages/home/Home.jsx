@@ -14,6 +14,7 @@ import PageTransition from "../../components/PageTransition";
 const Home = () => {
 
 	const targetRef = useRef(null);
+	const comp = useRef();
 
 	const handleLearnMoreClick = () => {
 		if (targetRef.current) {
@@ -43,186 +44,165 @@ const Home = () => {
 	}, []);
 
 	useEffect(() => {
-		const poppingUp = gsap.fromTo(
-			".fadeIn",
-			{
-				scale: 0.5,
-				opacity: 0,
-				y: 50
-			},
-			{
-				opacity: 1,
-				y: 0,
-				scale: 1,
-				duration: 3,
-				scrollTrigger: {
-					trigger: ".fadeIn",
-					start: "top 85%",
-					end: "top 40%",
-					scrub: true,
-					toggleActions: "play none none none",
-					markers: false
-				}
-			}
-		)
+		const ctx = gsap.context(() => {
+			// Configure ScrollTrigger defaults
+			ScrollTrigger.config({
+				ignoreMobileResize: true,
+				limitCallbacks: true
+			});
 
-		const fadeIn = gsap.fromTo(
-			".fadex",
-			{
-				scale: 0.5,
-				opacity: 0,
-				x: -500
-			},
-			{
-				opacity: 1,
-				x: 0,
-				scale: 1,
-				duration: 3,
-				scrollTrigger: {
-					trigger: ".fadex",
-					start: "top 85%",
-					end: "top 40%",
-					scrub: true,
-					toggleActions: "play none none none",
-					markers: false
-				}
-			}
-		)
-
-		gsap.utils.toArray(".bounce").forEach((el) => {
-			gsap.fromTo(el,
-				{ y: 50, opacity: 0 },
+			// Popping Up Animation
+			gsap.fromTo(".fadeIn",
+				{ scale: 0.5, opacity: 0, y: 50 },
 				{
-					y: 0,
 					opacity: 1,
+					y: 0,
+					scale: 1,
 					duration: 3,
-					ease: "bounce.out",
 					scrollTrigger: {
-						trigger: el,
-						start: "top 60%",
-						end: "top 30%",
+						trigger: ".fadeIn",
+						start: "top 85%",
+						end: "top 40%",
+						scrub: true,
 						toggleActions: "play none none none",
-						scrub: 3,
-						markers: false,
+						markers: false
 					}
 				}
 			);
-		});
 
-		gsap.fromTo(".sideScroll",
-			{ x: 1200, },
-			{
-				x: 0,
-				duration: 1.5,
-				// ease: "bounce.out",
-				scrollTrigger: {
-					trigger: ".sideScroll",
-					start: "top 60%",
-					end: "top 30%",
-					toggleActions: "restart none none none",
-					scrub: true,
-					markers: false,
-				}
-			}
-		);
-
-		// gsap.fromTo(".zoomIn",
-		// 	{ scale: 3, },
-		// 	{
-		// 		scale: 1,
-		// 		duration: 1.5,
-		// 		// ease: "bounce.out",
-		// 		scrollTrigger: {
-		// 			trigger: ".zoomIn",
-		// 			start: "top 80%",
-		// 			end: "top 40%",
-		// 			toggleActions: "restart none none none",
-		// 			scrub: true,
-		// 			markers: false,
-		// 		}
-		// 	}
-		// );
-
-		gsap.utils.toArray(".zoomIn").forEach((el) => {
-			gsap.fromTo(el,
-				{ scale: 3 },
+			// Fade In from Left Animation
+			gsap.fromTo(".fadex",
+				{ scale: 0.5, opacity: 0, x: -500 },
 				{
-					y: 0,
+					opacity: 1,
+					x: 0,
 					scale: 1,
-					duration: 1.5,
-					// ease: "bounce.out",
+					duration: 3,
 					scrollTrigger: {
-						trigger: el,
-						start: "top 80%",
+						trigger: ".fadex",
+						start: "top 85%",
 						end: "top 40%",
+						scrub: true,
+						toggleActions: "play none none none",
+						markers: false
+					}
+				}
+			);
+
+			// Bounce Animation for multiple elements
+			gsap.utils.toArray(".bounce").forEach((el) => {
+				gsap.fromTo(el,
+					{ y: 50, opacity: 0 },
+					{
+						y: 0,
+						opacity: 1,
+						duration: 3,
+						ease: "bounce.out",
+						scrollTrigger: {
+							trigger: el,
+							start: "top 60%",
+							end: "top 30%",
+							toggleActions: "play none none none",
+							scrub: 3,
+							markers: false,
+						}
+					}
+				);
+			});
+
+			// Side Scroll Animation
+			gsap.fromTo(".sideScroll",
+				{ x: 1200 },
+				{
+					x: 0,
+					duration: 1.5,
+					scrollTrigger: {
+						trigger: ".sideScroll",
+						start: "top 60%",
+						end: "top 30%",
 						toggleActions: "restart none none none",
 						scrub: true,
 						markers: false,
 					}
 				}
 			);
-		});
 
-		gsap.fromTo(".rotate",
-			{ opacity: 0, x: -500 },
-			{
-				opacity: 1,
-				duration: 1.5,
-				// rotate: 0,
-				x: 0,
-				scrollTrigger: {
-					trigger: ".rotate",
-					start: "top 80%",
-					end: "top 30%",
-					toggleActions: "restart none none none",
-					scrub: true,
-					markers: false,
+			// Zoom In Animation for multiple elements
+			gsap.utils.toArray(".zoomIn").forEach((el) => {
+				gsap.fromTo(el,
+					{ scale: 3 },
+					{
+						scale: 1,
+						duration: 1.5,
+						scrollTrigger: {
+							trigger: el,
+							start: "top 80%",
+							end: "top 40%",
+							toggleActions: "restart none none none",
+							scrub: true,
+							markers: false,
+						}
+					}
+				);
+			});
+
+			// Rotate Animation (from left)
+			gsap.fromTo(".rotate",
+				{ opacity: 0, x: -500 },
+				{
+					opacity: 1,
+					duration: 1.5,
+					x: 0,
+					scrollTrigger: {
+						trigger: ".rotate",
+						start: "top 80%",
+						end: "top 30%",
+						toggleActions: "restart none none none",
+						scrub: true,
+						markers: false,
+					}
 				}
-			}
-		);
+			);
 
-		gsap.fromTo(".rotaterev",
-			{ opacity: 0, x: 500 },
-			{
-				opacity: 1,
-				duration: 1.5,
-				x: 0,
-				scrollTrigger: {
-					trigger: ".rotate",
-					start: "top 80%",
-					end: "top 30%",
-					toggleActions: "restart none none none",
-					scrub: true,
-					markers: false,
+			// Reverse Rotate Animation (from right)
+			gsap.fromTo(".rotaterev",
+				{ opacity: 0, x: 500 },
+				{
+					opacity: 1,
+					duration: 1.5,
+					x: 0,
+					scrollTrigger: {
+						trigger: ".rotate",
+						start: "top 80%",
+						end: "top 30%",
+						toggleActions: "restart none none none",
+						scrub: true,
+						markers: false,
+					}
 				}
-			}
-		);
+			);
 
-		gsap.fromTo(".pin",
-			{ opacity: 0, y: 100 },
-			{
-				scale: 1,
-				duration: 1.5,
-				opacity: 1,
-				rotate: 0,
-				y: 0,
-				scrollTrigger: {
-					trigger: ".pin",
-					start: "top 100%",
-					end: "top 30%",
-					toggleActions: "restart none none none",
-					scrub: true,
-					markers: false,
-					// pin : true
+			// Pin Animation
+			gsap.fromTo(".pin",
+				{ opacity: 0, y: 100 },
+				{
+					scale: 1,
+					duration: 1.5,
+					opacity: 1,
+					y: 0,
+					scrollTrigger: {
+						trigger: ".pin",
+						start: "top 100%",
+						end: "top 30%",
+						toggleActions: "restart none none none",
+						scrub: true,
+						markers: false,
+					}
 				}
-			}
-		);
-
-		return () => {
-			ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-		};
-
-	}, [])
+			);
+		}, comp);
+		return () => ctx.revert();
+	}, []);
 
 	const cards = [
 		{
@@ -373,7 +353,7 @@ const Home = () => {
 
 	return (
 		<PageTransition>
-			<div className='overflow-x-hidden'>
+			<div className='overflow-x-hidden' ref={comp}> 
 				<Homebanner learnMoreFunction={handleLearnMoreClick} />
 				{/* Home */}
 

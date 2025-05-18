@@ -32,84 +32,89 @@ const Contact = () => {
     }, []);
 
     useEffect(() => {
-        gsap.fromTo(".rotate",
-            { opacity: 0, x: -500 },
-            {
-                opacity: 1,
-                duration: 1.5,
-                // rotate: 0,
-                x: 0,
-                scrollTrigger: {
-                    trigger: ".rotate",
-                    start: "top 80%",
-                    end: "top 30%",
-                    toggleActions: "restart none none none",
-                    scrub: true,
-                    markers: false,
+        const ctx = gsap.context(() => {
+            // Rotate from left
+            gsap.fromTo(
+                ".rotate",
+                { opacity: 0, x: -500 },
+                {
+                    opacity: 1,
+                    x: 0,
+                    duration: 1.5,
+                    scrollTrigger: {
+                        trigger: ".rotate",
+                        start: "top 80%",
+                        end: "top 30%",
+                        toggleActions: "restart none none none",
+                        scrub: true,
+                        markers: false
+                    }
                 }
-            }
-        );
+            );
 
-        gsap.fromTo(".rotaterev",
-            { opacity: 0, x: 500 },
-            {
-                opacity: 1,
-                duration: 1.5,
-                x: 0,
-                scrollTrigger: {
-                    trigger: ".rotate",
-                    start: "top 80%",
-                    end: "top 30%",
-                    toggleActions: "restart none none none",
-                    scrub: true,
-                    markers: false,
+            // Rotate from right
+            gsap.fromTo(
+                ".rotaterev",
+                { opacity: 0, x: 500 },
+                {
+                    opacity: 1,
+                    x: 0,
+                    duration: 1.5,
+                    scrollTrigger: {
+                        trigger: ".rotaterev",
+                        start: "top 80%",
+                        end: "top 30%",
+                        toggleActions: "restart none none none",
+                        scrub: true,
+                        markers: false
+                    }
                 }
-            }
-        );
+            );
 
-        gsap.fromTo(".pin",
-            { opacity: 0, y: 100 },
-            {
-                scale: 1,
-                duration: 1.5,
-                opacity: 1,
-                rotate: 0,
-                y: 0,
-                scrollTrigger: {
-                    trigger: ".pin",
-                    start: "top 100%",
-                    end: "top 30%",
-                    toggleActions: "restart none none none",
-                    scrub: true,
-                    markers: false,
-                    // pin : true
+            // Pin-like effect from bottom
+            gsap.fromTo(
+                ".pin",
+                { opacity: 0, y: 100 },
+                {
+                    opacity: 1,
+                    y: 0,
+                    scale: 1,
+                    rotate: 0,
+                    duration: 1.5,
+                    scrollTrigger: {
+                        trigger: ".pin",
+                        start: "top 100%",
+                        end: "top 30%",
+                        toggleActions: "restart none none none",
+                        scrub: true,
+                        markers: false
+                        // pin: true // Uncomment if pinning is needed
+                    }
                 }
-            }
-        );
+            );
 
-        const poppingUp = gsap.fromTo(
-			".fadeIn",
-			{
-				// scale: 0.5,
-				opacity: 0,
-				y: 50
-			},
-			{
-				opacity: 1,
-				y: 0,
-				// scale: 1,
-				duration: 1,
-				scrollTrigger: {
-					trigger: ".fadeIn",
-					start: "top 85%",
-					end: "top 40%",
-					scrub: true,
-					toggleActions: "play none none none",
-					markers: false
-				}
-			}
-		)
-    }, [])
+            // Fade in from below
+            gsap.fromTo(
+                ".fadeIn",
+                { opacity: 0, y: 50 },
+                {
+                    opacity: 1,
+                    y: 0,
+                    duration: 1,
+                    scrollTrigger: {
+                        trigger: ".fadeIn",
+                        start: "top 85%",
+                        end: "top 40%",
+                        scrub: true,
+                        toggleActions: "play none none none",
+                        markers: false
+                    }
+                }
+            );
+        });
+        return () => ctx.revert();
+    }, []);
+
 
     const {
         register,

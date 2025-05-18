@@ -21,6 +21,8 @@
     /* break points */
     --breakpoint-xs: 330px;
     --breakpoint-s: 360px;
+    --brekpoint-mm : 380px; 
+    --brekpoint-ms : 400px; 
     --breakpoint-sm: 640px;
     --breakpoint-md: 768px;
     --breakpoint-lg: 1024px;
