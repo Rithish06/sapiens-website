@@ -16,92 +16,10 @@ import PageTransition from "../../components/PageTransition";
 const DrDarshan = () => {
 
     const comp = useRef();
-    // useEffect(() => {
-    //     if (typeof window !== "undefined") {
-    //         const ctx = gsap.context(() => {
-    //             ScrollTrigger.config({
-    //                 ignoreMobileResize: true,
-    //                 limitCallbacks: true
-    //             });
-
-    //             gsap.fromTo(".reveal-container",
-    //                 { clipPath: "inset(0% 100% 10% 0%)", opacity: 0 },
-    //                 {
-    //                     clipPath: "inset(0% 0% 0% 0%)",
-    //                     opacity: 1,
-    //                     ease: "power2.out",
-    //                     duration: 3,
-    //                     scrollTrigger: {
-    //                         trigger: ".reveal-container",
-    //                         start: "top 80%",
-    //                         end: "top 20%",
-    //                         scrub: true,
-    //                         markers: false,
-    //                         onEnter: () => ScrollTrigger.refresh()
-    //                     }
-    //                 }
-    //             );
-
-    //             gsap.fromTo(".fadex",
-    //                 { scale: 0.5, opacity: 0 },
-    //                 {
-    //                     opacity: 1,
-    //                     scale: 1,
-    //                     duration: 1.5,
-    //                     scrollTrigger: {
-    //                         trigger: ".fadex",
-    //                         start: "top 85%",
-    //                         end: "top 40%",
-    //                         scrub: true,
-    //                         toggleActions: "play none none none", // Fixed
-    //                         markers: false
-    //                     }
-    //                 }
-    //             );
-
-    //             gsap.utils.toArray(".bounce").forEach((el) => {
-    //                 gsap.fromTo(el,
-    //                     { y: 50, opacity: 0 },
-    //                     {
-    //                         y: 0,
-    //                         opacity: 1,
-    //                         duration: 3,
-    //                         ease: "bounce.out",
-    //                         scrollTrigger: {
-    //                             trigger: el,
-    //                             start: "top 60%",
-    //                             end: "top 30%",
-    //                             toggleActions: "play none none none",
-    //                             markers: false
-    //                         }
-    //                     }
-    //                 );
-    //             });
-
-    //             gsap.fromTo(".sideScroll",
-    //                 { y: 50, scale: 0.5 },
-    //                 {
-    //                     y: 0,
-    //                     scale: 1,
-    //                     duration: 1.5,
-    //                     scrollTrigger: {
-    //                         trigger: ".sideScroll",
-    //                         start: "top 60%",
-    //                         end: "top 30%",
-    //                         toggleActions: "restart none none none",
-    //                         scrub: true,
-    //                         markers: false
-    //                     }
-    //                 }
-    //             );
-
-    //             //   setTimeout(() => ScrollTrigger.refresh(), 500);
-
-    //         }, comp);
-
-    //         return () => ctx.revert();
-    //     }
-    // }, []);
+    const revealContainer = useRef();
+    const fadexElement = useRef();
+    const bounceElements = useRef([]);
+    const sideScrollElement = useRef();
 
     useGSAP(() => {
         // Configure ScrollTrigger globally
@@ -111,84 +29,97 @@ const DrDarshan = () => {
         });
 
         // Reveal animation
-        gsap.fromTo(
-            ".reveal-container",
-            { clipPath: "inset(0% 100% 10% 0%)", opacity: 0 },
-            {
-                clipPath: "inset(0% 0% 0% 0%)",
-                opacity: 1,
-                ease: "power2.out",
-                duration: 3,
-                scrollTrigger: {
-                    trigger: ".reveal-container",
-                    start: "top 80%",
-                    end: "top 20%",
-                    scrub: true,
-                    onEnter: () => ScrollTrigger.refresh(),
-                    markers: false
-                }
-            }
-        );
-
-        // Fade and scale animation
-        gsap.fromTo(
-            ".fadex",
-            { scale: 0.5, opacity: 0 },
-            {
-                scale: 1,
-                opacity: 1,
-                duration: 1.5,
-                scrollTrigger: {
-                    trigger: ".fadex",
-                    start: "top 85%",
-                    end: "top 40%",
-                    scrub: true,
-                    toggleActions: "play none none none",
-                    markers: false
-                }
-            }
-        );
-
-        // Bounce animation
-        gsap.utils.toArray(".bounce").forEach((el) => {
+        if (revealContainer.current) {
             gsap.fromTo(
-                el,
-                { y: 50, opacity: 0 },
+                revealContainer.current,
+                { clipPath: "inset(0% 100% 10% 0%)", opacity: 0 },
                 {
-                    y: 0,
+                    clipPath: "inset(0% 0% 0% 0%)",
                     opacity: 1,
+                    ease: "power2.out",
                     duration: 3,
-                    ease: "bounce.out",
                     scrollTrigger: {
-                        trigger: el,
-                        start: "top 60%",
-                        end: "top 30%",
-                        toggleActions: "play none none none",
-                        markers: false
+                        trigger: revealContainer.current,
+                        start: "top 80%",
+                        end: "top 20%",
+                        scrub: true,
+                        onEnter: () => ScrollTrigger.refresh(),
+                        markers: true // Enable temporarily for debugging
                     }
                 }
             );
-        });
+        }
+
+        // Fade and scale animation
+        if (fadexElement.current) {
+            gsap.fromTo(
+                fadexElement.current,
+                { scale: 0.5, opacity: 0 },
+                {
+                    scale: 1,
+                    opacity: 1,
+                    duration: 1.5,
+                    scrollTrigger: {
+                        trigger: fadexElement.current,
+                        start: "top 85%",
+                        end: "top 40%",
+                        scrub: true,
+                        toggleActions: "play none none none",
+                        markers: true // Enable temporarily for debugging
+                    }
+                }
+            );
+        }
+
+        // Bounce animation
+        if (bounceElements.current.length) {
+            bounceElements.current.forEach((el) => {
+                if (!el) return;
+
+                gsap.fromTo(
+                    el,
+                    { y: 50, opacity: 0 },
+                    {
+                        y: 0,
+                        opacity: 1,
+                        duration: 3,
+                        ease: "bounce.out",
+                        scrollTrigger: {
+                            trigger: el,
+                            start: "top 60%",
+                            end: "top 30%",
+                            toggleActions: "play none none none",
+                            markers: true // Enable temporarily for debugging
+                        }
+                    }
+                );
+            });
+        }
 
         // Side scroll animation
-        gsap.fromTo(
-            ".sideScroll",
-            { y: 50, scale: 0.5 },
-            {
-                y: 0,
-                scale: 1,
-                duration: 1.5,
-                scrollTrigger: {
-                    trigger: ".sideScroll",
-                    start: "top 60%",
-                    end: "top 30%",
-                    toggleActions: "restart none none none",
-                    scrub: true,
-                    markers: false
+        if (sideScrollElement.current) {
+            gsap.fromTo(
+                sideScrollElement.current,
+                { y: 50, scale: 0.5 },
+                {
+                    y: 0,
+                    scale: 1,
+                    duration: 1.5,
+                    scrollTrigger: {
+                        trigger: sideScrollElement.current,
+                        start: "top 60%",
+                        end: "top 30%",
+                        toggleActions: "restart none none none",
+                        scrub: true,
+                        markers: true // Enable temporarily for debugging
+                    }
                 }
-            }
-        );
-    });
+            );
+        }
+
+        // Refresh ScrollTrigger after all animations are set up
+        setTimeout(() => ScrollTrigger.refresh(), 500);
+    }, { scope: comp });
 
     useLayoutEffect(() => {
         gsap.fromTo(
@@ -698,7 +629,7 @@ const DrDarshan = () => {
             </div>
 
             {/* container 2 */}
-            <div className="flex flex-col mt-10 lg:flex-row lg:gap-0 reveal-container">
+            <div className="flex flex-col mt-10 lg:flex-row lg:gap-0 reveal-container" ref={revealContainer}>
                 <div className="w-full p-5 md:p-10 mxl:pl-20 lg:50%">
                     <div className="font-heading text-[28px] lg:text-[38px] font-[700] bg-orange-gradient">Hand Surgeon & Upper Elbow Microsurgery</div>
                     <div className='font-para text-[12px] lg:text-[16px] font-[500] mt-4'>Dr. Darshan Kumar A. Jain is a Hand & Microsurgeon and, Upper Limb Surgeon with expertise in managing various complex problems of hand. He has more than fifteen years of experience in treating the complex problems of Hand, wrist, elbow, shoulder & nerves.</div>
@@ -710,7 +641,7 @@ const DrDarshan = () => {
             </div>
 
             {/* container 3 */}
-            <div className="lg:gap-0 p-5 md:p-10 mxl:p-20 fadex">
+            <div className="lg:gap-0 p-5 md:p-10 mxl:p-20 fadex" ref={fadexElement}>
 
                 <div className="font-heading text-[28px] text-center lg:text-[38px] font-[700] bg-orange-gradient">Specialty : Hand Surgery & Microsurgery</div>
 
@@ -733,20 +664,20 @@ const DrDarshan = () => {
 
             {/* container 4 */}
 
-            <div className='relative lg:gap-0 px-5 md:p-10 mxl:px-20 mxl:py-10 bounce'>
+            <div className='relative lg:gap-0 px-5 md:p-10 mxl:px-20 mxl:py-10 bounce' ref={el => bounceElements.current[1] = el}>
                 {/* Section Title */}
-                <div className="font-heading text-[28px] text-center lg:text-[38px] font-[700] bg-orange-gradient">
+                <div className="font-heading text-[28px] text-center lg:text-[38px] font-[700] bg-orange-gradient" ref={el => bounceElements.current[2] = el}>
                     Services provided
                 </div>
 
                 {/* Content Card */}
                 <div className='relative bg-[#BDC4FF] p-5 md:p-10 mt-10 rounded-2xl overflow-hidden'>
-                    <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient bounce">
+                    <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient bounce" ref={el => bounceElements.current[4] = el}>
                         Upper limb Surgery : Hand & Wrist
                     </div>
 
                     {/* Grid List */}
-                    <div className="grid grid-cols-1 gap-0 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4 mt-8 z-10 relative bounce">
+                    <div className="grid grid-cols-1 gap-0 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4 mt-8 z-10 relative bounce" ref={el => bounceElements.current[5] = el}>
                         <div>
                             {
                                 upperLimbSurgery.map((surgery, index) => (
@@ -791,10 +722,10 @@ const DrDarshan = () => {
 
             <div className='grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4 z-10 relative p-5 md:px-10 mxl:px-20'>
                 <div className='bg-[#FEF0C3] p-5 md:p-8 rounded-2xl flex flex-col gap-4'>
-                    <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient bounce">
+                    <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient bounce" ref={el => bounceElements.current[6] = el}>
                         Elbow
                     </div>
-                    <div className='bounce'>
+                    <div className='bounce' ref={el => bounceElements.current[7] = el}>
                         {
                             elbow.map((surgery, index) => (
                                 <div className="flex items-center gap-3 mt-5" key={index}>
@@ -805,11 +736,11 @@ const DrDarshan = () => {
                         }
                     </div>
                 </div>
-                <div className='bg-[#FEE6DC] p-5 md:p-8 rounded-2xl flex flex-col gap-4'>
-                    <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient bounce">
+                <div className='bg-[#FEE6DC] p-5 md:p-8 rounded-2xl flex flex-col gap-4'  ref={el => bounceElements.current[8] = el}>
+                    <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient bounce"  ref={el => bounceElements.current[9] = el}>
                         Shoulder
                     </div>
-                    <div className='bounce'>
+                    <div className='bounce'  ref={el => bounceElements.current[10] = el}>
                         {
                             Shoulder.map((surgery, index) => (
                                 <div className="flex items-center gap-3 mt-5" key={index}>
@@ -820,11 +751,11 @@ const DrDarshan = () => {
                         }
                     </div>
                 </div>
-                <div className='bg-[#DFF7EA] p-5 md:p-8 rounded-2xl flex flex-col gap-4'>
-                    <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient bounce">
+                <div className='bg-[#DFF7EA] p-5 md:p-8 rounded-2xl flex flex-col gap-4'  ref={el => bounceElements.current[11] = el}>
+                    <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient bounce"  ref={el => bounceElements.current[12] = el}>
                         Congenital
                     </div>
-                    <div className='bounce'>
+                    <div className='bounce'  ref={el => bounceElements.current[13] = el}>
                         {
                             congenital.map((surgery, index) => (
                                 <div className="flex items-center gap-3 mt-5" key={index}>
@@ -839,12 +770,12 @@ const DrDarshan = () => {
 
             {/* container 6 */}
 
-            <div className='p-5 md:px-10 mxl:px-20 bounce'>
+            <div className='p-5 md:px-10 mxl:px-20 bounce'  ref={el => bounceElements.current[14] = el}>
                 <div className='bg-[#D3C0FF] p-5 md:p-10 rounded-2xl'>
-                    <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient bounce">
+                    <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient bounce"  ref={el => bounceElements.current[15] = el}>
                         Peripheral nerve surgery
                     </div>
-                    <div className='grid grid-cols-1 gap-0 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4 mt-8 z-10 relative bounce'>
+                    <div className='grid grid-cols-1 gap-0 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4 mt-8 z-10 relative bounce'  ref={el => bounceElements.current[16] = el}>
                         {
                             nerve.map((surgery, index) => (
                                 <div className="flex items-center gap-3 mt-5" key={index}>
@@ -859,7 +790,7 @@ const DrDarshan = () => {
 
             {/* container 7 */}
 
-            <div className='mt-5 p-5 md:px-10 mxl:px-20 flex flex-col items-center bounce'>
+            <div className='mt-5 p-5 md:px-10 mxl:px-20 flex flex-col items-center bounce'  ref={el => bounceElements.current[17] = el}>
                 <div className="font-heading text-[28px] text-center lg:text-[38px] font-[700] bg-orange-gradient mb-5 bounce">
                     Reconstructive Surgery
                 </div>
@@ -867,7 +798,7 @@ const DrDarshan = () => {
                     {/* <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient">
                         Peripheral nerve surgery
                     </div> */}
-                    <div className='grid grid-cols-1 gap-0 sm:grid-cols-2 lg:grid-cols-2 lg:gap-4 z-10 relative bounce'>
+                    <div className='grid grid-cols-1 gap-0 sm:grid-cols-2 lg:grid-cols-2 lg:gap-4 z-10 relative bounce'  ref={el => bounceElements.current[18] = el}>
                         {
                             reconstructive.map((surgery, index) => (
                                 <div className="flex items-center gap-3 mt-5" key={index}>
