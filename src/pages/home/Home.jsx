@@ -229,6 +229,7 @@ const Home = () => {
 				}
 			);
 		}
+		setTimeout(() => ScrollTrigger.refresh(), 500);
 	}, { scope: containerRef });
 
 	// Helper functions to manage ref arrays

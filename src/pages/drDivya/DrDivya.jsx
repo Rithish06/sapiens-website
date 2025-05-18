@@ -115,6 +115,7 @@ const DrDivya = () => {
                 );
             });
         }
+        setTimeout(() => ScrollTrigger.refresh(), 500);
     }, { scope: containerRef });
 
     // Helper function to add bounce refs

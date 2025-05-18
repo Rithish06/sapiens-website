@@ -125,6 +125,7 @@ const Contact = () => {
                 }
             );
         }
+        setTimeout(() => ScrollTrigger.refresh(), 500);
     }, { scope: containerRef });
 
 
