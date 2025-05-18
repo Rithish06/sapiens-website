@@ -399,7 +399,7 @@ const Home = () => {
 				{/* Home */}
 
 				<div className="px-[5%] pt-[3%] lg:px-[10%] lg:pt-5%">
-					<div className="flex flex-col gap-10 items-center justify-center my-5 md:flex-row pin mt-20" ref = {pinRef}>
+					<div className="flex flex-col gap-10 items-center justify-center my-5 md:flex-row pin mt-20" ref={pinRef}>
 						<img src={assets.sapiensClinicImage} className='w-full h-auto md:w-[50%]' alt="" />
 						<img src={assets.homeContainer2} className='w-full h-auto md:w-[50%]' alt="" />
 					</div>
@@ -425,7 +425,7 @@ const Home = () => {
 						<div className="font-para text-[12px] md:text-[16px] color-black mt-5 text-center">If you are experiencing hand pain, wrist swelling, finger cramps, or thumb pain, our clinic provides affordable hand surgery in Bangalore with a focus on precision and long-term relief. We also specialize in limb reconstruction surgery, fracture repair, and nerve injury treatments, making us a leading limb surgery clinic in Bangalore.</div>
 					</div>
 
-					<div className="mt-10 zoomIn" ref = {(el) => addZoomInRef(el, 1)}>
+					<div className="mt-10 zoomIn" ref={(el) => addZoomInRef(el, 1)}>
 						<Flip cards={cards} />
 					</div>
 
@@ -436,7 +436,7 @@ const Home = () => {
 						<div className="font-para text-[12px] md:text-[16px] color-black mt-5 text-center">We specialize in ophthalmology treatments for conditions like blurry vision, eye allergies and corneal disorders. Our eye specialists in Bangalore use cutting-edge techniques to deliver high-precision cataract surgery and retina treatments, ensuring improved vision and long-term eye health.</div>
 					</div>
 
-					<div className="mt-10 zoomIn" ref = {(el) => addZoomInRef(el, 2)}>
+					<div className="mt-10 zoomIn" ref={(el) => addZoomInRef(el, 2)}>
 						<Flip cards={divyaCards} />
 					</div>
 
