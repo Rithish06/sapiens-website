@@ -78,7 +78,7 @@ const Home = () => {
 						start: "top 85%",
 						end: "top 40%",
 						scrub: true,
-						toggleActions: "play none none none",
+						// toggleActions: "play none none none",
 						markers: false
 					}
 				}
@@ -99,7 +99,7 @@ const Home = () => {
 						start: "top 85%",
 						end: "top 40%",
 						scrub: true,
-						toggleActions: "play none none none",
+						// toggleActions: "play none none none",
 						markers: false
 					}
 				}
@@ -121,7 +121,7 @@ const Home = () => {
 						trigger: el,
 						start: "top 60%",
 						end: "top 30%",
-						toggleActions: "play none none none",
+						// toggleActions: "play none none none",
 						scrub: 3,
 						markers: false,
 					}
@@ -140,7 +140,7 @@ const Home = () => {
 						trigger: sideScrollRef.current,
 						start: "top 60%",
 						end: "top 30%",
-						toggleActions: "restart none none none",
+						// toggleActions: "restart none none none",
 						scrub: true,
 						markers: false,
 					}
@@ -161,7 +161,7 @@ const Home = () => {
 						trigger: el,
 						start: "top 80%",
 						end: "top 40%",
-						toggleActions: "restart none none none",
+						// toggleActions: "restart none none none",
 						scrub: true,
 						markers: false,
 					}
@@ -181,7 +181,7 @@ const Home = () => {
 						trigger: rotateRef.current,
 						start: "top 80%",
 						end: "top 30%",
-						toggleActions: "restart none none none",
+						// toggleActions: "restart none none none",
 						scrub: true,
 						markers: false,
 					}
@@ -201,7 +201,7 @@ const Home = () => {
 						trigger: rotateRef.current, // NOTE: Keeping your original trigger
 						start: "top 80%",
 						end: "top 30%",
-						toggleActions: "restart none none none",
+						// toggleActions: "restart none none none",
 						scrub: true,
 						markers: false,
 					}
@@ -222,7 +222,7 @@ const Home = () => {
 						trigger: pinRef.current,
 						start: "top 100%",
 						end: "top 30%",
-						toggleActions: "restart none none none",
+						// toggleActions: "restart none none none",
 						scrub: true,
 						markers: false,
 					}

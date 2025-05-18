@@ -71,7 +71,7 @@ const DrDivya = () => {
                         start: "top 85%",
                         end: "top 40%",
                         scrub: true,
-                        toggleActions: "play none none none",
+                        // toggleActions: "play none none none",
                         markers: false,
                         onUpdate: (self) => {
                             if (self.progress > 0.1 && !self.animation.isActive()) {
@@ -100,7 +100,7 @@ const DrDivya = () => {
                             trigger: el,
                             start: "top 60%",
                             end: "top 30%",
-                            toggleActions: "play none none none",
+                            // toggleActions: "play none none none",
                             scrub: 3,
                             markers: false,
                             onEnter: () => {
