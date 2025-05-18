@@ -43,7 +43,7 @@ const Home = () => {
 		);
 	}, []);
 
-	useEffect(() => {
+	useLayoutEffect(() => {
 		const ctx = gsap.context(() => {
 			// Configure ScrollTrigger defaults
 			ScrollTrigger.config({

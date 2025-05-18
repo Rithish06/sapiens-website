@@ -15,7 +15,7 @@ const DrDivya = () => {
 
     const comp = useRef();
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         const ctx = gsap.context(() => {
             ScrollTrigger.config({
                 ignoreMobileResize: true,
