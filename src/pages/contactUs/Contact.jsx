@@ -7,6 +7,8 @@ import { useForm } from "react-hook-form";
 import { FaArrowRight } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 
+import { useGSAP } from '@gsap/react';
+
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
@@ -31,89 +33,87 @@ const Contact = () => {
         );
     }, []);
 
-    useEffect(() => {
-        const ctx = gsap.context(() => {
-            // Rotate from left
-            gsap.fromTo(
-                ".rotate",
-                { opacity: 0, x: -500 },
-                {
-                    opacity: 1,
-                    x: 0,
-                    duration: 1.5,
-                    scrollTrigger: {
-                        trigger: ".rotate",
-                        start: "top 80%",
-                        end: "top 30%",
-                        toggleActions: "restart none none none",
-                        scrub: true,
-                        markers: false
-                    }
-                }
-            );
+useGSAP(() => {
+    // Animate elements from left
+    gsap.fromTo(
+      ".rotate",
+      { opacity: 0, x: -500 },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 1.5,
+        scrollTrigger: {
+          trigger: ".rotate",
+          start: "top 80%",
+          end: "top 30%",
+          toggleActions: "restart none none none",
+          scrub: true,
+          markers: false,
+        },
+      }
+    );
 
-            // Rotate from right
-            gsap.fromTo(
-                ".rotaterev",
-                { opacity: 0, x: 500 },
-                {
-                    opacity: 1,
-                    x: 0,
-                    duration: 1.5,
-                    scrollTrigger: {
-                        trigger: ".rotaterev",
-                        start: "top 80%",
-                        end: "top 30%",
-                        toggleActions: "restart none none none",
-                        scrub: true,
-                        markers: false
-                    }
-                }
-            );
+    // Animate elements from right
+    gsap.fromTo(
+      ".rotaterev",
+      { opacity: 0, x: 500 },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 1.5,
+        scrollTrigger: {
+          trigger: ".rotaterev",
+          start: "top 80%",
+          end: "top 30%",
+          toggleActions: "restart none none none",
+          scrub: true,
+          markers: false,
+        },
+      }
+    );
 
-            // Pin-like effect from bottom
-            gsap.fromTo(
-                ".pin",
-                { opacity: 0, y: 100 },
-                {
-                    opacity: 1,
-                    y: 0,
-                    scale: 1,
-                    rotate: 0,
-                    duration: 1.5,
-                    scrollTrigger: {
-                        trigger: ".pin",
-                        start: "top 100%",
-                        end: "top 30%",
-                        toggleActions: "restart none none none",
-                        scrub: true,
-                        markers: false
-                        // pin: true // Uncomment if pinning is needed
-                    }
-                }
-            );
+    // Pin-style animation from bottom
+    gsap.fromTo(
+      ".pin",
+      { opacity: 0, y: 100 },
+      {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        rotate: 0,
+        duration: 1.5,
+        scrollTrigger: {
+          trigger: ".pin",
+          start: "top 100%",
+          end: "top 30%",
+          toggleActions: "restart none none none",
+          scrub: true,
+          markers: false,
+          // pin: true // Uncomment if pinning needed
+        },
+      }
+    );
 
-            // Fade in from below
-            gsap.fromTo(
-                ".fadeIn",
-                { opacity: 0, y: 50 },
-                {
-                    opacity: 1,
-                    y: 0,
-                    duration: 1,
-                    scrollTrigger: {
-                        trigger: ".fadeIn",
-                        start: "top 85%",
-                        end: "top 40%",
-                        scrub: true,
-                        toggleActions: "play none none none",
-                        markers: false
-                    }
-                }
-            );
-        });
-        return () => ctx.revert();
-    }, []);
+    // Simple fade-in from below
+    gsap.fromTo(
+      ".fadeIn",
+      { opacity: 0, y: 50 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        scrollTrigger: {
+          trigger: ".fadeIn",
+          start: "top 85%",
+          end: "top 40%",
+          scrub: true,
+          toggleActions: "play none none none",
+          markers: false,
+        },
+      }
+    );
+  });
+
 
 
     const {

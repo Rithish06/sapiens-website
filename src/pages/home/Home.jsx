@@ -8,6 +8,8 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
+import {useGSAP} from '@gsap/react'
+
 // import { scrollAnimateFromTo } from '../../components/gsap'
 import PageTransition from "../../components/PageTransition";
 
@@ -43,166 +45,163 @@ const Home = () => {
 		);
 	}, []);
 
-	useLayoutEffect(() => {
-		const ctx = gsap.context(() => {
-			// Configure ScrollTrigger defaults
-			ScrollTrigger.config({
-				ignoreMobileResize: true,
-				limitCallbacks: true
-			});
+	useGSAP(() => {
+		// ScrollTrigger configuration
+		ScrollTrigger.config({
+			ignoreMobileResize: true,
+			limitCallbacks: true
+		});
 
-			// Popping Up Animation
-			gsap.fromTo(".fadeIn",
-				{ scale: 0.5, opacity: 0, y: 50 },
+		// FadeIn
+		gsap.fromTo(".fadeIn",
+			{ scale: 0.5, opacity: 0, y: 50 },
+			{
+				opacity: 1,
+				y: 0,
+				scale: 1,
+				duration: 3,
+				scrollTrigger: {
+					trigger: ".fadeIn",
+					start: "top 85%",
+					end: "top 40%",
+					scrub: true,
+					toggleActions: "play none none none",
+					markers: false
+				}
+			}
+		);
+
+		// Fade from left
+		gsap.fromTo(".fadex",
+			{ scale: 0.5, opacity: 0, x: -500 },
+			{
+				opacity: 1,
+				x: 0,
+				scale: 1,
+				duration: 3,
+				scrollTrigger: {
+					trigger: ".fadex",
+					start: "top 85%",
+					end: "top 40%",
+					scrub: true,
+					toggleActions: "play none none none",
+					markers: false
+				}
+			}
+		);
+
+		// Bounce for multiple elements
+		gsap.utils.toArray(".bounce").forEach((el) => {
+			gsap.fromTo(el,
+				{ y: 50, opacity: 0 },
 				{
-					opacity: 1,
 					y: 0,
-					scale: 1,
-					duration: 3,
-					scrollTrigger: {
-						trigger: ".fadeIn",
-						start: "top 85%",
-						end: "top 40%",
-						scrub: true,
-						toggleActions: "play none none none",
-						markers: false
-					}
-				}
-			);
-
-			// Fade In from Left Animation
-			gsap.fromTo(".fadex",
-				{ scale: 0.5, opacity: 0, x: -500 },
-				{
 					opacity: 1,
-					x: 0,
-					scale: 1,
 					duration: 3,
+					ease: "bounce.out",
 					scrollTrigger: {
-						trigger: ".fadex",
-						start: "top 85%",
-						end: "top 40%",
-						scrub: true,
-						toggleActions: "play none none none",
-						markers: false
-					}
-				}
-			);
-
-			// Bounce Animation for multiple elements
-			gsap.utils.toArray(".bounce").forEach((el) => {
-				gsap.fromTo(el,
-					{ y: 50, opacity: 0 },
-					{
-						y: 0,
-						opacity: 1,
-						duration: 3,
-						ease: "bounce.out",
-						scrollTrigger: {
-							trigger: el,
-							start: "top 60%",
-							end: "top 30%",
-							toggleActions: "play none none none",
-							scrub: 3,
-							markers: false,
-						}
-					}
-				);
-			});
-
-			// Side Scroll Animation
-			gsap.fromTo(".sideScroll",
-				{ x: 1200 },
-				{
-					x: 0,
-					duration: 1.5,
-					scrollTrigger: {
-						trigger: ".sideScroll",
+						trigger: el,
 						start: "top 60%",
 						end: "top 30%",
-						toggleActions: "restart none none none",
-						scrub: true,
+						toggleActions: "play none none none",
+						scrub: 3,
 						markers: false,
 					}
 				}
 			);
+		});
 
-			// Zoom In Animation for multiple elements
-			gsap.utils.toArray(".zoomIn").forEach((el) => {
-				gsap.fromTo(el,
-					{ scale: 3 },
-					{
-						scale: 1,
-						duration: 1.5,
-						scrollTrigger: {
-							trigger: el,
-							start: "top 80%",
-							end: "top 40%",
-							toggleActions: "restart none none none",
-							scrub: true,
-							markers: false,
-						}
-					}
-				);
-			});
-
-			// Rotate Animation (from left)
-			gsap.fromTo(".rotate",
-				{ opacity: 0, x: -500 },
-				{
-					opacity: 1,
-					duration: 1.5,
-					x: 0,
-					scrollTrigger: {
-						trigger: ".rotate",
-						start: "top 80%",
-						end: "top 30%",
-						toggleActions: "restart none none none",
-						scrub: true,
-						markers: false,
-					}
+		// Side scroll
+		gsap.fromTo(".sideScroll",
+			{ x: 1200 },
+			{
+				x: 0,
+				duration: 1.5,
+				scrollTrigger: {
+					trigger: ".sideScroll",
+					start: "top 60%",
+					end: "top 30%",
+					toggleActions: "restart none none none",
+					scrub: true,
+					markers: false,
 				}
-			);
+			}
+		);
 
-			// Reverse Rotate Animation (from right)
-			gsap.fromTo(".rotaterev",
-				{ opacity: 0, x: 500 },
-				{
-					opacity: 1,
-					duration: 1.5,
-					x: 0,
-					scrollTrigger: {
-						trigger: ".rotate",
-						start: "top 80%",
-						end: "top 30%",
-						toggleActions: "restart none none none",
-						scrub: true,
-						markers: false,
-					}
-				}
-			);
-
-			// Pin Animation
-			gsap.fromTo(".pin",
-				{ opacity: 0, y: 100 },
+		// Zoom in for multiple elements
+		gsap.utils.toArray(".zoomIn").forEach((el) => {
+			gsap.fromTo(el,
+				{ scale: 3 },
 				{
 					scale: 1,
 					duration: 1.5,
-					opacity: 1,
-					y: 0,
 					scrollTrigger: {
-						trigger: ".pin",
-						start: "top 100%",
-						end: "top 30%",
+						trigger: el,
+						start: "top 80%",
+						end: "top 40%",
 						toggleActions: "restart none none none",
 						scrub: true,
 						markers: false,
 					}
 				}
 			);
-		}, comp);
-		return () => ctx.revert();
-	}, []);
+		});
+
+		// Rotate
+		gsap.fromTo(".rotate",
+			{ opacity: 0, x: -500 },
+			{
+				opacity: 1,
+				duration: 1.5,
+				x: 0,
+				scrollTrigger: {
+					trigger: ".rotate",
+					start: "top 80%",
+					end: "top 30%",
+					toggleActions: "restart none none none",
+					scrub: true,
+					markers: false,
+				}
+			}
+		);
+
+		// Reverse rotate
+		gsap.fromTo(".rotaterev",
+			{ opacity: 0, x: 500 },
+			{
+				opacity: 1,
+				duration: 1.5,
+				x: 0,
+				scrollTrigger: {
+					trigger: ".rotate", // NOTE: Might be a bug, consider using `.rotaterev` here
+					start: "top 80%",
+					end: "top 30%",
+					toggleActions: "restart none none none",
+					scrub: true,
+					markers: false,
+				}
+			}
+		);
+
+		// Pin animation
+		gsap.fromTo(".pin",
+			{ opacity: 0, y: 100 },
+			{
+				scale: 1,
+				duration: 1.5,
+				opacity: 1,
+				y: 0,
+				scrollTrigger: {
+					trigger: ".pin",
+					start: "top 100%",
+					end: "top 30%",
+					toggleActions: "restart none none none",
+					scrub: true,
+					markers: false,
+				}
+			}
+		);
+	}, []); // <- empty dependency array
 
 	const cards = [
 		{

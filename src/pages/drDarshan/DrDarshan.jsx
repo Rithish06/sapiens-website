@@ -9,6 +9,8 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
+import { useGSAP } from '@gsap/react';
+
 import PageTransition from "../../components/PageTransition";
 
 const DrDarshan = () => {
@@ -101,97 +103,92 @@ const DrDarshan = () => {
     //     }
     // }, []);
 
-    useLayoutEffect(() => {
-        const ctx = gsap.context(() => {
-            // Optional: Configure ScrollTrigger globally
-            ScrollTrigger.config({
-                ignoreMobileResize: true,
-                limitCallbacks: true
-            });
+    useGSAP(() => {
+        // Configure ScrollTrigger globally
+        ScrollTrigger.config({
+            ignoreMobileResize: true,
+            limitCallbacks: true
+        });
 
-            // Reveal animation
-            gsap.fromTo(
-                ".reveal-container",
-                { clipPath: "inset(0% 100% 10% 0%)", opacity: 0 },
-                {
-                    clipPath: "inset(0% 0% 0% 0%)",
-                    opacity: 1,
-                    ease: "power2.out",
-                    duration: 3,
-                    scrollTrigger: {
-                        trigger: ".reveal-container",
-                        start: "top 80%",
-                        end: "top 20%",
-                        scrub: true,
-                        onEnter: () => ScrollTrigger.refresh(),
-                        markers: false
-                    }
+        // Reveal animation
+        gsap.fromTo(
+            ".reveal-container",
+            { clipPath: "inset(0% 100% 10% 0%)", opacity: 0 },
+            {
+                clipPath: "inset(0% 0% 0% 0%)",
+                opacity: 1,
+                ease: "power2.out",
+                duration: 3,
+                scrollTrigger: {
+                    trigger: ".reveal-container",
+                    start: "top 80%",
+                    end: "top 20%",
+                    scrub: true,
+                    onEnter: () => ScrollTrigger.refresh(),
+                    markers: false
                 }
-            );
+            }
+        );
 
-            // Fade and scale animation
-            gsap.fromTo(
-                ".fadex",
-                { scale: 0.5, opacity: 0 },
-                {
-                    scale: 1,
-                    opacity: 1,
-                    duration: 1.5,
-                    scrollTrigger: {
-                        trigger: ".fadex",
-                        start: "top 85%",
-                        end: "top 40%",
-                        scrub: true,
-                        toggleActions: "play none none none",
-                        markers: false
-                    }
+        // Fade and scale animation
+        gsap.fromTo(
+            ".fadex",
+            { scale: 0.5, opacity: 0 },
+            {
+                scale: 1,
+                opacity: 1,
+                duration: 1.5,
+                scrollTrigger: {
+                    trigger: ".fadex",
+                    start: "top 85%",
+                    end: "top 40%",
+                    scrub: true,
+                    toggleActions: "play none none none",
+                    markers: false
                 }
-            );
+            }
+        );
 
-            // Bounce elements in
-            gsap.utils.toArray(".bounce").forEach((el) => {
-                gsap.fromTo(
-                    el,
-                    { y: 50, opacity: 0 },
-                    {
-                        y: 0,
-                        opacity: 1,
-                        duration: 3,
-                        ease: "bounce.out",
-                        scrollTrigger: {
-                            trigger: el,
-                            start: "top 60%",
-                            end: "top 30%",
-                            toggleActions: "play none none none",
-                            markers: false
-                        }
-                    }
-                );
-            });
-
-            // Side scroll animation
+        // Bounce animation
+        gsap.utils.toArray(".bounce").forEach((el) => {
             gsap.fromTo(
-                ".sideScroll",
-                { y: 50, scale: 0.5 },
+                el,
+                { y: 50, opacity: 0 },
                 {
                     y: 0,
-                    scale: 1,
-                    duration: 1.5,
+                    opacity: 1,
+                    duration: 3,
+                    ease: "bounce.out",
                     scrollTrigger: {
-                        trigger: ".sideScroll",
+                        trigger: el,
                         start: "top 60%",
                         end: "top 30%",
-                        toggleActions: "restart none none none",
-                        scrub: true,
+                        toggleActions: "play none none none",
                         markers: false
                     }
                 }
             );
         });
 
-        // Cleanup GSAP context on unmount
-        return () => ctx.revert();
-    }, []);
+        // Side scroll animation
+        gsap.fromTo(
+            ".sideScroll",
+            { y: 50, scale: 0.5 },
+            {
+                y: 0,
+                scale: 1,
+                duration: 1.5,
+                scrollTrigger: {
+                    trigger: ".sideScroll",
+                    start: "top 60%",
+                    end: "top 30%",
+                    toggleActions: "restart none none none",
+                    scrub: true,
+                    markers: false
+                }
+            }
+        );
+    });
 
     useLayoutEffect(() => {
         gsap.fromTo(
