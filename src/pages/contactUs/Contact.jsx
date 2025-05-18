@@ -156,7 +156,7 @@ const Contact = () => {
                                 <div className='text-[14px] font-[600] font-para mt-3 w-[95%] mxl:w-[70%] sxl:text-[16px]'>Thank you for visiting our website. We are here assist you with any inquiries you may have.</div>
                             </div>
 
-                            <div className='flex flex-col justify-center py-3 px-5 bg-white rounded-2xl mt-5 mx-auto md:mx-4 max-w-[400px] sxl:flex-row sxl:max-w-[80%] sxl:py-2 mxl:ml-30'>
+                            <div className='flex flex-col mx-3 justify-center py-3 px-5 bg-white rounded-2xl mt-5 lg:mx-auto md:mx-4 max-w-[400px] sxl:flex-row sxl:max-w-[80%] sxl:py-2 mxl:ml-30'>
                                 <div className="flex gap-2 items-center sxl:w-[44%]">
                                     <div className="min-w-[50px] w-[50px] h-[50px] min-h-[50px] shrink-0 rounded-full bg-[#B22726] flex align-center justify-center items-center">
                                         <FaRegClock className='text-white text-[25px]' />
