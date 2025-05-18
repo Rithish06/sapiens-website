@@ -15,96 +15,117 @@ import PageTransition from "../../components/PageTransition";
 
 const DrDivya = () => {
 
-    const comp = useRef();
+    // const comp = useRef();
 
-useGSAP(() => {
-    // Global ScrollTrigger config
-    ScrollTrigger.config({
-      ignoreMobileResize: true,
-      limitCallbacks: true
-    });
+    const containerRef = useRef();
+    const revealRef = useRef();
+    const fadexRef = useRef();
+    const bounceRefs = useRef([]);
 
-    // Reveal animation
-    gsap.fromTo(
-      ".reveal-container",
-      {
-        clipPath: "inset(0% 100% 10% 0%)",
-        opacity: 0,
-      },
-      {
-        clipPath: "inset(0% 0% 0% 0%)",
-        opacity: 1,
-        ease: "power2.out",
-        duration: 3,
-        scrollTrigger: {
-          trigger: ".reveal-container",
-          start: "top 80%",
-          end: "top 20%",
-          scrub: true,
-          markers: false,
-          onEnter: () => ScrollTrigger.refresh()
+    useGSAP(() => {
+        // Global ScrollTrigger config
+        ScrollTrigger.config({
+            ignoreMobileResize: true,
+            limitCallbacks: true
+        });
+
+        // Reveal animation
+        if (revealRef.current) {
+            gsap.fromTo(
+                revealRef.current,
+                {
+                    clipPath: "inset(0% 100% 10% 0%)",
+                    opacity: 0,
+                },
+                {
+                    clipPath: "inset(0% 0% 0% 0%)",
+                    opacity: 1,
+                    ease: "power2.out",
+                    duration: 3,
+                    scrollTrigger: {
+                        trigger: revealRef.current,
+                        start: "top 80%",
+                        end: "top 20%",
+                        scrub: true,
+                        markers: false,
+                        onEnter: () => ScrollTrigger.refresh()
+                    }
+                }
+            );
         }
-      }
-    );
 
-    // Fade + Scale animation with onUpdate logic
-    gsap.fromTo(
-      ".fadex",
-      {
-        scale: 0.5,
-        opacity: 0,
-      },
-      {
-        opacity: 1,
-        scale: 1,
-        duration: 1.5,
-        scrollTrigger: {
-          trigger: ".fadex",
-          start: "top 85%",
-          end: "top 40%",
-          scrub: true,
-          toggleActions: "play none none none",
-          markers: false,
-          onUpdate: (self) => {
-            if (self.progress > 0.1 && !self.animation.isActive()) {
-              self.animation.play();
-            }
-          }
+        // Fade + Scale animation with onUpdate logic
+        if (fadexRef.current) {
+            gsap.fromTo(
+                fadexRef.current,
+                {
+                    scale: 0.5,
+                    opacity: 0,
+                },
+                {
+                    opacity: 1,
+                    scale: 1,
+                    duration: 1.5,
+                    scrollTrigger: {
+                        trigger: fadexRef.current,
+                        start: "top 85%",
+                        end: "top 40%",
+                        scrub: true,
+                        toggleActions: "play none none none",
+                        markers: false,
+                        onUpdate: (self) => {
+                            if (self.progress > 0.1 && !self.animation.isActive()) {
+                                self.animation.play();
+                            }
+                        }
+                    }
+                }
+            );
         }
-      }
-    );
 
-    // Bounce effect on each .bounce element
-    gsap.utils.toArray(".bounce").forEach((el) => {
-      gsap.fromTo(
-        el,
-        { y: 50, opacity: 0 },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 3,
-          ease: "bounce.out",
-          scrollTrigger: {
-            trigger: el,
-            start: "top 60%",
-            end: "top 30%",
-            toggleActions: "play none none none",
-            scrub: 3,
-            markers: false,
-            onEnter: () => {
-              gsap.to(el, {
-                y: 0,
-                opacity: 1,
-                overwrite: "auto"
-              });
-            }
-          }
+        // Bounce effect on each bounce element
+        if (bounceRefs.current.length) {
+            bounceRefs.current.forEach((el) => {
+                if (!el) return;
+
+                gsap.fromTo(
+                    el,
+                    { y: 50, opacity: 0 },
+                    {
+                        y: 0,
+                        opacity: 1,
+                        duration: 3,
+                        ease: "bounce.out",
+                        scrollTrigger: {
+                            trigger: el,
+                            start: "top 60%",
+                            end: "top 30%",
+                            toggleActions: "play none none none",
+                            scrub: 3,
+                            markers: false,
+                            onEnter: () => {
+                                gsap.to(el, {
+                                    y: 0,
+                                    opacity: 1,
+                                    overwrite: "auto"
+                                });
+                            }
+                        }
+                    }
+                );
+            });
         }
-      );
-    });
-  });
+    }, { scope: containerRef });
 
-    useLayoutEffect(() => { 
+    // Helper function to add bounce refs
+    const addBounceRef = (el, index) => {
+        if (el && !bounceRefs.current.includes(el)) {
+            bounceRefs.current[index] = el;
+        }
+    };
+
+
+    useLayoutEffect(() => {
         gsap.fromTo(
             ".anime",
             {
@@ -408,7 +429,7 @@ useGSAP(() => {
     ]
     return (
         <PageTransition>
-            <div ref={comp}>
+            <div ref={containerRef}>
                 {/* container 1 */}
 
                 <div className='relative'>
@@ -433,7 +454,7 @@ useGSAP(() => {
                 </div>
 
                 {/* container 2 */}
-                <div className="flex flex-col mt-10 lg:flex-row lg:gap-0 reveal-container">
+                <div className="flex flex-col mt-10 lg:flex-row lg:gap-0 reveal-container" ref={revealRef}>
                     <div className="w-full p-5 md:p-10 mxl:pl-20 lg:50%">
                         <div className="font-heading text-[28px] lg:text-[38px] font-[700] bg-orange-gradient">About Doctor :</div>
                         <div className='font-para text-[12px] lg:text-[16px] font-[500] mt-4'>Dr. Divya Sundaresh has over 10 years of ophthalmology expertise. She did a Senior Housemanship in Ophthalmology at Regional Institute of Ophthalmology, Egmore, Chennai under Prof. Velayutham after graduating from Ramaiah Medical College. She earned her post-graduation ophthalmology degree from Aravind Eye Hospital in Madurai.</div>
@@ -448,7 +469,7 @@ useGSAP(() => {
                 </div>
 
                 {/* container 3 */}
-                <div className="lg:gap-0 p-5 md:p-10 mxl:p-20 fadex">
+                <div className="lg:gap-0 p-5 md:p-10 mxl:p-20 fadex" ref={fadexRef}>
 
                     <div className="font-heading text-[28px] text-center lg:text-[38px] font-[700] bg-orange-gradient">Specialised Expertise in Orbit & Oculoplasty</div>
 
@@ -474,13 +495,13 @@ useGSAP(() => {
                 </div>
 
                 {/* container 4 */}
-                <div className='p-5 lg:px-20 bounce'>
-                    <div className="font-heading text-[28px] text-center lg:text-[38px] font-[700] bg-orange-gradient bounce">
+                <div className='p-5 lg:px-20 bounce'  ref={(el) => addBounceRef(el, 1)}>
+                    <div className="font-heading text-[28px] text-center lg:text-[38px] font-[700] bg-orange-gradient bounce" ref={(el) => addBounceRef(el, 2)}>
                         Services provided
                     </div>
 
                     {/* Grid List */}
-                    <div className="grid grid-cols-1 gap-0 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4 mt-8 z-10 relative  bg-[#BDC4FF] p-5 rounded-2xl overflow-hidden bounce">
+                    <div className="grid grid-cols-1 gap-0 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4 mt-8 z-10 relative  bg-[#BDC4FF] p-5 rounded-2xl overflow-hidden bounce"  ref={(el) => addBounceRef(el, 3)}>
                         {
                             services.map((surgery, index) => (
                                 <div className="flex items-center gap-3 mt-5" key={index}>

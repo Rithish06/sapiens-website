@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect } from 'react'
+import React, { useEffect, useLayoutEffect, useRef } from 'react'
 import { assets } from '../../assets/assets'
 import { FaRegClock } from "react-icons/fa";
 import { MdOutlineMailOutline } from "react-icons/md";
@@ -33,87 +33,99 @@ const Contact = () => {
         );
     }, []);
 
-useGSAP(() => {
-    // Animate elements from left
-    gsap.fromTo(
-      ".rotate",
-      { opacity: 0, x: -500 },
-      {
-        opacity: 1,
-        x: 0,
-        duration: 1.5,
-        scrollTrigger: {
-          trigger: ".rotate",
-          start: "top 80%",
-          end: "top 30%",
-          toggleActions: "restart none none none",
-          scrub: true,
-          markers: false,
-        },
-      }
-    );
+    const containerRef = useRef();
+    const rotateRef = useRef();
+    const rotateRevRef = useRef();
+    const pinRef = useRef();
+    const fadeInRef = useRef();
 
-    // Animate elements from right
-    gsap.fromTo(
-      ".rotaterev",
-      { opacity: 0, x: 500 },
-      {
-        opacity: 1,
-        x: 0,
-        duration: 1.5,
-        scrollTrigger: {
-          trigger: ".rotaterev",
-          start: "top 80%",
-          end: "top 30%",
-          toggleActions: "restart none none none",
-          scrub: true,
-          markers: false,
-        },
-      }
-    );
 
-    // Pin-style animation from bottom
-    gsap.fromTo(
-      ".pin",
-      { opacity: 0, y: 100 },
-      {
-        opacity: 1,
-        y: 0,
-        scale: 1,
-        rotate: 0,
-        duration: 1.5,
-        scrollTrigger: {
-          trigger: ".pin",
-          start: "top 100%",
-          end: "top 30%",
-          toggleActions: "restart none none none",
-          scrub: true,
-          markers: false,
-          // pin: true // Uncomment if pinning needed
-        },
-      }
-    );
+    useGSAP(() => {
+        // Animate elements from left
+        if (rotateRef.current) {
+            gsap.fromTo(
+                rotateRef.current,
+                { opacity: 0, x: -500 },
+                {
+                    opacity: 1,
+                    x: 0,
+                    duration: 1.5,
+                    scrollTrigger: {
+                        trigger: rotateRef.current,
+                        start: "top 80%",
+                        end: "top 30%",
+                        toggleActions: "restart none none none",
+                        scrub: true,
+                        markers: false,
+                    },
+                }
+            );
+        }
 
-    // Simple fade-in from below
-    gsap.fromTo(
-      ".fadeIn",
-      { opacity: 0, y: 50 },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        scrollTrigger: {
-          trigger: ".fadeIn",
-          start: "top 85%",
-          end: "top 40%",
-          scrub: true,
-          toggleActions: "play none none none",
-          markers: false,
-        },
-      }
-    );
-  });
+        // Animate elements from right
+        if (rotateRevRef.current) {
+            gsap.fromTo(
+                rotateRevRef.current,
+                { opacity: 0, x: 500 },
+                {
+                    opacity: 1,
+                    x: 0,
+                    duration: 1.5,
+                    scrollTrigger: {
+                        trigger: rotateRevRef.current,
+                        start: "top 80%",
+                        end: "top 30%",
+                        toggleActions: "restart none none none",
+                        scrub: true,
+                        markers: false,
+                    },
+                }
+            );
+        }
 
+        // Pin-style animation from bottom
+        if (pinRef.current) {
+            gsap.fromTo(
+                pinRef.current,
+                { opacity: 0, y: 100 },
+                {
+                    opacity: 1,
+                    y: 0,
+                    scale: 1,
+                    rotate: 0,
+                    duration: 1.5,
+                    scrollTrigger: {
+                        trigger: pinRef.current,
+                        start: "top 100%",
+                        end: "top 30%",
+                        toggleActions: "restart none none none",
+                        scrub: true,
+                        markers: false,
+                        // pin: true // Uncomment if pinning needed
+                    },
+                }
+            );
+        }
+        if (fadeInRef.current) {
+            gsap.fromTo(
+                fadeInRef.current,
+                { opacity: 0, y: 50 },
+                {
+                    opacity: 1,
+                    y: 0,
+                    duration: 1,
+                    scrollTrigger: {
+                        trigger: fadeInRef.current,
+                        start: "top 85%",
+                        end: "top 40%",
+                        scrub: true,
+                        toggleActions: "play none none none",
+                        markers: false,
+                    },
+                }
+            );
+        }
+    }, { scope: containerRef });
 
 
     const {
@@ -129,7 +141,7 @@ useGSAP(() => {
 
     return (
         <PageTransition>
-            <div>
+            <div ref={containerRef}>
                 <div className=' anime'>
                     <img src={assets.contactMobileBanner} className='relative w-full h-auto md:hidden' alt="" />
                     <img src={assets.contactUsDesktopBanner} className='hidden lg:block lg:h-[90vh] mxl:w-full mxl:h-auto' alt="" />
@@ -221,7 +233,7 @@ useGSAP(() => {
                     <div className="text-[40px] font-[700] font-heading bg-orange-gradient text-center md:text-[48px]">Location For</div>
 
                     <div className="flex flex-col gap-15 items-center lg:flex-row lg:gap-20 mxl:gap-30 mt-10">
-                        <div className='w-full lg:width-[50%]  rotate'>
+                        <div className='w-full lg:width-[50%] rotate' ref={rotateRef}>
                             <div className='text-[28px] font-[700] mt-3 text-center lg:text-[34px]'>Clinic</div>
                             {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.475084671423!2d77.56893461220703!3d13.005390086790818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae172329d41e0b%3A0x415cd1c76d7ec943!2sDr%20Darshan%20Kumar%20A.%20Jain!5e0!3m2!1sen!2sin!4v1683783254060!5m2!1sen!2sin" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
 
@@ -236,7 +248,7 @@ useGSAP(() => {
                             />
                         </div>
 
-                        <div className='w-full lg:width-[50%] rotaterev'>
+                        <div className='w-full lg:width-[50%] rotaterev' ref={rotateRevRef}>
                             <div className="text-[28px] font-[700] mt-3 text-center lg:text-[34px]">Parking</div>
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3887.417989085552!2d77.56890187507713!3d13.009032987309787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDAwJzMyLjUiTiA3N8KwMzQnMTcuMyJF!5e0!3m2!1sen!2sin!4v1691076582394!5m2!1sen!2sin"
@@ -253,7 +265,7 @@ useGSAP(() => {
                 </div>
 
                 {/* container 3 */}
-                <div className="mt-20 px-5 lg:px-20 mxl:px-30 flex flex-col gap-10 lg:flex-row lg:gap-0 items-center pin">
+                <div className="mt-20 px-5 lg:px-20 mxl:px-30 flex flex-col gap-10 lg:flex-row lg:gap-0 items-center pin" ref={pinRef}>
                     <div>
                         <div className="text-[40px] font-[700] font-heading bg-orange-gradient text-center md:text-[48px]">Orthopedic</div>
                         <div className='flex flex-col gap-5 items-center mt-5'>
@@ -292,7 +304,7 @@ useGSAP(() => {
                 </div>
 
                 {/* container 4 */}
-                <div className='flex flex-col md:flex-row mt-14 mb-10 fadeIn'>
+                <div className='flex flex-col md:flex-row mt-14 mb-10 fadeIn' ref={fadeInRef}>
                     <div className='md:w-[50%]'>
                         <div className='bg-[#FFF6E0] w-full'>
                             <div className="text-[40px] font-[700] font-heading bg-orange-gradient text-center md:text-[48px]">Contact Information</div>

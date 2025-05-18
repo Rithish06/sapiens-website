@@ -8,7 +8,7 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
-import {useGSAP} from '@gsap/react'
+import { useGSAP } from '@gsap/react'
 
 // import { scrollAnimateFromTo } from '../../components/gsap'
 import PageTransition from "../../components/PageTransition";
@@ -16,7 +16,7 @@ import PageTransition from "../../components/PageTransition";
 const Home = () => {
 
 	const targetRef = useRef(null);
-	const comp = useRef();
+	// const comp = useRef();
 
 	const handleLearnMoreClick = () => {
 		if (targetRef.current) {
@@ -45,6 +45,18 @@ const Home = () => {
 		);
 	}, []);
 
+	const containerRef = useRef();
+	const fadeInRef = useRef();
+	const fadexRef = useRef();
+	const sideScrollRef = useRef();
+	const rotateRef = useRef();
+	const rotateRevRef = useRef();
+	const pinRef = useRef();
+
+	// For multiple elements
+	const bounceRefs = useRef([]);
+	const zoomInRefs = useRef([]);
+
 	useGSAP(() => {
 		// ScrollTrigger configuration
 		ScrollTrigger.config({
@@ -52,46 +64,52 @@ const Home = () => {
 			limitCallbacks: true
 		});
 
-		// FadeIn
-		gsap.fromTo(".fadeIn",
-			{ scale: 0.5, opacity: 0, y: 50 },
-			{
-				opacity: 1,
-				y: 0,
-				scale: 1,
-				duration: 3,
-				scrollTrigger: {
-					trigger: ".fadeIn",
-					start: "top 85%",
-					end: "top 40%",
-					scrub: true,
-					toggleActions: "play none none none",
-					markers: false
+		// FadeIn animation
+		if (targetRef.current) {
+			gsap.fromTo(targetRef.current,
+				{ scale: 0.5, opacity: 0, y: 50 },
+				{
+					opacity: 1,
+					y: 0,
+					scale: 1,
+					duration: 3,
+					scrollTrigger: {
+						trigger: targetRef.current,
+						start: "top 85%",
+						end: "top 40%",
+						scrub: true,
+						toggleActions: "play none none none",
+						markers: false
+					}
 				}
-			}
-		);
+			);
+		}
 
 		// Fade from left
-		gsap.fromTo(".fadex",
-			{ scale: 0.5, opacity: 0, x: -500 },
-			{
-				opacity: 1,
-				x: 0,
-				scale: 1,
-				duration: 3,
-				scrollTrigger: {
-					trigger: ".fadex",
-					start: "top 85%",
-					end: "top 40%",
-					scrub: true,
-					toggleActions: "play none none none",
-					markers: false
+		if (fadexRef.current) {
+			gsap.fromTo(fadexRef.current,
+				{ scale: 0.5, opacity: 0, x: -500 },
+				{
+					opacity: 1,
+					x: 0,
+					scale: 1,
+					duration: 3,
+					scrollTrigger: {
+						trigger: fadexRef.current,
+						start: "top 85%",
+						end: "top 40%",
+						scrub: true,
+						toggleActions: "play none none none",
+						markers: false
+					}
 				}
-			}
-		);
+			);
+		}
 
 		// Bounce for multiple elements
-		gsap.utils.toArray(".bounce").forEach((el) => {
+		bounceRefs.current.forEach((el, index) => {
+			if (!el) return;
+
 			gsap.fromTo(el,
 				{ y: 50, opacity: 0 },
 				{
@@ -112,24 +130,28 @@ const Home = () => {
 		});
 
 		// Side scroll
-		gsap.fromTo(".sideScroll",
-			{ x: 1200 },
-			{
-				x: 0,
-				duration: 1.5,
-				scrollTrigger: {
-					trigger: ".sideScroll",
-					start: "top 60%",
-					end: "top 30%",
-					toggleActions: "restart none none none",
-					scrub: true,
-					markers: false,
+		if (sideScrollRef.current) {
+			gsap.fromTo(sideScrollRef.current,
+				{ x: 1200 },
+				{
+					x: 0,
+					duration: 1.5,
+					scrollTrigger: {
+						trigger: sideScrollRef.current,
+						start: "top 60%",
+						end: "top 30%",
+						toggleActions: "restart none none none",
+						scrub: true,
+						markers: false,
+					}
 				}
-			}
-		);
+			);
+		}
 
 		// Zoom in for multiple elements
-		gsap.utils.toArray(".zoomIn").forEach((el) => {
+		zoomInRefs.current.forEach((el, index) => {
+			if (!el) return;
+
 			gsap.fromTo(el,
 				{ scale: 3 },
 				{
@@ -148,60 +170,80 @@ const Home = () => {
 		});
 
 		// Rotate
-		gsap.fromTo(".rotate",
-			{ opacity: 0, x: -500 },
-			{
-				opacity: 1,
-				duration: 1.5,
-				x: 0,
-				scrollTrigger: {
-					trigger: ".rotate",
-					start: "top 80%",
-					end: "top 30%",
-					toggleActions: "restart none none none",
-					scrub: true,
-					markers: false,
+		if (rotateRef.current) {
+			gsap.fromTo(rotateRef.current,
+				{ opacity: 0, x: -500 },
+				{
+					opacity: 1,
+					duration: 1.5,
+					x: 0,
+					scrollTrigger: {
+						trigger: rotateRef.current,
+						start: "top 80%",
+						end: "top 30%",
+						toggleActions: "restart none none none",
+						scrub: true,
+						markers: false,
+					}
 				}
-			}
-		);
+			);
+		}
 
 		// Reverse rotate
-		gsap.fromTo(".rotaterev",
-			{ opacity: 0, x: 500 },
-			{
-				opacity: 1,
-				duration: 1.5,
-				x: 0,
-				scrollTrigger: {
-					trigger: ".rotate", // NOTE: Might be a bug, consider using `.rotaterev` here
-					start: "top 80%",
-					end: "top 30%",
-					toggleActions: "restart none none none",
-					scrub: true,
-					markers: false,
+		if (rotateRevRef.current) {
+			gsap.fromTo(rotateRevRef.current,
+				{ opacity: 0, x: 500 },
+				{
+					opacity: 1,
+					duration: 1.5,
+					x: 0,
+					scrollTrigger: {
+						trigger: rotateRef.current, // NOTE: Keeping your original trigger
+						start: "top 80%",
+						end: "top 30%",
+						toggleActions: "restart none none none",
+						scrub: true,
+						markers: false,
+					}
 				}
-			}
-		);
+			);
+		}
 
 		// Pin animation
-		gsap.fromTo(".pin",
-			{ opacity: 0, y: 100 },
-			{
-				scale: 1,
-				duration: 1.5,
-				opacity: 1,
-				y: 0,
-				scrollTrigger: {
-					trigger: ".pin",
-					start: "top 100%",
-					end: "top 30%",
-					toggleActions: "restart none none none",
-					scrub: true,
-					markers: false,
+		if (pinRef.current) {
+			gsap.fromTo(pinRef.current,
+				{ opacity: 0, y: 100 },
+				{
+					scale: 1,
+					duration: 1.5,
+					opacity: 1,
+					y: 0,
+					scrollTrigger: {
+						trigger: pinRef.current,
+						start: "top 100%",
+						end: "top 30%",
+						toggleActions: "restart none none none",
+						scrub: true,
+						markers: false,
+					}
 				}
-			}
-		);
-	}, []); // <- empty dependency array
+			);
+		}
+	}, { scope: containerRef });
+
+	// Helper functions to manage ref arrays
+	const addBounceRef = (el, index) => {
+		if (el && !bounceRefs.current.includes(el)) {
+			bounceRefs.current[index] = el;
+		}
+	};
+
+	const addZoomInRef = (el, index) => {
+		if (el && !zoomInRefs.current.includes(el)) {
+			zoomInRefs.current[index] = el;
+		}
+	};
+
 
 	const cards = [
 		{
@@ -352,12 +394,12 @@ const Home = () => {
 
 	return (
 		<PageTransition>
-			<div className='overflow-x-hidden' ref={comp}> 
+			<div className='overflow-x-hidden' ref={containerRef}>
 				<Homebanner learnMoreFunction={handleLearnMoreClick} />
 				{/* Home */}
 
 				<div className="px-[5%] pt-[3%] lg:px-[10%] lg:pt-5%">
-					<div className="flex flex-col gap-10 items-center justify-center my-5 md:flex-row pin mt-20">
+					<div className="flex flex-col gap-10 items-center justify-center my-5 md:flex-row pin mt-20" ref = {pinRef}>
 						<img src={assets.sapiensClinicImage} className='w-full h-auto md:w-[50%]' alt="" />
 						<img src={assets.homeContainer2} className='w-full h-auto md:w-[50%]' alt="" />
 					</div>
@@ -368,14 +410,14 @@ const Home = () => {
 						<div className="font-para text-[12px] md:text-[16px] color-black mt-5 text-center">Dr. Divya Sundaresh is an Ophthalmologist, who routinely treats cataracts & super-specialized in oculoplasty, ophthalmic plastic surgery, trauma care, eyelid reconstructive surgeries, orbital surgeries, lacrimal surgeries, ophthalmic oncology, and facial cosmetic procedures.</div>
 					</div>
 
-					<div className="my-5 lg:px-5 fadex">
+					<div className="my-5 lg:px-5 fadex" ref={fadexRef}>
 						<div className='bg-[#FFEDEDCC] rounded-2xl flex flex-col lg:flex-row gap-1 lg:gap-10 items-center lg:p-10 '>
 							<div className='font-heading text-[22px] md:text-[40px] font-[700] color-black text-center w-full] lg:w-[33%]'>Advanced Care in<br /><span className='bg-orange-gradient' >Hand Surgery &Ophthalmology</span></div>
 							<div className="font-para text-[12px] md:text-[16px] color-black mt-5 text-center w-full lg:w-[65%]">At Sapiens Clinic, we are committed to providing specialized medical care in hand surgery and ophthalmology in Malleshwaram, Bangalore. Our team of expert doctors ensures precise diagnosis and effective treatments for a range of conditions, from hand injuries, wrist pain, and limb surgeries to advanced eye care, including cataract surgery and retina treatments. With state-of-the-art technology and patient-centric care, we aim to be the best orthopedic and eye hospital in Bangalore</div>
 						</div>
 					</div>
 
-					<div className='bounce'>
+					<div className='bounce' ref={(el) => addBounceRef(el, 1)}>
 						<div className='font-heading text-[22px] md:text-[30px] font-[700] color-black text-center mt-15'>OUR DEPARTMENTS</div>
 						<div className='font-heading text-[22px] md:text-[40px] font-[700] color-black text-center bg-orange-gradient mt-4'>Orthopedic</div>
 						<div className='font-heading text-[20px] md:text-[30px] font-[600] color-black text-center bg-orange-gradient mt-4'>Expert Hand Surgery & Upper limb Care</div>
@@ -383,27 +425,27 @@ const Home = () => {
 						<div className="font-para text-[12px] md:text-[16px] color-black mt-5 text-center">If you are experiencing hand pain, wrist swelling, finger cramps, or thumb pain, our clinic provides affordable hand surgery in Bangalore with a focus on precision and long-term relief. We also specialize in limb reconstruction surgery, fracture repair, and nerve injury treatments, making us a leading limb surgery clinic in Bangalore.</div>
 					</div>
 
-					<div className="mt-10 zoomIn">
+					<div className="mt-10 zoomIn" ref = {(el) => addZoomInRef(el, 1)}>
 						<Flip cards={cards} />
 					</div>
 
-					<div className='mt-15 bounce'>
+					<div className='mt-15 bounce' ref={(el) => addBounceRef(el, 2)}>
 						<div className='font-heading text-[22px] md:text-[40px] font-[700] color-black text-center bg-orange-gradient mt-4'>Opthalmology</div>
 						<div className='font-heading text-[20px] md:text-[30px] font-[600] color-black text-center bg-orange-gradient mt-4'>Comprehensive Eye Care & Ophthalmology Services</div>
 						<div className="font-para text-[12px] md:text-[16px] color-black mt-5 text-center">Under the expertise of Dr. Divya D Sundaresh, Sapiens Clinic is recognized as a top eye hospital in Malleshwaram, Bangalore. We provide advanced ophthalmology treatments, including cataract surgery, retina care, squint eye correction and eye infection treatments. Whether you need a routine eye checkup or specialized eye surgery, our clinic ensures expert eye care services in Bangalore.</div>
 						<div className="font-para text-[12px] md:text-[16px] color-black mt-5 text-center">We specialize in ophthalmology treatments for conditions like blurry vision, eye allergies and corneal disorders. Our eye specialists in Bangalore use cutting-edge techniques to deliver high-precision cataract surgery and retina treatments, ensuring improved vision and long-term eye health.</div>
 					</div>
 
-					<div className="mt-10 zoomIn">
+					<div className="mt-10 zoomIn" ref = {(el) => addZoomInRef(el, 2)}>
 						<Flip cards={divyaCards} />
 					</div>
 
 					<div className='mt-15 flex items-center flex-col gap-1 lg:flex-row md:gap-1 mxl:gap-35'>
-						<div className='flex flex-col gap-1 text-center rotate'>
+						<div className='flex flex-col gap-1 text-center rotate' ref={rotateRef}>
 							<div className='text-[44px] md:text-[58px] font-[600] font-heading p-0 relative top-4'>Why Choose</div>
 							<div className='text-[58px] md:text-[70px] bg-orange-gradient font-logo font-[400] p-0 relative bottom-4'>Sapiens Clinic?</div>
 						</div>
-						<ul className='ml-2 list-disc rotaterev'>
+						<ul className='ml-2 list-disc rotaterev' ref={rotateRevRef}>
 							<li className='font-para font-[700] text-[12px] md:text-[16px] color-black mt-2'>Top Orthopedic & Eye Specialists in Bangalore</li>
 							<li className='font-para font-[700] text-[12px] md:text-[16px] color-black mt-2'>Expert Hand Surgeon & Microsurgeon - Dr. Darshan Kumar A. Jain</li>
 							<li className='font-para font-[700] text-[12px] md:text-[16px] color-black mt-2'>Best Ophthalmologist in Malleshwaram Bangalore - Dr. Divya D Sundaresh</li>
