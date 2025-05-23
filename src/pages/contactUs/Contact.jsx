@@ -1,19 +1,18 @@
-import React, { useEffect, useLayoutEffect, useRef } from 'react'
+import React, { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { assets } from '../../assets/assets'
 import { FaRegClock } from "react-icons/fa";
 import { MdOutlineMailOutline } from "react-icons/md";
-// import { ErrorMessage } from "@hookform/error-message";
 import { useForm } from "react-hook-form";
 import { FaArrowRight } from "react-icons/fa";
-import { FaLocationDot } from "react-icons/fa6";
-
 import { useGSAP } from '@gsap/react';
-
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
-
 import PageTransition from "../../components/PageTransition";
+import emailjs from '@emailjs/browser';
+import { init } from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
 
@@ -32,6 +31,8 @@ const Contact = () => {
             }
         );
     }, []);
+
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
     const containerRef = useRef();
     const rotateRef = useRef();
@@ -133,10 +134,31 @@ const Contact = () => {
         register,
         handleSubmit,
         watch,
+        reset,
         formState: { errors },
     } = useForm()
 
-    const onSubmit = (data) => console.log(data)
+    useEffect(() => {
+        init("h-ZQGpG0Ul1KZ3lvE"); // Initialize once
+    }, []);
+
+    const onSubmit = (data) => {
+        setIsSubmitting(true);
+        emailjs.send(
+            "sapiens-contact-page",
+            "template_n29pnov",
+            data
+        )
+            .then(() => {
+                toast.success("Email sent successfully!");
+                reset();
+            })
+            .catch(() => {
+                toast.error("Failed to send email");
+            })
+            .finally(() => setIsSubmitting(false));
+    };
+
 
     console.log(watch("example"))
 
@@ -195,21 +217,21 @@ const Contact = () => {
 
                                     <div className="w-full flex gap-2 mt-5  mxl:mt-10">
                                         <div className='w-[50%]'>
-                                            <input {...register("firstname", { required: true })} placeholder='Frist Name*' className='w-full outline-none focus:border-b-black focus:outline-none focus:ring-0 border-b-2 border-black placeholder-[#565B5D] placeholder:text-[10px] placeholder:font-para py-2 text-[12px] font-[500]' />
+                                            <input {...register("first_name", { required: true })} placeholder='Frist Name*' className='w-full outline-none focus:border-b-black focus:outline-none focus:ring-0 border-b-2 border-black placeholder-[#565B5D] placeholder:text-[10px] placeholder:font-para py-2 text-[12px] font-[500]' />
                                         </div>
 
                                         <div className='w-[50%]'>
-                                            <input {...register("lastname", { required: true })} placeholder='Last Name' className='w-full outline-none focus:border-b-black focus:outline-none focus:ring-0 border-b-2 border-black placeholder-[#565B5D] placeholder:text-[10px] placeholder:font-para py-2 text-[12px] font-[500]' />
+                                            <input {...register("last_name", { required: true })} placeholder='Last Name' className='w-full outline-none focus:border-b-black focus:outline-none focus:ring-0 border-b-2 border-black placeholder-[#565B5D] placeholder:text-[10px] placeholder:font-para py-2 text-[12px] font-[500]' />
                                         </div>
                                     </div>
 
-                                    {errors.firstname && <span className='text-[12px] text-red-400'>first name is required</span>}
+                                    {errors.first_name && <span className='text-[12px] text-red-400'>first name is required</span>}
 
 
                                     <div className="w-full flex gap-2 mt-5 mxl:mt-10">
                                         <div className='w-[50%]'>
-                                            <input {...register("phonenumber", { required: true })} placeholder='Phone Number*' className='w-full outline-none focus:border-b-black focus:outline-none focus:ring-0 border-b-2 border-black placeholder-[#565B5D] placeholder:text-[10px] placeholder:font-para py-2 text-[12px] font-[500]' />
-                                            {errors.firstname && <span className='text-[12px] text-red-400'>phone number is required</span>}
+                                            <input {...register("phone", { required: true })} placeholder='Phone Number*' className='w-full outline-none focus:border-b-black focus:outline-none focus:ring-0 border-b-2 border-black placeholder-[#565B5D] placeholder:text-[10px] placeholder:font-para py-2 text-[12px] font-[500]' />
+                                            {errors.phone && <span className='text-[12px] text-red-400'>phone number is required</span>}
                                         </div>
 
                                         <div className='w-[50%]'>
@@ -221,7 +243,7 @@ const Contact = () => {
                                         <textarea {...register("message", { required: true })} placeholder='Message*' className='w-full h-[100px] outline-none focus:border-b-blacke focus:outline-none focus:ring-0 border-b-2 border-black placeholder-[#565B5D] placeholder:text-[10px] placeholder:font-para py-2 text-[12px] font-[500] '></textarea><br />
                                     </div>
                                     {errors.message && <span className='text-[12px] text-red-400'>message is required</span>}
-                                    <button type="submit" className='w-[50%] outline-none focus:border-none focus:outline-none focus:ring-0 text-white font-para font-[600] text-[12px] px-1 py-3 bg-[#EF7F1A] mt-4 rounded-sm flex items-center justify-center gap-2 cursor-pointer mxl:mt-8'>Submit Now <FaArrowRight className='text-white text-[12px]' /></button>
+                                    <button type="submit" className='w-[50%] outline-none focus:border-none focus:outline-none focus:ring-0 text-white font-para font-[600] text-[12px] px-1 py-3 bg-[#EF7F1A] mt-4 rounded-sm flex items-center justify-center gap-2 cursor-pointer mxl:mt-8' disabled={isSubmitting}>Submit Now <FaArrowRight className='text-white text-[12px]' /></button>
                                 </form>
                             </div>
                         </div>
@@ -358,6 +380,23 @@ const Contact = () => {
                         <img src={assets.contactUsImage} className='w-full h-auto lg:h-[85%] object-cover mt-4 md:mt-0' alt="" />
                     </div>
                 </div>
+            </div>
+            <div className='relative z-1000'>
+                <ToastContainer
+                    position="top-right" // Choose from positions below
+                    autoClose={5000}
+                    hideProgressBar={false}
+                    newestOnTop={false}
+                    closeOnClick
+                    rtl={false}
+                    pauseOnFocusLoss
+                    draggable
+                    pauseOnHover
+                    style={{
+                        zIndex: 9999,
+                    }}
+                    className="custom-toast-container"
+                />
             </div>
         </PageTransition>
     )

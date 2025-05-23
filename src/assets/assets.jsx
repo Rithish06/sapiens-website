@@ -56,7 +56,19 @@ import drDarshanBannerTablet from './images/drDarshanBannerTablet.png'
 import drDivyaBannerMobile from './images/drDivyaBannerMobile.png'
 import homeContainer2 from './images/sapiens-clinic-bangalore.png'
 import drDivyaHomeBanner from './images/homeBannerDivya.png'
-// import DrDarshan from './images/dr-darsham.png'
+import ao from './images/ao.png'
+import ioa from './images/indian-orthopaedic-association.png'
+import issh from './images/indian-society-for-surgery-of-the-hand.png'
+import iwas from './images/international-wrist-arthroscopy-society.png'
+import koa from './images/karnataka-orthopaedic-association.png'
+import pos from './images/pediatric-orthopedic-society.png'
+import kos from './images/kos.png'
+import opai from './images/opai.png'
+import aios from './images/aios.png'
+import bosOpthal from './images/bos-ophthal.png'
+
+// dr darshan services image
+import egImage from './images/eg-image.png'
 
 export const assets = {
     logo,
@@ -116,5 +128,16 @@ export const assets = {
     drDarshanBannerTablet,
     drDivyaBannerMobile,
     homeContainer2,
-    drDivyaHomeBanner
+    drDivyaHomeBanner,
+    ao,
+    ioa,
+    issh,
+    koa,
+    iwas,
+    pos,
+    kos,
+    opai,
+    aios,
+    bosOpthal,
+    egImage
 }

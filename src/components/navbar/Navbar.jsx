@@ -156,12 +156,12 @@ const Navbar = () => {
                         Contact Us
                     </NavLink>
                 </div>
-                <a  target='_blank'
-                    href="https://book-appointment.healthplix.com/dr-darshan-kumar-a-jain-orthopaedician-80-16th-cross"
+                <Link  target='_blank'
+                    to='/contact'
                     className='bg-orange-500 w-[20%] text-white font-bold flex items-center justify-center lg:text-[14px] mxl:text-[16px] cursor-pointer hover:bg-orange-600 transition-colors'
                 >
                     Book Appointment
-                </a>
+                </Link>
             </div>
 
             {/* Mobile Navs */}
@@ -248,15 +248,15 @@ const Navbar = () => {
                             </div>
                         </div>
                     </a>
-                </div>
+                </div>  
 
-                <a target='_blank'
-                    href="https://book-appointment.healthplix.com/dr-darshan-kumar-a-jain-orthopaedician-80-16th-cross"
+                <Link 
+                    to='/contact'
                     onClick={closeMobileMenu}
                     className='bg-orange-500 w-full h-14 text-white font-bold flex items-center justify-center text-[16px] cursor-pointer mt-12 hover:bg-orange-600 transition-colors'
                 >
                     Book Appointment
-                </a>
+                </Link>
             </div>
         </div>
     );

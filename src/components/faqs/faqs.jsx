@@ -10,7 +10,7 @@ const Faqs = (props) => {
     };
 
     return (
-        <div className='bg-green flex items-center flex-col gap-0 py-10'>
+        <div className='realtive bg-green flex items-center flex-col gap-0 py-10'>
             <div className='flex items-center gap-3 justify-center'>
                 <img src={assets.faqs} className='w-[50px] h-[50px]' alt="" />
                 <span className='bg-orange-gradient font-heading text-[20px] lg:text-[30px] font-[700]'>Frequently Asked Questions</span>

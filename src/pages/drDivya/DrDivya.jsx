@@ -1,5 +1,4 @@
-import React, { useEffect, useLayoutEffect, useRef } from 'react'
-import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import React, { useLayoutEffect, useRef } from 'react'
 import 'react-vertical-timeline-component/style.min.css';
 import { assets } from '../../assets/assets';
 import TimeLine from '../../components/timline/Timeline'
@@ -428,6 +427,44 @@ const DrDivya = () => {
             text: "Divya D Sundaresh, Soumya Ramani, Rachna Kotian. Ocular safety of hydroxychloroquine in prophylaxis of COVID-19. Ophthalmol J 2024; Vol. 9, 155–16. DOI: 10.5603/oj.93870"
         },
     ]
+
+    // useEffect(() => {
+    //     // Load the Elfsight platform script
+    //     const script = document.createElement('script');
+    //     script.src = 'https://static.elfsight.com/platform/platform.js';
+    //     script.dataset.useServiceCore = '';
+    //     script.defer = true;
+    //     document.body.appendChild(script);
+
+    //     return () => {
+    //         // Clean up
+    //         document.body.removeChild(script);
+    //     };
+    // }, []);
+
+    const professional = [
+        {
+            img: assets.aios,
+            bgColor: "#FEF0C3",
+            text: 'All India Ophthalmic Society'
+        },
+        {
+            img: assets.bosOpthal,
+            bgColor: "#DFF7EA",
+            text: 'Bangalore Ophthalmic Society'
+        },
+        {
+            img: assets.opai,
+            bgColor: "#FEE6DC",
+            text: 'OPAI'
+        },
+        {
+            img: assets.kos,
+            bgColor: "#BDC4FF",
+            text: 'KARNATAKA OPHTHALMIC SOCIETY'
+        },
+    ]
+
     return (
         <PageTransition>
             <div ref={containerRef}>
@@ -496,17 +533,17 @@ const DrDivya = () => {
                 </div>
 
                 {/* container 4 */}
-                <div className='p-5 lg:px-20 bounce'  ref={(el) => addBounceRef(el, 1)}>
+                <div className='p-5 lg:px-20 bounce' ref={(el) => addBounceRef(el, 1)}>
                     <div className="font-heading text-[28px] text-center lg:text-[38px] font-[700] bg-orange-gradient bounce" ref={(el) => addBounceRef(el, 2)}>
                         Services provided
                     </div>
 
                     {/* Grid List */}
-                    <div className="grid grid-cols-1 gap-0 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4 mt-8 z-10 relative  bg-[#BDC4FF] p-5 rounded-2xl overflow-hidden bounce"  ref={(el) => addBounceRef(el, 3)}>
+                    <div className="grid grid-cols-1 gap-0 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4 mt-8 z-10 relative  bg-[#BDC4FF] p-5 rounded-2xl overflow-hidden bounce" ref={(el) => addBounceRef(el, 3)}>
                         {
                             services.map((surgery, index) => (
                                 <div className="flex items-center gap-3 mt-5" key={index}>
-                                    <img src={assets.handDrag} className='w-[24px] h-[24px] lg:w-[30px] lg:h-[30px]' alt="" />
+                                    <img src={assets.eyeicon} className='w-[24px] h-[24px] lg:w-[30px] lg:h-[30px]' alt="" />
                                     <div className="text-[12px] lg:text-[16px] font-text font-[700]">{surgery.text}</div>
                                 </div>
                             ))
@@ -549,6 +586,31 @@ const DrDivya = () => {
                         }
                     </div>
                 </div>
+            </div>
+
+            <div className='p-5 lg:px-20 mt-5 '>
+                <div className="font-heading text-[28px] text-center lg:text-[38px] font-[700] bg-orange-gradient mb-5">
+                    Professional Memberships
+                </div>
+
+                <div
+                    className="relative overflow-hidden w-full py-10"
+                    ref={containerRef}
+                >
+                    <div className='flex gap-10 flex-col items-center md:flex-row md:justify-center md:flex-nowrap mt-10'>
+                        {professional.map((prof, index) => (
+                            <div
+                                key={index}
+                                className='w-[230px] h-[260px] rounded-2xl flex flex-col gap-3 items-center justify-center px-1 flex-shrink-0'
+                                style={{ background: prof.bgColor }}
+                            >
+                                <img src={prof.img} className='w-[124px] h-auto' alt={prof.text} />
+                                <div className='text-center text-black font-[700]'>{prof.text}</div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
             </div>
         </PageTransition>
     )

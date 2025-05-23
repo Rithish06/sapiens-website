@@ -1,0 +1,79 @@
+import React from 'react'
+import { assets } from '../../assets/assets'
+import { Link } from 'react-router-dom'
+
+const Invitation = () => {
+    return (
+        <div className=''>
+            < div className='realtive overflow-hidden mt-20' >
+                <div className='w-full flex flex-col justify-between h-[1100px] md:h-[800px]'>
+                    <div className='realtive rounded-full w-[300px] h-[300px] bg-[#DFF7EA] -mt-10 -ml-20'></div>
+                    <div className='relative rounded-full w-[300px] h-[300px] bg-[#D3C0FF] ml-[90%]'></div>
+                    <div className='relative rounded-full w-[200px] h-[200px] bg-[#FEF0C3] -mb-30 -ml-20'></div>
+                </div>
+                <div className='relative h-[1100px] -mt-[1100px] flex flex-col items-center justify-center md:h-[800px] md:-mt-[800px]'>
+                    <div className='font-[700] text-[18px] font-para lg:text-[22px]'>Inviting Applications </div>
+                    <div className='font-[700] text-[18px] font-para mt-3 lg:text-[22px]'>for</div>
+                    <div className='font-[700] text-[18px] font-para text-center mt-3 lg:text-[22px]'>Fellowship in Hand Surgery & Upper limb Surgery <br />(2025-2026)</div>
+
+                    <table className='mt-5 text-[12px] font-[700] lg:text-[25px] font-para'>
+                        <tr className='mt-3'>
+                            <td>Course Co-Ordinator</td>
+                            <td className='px-1'>:</td>
+                            <td className='text-[#001581] cursor-pointer'><Link to="/dr-divya-sundaresh">Dr Darshan Kumar A. Jain</Link></td>
+                        </tr>
+                        <tr className='mt-3'>
+                            <td>Location</td>
+                            <td className='px-1'>:</td>
+                            <td>Bangalore</td>
+                        </tr>
+                        <tr className='mt-3'>
+                            <td>Eligibility</td>
+                            <td className='px-1'>:</td>
+                            <td>MS/DNB Orthopaedic</td>
+                        </tr>
+                    </table>
+
+                    <div className='mt-5 text-[12px] font-[700] text-center font-para lg:text-[25px]'>With an inclination to deliver best patient care and publishing articles.</div>
+
+                    <div className='flex flex-col gap-3 justify-center mt-7 md:flex-row'>
+
+                        <div className='px-5 md:w-[50%]'>
+                            <div className='text-[20px] font-[700] text-center font-para lg:text-[30px]'>Objectives of training:</div>
+                            <ul className='list-disc mt-5 text-[12px] lg:text-[16px] font-[700] font-para'>
+                                <li>To perform a good clinical assessment of various problems of upper limb</li>
+                                <li>Comprehensive training in</li>
+                                <li>
+                                    <li>Upper limb surgery </li>
+                                    <li>Microsurgery/Microvascular surgery </li>
+                                    <li>Brachial plexus/Peripheral nerve surgery </li>
+                                    <li>Neglected trauma</li>
+                                    <li>Wrist injuries</li>
+                                    <li>Elbow injuries</li>
+                                    <li>Wrist arthroscopy</li>
+                                    <li>Elbow arthroscopy and arthroplasty</li>
+                                </li>
+                                <li>Expected to be involved in patient care, maintain log book & publish articles</li>
+                            </ul>
+                        </div>
+
+                        <div className='w-[80%] border-black border-[1px] md:w-0 md:h-[300px] mx-auto'></div>
+
+                        <div className='px-5 md:w-[50%]'>
+                            <div className='text-[20px] font-[700] text-center  lg:text-[30px]'>Duration: 1 year</div>
+                            <div className='text-[12px] font-para mt-6 lg:text-[16px]'><span className='font-[700]'>Last date for application:</span> 15th June 2025</div>
+                            <div className='text-[12px] font-para mt-2 lg:text-[16px]'><span className='font-[700]'>Interview:</span> June last week 2025</div>
+                            <div className='text-[12px] font-para mt-2 lg:text-[16px]'><span className='font-[700]'>Course starts on:</span> 1st August 2025</div>
+                            <div className='text-[12px] font-para mt-2 lg:text-[16px]'>Send in your applications with CV to jaindarshan81@gmail.com<br /> with subject as: <span className='font-[700]'>"Hand surgery fellowship application 2025-2026"</span></div>
+                            <div className='text-[12px] font-para mt-3 lg:text-[16px]'>Contact Secretary: 7892556378</div>
+
+                            <img src={assets.colorLogo} alt="" className='w-[160px] md:w-[224px] mt-3 mx-auto' />
+                        </div>
+                    </div>
+                </div>
+            </div >
+        </div>
+    )
+}
+
+export default Invitation

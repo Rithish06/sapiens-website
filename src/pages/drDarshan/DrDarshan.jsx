@@ -4,6 +4,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import { assets } from '../../assets/assets';
 import TimeLine from '../../components/timline/Timeline'
 import { Outlet } from 'react-router-dom';
+import { FaArrowRight } from "react-icons/fa6";
 
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -20,6 +21,10 @@ const DrDarshan = () => {
     const fadexElement = useRef();
     const bounceElements = useRef([]);
     const sideScrollElement = useRef();
+
+    const containerRef = useRef(null);
+    const animationRef = useRef(null);
+    const contentRef = useRef(null);
 
     useGSAP(() => {
         // Configure ScrollTrigger globally
@@ -121,6 +126,9 @@ const DrDarshan = () => {
         setTimeout(() => ScrollTrigger.refresh(), 500);
     }, { scope: comp });
 
+    const handleMouseEnter = () => animationRef.current?.pause();
+    const handleMouseLeave = () => animationRef.current?.play();
+
     useLayoutEffect(() => {
         gsap.fromTo(
             ".anime",
@@ -206,304 +214,473 @@ const DrDarshan = () => {
     const upperLimbSurgery = [
         {
             link: '',
-            text: 'Carpal tunnel syndrome'
+            text: 'Carpal tunnel syndrome',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: '',
-            text: 'Stiffness of joints of the hand.'
+            text: 'Stiffness of joints of the hand.',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: '',
-            text: 'Dupuytren’s disease'
+            text: 'Dupuytren’s disease',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: '',
-            text: 'De Quervain’s tenosynovitis'
+            text: 'De Quervain’s tenosynovitis',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: '',
-            text: 'Infections of the hand.'
+            text: 'Infections of the hand.',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: '',
-            text: 'Sports injuries of the hand.'
+            text: 'Sports injuries of the hand.',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: '',
-            text: 'Ganglion'
+            text: 'Ganglion',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: '',
-            text: 'Scaphoid fractures'
+            text: 'Scaphoid fractures',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: '',
-            text: 'Scaphoid non unions'
+            text: 'Scaphoid non unions',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: '',
-            text: 'Scapholunate ligament injury'
+            text: 'Scapholunate ligament injury',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: '',
-            text: 'Radius fracture'
+            text: 'Radius fracture',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: '',
-            text: 'Tuberculosis'
+            text: 'Tuberculosis',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+        },
+        {
+            link: '',
+            text: 'Tendon transfers ( for hand )',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+        },
+        {
+            link: '',
+            text: 'Wrist arthroscopy',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+        },
+        {
+            link: '',
+            text: 'Birth Defects.',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+        },
+        {
+            link: '',
+            text: 'Cubital tunnel syndrome',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+        },
+        {
+            link: '',
+            text: 'Cerebral palsy',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+        },
+        {
+            link: '',
+            text: 'Tumors of hand',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+        },
+        {
+            link: '',
+            text: 'Post burns contracture',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+        },
+        {
+            link: '',
+            text: 'Vascular anomalies',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+        },
+        {
+            link: '',
+            text: 'UCL injury',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+        },
+        {
+            link: '',
+            text: 'Glomus tumors',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+        },
+        {
+            link: '',
+            text: 'Giant cell tumor (GCT)',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+        },
+        {
+            link: '',
+            text: 'Congenital anomalies',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+        },
+        {
+            link: '',
+            text: 'Injury to the hand/wrist with a fracture or a ligament injury.',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+        },
+        {
+            link: '',
+            text: 'Swellings (lumps and bumps) of the hand.',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+        },
+        {
+            link: '',
+            text: 'Kienbock’s disease (Avascular necrosis of lunate)',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+        },
+        {
+            link: '',
+            text: 'TFCC (Triangular Fibrocartilage Complex) injury',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+        },
+        {
+            link: '',
+            text: 'Arthritis involving the finger, wrist and elbow.',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+        },
+        {
+            link: '',
+            text: 'Treatment of various problems of hand, wrist and elbow by keyhole surgery/ arthroscopy',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+        },
+        {
+            link: '',
+            text: 'Injury to the hand/wrist with a fracture or a ligament injury.',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+        },
+        {
+            link: '',
+            text: 'Swellings (lumps and bumps) of the hand.',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+        },
+        {
+            link: '',
+            text: 'Kienbock’s disease (Avascular necrosis of lunate)',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+        },
+        {
+            link: '',
+            text: 'TFCC (Triangular Fibrocartilage Complex) injury',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+        },
+        {
+            link: '',
+            text: 'Arthritis involving the finger, wrist and elbow.',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+        },
+        {
+            link: '',
+            text: 'Treatment of various problems of hand, wrist and elbow by keyhole surgery/ arthroscopy',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
     ]
-
-    const upperLimbSurgery2 = [
-        {
-            link: '',
-            text: 'Tendon transfers ( for hand )'
-        },
-        {
-            link: '',
-            text: 'Wrist arthroscopy'
-        },
-        {
-            link: '',
-            text: 'Birth Defects.'
-        },
-        {
-            link: '',
-            text: 'Cubital tunnel syndrome'
-        },
-        {
-            link: '',
-            text: 'Cerebral palsy'
-        },
-        {
-            link: '',
-            text: 'Tumors of hand'
-        },
-        {
-            link: '',
-            text: 'Post burns contracture'
-        },
-        {
-            link: '',
-            text: 'Vascular anomalies'
-        },
-        {
-            link: '',
-            text: 'UCL injury'
-        },
-        {
-            link: '',
-            text: 'Glomus tumors'
-        },
-        {
-            link: '',
-            text: 'Giant cell tumor (GCT)'
-        },
-        {
-            link: '',
-            text: 'Congenital anomalies'
-        },
-    ]
-
-    const upperLimbSurgery3 = [
-        {
-            link: '',
-            text: 'Injury to the hand/wrist with a fracture or a ligament injury.'
-        },
-        {
-            link: '',
-            text: 'Swellings (lumps and bumps) of the hand.'
-        },
-        {
-            link: '',
-            text: 'Kienbock’s disease (Avascular necrosis of lunate)'
-        },
-        {
-            link: '',
-            text: 'TFCC (Triangular Fibrocartilage Complex) injury'
-        },
-        {
-            link: '',
-            text: 'Arthritis involving the finger, wrist and elbow.'
-        },
-        {
-            link: '',
-            text: 'Treatment of various problems of hand, wrist and elbow by keyhole surgery/ arthroscopy'
-        },
-    ]
-
     const elbow = [
         {
             link: "",
-            text: "Fractures(Humerus/radius/ulna)"
+            text: "Fractures (Humerus/radius/ulna)",
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: "",
-            text: "Arthritis of elbow"
+            text: "Arthritis of elbow",
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: "",
-            text: "Elbow arthroscopy"
+            text: "Elbow arthroscopy",
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: "",
-            text: "Stiff elbow"
+            text: "Stiff elbow",
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: "",
-            text: "Synovitis of elbow"
+            text: "Synovitis of elbow",
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: "",
-            text: "Ligament repair or reconstruction of elbow"
+            text: "Ligament repair or reconstruction of elbow",
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: "",
-            text: "Elbow replacement/ Elbow arthroplasty"
+            text: "Elbow replacement/ Elbow arthroplasty",
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
     ]
 
     const Shoulder = [
         {
             link: "",
-            text: "Shoulder arthroscopy"
+            text: "Shoulder arthroscopy",
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: "",
-            text: "Shoulder replacement/ arthroplasty"
+            text: "Shoulder replacement/ arthroplasty",
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: "",
-            text: "Shoulder dislocation"
+            text: "Shoulder dislocation",
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: "",
-            text: "Shoulder instability"
+            text: "Shoulder instability",
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: "",
-            text: "Rotator cuff tear"
+            text: "Rotator cuff tear",
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: "",
-            text: "Labral tear"
+            text: "Labral tear",
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: "",
-            text: "SLAP injuries"
+            text: "SLAP injuries",
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
     ]
 
     const congenital = [
         {
             link: "",
-            text: "Pollicization"
+            text: "Pollicization",
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: "",
-            text: "Syndactyly separation"
+            text: "Syndactyly separation",
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: "",
-            text: "Malunion"
+            text: "Malunion",
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: "",
-            text: "Tendon transfer"
+            text: "Tendon transfer",
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: "",
-            text: "Rheumatoid arthritis"
+            text: "Rheumatoid arthritis",
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: "",
-            text: "Synovectomy"
+            text: "Synovectomy",
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: "",
-            text: "Nonunion"
+            text: "Nonunion",
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: "",
-            text: "Work related upper limb disorders (WRULD)."
+            text: "Work related upper limb disorders (WRULD).",
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
     ]
 
     const nerve = [
         {
             link: "",
-            text: "Nerve repair"
+            text: "Nerve repair",
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: "",
-            text: "Nerve reconstruction"
+            text: "Nerve reconstruction",
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: "",
-            text: "Brachial plexus injury "
+            text: "Brachial plexus injury ",
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: "",
-            text: "Radial, ulnar, median nerve palsy"
+            text: "Radial, ulnar, median nerve palsy",
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: "",
-            text: "Cerebral palsy"
+            text: "Cerebral palsy",
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: "",
-            text: "Spastic or deformity of upper limb"
+            text: "Spastic or deformity of upper limb",
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: "",
-            text: "Spastic or deformity of upper limb"
+            text: "Spastic or deformity of upper limb",
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: "",
-            text: "Nerve related problems affecting the hand, brachial plexus injuries, nerve injuries"
+            text: "Nerve related problems affecting the hand, brachial plexus injuries, nerve injuries",
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
     ]
 
     const reconstructive = [
         {
             link: "",
-            text: "Flaps cover to upper or lower limbs"
+            text: "Flaps cover to upper or lower limbs",
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: "",
-            text: "VIC (Volkman’s Ischemic Contracture)"
+            text: "VIC (Volkman’s Ischemic Contracture)",
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: "",
-            text: "Vascularized bone grafts for non-unions"
+            text: "Vascularized bone grafts for non-unions",
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: "",
-            text: "Free flaps"
+            text: "Free flaps",
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: "",
-            text: "Reconstruction for the limbs"
+            text: "Reconstruction for the limbs",
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: "",
-            text: "Toe transfers"
+            text: "Toe transfers",
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: "",
-            text: "Vascularised free fibula"
+            text: "Vascularised free fibula",
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: "",
-            text: "Joint transfers"
+            text: "Joint transfers",
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: "",
-            text: "Complex reconstruction requiring both soft tissue and bone"
+            text: "Complex reconstruction requiring both soft tissue and bone",
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: "",
-            text: "Tendon transfers"
+            text: "Tendon transfers",
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
     ]
 
@@ -569,24 +746,34 @@ const DrDarshan = () => {
             text: 'Bangalore Orthodontic Society (BOS)'
         },
         {
-            img: "",
+            img: assets.ioa,
             bgColor: "#D3C0FF",
-            text: ''
+            text: 'Indian Orthopaedic Association (IOA).'
         },
         {
-            img: "",
+            img: assets.issh,
             bgColor: "#FEE6DC",
-            text: ""
+            text: "Indian Society for Surgery of the Hand (ISSH)."
         },
         {
-            img: "",
+            img: assets.koa,
             bgColor: "#BDC4FF",
-            text: ""
+            text: "Karnataka Orthopaedic Association (KOA)."
         },
         {
-            img: "",
+            img: assets.pos,
             bgColor: "#DFF7EA",
-            text: ""
+            text: "Pediatric Orthopedic Society (POS)"
+        },
+        {
+            img: assets.iwas,
+            bgColor: "#F9BDFF",
+            text: "International Wrist Arthroscopy Society (IWAS)"
+        },
+        {
+            img: assets.ao,
+            bgColor: "#DFEFF7",
+            text: "AO"
         },
     ]
 
@@ -603,6 +790,42 @@ const DrDarshan = () => {
             document.body.removeChild(script);
         };
     }, []);
+
+    useEffect(() => {
+        const container = containerRef.current;
+        const content = contentRef.current;
+
+        if (!container || !content) return;
+
+        const items = Array.from(content.children);
+        items.forEach(item => {
+            const clone = item.cloneNode(true);
+            content.appendChild(clone);
+        });
+
+        let totalWidth = 0;
+        items.forEach(item => {
+            totalWidth += item.offsetWidth + 40;
+        });
+
+        gsap.set(content, { x: 0 });
+
+        animationRef.current = gsap.to(content, {
+            x: -totalWidth / 2,
+            duration: 20,
+            ease: "none",
+            repeat: -1,
+            onRepeat: function () {
+                gsap.set(content, { x: 0 });
+            }
+        });
+
+        return () => {
+            if (animationRef.current) {
+                animationRef.current.kill();
+            }
+        };
+    }, [professional]);
 
     return (
         <PageTransition>
@@ -664,63 +887,49 @@ const DrDarshan = () => {
 
             {/* container 4 */}
 
-            <div className='relative lg:gap-0 px-5 md:p-10 mxl:px-20 mxl:py-10 bounce' ref={el => bounceElements.current[1] = el}>
+            <div className='relative lg:gap-0 px-5 md:px-0 md:py-0 mxl:py-10 bounce' ref={el => bounceElements.current[1] = el}>
                 {/* Section Title */}
                 <div className="font-heading text-[28px] text-center lg:text-[38px] font-[700] bg-orange-gradient" ref={el => bounceElements.current[2] = el}>
                     Services provided
                 </div>
 
-                {/* Content Card */}
-                <div className='relative bg-[#BDC4FF] p-5 md:p-10 mt-10 rounded-2xl overflow-hidden'>
-                    <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient bounce" ref={el => bounceElements.current[4] = el}>
-                        Upper limb Surgery : Hand & Wrist
+                {/* upperLimb */}
+
+                <div className='relative py-5 md:p-10 rounded-2xl overflow-hidden'>
+                    <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient text-center bounce" ref={el => bounceElements.current[3] = el}>
+                        <span className='border-[2px] border-[#EF7F1A] py-2 px-8 rounded-tl-[50px] rounded-br-[50px]'>Upper limb Surgery : Hand & Wrist</span>
                     </div>
 
-                    {/* Grid List */}
-                    <div className="grid grid-cols-1 gap-0 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4 mt-8 z-10 relative bounce" ref={el => bounceElements.current[5] = el}>
-                        <div>
+                    <div className="realtive mt-8 z-10 relative bounce" ref={el => bounceElements.current[4] = el}>
+                        <div className='realtive flex flex-wrap justify-center gap-5'>
                             {
                                 upperLimbSurgery.map((surgery, index) => (
-                                    <div className="flex items-center gap-3 mt-5" key={index} >
-                                        <img src={assets.handDrag} className='w-[24px] h-[24px] lg:w-[30px] lg:h-[30px]' alt="" />
-                                        <div className="text-[12px] lg:text-[16px] font-text font-[700]">{surgery.text}</div>
-                                    </div>
-                                ))
-                            }
-                        </div>
-                        <div>
-                            {
-                                upperLimbSurgery2.map((surgery, index) => (
-                                    <div className="flex items-center gap-3 mt-5" key={index}>
-                                        <img src={assets.handDrag} className='w-[24px] h-[24px] lg:w-[30px] lg:h-[30px]' alt="" />
-                                        <div className="text-[12px] lg:text-[16px] font-text font-[700]">{surgery.text}</div>
-                                    </div>
-                                ))
-                            }
-                        </div>
-                        <div>
-                            {
-                                upperLimbSurgery3.map((surgery, index) => (
-                                    <div className="flex items-center gap-3 mt-5" key={index}>
-                                        <img src={assets.handDrag} className='w-[24px] h-[24px] lg:w-[30px] lg:h-[30px]' alt="" />
-                                        <div className="text-[12px] lg:text-[16px] font-text font-[700]">{surgery.text}</div>
+                                    <div className={`relative w-[100%] md:w-[45%] lg:w-[30%] flex items-center gap-3 mt-5 bg-[#D9D9D9] p-2 rounded-2xl hover:bg-[#FFE7BB] cursor-pointer`} key={index} >
+                                        <img src={surgery.img} className='w-[33%]' alt="" />
+
+                                        <div className='mt-1'>
+                                            <div className='text-[16px] text-[#B22726] font-[700] font-para'>{surgery.text}</div>
+                                            <div className='text-[14px] font-[500] font-para'>
+                                                {surgery.txt.length > 100 ? `${surgery.txt.substring(0, 100)}...` : `surgery.txt`}
+                                            </div>
+                                        </div>
+
+                                        <div className='absolute bottom-12 w-full'>
+                                            <div className='absolute left-24.5 bg-[#D9D9D9] text-[30px] w-[40px] h-[40px] rounded-tl-full rounded-bl-full flex justify-center items-center'>
+                                                <FaArrowRight className='w-[20px] h-[20px]' />
+                                            </div>
+                                        </div>
                                     </div>
                                 ))
                             }
                         </div>
                     </div>
-
-                    <img
-                        src={assets.handImage}
-                        alt="Hand Illustration"
-                        className="absolute bottom-0 right-0 w-[150px] lg:w-[300px] mxl:w-[500px] opacity-90 pointer-events-none hidden lg:block"
-                    />
                 </div>
             </div>
 
             {/* container 5 */}
 
-            <div className='grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4 z-10 relative p-5 md:px-10 mxl:px-20'>
+            {/* <div className='grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4 z-10 relative p-5 md:px-10 mxl:px-20'>
                 <div className='bg-[#FEF0C3] p-5 md:p-8 rounded-2xl flex flex-col gap-4'>
                     <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient bounce" ref={el => bounceElements.current[6] = el}>
                         Elbow
@@ -736,11 +945,11 @@ const DrDarshan = () => {
                         }
                     </div>
                 </div>
-                <div className='bg-[#FEE6DC] p-5 md:p-8 rounded-2xl flex flex-col gap-4'  ref={el => bounceElements.current[8] = el}>
-                    <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient bounce"  ref={el => bounceElements.current[9] = el}>
+                <div className='bg-[#FEE6DC] p-5 md:p-8 rounded-2xl flex flex-col gap-4' ref={el => bounceElements.current[8] = el}>
+                    <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient bounce" ref={el => bounceElements.current[9] = el}>
                         Shoulder
                     </div>
-                    <div className='bounce'  ref={el => bounceElements.current[10] = el}>
+                    <div className='bounce' ref={el => bounceElements.current[10] = el}>
                         {
                             Shoulder.map((surgery, index) => (
                                 <div className="flex items-center gap-3 mt-5" key={index}>
@@ -751,11 +960,11 @@ const DrDarshan = () => {
                         }
                     </div>
                 </div>
-                <div className='bg-[#DFF7EA] p-5 md:p-8 rounded-2xl flex flex-col gap-4'  ref={el => bounceElements.current[11] = el}>
-                    <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient bounce"  ref={el => bounceElements.current[12] = el}>
+                <div className='bg-[#DFF7EA] p-5 md:p-8 rounded-2xl flex flex-col gap-4' ref={el => bounceElements.current[11] = el}>
+                    <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient bounce" ref={el => bounceElements.current[12] = el}>
                         Congenital
                     </div>
-                    <div className='bounce'  ref={el => bounceElements.current[13] = el}>
+                    <div className='bounce' ref={el => bounceElements.current[13] = el}>
                         {
                             congenital.map((surgery, index) => (
                                 <div className="flex items-center gap-3 mt-5" key={index}>
@@ -766,21 +975,131 @@ const DrDarshan = () => {
                         }
                     </div>
                 </div>
+            </div> */}
+
+            {/* container 5 */}
+
+            <div className='relative p-5 md:p-10 rounded-2xl overflow-hidden'>
+                <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient text-center bounce" ref={el => bounceElements.current[7] = el}>
+                    <span className='border-[2px] border-[#EF7F1A] py-2 px-8 rounded-tl-[50px] rounded-br-[50px]'>Elbow</span>
+                </div>
+
+                <div className="relative mt-8 z-10 bounce" ref={el => bounceElements.current[8] = el}>
+                    <div className='realtive flex flex-wrap justify-center gap-5'>
+                        {
+                            elbow.map((surgery, index) => (
+                                <div className={`relative w-[100%] md:w-[45%] lg:w-[30%] flex items-center gap-3 mt-5 bg-[#D9D9D9] p-2 rounded-2xl hover:bg-[#FFE7BB] cursor-pointer`} key={index} >
+                                    <img src={surgery.img} className='w-[33%]' alt="" />
+
+                                    <div className='mt-1'>
+                                        <div className='text-[16px] text-[#B22726] font-[700] font-para'>{surgery.text}</div>
+                                        <div className='text-[14px] font-[500] font-para'>
+                                            {surgery.txt.length > 100 ? `${surgery.txt.substring(0, 100)}...` : `surgery.txt`}
+                                        </div>
+                                    </div>
+
+                                    <div className='absolute bottom-12 w-full'>
+                                        <div className='absolute left-24.5 bg-[#D9D9D9] text-[30px] w-[40px] h-[40px] rounded-tl-full rounded-bl-full flex justify-center items-center'>
+                                            <FaArrowRight className='w-[20px] h-[20px]' />
+                                        </div>
+                                    </div>
+                                </div>
+                            ))
+                        }
+                    </div>
+                </div>
+            </div>
+
+            {/* conatiner 6 */}
+
+            <div className='relative p-5 md:p-10 rounded-2xl overflow-hidden'>
+                <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient text-center bounce" ref={el => bounceElements.current[7] = el}>
+                    <span className='border-[2px] border-[#EF7F1A] py-2 px-8 rounded-tl-[50px] rounded-br-[50px]'>Shoulder</span>
+                </div>
+
+                <div className="relative mt-8 z-10 bounce" ref={el => bounceElements.current[8] = el}>
+                    <div className='realtive flex flex-wrap justify-center gap-5'>
+                        {
+                            Shoulder.map((surgery, index) => (
+                                <div className={`relative w-[100%] md:w-[45%] lg:w-[30%] flex items-center gap-3 mt-5 bg-[#D9D9D9] p-2 rounded-2xl hover:bg-[#FFE7BB] cursor-pointer`} key={index} >
+                                    <img src={surgery.img} className='w-[33%]' alt="" />
+
+                                    <div className='mt-1'>
+                                        <div className='text-[16px] text-[#B22726] font-[700] font-para'>{surgery.text}</div>
+                                        <div className='text-[14px] font-[500] font-para'>
+                                            {surgery.txt.length > 100 ? `${surgery.txt.substring(0, 100)}...` : `surgery.txt`}
+                                        </div>
+                                    </div>
+
+                                    <div className='absolute bottom-12 w-full'>
+                                        <div className='absolute left-24.5 bg-[#D9D9D9] text-[30px] w-[40px] h-[40px] rounded-tl-full rounded-bl-full flex justify-center items-center'>
+                                            <FaArrowRight className='w-[20px] h-[20px]' />
+                                        </div>
+                                    </div>
+                                </div>
+                            ))
+                        }
+                    </div>
+                </div>
+            </div>
+
+            <div className='relative p-5 md:p-10 rounded-2xl overflow-hidden'>
+                <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient text-center bounce" ref={el => bounceElements.current[9] = el}>
+                    <span className='border-[2px] border-[#EF7F1A] py-2 px-8 rounded-tl-[50px] rounded-br-[50px]'>Congenital</span>
+                </div>
+
+                <div className="relative mt-8 z-10 bounce" ref={el => bounceElements.current[8] = el}>
+                    <div className='realtive flex flex-wrap justify-center gap-5'>
+                        {
+                            congenital.map((surgery, index) => (
+                                <div className={`relative w-[100%] md:w-[45%] lg:w-[30%] flex items-center gap-3 mt-5 bg-[#D9D9D9] p-2 rounded-2xl hover:bg-[#FFE7BB] cursor-pointer`} key={index} >
+                                    <img src={surgery.img} className='w-[33%]' alt="" />
+
+                                    <div className='mt-1'>
+                                        <div className='text-[16px] text-[#B22726] font-[700] font-para'>{surgery.text}</div>
+                                        <div className='text-[14px] font-[500] font-para'>
+                                            {surgery.txt.length > 100 ? `${surgery.txt.substring(0, 100)}...` : `surgery.txt`}
+                                        </div>
+                                    </div>
+
+                                    <div className='absolute bottom-12 w-full'>
+                                        <div className='absolute left-24.5 bg-[#D9D9D9] text-[30px] w-[40px] h-[40px] rounded-tl-full rounded-bl-full flex justify-center items-center'>
+                                            <FaArrowRight className='w-[20px] h-[20px]' />
+                                        </div>
+                                    </div>
+                                </div>
+                            ))
+                        }
+                    </div>
+                </div>
             </div>
 
             {/* container 6 */}
 
-            <div className='p-5 md:px-10 mxl:px-20 bounce'  ref={el => bounceElements.current[14] = el}>
-                <div className='bg-[#D3C0FF] p-5 md:p-10 rounded-2xl'>
-                    <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient bounce"  ref={el => bounceElements.current[15] = el}>
-                        Peripheral nerve surgery
-                    </div>
-                    <div className='grid grid-cols-1 gap-0 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4 mt-8 z-10 relative bounce'  ref={el => bounceElements.current[16] = el}>
+            <div className='relative p-5 md:p-10 rounded-2xl overflow-hidden'>
+                <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient text-center bounce" ref={el => bounceElements.current[11] = el}>
+                    <span className='border-[2px] border-[#EF7F1A] py-2 px-8 rounded-tl-[50px] rounded-br-[50px]'>Peripheral nerve surgery</span>
+                </div>
+
+                <div className="relative mt-8 z-10 bounce" ref={el => bounceElements.current[8] = el}>
+                    <div className='realtive flex flex-wrap justify-center gap-5'>
                         {
                             nerve.map((surgery, index) => (
-                                <div className="flex items-center gap-3 mt-5" key={index}>
-                                    <img src={assets.handDrag} className='w-[24px] h-[24px] lg:w-[30px] lg:h-[30px]' alt="" />
-                                    <div className="text-[12px] lg:text-[16px] font-text font-[700]">{surgery.text}</div>
+                                <div className={`relative w-[100%] md:w-[45%] lg:w-[30%] flex items-center gap-3 mt-5 bg-[#D9D9D9] p-2 rounded-2xl hover:bg-[#FFE7BB] cursor-pointer`} key={index} >
+                                    <img src={surgery.img} className='w-[33%]' alt="" />
+
+                                    <div className='mt-1'>
+                                        <div className='text-[16px] text-[#B22726] font-[700] font-para'>{surgery.text}</div>
+                                        <div className='text-[14px] font-[500] font-para'>
+                                            {surgery.txt.length > 100 ? `${surgery.txt.substring(0, 100)}...` : `surgery.txt`}
+                                        </div>
+                                    </div>
+
+                                    <div className='absolute bottom-12 w-full'>
+                                        <div className='absolute left-24.5 bg-[#D9D9D9] text-[30px] w-[40px] h-[40px] rounded-tl-full rounded-bl-full flex justify-center items-center'>
+                                            <FaArrowRight className='w-[20px] h-[20px]' />
+                                        </div>
+                                    </div>
                                 </div>
                             ))
                         }
@@ -790,20 +1109,30 @@ const DrDarshan = () => {
 
             {/* container 7 */}
 
-            <div className='mt-5 p-5 md:px-10 mxl:px-20 flex flex-col items-center bounce'  ref={el => bounceElements.current[17] = el}>
-                <div className="font-heading text-[28px] text-center lg:text-[38px] font-[700] bg-orange-gradient mb-5 bounce">
-                    Reconstructive Surgery
+            <div className='relative p-5 md:p-10 rounded-2xl overflow-hidden'>
+                <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient text-center bounce" ref={el => bounceElements.current[13] = el}>
+                    <span className='border-[2px] border-[#EF7F1A] py-2 px-8 rounded-tl-[50px] rounded-br-[50px]'>Reconstructive Surgery</span>
                 </div>
-                <div className='bg-[#FEF0C3] w-full lg:w-[70%] p-5 rounded-2xl'>
-                    {/* <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient">
-                        Peripheral nerve surgery
-                    </div> */}
-                    <div className='grid grid-cols-1 gap-0 sm:grid-cols-2 lg:grid-cols-2 lg:gap-4 z-10 relative bounce'  ref={el => bounceElements.current[18] = el}>
+
+                <div className="relative mt-8 z-10 bounce" ref={el => bounceElements.current[8] = el}>
+                    <div className='realtive flex flex-wrap justify-center gap-5'>
                         {
                             reconstructive.map((surgery, index) => (
-                                <div className="flex items-center gap-3 mt-5" key={index}>
-                                    <img src={assets.handDrag} className='w-[24px] h-[24px] lg:w-[30px] lg:h-[30px]' alt="" />
-                                    <div className="text-[12px] lg:text-[16px] font-text font-[700]">{surgery.text}</div>
+                                <div className={`relative w-[100%] md:w-[45%] lg:w-[30%] flex items-center gap-3 mt-5 bg-[#D9D9D9] p-2 rounded-2xl hover:bg-[#FFE7BB] cursor-pointer`} key={index} >
+                                    <img src={surgery.img} className='w-[33%]' alt="" />
+
+                                    <div className='mt-1'>
+                                        <div className='text-[16px] text-[#B22726] font-[700] font-para'>{surgery.text}</div>
+                                        <div className='text-[14px] font-[500] font-para'>
+                                            {surgery.txt.length > 100 ? `${surgery.txt.substring(0, 100)}...` : `surgery.txt`}
+                                        </div>
+                                    </div>
+
+                                    <div className='absolute bottom-12 w-full'>
+                                        <div className='absolute left-24.5 bg-[#D9D9D9] text-[30px] w-[40px] h-[40px] rounded-tl-full rounded-bl-full flex justify-center items-center'>
+                                            <FaArrowRight className='w-[20px] h-[20px]' />
+                                        </div>
+                                    </div>
                                 </div>
                             ))
                         }
@@ -861,22 +1190,34 @@ const DrDarshan = () => {
                 />
             </div>
 
-            <div className='p-5 lg:px-20 mt-5 '>
+            <div className='py-5 mt-5 '>
                 <div className="font-heading text-[28px] text-center lg:text-[38px] font-[700] bg-orange-gradient mb-5">
                     Professional Memberships
                 </div>
 
-                <div className='flex gap-10 flex-col items-center md:flex-row md:justify-center md:flex-wrap mt-10'>
-                    {professional.map((prof, index) => (
-                        <div key={index} className='w-[230px] h-[260px] rounded-2xl flex flex-col gap-3 items-center justify-center' style={{ background: prof.bgColor }}>
-                            <img src={prof.img} className='w-[124px] h-auto' alt="" />
-                            <div className='text-center text-black font-[700]'>{prof.text}</div>
-                        </div>
-                    ))}
+                <div
+                    className="relative overflow-hidden w-full py-10"
+                    ref={containerRef}
+                >
+                    <div
+                        ref={contentRef}
+                        className='flex gap-10 flex-col items-center md:flex-row md:justify-center md:flex-nowrap mt-10'
+                        onMouseEnter={handleMouseEnter}
+                        onMouseLeave={handleMouseLeave}
+                    >
+                        {professional.map((prof, index) => (
+                            <div
+                                key={index}
+                                className='w-[230px] h-[260px] rounded-2xl flex flex-col gap-3 px-1 items-center justify-center flex-shrink-0'
+                                style={{ background: prof.bgColor }}
+                            >
+                                <img src={prof.img} className='w-[124px] h-auto' alt={prof.text} />
+                                <div className='text-center text-black font-[700]'>{prof.text}</div>
+                            </div>
+                        ))}
+                    </div>
                 </div>
-
             </div>
-
             <Outlet />
         </PageTransition>
     )

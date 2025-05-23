@@ -12,6 +12,7 @@ import { useGSAP } from '@gsap/react'
 
 // import { scrollAnimateFromTo } from '../../components/gsap'
 import PageTransition from "../../components/PageTransition";
+import Invitation from '../../components/invitation/Invitation'
 
 const Home = () => {
 
@@ -399,26 +400,26 @@ const Home = () => {
 				<Homebanner learnMoreFunction={handleLearnMoreClick} />
 				{/* Home */}
 
-				<div className="px-[5%] pt-[3%] lg:px-[10%] lg:pt-5%">
-					<div className="flex flex-col gap-10 items-center justify-center my-5 md:flex-row pin mt-20" ref={pinRef}>
+				<div className="">
+					<div className="flex flex-col gap-10 items-center justify-center my-5 md:flex-row pin mt-20 px-[5%] pt-[3%] lg:px-[10%] lg:pt-5%s" ref={pinRef}>
 						<img src={assets.sapiensClinicImage} className='w-full h-auto md:w-[50%]' alt="" />
 						<img src={assets.homeContainer2} className='w-full h-auto md:w-[50%]' alt="" />
 					</div>
 
-					<div className='my-10 fadeIn' ref={targetRef}>
+					<div className='my-10 fadeIn px-[5%] pt-[3%] lg:px-[10%] lg:pt-5%' ref={targetRef}>
 						<div className='font-heading text-[22px lg:text-[40px] font-[700] color-black text-center '>Welcome to <span className='font-logo bg-orange-gradient w-[100%] pb-10'>Sapiens</span> Clinic</div>
 						<div className="font-para text-[12px] md:text-[16px] color-black mt-5 text-center">Sapiens clinic is a center providing specialty care in Hand Surgery & Ophthalmology.<br />It is a “Center of Excellence in Hand Surgery”, with services provided by Dr. Darshan Kumar A. Jain & his team. Apart from treating Orthopedic problems, they are Super-specialized in the managing of problems of Hand, Wrist, Elbow, Shoulder & Nerves (Peripheral nerves & Brachial plexus).</div>
 						<div className="font-para text-[12px] md:text-[16px] color-black mt-5 text-center">Dr. Divya Sundaresh is an Ophthalmologist, who routinely treats cataracts & super-specialized in oculoplasty, ophthalmic plastic surgery, trauma care, eyelid reconstructive surgeries, orbital surgeries, lacrimal surgeries, ophthalmic oncology, and facial cosmetic procedures.</div>
 					</div>
 
-					<div className="my-5 lg:px-5 fadex" ref={fadexRef}>
-						<div className='bg-[#FFEDEDCC] rounded-2xl flex flex-col lg:flex-row gap-1 lg:gap-10 items-center lg:p-10 '>
+					<div className="my-5 fadex px-[5%] pt-[3%] lg:px-[14%] lg:pt-5%" ref={fadexRef}>
+						<div className='bg-[#FFEDEDCC] rounded-b-[160px] flex flex-col lg:flex-row gap-1 lg:gap-10 items-center lg:p-10 '>
 							<div className='font-heading text-[22px] md:text-[40px] font-[700] color-black text-center w-full] lg:w-[33%]'>Advanced Care in<br /><span className='bg-orange-gradient' >Hand Surgery &Ophthalmology</span></div>
 							<div className="font-para text-[12px] md:text-[16px] color-black mt-5 text-center w-full lg:w-[65%]">At Sapiens Clinic, we are committed to providing specialized medical care in hand surgery and ophthalmology in Malleshwaram, Bangalore. Our team of expert doctors ensures precise diagnosis and effective treatments for a range of conditions, from hand injuries, wrist pain, and limb surgeries to advanced eye care, including cataract surgery and retina treatments. With state-of-the-art technology and patient-centric care, we aim to be the best orthopedic and eye hospital in Bangalore</div>
 						</div>
 					</div>
 
-					<div className='bounce' ref={(el) => addBounceRef(el, 1)}>
+					<div className='bounce px-[5%] pt-[3%] lg:px-[10%] lg:pt-5%' ref={(el) => addBounceRef(el, 1)}>
 						<div className='font-heading text-[22px] md:text-[30px] font-[700] color-black text-center mt-15'>OUR DEPARTMENTS</div>
 						<div className='font-heading text-[22px] md:text-[40px] font-[700] color-black text-center bg-orange-gradient mt-4'>Orthopedic</div>
 						<div className='font-heading text-[20px] md:text-[30px] font-[600] color-black text-center bg-orange-gradient mt-4'>Expert Hand Surgery & Upper limb Care</div>
@@ -426,22 +427,24 @@ const Home = () => {
 						<div className="font-para text-[12px] md:text-[16px] color-black mt-5 text-center">If you are experiencing hand pain, wrist swelling, finger cramps, or thumb pain, our clinic provides affordable hand surgery in Bangalore with a focus on precision and long-term relief. We also specialize in limb reconstruction surgery, fracture repair, and nerve injury treatments, making us a leading limb surgery clinic in Bangalore.</div>
 					</div>
 
-					<div className="mt-10 zoomIn" ref={(el) => addZoomInRef(el, 1)}>
+					<div className="mt-10 zoomIn px-[5%] pt-[3%] lg:px-[10%] lg:pt-5%" ref={(el) => addZoomInRef(el, 1)}>
 						<Flip cards={cards} />
 					</div>
 
-					<div className='mt-15 bounce' ref={(el) => addBounceRef(el, 2)}>
+					<div className='mt-15 bounce px-[5%] pt-[3%] lg:px-[10%] lg:pt-5%' ref={(el) => addBounceRef(el, 2)}>
 						<div className='font-heading text-[22px] md:text-[40px] font-[700] color-black text-center bg-orange-gradient mt-4'>Opthalmology</div>
 						<div className='font-heading text-[20px] md:text-[30px] font-[600] color-black text-center bg-orange-gradient mt-4'>Comprehensive Eye Care & Ophthalmology Services</div>
 						<div className="font-para text-[12px] md:text-[16px] color-black mt-5 text-center">Under the expertise of Dr. Divya D Sundaresh, Sapiens Clinic is recognized as a top eye hospital in Malleshwaram, Bangalore. We provide advanced ophthalmology treatments, including cataract surgery, retina care, squint eye correction and eye infection treatments. Whether you need a routine eye checkup or specialized eye surgery, our clinic ensures expert eye care services in Bangalore.</div>
 						<div className="font-para text-[12px] md:text-[16px] color-black mt-5 text-center">We specialize in ophthalmology treatments for conditions like blurry vision, eye allergies and corneal disorders. Our eye specialists in Bangalore use cutting-edge techniques to deliver high-precision cataract surgery and retina treatments, ensuring improved vision and long-term eye health.</div>
 					</div>
 
-					<div className="mt-10 zoomIn" ref={(el) => addZoomInRef(el, 2)}>
+					<div className="mt-10 zoomIn px-[5%] pt-[3%] lg:px-[10%] lg:pt-5%" ref={(el) => addZoomInRef(el, 2)}>
 						<Flip cards={divyaCards} />
 					</div>
 
-					<div className='mt-15 flex items-center flex-col gap-1 lg:flex-row md:gap-1 mxl:gap-35'>
+					<Invitation />
+
+					<div className='relative mt-15 flex items-center flex-col gap-1 lg:flex-row md:gap-1 mxl:gap-35 px-[5%] pt-[3%] lg:px-[10%] lg:pt-5%'>
 						<div className='flex flex-col gap-1 text-center rotate' ref={rotateRef}>
 							<div className='text-[44px] md:text-[58px] font-[600] font-heading p-0 relative top-4'>Why Choose</div>
 							<div className='text-[58px] md:text-[70px] bg-orange-gradient font-logo font-[400] p-0 relative bottom-4'>Sapiens Clinic?</div>
