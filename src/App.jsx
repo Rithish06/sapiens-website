@@ -2,6 +2,8 @@ import React, { useEffect } from 'react'
 import RouterOutlet from './components/router/router'
 import Navbar from './components/navbar/Navbar'
 import Footer from './components/footer/Footer'
+import Servicesbanner from './components/services-banner/Servicesbanner'
+import Divyaservicebanner from './components/services-banner/Divyaservicebanner'
 import {useLocation } from 'react-router-dom';
 
 const App = () => {
@@ -18,7 +20,9 @@ const App = () => {
   return (
     <div>
         <Navbar />
-          <RouterOutlet />
+          {/* <RouterOutlet /> */}
+          {/* <Servicesbanner/> */}
+          <Divyaservicebanner/>
         <Footer />
     </div>
   )

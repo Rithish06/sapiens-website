@@ -36,6 +36,24 @@ import contactUsTabletBanner from './images/contactUsTabletSize.png'
 import handDrag from './svgs/handDrag.svg'
 import handImage from './images/handImage.png'
 import bos from './images/bos.png'
+import closeup from './svgs/close-up-woman-hand-against.svg'
+import handimg from './svgs/hand-img.svg'
+import handpain from './svgs/hand-pain-inflammation.svg'
+import painisknee from './svgs/man-with-pain-his-knee.svg'
+import womanhand from './svgs/woman-hand.svg'
+import womanhandpain from './svgs/woman-having-wrist-pain.svg'
+import womanholding from './svgs/woman-holding-her-wrist-pain.svg'
+import wristthumb from './svgs/wrist-thumb.svg'
+import youngadult from './svgs/young-adult-female.svg'
+import arrowleft from './svgs/arrow-left.svg'
+import faqicon from './svgs/faq-icon.svg'
+import img1 from './images/img1.png'
+import img2 from './images/img2.png'
+import Servicesbanner from './images/service-banner-img.png'
+import bannerimg from './images/banner-img.png'
+import colorimg from './images/color-img.png'
+import divyaservicebannerimg from './images/divya-serveice-banner-img.png'
+
 import drDivyaBanner from './images/dr-divya-banner.png'
 import microsurgeryColor from './svgs/microsurgery-color.svg'
 import traumaCareColor from './svgs/trauma-care-color.svg'
@@ -115,6 +133,24 @@ export const assets = {
     contactUsTabletBanner,
     handDrag,
     handImage,
+    bos,
+    closeup,
+    handimg,
+    handpain,
+    painisknee,
+    womanhand,
+    womanhandpain,
+    womanholding,
+    wristthumb,
+    youngadult,
+    arrowleft,
+    faqicon,
+    img1,
+    img2,
+    Servicesbanner,
+    bannerimg,
+    colorimg,
+    divyaservicebannerimg,
     bos,
     drDivyaBanner,
     microsurgeryColor,
