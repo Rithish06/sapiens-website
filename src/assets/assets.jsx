@@ -66,9 +66,16 @@ import kos from './images/kos.png'
 import opai from './images/opai.png'
 import aios from './images/aios.png'
 import bosOpthal from './images/bos-ophthal.png'
+import locationBg from './images/best-hand-surgeon-dr-darshan.png'
+import locationBgMobile from './images/best-hand-surgeon-dr-darshan-mobile.png'
+import locationImage from './images/best-orthopedic-malleshwaram-bangalore.png'
+import locationSvg from './svgs/dr-darshan-location.svg'
 
 // dr darshan services image
 import egImage from './images/eg-image.png'
+
+// dr divya service images
+import egDivyaImage from './images/opthal-eg-img.png'
 
 export const assets = {
     logo,
@@ -139,5 +146,10 @@ export const assets = {
     opai,
     aios,
     bosOpthal,
-    egImage
+    egImage,
+    egDivyaImage,
+    locationBg,
+    locationImage,
+    locationSvg,
+    locationBgMobile
 }

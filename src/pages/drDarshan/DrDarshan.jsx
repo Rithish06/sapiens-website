@@ -896,7 +896,7 @@ const DrDarshan = () => {
                 {/* upperLimb */}
 
                 <div className='relative py-5 md:p-10 rounded-2xl overflow-hidden'>
-                    <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient text-center bounce" ref={el => bounceElements.current[3] = el}>
+                    <div className="font-heading text-[12px] mm:text-[16px] md:text-[20px] lg:text-[24px] font-[700] bg-orange-gradient text-center bounce" ref={el => bounceElements.current[3] = el}>
                         <span className='border-[2px] border-[#EF7F1A] py-2 px-8 rounded-tl-[50px] rounded-br-[50px]'>Upper limb Surgery : Hand & Wrist</span>
                     </div>
 
@@ -904,8 +904,14 @@ const DrDarshan = () => {
                         <div className='realtive flex flex-wrap justify-center gap-5'>
                             {
                                 upperLimbSurgery.map((surgery, index) => (
-                                    <div className={`relative w-[100%] md:w-[45%] lg:w-[30%] flex items-center gap-3 mt-5 bg-[#D9D9D9] p-2 rounded-2xl hover:bg-[#FFE7BB] cursor-pointer`} key={index} >
-                                        <img src={surgery.img} className='w-[33%]' alt="" />
+                                    <div className={`group relative w-[100%] md:w-[45%] lg:w-[30%] flex items-center gap-3 mt-5 bg-[#D9D9D9] p-2 rounded-2xl hover:bg-[#FFE7BB] cursor-pointer transition-all duration-500`} key={index} >
+
+                                        <div className='relative'>
+                                            <img src={surgery.img} className='w-full' alt="" />
+                                            <div className='absolute top-[79.5%] right-0 bg-[#D9D9D9] text-[30px] w-[40px] h-[40px] rounded-full flex justify-center items-center group-hover:bg-[#FFE7BB] transition-transform duration-500'>
+                                                <FaArrowRight className='w-[20px] h-[20px] rotate-[-45deg] text-[#EF7F1A] group-hover:rotate-0 transition-transform duration-500' />
+                                            </div>
+                                        </div>
 
                                         <div className='mt-1'>
                                             <div className='text-[16px] text-[#B22726] font-[700] font-para'>{surgery.text}</div>
@@ -914,11 +920,9 @@ const DrDarshan = () => {
                                             </div>
                                         </div>
 
-                                        <div className='absolute bottom-12 w-full'>
-                                            <div className='absolute left-24.5 bg-[#D9D9D9] text-[30px] w-[40px] h-[40px] rounded-tl-full rounded-bl-full flex justify-center items-center'>
-                                                <FaArrowRight className='w-[20px] h-[20px]' />
-                                            </div>
-                                        </div>
+                                        {/* <div className='absolute bottom-12 w-full'>
+                                            
+                                        </div> */}
                                     </div>
                                 ))
                             }
@@ -988,8 +992,14 @@ const DrDarshan = () => {
                     <div className='realtive flex flex-wrap justify-center gap-5'>
                         {
                             elbow.map((surgery, index) => (
-                                <div className={`relative w-[100%] md:w-[45%] lg:w-[30%] flex items-center gap-3 mt-5 bg-[#D9D9D9] p-2 rounded-2xl hover:bg-[#FFE7BB] cursor-pointer`} key={index} >
-                                    <img src={surgery.img} className='w-[33%]' alt="" />
+                                <div className={`group relative w-[100%] md:w-[45%] lg:w-[30%] flex items-center gap-3 mt-5 bg-[#D9D9D9] p-2 rounded-2xl hover:bg-[#FFE7BB] cursor-pointer transition-all duration-500`} key={index} >
+
+                                    <div className='relative'>
+                                        <img src={surgery.img} className='w-full' alt="" />
+                                        <div className='absolute top-[79.5%] right-0 bg-[#D9D9D9] text-[30px] w-[40px] h-[40px] rounded-full flex justify-center items-center group-hover:bg-[#FFE7BB] transition-transform duration-500'>
+                                            <FaArrowRight className='w-[20px] h-[20px] rotate-[-45deg] text-[#EF7F1A] group-hover:rotate-0 transition-transform duration-500' />
+                                        </div>
+                                    </div>
 
                                     <div className='mt-1'>
                                         <div className='text-[16px] text-[#B22726] font-[700] font-para'>{surgery.text}</div>
@@ -998,11 +1008,9 @@ const DrDarshan = () => {
                                         </div>
                                     </div>
 
-                                    <div className='absolute bottom-12 w-full'>
-                                        <div className='absolute left-24.5 bg-[#D9D9D9] text-[30px] w-[40px] h-[40px] rounded-tl-full rounded-bl-full flex justify-center items-center'>
-                                            <FaArrowRight className='w-[20px] h-[20px]' />
-                                        </div>
-                                    </div>
+                                    {/* <div className='absolute bottom-12 w-full'>
+                                            
+                                        </div> */}
                                 </div>
                             ))
                         }
@@ -1021,8 +1029,14 @@ const DrDarshan = () => {
                     <div className='realtive flex flex-wrap justify-center gap-5'>
                         {
                             Shoulder.map((surgery, index) => (
-                                <div className={`relative w-[100%] md:w-[45%] lg:w-[30%] flex items-center gap-3 mt-5 bg-[#D9D9D9] p-2 rounded-2xl hover:bg-[#FFE7BB] cursor-pointer`} key={index} >
-                                    <img src={surgery.img} className='w-[33%]' alt="" />
+                                <div className={`group relative w-[100%] md:w-[45%] lg:w-[30%] flex items-center gap-3 mt-5 bg-[#D9D9D9] p-2 rounded-2xl hover:bg-[#FFE7BB] cursor-pointer transition-all duration-500`} key={index} >
+
+                                    <div className='relative'>
+                                        <img src={surgery.img} className='w-full' alt="" />
+                                        <div className='absolute top-[79.5%] right-0 bg-[#D9D9D9] text-[30px] w-[40px] h-[40px] rounded-full flex justify-center items-center group-hover:bg-[#FFE7BB] transition-transform duration-500'>
+                                            <FaArrowRight className='w-[20px] h-[20px] rotate-[-45deg] text-[#EF7F1A] group-hover:rotate-0 transition-transform duration-500' />
+                                        </div>
+                                    </div>
 
                                     <div className='mt-1'>
                                         <div className='text-[16px] text-[#B22726] font-[700] font-para'>{surgery.text}</div>
@@ -1031,11 +1045,9 @@ const DrDarshan = () => {
                                         </div>
                                     </div>
 
-                                    <div className='absolute bottom-12 w-full'>
-                                        <div className='absolute left-24.5 bg-[#D9D9D9] text-[30px] w-[40px] h-[40px] rounded-tl-full rounded-bl-full flex justify-center items-center'>
-                                            <FaArrowRight className='w-[20px] h-[20px]' />
-                                        </div>
-                                    </div>
+                                    {/* <div className='absolute bottom-12 w-full'>
+                                            
+                                        </div> */}
                                 </div>
                             ))
                         }
@@ -1052,8 +1064,14 @@ const DrDarshan = () => {
                     <div className='realtive flex flex-wrap justify-center gap-5'>
                         {
                             congenital.map((surgery, index) => (
-                                <div className={`relative w-[100%] md:w-[45%] lg:w-[30%] flex items-center gap-3 mt-5 bg-[#D9D9D9] p-2 rounded-2xl hover:bg-[#FFE7BB] cursor-pointer`} key={index} >
-                                    <img src={surgery.img} className='w-[33%]' alt="" />
+                                <div className={`group relative w-[100%] md:w-[45%] lg:w-[30%] flex items-center gap-3 mt-5 bg-[#D9D9D9] p-2 rounded-2xl hover:bg-[#FFE7BB] cursor-pointer transition-all duration-500`} key={index} >
+
+                                    <div className='relative'>
+                                        <img src={surgery.img} className='w-full' alt="" />
+                                        <div className='absolute top-[79.5%] right-0 bg-[#D9D9D9] text-[30px] w-[40px] h-[40px] rounded-full flex justify-center items-center group-hover:bg-[#FFE7BB] transition-transform duration-500'>
+                                            <FaArrowRight className='w-[20px] h-[20px] rotate-[-45deg] text-[#EF7F1A] group-hover:rotate-0 transition-transform duration-500' />
+                                        </div>
+                                    </div>
 
                                     <div className='mt-1'>
                                         <div className='text-[16px] text-[#B22726] font-[700] font-para'>{surgery.text}</div>
@@ -1062,11 +1080,9 @@ const DrDarshan = () => {
                                         </div>
                                     </div>
 
-                                    <div className='absolute bottom-12 w-full'>
-                                        <div className='absolute left-24.5 bg-[#D9D9D9] text-[30px] w-[40px] h-[40px] rounded-tl-full rounded-bl-full flex justify-center items-center'>
-                                            <FaArrowRight className='w-[20px] h-[20px]' />
-                                        </div>
-                                    </div>
+                                    {/* <div className='absolute bottom-12 w-full'>
+                                            
+                                        </div> */}
                                 </div>
                             ))
                         }
@@ -1085,8 +1101,14 @@ const DrDarshan = () => {
                     <div className='realtive flex flex-wrap justify-center gap-5'>
                         {
                             nerve.map((surgery, index) => (
-                                <div className={`relative w-[100%] md:w-[45%] lg:w-[30%] flex items-center gap-3 mt-5 bg-[#D9D9D9] p-2 rounded-2xl hover:bg-[#FFE7BB] cursor-pointer`} key={index} >
-                                    <img src={surgery.img} className='w-[33%]' alt="" />
+                                <div className={`group relative w-[100%] md:w-[45%] lg:w-[30%] flex items-center gap-3 mt-5 bg-[#D9D9D9] p-2 rounded-2xl hover:bg-[#FFE7BB] cursor-pointer transition-all duration-500`} key={index} >
+
+                                    <div className='relative'>
+                                        <img src={surgery.img} className='w-full' alt="" />
+                                        <div className='absolute top-[79.5%] right-0 bg-[#D9D9D9] text-[30px] w-[40px] h-[40px] rounded-full flex justify-center items-center group-hover:bg-[#FFE7BB] transition-transform duration-500'>
+                                            <FaArrowRight className='w-[20px] h-[20px] rotate-[-45deg] text-[#EF7F1A] group-hover:rotate-0 transition-transform duration-500' />
+                                        </div>
+                                    </div>
 
                                     <div className='mt-1'>
                                         <div className='text-[16px] text-[#B22726] font-[700] font-para'>{surgery.text}</div>
@@ -1095,11 +1117,9 @@ const DrDarshan = () => {
                                         </div>
                                     </div>
 
-                                    <div className='absolute bottom-12 w-full'>
-                                        <div className='absolute left-24.5 bg-[#D9D9D9] text-[30px] w-[40px] h-[40px] rounded-tl-full rounded-bl-full flex justify-center items-center'>
-                                            <FaArrowRight className='w-[20px] h-[20px]' />
-                                        </div>
-                                    </div>
+                                    {/* <div className='absolute bottom-12 w-full'>
+                                            
+                                        </div> */}
                                 </div>
                             ))
                         }
@@ -1118,8 +1138,14 @@ const DrDarshan = () => {
                     <div className='realtive flex flex-wrap justify-center gap-5'>
                         {
                             reconstructive.map((surgery, index) => (
-                                <div className={`relative w-[100%] md:w-[45%] lg:w-[30%] flex items-center gap-3 mt-5 bg-[#D9D9D9] p-2 rounded-2xl hover:bg-[#FFE7BB] cursor-pointer`} key={index} >
-                                    <img src={surgery.img} className='w-[33%]' alt="" />
+                                <div className={`group relative w-[100%] md:w-[45%] lg:w-[30%] flex items-center gap-3 mt-5 bg-[#D9D9D9] p-2 rounded-2xl hover:bg-[#FFE7BB] cursor-pointer transition-all duration-500`} key={index} >
+
+                                    <div className='relative'>
+                                        <img src={surgery.img} className='w-full' alt="" />
+                                        <div className='absolute top-[79.5%] right-0 bg-[#D9D9D9] text-[30px] w-[40px] h-[40px] rounded-full flex justify-center items-center group-hover:bg-[#FFE7BB] transition-transform duration-500'>
+                                            <FaArrowRight className='w-[20px] h-[20px] rotate-[-45deg] text-[#EF7F1A] group-hover:rotate-0 transition-transform duration-500' />
+                                        </div>
+                                    </div>
 
                                     <div className='mt-1'>
                                         <div className='text-[16px] text-[#B22726] font-[700] font-para'>{surgery.text}</div>
@@ -1128,11 +1154,9 @@ const DrDarshan = () => {
                                         </div>
                                     </div>
 
-                                    <div className='absolute bottom-12 w-full'>
-                                        <div className='absolute left-24.5 bg-[#D9D9D9] text-[30px] w-[40px] h-[40px] rounded-tl-full rounded-bl-full flex justify-center items-center'>
-                                            <FaArrowRight className='w-[20px] h-[20px]' />
-                                        </div>
-                                    </div>
+                                    {/* <div className='absolute bottom-12 w-full'>
+                                            
+                                        </div> */}
                                 </div>
                             ))
                         }
@@ -1141,7 +1165,7 @@ const DrDarshan = () => {
             </div>
 
             {/* container 8 */}
-
+            x
             <div className='p-10 md:p-20 mt-10 bg-[#B6FEB433]'>
                 <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient">
                     Publications:
@@ -1158,34 +1182,50 @@ const DrDarshan = () => {
                 </div>
             </div>
 
-            <div className='mt-10 lg:px-20 sideScroll'>
-                <div className="font-heading text-[28px] text-center lg:text-[38px] font-[700] bg-orange-gradient mb-5">
-                    Consultation Locations
+
+
+            <div className='relative'>
+                <div className='realtive'>
+                    <img src={assets.locationBg} className='realtive w-full md:h-[450px] lg:h-[500px] mxl:h-[650px] hidden md:block' alt="" />
+                    <img src={assets.locationBgMobile} alt="" className='w-full h-[770px] md:hidden' />
                 </div>
+                <div className="absolute top-0 z-5 flex flex-col items-center gap-10 md:gap-30 justify-center px-5 py-15 md:flex-row">
+                    <img src={assets.locationImage} className='w-[90%] md:w-[40%]' alt="" />
 
-                <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 justify-center mt-10'>
-                    <div className='w-[85%] border-1 border-black rounded-xl p-3 text-center mx-auto max-w-[390px] mxl:max-w-[590px]'>
-                        <div className='bg-orange-gradient text-[24px] font-[700] mxl:text-[32px] font-heading'>Sapiens Clinic</div>
-                        <div className='text-[16px] font-para font-[600] mxl:text-[24px]'>Mon to sat 12:00 noon to 8:00 PM, Sunday Holiday</div>
-                    </div>
+                    <div className='flex flex-col'>
+                        <div className='text-[24px] text-white font-[700] font-heading mt-5 lg:text-[40px]'>Consultation Locations</div>
 
-                    <div className='w-[85%] border-1 border-black rounded-xl p-3 text-center mx-auto  max-w-[390px] mxl:max-w-[590px]'>
-                        <div className='bg-orange-gradient text-[24px] font-[700] mxl:text-[32px] font-heading'>Appollo Spectra - Koramangala</div>
-                        <div className='text-[16px] font-para font-[600] mxl:text-[24px]'>Wednesday and Saturday, 10:00 AM to 1:00 PM</div>
-                    </div>
+                        <div className='flex gap-3 items-start mt-4'>
+                            <img src={assets.locationSvg} alt="" />
+                            <div>
+                                <div className='font-logo text-[30px] font-[400] text-white lg:text-[44px]'>Sapiens Clinic</div>
+                                <div className='font-para text-[14px] font-[600] text-white mt-1 lg:text-[16px]'>Mon to sat 12:00 noon to 8:00 PM, Sunday Holiday</div>
+                            </div>
+                        </div>
 
-                    <div className='w-[85%] border-1 border-black rounded-xl p-3 text-center mx-auto max-w-[390px] mxl:max-w-[590px]'>
-                        <div className='bg-orange-gradient text-[24px] font-[700] mxl:text-[32px] font-heading'>Rxdx Healthcare, Whitefiled:</div>
-                        <div className='text-[16px] font-para font-[600] mxl:text-[24px]'>Every Monday Morning, 10:00 AM to 12:00 PM</div>
+                        <div className='flex gap-3 items-start mt-4'>
+                            <img src={assets.locationSvg} alt="" />
+                            <div>
+                                <div className='font-heading text-[16px] font-[700] text-white lg:text-[22px]'>Apollo Spectra - Koramangala</div>
+                                <div className='font-para text-[14px] font-[600] text-white mt-1 lg:text-[16px]'>Wednesday and Saturday, 10:00 AM to 1:00 PM</div>
+                            </div>
+                        </div>
+
+                        <div className='flex gap-3 items-start mt-4'>
+                            <img src={assets.locationSvg} alt="" />
+                            <div>
+                                <div className='font-heading text-[16px] font-[700] text-white lg:text-[22px]'>Rxdx Healthcare, Whitefiled</div>
+                                <div className='font-para text-[14px] font-[600] text-white mt-1 lg:text-[16px]'>Every Monday Morning, 10:00 AM to 12:00 PM</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-
             <div className='p-5 lg:px-25 mt-10'>
                 <div
                     dangerouslySetInnerHTML={{
-                        __html: `<div class="elfsight-app-2080cde5-0a10-4e2a-b2f1-767570414177"></div>`
+                        __html: `<div class="elfsight-app-4da7b5d7-a323-48ec-9858-ae01cfc8aba2"></div>`
                     }}
                 />
             </div>
@@ -1201,7 +1241,7 @@ const DrDarshan = () => {
                 >
                     <div
                         ref={contentRef}
-                        className='flex gap-10 flex-col items-center md:flex-row md:justify-center md:flex-nowrap mt-10'
+                        className='flex gap-10 items-center md:flex-row md:justify-center md:flex-nowrap mt-10'
                         onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseLeave}
                     >
@@ -1218,6 +1258,7 @@ const DrDarshan = () => {
                     </div>
                 </div>
             </div>
+            {/* <img src={surgery.img} className='w-full' alt="" /> */}
             <Outlet />
         </PageTransition>
     )

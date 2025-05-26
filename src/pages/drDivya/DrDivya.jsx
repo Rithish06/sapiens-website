@@ -99,7 +99,6 @@ const DrDivya = () => {
                             trigger: el,
                             start: "top 60%",
                             end: "top 30%",
-                            // toggleActions: "play none none none",
                             scrub: 3,
                             markers: false,
                             onEnter: () => {
@@ -123,7 +122,6 @@ const DrDivya = () => {
             bounceRefs.current[index] = el;
         }
     };
-
 
     useLayoutEffect(() => {
         gsap.fromTo(
@@ -218,59 +216,88 @@ const DrDivya = () => {
     const services = [
         {
             link: '',
-            text: 'Refraction/Glass testing'
+            text: 'Refraction/Glass testing',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+
         },
         {
             link: '',
-            text: 'Pediatric eye check up'
+            text: 'Pediatric eye check up',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: '',
-            text: 'Diabetic retinopathy screening & surgery'
+            text: 'Diabetic retinopathy screening & surgery',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: '',
-            text: 'Cataract evaluation & surgery'
+            text: 'Cataract evaluation & surgery',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: '',
-            text: 'Ocular inflammation or uveitis'
+            text: 'Ocular inflammation or uveitis',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: '',
-            text: 'Glaucoma evaluation & management'
+            text: 'Glaucoma evaluation & management',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: '',
-            text: 'Lid malposition'
+            text: 'Lid malposition',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: '',
-            text: 'Thyroid eye disease'
+            text: 'Thyroid eye disease',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: '',
-            text: 'Facial and periocular Aesthetics'
+            text: 'Facial and periocular Aesthetics',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: '',
-            text: 'lacrimal sac surgery'
+            text: 'lacrimal sac surgery',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: '',
-            text: 'Evisceration'
+            text: 'Evisceration',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: '',
-            text: 'Enucleation and rehabilitation'
+            text: 'Enucleation and rehabilitation',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: '',
-            text: 'Ptosis surgery'
+            text: 'Ptosis surgery',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
         {
             link: '',
-            text: 'Orbitotomies'
+            text: 'Orbitotomies',
+            img: assets.egImage,
+            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
     ]
 
@@ -538,13 +565,24 @@ const DrDivya = () => {
                         Services provided
                     </div>
 
+                    <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient text-center my-10 bounce">
+                        <span className='border-[2px] border-[#EF7F1A] py-2 px-8 rounded-tl-[50px] rounded-br-[50px]'>Eye Service</span>
+                    </div>
+
                     {/* Grid List */}
-                    <div className="grid grid-cols-1 gap-0 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4 mt-8 z-10 relative  bg-[#BDC4FF] p-5 rounded-2xl overflow-hidden bounce" ref={(el) => addBounceRef(el, 3)}>
+                    <div className="flex flex-wrap gap-[50px] justify-center bounce" ref={(el) => addBounceRef(el, 3)}>
                         {
                             services.map((surgery, index) => (
-                                <div className="flex items-center gap-3 mt-5" key={index}>
-                                    <img src={assets.eyeicon} className='w-[24px] h-[24px] lg:w-[30px] lg:h-[30px]' alt="" />
-                                    <div className="text-[12px] lg:text-[16px] font-text font-[700]">{surgery.text}</div>
+                                <div className='flex flex-col items-center cursor-pointer' key={index}>
+                                    <img src={assets.egDivyaImage} className='relative w-[120px] h-auto' alt="" />
+                                    <div className='group realtive -mt-[60px] w-[230px] h-[230px] bg-[#D9D9D9] flex justify-center items-end rounded-t-full hover:bg-[#B22726] transition-all duration-500' >
+                                        <div className='h-[65%] w-[80%]'>
+                                            <div className='text-[14px] font-[700] font-para text-center group-hover:text-white trasition-transform duration-500'>{surgery.text}</div>
+                                            <div className='text-[12px] font-[500] mt-2 font-para group-hover:text-white trasition-transform duration-500'>
+                                                {surgery.txt.length > 120 ? surgery.txt.substring(0, 120) + "..." : surgery.text}
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             ))
                         }
