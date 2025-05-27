@@ -115,10 +115,10 @@ const HomeBanner = ({learnMoreFunction}) => {
 								DO, DNB, FICO, FRCS (Glas), FAICO (Oculoplasty),
 							</div>
 							<div className="font-para text-[8px] text-white w-[230px] s:w-[280px] lg:w-1/2 s:text-[9px] lg:text-[12px] mxl:text-[16px]  mt-2">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quos ex a fugit ratione. Omnis velit a dicta maiores eius aliquid vero dolore. Suscipit voluptatibus, praesentium voluptatum nesciunt voluptate quis?
+								Dr. Divya D Sundaresh, an experienced ophthalmologist in Bangalore, specializes in orbit surgery, oculoplasty and facial aesthetics. As a leading eye specialist in Malleshwaram, she also excels in treating conditions like cataracts, eye injuries, squint eye and eye allergies.
 							</div>
 							<div className="font-para text-[8px] text-white w-[230px] s:w-[280px] lg:w-1/2 s:text-[9px] lg:text-[12px] mxl:text-[16px] mt-2">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus iste laboriosam delectus nam illo magni quam. Labore error fugit maxime quaerat, obcaecati aperiam et aliquam nesciunt! Nesciunt magnam necessitatibus porro!
+								Whether you need a comprehensive eye checkup, eye test, or require advanced treatments like cataract surgery or retina surgery, Dr. Divya D Sundaresh provides expert care to improve vision and maintain eye health.
 							</div>
 							<div className="flex gap-6 mt-3 lg:mt-4 mxl:mt-6">
 								<button onClick={learnMoreFunction} className="bg-[#EF7F1A] px-3 py-2 text-[12px] rounded-sm font-para font-[800] lg:text-[14px] lg:px-4 lg:py-2.5 text-white cursor-pointer">
@@ -132,7 +132,7 @@ const HomeBanner = ({learnMoreFunction}) => {
 							</div>
 						</div>
 					</div>
-					<img src={assets.drdarshan} className="w-full h-auto md:hidden" alt="" />
+					<img src={assets.drDivyaHomePageBannerImage} className="w-full h-auto md:hidden" alt="" />
 				</div>
 
 				{/* Single Pagination Container */}

@@ -39,28 +39,28 @@ const Invitation = () => {
                     <div className='flex flex-col gap-3 justify-center mt-7 md:flex-row'>
 
                         <div className='px-5 md:w-[50%]'>
-                            <div className='text-[20px] font-[700] text-center font-para lg:text-[30px]'>Objectives of training:</div>
+                            <div className='text-[20px] font-[700] text-left font-para lg:text-[30px]'>Objectives of training:</div>
                             <ul className='list-disc mt-5 text-[12px] lg:text-[16px] font-[700] font-para'>
-                                <li>To perform a good clinical assessment of various problems of upper limb</li>
-                                <li>Comprehensive training in</li>
-                                <li>
-                                    <li>Upper limb surgery </li>
-                                    <li>Microsurgery/Microvascular surgery </li>
-                                    <li>Brachial plexus/Peripheral nerve surgery </li>
-                                    <li>Neglected trauma</li>
-                                    <li>Wrist injuries</li>
-                                    <li>Elbow injuries</li>
-                                    <li>Wrist arthroscopy</li>
-                                    <li>Elbow arthroscopy and arthroplasty</li>
+                                <li className='mt-1'>To perform a good clinical assessment of various problems of upper limb</li>
+                                <li className='mt-1'>Comprehensive training in</li>
+                                <li className='ml-4 mt-1'>
+                                    <li className='mt-1'>Upper limb surgery </li>
+                                    <li className='mt-1'>Microsurgery/Microvascular surgery </li>
+                                    <li className='mt-1'>Brachial plexus/Peripheral nerve surgery </li>
+                                    <li className='mt-1'>Neglected trauma</li>
+                                    <li className='mt-1'>Wrist injuries</li>
+                                    <li className='mt-1'>Elbow injuries</li>
+                                    <li className='mt-1'>Wrist arthroscopy</li>
+                                    <li className='mt-1'>Elbow arthroscopy and arthroplasty</li>
                                 </li>
-                                <li>Expected to be involved in patient care, maintain log book & publish articles</li>
+                                <li className='mt-1'>Expected to be involved in patient care, maintain log book & publish articles</li>
                             </ul>
                         </div>
 
                         <div className='w-[80%] border-black border-[1px] md:w-0 md:h-[300px] mx-auto'></div>
 
                         <div className='px-5 md:w-[50%]'>
-                            <div className='text-[20px] font-[700] text-center  lg:text-[30px]'>Duration: 1 year</div>
+                            {/* <div className='text-[20px] font-[700] text-center  lg:text-[30px]'>Duration: 1 year</div> */}
                             <div className='text-[12px] font-para mt-6 lg:text-[16px]'><span className='font-[700]'>Last date for application:</span> 15th June 2025</div>
                             <div className='text-[12px] font-para mt-2 lg:text-[16px]'><span className='font-[700]'>Interview:</span> June last week 2025</div>
                             <div className='text-[12px] font-para mt-2 lg:text-[16px]'><span className='font-[700]'>Course starts on:</span> 1st August 2025</div>

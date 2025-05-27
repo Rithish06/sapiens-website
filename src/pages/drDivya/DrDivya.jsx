@@ -626,6 +626,7 @@ const DrDivya = () => {
                 </div>
             </div>
 
+
             <div className='p-5 lg:px-20 mt-5 '>
                 <div className="font-heading text-[28px] text-center lg:text-[38px] font-[700] bg-orange-gradient mb-5">
                     Professional Memberships

@@ -55,7 +55,7 @@ const Navbar = () => {
     };
 
     return (
-        <div className={`w-full bg-[#FFF6E0] lg:bg-transparent ${mobileFixed ? 'fixed z-100 md:bg-[#FFF6E0]' : 'absolute z-100 md:bg-transparent'}`}>
+        <div className={`w-full bg-[#FFF6E0] lg:bg-transparent ${mobileFixed ? 'fixed z-[999] md:bg-[#FFF6E0]' : 'absolute z-[999] md:bg-transparent'}`}>
             {/* Header */}
             <div className="px-4 py-1 flex items-center justify-between lg:px-20 font-poppins">
                 {/* Logo */}

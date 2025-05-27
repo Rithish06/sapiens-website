@@ -70,6 +70,7 @@ import locationBg from './images/best-hand-surgeon-dr-darshan.png'
 import locationBgMobile from './images/best-hand-surgeon-dr-darshan-mobile.png'
 import locationImage from './images/best-orthopedic-malleshwaram-bangalore.png'
 import locationSvg from './svgs/dr-darshan-location.svg'
+import drDivyaHomePageBannerImage from './images/dr-divya-home-banner-image.png'
 
 // dr darshan services image
 import egImage from './images/eg-image.png'
@@ -151,5 +152,6 @@ export const assets = {
     locationBg,
     locationImage,
     locationSvg,
-    locationBgMobile
+    locationBgMobile,
+    drDivyaHomePageBannerImage
 }

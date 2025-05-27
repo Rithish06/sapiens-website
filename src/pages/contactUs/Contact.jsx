@@ -11,8 +11,9 @@ gsap.registerPlugin(ScrollTrigger)
 import PageTransition from "../../components/PageTransition";
 import emailjs from '@emailjs/browser';
 import { init } from '@emailjs/browser';
-import { ToastContainer, toast } from 'react-toastify';
+// import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Toaster, toast } from 'sonner';
 
 const Contact = () => {
 
@@ -139,14 +140,14 @@ const Contact = () => {
     } = useForm()
 
     useEffect(() => {
-        init("h-ZQGpG0Ul1KZ3lvE"); // Initialize once
+        init("TTEfFnQUvu6htAOxZ"); // Initialize once
     }, []);
 
     const onSubmit = (data) => {
         setIsSubmitting(true);
         emailjs.send(
-            "sapiens-contact-page",
-            "template_n29pnov",
+            "service_b8jvt4d",
+            "template_c06irsg",
             data
         )
             .then(() => {
@@ -298,13 +299,13 @@ const Contact = () => {
                             </div>
 
                             <div className='w-[95%] border-1 border-black rounded-xl p-3 text-center  max-w-[390px] mxl:max-w-[590px]'>
-                                <div className='bg-orange-gradient text-[24px] font-[700] mxl:text-[36px] font-heading'>Appollo Spectra - Koramangala</div>
-                                <div className='text-[16px] font-para font-[600] mxl:text-[24px]'>Wednesday and Saturday, 10:00 AM to 1:00 PM</div>
+                                <div className='bg-orange-gradient text-[24px] font-[700] mxl:text-[36px] font-heading'>Apollo Spectra - Koramangala</div>
+                                <div className='text-[16px] font-para font-[600] mxl:text-[24px]'>Wednesday and Saturday, 10:00 AM to <br />1:00 PM</div>
                             </div>
 
                             <div className='w-[95%] border-1 border-black rounded-xl p-3 text-center  max-w-[390px] mxl:max-w-[590px]'>
                                 <div className='bg-orange-gradient text-[24px] font-[700] mxl:text-[36px] font-heading'>Rxdx Healthcare, Whitefiled:</div>
-                                <div className='text-[16px] font-para font-[600] mxl:text-[24px]'>Every Monday Morning, 10:00 AM to 12:00 PM</div>
+                                <div className='text-[16px] font-para font-[600] mxl:text-[24px]'>Every Monday Morning, 10:00 AM to <br />12:00 PM</div>
                             </div>
                         </div>
                     </div>
@@ -335,16 +336,16 @@ const Contact = () => {
                         <div className="flex flex-col gap-5 mt-8 md:w-[95%] lg:pl-10">
                             <div className='px-4 lg:px-14'>
                                 <div className="text-[18px] font-[700] mt-4 font-para lg:text-[24px]">ADDRESS : </div>
-                                <div className='flex gap-3 mt-6'>
+                                <div className='flex gap-3 mt-6 items-center'>
                                     <img src={assets.contactLocation} className='w-[20px] h-[20px]' alt="" />
                                     <div className='text-[12px] font-para font-[500] lg:text-[16px]'>18/3, 1st Main Ranganathapura 18th cross, entrance, opposite Sankey tank, Malleshwaram, Bengaluru, Karnataka 560003.</div>
                                 </div>
-                                <div className='flex gap-3 mt-6'>
-                                    <img src={assets.contactCall} className='w-[20px] h-[20px]' alt="" />
+                                <div className='flex gap-3 mt-6 items-center'>
+                                    <img src={assets.contactCall} className='w-[20px] h-[20px] mb-1' alt="" />
                                     <div className='text-[14px] font-para font-[500]  lg:text-[18px]'><b>Phone :</b> 7892556378</div>
                                 </div>
-                                <div className='flex gap-3 mt-6'>
-                                    <img src={assets.contactEmail} className='w-[20px] h-[20px]' alt="" />
+                                <div className='flex gap-3 mt-6 items-center'>
+                                    <img src={assets.contactEmail} className='w-[20px] h-[20px] mb-0.5' alt="" />
                                     <div className='text-[12px] font-para font-[500] lg:text-[18px]'><b>Email Us :</b> sapiensclinic@gmail.com</div>
                                 </div>
                             </div>
@@ -382,7 +383,7 @@ const Contact = () => {
                 </div>
             </div>
             <div className='relative z-1000'>
-                <ToastContainer
+                {/* <ToastContainer
                     position="top-right" // Choose from positions below
                     autoClose={5000}
                     hideProgressBar={false}
@@ -396,6 +397,15 @@ const Contact = () => {
                         zIndex: 9999,
                     }}
                     className="custom-toast-container"
+                /> */}
+                <Toaster
+                    position="top-left"
+                    style={{
+                        zIndex: 1000,
+                        position: 'fixed',
+                        top: "200px"
+                    }}
+                    richColors
                 />
             </div>
         </PageTransition>

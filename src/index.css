@@ -66,6 +66,10 @@
     
 }
 
+.sonner-toast {
+  @apply z-[9999];
+}
+
 body{
     overflow-x: hidden;
 }

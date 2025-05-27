@@ -1198,14 +1198,14 @@ const DrDarshan = () => {
                         <div className='flex gap-3 items-start mt-4'>
                             <img src={assets.locationSvg} alt="" />
                             <div>
-                                <div className='font-logo text-[30px] font-[400] text-white lg:text-[44px]'>Sapiens Clinic</div>
+                                <div className='font-logo text-[30px] font-[400] text-white lg:text-[44px] leading-9'>Sapiens Clinic</div>
                                 <div className='font-para text-[14px] font-[600] text-white mt-1 lg:text-[16px]'>Mon to sat 12:00 noon to 8:00 PM, Sunday Holiday</div>
                             </div>
                         </div>
 
                         <div className='flex gap-3 items-start mt-4'>
                             <img src={assets.locationSvg} alt="" />
-                            <div>
+                            <div>   
                                 <div className='font-heading text-[16px] font-[700] text-white lg:text-[22px]'>Apollo Spectra - Koramangala</div>
                                 <div className='font-para text-[14px] font-[600] text-white mt-1 lg:text-[16px]'>Wednesday and Saturday, 10:00 AM to 1:00 PM</div>
                             </div>
@@ -1221,7 +1221,8 @@ const DrDarshan = () => {
                     </div>
                 </div>
             </div>
-
+            
+            
             <div className='p-5 lg:px-25 mt-10'>
                 <div
                     dangerouslySetInnerHTML={{

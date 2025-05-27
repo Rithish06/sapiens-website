@@ -394,6 +394,20 @@ const Home = () => {
 		},
 	]
 
+	useEffect(() => {
+		// Load the Elfsight platform script
+		const script = document.createElement('script');
+		script.src = 'https://static.elfsight.com/platform/platform.js';
+		script.dataset.useServiceCore = '';
+		script.defer = true;
+		document.body.appendChild(script);
+
+		return () => {
+			// Clean up
+			document.body.removeChild(script);
+		};
+	}, []);
+
 	return (
 		<PageTransition>
 			<div className='overflow-x-hidden' ref={containerRef}>
@@ -457,6 +471,40 @@ const Home = () => {
 							<li className='font-para font-[700] text-[12px] md:text-[16px] color-black mt-2'>Affordable Eye & Hand Surgery in Bangalore with High Success Rates</li>
 							<li className='font-para font-[700] text-[12px] md:text-[16px] color-black mt-2'>Personalized Care with Advanced Medical Technology</li>
 						</ul>
+					</div>
+				</div>
+
+				<div className='mt-15'>
+					<div className="font-heading text-[28px] text-center lg:text-[38px] font-[700] bg-orange-gradient mb-5">
+						Our Latest Posts
+					</div>
+
+					<div
+						dangerouslySetInnerHTML={{
+							__html: `<div class="elfsight-app-3ee24da7-0cc2-4beb-9a2e-41775f3e49f3" data-elfsight-app-lazy />`
+						}}
+					/>
+
+				</div>
+
+				<div className='mt-20'>
+					{/* youtube videos */}
+					<div className="font-heading text-[28px] text-center lg:text-[38px] font-[700] bg-orange-gradient mb-5">
+						Videos for Patient Education
+					</div>
+					<div className='flex flex-col justify-center items-center lg:flex-row flex-wrap gap-10 mt-10'>
+						<div className='flex flex-col gap-2 justify-start items-start'>
+							<iframe src="https://www.youtube.com/embed/mYUZpvA9ghk?si=qGLGZIHm89DULiyo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen className='rounded-xl w-[300px] h-[200px] lg:w-[400px] lg:h-[250px]'></iframe>
+							<div className='text-[16px] lg:text-[20px] bg-orange-gradient font-para font-[600]'>Nerve Problems Affecting Hand</div>
+						</div>
+						<div className='flex flex-col gap-2 justify-start items-start'>
+							<iframe src="https://www.youtube.com/embed/6zrwKWvdRSI?si=zuvea8XpU2jRWt_w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen className='rounded-xl w-[300px] h-[200px] lg:w-[400px] lg:h-[250px]'></iframe>
+							<div className='text-[16px] lg:text-[20px] bg-orange-gradient font-para font-[600]'>Exercises for Wrist</div>
+						</div>
+						<div className='flex flex-col gap-2 justify-start items-start'>
+							<iframe src="https://www.youtube.com/embed/5Li8ng_Yvvg?si=GiEtiT7GcNlNyEbo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen className='rounded-xl w-[300px] h-[200px] lg:w-[400px] lg:h-[250px]'></iframe>
+							<div className='text-[16px] lg:text-[20px] bg-orange-gradient font-para font-[600]'>Watch our Expert</div>
+						</div>
 					</div>
 				</div>
 
