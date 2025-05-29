@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 
 const Invitation = () => {
     return (
-        <div className=''>
-            < div className='realtive overflow-hidden mt-20' >
+        <div className= 'border-t-[3px] border-b-[3px] border-zinc-600 mt-20'>
+            < div className='realtive overflow-hidden py-8' >
                 <div className='w-full flex flex-col justify-between h-[1100px] md:h-[800px]'>
                     <div className='realtive rounded-full w-[300px] h-[300px] bg-[#DFF7EA] -mt-10 -ml-20'></div>
                     <div className='relative rounded-full w-[300px] h-[300px] bg-[#D3C0FF] ml-[90%]'></div>

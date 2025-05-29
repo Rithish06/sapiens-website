@@ -16,7 +16,7 @@ const Navbar = () => {
 
     const shouldShowSimpleLogo = location.pathname === '/' && windowWidth > 1024;
     const logoToShow = shouldShowSimpleLogo ? assets.logo : assets.colorLogo;
-    
+
 
     useEffect(() => {
         const handleResize = () => {
@@ -54,8 +54,12 @@ const Navbar = () => {
         setIsOpen(false);
     };
 
+    useEffect(() => {
+        console.log("isOpen : ", isOpen)
+    }, [isOpen])
+
     return (
-        <div className={`w-full bg-[#FFF6E0] lg:bg-transparent ${mobileFixed ? 'fixed z-[999] md:bg-[#FFF6E0]' : 'absolute z-[999] md:bg-transparent'}`}>
+        <div className={`w-full bg-[#FFF6E0] font-['poppins'] lg:bg-transparent ${mobileFixed ? 'fixed' : 'absolute'} z-[999] ${(isOpen || mobileFixed) ? 'md:bg-[#FFF6E0]' : 'md:bg-transparent'}`}>
             {/* Header */}
             <div className="px-4 py-1 flex items-center justify-between lg:px-20 font-poppins">
                 {/* Logo */}
@@ -156,7 +160,7 @@ const Navbar = () => {
                         Contact Us
                     </NavLink>
                 </div>
-                <Link  target='_blank'
+                <Link target='_blank'
                     to='/contact'
                     className='bg-orange-500 w-[20%] text-white font-bold flex items-center justify-center lg:text-[14px] mxl:text-[16px] cursor-pointer hover:bg-orange-600 transition-colors'
                 >
@@ -165,7 +169,7 @@ const Navbar = () => {
             </div>
 
             {/* Mobile Navs */}
-            <div className={`transform p-5 w-full h-full bg-white fixed top-20 transition-all duration-500 ${isOpen ? "translate-x-0" : "-translate-x-full"} lg:hidden md:w-[50vw] md:shadow-2xl md:shadow-gray-800`}>
+            <div className={`transform p-5 w-full h-full bg-white fixed top-20 transition-all duration-500 ${isOpen ? "translate-x-0" : "-translate-x-full"} lg:hidden md:w-full md:shadow-2xl md:shadow-gray-800`}>
                 <div className='flex flex-col gap-5'>
                     <NavLink
                         to="/"
@@ -214,7 +218,7 @@ const Navbar = () => {
                     </NavLink>
                 </div>
 
-                <div className='flex flex-col gap-5 mt-12'>
+                <div className='flex flex-col md:flex-row flex-wrap gap-5 md:gap-10 md:max-w-[700px] mt-12'>
                     <div className="flex items-center gap-5">
                         <div className="flex justify-center items-center w-[50px] h-[50px] border border-orange-500 rounded-full">
                             <FaHome className="text-orange-500 text-3xl" />
@@ -224,7 +228,7 @@ const Navbar = () => {
                             <div className="text-[14px] text-[#808080]">Mon to Sat 4:00 PM to 7:30 PM</div>
                         </div>
                     </div>
-                    
+
                     <a target='_blank' href="tel:+917892556378" className="flex items-center gap-5 cursor-pointer">
                         <div className="flex items-center gap-5">
                             <div className="flex justify-center items-center w-[50px] h-[50px] border border-orange-500 rounded-full">
@@ -248,15 +252,16 @@ const Navbar = () => {
                             </div>
                         </div>
                     </a>
-                </div>  
 
-                <Link 
-                    to='/contact'
-                    onClick={closeMobileMenu}
-                    className='bg-orange-500 w-full h-14 text-white font-bold flex items-center justify-center text-[16px] cursor-pointer mt-12 hover:bg-orange-600 transition-colors'
-                >
-                    Book Appointment
-                </Link>
+                    <Link
+                        to='/contact'
+                        onClick={closeMobileMenu}
+                        className='bg-orange-500 w-full md:w-[40%] h-14 text-white font-bold flex items-center justify-center text-[16px] cursor-pointer mt-6 md:mt-0 md:ml-8 hover:bg-orange-600 transition-colors'
+                    >
+                        Book Appointment
+                    </Link>
+                </div>
+
             </div>
         </div>
     );

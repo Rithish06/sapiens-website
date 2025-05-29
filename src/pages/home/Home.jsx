@@ -426,9 +426,9 @@ const Home = () => {
 						<div className="font-para text-[12px] md:text-[16px] color-black mt-5 text-center">Dr. Divya Sundaresh is an Ophthalmologist, who routinely treats cataracts & super-specialized in oculoplasty, ophthalmic plastic surgery, trauma care, eyelid reconstructive surgeries, orbital surgeries, lacrimal surgeries, ophthalmic oncology, and facial cosmetic procedures.</div>
 					</div>
 
-					<div className="my-5 fadex px-[5%] pt-[3%] lg:px-[14%] lg:pt-5%" ref={fadexRef}>
-						<div className='bg-[#FFEDEDCC] rounded-b-[160px] flex flex-col lg:flex-row gap-1 lg:gap-10 items-center lg:p-10 '>
-							<div className='font-heading text-[22px] md:text-[40px] font-[700] color-black text-center w-full] lg:w-[33%]'>Advanced Care in<br /><span className='bg-orange-gradient' >Hand Surgery &Ophthalmology</span></div>
+					<div className="my:0 lg:my-5 fadex px-[0] pt-[3%] lg:px-[5%] mxl:px-[14%] lg:pt-5%" ref={fadexRef}>
+						<div className='bg-[#FFEDEDCC] px-5 py-10 rounded-b-[80px] lg:rounded-b-[160px] flex flex-col lg:flex-row gap-1 lg:gap-10 items-center lg:p-10 '>
+							<div className='font-heading text-[22px] md:text-[36px] font-[700] color-black text-center w-full] lg:w-[33%]'>Advanced Care in<br /><span className='bg-orange-gradient' >Hand Surgery &Ophthalmology</span></div>
 							<div className="font-para text-[12px] md:text-[16px] color-black mt-5 text-center w-full lg:w-[65%]">At Sapiens Clinic, we are committed to providing specialized medical care in hand surgery and ophthalmology in Malleshwaram, Bangalore. Our team of expert doctors ensures precise diagnosis and effective treatments for a range of conditions, from hand injuries, wrist pain, and limb surgeries to advanced eye care, including cataract surgery and retina treatments. With state-of-the-art technology and patient-centric care, we aim to be the best orthopedic and eye hospital in Bangalore</div>
 						</div>
 					</div>
@@ -464,12 +464,12 @@ const Home = () => {
 							<div className='text-[58px] md:text-[70px] bg-orange-gradient font-logo font-[400] p-0 relative bottom-4'>Sapiens Clinic?</div>
 						</div>
 						<ul className='ml-2 list-disc rotaterev' ref={rotateRevRef}>
-							<li className='font-para font-[700] text-[12px] md:text-[16px] color-black mt-2'>Top Orthopedic & Eye Specialists in Bangalore</li>
-							<li className='font-para font-[700] text-[12px] md:text-[16px] color-black mt-2'>Expert Hand Surgeon & Microsurgeon - Dr. Darshan Kumar A. Jain</li>
-							<li className='font-para font-[700] text-[12px] md:text-[16px] color-black mt-2'>Best Ophthalmologist in Malleshwaram Bangalore - Dr. Divya D Sundaresh</li>
-							<li className='font-para font-[700] text-[12px] md:text-[16px] color-black mt-2'>State-of-the-Art Facilities for Hand Surgery, Limb Reconstruction & Eye Care</li>
-							<li className='font-para font-[700] text-[12px] md:text-[16px] color-black mt-2'>Affordable Eye & Hand Surgery in Bangalore with High Success Rates</li>
-							<li className='font-para font-[700] text-[12px] md:text-[16px] color-black mt-2'>Personalized Care with Advanced Medical Technology</li>
+							<li className='font-para font-[700] text-[12px] md:text-[16px] color-black mt-3'>Top Orthopedic & Eye Specialists in Bangalore</li>
+							<li className='font-para font-[700] text-[12px] md:text-[16px] color-black mt-3'>Expert Hand Surgeon & Microsurgeon - Dr. Darshan Kumar A. Jain</li>
+							<li className='font-para font-[700] text-[12px] md:text-[16px] color-black mt-3'>Best Ophthalmologist in Malleshwaram Bangalore - Dr. Divya D Sundaresh</li>
+							<li className='font-para font-[700] text-[12px] md:text-[16px] color-black mt-3'>State-of-the-Art Facilities for Hand Surgery, Limb Reconstruction & Eye Care</li>
+							<li className='font-para font-[700] text-[12px] md:text-[16px] color-black mt-3'>Affordable Eye & Hand Surgery in Bangalore with High Success Rates</li>
+							<li className='font-para font-[700] text-[12px] md:text-[16px] color-black mt-3'>Personalized Care with Advanced Medical Technology</li>
 						</ul>
 					</div>
 				</div>

@@ -18,7 +18,7 @@ const Timeline = (props) => {
         {props.educationData.map((item, index) => (
           <div key={index} className="relative my-3">
             {/* Dot */}
-            <div className="absolute -left-7.5 top-1 w-4 h-4 bg-yellow-400 border-2 border-white rounded-full z-10"></div>
+            <div className="absolute -left-7.5 top-1 w-4 h-4 bg-[#ffd466] rounded-full z-10"></div>
 
             {/* Content */}
             <div className="pl-5">
@@ -26,9 +26,7 @@ const Timeline = (props) => {
               {item.subtitle && <p className="text-sm font-[400] text-[10px] lg:text-[16px] text-white/90">{item.subtitle}</p>}
             </div>
           </div>
-        ))}
-
-        
+        ))}     
       </div>
     </div>
   )

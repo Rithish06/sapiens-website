@@ -17,6 +17,7 @@
     --font-para: "Montserrat";
     --font-heading: "Rubik";
     --font-lobster: "lobster two";
+    --font-roboto : "roboto"
 
     /* break points */
     --breakpoint-xs: 330px;
@@ -45,6 +46,7 @@
     .font-para { font-family: var(--font-para);}
     .font-heading { font-family: var(--font-heading);}
     .font-lobster { font-family: var(--font-lobster); }
+    .font-roboto {font-family : var(--font-roboto)}
 
     /* colors */
     .bg-orange-gradient {

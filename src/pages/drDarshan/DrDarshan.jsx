@@ -831,21 +831,21 @@ const DrDarshan = () => {
         <PageTransition>
             <div className='relative' ref={comp}>
                 <img src={assets.drDarshanDesktopBanner} className='relative w-full h-auto hidden lg:block' alt="" />
-                <img src={assets.drDarshanBannerTablet} className='relative w-full h-auto hidden md:block lg:hidden' alt="" />
-                <img src={assets.drDarshanBannerMobile} className="relative w-full h-auto md:hidden" alt='' />
+                <img src={assets.drDarshanBannerTablet} className='relative w-full h-auto hidden sm:block lg:hidden' alt="" />
+                <img src={assets.drDarshanBannerMobile} className="relative w-full h-auto sm:hidden" alt='' />
 
-                <div className='flex justify-end absolute w-full top-20 md:top-28 lg:top-45 mxl:top-75 anime'>
-                    <div className="w-full px-5 md:w-[60%]">
+                <div className='flex justify-end absolute w-full top-20 sm:top-28 lg:top-45 mxl:top-75 anime'>
+                    <div className="w-full px-5 sm:w-[60%]">
                         <div className='font-heading text-[18px] s:text-[22px] mm:text-[24px] lg:text-[30px] mxl:text-[44px] font-700 font-black'>Dr. Darshan Kumar A. Jain</div>
                         <div className='font-heading text-[10px] s:text-[12px] mm:text-[24px] lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[32px] mt-2'>MBBS, MS Ortho (KMC Manipal),</div>
                         <div className='font-heading text-[10px] s:text-[12px] mm:text-[24px] lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[32px]'>FNB, Clinical Fellow National University Hospital, (Singapore),</div>
                         <div className='font-heading text-[10px] s:text-[12px] mm:text-[24px] lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[32px]'>MNAMS, PGDHHM, Diploma in Tissue Banking (Singapore)</div>
                         <ul className='mt-5 ml-5 list-disc '>
-                            <li className='font-heading text-[10px] s:text-[12px] lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[40px]'>Consultant Hand & Microsurgeon</li>
-                            <li className='font-heading text-[10px] s:text-[12px] lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[40px]'>Consultant Upper Limb/ Upper Extremity Surgeon</li>
-                            <li className='font-heading text-[10px] s:text-[12px] lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[40px]'>Specialist in Wrist & Elbow arthroscopy</li>
-                            <li className='font-heading text-[10px] s:text-[12px] lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[40px]'>Specialist in Shoulder Surgery</li>
-                            <li className='font-heading text-[10px] s:text-[12px] lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[40px]'>Professor in Orthopedics </li>
+                            <li className='font-para text-[10px] s:text-[12px] lg:text-[18px] mxl:text-[20px] font-[500] mxl:leading-[40px]'>Consultant Hand & Microsurgeon</li>
+                            <li className='font-para text-[10px] s:text-[12px] lg:text-[18px] mxl:text-[20px] font-[500] mxl:leading-[40px]'>Consultant Upper Limb/ Upper Extremity Surgeon</li>
+                            <li className='font-para text-[10px] s:text-[12px] lg:text-[18px] mxl:text-[20px] font-[500] mxl:leading-[40px]'>Specialist in Wrist & Elbow arthroscopy</li>
+                            <li className='font-para text-[10px] s:text-[12px] lg:text-[18px] mxl:text-[20px] font-[500] mxl:leading-[40px]'>Specialist in Shoulder Surgery</li>
+                            <li className='font-para text-[10px] s:text-[12px] lg:text-[18px] mxl:text-[20px] font-[500] mxl:leading-[40px]'>Professor in Orthopedics </li>
                         </ul>
                     </div>
                 </div>
@@ -1004,7 +1004,7 @@ const DrDarshan = () => {
                                     <div className='mt-1'>
                                         <div className='text-[16px] text-[#B22726] font-[700] font-para'>{surgery.text}</div>
                                         <div className='text-[14px] font-[500] font-para'>
-                                            {surgery.txt.length > 100 ? `${surgery.txt.substring(0, 100)}...` : `surgery.txt`}
+                                            {surgery.txt.length > 110 ? `${surgery.txt.substring(0, 110)}...` : `surgery.txt`}
                                         </div>
                                     </div>
 
@@ -1041,7 +1041,7 @@ const DrDarshan = () => {
                                     <div className='mt-1'>
                                         <div className='text-[16px] text-[#B22726] font-[700] font-para'>{surgery.text}</div>
                                         <div className='text-[14px] font-[500] font-para'>
-                                            {surgery.txt.length > 100 ? `${surgery.txt.substring(0, 100)}...` : `surgery.txt`}
+                                            {surgery.txt.length > 110 ? `${surgery.txt.substring(0, 110)}...` : `surgery.txt`}
                                         </div>
                                     </div>
 
@@ -1076,7 +1076,7 @@ const DrDarshan = () => {
                                     <div className='mt-1'>
                                         <div className='text-[16px] text-[#B22726] font-[700] font-para'>{surgery.text}</div>
                                         <div className='text-[14px] font-[500] font-para'>
-                                            {surgery.txt.length > 100 ? `${surgery.txt.substring(0, 100)}...` : `surgery.txt`}
+                                            {surgery.txt.length > 110 ? `${surgery.txt.substring(0, 110)}...` : `surgery.txt`}
                                         </div>
                                     </div>
 
@@ -1113,7 +1113,7 @@ const DrDarshan = () => {
                                     <div className='mt-1'>
                                         <div className='text-[16px] text-[#B22726] font-[700] font-para'>{surgery.text}</div>
                                         <div className='text-[14px] font-[500] font-para'>
-                                            {surgery.txt.length > 100 ? `${surgery.txt.substring(0, 100)}...` : `surgery.txt`}
+                                            {surgery.txt.length > 110 ? `${surgery.txt.substring(0, 110)}...` : `surgery.txt`}
                                         </div>
                                     </div>
 
@@ -1150,7 +1150,7 @@ const DrDarshan = () => {
                                     <div className='mt-1'>
                                         <div className='text-[16px] text-[#B22726] font-[700] font-para'>{surgery.text}</div>
                                         <div className='text-[14px] font-[500] font-para'>
-                                            {surgery.txt.length > 100 ? `${surgery.txt.substring(0, 100)}...` : `surgery.txt`}
+                                            {surgery.txt.length > 100 ? `${surgery.txt.substring(0, 110)}...` : `surgery.txt`}
                                         </div>
                                     </div>
 
@@ -1165,7 +1165,7 @@ const DrDarshan = () => {
             </div>
 
             {/* container 8 */}
-            x
+            
             <div className='p-10 md:p-20 mt-10 bg-[#B6FEB433]'>
                 <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient">
                     Publications:
@@ -1182,18 +1182,16 @@ const DrDarshan = () => {
                 </div>
             </div>
 
-
-
             <div className='relative'>
                 <div className='realtive'>
                     <img src={assets.locationBg} className='realtive w-full md:h-[450px] lg:h-[500px] mxl:h-[650px] hidden md:block' alt="" />
-                    <img src={assets.locationBgMobile} alt="" className='w-full h-[770px] md:hidden' />
+                    <img src={assets.locationBgMobile} alt="" className='w-full h-[840px] md:hidden' />
                 </div>
-                <div className="absolute top-0 z-5 flex flex-col items-center gap-10 md:gap-30 justify-center px-5 py-15 md:flex-row">
+                <div className="absolute top-0 z-5 flex flex-col items-center gap-15 md:gap-30 justify-center px-5 py-15 md:flex-row">
                     <img src={assets.locationImage} className='w-[90%] md:w-[40%]' alt="" />
 
-                    <div className='flex flex-col'>
-                        <div className='text-[24px] text-white font-[700] font-heading mt-5 lg:text-[40px]'>Consultation Locations</div>
+                    <div className='flex flex-col gap-5 lg:gap-10'>
+                        <div className='text-[24px] text-white text-center md:text-left font-[700] font-heading mt-5 lg:text-[40px]'>Consultation Locations</div>
 
                         <div className='flex gap-3 items-start mt-4'>
                             <img src={assets.locationSvg} alt="" />
