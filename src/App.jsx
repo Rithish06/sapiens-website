@@ -3,6 +3,8 @@ import RouterOutlet from './components/router/router'
 import Navbar from './components/navbar/Navbar'
 import Footer from './components/footer/Footer'
 import {useLocation } from 'react-router-dom';
+import Career from './pages/career/Career';
+import CarpalTunnel from './pages/drDarshanServices/CarpalTunnel';
 
 const App = () => {
 
@@ -18,7 +20,11 @@ const App = () => {
   return (
     <div>
         <Navbar />
-          <RouterOutlet />
+          <div className='relative'>
+            {/* <RouterOutlet /> */}
+            <CarpalTunnel />
+          </div>
+          {/* <Career /> */}
         <Footer />
     </div>
   )

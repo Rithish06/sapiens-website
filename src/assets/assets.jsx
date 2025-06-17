@@ -78,6 +78,12 @@ import egImage from './images/eg-image.png'
 // dr divya service images
 import egDivyaImage from './images/opthal-eg-img.png'
 
+// career 
+
+import careerPage from './images/career-bg-desktop.png'
+import carrePageBgMobile from './images/career-bg-mobile.png'
+import careerHomeImage from './images/career-image-home.png'
+
 export const assets = {
     logo,
     colorLogo,
@@ -153,5 +159,8 @@ export const assets = {
     locationImage,
     locationSvg,
     locationBgMobile,
-    drDivyaHomePageBannerImage
+    drDivyaHomePageBannerImage,
+    careerPage,
+    carrePageBgMobile,
+    careerHomeImage
 }

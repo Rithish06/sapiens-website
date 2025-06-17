@@ -3,7 +3,7 @@
 @font-face {
   font-family: 'Nada Qonita';
   src: url('/fonts/NadaQonita.woff2') format('woff2'),
-       url('/fonts/NadaQonita.otf') format('opentype');
+    url('/fonts/NadaQonita.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -11,69 +11,106 @@
 
 
 @theme {
-    /* fonts */
-    --font-poppins: "poppins";
-    --font-logo: "Nada Qonita";
-    --font-para: "Montserrat";
-    --font-heading: "Rubik";
-    --font-lobster: "lobster two";
-    --font-roboto : "roboto"
+  /* fonts */
+  --font-poppins: "poppins";
+  --font-logo: "Nada Qonita";
+  --font-para: "Montserrat";
+  --font-heading: "Rubik";
+  --font-lobster: "lobster two";
+  --font-roboto: "roboto";
+  --font-rc: "roboto condensed"
 
     /* break points */
     --breakpoint-xs: 330px;
-    --breakpoint-s: 360px;
-    --brekpoint-mm : 380px; 
-    --brekpoint-ms : 400px; 
-    --breakpoint-sm: 640px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 1024px;
-    --breakpoint-sxl : 1100px;
-    --breakpoint-mxl : 1400px;
-    --breakpoint-xl: 1280px;
-    --breakpoint-2xl: 1536px;
-    
-    /* colors */
-    --color-orange: #EF7F1A;
-    --color-blue: #001F3F;
-    --color-green: #F0FFF0;
+  --breakpoint-s: 360px;
+  --brekpoint-mm: 380px;
+  --brekpoint-ms: 400px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-sxl: 1100px;
+  --breakpoint-mxl: 1400px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+  /* colors */
+  --color-orange: #EF7F1A;
+  --color-blue: #001F3F;
+  --color-green: #F0FFF0;
 }
 
 
 
-@layer utilities{
-    .font-poppins { font-family: var(--font-poppins);}
-    .font-logo { font-family: var(--font-logo);}
-    .font-para { font-family: var(--font-para);}
-    .font-heading { font-family: var(--font-heading);}
-    .font-lobster { font-family: var(--font-lobster); }
-    .font-roboto {font-family : var(--font-roboto)}
+@layer utilities {
+  .font-poppins {
+    font-family: var(--font-poppins);
+  }
 
-    /* colors */
-    .bg-orange-gradient {
-        background-image: linear-gradient(180deg, #EF7F1A 0%, #B22726 100%);
-        webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        text-fill-color: transparent;
-    }
+  .font-logo {
+    font-family: var(--font-logo);
+  }
 
-    .gradient-button-bg {
-        background: linear-gradient(90deg, #EF7F1A 0%, #FFD466 100%);
-    }
+  .font-para {
+    font-family: var(--font-para);
+  }
 
-    .text-orange {color: var(--color-orange);}
-    .text-blue {color: var(--color-blue);}
-    .text-green {color: var(--color-green);}
-    .bg-green {background-color: var(--color-green);}
-    
+  .font-heading {
+    font-family: var(--font-heading);
+  }
+
+  .font-lobster {
+    font-family: var(--font-lobster);
+  }
+
+  .font-roboto {
+    font-family: var(--font-roboto)
+  }
+
+  .font-rc {
+    font-family: var(--font-rc);
+  }
+
+  /* colors */
+  .bg-orange-gradient {
+    background-image: linear-gradient(180deg, #EF7F1A 0%, #B22726 100%);
+    webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+  }
+
+  .red-gradient {
+    background: linear-gradient(270deg, #E7554C 0.84%, #7F0100 100%);
+  }
+
+  .gradient-button-bg {
+    background: linear-gradient(90deg, #EF7F1A 0%, #FFD466 100%);
+  }
+
+  .text-orange {
+    color: var(--color-orange);
+  }
+
+  .text-blue {
+    color: var(--color-blue);
+  }
+
+  .text-green {
+    color: var(--color-green);
+  }
+
+  .bg-green {
+    background-color: var(--color-green);
+  }
+
 }
 
 .sonner-toast {
   @apply z-[9999];
 }
 
-body{
-    overflow-x: hidden;
+body {
+  overflow-x: hidden;
 }
 
 .swiper-pagination {
@@ -99,6 +136,297 @@ body{
   transform: scale(1.2);
 }
 
-body{
-  overflow-x: hidden  ;
+body {
+  overflow-x: hidden;
+}
+
+.blog-post-container {
+  /* width: 80%;
+    margin: 0 auto;
+    padding: 20px; */
+  background: #ffffff;
+  border-radius: 10px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  margin-top: 8vh !important;
+  margin: 0 4rem
+}
+
+.post-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  /* width: 70%; */
+
+}
+
+.banner-left {
+  position: absolute;
+  top: 191px;
+  /* Adjust as needed */
+  left: 50px;
+  width: 160px;
+  /* Adjust to fit your layout */
+  /* z-index: 1000; */
+}
+
+.banner-right {
+  position: absolute;
+  top: 191px;
+  /* Same as left for balance */
+  right: 50px;
+  width: 160px;
+  z-index: 1000;
+}
+
+.banner img {
+  width: 100%;
+  height: 87vh;
+  display: block;
+  border-radius: 8px;
+}
+
+
+.post-image {
+  width: 100%;
+  /* max-height: 400px; */
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.post-content {
+  padding: 83px;
+  padding-top: 20px;
+  margin-top: 42px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 138px;
+  margin-right: 146px;
+}
+
+.post-date {
+  font-size: 1rem;
+  color: #95a5a6;
+}
+
+.post-title {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin: 10px 0;
+  line-height: 48px;
+}
+
+.post-body {
+  font-size: 1rem;
+  color: #000;
+  line-height: 1.6;
+}
+
+.post-body h2 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-top: 20px;
+}
+
+.youtube {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  overflow: hidden;
+}
+
+.responsive-iframe {
+  width: 300px;
+  overflow: hidden;
+}
+
+.responsive-iframe figure {
+  width: 300px;
+}
+
+.post-body img {
+  width: 400px;
+  height: auto;
+}
+
+.post-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  border: 1px solid #000;
+}
+
+table {
+  border: 1px solid #000;
+}
+
+h2 {
+  text-align: center;
+}
+
+/* button {
+  padding: 10px 20px;
+  height: 50px;
+  background-color: #008080;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: inter;
+}
+
+button:hover {
+  background-color: #126565;
+} */
+
+/* wordpress */
+
+.wp-block-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin: 2em 0;
+}
+
+.wp-block-column {
+  flex: 1;
+  min-width: 280px;
+}
+
+.wp-block-column img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.wp-block-column .wp-block-columns {
+  margin: 1em 0;
+}
+
+.wp-block-column>*:first-child {
+  margin-top: 0;
+}
+
+.wp-block-column>*:last-child {
+  margin-bottom: 0;
+}
+
+.content-wrapper div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrapper p {
+  color: #333;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+
+}
+
+.content-wrapper h2 {
+  color: #135673;
+  font-size: 1.75rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.content-wrapper h3 {
+  color: #20D0CE;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+.content-wrapper ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.content-wrapper li {
+  margin-bottom: 0.5rem;
+}
+
+
+
+@media only screen and (max-width:1200px) {
+  .blog-post-container {
+    width: 90%;
+  }
+
+  .post-body img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .post-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .post-content {
+    padding: 20px;
+    margin: 0;
+    box-shadow: none;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .banner {
+    display: none !important;
+  }
+
+  .blog-post-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .wp-block-columns {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .wp-block-column {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .banner {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width:400px) {
+  .post-content {
+    padding: 0;
+  }
+
+  .post-title {
+    font-size: 1.5rem;
+  }
+
+  .post-body img {
+    width: 300px;
+    height: auto;
+  }
+
+  .banner {
+    display: none !important;
+  }
+
+
+  /* Add these styles to your blog-post.component.css */
 }

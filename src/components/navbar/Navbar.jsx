@@ -117,7 +117,7 @@ const Navbar = () => {
 
             {/* Desktop Navs */}
             <div className={`hidden lg:flex px-16 w-full ${isFixed ? 'fixed top-0 transition-top duration-300' : 'absolute mt-2 lg:mt-0'} z-[100] lg:bg-transparent`}>
-                <div className="bg-[#001F3F] w-[80%] flex items-center px-2 lg:py-3 mxl:py-5 pl-10 gap-14">
+                <div className="bg-[#001F3F] lg:w-full mxl:w-[80%] flex items-center justify-center mxl:justify-start px-2 lg:py-3 mxl:py-5 mxl:pl-10 gap-14">
                     <NavLink
                         to="/"
                         className={({ isActive }) =>
@@ -159,10 +159,30 @@ const Navbar = () => {
                     >
                         Contact Us
                     </NavLink>
+
+                    <NavLink
+                        to="/career"
+                        className={({ isActive }) =>
+                            `lg:text-[14px] mxl:text-[16px] cursor-pointer transition-colors font-medium ${isActive ? 'text-orange-500' : 'text-white hover:text-orange-500'
+                            }`
+                        }
+                    >
+                        Career
+                    </NavLink>
+
+                    <NavLink
+                        to="/blog"
+                        className={({ isActive }) =>
+                            `lg:text-[14px] mxl:text-[16px] cursor-pointer transition-colors font-medium ${isActive ? 'text-orange-500' : 'text-white hover:text-orange-500'
+                            }`
+                        }
+                    >
+                        Blog
+                    </NavLink>
                 </div>
                 <Link target='_blank'
                     to='/contact'
-                    className='bg-orange-500 w-[20%] text-white font-bold flex items-center justify-center lg:text-[14px] mxl:text-[16px] cursor-pointer hover:bg-orange-600 transition-colors'
+                    className='bg-orange-500 mxl:w-[20%] text-white font-bold lg:hidden mxl:flex flex items-center justify-center lg:text-[14px] mxl:text-[16px] cursor-pointer hover:bg-orange-600 transition-colors'
                 >
                     Book Appointment
                 </Link>
@@ -215,6 +235,28 @@ const Navbar = () => {
                         }
                     >
                         Contact Us
+                    </NavLink>
+
+                    <NavLink
+                        to="/career"
+                        onClick={closeMobileMenu}
+                        className={({ isActive }) =>
+                            `text-[16px] cursor-pointer transition-colors font-medium ${isActive ? 'text-orange-500' : 'text-[#1E1E1E] hover:text-orange-500'
+                            }`
+                        }
+                    >
+                        Career
+                    </NavLink>
+
+                    <NavLink
+                        to="/"
+                        onClick={closeMobileMenu}
+                        className={({ isActive }) =>
+                            `text-[16px] cursor-pointer transition-colors font-medium ${isActive ? 'text-orange-500' : 'text-[#1E1E1E] hover:text-orange-500'
+                            }`
+                        }
+                    >
+                        Blog
                     </NavLink>
                 </div>
 

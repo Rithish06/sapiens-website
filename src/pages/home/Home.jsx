@@ -3,6 +3,7 @@ import Homebanner from '../../components/hero-section/Homebanner'
 import { assets } from '../../assets/assets'
 import Flip from '../../components/flip-animation/Flip'
 import Faqs from '../../components/faqs/faqs'
+import { Link } from 'react-router-dom'
 
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -456,7 +457,25 @@ const Home = () => {
 						<Flip cards={divyaCards} />
 					</div>
 
-					<Invitation />
+					{/* <Invitation /> */}
+
+					<div className='px-[5%] lg:px-[12%] w-full mt-26'>
+
+						<div className='flex justify-center lg:justify-start lg:items-center lg:h-[300px]'>
+							<img src={assets.careerHomeImage} className='relative w-[60%] lg:w-[380px] lg:h-[260px] z-[3] rounded-[8px]' alt="" />
+						</div>
+
+						<div className='flex justify-end  h-[300px] relative -mt-[40px] lg:-mt-[300px]'>
+							<div className='red-gradient w-full lg:w-[83%] z-[1] rounded-[30px] lg:pl-50 mxl:pl-30 flex flex-col justify-center items-center'>
+								<div className='text-[20px] lg:text-[24px] mxl:text-[26px] font-[700] font-para text-white text-center'>Inviting Applications for</div>
+								<div className='text-[16px] lg:text-[18px] lg:w-[70%] mxl:text-[20px] font-[700] font-para text-white text-center mt-3'>Fellowship in Hand Surgery & Upper limb Surgery</div>
+								<div className='text-[14px] lg:text-[16px] mxl:text-[18px] font-[700] font-para text-white mt-3 text-center'>(2025-2026)</div>
+								
+								<Link to='/contact' className='bg-white text-[#B22726] font-para font-[800] text-[14px] rounded-[8px] px-10 py-3 mt-8'>Apply Now</Link>
+							</div>
+						</div>
+
+					</div>
 
 					<div className='relative mt-15 flex items-center flex-col gap-1 lg:flex-row md:gap-1 mxl:gap-35 px-[5%] pt-[3%] lg:px-[10%] lg:pt-5%'>
 						<div className='flex flex-col gap-1 text-center rotate' ref={rotateRef}>

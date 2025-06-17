@@ -2,16 +2,19 @@ import React from 'react'
 import { assets } from '../../assets/assets'
 import { Link } from 'react-router-dom'
 
-const Invitation = () => {
+const Invitation = (props) => {
     return (
-        <div className= 'border-t-[3px] border-b-[3px] border-zinc-600 mt-20'>
+        <div className= 'border-t-[3px] border-b-[3px] border-zinc-600 mt-20' style={{background: props.bg}}>
+            
             < div className='realtive overflow-hidden py-8' >
-                <div className='w-full flex flex-col justify-between h-[1100px] md:h-[800px]'>
-                    <div className='realtive rounded-full w-[300px] h-[300px] bg-[#DFF7EA] -mt-10 -ml-20'></div>
+                <div className='w-full flex flex-col justify-between h-[1100px] md:h-[900px]'>
+                    {/* <div className='realtive rounded-full w-[300px] h-[300px] bg-[#DFF7EA] -mt-10 -ml-20'></div>
                     <div className='relative rounded-full w-[300px] h-[300px] bg-[#D3C0FF] ml-[90%]'></div>
-                    <div className='relative rounded-full w-[200px] h-[200px] bg-[#FEF0C3] -mb-30 -ml-20'></div>
+                    <div className='relative rounded-full w-[200px] h-[200px] bg-[#FEF0C3] -mb-30 -ml-20'></div> */}
                 </div>
-                <div className='relative h-[1100px] -mt-[1100px] flex flex-col items-center justify-center md:h-[800px] md:-mt-[800px]'>
+                <div className='relative h-[1100px] -mt-[1100px] flex flex-col items-center justify-center md:h-[900px] md:-mt-[900px]'>
+
+                    <img src={assets.colorLogo} alt="" className='w-[160px] md:w-[224px] mt-3 mx-auto' />
                     <div className='font-[700] text-[18px] font-para lg:text-[22px]'>Inviting Applications </div>
                     <div className='font-[700] text-[18px] font-para mt-3 lg:text-[22px]'>for</div>
                     <div className='font-[700] text-[18px] font-para text-center mt-3 lg:text-[22px]'>Fellowship in Hand Surgery & Upper limb Surgery <br />(2025-2026)</div>
@@ -57,17 +60,17 @@ const Invitation = () => {
                             </ul>
                         </div>
 
-                        <div className='w-[80%] border-black border-[1px] md:w-0 md:h-[300px] mx-auto'></div>
+                        <div className='w-[80%] border-black border-[1px] md:w-0 md:h-100 md:mt-5 mx-auto'></div>
 
-                        <div className='px-5 md:w-[50%]'>
+                        <div className='px-5 md:w-[50%] flex flex-col justify-end'>
                             {/* <div className='text-[20px] font-[700] text-center  lg:text-[30px]'>Duration: 1 year</div> */}
-                            <div className='text-[12px] font-para mt-6 lg:text-[16px]'><span className='font-[700]'>Last date for application:</span> 15th June 2025</div>
-                            <div className='text-[12px] font-para mt-2 lg:text-[16px]'><span className='font-[700]'>Interview:</span> June last week 2025</div>
-                            <div className='text-[12px] font-para mt-2 lg:text-[16px]'><span className='font-[700]'>Course starts on:</span> 1st August 2025</div>
-                            <div className='text-[12px] font-para mt-2 lg:text-[16px]'>Send in your applications with CV to jaindarshan81@gmail.com<br /> with subject as: <span className='font-[700]'>"Hand surgery fellowship application 2025-2026"</span></div>
-                            <div className='text-[12px] font-para mt-3 lg:text-[16px]'>Contact Secretary: 7892556378</div>
+                            <div className='text-[12px] font-para mt-6 font-[600] lg:text-[16px]'><span className='font-[700]'>Last date for application:</span> 15th June 2025</div>
+                            <div className='text-[12px] font-para mt-2 font-[600] lg:text-[16px]'><span className='font-[700]'>Interview:</span> June last week 2025</div>
+                            <div className='text-[12px] font-para mt-2 font-[600] lg:text-[16px]'><span className='font-[700]'>Course starts on:</span> 1st August 2025</div>
+                            <div className='text-[12px] font-para mt-2 font-[600] lg:text-[16px]'>Send in your applications with CV to jaindarshan81@gmail.com<br /> with subject as: <span className='font-[700]'>"Hand surgery fellowship application 2025-2026"</span></div>
+                            <div className='text-[12px] font-para mt-3 font-[600] lg:text-[16px]'>Contact Secretary: 7892556378</div>
 
-                            <img src={assets.colorLogo} alt="" className='w-[160px] md:w-[224px] mt-3 mx-auto' />
+                            
                         </div>
                     </div>
                 </div>
