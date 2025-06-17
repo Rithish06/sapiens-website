@@ -70,6 +70,7 @@ import locationBg from './images/best-hand-surgeon-dr-darshan.png'
 import locationBgMobile from './images/best-hand-surgeon-dr-darshan-mobile.png'
 import locationImage from './images/best-orthopedic-malleshwaram-bangalore.png'
 import locationSvg from './svgs/dr-darshan-location.svg'
+import eximg from './images/ex-img.png'
 import drDivyaHomePageBannerImage from './images/dr-divya-home-banner-image.png'
 
 // dr darshan services image
