@@ -67,6 +67,8 @@ const App = () => {
     <div>
         <Navbar />
           <div className='relative'>
+            <RouterOutlet />
+{/*             <CarpalTunnel /> */}
             {/* <RouterOutlet /> */}
             {/* <CarpalTunnel /> */}
             {/* <SportInjuredHand /> */}
