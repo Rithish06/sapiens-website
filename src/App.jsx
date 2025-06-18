@@ -45,6 +45,12 @@ import Eyelid from './pages/services/Dr.Divya/Eyelid'
 import DeQuervain from './pages/services/DeQuervain'
 import Career from './pages/career/Career';
 import CarpalTunnel from './pages/drDarshanServices/CarpalTunnel';
+import SportInjuredHand from './pages/drDarshanServices/SportInjuredHand';
+import StiffnessOfHandJoints from './pages/drDarshanServices/StiffnessOfHandJoints';
+import HandandWristFracture from './pages/drDarshanServices/HandandWristFracture';
+import ScaphoidFractures from './pages/drDarshanServices/ScaphoidFractures';
+import Servicesbanner from './components/services-banner/Servicesbanner';
+import RadialFractures from './pages/drDarshanServices/RadialFractures';
 
 const App = () => {
 
@@ -62,7 +68,14 @@ const App = () => {
         <Navbar />
           <div className='relative'>
             {/* <RouterOutlet /> */}
-            <CarpalTunnel />
+            {/* <CarpalTunnel /> */}
+            {/* <SportInjuredHand /> */}
+            {/* <StiffnessOfHandJoints /> */}
+            {/* <HandandWristFracture /> */}
+            {/* <ScaphoidFractures /> */}
+            {/* <Servicesbanner /> */}
+            {/* <ScaphoidFractures /> */}
+            <RadialFractures />
           </div>
           {/* <Career /> */}
         <Footer />

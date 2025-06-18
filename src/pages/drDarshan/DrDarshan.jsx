@@ -11,6 +11,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
 import { useGSAP } from '@gsap/react';
+import { Link } from 'react-router-dom';
 
 import PageTransition from "../../components/PageTransition";
 
@@ -213,222 +214,14 @@ const DrDarshan = () => {
 
     const upperLimbSurgery = [
         {
-            link: '',
+            link: '/dr-darshan/carpal-tunnel-treatment',
             text: 'Carpal tunnel syndrome',
             img: assets.egImage,
             txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
         },
-        {
-            link: '',
-            text: 'Stiffness of joints of the hand.',
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: '',
-            text: 'Dupuytren’s disease',
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: '',
-            text: 'De Quervain’s tenosynovitis',
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: '',
-            text: 'Infections of the hand.',
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: '',
-            text: 'Sports injuries of the hand.',
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: '',
-            text: 'Ganglion',
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: '',
-            text: 'Scaphoid fractures',
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: '',
-            text: 'Scaphoid non unions',
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: '',
-            text: 'Scapholunate ligament injury',
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: '',
-            text: 'Radius fracture',
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: '',
-            text: 'Tuberculosis',
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: '',
-            text: 'Tendon transfers ( for hand )',
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: '',
-            text: 'Wrist arthroscopy',
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: '',
-            text: 'Birth Defects.',
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: '',
-            text: 'Cubital tunnel syndrome',
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: '',
-            text: 'Cerebral palsy',
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: '',
-            text: 'Tumors of hand',
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: '',
-            text: 'Post burns contracture',
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: '',
-            text: 'Vascular anomalies',
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: '',
-            text: 'UCL injury',
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: '',
-            text: 'Glomus tumors',
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: '',
-            text: 'Giant cell tumor (GCT)',
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: '',
-            text: 'Congenital anomalies',
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: '',
-            text: 'Injury to the hand/wrist with a fracture or a ligament injury.',
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: '',
-            text: 'Swellings (lumps and bumps) of the hand.',
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: '',
-            text: 'Kienbock’s disease (Avascular necrosis of lunate)',
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: '',
-            text: 'TFCC (Triangular Fibrocartilage Complex) injury',
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: '',
-            text: 'Arthritis involving the finger, wrist and elbow.',
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: '',
-            text: 'Treatment of various problems of hand, wrist and elbow by keyhole surgery/ arthroscopy',
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: '',
-            text: 'Injury to the hand/wrist with a fracture or a ligament injury.',
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: '',
-            text: 'Swellings (lumps and bumps) of the hand.',
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: '',
-            text: 'Kienbock’s disease (Avascular necrosis of lunate)',
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: '',
-            text: 'TFCC (Triangular Fibrocartilage Complex) injury',
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: '',
-            text: 'Arthritis involving the finger, wrist and elbow.',
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: '',
-            text: 'Treatment of various problems of hand, wrist and elbow by keyhole surgery/ arthroscopy',
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
+        
     ]
+
     const elbow = [
         {
             link: "",
@@ -904,7 +697,7 @@ const DrDarshan = () => {
                         <div className='realtive flex flex-wrap justify-center gap-5'>
                             {
                                 upperLimbSurgery.map((surgery, index) => (
-                                    <div className={`group relative w-[100%] md:w-[45%] lg:w-[30%] flex items-center gap-3 mt-5 bg-[#D9D9D9] p-2 rounded-2xl hover:bg-[#FFE7BB] cursor-pointer transition-all duration-500`} key={index} >
+                                    <Link to={surgery.link} className={`group relative w-[100%] md:w-[45%] lg:w-[30%] flex items-center gap-3 mt-5 bg-[#D9D9D9] p-2 rounded-2xl hover:bg-[#FFE7BB] cursor-pointer transition-all duration-500`} key={index} >
 
                                         <div className='relative'>
                                             <img src={surgery.img} className='w-full' alt="" />
@@ -923,7 +716,7 @@ const DrDarshan = () => {
                                         {/* <div className='absolute bottom-12 w-full'>
                                             
                                         </div> */}
-                                    </div>
+                                    </Link>
                                 ))
                             }
                         </div>

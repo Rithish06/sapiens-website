@@ -44,6 +44,8 @@ import Exenteration from '../../pages/services/Dr.Divya/RetinalTumors/Exenterati
 import Career from '../../pages/career/Career'
 import AllBlog from '../../pages/blog/AllBlog'
 import SingleBlogPage from '../../pages/blog/SingleBlogPage'
+import KienbockDisease from '../../pages/drDarshanServices/KienbockDisease'
+import CarpalTunnel from '../../pages/drDarshanServices/CarpalTunnel'
 
 // pages
 
@@ -58,6 +60,8 @@ const RouterOutlet = () => {
         <Route path="/dr-darshan">
           <Route index element={<DrDarshan />} />
           <Route path="de-quervains-tenosynovitis-treatment" element={<DeQuervain />} />
+          <Route path="kienbocks-disease-treatment-bangalore" element={<KienbockDisease />} />
+          <Route path='carpal-tunnel-treatment' element={<CarpalTunnel />} />
         </Route>
 
         <Route path="/dr-divya-sundaresh">

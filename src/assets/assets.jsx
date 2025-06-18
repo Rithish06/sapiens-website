@@ -72,6 +72,7 @@ import locationImage from './images/best-orthopedic-malleshwaram-bangalore.png'
 import locationSvg from './svgs/dr-darshan-location.svg'
 import eximg from './images/ex-img.png'
 import drDivyaHomePageBannerImage from './images/dr-divya-home-banner-image.png'
+// import Servicesbanner from '.'
 
 // dr darshan services image
 import egImage from './images/eg-image.png'

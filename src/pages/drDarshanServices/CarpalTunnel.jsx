@@ -1,160 +1,162 @@
 import React from 'react'
 import Faqs from '../../components/faqs/faqs'
+import Servicesbanner from '../../components/services-banner/Servicesbanner'
 
 const CarpalTunnel = () => {
 
     const faqs = [
         {
-            ques : "What should I do if I have a red, swollen finger that’s painful to move?",
-            ans : "You may have an infection in the tendon sheath or fingertip. Avoid using the hand and seek medical attention immediately."
+            ques: "Will this go away on its own?",
+            ans: "Early cases sometimes settle down with rest and splinting, but if symptoms persist beyond a few weeks, it’s best to get it evaluated."
         },
         {
-            ques : "Can a hand infection heal without antibiotics?",
-            ans : "Superficial infections may respond to good hygiene, but most require antibiotics to avoid spreading."
+            ques: "How long does recovery take after surgery?",
+            ans: "Many return to light activities within 1-2 weeks. Full recovery and strength may take a few months, depending on your hand use."
         },
         {
-            ques : "How do I know if my hand infection is serious?",
-            ans : "If you experience spreading redness, fever, or worsening pain, it could be a deeper infection needing urgent care."
+            ques: "Is the injection painful?",
+            ans: "A steroid injection is quick and tolerable - most patients describe it as a pinch. Relief can be almost immediate or take a few days."
         },
         {
-            ques : "Will I need surgery for a hand infection?",
-            ans : "Only if the infection involves tendons, joints, or bones, or if an abscess is present that needs drainage."
+            ques: "Can I use a mouse and keyboard after treatment?",
+            ans: "Yes, though some ergonomic adjustments may be recommended. Our team will guide you through supportive tools and hand positioning."
         },
         {
-            ques : "How long does it take to recover from a hand infection?",
-            ans : "Most superficial infections improve in a few days with treatment. Deeper infections may take several weeks and sometimes require rehabilitation."
+            ques: "How do I know if I need surgery?",
+            ans: "If symptoms are severe, or you’ve lost sensation or hand strength, surgery may be the best long-term option. We’ll help you decide based on your condition, not just a report."
         },
     ]
 
     return (
         <div className='min-h-[100vh]'>
-            <div className='text-[24px] font-[600] bg-orange-gradient font-heading lg:text-[36px] text-center'>Infections of the hand</div>
-            <div className='px-20'>
-                <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Hand Infection Treatment in Malleshwaram</div>
-                <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
-                    <div>Even a small injury to the hand can become serious if an infection develops. Hand infections can spread quickly due to the complex anatomy of tendons, joints, and nerves, often resulting in pain, swelling, and loss of function if not treated early. Whether caused by a cut, bite or underlying health condition, early diagnosis and timely care are essential to prevent long-term damage.</div>
-                </div>
+            <div className='relative'>
+                {/* <Servicesbanner /> */}
             </div>
 
-            <div className='px-20'>
-                <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>What Causes Hand Infections?</div>
+            <div className='px-8 lg:px-20 mt-8'>
+                {/* <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'></div> */}
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px]'>Most hand infections begin with a break in the skin - even tiny ones. Common causes include:</div>
-                        <ul className='mt-5'>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Cuts or puncture wounds</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Animal or human bites</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Untreated blisters or hangnails</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Contaminated injuries</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Spread of infection from another body part</li>
-                        </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px]'>In some cases, conditions like diabetes or compromised immunity can increase the risk and severity of infection.</div>
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div className='px-20 mt-10'>
-                <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Common Types of Hand Infections</div>
-                <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
-                    <div>
-                        <ul className='mt-5'>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Paronychia</b>: Infection around the fingernail, often due to nail trauma or biting</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Felon</b>: Deep fingertip infection causing intense pressure and swelling</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Cellulitis</b>: A widespread skin infection that appears red, swollen, and warm</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Flexor Tenosynovitis</b>: Involves infection within the tendon sheath, severely affecting finger motion</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Septic Arthritis</b>: Infection inside a joint, which can lead to cartilage damage</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Osteomyelitis</b>: A serious bone infection that may require surgical care</li>
-                        </ul>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'><b>Say Goodbye to Wrist Numbness & Tingling with Expert Care at Sapiens Clinic</b></div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>If your fingers often feel numb, your wrist hurts when you type, or you keep dropping things without reason - it might not just be tiredness. These are classic signs of Carpal Tunnel Syndrome, a common but often overlooked nerve condition of the hand.</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>At Sapiens Clinic, Malleshwaram, we help you find relief and regain normal hand function with accurate diagnosis and personalized treatment that works for your lifestyle.</div>
                     </div>
                 </div>
             </div>
 
-            <div className='px-20 mt-10'>
-                <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Symptoms to Look Out For</div>
+            <div className='px-8 lg:px-20 mt-8'>
+                <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'></div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <ul className='mt-5'>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Swelling, redness or warmth in the hand or fingers</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Sharp or throbbing pain, especially when moving the hand</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Pus or discharge from a wound</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Difficulty bending or straightening a finger</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Fever or chills in advanced cases</li>
-                        </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Ignoring these symptoms may allow the infection to progress deeper into tissues, tendons, or bones.</div>
-                    </div>
-                </div>
-            </div>
-
-            <div className='px-20 mt-10'>
-                <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Diagnosis</div>
-                <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
-                    <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>A thorough clinical exam is the first step. Based on your symptoms, your doctor may order:</div>
-                        <ul className='mt-5'>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Blood tests</b> to check for signs of infection</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Wound cultures</b> to identify the bacteria causing it</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>X-rays or MRIs</b> to evaluate whether deeper structures are involved</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div className='px-20 mt-10'>
-                <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Treatment Options</div>
-                <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
-                    <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Treatment depends on how deep and severe the infection is. Options may include:</div>
-                        <ul className='mt-5'>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Antibiotics</b>: Oral or IV antibiotics are commonly prescribed to clear the infection</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Drainage</b>: For abscesses or collections of pus, minor procedures may be done to relieve pressure</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Immobilization</b>: A splint may be used to rest the hand and reduce irritation</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Surgical intervention</b>: Deep infections involving tendons or bones might require urgent surgery to prevent complications</li>
-                        </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Delays in treatment can lead to tendon rupture, joint stiffness, or permanent loss of movement.</div>
-                    </div>
-                </div>
-            </div>
-
-            <div className='px-20 mt-10'>
-                <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Recovery & Care</div>
-                <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
-                    <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'></div>With early intervention, most hand infections resolve without complications. Recovery time depends on the type and severity of the infection, but rest, medication adherence, and proper wound care are key. Your healthcare provider will monitor healing and may recommend physiotherapy to restore motion if required.
-                        <ul className='mt-5'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'></div>
+                        <ul className='mt-5  list-disc pl-10'>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'></li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'></div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'></div>
                     </div>
                 </div>
             </div>
 
-            <div className='px-20 mt-10'>
-                <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Prevention Tips</div>
+            <div className='px-8 lg:px-20 mt-8'>
+                <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>What is Carpal Tunnel Syndrome?</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <ul className='mt-5'>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Clean even minor wounds immediately</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Avoid biting nails or cuticles</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Wear protective gloves when handling sharp or soiled objects</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Keep chronic conditions like diabetes well-controlled</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Don’t ignore signs like redness, swelling, or pus</li>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Carpal Tunnel Syndrome (CTS) happens when the median nerve, which runs through a narrow passage in the wrist called the carpal tunnel, gets compressed. This nerve controls sensation in the thumb, index, middle, and half of the ring finger, as well as some hand muscles. When it’s pinched, you’ll experience symptoms that can range from mildly annoying to deeply disruptive.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div className='px-8 lg:px-20 mt-8'>
+                <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Common Symptoms</div>
+                <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
+                    <div>
+                        {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'></div> */}
+                        <ul className='mt-5  list-disc pl-10'>
+                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Numbness or tingling in the fingers - especially the thumb, index, and middle</li>
+                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Pain that travels from the wrist into the arm</li>
+                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Weakness in the hand or difficulty gripping objects</li>
+                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Symptoms that worsen at night or after repetitive hand use</li>
                         </ul>
+                        {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'></div> */}
                     </div>
                 </div>
             </div>
 
-            <div className='px-20 mt-10'>
-                <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Conclusion</div>
+            <div className='px-8 lg:px-20 mt-8'>
+                <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Causes and Risk Factors</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Hand infections can progress quickly if ignored, leading to serious complications such as tendon damage, joint stiffness, or even permanent loss of function. What starts as a small injury can affect deeper structures like nerves, bones, or joints if not treated promptly. If you’re experiencing persistent pain, swelling, or signs of infection in your hand or fingers, don’t delay seeking expert care. For accurate diagnosis, focused treatment, and long-term recovery support, consult Dr. Darshan Kumar A. Jain, renowned Hand and Upper Limb Specialist at Sapiens Clinic, Malleshwaram.</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>This condition often develops gradually and can be caused by a combination of factors:</div>
+                        <ul className='mt-5  list-disc pl-10'>
+                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Repetitive hand or wrist movements (like typing, texting, or using tools)</li>
+                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Prolonged wrist flexion or extension during sleep or work</li>
+                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Wrist injuries or fractures</li>
+                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Pregnancy-related swelling</li>
+                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Diabetes, thyroid dysfunction or inflammatory arthritis.</li>
+                        </ul>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>It’s more common in women and people between 30 to 60 years old.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div className='px-8 lg:px-20 mt-8'>
+                <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>How We Diagnose It</div>
+                <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
+                    <div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>We start with a physical exam and simple in-clinic tests to reproduce your symptoms. Depending on your condition, we may recommend nerve studies to confirm how severely the nerve is compressed. This helps us design a treatment plan that’s right for you - not just the textbook version.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div className='px-8 lg:px-20 mt-8'>
+                <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Treatment Options at Sapiens Clinic</div>
+                <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
+                    <div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'><b>Non-Surgical Care</b></div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Most patients respond well to conservative treatments, especially in early stages:</div>
+                        <ul className='mt-5  list-disc pl-10'>
+                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Night Splinting</b>:  Keeps your wrist in a neutral position while you sleep</li>
+                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Activity Modification</b>: Avoiding or adjusting triggering movements</li>
+                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Anti-inflammatory Medication</b>: To reduce swelling and ease discomfort</li>
+                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Corticosteroid Injections</b>: For stronger, longer-lasting relief</li>
+                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Hand Therapy</b>: Gentle exercises to improve flexibility and reduce pressure</li>
+                        </ul>
+                        {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'></div> */}
+                    </div>
+                </div>
+            </div>
+
+            <div className='px-8 lg:px-20 mt-8'>
+                <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Surgical Care</div>
+                <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
+                    <div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>For persistent or advanced cases, a small outpatient procedure called carpal tunnel release may be advised. It relieves pressure on the nerve by cutting the ligament pressing on it - allowing the nerve to breathe, so to speak. Most people recover quickly and experience significant improvement.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div className='px-8 lg:px-20 mt-8'>
+                <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Why Sapiens Clinic?</div>
+                <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
+                    <div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>You’re not just a wrist. We listen to your lifestyle, your work, your routine - and then craft treatment that suits you. From diagnosis to recovery, everything is done with personal attention and the right mix of science and simplicity.</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>With extensive experience in hand and wrist conditions, Dr. Darshan Kumar A. Jain leads the care here with a focus on restoring movement, relieving pain and preventing recurrence.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div className='px-8 lg:px-20 mt-8'>
+                <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Ready to Get Back to a Pain-Free Life?</div>
+                <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
+                    <div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>If your wrist symptoms are slowing you down or making everyday tasks uncomfortable, it’s time to act. Carpal Tunnel Syndrome is treatable - and the earlier, the better.</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Reach out to Sapiens Clinic, Malleshwaram today to book your consultation. Healing starts with one step.</div>
                     </div>
                 </div>
             </div>
 
             <div className='mt-15'>
-                <Faqs faqs = {faqs} />
+                <Faqs faqs={faqs} />
             </div>
         </div>
     )

@@ -1,4 +1,5 @@
 import React from 'react'
+import Faqs from '../../components/faqs/faqs'
 
 const SwellingLumps = () => {
 
@@ -27,22 +28,22 @@ const SwellingLumps = () => {
 
     return (
         <div>
-            <div className='px-20'>
+            <div className='px-8 lg:px-20 mt-8'>
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'></div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px]'>Hand Swellings (Lumps and Bumps) Treatment in Malleshwaram, Bangalore</div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px]'>A noticeable lump or swelling on the hand can raise concerns-whether it's painless or causing discomfort. While many of these bumps are harmless, some may interfere with hand function or indicate underlying issues. At Sapiens Clinic, we offer expert evaluation and comprehensive care for a wide range of hand swellings, ensuring your hand health is protected and restored.</div>
+                        {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Hand Swellings (Lumps and Bumps) Treatment in Malleshwaram, Bangalore</div> */}
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>A noticeable lump or swelling on the hand can raise concerns-whether it's painless or causing discomfort. While many of these bumps are harmless, some may interfere with hand function or indicate underlying issues. At Sapiens Clinic, we offer expert evaluation and comprehensive care for a wide range of hand swellings, ensuring your hand health is protected and restored.</div>
                     </div>
 
                 </div>
             </div>
 
-            <div className='px-20'>
+            <div className='px-8 lg:px-20 mt-8'>
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Common Types of Hand Swellings</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <ul className='mt-5'>
+                        <ul className='mt-5  list-disc pl-10'>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Ganglion Cysts</b>: These are fluid-filled sacs that usually form near joints or tendons in the wrist or hand. They may appear suddenly, change in size, and sometimes cause pain or restrict movement.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Lipomas</b>: Soft, fatty lumps under the skin that grow slowly and are generally painless. Though benign, they may need removal if they grow large or press on nearby structures.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Dupuytren’s Contracture</b>: A thickening of the connective tissue in the palm, forming firm nodules or cords that gradually pull fingers inward, affecting hand function.</li>
@@ -54,59 +55,59 @@ const SwellingLumps = () => {
                 </div>
             </div>
 
-            <div className='px-20'>
+            <div className='px-8 lg:px-20 mt-8'>
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Symptoms to Watch For</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <ul className='mt-5'>
+                        <ul className='mt-5  list-disc pl-10'>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>A visible lump or swelling on the hand or wrist</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Pain or tenderness during movement or at rest</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Restricted range of motion</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Changes in skin texture, color, or temperature over the swelling</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Tingling or numbness in the affected area</li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px]'>Even if painless, any persistent or enlarging lump should be evaluated to rule out underlying issues.</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Even if painless, any persistent or enlarging lump should be evaluated to rule out underlying issues.</div>
                     </div>
 
                 </div>
             </div>
 
-            <div className='px-20'>
+            <div className='px-8 lg:px-20 mt-8'>
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Diagnosis</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px]'>A detailed physical examination is the first step. Depending on the appearance and behavior of the lump, your doctor may recommend:</div>
-                        <ul className='mt-5'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>A detailed physical examination is the first step. Depending on the appearance and behavior of the lump, your doctor may recommend:</div>
+                        <ul className='mt-5  list-disc pl-10'>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Imaging tests</b> such as X-rays, ultrasound or MRI to determine the size, depth, and nature of the swelling</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Aspiration</b> or <b>biopsy</b> to collect fluid or tissue samples for lab analysis when needed</li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px]'>These steps help determine whether the swelling is cystic, solid, inflammatory, or potentially harmful.</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>These steps help determine whether the swelling is cystic, solid, inflammatory, or potentially harmful.</div>
                     </div>
                 </div>
             </div>
 
-            <div className='px-20'>
+            <div className='px-8 lg:px-20 mt-8'>
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Treatment Options</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px]'>Treatment is based on the type, size, symptoms, and functional impact of the swelling:</div>
-                        <ul className='mt-5'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Treatment is based on the type, size, symptoms, and functional impact of the swelling:</div>
+                        <ul className='mt-5  list-disc pl-10'>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Observation</b>: Many benign swellings that don’t cause discomfort may only need periodic monitoring.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Medications</b>: Anti-inflammatory medicines or steroid injections may help reduce pain and swelling.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Aspiration</b>: In fluid-filled swellings like ganglion cysts, draining the fluid may offer relief.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Surgical Removal</b>: Required for recurring cysts, symptomatic lipomas, or any swelling affecting tendon, nerve, or joint function.</li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px]'>Our goal is to not just treat the swelling, but to restore comfort, mobility, and confidence in hand use.</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Our goal is to not just treat the swelling, but to restore comfort, mobility, and confidence in hand use.</div>
                     </div>
 
                 </div>
             </div>
 
-            <div className='px-20'>
+            <div className='px-8 lg:px-20 mt-8'>
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Prevention Tips</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <ul className='mt-5'>
+                        <ul className='mt-5  list-disc pl-10'>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Avoid repetitive strain or trauma to the hand</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Protect your hands during sports or labor-intensive work</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Treat minor injuries early to prevent cyst or scar tissue formation</li>
@@ -118,11 +119,11 @@ const SwellingLumps = () => {
                 </div>
             </div>
 
-            <div className='px-20'>
+            <div className='px-8 lg:px-20 mt-8'>
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Conclusion</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px]'>Most hand swellings are non-threatening, but a few can impact how you use your hand every day. If you notice a lump that’s growing, painful or affecting your hand movement, don’t wait to get it checked. For expert evaluation, accurate diagnosis and advanced treatment options, consult Dr. Darshan Kumar A. Jain, Hand and Upper Limb Specialist at Sapiens Clinic, Malleshwaram.</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Most hand swellings are non-threatening, but a few can impact how you use your hand every day. If you notice a lump that’s growing, painful or affecting your hand movement, don’t wait to get it checked. For expert evaluation, accurate diagnosis and advanced treatment options, consult Dr. Darshan Kumar A. Jain, Hand and Upper Limb Specialist at Sapiens Clinic, Malleshwaram.</div>
                     </div>
                 </div>
             </div>
