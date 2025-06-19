@@ -51,6 +51,13 @@ import HandandWristFracture from './pages/drDarshanServices/HandandWristFracture
 import ScaphoidFractures from './pages/drDarshanServices/ScaphoidFractures';
 import Servicesbanner from './components/services-banner/Servicesbanner';
 import RadialFractures from './pages/drDarshanServices/RadialFractures';
+import RotatorCuffTear from './pages/drDarshanServices/RotatorCuffTear';
+import LabralTear from './pages/drDarshanServices/LabralTear';
+import SlapInjuries from './pages/drDarshanServices/SlapInjuries';
+import Pollicization from './pages/drDarshanServices/Pollicization';
+import Malunion from './pages/drDarshanServices/Malunion';
+import NerveRepair from './pages/drDarshanServices/NerveRepair';
+import NerveReconstruction from './pages/drDarshanServices/NerveReconstruction';
 import ArthritisInvolvingFinger from './pages/drDarshanServices/ArthritisInvolvingFinger';
 import WristArthroscopy from './pages/drDarshanServices/WristArthroscopy';
 import BirthDefects from './pages/drDarshanServices/BirthDefects';
@@ -87,7 +94,7 @@ const App = () => {
     <div>
         <Navbar />
           <div className='relative'>
-            <RouterOutlet />
+            {/* <RouterOutlet /> */}
 {/*             <CarpalTunnel /> */}
             {/* <RouterOutlet /> */}
             {/* <CarpalTunnel /> */}
