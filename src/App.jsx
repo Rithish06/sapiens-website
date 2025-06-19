@@ -51,6 +51,26 @@ import HandandWristFracture from './pages/drDarshanServices/HandandWristFracture
 import ScaphoidFractures from './pages/drDarshanServices/ScaphoidFractures';
 import Servicesbanner from './components/services-banner/Servicesbanner';
 import RadialFractures from './pages/drDarshanServices/RadialFractures';
+import ArthritisInvolvingFinger from './pages/drDarshanServices/ArthritisInvolvingFinger';
+import WristArthroscopy from './pages/drDarshanServices/WristArthroscopy';
+import BirthDefects from './pages/drDarshanServices/BirthDefects';
+import CubitalTunnelSyndrome from './pages/drDarshanServices/CubitalTunnelSyndrome';
+import KeyholeSurgeryForHand from './pages/drDarshanServices/KeyholeSurgeryForHand';
+import CerebralPalsy from './pages/drDarshanServices/CerebralPalsy';
+import PostBurnsContracture from './pages/drDarshanServices/PostBurnsContracture';
+import TumorsofHand from './pages/drDarshanServices/TumorsofHand';
+import VascularAnomalies from './pages/drDarshanServices/VascularAnomalies';
+import UclInjuries from './pages/drDarshanServices/UclInjuries';
+import GlomusTumors from './pages/drDarshanServices/GlomusTumors';
+import GiantCellTumor from './pages/drDarshanServices/GiantCellTumor';
+import Tuberculosis from './pages/drDarshanServices/Tuberculosis';
+import CongenitalAnomalies from './pages/drDarshanServices/CongenitalAnomalies';
+import ElbowReplacement from './pages/drDarshanServices/ElbowReplacement';
+import ElbowArthroscopy from './pages/drDarshanServices/ElbowArthroscopy';
+import SynovitisOfElbow from './pages/drDarshanServices/SynovitisOfElbow';
+import LigamentRepairElbow from './pages/drDarshanServices/LigamentRepairElbow';
+import ShoulderArthroscopy from './pages/drDarshanServices/ShoulderArthroscopy';
+import ShoulderReplacement from './pages/drDarshanServices/ShoulderReplacement';
 
 const App = () => {
 
@@ -77,7 +97,27 @@ const App = () => {
             {/* <ScaphoidFractures /> */}
             {/* <Servicesbanner /> */}
             {/* <ScaphoidFractures /> */}
-            <RadialFractures />
+            {/* <ArthritisInvolvingFinger /> */}
+            {/* <RadialFractures /> */}
+            {/* <WristArthroscopy /> */}
+            {/* <BirthDefects /> */}
+            {/* <CubitalTunnelSyndrome /> */}
+            {/* <KeyholeSurgeryForHand /> */}
+            {/* <CerebralPalsy /> */}
+            {/* <PostBurnsContracture /> */}
+            {/* <TumorsofHand /> */}
+            {/* <VascularAnomalies /> */}
+            {/* <UclInjuries /> */}
+            {/* <GlomusTumors /> */}
+            {/* <GiantCellTumor /> */}
+            {/* <Tuberculosis /> */}
+            {/* <CongenitalAnomalies /> */}
+            {/* <ElbowReplacement /> */}
+            {/* <ElbowArthroscopy /> */}
+            {/* <SynovitisOfElbow /> */}
+            {/* <LigamentRepairElbow /> */}
+            {/* <ShoulderArthroscopy /> */}
+            {/* <ShoulderReplacement /> */}
           </div>
           {/* <Career /> */}
         <Footer />

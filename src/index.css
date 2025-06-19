@@ -314,11 +314,6 @@ button:hover {
   margin-bottom: 0;
 }
 
-.content-wrapper div{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .content-wrapper p {
   color: #333;
@@ -353,7 +348,6 @@ button:hover {
 .content-wrapper li {
   margin-bottom: 0.5rem;
 }
-
 
 
 @media only screen and (max-width:1200px) {
@@ -391,6 +385,13 @@ button:hover {
     padding: 0;
   }
 }
+
+.content-wrapper div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {

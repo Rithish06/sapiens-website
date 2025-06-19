@@ -1,7 +1,30 @@
 import React from 'react'
 import Servicesbanner from '../../components/services-banner/Servicesbanner'
+import Faqs from '../../components/faqs/faqs';
 
 const RadialFractures = () => {
+        const faqs = [
+        {
+            ques: "How long does it take for a radius fracture to heal?",
+            ans: "Healing time varies but typically ranges from 6 to 8 weeks, with additional time for rehabilitation."
+        },
+        {
+            ques: "Will I need surgery for a radius fracture?",
+            ans: "Not all fractures require surgery. The need depends on the fracture's type, location, and severity."
+        },
+        {
+            ques: "Can I return to sports after a radius fracture?",
+            ans: "Yes, with proper treatment and rehabilitation, most individuals can return to their previous activity levels."
+        },
+        {
+            ques: "What are the risks of not treating a radius fracture properly?",
+            ans: "Improper treatment can lead to malunion, decreased wrist function, chronic pain, and arthritis."
+        },
+        {
+            ques: "How can I prevent radius fractures?",
+            ans: "Preventive measures include using protective gear, maintaining bone health, and implementing fall-prevention strategies."
+        }
+    ];
     return (
         <div>
             <Servicesbanner serviceName = "Radius Fracture" />
@@ -131,6 +154,8 @@ const RadialFractures = () => {
                     Prompt and appropriate treatment of radius fractures is essential to ensure proper healing and restore wrist function. If you suspect a radius fracture or experience persistent wrist pain, consult <strong>Dr. Darshan Kumar A. Jain</strong>, Orthopedic Specialist at Sapiens Clinic, Malleshwaram, for expert evaluation and personalized care.
                 </div>
             </div>
+
+            <Faqs faqs = {faqs} />
         </div>
     )
 }
