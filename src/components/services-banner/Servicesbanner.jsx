@@ -6,7 +6,7 @@ const Servicesbanner = (props) => {
     return (
         <div className="relative w-full overflow-hidden">
             {/* Desktop Banner Image */}
-            <img className="hidden md:block w-full" src={assets.Servicesbanner} alt="Servicesbanner" />
+            <img className="hidden md:block w-full" src={assets.servicebanner} alt="Servicesbanner" />
 
             {/* Mobile Background */}
             <div className="md:hidden h-[80vh] bg-[#FFF6E0] w-full" />

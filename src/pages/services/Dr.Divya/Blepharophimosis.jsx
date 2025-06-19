@@ -45,7 +45,7 @@ const Blepharophimosis = () => {
     return (
         <div>
             <div>
-                <Divyaservicebanner />
+                <Divyaservicebanner servicename='Blepharophimosis Correction Surgery'/>
             </div>
 
             
@@ -63,12 +63,12 @@ const Blepharophimosis = () => {
                 {/* container 2 */}
                 <div className='flex lg:flex-row flex-col md:gap-10 gap-5 mt-10 items-center'>
                     {/* img */}
-                    <div className='lg:w-[35%]'>
+                    {/* <div className='lg:w-[35%]'>
                         <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-                    </div>
+                    </div> */}
 
                     {/* content */}
-                    <div className='lg:w-[65%]'>
+                    <div className=''>
                         <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>Understanding Blepharophimosis Syndrome</div>
                         <div className='text-[12px] md:text-[16px] font-[500] font-para'>
                             <div className='mt-2'>Blepharophimosis syndrome typically presents at birth and includes :</div>
@@ -88,7 +88,7 @@ const Blepharophimosis = () => {
 
                 <div className='flex lg:flex-row flex-col-reverse md:gap-10 gap-5 mt-10 items-center'>
                     {/* content */}
-                    <div className='lg:w-[65%]'>
+                    <div className=''>
                         <div className='text-[18px] md:20px lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>Symptoms You Shouldn’t Ignore</div>
                         <ul className='text-[12px] md:text-[16px] font-[500] font-para list-disc ml-5 mt-2 leading-7'>
                             <li>Small or narrow-appearing eyes</li>
@@ -102,21 +102,21 @@ const Blepharophimosis = () => {
                     </div>
 
                     {/* img */}
-                    <div className='lg:w-[35%]'>
+                    {/* <div className='lg:w-[35%]'>
                         <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* container 4 */}
 
                 <div className='flex lg:flex-row flex-col items-center md:gap-10 gap-5 mt-10'>
                     {/* img */}
-                    <div className='lg:w-[35%]'>
+                    {/* <div className='lg:w-[35%]'>
                         <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-                    </div>
+                    </div> */}
 
                     {/* content */}
-                    <div className='lg:w-[65%]'>
+                    <div className=''>
                         <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>Causes of Blepharophimosis</div>
                         <div className='text-[12px] md:text-[16px] font-[500] font-para leading-6'>The syndrome is usually caused by a mutation in the <b>FOXL2 gene</b>, which affects eyelid muscle development and, in females, ovarian function. It is inherited in an <b>autosomal dominant pattern</b>, meaning a parent with the condition has a 50% chance of passing it on.</div>
 
@@ -140,7 +140,7 @@ const Blepharophimosis = () => {
 
                 <div className='flex lg:flex-row flex-col-reverse items-center md:gap-10 gap-5 mt-10 '>
                     {/* content */}
-                    <div className='lg:w-[65%]'>
+                    <div className=''>
                         <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent mt-10'>Surgical Management of Blepharophimosis</div>
                         <div className='text-[12px] md:text-[16px] font-[500] font-para mt-2 leading-6'>Surgery is the gold standard for correcting blepharophimosis and its associated eyelid deformities. Our surgeons perform either <b>single-stage </b>or <b>multi-stage surgeries</b>, depending on the patient’s age, severity of symptoms, and aesthetic considerations.</div>
 
@@ -160,9 +160,9 @@ const Blepharophimosis = () => {
                     </div>
 
                     {/* img */}
-                    <div className='lg:w-[35%]'>
+                    {/* <div className='lg:w-[35%]'>
                         <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-                    </div>
+                    </div> */}
 
                 </div>
 
@@ -170,12 +170,12 @@ const Blepharophimosis = () => {
 
                 <div className='flex lg:flex-row flex-col items-center md:gap-10 gap-5 mt-10'>
                     {/* img */}
-                    <div className='lg:w-[35%]'>
+                    {/* <div className='lg:w-[35%]'>
                         <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-                    </div>
+                    </div> */}
 
                     {/* content */}
-                    <div className='lg:w-[65%]'>
+                    <div className=''>
                         <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>Postoperative Recovery and Care</div>
                         <div className='text-[12px] md:text-[16px] font-[500] font-para'>
                             <div className='mt-2'>After surgery, you or your child will be given :</div>
@@ -196,7 +196,7 @@ const Blepharophimosis = () => {
 
                 <div className='flex lg:flex-row flex-col-reverse items-center md:gap-10 gap-5 mt-10'>
                     {/* content */}
-                    <div className='lg:w-[65%]'>
+                    <div className=''>
                         <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>Why Choose Sapiens Clinic for Blepharophimosis Surgery?</div>
                         <div className='text-[12px] md:text-[16px] font-[500] font-para'>
                             <div className='mt-2 leading-5'>Located in the heart of Malleshwaram, Sapiens Clinic is known for its advanced oculoplastic care and a patient-first approach. Our experienced surgical team offers :</div>
@@ -212,20 +212,20 @@ const Blepharophimosis = () => {
                     </div>
 
                     {/* img */}
-                    <div className='lg:w-[35%]'>
+                    {/* <div className='lg:w-[35%]'>
                         <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* container 8 */}
 
                 <div className='flex lg:flex-row flex-col items-center gap-5 lg:gap-0 mt-10'>
                     {/* img */}
-                    <div className=' lg:w-[35%]'>
+                    {/* <div className=' lg:w-[35%]'>
                         <img src={assets.eximg} className=' lg:w-[84%]' alt="" />
-                    </div>
+                    </div> */}
                     {/* content */}
-                    <div  className='lg:w-[65%]'>
+                    <div  className=''>
                         <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>Cost of Blepharophimosis Surgery in Malleshwaram</div>
                         <div className='text-[12px] md:text-[16px] font-[500] font-para'>
                             <div className='mt-2'>The cost of blepharophimosis surgery varies based on :</div>

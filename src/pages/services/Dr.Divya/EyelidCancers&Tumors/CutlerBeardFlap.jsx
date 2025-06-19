@@ -38,13 +38,13 @@ const CutlerBeardFlap = () => {
   return (
     <div>
         <div>
-            <Divyaservicebanner/>
+            <Divyaservicebanner servicename = 'Cutler-Beard Flap Surgery'/>
         </div>
 
         <div className="lg:mx-20 md:mt-10 xs:mt-29 mx-5 mt-10">
             <div className="flex flex-col items-center">
-                <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Cutler-Beard Flap Surgery in Malleshwaram</div>
-                <div className="text-[14px] md:text-[20px] lg:text-[24px] font-[600] font-heading bg-orange-gradient mt-2">Reconstructive Eyelid Surgery for Full-Thickness Upper Eyelid Defects</div>
+                {/* <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Cutler-Beard Flap Surgery in Malleshwaram</div> */}
+                <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient mt-2">Reconstructive Eyelid Surgery for Full-Thickness Upper Eyelid Defects</div>
                 <div className="text-[12px] md:text-[16px] font-[500] font-para leading-7 mt-2">Eyelid reconstruction demands surgical precision, especially when the upper eyelid is severely affected by tumors, trauma, or congenital defects. At <b>Sapiens Clinic, Malleshwaram</b>, we offer <b>Cutler-Beard Flap Surgery</b>, a two-stage lid-sharing procedure designed to restore both the form and function of the upper eyelid when more than 50% of the lid is lost.</div>
             </div>
 

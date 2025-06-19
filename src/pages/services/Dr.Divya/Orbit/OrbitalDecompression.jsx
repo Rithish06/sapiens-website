@@ -31,7 +31,7 @@ const OrbitalDecompression = () => {
     return (
         <div>
             <div>
-                <Divyaservicebanner />
+                <Divyaservicebanner servicename = 'Orbital Decompression Surgery'/>
             </div>
 
             <div className="lg:mx-20 md:mt-10 mt-10 xs:mt-29 mx-5">

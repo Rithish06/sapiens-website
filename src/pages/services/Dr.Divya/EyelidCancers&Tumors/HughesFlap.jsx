@@ -38,13 +38,13 @@ const HughesFlap = () =>{
   return (
     <div>
         <div>
-            <Divyaservicebanner/>
+            <Divyaservicebanner servicename = 'Hughes Flap Surgery'/>
         </div>
 
         <div className="lg:mx-20 md:mt-10 xs:mt-29 mx-5 mt-10">
             <div className="flex flex-col items-center">
-                <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Hughes Flap Surgery in Malleshwaram</div>
-                <div className="text-[14px] md:text-[20px] lg:text-[24px] font-[600] font-heading bg-orange-gradient mt-2">Advanced Eyelid Reconstruction for Larger Lower Eyelid Defects</div>
+                {/* <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Hughes Flap Surgery in Malleshwaram</div> */}
+                <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient mt-2">Advanced Eyelid Reconstruction for Larger Lower Eyelid Defects</div>
                 <div className="text-[12px] md:text-[16px] font-[500] font-para leading-7 mt-2">Reconstructing the delicate anatomy of the eyelids requires surgical precision, artistic finesse, and a deep understanding of ocular function. At <b>Sapiens Clinic, Malleshwaram</b>, our team offers <b>Hughes Flap Surgery</b> for patients who have large full-thickness lower eyelid defects-often due to tumor excision, trauma, or congenital conditions. This proven two-stage technique restores both the <b>functionality</b> and <b>cosmetic harmony</b> of the eyelid.</div>
             </div>
 

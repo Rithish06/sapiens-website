@@ -40,7 +40,7 @@ const EyelidRetraction = () => {
     return (
         <div>
             <div>
-                <Divyaservicebanner />
+                <Divyaservicebanner servicename = 'Eyelid Retraction Treatment'/>
             </div>
 
             <div className='lg:mx-20 xs:mt-29 md:mt-10 mx-5 mt-10'>
@@ -52,10 +52,10 @@ const EyelidRetraction = () => {
 
                 {/* container 2 */}
 
-                <div className='flex lg:flex-row flex-col md:gap-10 gap-5 mt-10 items-center'>
+                <div className='flex flex-col-reverse lg:flex-row items-center gap-10 mt-10'>
 
                     {/* content */}
-                    <div className='lg:w-[65%]'>
+                    <div className=''>
                         <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>What Causes Eyelid Retraction?</div>
                         <div className='text-[12px] md:text-[16px] font-[500] font-para'>
                             <div className='mt-2'>Eyelid retraction can result from multiple underlying conditions :</div>
@@ -71,7 +71,7 @@ const EyelidRetraction = () => {
                             <div className='mt-2'>The condition can involve either the upper or lower eyelid and may lead to significant ocular surface exposure and discomfort.</div>
                         </div>
 
-                        <div className='flex  gap-10 mt-10'>
+                        <div className='flex flex-col lg:flex-row   gap-10 mt-10'>
                             <div>
                                 <div className='text-[14px] md:text-[20px] lg:text-[24px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>Common Symptoms</div>
                                 <div className='text-[12px] md:text-[16px] font-[500] font-para'>
@@ -86,7 +86,7 @@ const EyelidRetraction = () => {
                                     </ul>
                                 </div>
                             </div>
-
+ 
                             <div>
                                 <div className='text-[14px] md:text-[20px] lg:text-[24px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>How Eyelid Retraction is Diagnosed</div>
                                 <div className='text-[12px] md:text-[16px] font-[500] font-para'>
@@ -106,23 +106,23 @@ const EyelidRetraction = () => {
 
                     {/* img */}
 
-                    <div className='flex flex-col gap-5 lg:w-[35%]'>
+                    {/* <div className='flex flex-col gap-5 lg:w-[35%]'>
                         <img className='lg:w-[84%]' src={assets.eximg} alt="" />
                         <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* container 3 */}
 
-                <div className='flex lg:flex-row flex-col-reverse md:gap-10 gap-5 mt-10 items-center'>
+                <div className='flex flex-col lg:flex-row items-center gap-10 mt-10'>
                     {/* img */}
-                    <div className='lg:w-[35%]'>
+                    {/* <div className='lg:w-[35%]'>
                         <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-                    </div>
+                    </div> */}
 
                     {/* content */}
 
-                    <div className='lg:w-[65%]'>
+                    <div className=''>
                         <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>Treatment Options at Sapiens Clinic</div>
                         <div className='text-[12px] md:text-[16px] font-[500] font-para'>
                             <div className='mt-2'>Initial management may include :</div>
@@ -154,9 +154,9 @@ const EyelidRetraction = () => {
 
                 {/* container 4 */}
 
-                <div className='flex lg:flex-row flex-col md:gap-10 gap-5 mt-10 items-center'>
+                <div className='flex flex-col-reverse lg:flex-row items-center gap-10 mt-10'>
                     {/* content */}
-                    <div className='lg:w-[65%]'>
+                    <div className=''>
                         <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>Post-Surgical Recovery</div>
                         <div className='text-[12px] md:text-[16px] font-[500] font-para'>
                             <div className='mt-2'>Following surgery, you may be advised to :</div>
@@ -185,10 +185,10 @@ const EyelidRetraction = () => {
                     </div>
 
                     {/* img */}
-                    <div className='lg:w-[35%]'>
+                    {/* <div className='lg:w-[35%]'>
                         <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-                          {/* <img src={assets.eximg} alt="" /> */}
-                    </div>
+                          
+                    </div> */}
                 </div>
             </div>
 

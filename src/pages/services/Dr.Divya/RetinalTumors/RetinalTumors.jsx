@@ -38,15 +38,15 @@ const RetinalTumors = () => {
   return (
     <div>
         <div>
-            <Divyaservicebanner/>
+            <Divyaservicebanner servicename = 'Retinal Tumor Evaluation and Treatment'/>
         </div>
 
         <div className="lg:mx-20 md:mt-10 xs:mt-29 mx-5 mt-10">
 
             {/* container 1 */}
             <div className="flex flex-col items-center">
-                <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Retinal Tumor Evaluation and Treatment in Malleshwaram</div>
-                <div className="text-[14px] md:text-[20px] lg:text-[24px] font-[600] font-heading bg-orange-gradient mt-2">Expert Care for Rare and Serious Retinal Conditions</div>
+                {/* <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Retinal Tumor Evaluation and Treatment in Malleshwaram</div> */}
+                <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient mt-2">Expert Care for Rare and Serious Retinal Conditions</div>
                 <div className="text-[12px] md:text-[16px] font-[500] font-para leading-7 mt-2">
                     <ul>
                         <li>Have you recently been told you have a retinal mass during an eye exam?</li>

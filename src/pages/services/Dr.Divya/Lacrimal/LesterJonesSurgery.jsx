@@ -37,7 +37,7 @@ const LesterJonesSurgery = () => {
     return (
         <div>
             <div>
-                <Divyaservicebanner />
+                <Divyaservicebanner servicename = 'Lester Jones Surgery'/>
             </div>
 
             <div className="lg:mx-20 md:mt-10 xs:mt-29 mx-5 mt-10">

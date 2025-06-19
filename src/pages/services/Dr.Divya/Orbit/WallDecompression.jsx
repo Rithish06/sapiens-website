@@ -39,7 +39,7 @@ const WallDecompression = () => {
   return (
     <div>
       <div>
-        <Divyaservicebanner />
+        <Divyaservicebanner servicename = 'Two-Wall Orbital Decompression Surgery'/>
       </div>
 
       <div className='lg:mx-20 xs:mt-25 md:mt-10 mx-5 mt-10'>

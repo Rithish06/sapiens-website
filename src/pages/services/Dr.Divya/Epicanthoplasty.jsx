@@ -38,15 +38,15 @@ const Epicanthoplasty = () => {
   return (
     <div>
       <div>
-        <Divyaservicebanner />
+        <Divyaservicebanner servicename= 'Epicanthoplasty Surgery'/>
       </div>
 
       <div className='lg:mx-20 xs:mt-29 md:mt-10 mt-10  mx-5'>
 
         {/* container 1 */}
         <div className='flex flex-col items-center'>
-          <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent">Epicanthoplasty Surgery in Malleshwaram</div>
-          <div className='text-[14px] md:text-[20px] lg:text-[24px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent mt-5'>Reshape the Inner Eye for a Brighter, Refined Appearance</div>
+          {/* <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent">Epicanthoplasty Surgery in Malleshwaram</div> */}
+          <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>Reshape the Inner Eye for a Brighter, Refined Appearance</div>
           <div className='text-[12px] md:text-[16px] font-[500] font-para leading-7 mt-2'>Epicanthoplasty is a specialized cosmetic eyelid procedure designed to correct the epicanthal fold - a skin fold that covers the inner corner of the eye, often seen in individuals of Asian descent. This fold can make the eyes appear smaller or give a cross-eyed look. Through epicanthoplasty, the fold is modified to reveal more of the medial canthus (inner eye corner), resulting in larger, more open eyes and a smoother, aesthetically pleasing contour.
             At our Malleshwaram-based center, this procedure is approached with precision and care, ensuring that both cosmetic goals and safety standards are maintained.
           </div>
@@ -57,7 +57,7 @@ const Epicanthoplasty = () => {
         <div className='flex lg:flex-row flex-col-reverse items-center md:gap-10 gap-5 mt-10'>
 
           {/* content */}
-          <div className='lg:w-[65%]'>
+          <div className=''>
             <div className='text-[14px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>What Does Epicanthoplasty Do?</div>
             <div className='text-[12px] md:text-[16px] font-[500] font-para mt-2 leading-7'>This procedure involves reshaping the inner eyelid to enhance the visible width of the eyes. By subtly repositioning the surrounding tissue, more of the eye’s white is exposed, giving the appearance of wider, more symmetrical eyes. It's commonly combined with double eyelid surgery for those looking to further define their eye shape while retaining ethnic features.</div>
 
@@ -70,9 +70,9 @@ const Epicanthoplasty = () => {
             <div className='mt-5 text-[12px] md:text-[16px] font-[500] font-para leading-5'>Both can be performed as a standalone or combined procedure, depending on the desired outcome.</div>
           </div>
           {/* img */}
-          <div className='lg:w-[35%]'>
+          {/* <div className='lg:w-[35%]'>
             <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-          </div>
+          </div> */}
         </div>
 
         {/* container 3 */}
@@ -80,12 +80,12 @@ const Epicanthoplasty = () => {
         <div className='flex lg:flex-row flex-col items-center md:gap-10 gap-5 mt-10'>
 
           {/* img */}
-          <div className='lg:w-[35%]'>
+          {/* <div className='lg:w-[35%]'>
             <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-          </div>
+          </div> */}
 
           {/* content */}
-          <div className='lg:w-[65%]'>
+          <div className=''>
             <div className='text-[14px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent mt-5'>Who Might Consider This Procedure?</div>
             <div className='text-[12px] md:text-[16px] font-[500] font-para'>
               <div className='mt-2 leading-5'>While epicanthoplasty is an elective surgery, it can be ideal for individuals who :</div>
@@ -104,7 +104,7 @@ const Epicanthoplasty = () => {
 
         <div className='flex lg:flex-row flex-col-reverse md:gap-10 gap-5 mt-10 items-center'>
           {/* content */}
-          <div className='lg:w-[65%]'>
+          <div className=''>
             <div className='text-[14px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>How to Prepare for Surgery</div>
             <div className='text-[12px] md:text-[16px] font-[500] font-para'>
               <div className='leading-5 mt-2'>Before surgery, you’ll undergo a thorough consultation and eyelid evaluation. Key steps in preparation include :</div>
@@ -120,22 +120,22 @@ const Epicanthoplasty = () => {
           </div>
 
           {/* img */}
-          <div className='lg:w-[35%]'>
+          {/* <div className='lg:w-[35%]'>
             <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-          </div>
+          </div> */}
         </div>
 
         {/* container 5 */}
 
         <div className='flex lg:flex-row flex-col items-center md:gap-10 gap-5 mt-10'>
           {/* img */}
-          <div className='lg:w-[35%]'>
+          {/* <div className='lg:w-[35%]'>
             <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-          </div>
+          </div> */}
 
           {/* content */}
 
-          <div className='lg:w-[65%]'>
+          <div className=''>
             <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent '>The Procedure: What to Expect</div>
             <div className='text-[12px] md:text-[16px] font-[500] font-para'>
               <div className='mt-2 leading-5'>Performed under local anesthesia, <b>epicanthoplasty takes less than an hour</b> and is typically done in an outpatient setting.</div>
@@ -153,7 +153,7 @@ const Epicanthoplasty = () => {
 
         <div className="flex lg:flex-row flex-col-reverse items-center md:gap-10 gap-5 mt-10">
           {/* content */}
-          <div className='lg:w-[65%]'>
+          <div className=''>
             <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent '>Recovery and Post-Procedure Care</div>
             <div className='text-[12px] md:text-[16px] font-[500] font-para'>
               <div className='mt-2'>Some swelling, mild discomfort, or bruising is expected for a few days. To aid recovery :</div>
@@ -169,9 +169,9 @@ const Epicanthoplasty = () => {
             </div>
           </div>
           {/* img */}
-          <div className='lg:w-[35%]'>
+          {/* <div className='lg:w-[35%]'>
             <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-          </div>
+          </div> */}
 
         </div>
 
@@ -179,13 +179,13 @@ const Epicanthoplasty = () => {
 
         <div className='flex lg:flex-row flex-col items-center md:gap-10 gap-5 mt-10'>
           {/* img */}
-          <div className='lg:w-[35%]'>
+          {/* <div className='lg:w-[35%]'>
             <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-          </div>
+          </div> */}
 
           {/* content */}
 
-          <div className='lg:w-[65%]'>
+          <div className=''>
             <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>Are There Any Risks?</div>
             <div className='text-[12px] md:text-[16px] font-[500] font-para'>
               <div className='mt-2'>As with any eyelid procedure, minor risks can include :</div>

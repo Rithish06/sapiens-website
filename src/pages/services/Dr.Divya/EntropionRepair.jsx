@@ -38,14 +38,14 @@ const EntropionRepair = () => {
     return (
         <div>
             <div>
-                <Divyaservicebanner />
+                <Divyaservicebanner servicename= 'Entropion Repair Surgery'/>
             </div>
 
             {/* container 1 */}
             <div className='xs:mt-29 md:mt-10 lg:mx-20 md:mx-10 mx-5  '>
                 <div className='flex flex-col items-center mt-5'>
-                    <div className="text-[18px] md:text-[20px] lg:text-[30px] font-heading font-[600] bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent">Entropion Repair Surgery in Malleshwaram, Bangalore</div>
-                    <div className='text-[14px] md:text-[20px] lg:text-[24px] font-heading font-[600] bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent mt-5'>Restore Comfort and Protect Your Vision from Inward-Turning Eyelids</div>
+                    {/* <div className="text-[18px] md:text-[20px] lg:text-[30px] font-heading font-[600] bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent">Entropion Repair Surgery in Malleshwaram, Bangalore</div> */}
+                    <div className='text-[18px] md:text-[20px] lg:text-[30px] font-heading font-[600] bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent '>Restore Comfort and Protect Your Vision from Inward-Turning Eyelids</div>
                     <div className='text-[12px] md:text-[16px] font-[500] font-para mt-2  md:leading-7 leading-5 '>Entropion is a condition where the <b>eyelid turns inward</b>, causing the eyelashes and skin to rub directly against the surface of the eye. This constant friction can lead to discomfort, redness, tearing, and in severe cases, corneal damage or vision loss.
                         Most commonly seen in older adults, especially those over 60, entropion requires timely evaluation and appropriate treatment to avoid long-term complications. At <b>Sapiens Clinic</b>, we offer advanced surgical and non-surgical solutions for entropion, ensuring comfort, safety, and lasting relief.
                     </div>
@@ -53,11 +53,11 @@ const EntropionRepair = () => {
 
                 {/* container 2 */}
 
-                <div className='mt-10 flex md:flex-row flex-col  items-center md:gap-10 gap-5'>
+                <div className='flex flex-col lg:flex-row items-center gap-10 mt-10'>
                     {/* img */}
-                    <div className='md:w-[50%]'>
+                    {/* <div className='md:w-[50%]'>
                         <img src={assets.eximg} alt="" />
-                    </div>
+                    </div> */}
 
                     {/* content */}
                     <div className='md:leading-7 leading-5 w-[100%]' >
@@ -70,7 +70,7 @@ const EntropionRepair = () => {
 
                 {/* container 3 */}
 
-                <div className='mt-10 flex md:flex-row flex-col-reverse items-center md:gap-10 gap-5'>
+                <div className='flex flex-col-reverse lg:flex-row items-center gap-10 mt-10'>
 
                     {/* content */}
                     <div>
@@ -88,19 +88,19 @@ const EntropionRepair = () => {
                     </div>
 
                     {/* img */}
-                    <div className='xl:w-[50%]'>
+                    {/* <div className='xl:w-[50%]'>
                         <img src={assets.eximg} alt="" />
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* container 4 */}
 
-                <div className='flex md:flex-row flex-col items-center md:gap-10 gap-5 mt-10'>
+                <div className='flex flex-col lg:flex-row items-center gap-10 mt-10'>
                     {/* img */}
 
-                    <div className='xl:w-[50%]'>
+                    {/* <div className='xl:w-[50%]'>
                         <img src={assets.eximg} alt="" />
-                    </div>
+                    </div> */}
 
                     {/* content */}
                     <div>
@@ -121,7 +121,7 @@ const EntropionRepair = () => {
 
                 {/* container 5 */}
 
-                <div className='flex md:flex-row flex-col-reverse items-center md:gap-10 gap-5 mt-10'>
+                <div className='flex flex-col-reverse lg:flex-row items-center gap-10 mt-10 '>
 
                     {/* content */}
                     <div>
@@ -150,19 +150,19 @@ const EntropionRepair = () => {
 
                     {/* img */}
 
-                    <div className='xl:w-[50%]'>
+                    {/* <div className='xl:w-[50%]'>
                         <img src={assets.eximg} alt="" />
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* container 6 */}
 
-                <div className='flex md:flex-row flex-col items-center md:gap-10 gap-5 mt-10'>
+                <div className='flex flex-col lg:flex-row items-center gap-10 mt-10'>
 
                     {/* img */}
-                    <div className='xl:w-[50%]'>
+                    {/* <div className='xl:w-[50%]'>
                         <img src={assets.eximg} alt="" />
-                    </div>
+                    </div> */}
 
                     {/* content */}
                     <div className=''>
@@ -182,7 +182,7 @@ const EntropionRepair = () => {
 
                 {/* container 7 */}
 
-                <div className='flex md:flex-row-reverse flex-col-reverse items-center md:gap-10 gap-5 mt-10'>
+                <div className='flex flex-col-reverse lg:flex-row items-center gap-10 mt-10'>
 
                     {/* content */}
                     <div>
@@ -199,19 +199,19 @@ const EntropionRepair = () => {
                     </div>
 
                     {/* img */}
-                    <div className='xl:w-[50%]'>
+                    {/* <div className='xl:w-[50%]'>
                         <img src={assets.eximg} alt="" />
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* container 8 */}
 
-                <div className='flex md:flex-row flex-col items-center md:gap-10 gap-5 mt-10'>
+                <div className='flex flex-col lg:flex-row items-center gap-10 mt-10'>
 
                     {/* img */}
-                    <div className='xl:w-[50%]'>
+                    {/* <div className='xl:w-[50%]'>
                         <img src={assets.eximg} alt="" />
-                    </div>
+                    </div> */}
 
                     {/* content */}
                     <div>

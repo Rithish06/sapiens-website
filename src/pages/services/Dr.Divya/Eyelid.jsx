@@ -5,6 +5,8 @@ import Faqs from '../../../components/faqs/faqs'
 
 const Eyelid = () => {
 
+    
+
     const faqs = [
         {
             ques:"How serious are eyelid diseases?",
@@ -38,7 +40,7 @@ const Eyelid = () => {
   return (
     <div>
         <div>
-            <Divyaservicebanner/>
+            <Divyaservicebanner servicename = 'Eyelid Disease Care'/>
         </div>
 
         

@@ -37,15 +37,15 @@ const OrbitalTumors = () => {
     return (
         <div>
             <div>
-                <Divyaservicebanner />
+                <Divyaservicebanner servicename = 'Orbital Tumor Treatment'/>
             </div>
 
             <div className="lg:mx-20 md:mt-10 xs:mt-29 mx-5 mt-10">
 
                 {/* container 1 */}
                 <div className="flex flex-col items-center">
+                    {/* <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Orbital Tumor Treatment in Malleshwaram, Bangalore</div> */}
                     <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Orbital Tumor Treatment in Malleshwaram, Bangalore</div>
-                    <div className="text-[14px] md:text-[20px] lg:text-[24px] font-[600] font-heading bg-orange-gradient">Orbital Tumor Treatment in Malleshwaram, Bangalore</div>
                     <div className="text-[12px] md:text-[16px] font-[500] font-para leading-7 mt-2">Do your eyes appear larger than usual, misaligned, or feel persistently uncomfortable? Are you noticing restricted eye movements, chronic redness, or unexplained swelling around the eyes? <br />These may be signs of an <b>orbital tumor</b>—a mass developing within the bony socket (orbit) that houses the eye, its muscles, nerves, and supportive tissues. At <b>Sapiens Clinic, Malleshwaram</b>, our skilled oculoplastic surgeons offer comprehensive evaluation and cutting-edge surgical options to manage both benign and malignant orbital tumors safely and effectively.</div>
                 </div>
 
@@ -78,8 +78,8 @@ const OrbitalTumors = () => {
                             <li>A visible mass near the eye</li>
                         </ul>
 
-                        <div className="mt-2"> If you experience any of these symptoms, it's essential to consult an orbital specialist without delay.</div>
-                    </div>
+                        <div className="mt-2 text-[12px] md:text-[16px] font-[500] font-para leading-7"> If you experience any of these symptoms, it's essential to consult an orbital specialist without delay.</div>
+                    </div> 
                 </div>
 
                 {/* container 3 */}

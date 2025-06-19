@@ -38,15 +38,15 @@ const EyelidSynkinesis = () => {
     return (
         <div>
             <div>
-                <Divyaservicebanner />
+                <Divyaservicebanner servicename = 'Eyelid Synkinesis Treatment'/>
             </div>
 
             <div className='lg:mx-20 md:mt-10 mx-5 xs:mt-29 mt-10'>
                 {/* container 1 */}
                 <div>
                     <div>
-                        <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent text-center'>Eyelid Synkinesis Treatment in Malleswaram</div>
-                        <div className='text-[14px] md:text-[20px] lg:text-[24px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent mt-5'>Personalized care to help restore comfort, control and confidence.</div>
+                        {/* <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent text-center'>Eyelid Synkinesis Treatment in Malleswaram</div> */}
+                        <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent mt-5 text-center'>Personalized care to help restore comfort, control and confidence.</div>
                         <div className='text-[14px] md:text-[20px] lg:text-[24px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent mt-2'>What Is Eyelid Synkinesis?</div>
                         <div className='text-[12px] md:text-[16px] font-[500] font-para mt-2 leading-7 '>Eyelid synkinesis is a facial nerve disorder in which the eyelid moves involuntarily - often blinking or closing - when another part of the face is activated, such as during smiling or chewing. This occurs due to misdirected nerve regrowth following a facial nerve injury, leading to unintentional and often uncomfortable muscle movements. Though not life-threatening, it can be both functionally and emotionally distressing.</div>
                     </div>
@@ -56,7 +56,7 @@ const EyelidSynkinesis = () => {
 
                 <div className='flex lg:flex-row flex-col lg:gap-10 gap-5 mt-10 items-center'>
                     {/* content */}
-                    <div className='lg:w-[65%]'>
+                    <div className=''>
                         <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>Causes of Eyelid Synkinesis</div>
                         <div className='text-[12px] md:text-[16px] font-[500] font-para'>
                             <div className='mt-2'>Eyelid synkinesis most commonly develops as a consequence of :</div>
@@ -71,21 +71,21 @@ const EyelidSynkinesis = () => {
                         </div>
                     </div>
                     {/* img */}
-                    <div className='lg:w-[35%]'>
+                    {/* <div className='lg:w-[35%]'>
                         <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* container 3 */}
 
                 <div className="flex lg:flex-row flex-col-reverse lg:gap-10 gap-5 mt-10 items-center">
                     {/* img */}
-                    <div className="lg:w-[35%]">
+                    {/* <div className="lg:w-[35%]">
                         <img src={assets.eximg} alt="" className="lg:w-[84%]" />
-                    </div>
+                    </div> */}
                     {/* content */}
 
-                    <div className="lg:w-[65%]">
+                    <div className="">
                         <div>
                             <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent">Common Symptoms</div>
                             <div className="text-[12px] md:text-[16px] font-[500] font-para">
@@ -119,7 +119,7 @@ const EyelidSynkinesis = () => {
 
                 <div className="flex lg:flex-row flex-col lg:gap-10 gap-5 mt-10 items-center">
                     {/* content */}
-                    <div className="lg:w-[65%]">
+                    <div className="">
                         <div className="text-[14px] md:text-[20px] lg:text-[24px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent">Treatment Options We OfferTreatment Options We Offer</div>
                         <div className="text-[12px] md:text-[16px] font-[500] font-para leading-5">
                             <div className="mt-2">We combine medical, rehabilitative, and surgical strategies to manage eyelid synkinesis effectively:</div>
@@ -148,9 +148,9 @@ const EyelidSynkinesis = () => {
 
                     {/* img */}
 
-                    <div className="lg:w-[35%]">
+                    {/* <div className="lg:w-[35%]">
                         <img src={assets.eximg} alt="" className="lg:w-[85%]" />
-                    </div>
+                    </div> */}
                 </div>
             </div>
 

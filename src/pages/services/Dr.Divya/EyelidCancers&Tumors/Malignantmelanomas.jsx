@@ -37,13 +37,13 @@ const Malignantmelanomas = () => {
     return (
         <div>
             <div>
-                <Divyaservicebanner />
+                <Divyaservicebanner servicename = 'Malignant Melanoma Eyelid Surgery'/>
             </div>
 
             <div className="lg:mx-20 md:mt-20 xs:mt-29 mx-5 mt-10">
                 <div className="flex flex-col items-center">
-                    <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Malignant Melanoma Eyelid Surgery in Malleshwaram</div>
-                    <div className="text-[14px] md:text-[20px] lg:text-[24px] font-[600] font-heading bg-orange-gradient mt-2">Early Diagnosis & Expert Eyelid Tumor Removal at Sapiens Clinic</div>
+                    {/* <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Malignant Melanoma Eyelid Surgery in Malleshwaram</div> */}
+                    <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient mt-2">Early Diagnosis & Expert Eyelid Tumor Removal at Sapiens Clinic</div>
                     <div className="text-[12px] md:text-[16px] font-[500] font-para leading-7 mt-2">
                         <ul>
                             <li>Have you noticed a small, dark spot or lesion on your eyelid that seems to be growing, darkening, or occasionally bleeding?</li>

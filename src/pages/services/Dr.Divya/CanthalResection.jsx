@@ -34,7 +34,7 @@ const CanthalResection = () => {
     return (
         <div>
             <div>
-                <Divyaservicebanner />
+                <Divyaservicebanner servicename ='Canthal Resection (Epicanthoplasty)'/>
             </div>
 
             <div className='lg:mx-20 xs:mt-29 md:mt-10 mt-10 mx-5'>
@@ -42,8 +42,8 @@ const CanthalResection = () => {
                 {/* container 1 */}
 
                 <div className='flex flex-col items-center'>
-                    <div className="text-[18px] md:text-[20px] lg:text-[30px] font-heading font-[600] bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent">Canthal Resection (Epicanthoplasty) in Malleshwaram, Bangalore</div>
-                    <div className='text-[14px] md:text-[20px] lg:text-[24px] font-heading font-[600] bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent mt-5'>Eye Reshaping Surgery to Refine and Open Up the Inner Corners of the Eyes</div>
+                    {/* <div className="text-[18px] md:text-[20px] lg:text-[30px] font-heading font-[600] bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent">Canthal Resection (Epicanthoplasty) in Malleshwaram, Bangalore</div> */}
+                    <div className='text-[18px] md:text-[20px] lg:text-[30px] font-heading font-[600] bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>Eye Reshaping Surgery to Refine and Open Up the Inner Corners of the Eyes</div>
                     <div className='text-[12px] md:text-[16px] font-[500] font-para mt-2 leading-7'><b>Canthal resection</b>, also referred to as <b>epicanthoplasty</b>, is a specialized oculoplastic procedure designed to reshape and enhance the inner or outer corners of the eyes. This aesthetic eye surgery removes or repositions the <b>epicanthic fold</b>—a small skin fold near the inner eye—to create a more open, symmetric, and balanced appearance.
                         At <b>Sapiens Clinic, Malleshwaram</b>, we offer precise and natural-looking canthal correction to patients seeking to enhance their eye shape, reduce the intercanthal distance (space between the eyes), or complement double eyelid surgery. Whether performed on its own or combined with other eyelid procedures, the goal is always subtle transformation - not erasing ethnic identity, but refining natural beauty.
                     </div>
@@ -52,7 +52,7 @@ const CanthalResection = () => {
                 {/* container 2 */}
                 <div className='flex lg:flex-row flex-col-reverse items-center md:gap-10 gap-5 mt-10'>
                     {/* content */}
-                    <div className='lg:w-[65%]'>
+                    <div className=''>
                         <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent '>What Is Canthal Resection (Epicanthoplasty)?</div>
                         <div className=' text-[12px] md:text-[16px] font-[500] font-para leading-7  mt-5'>This procedure focuses on <b>reshaping the medial or lateral canthus</b>, the inner and outer corners of the eye. The <b>epicanthic fold</b>, common in many East Asian individuals, can sometimes obscure the inner eye corner and give the eyes a shorter, rounded appearance. By gently repositioning the surrounding tissues, canthal resection enhances eye openness and symmetry.
                             It’s typically done for <b>cosmetic improvement</b>, but the changes can also contribute to improved eye balance and definition.
@@ -60,18 +60,18 @@ const CanthalResection = () => {
                     </div>
 
                     {/* img */}
-                    <div className='lg:w-[35%]'>
+                    {/* <div className='lg:w-[35%]'>
                         <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* container 2 */}
                 <div className='flex lg:flex-row flex-col items-center md:gap-10 gap-5 mt-10'>
 
                     {/* img */}
-                    <div className='lg:w-[35%]'>
+                    {/* <div className='lg:w-[35%]'>
                         <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-                    </div>
+                    </div> */}
                     
                     {/* content */}
                     <div className=''>
@@ -103,7 +103,7 @@ const CanthalResection = () => {
                 {/* container 3 */}
                 <div className='flex lg:flex-row flex-col-reverse items-center md:gap-10 gap-5 mt-10'>
                     {/* content */}
-                    <div className='lg:w-[65%]'>
+                    <div className=''>
                         <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading  bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>Who Should Consider This Procedure?</div>
                         <div className='text-[12px] md:text-[16px] font-[500] font-para'>
                             <div className='mt-5'>Canthal resection is suitable for individuals who :</div>
@@ -120,10 +120,10 @@ const CanthalResection = () => {
                     </div>
 
                     {/* img */}
-                    <div className='
+                    {/* <div className='
                     lg:w-[35%]'>
                         <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* container 4 */}
@@ -131,12 +131,12 @@ const CanthalResection = () => {
                 <div className='flex lg:flex-row flex-col items-center md:gap-10 gap-5 mt-10'>
 
                     {/* img */}
-                    <div className='lg:w-[35%]'>
+                    {/* <div className='lg:w-[35%]'>
                         <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-                    </div>
+                    </div> */}
 
                     {/* content */}
-                    <div className='lg:w-[65%]'>
+                    <div className=''>
                         <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>Pre-Surgical Evaluation at Sapiens Clinic</div>
                         <div className='text-[12px] md:text-[16px] font-[500] font-para '>
                             <div className='mt-5'>Your surgeon will:</div>
@@ -156,7 +156,7 @@ const CanthalResection = () => {
                 <div className='flex lg:flex-row flex-col-reverse items-center md:gap-10 gap-5 mt-10'>
 
                     {/* content */}
-                    <div className='lg:w-[65%]'>
+                    <div className=''>
                         <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>The Canthal Resection Procedure</div>
                         <div className='text-[12px] md:text-[16px] font-[500] font-para'>
                             <div className='mt-5'>Performed under local anesthesia (with or without mild sedation), the surgery usually takes less than an hour. Here's how it works :</div>
@@ -173,9 +173,9 @@ const CanthalResection = () => {
 
                     {/* img */}
 
-                    <div className='lg:w-[35%]'>
+                    {/* <div className='lg:w-[35%]'>
                         <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-                    </div>
+                    </div> */}
 
                 </div>
 
@@ -183,12 +183,12 @@ const CanthalResection = () => {
 
                 <div className='flex lg:flex-row flex-col items-center md:gap-10 gap-5 mt-10'>
                     {/* img */}
-                    <div className='lg:w-[35%]'>
+                    {/* <div className='lg:w-[35%]'>
                         <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-                    </div>
+                    </div> */}
 
                     {/* content */}
-                    <div className='lg:w-[65%]'>
+                    <div className=''>
                         <div className=' text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>Recovery & Aftercare</div>
                         <div className='text-[12px] md:text-[16px] font-[500] font-para'>
                             <div className='mt-5'>Initial swelling or bruising around the eyes is normal and usually resolves in a few days. We’ll guide you with medications and care routines that include :</div>
@@ -210,7 +210,7 @@ const CanthalResection = () => {
                 <div className='flex lg:flex-row flex-col-reverse items-center md:gap-10 gap-5 mt-10'>
 
                     {/* content */}
-                    <div className='lg:w-[65%]'>
+                    <div className=''>
                         <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>What Results Can You Expect?</div>
                         <ul className='text-[12px] md:text-[16px] font-[500] font-para list-disc ml-5 leading-7 mt-5'>
                             <li>More <b>defined and open eye shape</b></li>
@@ -236,9 +236,9 @@ const CanthalResection = () => {
 
                     {/* img */}
 
-                    <div className='lg:w-[35%]'>
+                    {/* <div className='lg:w-[35%]'>
                         <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-                    </div>
+                    </div> */}
                 </div>
             </div>
 
