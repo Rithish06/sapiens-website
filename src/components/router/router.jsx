@@ -79,27 +79,30 @@ const RouterOutlet = () => {
           <Route path='Blepharophimosis' element={<Blepharophimosis />} />
           <Route path='Eyelid-Synkinesis' element={<EyelidSynkinesis />} />
 
-
+          {/* Orbit */}
           <Route path='Orbital-Disease' element={<OrbitalDisease />} />
           <Route path='Orbital-Decompression' element={<OrbitalDecompression />} />
           <Route path='Wall-Decompression' element={<WallDecompression />} />
           <Route path='Wall-Decompression-3' element={<WallDecompression3 />} />
 
+          {/* Lacrimal */}
           <Route path='Endoscopic-DCR' element={<EndoscopicDCR />} />
           <Route path='CDCR-DCT-Ballon' element={<CDCRDCTBallon />} />
           <Route path='Dacryoplasty' element={<Dacryoplasty />} />
           <Route path='Lester-Jones-Surgery' element={<LesterJonesSurgery />} />
 
-
+          {/* Orbital Tumors */}
           <Route path='Orbital-Tumors' element={<OrbitalTumors />} />
           <Route path='Cavernous-Hemangioma' element={<CavernousHemangioma />} />
           <Route path='Orbital-Lymphoma' element={<OrbitalLymphoma />} />
           <Route path='Pseudo-tumor' element={<Pseudotumor />} />
 
+          {/* Ocular Surface Tumors */}
           <Route path='Ocular-Surface-Tumors' element={<OcularSurfaceTumors />} />
           <Route path='Conjuctival-Cyst' element={<ConjuctivalCyst />} />
           <Route path='Removal-Surgery' element={<RemovalSurgery />} />
 
+          {/* Eyelid Cancers & Tumors */}
           <Route path='Sebaceous-cell-carcinoma' element={<Sebaceouscellcarcinoma />} />
           <Route path='Malignant-melanomas' element={<Malignantmelanomas />} />
           <Route path='Mohs-Surgery' element={<MohsSurgery />} />
@@ -108,6 +111,7 @@ const RouterOutlet = () => {
           <Route path='Cutler-Beard-Flap' element={<CutlerBeardFlap />} />
           <Route path='Mustardes-Flap' element={<MustardesFlap />} />
 
+          {/* Retinal Tumors */}
           <Route path='Choroidal-Metastasis' element={<ChoroidalMetastasis />} />
           <Route path='Choroidal-Melanoma' element={<ChoroidalMelanoma />} />
           <Route path='Enucleation' element={<Enucleation />} />

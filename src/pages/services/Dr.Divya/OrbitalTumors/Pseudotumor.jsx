@@ -37,15 +37,15 @@ const Pseudotumor = () => {
     return (
         <div>
             <div>
-                <Divyaservicebanner />
+                <Divyaservicebanner servicename = 'Pseudotumor Treatment'/>
             </div>
 
             <div className="lg:mx-20 md:mt-10 xs:mt-29 mx-5 mt-10">
 
                 {/* container 1 */}
                 <div className="flex flex-col items-center">
-                    <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Pseudotumor Treatment in Malleshwaram</div>
-                    <div className="text-[14px] md:text-[20px] lg:text-[24px] font-[600] font-heading bg-orange-gradient">Advanced Diagnosis & Care at Sapiens Clinic</div>
+                    {/* <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Pseudotumor Treatment in Malleshwaram</div> */}
+                    <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Advanced Diagnosis & Care at Sapiens Clinic</div>
                     <div className="text-[12px] md:text-[16px] font-[500] font-para leading-7 mt-2">Do you experience persistent headaches, vision changes, dizziness, or pressure behind the eyes-yet imaging tests reveal no actual tumor? You could be facing a condition called <b>Pseudotumor Cerebri</b>, also known as <b>Idiopathic Intracranial Hypertension (IIH)</b>. Though it mimics the symptoms of a brain tumor, no true mass exists. At Sapiens Clinic, Malleshwaram, our experienced ophthalmologists and specialists offer thorough diagnostic evaluations and advanced treatment options to preserve your vision and manage symptoms effectively.</div>
                 </div>
 

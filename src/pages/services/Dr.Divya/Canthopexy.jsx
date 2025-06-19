@@ -40,15 +40,15 @@ const Canthopexy = () => {
     return (
         <div>
             <div>
-                <Divyaservicebanner />
+                <Divyaservicebanner servicename='Canthopexy Surgery'/>
             </div>
             <div className='lg:mx-20 xs:mt-29 md:mt-10 mt-10 mx-5'>
 
                 {/* container 1 */}
                 <div className=' flex flex-col items-center'>
-                    <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>Canthopexy Surgery in Malleshwaram, Bangalore</div>
-                    <div className='text-[18px] md:text-[20px] lg:text-[24px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent mt-5'>Rejuvenate Droopy Eyes and Restore Youthful Eye Contours</div>
-                    <div className='text-[12px] md:text-[16px] font-[500] font-para leading-7'><b>Canthopexy</b> is a specialized oculoplastic procedure that lifts and tightens the outer corners of the eyes, providing both aesthetic enhancement and structural support. At <b>Sapiens Clinic, Malleshwaram</b>, we perform advanced canthopexy to correct sagging lower eyelids, improve eye symmetry and redefine the natural shape of the eyes for a refreshed, youthful appearance.
+                    {/* <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>Canthopexy Surgery in Malleshwaram, Bangalore</div> */}
+                    <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>Rejuvenate Droopy Eyes and Restore Youthful Eye Contours</div>
+                    <div className='text-[12px] md:text-[16px] font-[500] font-para leading-7 mt-2'><b>Canthopexy</b> is a specialized oculoplastic procedure that lifts and tightens the outer corners of the eyes, providing both aesthetic enhancement and structural support. At <b>Sapiens Clinic, Malleshwaram</b>, we perform advanced canthopexy to correct sagging lower eyelids, improve eye symmetry and redefine the natural shape of the eyes for a refreshed, youthful appearance.
                         Whether due to aging, laxity, or a cosmetic preference, many individuals seek this minimally invasive treatment to enhance the definition and alignment of the eyes - without compromising their natural expressions.
                     </div>
                 </div>
@@ -57,12 +57,12 @@ const Canthopexy = () => {
 
                 <div className='flex lg:flex-row flex-col items-center md:gap-10 gap-5 mt-10'>
                     {/* img */}
-                    <div className='lg:w-[35%]'>
+                    {/* <div className='lg:w-[35%]'>
                         <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-                    </div>
+                    </div> */}
                     
                     {/* content */}
-                    <div className='lg:w-[65%]'>
+                    <div className=''>
                         <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>What Is Canthopexy?</div>
                         <div className='text-[12px] md:text-[16px] font-[500] font-para mt-5 leading-7'>Canthopexy is a corrective eyelid procedure that focuses on repositioning and strengthening the outer corner of the eye (lateral canthus). With age or anatomical variations, the lower eyelid can begin to droop or sag, causing aesthetic concerns and sometimes discomfort. This condition may make the eyes appear tired, asymmetric, or prematurely aged.
                             By gently lifting and tightening the lower lid, canthopexy helps restore a smoother eyelid contour and offers improved support to the eye. It can also be combined with other procedures like blepharoplasty or canthoplasty for comprehensive aesthetic correction.
@@ -76,7 +76,7 @@ const Canthopexy = () => {
                 <div className='flex lg:flex-row flex-col-reverse md:gap-10 items-center gap-5 mt-10'>
 
                     {/* content */}
-                    <div className='lg:w-[65%]'>
+                    <div className=''>
                         <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>Who Is an Ideal Candidate?</div>
                         <div className='text-[12px] md:text-[16px] font-[500] font-para'>
                             <div className='mt-5'>Canthopexy may be right for you if you :</div>
@@ -93,9 +93,9 @@ const Canthopexy = () => {
                     </div>
 
                     {/* img */}
-                    <div className='lg:w-[35%]'>
+                    {/* <div className='lg:w-[35%]'>
                         <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* container 4 */}
@@ -103,12 +103,12 @@ const Canthopexy = () => {
                 <div className='flex lg:flex-row flex-col items-center md:gap-10 gap-5 mt-5'>
 
                     {/* img */}
-                    <div className='lg:w-[35%]'>
+                    {/* <div className='lg:w-[35%]'>
                         <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-                    </div>
+                    </div> */}
 
                     {/* content */}
-                    <div className='lg:w-[65%]'>
+                    <div className=''>
                         <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>Why Choose Canthopexy ?</div>
                         <div className='text-[12px] md:text-[16px] font-[500] font-para mt-5'>This procedure offers both functional and cosmetic benefits:</div>
 
@@ -144,7 +144,7 @@ const Canthopexy = () => {
                 <div className='flex lg:flex-row flex-col-reverse items-center md:gap-10 gap-5 mt-10'>
 
                     {/* content */}
-                    <div className='lg:w-[65%]'>
+                    <div className=''>
                         <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>How the Procedure Is Performed</div>
                         <div className='text-[12px] md:text-[16px] font-[500] font-para'>
                             <div className='mt-5'>At Sapiens Clinic, the surgery is typically done under <b>local anesthesia with sedation</b>, ensuring patient comfort while minimizing downtime. The steps include :</div>
@@ -159,9 +159,9 @@ const Canthopexy = () => {
                     </div>
 
                     {/* img */}
-                    <div className='lg:w-[35%]'>
+                    {/* <div className='lg:w-[35%]'>
                         <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* container 6 */}
@@ -169,12 +169,12 @@ const Canthopexy = () => {
                 <div className='flex lg:flex-row flex-col items-center md:gap-10 gap-5 mt-10'>
 
                     {/* img */}
-                    <div className='lg:w-[35%]'>
+                    {/* <div className='lg:w-[35%]'>
                         <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-                    </div>
+                    </div> */}
 
                     {/* content */}
-                    <div className='lg:w-[65%]'>
+                    <div className=''>
                         <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>Preparing for Surgery</div>
                         <div className='text-[12px] md:text-[16px] font-[500] font-para'>
                             <div className='mt-5'>During your detailed pre-surgical consultation, our team will :</div>
@@ -199,7 +199,7 @@ const Canthopexy = () => {
                 <div className='flex lg:flex-row flex-col-reverse md:gap-10 gap-5 mt-10'>
 
                     {/* content */}
-                    <div className='lg:w-[65%]'>
+                    <div className=''>
                         <div className='text-[14px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>Recovery & Aftercare</div>
                         <div className='text-[12px] md:text-[16px] font-[500] font-para'>
                             <div className='mt-5 leading-7'>Canthopexy recovery is generally quicker than many other eyelid procedures. Here’s what to expect :</div>
@@ -217,20 +217,20 @@ const Canthopexy = () => {
 
                     {/* img */}
 
-                    <div className='lg:w-[35%]'>
+                    {/* <div className='lg:w-[35%]'>
                         <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-                    </div>
+                    </div> */}
 
                 </div>
 
                 {/* container 8 */}
 
                 <div className='flex lg:flex-row flex-col items-center md:gap-10 gap-5 mt-10'>
-                    <div className='lg:w-[35%]'>
+                    {/* <div className='lg:w-[35%]'>
                         <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-                    </div>
+                    </div> */}
 
-                    <div className='lg:w-[65%]'>
+                    <div className=''>
                         <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>Canthopexy vs. Other Eye Procedures</div>
                         <div className='text-[12px] md:text-[16px] font-[500] font-para'>
                             <div className='mt-5 leading-7'>Canthopexy is often confused with <b>canthoplasty</b>, but they differ in technique and intention. While canthoplasty <b>alters the shape of the eyelid</b>, canthopexy <b>strengthens and supports</b> the existing eyelid position without changing its natural anatomy. It’s also commonly combined with procedures like :</div>

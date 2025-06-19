@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import RouterOutlet from './components/router/router'
 import Navbar from './components/navbar/Navbar'
 import Footer from './components/footer/Footer'
-import {useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import SurgicalBlepharoplasty from './pages/services/Dr.Divya/SurgicalBlepharoplasty'
 import AsianBlepharoplasty from './pages/services/Dr.Divya/AsianBlepharoplasty'
 import EntropionRepair from './pages/services/Dr.Divya/EntropionRepair'
@@ -51,6 +51,15 @@ import HandandWristFracture from './pages/drDarshanServices/HandandWristFracture
 import ScaphoidFractures from './pages/drDarshanServices/ScaphoidFractures';
 import Servicesbanner from './components/services-banner/Servicesbanner';
 import RadialFractures from './pages/drDarshanServices/RadialFractures';
+import BirthrelatedBrachialplexus from './pages/drDarshanServices/BirthrelatedBrachialplexus'
+import Cerebralpalsy from './pages/drDarshanServices/Cerebralpalsy';
+import Flapscovertoupperorlowerlimbs from './pages/drDarshanServices/Flapscovertoupperorlowerlimbs';
+import Vascularizedbonegraftsfornonunions from './pages/drDarshanServices/Vascularizedbonegraftsfornonunions';
+import Freeflaps from './pages/drDarshanServices/Freeflaps';
+import Complexreconstructionrequiringbothsofttissueandbone from './pages/drDarshanServices/Complexreconstructionrequiringbothsofttissueandbone';
+import VICVolkmanIschemicContracture from './pages/drDarshanServices/VICVolkmanIschemicContracture';
+import Reconstructionforthelimbs from './pages/drDarshanServices/Reconstructionforthelimbs';
+import Nerverelatedproblems from './pages/drDarshanServices/Nerverelatedproblems';
 import RotatorCuffTear from './pages/drDarshanServices/RotatorCuffTear';
 import LabralTear from './pages/drDarshanServices/LabralTear';
 import SlapInjuries from './pages/drDarshanServices/SlapInjuries';
@@ -63,7 +72,6 @@ import WristArthroscopy from './pages/drDarshanServices/WristArthroscopy';
 import BirthDefects from './pages/drDarshanServices/BirthDefects';
 import CubitalTunnelSyndrome from './pages/drDarshanServices/CubitalTunnelSyndrome';
 import KeyholeSurgeryForHand from './pages/drDarshanServices/KeyholeSurgeryForHand';
-import CerebralPalsy from './pages/drDarshanServices/CerebralPalsy';
 import PostBurnsContracture from './pages/drDarshanServices/PostBurnsContracture';
 import TumorsofHand from './pages/drDarshanServices/TumorsofHand';
 import VascularAnomalies from './pages/drDarshanServices/VascularAnomalies';
@@ -85,49 +93,52 @@ const App = () => {
 
   useEffect(() => {
     window.scrollTo({
-      top : 0,
+      top: 0,
       // behavior : 'smooth'
     })
-  },[pathname])
+  }, [pathname])
 
   return (
     <div>
-        <Navbar />
-          <div className='relative'>
-            {/* <RouterOutlet /> */}
-{/*             <CarpalTunnel /> */}
-            {/* <RouterOutlet /> */}
-            {/* <CarpalTunnel /> */}
-            {/* <SportInjuredHand /> */}
-            {/* <StiffnessOfHandJoints /> */}
-            {/* <HandandWristFracture /> */}
-            {/* <ScaphoidFractures /> */}
-            {/* <Servicesbanner /> */}
-            {/* <ScaphoidFractures /> */}
-            {/* <ArthritisInvolvingFinger /> */}
-            {/* <RadialFractures /> */}
-            {/* <WristArthroscopy /> */}
-            {/* <BirthDefects /> */}
-            {/* <CubitalTunnelSyndrome /> */}
-            {/* <KeyholeSurgeryForHand /> */}
-            {/* <CerebralPalsy /> */}
-            {/* <PostBurnsContracture /> */}
-            {/* <TumorsofHand /> */}
-            {/* <VascularAnomalies /> */}
-            {/* <UclInjuries /> */}
-            {/* <GlomusTumors /> */}
-            {/* <GiantCellTumor /> */}
-            {/* <Tuberculosis /> */}
-            {/* <CongenitalAnomalies /> */}
-            {/* <ElbowReplacement /> */}
-            {/* <ElbowArthroscopy /> */}
-            {/* <SynovitisOfElbow /> */}
-            {/* <LigamentRepairElbow /> */}
-            {/* <ShoulderArthroscopy /> */}
-            {/* <ShoulderReplacement /> */}
-          </div>
-          {/* <Career /> */}
-        <Footer />
+      <Navbar />
+      <div className='relative'>
+        {/* <RouterOutlet />
+            <CarpalTunnel />
+            <RouterOutlet /> */}
+        {/* <RouterOutlet /> */}
+        {/* <CarpalTunnel /> */}
+        {/* <SportInjuredHand /> */}
+        {/* <StiffnessOfHandJoints /> */}
+        {/* <HandandWristFracture /> */}
+        {/* <ScaphoidFractures /> */}
+        {/* <Servicesbanner /> */}
+        {/* <ScaphoidFractures /> */}
+        {/* <RadialFractures /> */}
+
+        {/* <BirthrelatedBrachialplexus/> */}
+        {/* <Cerebralpalsy/> */}
+        {/* <Flapscovertoupperorlowerlimbs/> */}
+        {/* <Vascularizedbonegraftsfornonunions/> */}
+        {/* <Freeflaps/> */}
+        {/* <Complexreconstructionrequiringbothsofttissueandbone/> */}
+        {/* <VICVolkmanIschemicContracture/> */}
+        {/* <Reconstructionforthelimbs/> */}
+        {/* <Nerverelatedproblems/> */}
+
+        {/* <AsianBlepharoplasty/> */}
+        {/* <Blepharophimosis/> */}
+        {/* <CanthalResection/> */}
+        {/* <Canthopexy/> */}
+        {/* <EntropionRepair/> */}
+        {/* <Epicanthoplasty/> */}
+        {/* <Eyelid/> */}
+        {/* <EyelidRetraction/> */}
+        {/* <EyelidSynkinesis/> */}
+        {/* <SurgicalBlepharoplasty/> */}
+        <ChoroidalMelanoma/>
+      </div>
+      {/* <Career /> */}
+      <Footer />
     </div>
   )
 }

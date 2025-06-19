@@ -38,14 +38,14 @@ const OrbitalDisease = () => {
     return (
         <div>
             <div>
-                <Divyaservicebanner />
+                <Divyaservicebanner servicename = 'Orbital Disease Treatment'/>
             </div>
 
             <div className="lg:mx-20 mx-5 sx:mt-29 md:mt-10 mt-10">
 
                 {/* container 1 */}
-                <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent text-center">Orbital Disease Treatment in Malleshwaram</div>
-                <div className="text-[14px] md:text-[20px] lg:text-[24px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent mt-2">Expert Diagnosis and Advanced Care at Sapiens Clinic</div>
+                {/* <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent text-center">Orbital Disease Treatment in Malleshwaram</div> */}
+                <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent mt-2">Expert Diagnosis and Advanced Care at Sapiens Clinic</div>
                 <div className="text-[12px] md:text-[16px] font-[500] font-para mt-2">Do your eyes appear unusually large or sunken?
                     Do they feel sore, red, or persistently irritated?
                     Is there a change in eye position, swelling around the eye, or discomfort that doesn’t go away?

@@ -55,7 +55,7 @@ const SurgicalBlepharoplasty = () => {
         <div>
             <div className=''>
                 <div>
-                    <Divyaservicebanner />
+                    <Divyaservicebanner servicename = 'Eyelid Surgery (Blepharoplasty)'/>
                 </div>
 
                 <div className='lg:mx-20 md:mx-10 my-5 mx-5 xs:mt-25 md:mt-10'>
@@ -70,11 +70,11 @@ const SurgicalBlepharoplasty = () => {
                     {/* container 2 */}
                     <div className='flex lg:flex-row flex-col items-center mt-10 gap-10 '>
                         {/* Img */}
-                        <div className='lg:w-[35%] flex justify-center'>
+                        {/* <div className='lg:w-[35%] flex justify-center'>
                             <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-                        </div>
+                        </div> */}
                         {/* Content */}
-                        <div className='m-5 mt-5 lg:w-[65%]'>
+                        <div className='m-5 mt-5 '>
                             <div className=' text-[18px] md:text-[20px] lg:text-[30px] font-heading font-[600] bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>What Is Blepharoplasty?</div>
                             <div className=' text-[12px] md:text-[16px] lg:text-[16px] font-para font-[500] '>Blepharoplasty is a corrective eyelid surgery that aims to :</div>
                             <ul className=' text-[12px] md:text-[16px] list-disc font-para lg:text-[16px] font-[500] md:leading-8 leading-6  ml-5'>
@@ -93,7 +93,7 @@ const SurgicalBlepharoplasty = () => {
 
                     <div className='mt-10 m-5 flex lg:flex-row flex-col-reverse items-center gap-10 '>
                         {/* Content */}
-                        <div className='lg:w-[65%]'>
+                        <div className=''>
                             <div className=' text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent mt-5'>Who Is an Ideal Candidate?</div>
                             <div className='text-[12px] md:text-[16px] lg:text-[16px] font-[500] font-para leading-6'>
                                 <div className='md:my-2 '>You may be a good candidate for eyelid surgery if :</div>
@@ -109,20 +109,20 @@ const SurgicalBlepharoplasty = () => {
 
                         </div>
                         {/* Img */}
-                        <div className='lg:w-[35%]'>
+                        {/* <div className='lg:w-[35%]'>
                             <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-                        </div>
+                        </div> */}
                     </div>
 
                     {/* container 4 */}
 
                     <div className='mt-10 flex lg:flex-row flex-col items-center gap-10'>
                         {/* Img */}
-                        <div className='lg:w-[35%]'>
+                        {/* <div className='lg:w-[35%]'>
                             <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-                        </div>
+                        </div> */}
                         {/* Content */}
-                        <div className='mt-5 lg:w-[65%]'>
+                        <div className='mt-5 '>
                             <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>Preparing for the Procedure</div>
                             <div className='text-[12px] md:text-[16px] lg:text-[16px] font-[500] font-para leading-6'>
                                 <div className='md:my-2 md:leading-8'>Before your blepharoplasty :</div>
@@ -141,7 +141,7 @@ const SurgicalBlepharoplasty = () => {
                     <div className='mt-10 m-5 flex lg:flex-row flex-col-reverse items-center gap-10'>
 
                         {/* Content */}
-                        <div className='mt-5 lg:w-[65%]'>
+                        <div className='mt-5 '>
                             <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent py-2'>How Eyelid Surgery Is Performed</div>
                             <div className='text-[12px] lg:text-[16px] md:text-[16px] font-[500] font-para leading-5 md:leading-7'>Blepharoplasty may involve your upper eyelids, lower eyelids, or both, depending on your needs. The procedure is performed under local anesthesia with sedation or, in some cases, general anesthesia.</div>
                             <div className='text-[15px] md:text-[20px] lg:text-[24px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent py-2'>Upper Eyelid Blepharoplasty</div>
@@ -160,9 +160,9 @@ const SurgicalBlepharoplasty = () => {
                         </div>
 
                         {/* Img */}
-                        <div className='lg:w-[35%]'>
+                        {/* <div className='lg:w-[35%]'>
                             <img className='lg:w-[35%]' src={assets.eximg} alt="" />
-                        </div>
+                        </div> */}
                     </div>
 
                     {/* container 6 */}
@@ -170,12 +170,12 @@ const SurgicalBlepharoplasty = () => {
                     <div className='mt-10 m-5 flex lg:flex-row flex-col items-center gap-10'>
                         
                         {/* Img */}
-                        <div className='lg:w-[35%]'>
+                        {/* <div className='lg:w-[35%]'>
                             <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-                        </div>
+                        </div> */}
 
                         {/* Content */}
-                        <div className='lg:w-[65%]'>
+                        <div className=''>
                             <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent py-2'>Recovery and Aftercare</div>
                             <div className='text-[12px] md:text-[16px] lg:text-[16px] font-[500] font-para'>After surgery :</div>
                             <ul className='list-disc text-[12px] md:text-[16px] lg:text-[16px] font-[500] font-para md:ml-10 md:leading-8 leading-6 ml-5'>
@@ -193,7 +193,7 @@ const SurgicalBlepharoplasty = () => {
                     <div className='flex lg:flex-row flex-col-reverse items-center gap-10 mt-10'>
 
                         {/* Content */}
-                        <div className='lg:w-[65%]'>
+                        <div className=''>
                             <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent py-2'>Benefits of Blepharoplasty</div>
                             <ul className='list-disc text-[12px] md:text-[16px] lg:text-[16px] font-[500] font-para md:ml-10 md:leading-8 leading-6 ml-5'>
                                 <li>Brighter, more youthful-looking eyes</li>
@@ -218,9 +218,9 @@ const SurgicalBlepharoplasty = () => {
                         </div>
 
                         {/* Img */}
-                        <div className='lg:w-35%'>
+                        {/* <div className='lg:w-35%'>
                             <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

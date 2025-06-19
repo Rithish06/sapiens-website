@@ -42,7 +42,7 @@ const AsianBlepharoplasty = () => {
         <div>
             <div>
                 <div>
-                    <Divyaservicebanner />
+                    <Divyaservicebanner servicename='Asian Blepharoplasty (Double Eyelid Surgery)'/>
                 </div>
 
                 {/* container 1 */}
@@ -58,7 +58,7 @@ const AsianBlepharoplasty = () => {
                     <div className='mt-10'>
 
                         <div className='flex flex-col-reverse lg:flex-row items-center gap-10'>
-                            <div className='lg:w-[65%]'>
+                            <div className=''>
                                 <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>What Is Asian Blepharoplasty?</div>
                                 <div className='text-[12px] md:text-[16px] font-[500] font-para leading-6 lg:pt-5'>
                                     <div>Asian blepharoplasty is a cosmetic eyelid surgery tailored specifically for individuals who naturally lack an upper eyelid crease. The goal is not to Westernize the eyes, but rather to enhance them - creating a <b>subtle, well-defined eyelid fold</b> that complements your natural features.</div>
@@ -72,20 +72,20 @@ const AsianBlepharoplasty = () => {
                                 </div>
                             </div>
 
-                            <div className='lg:w-[35%]'>
+                            {/* <div className='lg:w-[35%]'>
                                 <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-                            </div>
+                            </div> */}
 
                         </div>
                     </div>
 
                     {/* container 2 */}
                     <div className='mt-10 flex flex-col lg:flex-row items-center gap-10'>
-                        <div className='lg:35%'>
+                        {/* <div className='lg:35%'>
                             <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-                        </div>
+                        </div> */}
 
-                        <div className='lg:w-[65%]'>
+                        <div className=''>
                             <div className=' text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>Who Can Consider This Procedure ?</div>
                             <div className='text-[12px] md:text-[16px] font-para font-[500]'>
                                 <div className='pt-2'>You may be a suitable candidate for Asian blepharoplasty if :</div>
@@ -103,7 +103,7 @@ const AsianBlepharoplasty = () => {
                     {/* container 3 */}
 
                     <div className='flex flex-col-reverse lg:flex-row items-center mt-10 gap-10'>
-                        <div className='lg:w-[65%]'>
+                        <div className=''>
                             <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>Techniques We Offer at Sapiens Clinic</div>
                             <div className=' text-[12px] md:text-[16px] font-para font-[500] md:leading-6 leading-5'>We believe that one approach does not fit all. That’s why we offer three different surgical techniques, selected based on your anatomy, skin type, and desired results.</div>
                             <div className='text-[14px] md:text-[16px] lg:text-[24px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent pt-2'>1. Incisional Blepharoplasty</div>
@@ -132,18 +132,19 @@ const AsianBlepharoplasty = () => {
 
                         </div>
 
-                        <div className='lg:w-[35%]'>
+                        {/* <div className='lg:w-[35%]'>
                             <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-                        </div>
+                        </div> */}
                     </div>
 
                     {/* container 4 */}
 
                     <div className='flex flex-col  lg:flex-row items-center mt-10 gap-10'>
-                        <div className='lg:w-[35%]'>
+                        {/* <div className='lg:w-[35%]'>
                             <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-                        </div>
-                        <div className='lg:w-[65%]'>
+                        </div> */}
+
+                        <div className=''>
                             <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent pt-2'>What to Expect : Procedure & Recovery</div>
                             <div className='text-[12px] md:text-[16px] font-[500] font-para'>
                                 <ul className='list-disc ml-5 leading-5 md:leading-7'>
@@ -163,7 +164,7 @@ const AsianBlepharoplasty = () => {
                     {/* container 5 */}
 
                     <div className='flex flex-col-reverse lg:flex-row justify-end items-center mt-10 gap-10 '>
-                        <div className='lg:w-[65%]'>
+                        <div className=''>
                             <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent pt-2'>Benefits of Asian Blepharoplasty</div>
                             <ul className='list-disc text-[12px] md:text-[16px] font-para font-[500] ml-5 leading-5  md:leading-7'>
                                 <li>Enhanced definition and <b>refined eye contours </b></li>
@@ -186,9 +187,9 @@ const AsianBlepharoplasty = () => {
                             <div className='text-[12px] md:text-[16px] font-para font-[500] pt-2'>We take every step to ensure your safety, comfort, and aesthetic satisfaction.</div>
                         </div>
 
-                        <div className='lg:w-[35%]'>
+                        {/* <div className='lg:w-[35%]'>
                             <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 

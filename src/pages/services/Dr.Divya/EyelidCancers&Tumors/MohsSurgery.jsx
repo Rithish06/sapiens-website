@@ -38,13 +38,13 @@ const MohsSurgery = () => {
     return (
         <div>
             <div>
-                <Divyaservicebanner />
+                <Divyaservicebanner servicename = 'Mohs Surgery'/>
             </div>
 
             <div className="lg:mx-20 md:mt-10 xs:mt-29 mx-5 mt-10">
                 <div className="flex flex-col items-center">
-                    <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Mohs Surgery in Malleshwaram</div>
-                    <div className="text-[14px] md:text-[20px] lg:text-[24px] font-[600] font-heading bg-orange-gradient mt-2">Precise Skin Cancer Removal with Optimal Cosmetic Outcomes</div>
+                    {/* <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Mohs Surgery in Malleshwaram</div> */}
+                    <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient mt-2">Precise Skin Cancer Removal with Optimal Cosmetic Outcomes</div>
                     <div className="text-[12px] md:text-[16px] font-[500] font-para leading-7 mt-2">If you've been diagnosed with <b>skin cancer</b>-especially <b>basal cell carcinoma</b> or <b>squamous cell carcinoma</b>-Mohs surgery may be the most effective treatment option. At <b>Sapiens Clinic, Malleshwaram</b>, we offer Mohs micrographic surgery performed by skilled oculoplastic and facial skin surgeons, ensuring maximum removal of cancerous tissue with the <b>least possible damage to healthy skin</b>.</div>
                 </div>
 

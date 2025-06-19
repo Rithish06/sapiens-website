@@ -72,7 +72,9 @@ import locationImage from './images/best-orthopedic-malleshwaram-bangalore.png'
 import locationSvg from './svgs/dr-darshan-location.svg'
 import eximg from './images/ex-img.png'
 import drDivyaHomePageBannerImage from './images/dr-divya-home-banner-image.png'
-// import Servicesbanner from '.'
+import servicebanner from './images/servicebanner.png'
+import divyaservicebannerimg from './images/divyaservicebannerimg.png'
+
 
 // dr darshan services image
 import egImage from './images/eg-image.png'
@@ -85,6 +87,7 @@ import egDivyaImage from './images/opthal-eg-img.png'
 import careerPage from './images/career-bg-desktop.png'
 import carrePageBgMobile from './images/career-bg-mobile.png'
 import careerHomeImage from './images/career-image-home.png'
+import { ImOpt } from 'react-icons/im'
 
 export const assets = {
     logo,
@@ -164,5 +167,9 @@ export const assets = {
     drDivyaHomePageBannerImage,
     careerPage,
     carrePageBgMobile,
-    careerHomeImage
+    careerHomeImage,
+    eximg,
+    servicebanner,
+    divyaservicebannerimg
+
 }

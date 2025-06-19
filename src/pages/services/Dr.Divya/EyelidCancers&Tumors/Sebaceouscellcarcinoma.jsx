@@ -39,13 +39,13 @@ const Sebaceouscellcarcinoma = () => {
     return (
         <div>
             <div>
-                <Divyaservicebanner />
+                <Divyaservicebanner servicename = 'Sebaceous Carcinoma Eyelid Surgery'/>
             </div>
 
             <div className="lg:mx-20 md:mt-10 xs:mt-29 mx-5 mt-10">
                 <div className="flex flex-col items-center">
-                    <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Sebaceous Carcinoma Eyelid Surgery in Malleshwaram</div>
-                    <div className="text-[14px] md:text-[20px] lg:text-[24px] font-[600] font-heading bg-orange-gradient mt-2">Expert Diagnosis & Surgical Treatment at Sapiens Clinic</div>
+                    {/* <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Sebaceous Carcinoma Eyelid Surgery in Malleshwaram</div> */}
+                    <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Expert Diagnosis & Surgical Treatment at Sapiens Clinic</div>
                     <div className="text-[12px] md:text-[16px] font-[500] font-para leading-7 mt-2">
                         <ul>
                             <li>Are you noticing a persistent, painless, yellowish growth on your eyelid?</li>

@@ -39,13 +39,13 @@ const MustardesFlap = () => {
   return (
     <div>
         <div>
-            <Divyaservicebanner/>
+            <Divyaservicebanner servicename = 'Mustarde Flap Surgery'/>
         </div>
 
         <div className="lg:mx-20 md:mt-10 xs:mt-29 mx-5 mt-10">
             <div className="flex flex-col items-center">
-                <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Mustarde Flap Surgery in Malleshwaram</div>
-                <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient mt-2">Advanced Reconstruction for Lower Eyelid and Cheek Defects</div>
+                {/* <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Mustarde Flap Surgery in Malleshwaram</div> */}
+                <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Advanced Reconstruction for Lower Eyelid and Cheek Defects</div>
                 <div className="text-[12px] md:text-[16px] font-[500] font-para leading-7 mt-2">The <b>Mustarde flap</b>, also known as the Mustarde cheek rotational flap, is a specialized reconstructive procedure used to correct <b>large full-thickness defects</b> around the <b>lower eyelid</b>, <b>cheek</b>, and <b>eyelid-cheek junction</b>. At <b>Sapiens Clinic, Malleshwaram</b>, we perform this technique with the goal of restoring <b>eyelid mobility</b>, maintaining <b>ocular protection</b>, and achieving <b>aesthetically pleasing results</b> for patients affected by trauma, skin cancers, or post-surgical defects.</div>
             </div>
 

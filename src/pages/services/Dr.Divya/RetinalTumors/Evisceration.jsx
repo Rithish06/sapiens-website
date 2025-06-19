@@ -38,15 +38,15 @@ const Evisceration = () => {
   return (
     <div>
         <div>
-            <Divyaservicebanner/>
+            <Divyaservicebanner servicename = 'Evisceration Surgery'/>
         </div>
 
         <div className="lg:mx-20 md:mt-10 xs:mt-29 mx-5 mt-10">
 
             {/* container 1 */}
             <div className="flex flex-col items-center">
-                <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Evisceration Surgery at Sapiens Clinic, Malleshwaram</div>
-                <div className="text-[14px] md:text-[20px] lg:text-[24px] font-[600] font-heading bg-orange-gradient">Focused Surgical Precision. Compassionate Eye Care.</div>
+                {/* <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Evisceration Surgery at Sapiens Clinic, Malleshwaram</div> */}
+                <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Focused Surgical Precision. Compassionate Eye Care.</div>
                 <div className="text-[12px] md:text-[16px] font-[500] font-para leading-7 mt-2">Evisceration is a specialized surgical procedure involving the removal of the <b>intraocular contents</b> while preserving the <b>outer shell of the eye (sclera)</b> and <b>optic nerve</b>. In some cases, the <b>cornea may also remain intact</b>. At <b>Sapiens Clinic, Malleshwaram</b>, this procedure is performed when preserving the eye’s structure offers better cosmetic results and socket support for prosthesis.</div>
             </div>
 

@@ -37,15 +37,15 @@ const CavernousHemangioma = () => {
     return (
         <div>
             <div>
-                <Divyaservicebanner />
+                <Divyaservicebanner servicename ='Cavernous Hemangioma Treatment'/>
             </div>
 
             <div className="lg:mx-20 md:mt-10 xs:mt-29 mx-5 mt-10">
 
                 {/* container 1 */}
                 <div className="flex flex-col items-center">
-                    <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Cavernous Hemangioma Treatment in Malleshwaram</div>
-                    <div className="text-[14px] md:text-[20px] lg:text-[24px] font-[600] font-heading bg-orange-gradient">Expert Orbital Tumor Surgery at Sapiens Clinic</div>
+                    {/* <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Cavernous Hemangioma Treatment in Malleshwaram</div> */}
+                    <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Expert Orbital Tumor Surgery at Sapiens Clinic</div>
                     <div className="text-[12px] md:text-[16px] font-[500] font-para leading-7 mt-2">Cavernous hemangioma is one of the most common benign orbital tumors, often found within the eye socket (orbit). Though usually slow-growing and painless, this mass of blood vessels can cause visual disturbances, eye protrusion, or discomfort if it expands or shifts. At Sapiens Clinic, Malleshwaram, our oculoplastic and orbital specialists are equipped with the diagnostic precision and surgical expertise to manage cavernous hemangiomas effectively—prioritizing both function and aesthetics.</div>
                 </div>
 
