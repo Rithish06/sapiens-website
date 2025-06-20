@@ -28,12 +28,6 @@ const Exenteration = () => {
         },
     ]
 
-    const contact = [
-        {
-            heading:"",
-            para:""
-        }
-    ]
     return (
         <div>
             <div>
@@ -212,7 +206,7 @@ const Exenteration = () => {
 
             {/* contact-page */}
             <div>
-                <ContactPage contacts={contact[0]}/>
+                <ContactPage />
             </div>
 
             {/* faqs */}

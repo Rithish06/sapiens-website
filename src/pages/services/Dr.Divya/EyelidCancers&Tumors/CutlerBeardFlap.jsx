@@ -29,12 +29,6 @@ const CutlerBeardFlap = () => {
     ]
 
 
-    const contact = [
-        {
-            heading:"",
-            para:""
-        }
-    ]
   return (
     <div>
         <div>
@@ -192,7 +186,7 @@ const CutlerBeardFlap = () => {
 
         {/* contact-part */}
         <div>
-            <ContactPage contacts={contact[0]}/>
+            <ContactPage />
         </div>
 
         {/* faqs */}

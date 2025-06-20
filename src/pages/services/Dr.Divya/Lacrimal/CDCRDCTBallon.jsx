@@ -28,12 +28,6 @@ const CDCRDCTBallon = () => {
         },
     ]
 
-    const contact = [
-        {
-            heading: "Why Choose Sapiens Clinic for Lacrimal Procedures?",
-            para: "What is Balloon Dacryoplasty? Balloon dacryoplasty is a less invasive treatment for partial nasolacrimal duct obstruction, often performed in younger patients or early-stage blockages. The procedure uses a fine balloon catheter to gently widen the blocked tear duct."
-        }
-    ]
     return (
         <div>
             <div>
@@ -163,7 +157,7 @@ const CDCRDCTBallon = () => {
 
             {/* contact */}
             <div>
-                <ContactPage contacts={contact[0]} />
+                <ContactPage/>
             </div>
 
             {/* faq */}

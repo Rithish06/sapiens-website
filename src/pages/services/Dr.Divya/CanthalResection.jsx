@@ -25,12 +25,7 @@ const CanthalResection = () => {
         }
     ]
 
-    const contact = [
-        {
-            heading:"",
-            para:""
-        }
-    ]
+
     return (
         <div>
             <div>
@@ -242,10 +237,9 @@ const CanthalResection = () => {
                 </div>
             </div>
 
-            {/* container 8 */}
             {/* contact-part */}
             <div>
-                <ContactPage contacts={contact[0]}/>
+                <ContactPage/>
             </div>
             
             {/* container 9 */}

@@ -221,57 +221,57 @@ const DrDivya = () => {
         {
             link: '/dr-divya-sundaresh/Eyelid',
             text: 'Eyelid',
-            img: assets.egImage,
+            img: assets.Eyelid,
             txt: "Do your eyes often feel tired, or do your eyelids appear droopy or puffy? Do you find yourself struggling with blurry vision or eye irritation? You might be experiencing an eyelid condition that requires professional attention. At Sapiens Clinic in Malleshwaram, we specialize in the diagnosis and treatment of various eyelid diseases to restore comfort, function and aesthetics to your eyes."
 
         },
         {
             link: '/dr-divya-sundaresh/Asian-Blepharoplasty',
             text: 'Asian Blepharoplasty',
-            img: assets.egImage,
+            img: assets.asianblepharoplasty,
             txt: "Asian Blepharoplasty, also known as double eyelid surgery, is a delicate and precise procedure designed to create a natural-looking crease in the upper eyelid - enhancing eye definition without compromising your ethnic identity. At Sapiens Clinic, we approach this with a deep understanding of both anatomy and aesthetics, creating results that feel completely your own."
 
         },
         {
             link: '/dr-divya-sundaresh/Entropion-Repair',
             text: 'Entropion Repair',
-            img: assets.egImage,
+            img: assets.entropionrepair,
             txt: "Entropion is a condition where the eyelid turns inward, causing the eyelashes and skin to rub directly against the surface of the eye. This constant friction can lead to discomfort, redness, tearing, and in severe cases, corneal damage or vision loss."
         },
         {
             link: '/dr-divya-sundaresh/Canthal-Resection',
             text: 'Canthal Resection',
-            img: assets.egImage,
+            img: assets.CanthalResection,
             txt: "Canthal resection, also referred to as epicanthoplasty, is a specialized oculoplastic procedure designed to reshape and enhance the inner or outer corners of the eyes. This aesthetic eye surgery removes or repositions the epicanthic fold—a small skin fold near the inner eye—to create a more open, symmetric, and balanced appearance."
         },
         {
             link: '/dr-divya-sundaresh/Canthopexy',
             text: 'Canthopexy',
-            img: assets.egImage,
+            img: assets.Canthopexy,
             txt: "Canthopexy is a specialized oculoplastic procedure that lifts and tightens the outer corners of the eyes, providing both aesthetic enhancement and structural support. At Sapiens Clinic, Malleshwaram, we perform advanced canthopexy to correct sagging lower eyelids, improve eye symmetry and redefine the natural shape of the eyes for a refreshed, youthful appearance."
         },
         {
             link: '/dr-divya-sundaresh/Epicanthoplasty',
             text: 'Epicanthoplasty',
-            img: assets.egImage,
+            img: assets.Epicanthoplasty,
             txt: "Epicanthoplasty is a specialized cosmetic eyelid procedure designed to correct the epicanthal fold - a skin fold that covers the inner corner of the eye, often seen in individuals of Asian descent. This fold can make the eyes appear smaller or give a cross-eyed look. Through epicanthoplasty, the fold is modified to reveal more of the medial canthus (inner eye corner), resulting in larger, more open eyes and a smoother, aesthetically pleasing contour."
         },
         {
             link: '/dr-divya-sundaresh/Eyelid-Retraction',
             text: 'Eyelid Malpositions',
-            img: assets.egImage,
+            img: assets.EyelidMalpositions,
             txt: "If you’re facing any of these symptoms, you may be experiencing an eyelid malposition such as entropion or ectropion-conditions that require specialized attention to protect your vision and improve comfort."
         },
         {
             link: '/dr-divya-sundaresh/Blepharophimosis',
             text: 'Blepharophimosis',
-            img: assets.egImage,
+            img: assets.Blepharophimosis,
             txt: "Blepharophimosis syndrome (BPES) is a rare congenital condition that primarily affects the eyelids, resulting in narrowed eye openings, droopy lids (ptosis), and a skin fold near the inner corner of the eyes (epicanthus inversus). These features not only affect the cosmetic appearance but can significantly impair vision and daily function, particularly in children."
         },
         {
             link: '/dr-divya-sundaresh/Eyelid-Synkinesis',
             text: 'Eyelid Synkinesis',
-            img: assets.egImage,
+            img: assets.eyelidsynkinesis,
             txt: "Eyelid synkinesis is a facial nerve disorder in which the eyelid moves involuntarily - often blinking or closing - when another part of the face is activated, such as during smiling or chewing. This occurs due to misdirected nerve regrowth following a facial nerve injury, leading to unintentional and often uncomfortable muscle movements. Though not life-threatening, it can be both functionally and emotionally distressing."
         },
 
@@ -284,25 +284,25 @@ const DrDivya = () => {
         {
             link: '/dr-divya-sundaresh/Orbital-Disease',
             text: 'Orbit',
-            img: assets.egImage,
+            img: assets.Orbit,
             txt: "These could be signs of an orbital disease, a condition that affects the bony socket (orbit) surrounding your eye. At Sapiens Clinic in Malleshwaram, our oculoplastic and orbital surgeons offer expert care for a wide range of orbital disorders with accurate diagnosis and advanced surgical treatments."
         },
         {
             link: '/dr-divya-sundaresh/Orbital-Decompression',
             text: 'Orbital Decompression',
-            img: assets.egImage,
+            img: assets.orbitdecompression,
             txt: "At Sapiens Clinic, Malleshwaram, orbital decompression surgery is performed to relieve pressure within the eye socket (orbit) and to reposition bulging eyes caused by thyroid eye disease (Graves' orbitopathy). This specialized procedure increases the orbital space by removing sections of bone and when necessary, reducing orbital fat, helping restore comfort, eye appearance and vision quality."
         },
         {
             link: '/dr-divya-sundaresh/Wall-Decompression',
             text: '2 Wall Decompression',
-            img: assets.egImage,
+            img: assets.WallDecompression,
             txt: "Two-wall orbital decompression surgery is a critical oculoplastic procedure used to treat prominent eye bulging (proptosis), most commonly caused by thyroid eye disease. At Sapiens Clinic in Malleshwaram, we offer precise, personalized care to help alleviate the discomfort and visual complications caused by this condition. Our surgical approach creates additional space within the orbit, allowing the protruding eye to settle back into a more natural and functional position."
         },
         {
             link: '/dr-divya-sundaresh/Wall-Decompression-3',
             text: '3 and 4 Wall Decompression',
-            img: assets.egImage,
+            img: assets.walldecompression3,
             txt: "At Sapiens Clinic in Malleshwaram, we offer advanced 3 and 4 wall orbital decompression surgeries for patients experiencing severe thyroid eye disease (Graves’ orbitopathy) or exophthalmos (protruding eyes). These conditions can place immense pressure within the eye socket, affecting eye movement, vision and facial symmetry. Our goal with decompression surgery is to expand orbital space, relieve pressure on the optic nerve and restore both visual function and cosmetic balance."
         },
 
@@ -313,25 +313,25 @@ const DrDivya = () => {
         {
             link: '/dr-divya-sundaresh/Endoscopic-DCR',
             text: 'Endoscopic DCR',
-            img: assets.egImage,
+            img: assets.endoscopicdcr,
             txt: "At Sapiens Clinic, Malleshwaram, Endoscopic Dacryocystorhinostomy (DCR) is offered as a modern, minimally invasive solution for patients with tear duct blockages. When the nasolacrimal duct is obstructed-whether due to infection, inflammation or congenital factors-it can lead to watery eyes (epiphora), frequent eye infections, and discomfort. Our expert oculoplastic team performs this advanced procedure to restore natural tear drainage and eliminate symptoms without external incisions or scarring."
         },
         {
             link: '/dr-divya-sundaresh/CDCR-DCT-Ballon',
             text: 'CDCR DCT Ballon',
-            img: assets.egImage,
+            img: assets.CdCRDCTBallon,
             txt: "At Sapiens Clinic, Malleshwaram, we offer highly specialized care for patients dealing with excessive tearing, recurrent eye infections, or blocked tear ducts. Our expertise in lacrimal procedures such as CDCR (Conjunctivodacryocystorhinostomy), DCT (Dacryocystectomy) and Balloon Dacryoplasty ensures patients receive effective, minimally invasive and long-lasting relief."
         },
         {
             link: '/dr-divya-sundaresh/Dacryoplasty',
             text: 'Dacryoplasty',
-            img: assets.egImage,
+            img: assets.Dacryoplasty,
             txt: "Dacryoplasty is a minimally invasive procedure designed to treat nasolacrimal duct obstructions (NLDO), which can cause excessive tearing (epiphora) and recurrent eye infections. Utilizing balloon catheter technology, dacryoplasty gently dilates the blocked tear duct, restoring normal tear drainage without the need for extensive surgery."
         },
         {
             link: '/dr-divya-sundaresh/Lester-Jones-Surgery',
             text: 'Lester Jones Surgery',
-            img: assets.egImage,
+            img: assets.LesterJonesSurgery,
             txt: "Lester Jones surgery is a specialized procedure performed to treat severe tear drainage system obstruction, particularly when the canalicular ducts are blocked and traditional DCR surgeries have failed. Named after the Lester Jones tube used in the procedure, this surgery involves placing a tiny, polished Pyrex glass tube that bypasses the blocked drainage system and allows tears to flow directly from the eye into the nasal cavity."
         },
     ]
@@ -342,25 +342,25 @@ const DrDivya = () => {
         {
             link: '/dr-divya-sundaresh/Orbital-Tumors',
             text: 'Orbital Tumors',
-            img: assets.egImage,
+            img: assets.OrbitalTumors,
             txt: "These may be signs of an orbital tumor—a mass developing within the bony socket (orbit) that houses the eye, its muscles, nerves, and supportive tissues. At Sapiens Clinic, Malleshwaram, our skilled oculoplastic surgeons offer comprehensive evaluation and cutting-edge surgical options to manage both benign and malignant orbital tumors safely and effectively."
         },
         {
             link: '/dr-divya-sundaresh/Cavernous-Hemangioma',
             text: 'Cavernous Hemangioma',
-            img: assets.egImage,
+            img: assets.CavernousHemangioma,
             txt: "Cavernous hemangioma is one of the most common benign orbital tumors, often found within the eye socket (orbit). Though usually slow-growing and painless, this mass of blood vessels can cause visual disturbances, eye protrusion, or discomfort if it expands or shifts. At Sapiens Clinic, Malleshwaram, our oculoplastic and orbital specialists are equipped with the diagnostic precision and surgical expertise to manage cavernous hemangiomas effectively—prioritizing both function and aesthetics."
         },
         {
             link: '/dr-divya-sundaresh/Orbital-Lymphoma',
             text: 'Orbital Lymphoma',
-            img: assets.egImage,
+            img: assets.OrbitalLymphoma,
             txt: "Orbital lymphoma is a type of cancer that affects the tissues surrounding the eye (orbit). While it is typically non-Hodgkin's B-cell lymphoma, it can involve the eyelids, extraocular muscles, lacrimal gland, or the soft tissues behind the eye. At Sapiens Clinic in Malleshwaram, we specialize in the diagnosis and management of orbital lymphoma through a multidisciplinary approach involving oculoplastic surgeons and oncology experts."
         },
         {
             link: '/dr-divya-sundaresh/Pseudo-tumor',
             text: 'Pseudo tumor',
-            img: assets.egImage,
+            img: assets.Pseudotumor,
             txt: "Do you experience persistent headaches, vision changes, dizziness, or pressure behind the eyes-yet imaging tests reveal no actual tumor? You could be facing a condition called Pseudotumor Cerebri, also known as Idiopathic Intracranial Hypertension (IIH). Though it mimics the symptoms of a brain tumor, no true mass exists. At Sapiens Clinic, Malleshwaram, our experienced ophthalmologists and specialists offer thorough diagnostic evaluations and advanced treatment options to preserve your vision and manage symptoms effectively."
         },
     ]
@@ -370,20 +370,20 @@ const DrDivya = () => {
     const OcularSurfaceTumors = [
         {
             link: '/dr-divya-sundaresh/Ocular-Surface-Tumors',
-            text: 'Conjuctival Cyst',
-            img: assets.egImage,
+            text: 'Ocular Surface Tumors',
+            img: assets.OculusSurfaceTumor,
             txt: "Ocular surface tumors are abnormal growths that can appear on the front of the eye or within the orbit-the bony cavity that houses the eyeball. These tumors can be benign (non-cancerous) or malignant (cancerous) and may affect structures such as the conjunctiva, sclera, or surrounding tissues. Left untreated, they can displace the eye (a condition called proptosis), restrict eye movement, impair vision, and in rare cases, lead to significant ocular damage."
         },
         {
             link: '/dr-divya-sundaresh/Conjuctival-Cyst',
             text: 'Conjuctival Cyst',
-            img: assets.egImage,
+            img: assets.conjunctivalcyst,
             txt: "If you notice any of these signs, it may be time to consult an oculoplastic specialist. At Sapiens Clinic, Malleshwaram, we offer expert care for conjunctival cysts and tumors, combining precision diagnostics and minimally invasive surgery."
         },
         {
             link: '/dr-divya-sundaresh/Removal-Surgery',
             text: 'Removal Surgery',
-            img: assets.egImage,
+            img: assets.RemovalSurgery,
             txt: "If you answered yes to any of these, it’s time to get your eyes examined. At Sapiens Clinic, Malleshwaram, we provide advanced care for conjunctival cysts and tumors, with expert diagnosis and safe, minimally invasive removal surgery when required."
         },
 
@@ -394,43 +394,43 @@ const DrDivya = () => {
         {
             link: '/dr-divya-sundaresh/Sebaceous-cell-carcinoma',
             text: 'Sebaceous cell carcinoma',
-            img: assets.egImage,
+            img: assets.sebaceouscarcinoma,
             txt: "You could be dealing with sebaceous carcinoma, a rare but potentially aggressive eyelid cancer that requires prompt evaluation and expert care. At Sapiens Clinic, Malleshwaram, our experienced oculoplastic specialists offer comprehensive diagnosis, surgical treatment, and personalized recovery plans to help you regain comfort, vision, and confidence."
         },
         {
             link: '/dr-divya-sundaresh/Malignant-melanomas',
             text: 'Malignant melanomas',
-            img: assets.egImage,
+            img: assets.melgnantmelonama,
             txt: "What may seem like a harmless mole could actually be malignant melanoma, a rare but serious form of eyelid cancer. At Sapiens Clinic, Malleshwaram, our oculoplastic specialists provide prompt evaluation and treatment for eyelid melanomas using advanced surgical techniques that prioritize both medical and cosmetic outcomes."
         },
         {
             link: '/dr-divya-sundaresh/Mohs-Surgery',
             text: 'Mohs Surgery',
-            img: assets.egImage,
+            img: assets.MohsSurgery,
             txt: "If you've been diagnosed with skin cancer-especially basal cell carcinoma or squamous cell carcinoma-Mohs surgery may be the most effective treatment option. At Sapiens Clinic, Malleshwaram, we offer Mohs micrographic surgery performed by skilled oculoplastic and facial skin surgeons, ensuring maximum removal of cancerous tissue with the least possible damage to healthy skin."
         },
         {
             link: '/dr-divya-sundaresh/Tenzels-flap',
             text: 'Tenzels flap',
-            img: assets.egImage,
+            img: assets.TenzelsFlap,
             txt: "The eyelids are more than just a cosmetic feature-they play a vital role in protecting your eyes, maintaining moisture, and enabling smooth vision. Whether due to skin cancer, trauma, or a previous surgical excision, defects in the lower eyelid can affect both your eye function and appearance. At Sapiens Clinic, Malleshwaram, we offer Tenzel flap surgery-a proven "
         },
         {
             link: '/dr-divya-sundaresh/Hughes-Flap',
             text: 'Hughes Flap',
-            img: assets.egImage,
+            img: assets.Hughesflap,
             txt: "Reconstructing the delicate anatomy of the eyelids requires surgical precision, artistic finesse, and a deep understanding of ocular function. At Sapiens Clinic, Malleshwaram, our teamoffers Hughes Flap Surgery for patients who have large full-thickness lower eyelid defects-often due to tumor excision, trauma, or congenital conditions. This proven two-stage technique restores both the functionality and cosmetic harmony of the eyelid. "
         },
         {
             link: '/dr-divya-sundaresh/Cutler-Beard-Flap',
             text: 'Cutler Beard Flap',
-            img: assets.egImage,
+            img: assets.Cutlerbreadflaps,
             txt: "Eyelid reconstruction demands surgical precision, especially when the upper eyelid is severely affected by tumors, trauma, or congenital defects. At Sapiens Clinic, Malleshwaram, we offer Cutler-Beard Flap Surgery, a two-stage lid-sharing procedure designed to restore both the form and function of the upper eyelid when more than 50% of the lid is lost."
         },
         {
             link: '/dr-divya-sundaresh/Mustardes-Flap',
             text: 'Mustardes Flap',
-            img: assets.egImage,
+            img: assets.MustardesFlap,
             txt: "The Mustarde flap, also known as the Mustarde cheek rotational flap, is a specialized reconstructive procedure used to correct large full-thickness defects around the lower eyelid, cheek, and eyelid-cheek junction. At Sapiens Clinic, Malleshwaram, we perform this technique with the goal of restoring eyelid mobility, maintaining ocular protection, and achieving aesthetically pleasing results for patients affected by trauma, skin cancers, or post-surgical defects."
         },
 
@@ -442,31 +442,31 @@ const DrDivya = () => {
         {
             link: '/dr-divya-sundaresh/Choroidal-Metastasis',
             text: 'Choroidal Metastasis',
-            img: assets.egImage,
+            img: assets.ChoroidalMetastasis,
             txt: "These could be early signs of choroidal metastasis-a rare but serious condition where cancer spreads to the choroid layer of the eye. At Sapiens Clinic, Malleshwaram, we offer advanced diagnostics and targeted treatments for choroidal metastasis under the care of our experienced ocular specialists."
         },
         {
             link: '/dr-divya-sundaresh/Choroidal-Melanoma',
             text: 'Choroidal Melanoma',
-            img: assets.egImage,    
+            img: assets.ChoroidalMelanoma,    
             txt: "These symptoms may be signs of choroidal melanoma, a rare but serious type of eye cancer. At Sapiens Clinic, Malleshwaram, our expert ocular oncology team provides accurate diagnosis and advanced treatment to help preserve your vision and overall eye health."
         },
         {
             link: '/dr-divya-sundaresh/Enucleation',
             text: 'Enucleation',
-            img: assets.egImage,
+            img: assets.Enucleation,
             txt: "Enucleation is a specialized surgical procedure performed to remove the entire eyeball in cases where the eye is severely damaged, painful or affected by malignancy. At Sapiens Clinic, Malleshwaram, our expert oculoplastic team performs enucleation with precision and care, ensuring optimal socket reconstruction for future prosthetic placement and cosmetic restoration."
         },
         {
             link: '/dr-divya-sundaresh/Evisceration',
             text: 'Evisceration',
-            img: assets.egImage,
+            img: assets.Evisceration,
             txt: "Evisceration is a specialized surgical procedure involving the removal of the intraocular contents while preserving the outer shell of the eye (sclera) and optic nerve. In some cases, the cornea may also remain intact. At Sapiens Clinic, Malleshwaram, this procedure is performed when preserving the eye’s structure offers better cosmetic results and socket support for prosthesis."
         },
         {
             link: '/dr-divya-sundaresh/Exenteration',
             text: 'Exenteration',
-            img: assets.egImage,
+            img: assets.Exenteration,
             txt: "Exenteration, or orbital exenteration, is a highly specialized surgical procedure used to remove the eye along with the surrounding tissues such as muscles, optic nerves, fatty tissue, and, in some cases, the eyelids. This surgery is usually recommended in advanced or aggressive tumors of the orbit that cannot be managed through conservative treatment methods. Depending on the extent of tissue removal, exenteration is classified as total, subtotal, or extended."
         },
     ]
@@ -745,7 +745,7 @@ const DrDivya = () => {
                             Eyelid.map((surgery, index) => (
                                 <Link to={surgery.link}>
                                     <div className='flex flex-col items-center cursor-pointer' key={index}>
-                                        <img src={assets.egDivyaImage} className='relative w-[120px] h-auto' alt="" />
+                                        <img src={surgery.img} className='relative w-[120px] h-[120px] object-cover rounded-full' alt="" />
                                         <div className='group realtive -mt-[60px] w-[230px] h-[230px] bg-[#D9D9D9] flex justify-center items-end rounded-t-full hover:bg-[#B22726] transition-all duration-500' >
                                             <div className='h-[65%] w-[80%]'>
                                                 <div className='text-[14px] font-[700] font-para text-center group-hover:text-white trasition-transform duration-500'>{surgery.text}</div>
@@ -779,7 +779,7 @@ const DrDivya = () => {
                             Orbit.map((surgery, index) => (
                                 <Link to={surgery.link}>
                                     <div className='flex flex-col items-center cursor-pointer' key={index}>
-                                        <img src={assets.egDivyaImage} className='relative w-[120px] h-auto' alt="" />
+                                    <img src={surgery.img} className='relative w-[120px] h-[120px] object-cover rounded-full' alt="" />
                                         <div className='group realtive -mt-[60px] w-[230px] h-[230px] bg-[#D9D9D9] flex justify-center items-end rounded-t-full hover:bg-[#B22726] transition-all duration-500' >
                                             <div className='h-[65%] w-[80%]'>
                                                 <div className='text-[14px] font-[700] font-para text-center group-hover:text-white trasition-transform duration-500'>{surgery.text}</div>
@@ -811,7 +811,7 @@ const DrDivya = () => {
                             Lacrimal.map((surgery, index) => (
                                 <Link to={surgery.link}>
                                     <div className='flex flex-col items-center cursor-pointer' key={index}>
-                                        <img src={assets.egDivyaImage} className='relative w-[120px] h-auto' alt="" />
+                                     <img src={surgery.img} className='relative w-[120px] h-[120px] object-cover rounded-full' alt="" />
                                         <div className='group realtive -mt-[60px] w-[230px] h-[230px] bg-[#D9D9D9] flex justify-center items-end rounded-t-full hover:bg-[#B22726] transition-all duration-500' >
                                             <div className='h-[65%] w-[80%]'>
                                                 <div className='text-[14px] font-[700] font-para text-center group-hover:text-white trasition-transform duration-500'>{surgery.text}</div>
@@ -846,7 +846,7 @@ const DrDivya = () => {
                             OrbitalTumors.map((surgery, index) => (
                                 <Link to={surgery.link}>
                                     <div className='flex flex-col items-center cursor-pointer' key={index}>
-                                        <img src={assets.egDivyaImage} className='relative w-[120px] h-auto' alt="" />
+                                     <img src={surgery.img} className='relative w-[120px] h-[120px] object-cover rounded-full' alt="" />
                                         <div className='group realtive -mt-[60px] w-[230px] h-[230px] bg-[#D9D9D9] flex justify-center items-end rounded-t-full hover:bg-[#B22726] transition-all duration-500' >
                                             <div className='h-[65%] w-[80%]'>
                                                 <div className='text-[14px] font-[700] font-para text-center group-hover:text-white trasition-transform duration-500'>{surgery.text}</div>
@@ -881,7 +881,7 @@ const DrDivya = () => {
                             OcularSurfaceTumors.map((surgery, index) => (
                                 <Link to={surgery.link}>
                                     <div className='flex flex-col items-center cursor-pointer' key={index}>
-                                        <img src={assets.egDivyaImage} className='relative w-[120px] h-auto' alt="" />
+                                    <img src={surgery.img} className='relative w-[120px] h-[120px] object-cover rounded-full' alt="" />
                                         <div className='group realtive -mt-[60px] w-[230px] h-[230px] bg-[#D9D9D9] flex justify-center items-end rounded-t-full hover:bg-[#B22726] transition-all duration-500' >
                                             <div className='h-[65%] w-[80%]'>
                                                 <div className='text-[14px] font-[700] font-para text-center group-hover:text-white trasition-transform duration-500'>{surgery.text}</div>
@@ -913,7 +913,7 @@ const DrDivya = () => {
                             EyelidCancers.map((surgery, index) => (
                                 <Link to={surgery.link}>
                                     <div className='flex flex-col items-center cursor-pointer' key={index}>
-                                        <img src={assets.egDivyaImage} className='relative w-[120px] h-auto' alt="" />
+                                        <img src={surgery.img} className='relative w-[120px] h-[120px] object-cover rounded-full' alt="" />
                                         <div className='group realtive -mt-[60px] w-[230px] h-[230px] bg-[#D9D9D9] flex justify-center items-end rounded-t-full hover:bg-[#B22726] transition-all duration-500' >
                                             <div className='h-[65%] w-[80%]'>
                                                 <div className='text-[14px] font-[700] font-para text-center group-hover:text-white trasition-transform duration-500'>{surgery.text}</div>
@@ -946,7 +946,7 @@ const DrDivya = () => {
                             RetinalTumors.map((surgery, index) => (
                                 <Link to={surgery.link}>
                                     <div className='flex flex-col items-center cursor-pointer' key={index}>
-                                        <img src={assets.egDivyaImage} className='relative w-[120px] h-auto' alt="" />
+                                        <img src={surgery.img} className='relative w-[120px] h-[120px] object-cover rounded-full' alt="" />
                                         <div className='group realtive -mt-[60px] w-[230px] h-[230px] bg-[#D9D9D9] flex justify-center items-end rounded-t-full hover:bg-[#B22726] transition-all duration-500' >
                                             <div className='h-[65%] w-[80%]'>
                                                 <div className='text-[14px] font-[700] font-para text-center group-hover:text-white trasition-transform duration-500'>{surgery.text}</div>

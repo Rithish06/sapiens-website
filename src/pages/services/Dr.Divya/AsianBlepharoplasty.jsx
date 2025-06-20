@@ -31,13 +31,6 @@ const AsianBlepharoplasty = () => {
 
     ];
 
-    const contact = [
-        {
-            heading: "Asian Blepharoplasty (Double Eyelid Surgery) in Malleshwaram, Bangalore",
-            para: "Asian Blepharoplasty, also known as double eyelid surgery, is a delicate and precise procedure designed to create a natural-looking crease in the upper eyelid - enhancing eye definition without compromising your ethnic identity. At Sapiens Clinic, we approach this with a deep understanding of both anatomy and aesthetics, creating results that feel completely your own."
-        }
-    ]
-
     return (
         <div>
             <div>
@@ -48,8 +41,8 @@ const AsianBlepharoplasty = () => {
                 {/* container 1 */}
                 <div className='lg:mx-20 xs:mt-25 md:mt-10 mx-5 mt-10'>
                     <div className='flex flex-col items-center lg:leading-7 leading-6'>
-                        <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent">Asian Blepharoplasty (Double Eyelid Surgery) in Malleshwaram, Bangalore</div>
-                        <div className='text-[14px] md:text-[20px] lg:text-[24px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent mt-5'>Define Your Natural Beauty with Subtle Precision</div>
+                        {/* <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent">Asian Blepharoplasty (Double Eyelid Surgery) in Malleshwaram, Bangalore</div> */}
+                        <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent mt-5'>Define Your Natural Beauty with Subtle Precision</div>
                         <div className=' text-[12px] md:text-[16px] font-para font-[500] pt-5'>For many individuals of East Asian descent, the absence of a defined upper eyelid crease - known as a monolid - is a natural and beautiful feature. But for some, it can also give the eyes a smaller or heavier appearance, or lead to asymmetry that affects both look and confidence.
                             <b> Asian Blepharoplasty</b>, also known as <b>double eyelid surgery</b>, is a delicate and precise procedure designed to create a natural-looking crease in the upper eyelid - enhancing eye definition without compromising your ethnic identity. At <b>Sapiens Clinic</b>, we approach this with a deep understanding of both anatomy and aesthetics, creating results that feel completely your own.
                         </div>
@@ -163,7 +156,7 @@ const AsianBlepharoplasty = () => {
 
                     {/* container 5 */}
 
-                    <div className='flex flex-col-reverse lg:flex-row justify-end items-center mt-10 gap-10 '>
+                    <div className='flex flex-col-reverse lg:flex-row  items-center mt-10 gap-10 '>
                         <div className=''>
                             <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent pt-2'>Benefits of Asian Blepharoplasty</div>
                             <ul className='list-disc text-[12px] md:text-[16px] font-para font-[500] ml-5 leading-5  md:leading-7'>
@@ -195,7 +188,7 @@ const AsianBlepharoplasty = () => {
 
                 {/* container 6 */}
                 <div>
-                    <ContactPage contacts={contact[0]} />
+                    <ContactPage />
                 </div>
 
                 {/* container 7 */}

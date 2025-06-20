@@ -30,13 +30,6 @@ const ConjuctivalCyst = () => {
         },
     ]
 
-
-    const contact = [
-        {
-            heading:"",
-            paara:""
-        }
-    ]
     return (
         <div>
             <div>
@@ -171,7 +164,7 @@ const ConjuctivalCyst = () => {
 
             {/* contact-part */}
             <div>
-                <ContactPage contacts={contact[0]}/>
+                <ContactPage />
             </div>
 
             {/* faqs */}

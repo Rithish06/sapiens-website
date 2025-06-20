@@ -29,12 +29,7 @@ const RemovalSurgery = () => {
         },
     ]
 
-    const contact =[
-        {
-            heading:"",
-            para:""
-        }
-    ]
+
   return (
     <div>
         <div>
@@ -155,7 +150,7 @@ const RemovalSurgery = () => {
 
         {/* contact-part */}
         <div>
-            <ContactPage contacts={contact[0]}/>
+            <ContactPage />
         </div>
 
         {/* faqs */}

@@ -29,12 +29,6 @@ const OrbitalDisease = () => {
         },
     ]
 
-    const contact = [
-        {
-            heading:"",
-            para:""
-        }
-    ]
     return (
         <div>
             <div>
@@ -56,12 +50,12 @@ const OrbitalDisease = () => {
 
                 <div className="flex lg:flex-row flex-col lg:gap-10 gap-5 mt-10 items-center">
                     {/* img */}
-                    <div className="lg:w-[35%]">
+                    {/* <div className="lg:w-[35%]">
                         <img src={assets.eximg} alt="" className="lg:w-[84%]" />
-                    </div>
+                    </div> */}
 
                     {/* content */}
-                    <div className="lg:w-[65%]">
+                    <div className="">
                         <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent">What Are Orbital Diseases?</div>
                         <div className="text-[12px] md:text-[16px] font-[500] font-para">
                             <div className="mt-2">The orbit contains essential structures like the eyeball, muscles, nerves, and blood vessels. Orbital diseases affect this area due to infections, tumors, thyroid dysfunction, trauma, or autoimmune conditions. Left untreated, these conditions can cause vision loss or structural deformities.</div>
@@ -82,7 +76,7 @@ const OrbitalDisease = () => {
 
                 <div className="flex lg:flex-row flex-col-reverse lg:gap-10 gap-5 mt-10 items-center">
                     {/* content */}
-                    <div className="lg:w-[65%]">
+                    <div className="">
                         <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent">Treatment Options for Orbital Diseases</div>
                         <div className="text-[12px] md:text-[16px] font-[500] font-para ">
                             <div className="mt-2">Treatment depends on the cause and severity of the disease. Our team offers :</div>
@@ -96,21 +90,21 @@ const OrbitalDisease = () => {
                     </div>
 
                     {/* img */}
-                    <div className="lg:w-[35%]">
+                    {/* <div className="lg:w-[35%]">
                         <img src={assets.eximg} alt="" className="lg:w-[84%]" />
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* container 4 */}
 
                 <div className="flex lg:flex-row flex-col lg:gap-10 gap-5 mt-10 items-center">
                     {/* img */}
-                    <div className="lg:w-[35%]">
+                    {/* <div className="lg:w-[35%]">
                         <img src={assets.eximg} alt="" className="lg:w-[84%]" />
-                    </div>
+                    </div> */}
 
                     {/* content */}
-                    <div className="lg:w-[65%]">
+                    <div className="">
                         <div className="">
                             <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent">What Is Thyroid Eye Disease?</div>
                             <div className="text-[12px] md:text-[16px] font-[500] font-para">
@@ -131,7 +125,7 @@ const OrbitalDisease = () => {
 
                 <div className=" flex lg:flex-row flex-col-reverse lg:gap-10 gap-5 mt-10 items-center">
                     {/* content */}
-                    <div className="lg:w-[65%]">
+                    <div className="">
                         <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent">Recovery After Orbital Surgery</div>
                         <div className="text-[12px] md:text-[16px] font-[500] font-para">
                             <div className="mt-2 leading-7">Orbital surgeries are highly precise and are performed by our experienced oculoplastic surgeons. After surgery, you may experience swelling or bruising, which typically subsides within a couple of weeks.</div>
@@ -148,21 +142,21 @@ const OrbitalDisease = () => {
                     </div>
 
                     {/* img */}
-                    <div className="lg:w-[35%]">
+                    {/* <div className="lg:w-[35%]">
                         <img src={assets.eximg} alt="" className="lg:w-[84%]" />
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* container 6 */}
 
                 <div className="flex lg:flex-row flex-col lg:gap-10 gap-5 mt-5 items-center">
                     {/* img */}
-                    <div className="lg:w-[35%]">
+                    {/* <div className="lg:w-[35%]">
                         <img src={assets.eximg} alt="" className="lg:w-[84%]" />
-                    </div>
+                    </div> */}
 
                     {/* content */}
-                    <div className="lg:w-[65%]">
+                    <div className="">
                         <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent">Why Choose Sapiens Clinic, Malleshwaram?</div>
                         <div className="text-[12px] md:text-[16px] font-[500] font-para">
                             <div className="mt-2 leading-7">Our clinic is equipped with advanced diagnostic tools and a specialized oculoplastic team experienced in managing complex orbital cases. We focus on :</div>
@@ -179,7 +173,7 @@ const OrbitalDisease = () => {
 
             {/* contact-part */}
             <div>
-                <ContactPage contacts={contact[0]}/>
+                <ContactPage/>
             </div>
             <div>
                 <Faqs faqs={faqs} />

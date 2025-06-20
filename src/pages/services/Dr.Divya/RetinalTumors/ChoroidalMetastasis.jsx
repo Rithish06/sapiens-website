@@ -28,12 +28,6 @@ const ChoroidalMetastasis = () => {
         },
     ]
 
-    const contact =[
-        {
-            heading:"",
-            para:""
-        }
-    ]
   return (
     <div>
         <div>
@@ -175,7 +169,7 @@ const ChoroidalMetastasis = () => {
 
         {/* contact-part */}
         <div>
-            <ContactPage contacts={contact[0]}/>
+            <ContactPage/>
         </div>
 
         {/* faqs */}

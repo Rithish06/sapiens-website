@@ -2,6 +2,7 @@ import React from 'react'
 import Divyaservicebanner from '../../../../components/services-banner/Divyaservicebanner'
 import { assets } from '../../../../assets/assets'
 import Faqs from '../../../../components/faqs/faqs'
+import ContactPage from '../../ContactPage/ContactPage'
 
 const OrbitalDecompression = () => {
 
@@ -46,7 +47,7 @@ const OrbitalDecompression = () => {
 
                 <div className="flex lg:flex-row flex-col-reverse lg:gap-10 gap-5 mt-10 items-center">
                     {/* content */}
-                    <div className="lg:w-[65%]">
+                    <div className="">
                         <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent">When is Orbital Decompression Needed?</div>
                         <div className="text-[12px] md:text-[16px] font-[500] font-para flex lg:flex-row flex-col gap-10 mt-5">
                             <div>
@@ -77,21 +78,21 @@ const OrbitalDecompression = () => {
 
                     {/* img */}
 
-                    <div className="lg:w-[35%]">
+                    {/* <div className="lg:w-[35%]">
                         <img src={assets.eximg} alt="" className="lg:w-[84%]" />
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* container 3 */}
 
                 <div className="flex lg:flex-row flex-col items-center lg:gap-10 gap-5 mt-10">
                     {/* img */}
-                    <div className="lg:w-[35%]">
+                    {/* <div className="lg:w-[35%]">
                         <img src={assets.eximg} alt="" className="lg:w-[84%]" />
-                    </div>
+                    </div> */}
 
                     {/* content */}
-                    <div className="lg:w-[65%]">
+                    <div className="">
                         <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent">Surgical Approaches</div>
                         <div className="text-[12px] md:text-[16px] font-[500] font-para">
                             <div className="mt-2 leading-7">Depending on the severity of symptoms and anatomical factors, your oculoplastic surgeon at Sapiens Clinic may recommend one of the following decompression techniques :</div>
@@ -109,7 +110,7 @@ const OrbitalDecompression = () => {
 
                 <div className="flex lg:flex-row flex-col-reverse items-center lg:gap-10 gap-5 mt-10">
                     {/* content */}
-                    <div className="lg:w-[65%]">
+                    <div className="">
                         <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent">Pre-Surgical Planning</div>
                         <div className="text-[12px] md:text-[16px] font-[500] font-para leading-7 mt-2">Before scheduling surgery, our team conducts thorough imaging and clinical assessments to determine the volume of decompression needed. Patients may be advised to stop medications like blood thinners weeks before the procedure and follow personalized preparation protocols.</div>
 
@@ -118,21 +119,21 @@ const OrbitalDecompression = () => {
                     </div>
 
                     {/* img */}
-                    <div className="lg:w-[35%]">
+                    {/* <div className="lg:w-[35%]">
                         <img src={assets.eximg} alt="" className="lg:w-[84%]" />
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* container 5 */}
 
                 <div className="flex lg:flex-row flex-col lg:gap-10 gap-5 mt-10 items-center">
                     {/* img */}
-                    <div className="lg:w-[35%]">
+                    {/* <div className="lg:w-[35%]">
                         <img src={assets.eximg} alt="" className="lg:w-[84%]" />
-                    </div>
+                    </div> */}
 
                     {/* content */}
-                    <div className="lg:w-[65%]">
+                    <div className="">
                         <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent">Recovery and Aftercare</div>
                         <ul className="text-[12px] md:text-[16px] font-[500] font-para list-disc leading-7 ml-5 mt-2">
                             <li>Eye patch is removed 24 hours post-surgery.</li>
@@ -150,7 +151,7 @@ const OrbitalDecompression = () => {
 
                 <div className="flex lg:flex-row flex-col-reverse lg:gap-10 gap-5 mt-10 items-center">
                     {/* content */}
-                    <div className="lg:w-[65%]">
+                    <div className="">
                         <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent">Potential Risks</div>
                         <div className="text-[12px] md:text-[16px] font-[500] font-para">
                             <div className="mt-2">Although orbital decompression is generally safe in expert hands, potential risks include :</div>
@@ -168,10 +169,13 @@ const OrbitalDecompression = () => {
                     </div>
 
                     {/* img */}
-                    <div className="lg:w-[35%]">
+                    {/* <div className="lg:w-[35%]">
                         <img src={assets.eximg} alt="" className="lg:w-[84%]" />
-                    </div>
+                    </div> */}
                 </div>
+            </div>
+            <div>
+                <ContactPage/>
             </div>
 
             <div>

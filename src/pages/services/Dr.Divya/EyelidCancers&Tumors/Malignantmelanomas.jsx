@@ -28,12 +28,6 @@ const Malignantmelanomas = () => {
         },
     ]
 
-    const contact =[
-        {
-            heading:"",
-            para:""
-        }
-    ]
     return (
         <div>
             <div>
@@ -166,7 +160,7 @@ const Malignantmelanomas = () => {
 
             {/* content-part */}
             <div>
-                <ContactPage contacts={contact[0]}/>
+                <ContactPage />
             </div>
 
             {/* faqs */}

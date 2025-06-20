@@ -25,12 +25,6 @@ const Enucleation = () => {
     ]
 
 
-    const contact = [
-        {
-            heading: "",
-            para: ""
-        }
-    ]
     return (
         <div>
             <div>
@@ -212,7 +206,7 @@ const Enucleation = () => {
 
             {/* contact-part */}
             <div>
-                <ContactPage contacts={contact[0]} />
+                <ContactPage />
             </div>
 
             {/* faqs */}

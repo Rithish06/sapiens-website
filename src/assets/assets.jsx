@@ -81,6 +81,60 @@ import egImage from './images/eg-image.png'
 
 // dr divya service images
 import egDivyaImage from './images/opthal-eg-img.png'
+import TenzelsFlap1 from './images/TenzelsFlap1.png'
+import TenzelsFlap from './images/Tenzels-Flap.png'
+import Squamouscellcarcinoma from './images/Squamous-cell-carcinoma.png'
+import sebaceouscarcinoma from './images/sebaceous-carcinoma.png'
+import RetinalTumor from './images/Retinal-Tumor.png'
+import RemovalSurgery from './images/Removal-Surgery.png'
+import OSSN from './images/OSSN.png'
+import OculusSurfaceTumor from './images/Oculus-Surface-Tumor.png'
+import MustardesFlap from './images/Mustardes-Flap.png'
+import MohsSurgery from './images/Mohs-Surgery.png'
+import melgnantmelonama from './images/melgnant-melonama.png'
+import Hughesflap from './images/Hughes-flap.png'
+import FalseEyeProsthesis from './images/False-Eye-Prosthesis.png'
+import Exenteration from './images/Exenteration.png'
+import Evisceration from './images/Evisceration.png'
+import Enucleation from './images/Enucleation.png'
+import Cutlerbreadflaps from './images/Cutler-bread-flaps.png'
+import conjunctivalcyst from './images/conjunctival-cyst.png'
+import ChoroidalMetastasis from './images/Choroidal-Metastasis.png'
+import ChoroidalMelanoma from './images/Choroidal-Melanoma.png'
+import Basalcellcarcinoma1 from './images/Basal-cell-carcinoma-1.png'
+import ExternalDCR from './images/External-DCR.png'
+import Eyelidcancerandtumors from './images/Eyelid-cancer-and-tumors.png'
+import EyelidMalpositions from './images/Eyelid-Malpositions.png'
+import Lacrimal from './images/Lacrimal.png'
+import LaserDCR from './images/Laser-DCR.png'
+import Ptosisrepairfordroopyeyelid from './images/Ptosis-repair-for-droopy-eyelid.png'
+import RetinoblastomaRetinoblastoma from './images/Retinoblastoma.png'
+import SurgicalBlepharoplasty from './images/Surgical-Blepharoplasty.png'
+import ThyriodEyeDisease from './images/Thyriod-Eye-Disease.png'
+
+import walldecompression3 from './images/3-wall-decompression.png'
+import asianblepharoplasty from './images/asian-blepharoplasty.png'
+import Blepharophimosis from './images/Blepharophimosis.png'
+import CanthalResection from './images/Canthal-Resection.png'
+import Canthopexy from './images/Canthopexy.png'
+import CavernousHemangioma from './images/Cavernous-Hemangioma.png'
+import CdCRDCTBallon from './images/CdCR-DCT-Ballon.png'
+import Dacryoplasty from './images/Dacryoplasty.png'
+import endoscopicdcr from './images/endoscopic-dcr.png'
+import entropionrepair from './images/entropion-repair.png'
+import Epicanthoplasty from './images/Epicanthoplasty.png'
+import EyelidRetraction from './images/Eyelid-Retraction.png'
+import eyelidsynkinesis from './images/eyelid-synkinesis.png'
+import LesterJonesSurgery from './images/Lester-Jones-Surgery.png'
+import OrbitalLymphoma from './images/Orbital-Lymphoma.png'
+import OrbitalTumors from './images/Orbital-Tumors.png'
+import orbitdecompression from './images/orbit-decompression.png'
+import Pseudotumor from './images/Pseudo-tumor.png'
+import WallDecompression from './images/Wall-Decompression.png'
+import Orbit from './images/Orbit.jpg'
+import Eyelid from './images/Eyelid.jpg'
+
+
 
 // career 
 
@@ -170,6 +224,56 @@ export const assets = {
     careerHomeImage,
     eximg,
     servicebanner,
-    divyaservicebannerimg
-
+    divyaservicebannerimg,
+    TenzelsFlap1,
+    TenzelsFlap,
+    Squamouscellcarcinoma,
+    sebaceouscarcinoma,
+    RetinalTumor,
+    RemovalSurgery,
+    OSSN,
+    OculusSurfaceTumor,
+    MustardesFlap,
+    MohsSurgery,
+    melgnantmelonama,
+    Hughesflap,
+    FalseEyeProsthesis,
+    Exenteration,
+    Evisceration,
+    Enucleation,
+    Cutlerbreadflaps,
+    conjunctivalcyst,
+    ChoroidalMetastasis,
+    ChoroidalMelanoma,
+    Basalcellcarcinoma1,
+    Eyelidcancerandtumors,
+    EyelidMalpositions,
+    Lacrimal,
+    LaserDCR,
+    ExternalDCR,
+    Ptosisrepairfordroopyeyelid,
+    RetinoblastomaRetinoblastoma,
+    SurgicalBlepharoplasty,
+    ThyriodEyeDisease,
+    walldecompression3,
+    asianblepharoplasty,
+    Blepharophimosis,
+    CanthalResection,
+    Canthopexy,
+    CavernousHemangioma,
+    CdCRDCTBallon,
+    Dacryoplasty,
+    endoscopicdcr,
+    entropionrepair,
+    Epicanthoplasty,
+    EyelidRetraction,
+    eyelidsynkinesis,
+    LesterJonesSurgery,
+    OrbitalLymphoma,
+    OrbitalTumors,
+    orbitdecompression,
+    Pseudotumor,
+    WallDecompression,
+    Orbit,
+    Eyelid
 }

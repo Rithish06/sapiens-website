@@ -30,12 +30,7 @@ const WallDecompression = () => {
     },
   ]
 
-  const contact = [
-    {
-      heading:"Why Choose Sapiens Clinic in Malleshwaram?",
-      para:"At Sapiens Clinic, we combine expertise in oculoplastic surgery with a compassionate approach to care. Located in the heart of Malleshwaram, we offer advanced diagnostic tools, individualized surgical planning, and post-operative support tailored to each patient’s needs. Our focus is not only on functional correction but also on restoring a natural, confident appearance."
-    }
-  ]
+
   return (
     <div>
       <div>
@@ -53,15 +48,15 @@ const WallDecompression = () => {
 
         <div className='flex flex-col-reverse lg:flex-row items-center gap-10 mt-10'>
           {/* content */}
-          <div className='lg:w-[65%]'>
+          <div className=''>
             <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient'>What Is Two-Wall Decompression?</div>
             <div className='text-[12px] md:text-[16px] font-[500] font-para leading-7 mt-5'>This surgical procedure involves removing both the medial (inner) and lateral (outer) walls of the orbital cavity. By doing so, pressure is relieved from the eye, and enough space is created to accommodate enlarged eye muscles and excess orbital fat. This helps reduce the bulging appearance of the eyes, improves eyelid closure, and reduces strain and dryness. Unlike more aggressive decompression approaches, the two-wall technique strikes a balance-offering effective results while minimizing postoperative complications.</div>
           </div>
 
           {/* img */}
-          <div className='lg:w-[35%]'>
+          {/* <div className='lg:w-[35%]'>
             <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-          </div>
+          </div> */}
         </div>
 
         {/* container 3 */}
@@ -69,12 +64,12 @@ const WallDecompression = () => {
         <div className='flex flex-col lg:flex-row gap-10 mt-10 items-center'>
 
           {/* img */}
-          <div className='lg:w-[35%]'>
+          {/* <div className='lg:w-[35%]'>
             <img className='lg:w-[84%]' src={assets.eximg} alt="" />
-          </div>
+          </div> */}
 
           {/* content */}
-          <div className='lg:w-[65%]'>
+          <div className=''>
             <div className='text-[18px] md:text-[20px] lg:text-[30px] font-heading font-[600] bg-orange-gradient'>Who Needs Two-Wall Decompression?</div>
             <div className='text-[12px] md:text-[16px] font-[500] font-para leading-7 mt-5'>
               <div>You may benefit from two-wall decompression if you have :</div>
@@ -94,7 +89,7 @@ const WallDecompression = () => {
 
         <div className='flex flex-col-reverse lg:flex-row gap-10 items-center mt-10'>
           {/* content */}
-          <div className='lg:w-[65%]'>
+          <div className=''>
             <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient'>How Is the Surgery Performed?</div>
             <div className='text-[12px] md:text-[16px] font-[500] font-para leading-7 mt-5'>
               <div>Two-wall decompression is performed under general anesthesia. The procedure takes around 2 to 3 hours and typically requires an overnight stay for monitoring. During surgery, small incisions are made to access the orbital walls. Bone segments are carefully removed to allow orbital tissues to shift into the newly created space. In some cases, a drain may be placed to reduce postoperative swelling.</div>
@@ -109,21 +104,21 @@ const WallDecompression = () => {
           </div>
 
           {/* img */}
-          <div className="lg:w-[35%]">
+          {/* <div className="lg:w-[35%]">
             <img src={assets.eximg} alt="" className="lg:w-[84%]" />
-          </div>
+          </div> */}
         </div>
 
         {/* container 5 */}
 
         <div className="flex flex-col-reverse lg:flex-row gap-10 mt-10 items-center">
           {/* img */}
-          <div className="lg:w-[35%]">
+          {/* <div className="lg:w-[35%]">
             <img src={assets.eximg} alt="" className="lg:w-[84%]" />
-          </div>
+          </div> */}
 
           {/* content */}
-          <div className="lg:w-[65%]">
+          <div className="">
             <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Risks and Considerations</div>
             <div className="text-[12px] md:text-[16px] font-para font-[500] leading-7 mt-5">
               <div>Although the two-wall decompression technique is well-tolerated by most patients, potential risks include :</div>
@@ -143,20 +138,20 @@ const WallDecompression = () => {
 
         <div className="flex flex-col lg:flex-row gap-10 items-center mt-10">
           {/* content */}
-          <div className='lg:w-[65%]'>
+          <div className=''>
             <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Why Choose Sapiens Clinic in Malleshwaram?</div>
             <div className="text-[12px] md:text-[16px] font-para font-[500] leading-7 mt-5">At Sapiens Clinic, we combine expertise in oculoplastic surgery with a compassionate approach to care. Located in the heart of Malleshwaram, we offer advanced diagnostic tools, individualized surgical planning, and post-operative support tailored to each patient’s needs. Our focus is not only on functional correction but also on restoring a natural, confident appearance.</div>
           </div>
 
           {/* img */}
-          <div className="lg:w-[35%]">
+          {/* <div className="lg:w-[35%]">
             <img src={assets.eximg} alt="" className="lg:w-[84%]" />
-          </div>
+          </div> */}
         </div>
       </div>
 
       <div>
-        <ContactPage contacts={contact[0]}/>
+        <ContactPage/>
       </div>
 
       <div>

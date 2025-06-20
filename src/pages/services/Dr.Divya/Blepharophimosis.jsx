@@ -30,17 +30,6 @@ const Blepharophimosis = () => {
         },
     ]
 
-    const contact = [
-        {
-            heading:"Blepharophimosis Correction Surgery in Malleshwaram",
-            para:"At Sapiens Clinic, Malleshwaram, we offer specialized oculoplastic interventions to correct the eyelid abnormalities caused by BPES and restore both function and appearance. Our experienced team handles complex eyelid surgeries with precision, ensuring optimal outcomes for patients of all ages."
-        }
-    ]
-
-
-
-
-
 
     return (
         <div>
@@ -53,8 +42,8 @@ const Blepharophimosis = () => {
                 
                 {/* container 1 */}
                 <div className='flex flex-col items-center'>
-                    <div className='text-[18px] md:text-[20px] lg:text-[30px] font-heading font-[600] bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>Blepharophimosis Correction Surgery in Malleshwaram</div>
-                    <div className='text-[14px] md:text-[20px] lg:text-[24px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent mt-5'>Advanced Surgical Care for Congenital Eyelid Disorders</div>
+                    {/* <div className='text-[18px] md:text-[20px] lg:text-[30px] font-heading font-[600] bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>Blepharophimosis Correction Surgery in Malleshwaram</div> */}
+                    <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent mt-5'>Advanced Surgical Care for Congenital Eyelid Disorders</div>
                     <div className='text-[12px] md:text-[16px] font-[500] font-para leading-7 mt-2'>Blepharophimosis syndrome (BPES) is a rare congenital condition that primarily affects the eyelids, resulting in narrowed eye openings, droopy lids (ptosis), and a skin fold near the inner corner of the eyes (epicanthus inversus). These features not only affect the cosmetic appearance but can significantly impair vision and daily function, particularly in children.
                         At <b>Sapiens Clinic, Malleshwaram</b>, we offer specialized oculoplastic interventions to correct the eyelid abnormalities caused by BPES and restore both function and appearance. Our experienced team handles complex eyelid surgeries with precision, ensuring optimal outcomes for patients of all ages
                     </div>
@@ -250,7 +239,7 @@ const Blepharophimosis = () => {
             
             {/* container 9 */}
             <div>
-                <ContactPage contacts={contact[0]}/>
+                <ContactPage />
             </div>
 
             {/* container 10 */}

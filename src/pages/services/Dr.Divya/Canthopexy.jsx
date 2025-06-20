@@ -29,13 +29,6 @@ const Canthopexy = () => {
         }
     ];
 
-    const contact = [
-        {
-            heading:"",
-            para:""
-        }
-    ]
-
 
     return (
         <div>
@@ -248,7 +241,7 @@ const Canthopexy = () => {
 
             {/* contact-part */}
             <div>
-                <ContactPage contacts={contact[0]}/>
+                <ContactPage />
             </div>
 
             {/* faqs */}
