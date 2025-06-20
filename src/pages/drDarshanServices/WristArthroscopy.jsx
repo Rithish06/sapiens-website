@@ -1,6 +1,7 @@
 import React from 'react'
 import Faqs from '../../components/faqs/faqs';
 import Servicesbanner from '../../components/services-banner/Servicesbanner';
+import ContactPage from '../services/ContactPage/ContactPage';
 
 const WristArthroscopy = () => {
 
@@ -135,7 +136,12 @@ const WristArthroscopy = () => {
                 </div>
             </div>
 
-            <Faqs faqs = {faqs} />
+            <ContactPage />
+
+            <div className="mt-15">
+                <Faqs faqs = {faqs} />  
+            </div>
+            
         </div>
     )
 }

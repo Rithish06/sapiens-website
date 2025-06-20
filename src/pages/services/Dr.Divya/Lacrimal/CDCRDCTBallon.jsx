@@ -157,7 +157,7 @@ const CDCRDCTBallon = () => {
 
             {/* contact */}
             <div>
-                <ContactPage/>
+                <ContactPage />
             </div>
 
             {/* faq */}

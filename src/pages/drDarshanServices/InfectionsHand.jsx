@@ -1,5 +1,7 @@
 import React from 'react'
 import Faqs from '../../components/faqs/faqs'
+import Servicesbanner from '../../components/services-banner/Servicesbanner'
+import ContactPage from '../services/ContactPage/ContactPage'
 
 const InfectionsHand = () => {
   const faqs = [
@@ -28,7 +30,7 @@ const InfectionsHand = () => {
     return (
         <div className='min-h-[100vh]'>
             <div className='relative'>
-                {/* <Servicesbanner /> */}
+                <Servicesbanner serviceName = "Hand Infection" />
             </div>
 
             <div className='px-8 lg:px-20 mt-8'>
@@ -149,6 +151,8 @@ const InfectionsHand = () => {
                     </div>
                 </div>
             </div>
+
+            <ContactPage />
 
             <div className='mt-15'>
                 <Faqs faqs={faqs} />

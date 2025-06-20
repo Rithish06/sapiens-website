@@ -9,7 +9,7 @@ const AllBlog = () => {
 
     useEffect(() => {
         axios
-            .get('https://blog.sapiensclinic.com/wp-json/wp/v2/posts?_embed')
+            .get('https://blog.sapiensclinic.com/wp-json/wp/v2/posts?_embed&per_page=100')
             .then((response) => {
                 setPosts(response.data);
                 setLoading(false);
@@ -21,7 +21,11 @@ const AllBlog = () => {
             });
     }, []);
 
-    if (loading) return <p>Loading posts...</p>;
+    if (loading) return (
+        <div className="flex justify-center items-center min-h-screen">
+            <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-teal-500"></div>
+        </div>
+    );
 
     const truncateHTML = (html, wordCount) => {
         const tempDiv = document.createElement('div');

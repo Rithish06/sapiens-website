@@ -2,7 +2,7 @@ import React from 'react'
 import { useForm } from "react-hook-form";
 import { assets } from '../../../assets/assets';
 
-const ContactPage = ({contacts}) => {
+const ContactPage = () => {
 
   const {
       register,
@@ -10,21 +10,31 @@ const ContactPage = ({contacts}) => {
       watch,
       formState: { errors },
     } = useForm()
-  
-    const onSubmit = (data) => console.log(data)
-  
-    // console.log(watch("example"))
-
+    
+    const onSubmit = (data) => {
+        setIsSubmitting(true);
+        emailjs.send(
+            "service_b8jvt4d",
+            "template_c06irsg",
+            data
+        )
+            .then(() => {
+                toast.success("Email sent successfully!");
+                reset();
+            })
+            .catch(() => {
+                toast.error("Failed to send email");
+            })
+            .finally(() => setIsSubmitting(false));
+    };
 
   return (
     <div className='mt-10'>
       <div className=' xl:flex justify-center items-center bg-[#FFF6E0] p-5 xl:py-10 xl:px-15 gap-10 lg:flex'>
 
         <div className='text-center' >
-          <div className='xl:text-[30px] font-[600] bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent font-heading sm:text-[20px] xs:text-[18px]'>Why Choose Sapiens Clinic in Malleshwaram?</div>
-          <div className='xl:text-[16px] font-[500] font-para xl:text-sm/8 py-5 sm:text-[15px] xs:text-[12px] md:text-[14px] text-[12px]'>Sapiens Clinic offers a specialized and well-rounded approach to hand and wrist problems. The clinic is equipped with advanced diagnostic tools, expert therapists and a calm, patient-first atmosphere. From young mothers to working professionals, personalized care is at the heart of what they do.
-All De Quervain’s treatments are led by Dr. Darshan Kumar A. Jain, one of Bangalore’s trusted names in orthopedic and hand surgery, known for his precise diagnosis and minimally invasive techniques.
-</div>
+          <div className='xl:text-[30px] font-[600] bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent font-heading sm:text-[20px] xs:text-[18px]'>Your Trusted Specialists in Hands & Eyes</div>
+          <div className='xl:text-[16px] font-[500] font-para xl:text-sm/8 py-5 sm:text-[15px] xs:text-[12px] md:text-[14px] text-[12px]'>We offer advanced care for hand, upper limb, and eye conditions with a focus on precision and personalized treatment. Combining expert diagnostics, surgical expertise and a patient-first approach, our goal is to restore comfort, function and confidence for every individual we treat.</div>
         </div>
 
         <div >

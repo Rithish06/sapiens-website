@@ -4,6 +4,14 @@ import { Link } from 'react-router-dom'
 
   
 const Divyaservicebanner = (props) => {  
+
+        const scrollWindow = () => {
+        window.scrollTo({
+            top: 800,
+            behavior : 'smooth'
+        })
+    }
+
     return (
         <div>
             <div className='overflow-hidden'>
@@ -13,8 +21,8 @@ const Divyaservicebanner = (props) => {
                     <div className='font-para text-[22px] xl:text-[50px] lg:text-[40px] md:text-[25px] text-center 2xl:w-[80%] font-[700] bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent xl:leading-[56px] lg:leading-[50px]'>{props.servicename}</div>
                     <div className='font-para text-[16px] xl:text-[38px] lg:text-[25px] md:text-[20px] font-[700]'>in Malleshwaram, Bangalore</div>
                     <div className='absolute top-25 xl:top-57 lg:top-60 lg:flex lg:gap-10 md:top-35'>
-                        <button className='font-para cursor-pointer text-[12px] py-2 px-5 lg:text-[13px] xl:text-[14px] font-[800] text-[#FFFFFF] bg-[#EF7F1A] lg:py-4 lg:px-10 rounded-lg '>Learn More</button>
-                        <Link to={'/contact'}>  <button className='font-para cursor-pointer text-[12px] py-2 px-5 lg:text-[13px] xl:text-[14px] font-[800] text-[#B22726] lg:py-4 lg:px-10 rounded-lg '>Contact Us</button></Link>
+                        <button onClick={scrollWindow} className='font-para cursor-pointer text-[12px] py-2 px-5 lg:text-[13px] xl:text-[14px] font-[800] text-[#FFFFFF] bg-[#EF7F1A] lg:py-4 lg:px-10 rounded-lg '>Learn More</button>
+                        <Link to={'/contact'}>  <button className='font-para cursor-pointer text-[12px] py-2 px-5 lg:text-[13px] xl:text-[14px] font-[800] text-[#B22726] lg:py-4 lg:px-10 rounded-lg text-[#B22726] border-[#B22726] border-2 '>Contact Us</button></Link>
                     </div>
                 </div>
 

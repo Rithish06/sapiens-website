@@ -36,7 +36,7 @@ const NerveRepair = () => {
 
   return (
     <div className="min-h-[100vh]">
-      <div className="relative">{/* <Servicesbanner /> */}</div>
+      <div className="relative"><Servicesbanner serviceName = "Nerve Repair Surgery"/></div>
 
       <div className="px-8 lg:px-20 mt-8">
         <div className="text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px] text-center ">
@@ -115,16 +115,7 @@ const NerveRepair = () => {
         </div>
         <div className="flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]">
           <div>
-            <ul className="mt-5  list-disc pl-10">
-              <li className="font-para text-[12px] lg:text-[16px] leading-[26px] mt-3">
-                Best outcomes occur when surgically evaluated within 3 months of
-                injury.
-              </li>
-              <li className="font-para text-[12px] lg:text-[16px] leading-[26px] mt-3">
-                Specialists at Mayo and Cleveland Clinics recommend early
-                referral, ideally within 1-2 months post-injury .
-              </li>
-            </ul>
+            <div className="font-para text-[12px] lg:text-[16px] leading-[26px] mt-3">Early evaluation plays a key role in achieving the best outcomes after a nerve injury. It's ideal to consult a specialist within the first 1 to 2 months of injury. In most cases, surgical intervention within 3 months offers the best chance for effective nerve repair and functional recovery.</div>
             {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'></div> */}
           </div>
         </div>
@@ -207,7 +198,7 @@ const NerveRepair = () => {
         </div>
       </div>
       <div>
-        <ContactPage contacts={contact[0]} />
+        <ContactPage />
       </div>
       <div>
         <Faqs faqs={faqs} />

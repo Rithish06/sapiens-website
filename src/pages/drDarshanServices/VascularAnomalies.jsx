@@ -1,6 +1,7 @@
 import React from 'react'
 import Servicesbanner from '../../components/services-banner/Servicesbanner'
 import Faqs from '../../components/faqs/faqs'
+import ContactPage from '../services/ContactPage/ContactPage';
 
 const VascularAnomalies = () => {
 
@@ -167,6 +168,8 @@ const VascularAnomalies = () => {
                     </div>
                 </div>
             </div>
+
+            <ContactPage />
 
             <div className="mt-15">
                 <Faqs faqs={faqs} />

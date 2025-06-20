@@ -79,6 +79,9 @@ import divyaservicebannerimg from './images/divyaservicebannerimg.png'
 // dr darshan services image
 import egImage from './images/eg-image.png'
 
+import drDarshanServiceImage from './images/drDarshanServiceImage.png'
+import drDarshanPageEllipse from './images/drDarshanPageEllipse.png'
+
 // dr divya service images
 import egDivyaImage from './images/opthal-eg-img.png'
 import TenzelsFlap1 from './images/TenzelsFlap1.png'
@@ -142,6 +145,68 @@ import careerPage from './images/career-bg-desktop.png'
 import carrePageBgMobile from './images/career-bg-mobile.png'
 import careerHomeImage from './images/career-image-home.png'
 import { ImOpt } from 'react-icons/im'
+
+
+// dr darshan service images
+
+import AnatomyofLabralTear from './DrDarshanServices/Anatomy-of-Labral-Tear.jpg'
+import ArthritisInvolvingtheFingerWristandElbow from './DrDarshanServices/Arthritis-Involving-the-Finger-Wrist-and-Elbow.jpg'
+import BirthDefects from './DrDarshanServices/Birth-Defects.png'
+import BirthRelatedBrachialPlexus from './DrDarshanServices/Birth-Related-Brachial-Plexus.jpg'
+import carpalTunnelImg from './DrDarshanServices/carpal-Tunnel-Img.jpg'
+import CerebralPalsy from './DrDarshanServices/Cerebral-Palsy.jpg'
+import CerebralPlasy1 from './DrDarshanServices/Cerebral-Plasy1.jpg'
+import ComplexReconstructionRequiringBothSoftTissueAndBone from './DrDarshanServices/Complex-Reconstruction-Requiring-Both-Soft-Tissue-And-Bone.png'
+import congenitalAnomalies from './DrDarshanServices/congenital-Anomalies.jpg'
+import Congential from './DrDarshanServices/Congential.jpg'
+import CubitalTunnelSyndrome from './DrDarshanServices/Cubital-Tunnel-Syndrome.jpg'
+import DeQuervainsTenosynovitisSplints from './DrDarshanServices/De-Quervains-Tenosynovitis-Splints.jpg'
+import DupuytrensDiseasesImg5 from './DrDarshanServices/Dupuytrens-Diseases-Img5.jpg'
+import ElbowArthroplasty from './DrDarshanServices/Elbow-Arthroplasty.jpg'
+import ElbowArthroscopyth from './DrDarshanServices/Elbow-Arthroscopyth.jpg'
+import ElbowReplacement from './DrDarshanServices/Elbow-Replacement.jpg'
+import ElbowSynovitis from './DrDarshanServices/Elbow-Synovitis.jpg'
+import FlapsCoverToUpperOrLowerLimbs from './DrDarshanServices/Flaps-Cover-ToUpper-Or-Lower-Limbs.jpg'
+import FracturesHumerusRadiusulna from './DrDarshanServices/Fractures-Humerus-Radiusulna.jpg'
+import FreeFlab from './DrDarshanServices/Free-Flab.png'
+import GaintCellTumor from './DrDarshanServices/Gaint-Cell-Tumor.jpg'
+import Ganglion from './DrDarshanServices/Ganglion.jpg'
+import GlomusTumorNail from './DrDarshanServices/Glomus-TumorNail.jpg'
+import InfectionOfTheHand from './DrDarshanServices/Infection-Of-The-Hand.png'
+import InjurytotheHandWristWithaFractureorLigamentInjury from './DrDarshanServices/Injury-to-the-Hand-Wrist-With-a-Fracture-or-Ligament-Injury.png'
+import KienbockDiseases from './DrDarshanServices/Kienbock-Diseases.png'
+import LigamentRepairorReconstruction from './DrDarshanServices/Ligament-repair-or-Reconstruction.png'
+import LimbReconstruction from './DrDarshanServices/Limb-Reconstruction.jpg'
+import MalunionFracture from './DrDarshanServices/Malunion-Fracture.png'
+import NerveReconstruction from './DrDarshanServices/Nerve-Reconstruction.jpg'
+import NerveRepair from './DrDarshanServices/Nerve-Repair.jpg'
+import NonUnion from './DrDarshanServices/Non-Union.jpg'
+import NormalRotatorCuffFront from './DrDarshanServices/Normal-Rotator-CuffFront.jpg'
+import PeripheralnerveSurgery from './DrDarshanServices/Peripheral-nerve-Surgery.jpg'
+import pinchpointsandhandinjuries from './DrDarshanServices/pinch-points-and-hand-injuries.jpg'
+import pollicization from './DrDarshanServices/pollicization.jpg'
+import postburnsContracture from './DrDarshanServices/postburns-contracture.jpg'
+import RadiusFracture from './DrDarshanServices/Radius-Fracture.jpg'
+import ScaphoidFractures from './DrDarshanServices/Scaphoid-Fractures.jpg'
+import Scaphoidnonunion from './DrDarshanServices/Scaphoid-non-union.png'
+import ScapholunateLigamentInjury from './DrDarshanServices/Scapholunate-Ligament-Injury.jpg'
+import shoulderarthroscopy from './DrDarshanServices/shoulder-arthroscopy.jpg'
+import ShoulderReplacementArthroplasty from './DrDarshanServices/Shoulder-Replacement-arthroplasty.png'
+import slapInjuries from './DrDarshanServices/slap-injuries.jpg'
+import Stiffnessofjointsofthehand from './DrDarshanServices/Stiffness-of-joints-of-the-hand.jpg'
+import Swellinglumpsandbumps from './DrDarshanServices/Swelling-lumps-and-bumps.jpg'
+import synovectomy from './DrDarshanServices/synovectomy.jpg'
+import tendonTransfer from './DrDarshanServices/tendon-transfer.jpg'
+import Tendortransfer from './DrDarshanServices/Tendor-transfer.jpg'
+import TFCC from './DrDarshanServices/TFCC.jpg'
+import Tuberculosis from './DrDarshanServices/Tuberculosis.png'
+import tumorsonhand from './DrDarshanServices/tumors-on-hand.jpg'
+import UCLinjury from './DrDarshanServices/UCL-injury.jpg'
+import UpperLimbsSurgery from './DrDarshanServices/Upper-Limbs-Surgery.jpg'
+import VascularisedFreeFibula from './DrDarshanServices/Vascularised-free-fibula.jpg'
+import VasularAnomalies from './DrDarshanServices/Vasular-anomalies.png'
+import VOLKMANNSISCHEMICCONTRACture from './DrDarshanServices/VOLKMANNS-ISCHEMIC-CONTRACture.jpg'
+import WristArthroscopy from './DrDarshanServices/Wrist-Arthroscopy.jpg'
 
 export const assets = {
     logo,
@@ -275,5 +340,71 @@ export const assets = {
     Pseudotumor,
     WallDecompression,
     Orbit,
-    Eyelid
+    Eyelid,
+    divyaservicebannerimg,
+    drDarshanServiceImage,
+    drDarshanPageEllipse,
+
+
+
+    // dr darshan services image
+
+    AnatomyofLabralTear,
+    ArthritisInvolvingtheFingerWristandElbow,
+    BirthRelatedBrachialPlexus,
+    BirthDefects,
+    carpalTunnelImg,
+    CerebralPlasy1,
+    CerebralPalsy,
+    ComplexReconstructionRequiringBothSoftTissueAndBone,
+    congenitalAnomalies,
+    Congential,
+    CubitalTunnelSyndrome,
+    DeQuervainsTenosynovitisSplints,
+    DupuytrensDiseasesImg5,
+    ElbowArthroplasty,
+    ElbowArthroscopyth,
+    ElbowReplacement,
+    ElbowSynovitis,
+    FracturesHumerusRadiusulna,
+    FlapsCoverToUpperOrLowerLimbs,
+    FreeFlab,
+    GaintCellTumor,
+    Ganglion,
+    GlomusTumorNail,
+    InfectionOfTheHand,
+    InjurytotheHandWristWithaFractureorLigamentInjury,
+    KienbockDiseases,
+    LigamentRepairorReconstruction,
+    MalunionFracture,
+    LimbReconstruction,
+    NerveRepair,
+    NerveReconstruction,
+    NonUnion,
+    NormalRotatorCuffFront,
+    PeripheralnerveSurgery,
+    pinchpointsandhandinjuries,
+    pollicization,
+    postburnsContracture,
+    RadiusFracture,
+    ScaphoidFractures,
+    Scaphoidnonunion,
+    ScapholunateLigamentInjury,
+    shoulderarthroscopy,
+    ShoulderReplacementArthroplasty,
+    slapInjuries,
+    Stiffnessofjointsofthehand,
+    synovectomy,
+    Swellinglumpsandbumps,
+    Tendortransfer,
+    tendonTransfer,
+    Tuberculosis,
+    TFCC,
+    tumorsonhand,
+    UpperLimbsSurgery,
+    UCLinjury,
+    VascularisedFreeFibula,
+    VasularAnomalies,
+    VOLKMANNSISCHEMICCONTRACture,
+    WristArthroscopy
 }

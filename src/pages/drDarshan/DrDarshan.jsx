@@ -214,267 +214,377 @@ const DrDarshan = () => {
 
     const upperLimbSurgery = [
         {
-            link: '/dr-darshan/carpal-tunnel-treatment',
-            text: 'Carpal tunnel syndrome',
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+            name: "Carpal tunnel syndrome",
+            image: assets.carpalTunnelImg,
+            para: "If your fingers often feel numb, your wrist hurts when you type, or you keep dropping things without reason - it might not just be tiredness. These are classic signs of Carpal Tunnel Syndrome, a common but often overlooked nerve condition of the hand.",
+            link: "carpal-tunnel-syndrome",
+            seoLink: "carpal-tunnel-syndrome-treatment-in-malleshwaram-bangalore"
         },
-        
+        {
+            name: "Stiffness of joints of the hand.",
+            image: assets.Stiffnessofjointsofthehand,
+            para: "Imagine waking up and finding your fingers hard to move. You try to stretch, but they feel locked or tight. You want to pick up your cup of tea, but your wrist won’t bend easily. If this sounds familiar, you may be experiencing joint stiffness in the hand, a common yet often underestimated issue that can interfere with even the simplest daily activities.",
+            link: "stiffness-of-joints-of-the-hand",
+            seoLink: "stiffness-of-joints-of-the-hand-treatment-in-malleshwaram-bangalore"
+        },
+        // {
+        //     name: "Dupuytren’s disease",
+        //     image: assets.egImage,
+        //     para: "", 
+        //     link: "dupuytrens-disease",
+        //     seoLink: "dupuytrens-disease-treatment-in-malleshwaram-bangalore"
+        // },
+        {
+            name: "Infections of the hand.",
+            image: assets.InfectionOfTheHand,
+            para: "Even a small injury to the hand can become serious if an infection develops. Hand infections can spread quickly due to the complex anatomy of tendons, joints, and nerves, often resulting in pain, swelling, and loss of function if not treated early. Whether caused by a cut, bite or underlying health condition, early diagnosis and timely care are essential to prevent long-term damage.",
+            link: "infections-of-the-hand",
+            seoLink: "infections-of-the-hand-treatment-in-malleshwaram-bangalore"
+        },
+        {
+            name: "De Quervain’s tenosynovitis",
+            image: assets.DeQuervainsTenosynovitisSplints,
+            para: "Pain on the thumb side of your wrist when lifting, gripping, or holding something as light as your phone? You're not alone. This could be a sign of De Quervain’s Tenosynovitis - a condition that affects countless individuals who rely on their hands every day, from young mothers and IT professionals to athletes and artists.",
+            link: "de-quervains-tenosynovitis",
+            seoLink: "de-quervains-tenosynovitis-treatment-in-malleshwaram-bangalore"
+        },
+        {
+            name: "Swellings (lumps and bumps) of the hand.",
+            image: assets.Swellinglumpsandbumps,
+            para: "A noticeable lump or swelling on the hand can raise concerns-whether it's painless or causing discomfort. While many of these bumps are harmless, some may interfere with hand function or indicate underlying issues. At Sapiens Clinic, we offer expert evaluation and comprehensive care for a wide range of hand swellings, ensuring your hand health is protected and restored.",
+            link: "swellings-lumps-and-bumps-of-the-hand",
+            seoLink: "swellings-lumps-and-bumps-of-the-hand-treatment-in-malleshwaram-bangalore"
+        },
+        {
+            name: "Kienbock’s disease (Avascular necrosis of lunate)",
+            image: assets.KienbockDiseases,
+            para: "Kienböck’s disease is a rare and progressive condition in which the lunate bone - one of the small bones in the wrist - loses its blood supply. Over time, this leads to bone death (avascular necrosis), collapse, and arthritis if left untreated. The disease can cause significant pain, stiffness, and loss of wrist function.",
+            link: "kienbocks-disease-avascular-necrosis-of-lunate",
+            seoLink: "kienbocks-disease-avascular-necrosis-of-lunate-treatment-in-malleshwaram-bangalore"
+        },
+        {
+            name: "Scaphoid fractures",
+            image: assets.ScaphoidFractures,
+            para: "A scaphoid fracture is one of the most common wrist injuries, typically caused by a fall onto an outstretched hand. It affects the scaphoid bone—a small but critical bone located on the thumb side of the wrist. Because this bone has limited blood supply, delayed or improper treatment can lead to poor healing, chronic pain, or long-term complications.",
+            link: "scaphoid-fractures",
+            seoLink: "scaphoid-fractures-treatment-in-malleshwaram-bangalore"
+        },
+        {
+            name: "Scaphoid non unions",
+            image: assets.Scaphoidnonunion,
+            para: "A scaphoid nonunion occurs when a fracture in the scaphoid bone fails to heal properly, leading to persistent pain, reduced wrist function, and potential long-term complications like arthritis. At Sapiens Clinic in Malleshwaram, we specialize in diagnosing and treating scaphoid nonunions, aiming to restore wrist functionality and alleviate discomfort.",
+            link: "scaphoid-non-unions",
+            seoLink: "scaphoid-non-unions-treatment-in-malleshwaram-bangalore"
+        },
+        {
+            name: "Scapholunate ligament injury",
+            image: assets.ScapholunateLigamentInjury,
+            para: "The scapholunate ligament is a key stabilizer of the wrist, connecting the scaphoid and lunate bones. Injury to this ligament can lead to wrist instability, pain and if untreated, progressive arthritis. At Sapiens Clinic in Malleshwaram, we specialize in the accurate diagnosis and effective treatment of scapholunate ligament injuries, aiming to restore wrist function and alleviate discomfort.",
+            link: "scapholunate-ligament-injury",
+            seoLink: "scapholunate-ligament-injury-treatment-in-malleshwaram-bangalore"
+        },
+        {
+            name: "Radius fracture",
+            image: assets.RadiusFracture,
+            para: "A radius fracture, particularly at the distal end near the wrist, is one of the most common orthopedic injuries, often resulting from falls or direct trauma. At Sapiens Clinic in Malleshwaram, we specialize in the accurate diagnosis and effective treatment of radius fractures, aiming to restore wrist function and alleviate discomfort.",
+            link: "radius-fracture",
+            seoLink: "radius-fracture-treatment-in-malleshwaram-bangalore"
+        },
+        {
+            name: "TFCC (Triangular Fibrocartilage Complex) injury",
+            image: assets.TFCC,
+            para: "Tendon transfer surgery is a specialized procedure aimed at restoring hand function lost due to nerve injuries, muscle damage, or congenital conditions. By redirecting functioning tendons to compensate for impaired ones, this surgery can significantly improve mobility and strength in the hand. At Sapiens Clinic in Malleshwaram, we offer expert evaluation and surgical solutions to help patients regain optimal hand function.",
+            link: "tfcc-triangular-fibrocartilage-complex-injury",
+            seoLink: "tfcc-triangular-fibrocartilage-complex-injury-treatment-in-malleshwaram-bangalore"
+        },
+        {
+            name: "Tendon transfers ( for hand, )",
+            image: assets.tendonTransfer,
+            para: "Tendon transfer surgery is a specialized procedure aimed at restoring hand function lost due to nerve injuries, muscle damage, or congenital conditions. By redirecting functioning tendons to compensate for impaired ones, this surgery can significantly improve mobility and strength in the hand. At Sapiens Clinic in Malleshwaram, we offer expert evaluation and surgical solutions to help patients regain optimal hand function.",
+            link: "tendon-transfers-for-hand",
+            seoLink: "tendon-transfers-for-hand-treatment-in-malleshwaram-bangalore"
+        },
+        {
+            name: "Wrist arthroscopy",
+            image: assets.WristArthroscopy,
+            para: "Wrist arthroscopy is a minimally invasive surgical procedure that allows orthopedic specialists to diagnose and treat various wrist conditions with precision. At Sapiens Clinic in Malleshwaram, we utilize advanced arthroscopic techniques to provide effective solutions for patients experiencing wrist pain, instability or limited mobility.",
+            link: "wrist-arthroscopy",
+            seoLink: "wrist-arthroscopy-treatment-in-malleshwaram-bangalore"
+        },
+        {
+            name: "Cubital tunnel syndrome",
+            image: assets.CubitalTunnelSyndrome,
+            para: "Cubital Tunnel Syndrome is a condition characterized by compression or irritation of the ulnar nerve as it passes through the cubital tunnel on the inside of the elbow. This compression can lead to numbness, tingling, and pain in the forearm and hand, particularly affecting the ring and little fingers. At Sapiens Clinic in Malleshwaram, we specialize in the diagnosis and treatment of Cubital Tunnel Syndrome, offering both non-surgical and surgical options tailored to individual patient needs.",
+            link: "cubital-tunnel-syndrome",
+            seoLink: "cubital-tunnel-syndrome-treatment-in-malleshwaram-bangalore"
+        },
+        {
+            name: "Cerebral palsy",
+            image: assets.CerebralPalsy,
+            para: "Cerebral Palsy (CP) is a group of neurological disorders that affect movement, muscle tone, and posture. It is caused by damage to the developing brain, often before birth, and manifests in early childhood. At Sapiens Clinic in Malleshwaram, we provide comprehensive evaluation and individualized treatment plans to support children and adults living with CP.",
+            link: "cerebral-palsy",
+            seoLink: "cerebral-palsy-treatment-in-malleshwaram-bangalore"
+        },
+        {
+            name: "Tumors of hand",
+            image: assets.tumorsonhand,
+            para: "Hand tumors encompass a variety of growths that can develop in the tissues of the hand, including skin, fat, nerves, blood vessels, tendons, ligaments and bones. While most hand tumors are benign (non-cancerous), some can be malignant (cancerous) necessitating prompt evaluation and management. At Sapiens Clinic in Malleshwaram, we offer comprehensive assessment and personalized treatment plans for individuals presenting with hand tumors, ensuring optimal functional and aesthetic outcomes.",
+            link: "tumors-of-hand",
+            seoLink: "tumors-of-hand-treatment-in-malleshwaram-bangalore"
+        },
+        {
+            name: "Post burns contracture",
+            image: assets.postburnsContracture,
+            para: "Post-burn contractures are a common complication following deep burns, leading to the tightening of skin and underlying tissues. This condition can significantly impair movement, especially when it affects joints and may also cause aesthetic concerns. At Sapiens Clinic in Malleshwaram, we offer comprehensive evaluation and individualized treatment plans to restore function and improve quality of life for individuals affected by post-burn contractures.",
+            link: "post-burns-contracture",
+            seoLink: "post-burns-contracture-treatment-in-malleshwaram-bangalore"
+        },
+        {
+            name: "Vascular anomalies",
+            image: assets.VasularAnomalies,
+            para: "Vascular anomalies are a diverse group of disorders characterized by abnormal development of blood vessels, including arteries, veins, capillaries, and lymphatic vessels. These anomalies can present at birth or develop later in life, affecting various parts of the body and potentially leading to functional and aesthetic concerns. At Sapiens Clinic in Malleshwaram, we offer comprehensive evaluation and individualized treatment plans for patients with vascular anomalies, aiming to restore function and improve quality of life.",
+            link: "vascular-anomalies",
+            seoLink: "vascular-anomalies-treatment-in-malleshwaram-bangalore"
+        },
+        {
+            name: "UCL injury",
+            image: assets.UCLinjury,
+            para: "Ulnar Collateral Ligament (UCL) injuries are prevalent among athletes engaged in overhead throwing activities, such as baseball, javelin, and tennis. These injuries can lead to elbow instability and pain, affecting performance and daily activities. At Sapiens Clinic in Malleshwaram, we provide comprehensive evaluation and personalized treatment plans to address UCL injuries effectively.",
+            link: "ucl-injury",
+            seoLink: "ucl-injury-treatment-in-malleshwaram-bangalore"
+        },
+        {
+            name: "Glomus tumors",
+            image: assets.GlomusTumorNail,
+            para: "Glomus tumors are rare, benign vascular neoplasms arising from the glomus body, a thermoregulatory shunt concentrated in the fingers and toes. These tumors most commonly occur under the fingernails (subungual region) and are characterized by severe pain, tenderness, and sensitivity to cold. At Sapiens Clinic in Malleshwaram, we offer comprehensive evaluation and personalized treatment plans for individuals presenting with glomus tumors, ensuring optimal functional and aesthetic outcomes.",
+            link: "glomus-tumors",
+            seoLink: "glomus-tumors-treatment-in-malleshwaram-bangalore"
+        },
+        {
+            name: "Giant cell tumor (GCT)",
+            image: assets.GaintCellTumor,
+            para: "Giant Cell Tumors (GCTs) are rare, typically benign bone tumors known for their aggressive local behavior. They predominantly affect young adults and can lead to significant bone destruction if not addressed promptly. At Sapiens Clinic in Malleshwaram, we specialize in the comprehensive evaluation and management of GCTs, aiming to preserve function and prevent recurrence.",
+            link: "giant-cell-tumor-gct",
+            seoLink: "giant-cell-tumor-gct-treatment-in-malleshwaram-bangalore"
+        },
+        {
+            name: "Tuberculosis",
+            image: assets.Tuberculosis,
+            para: "Tuberculosis (TB) of the hand is a rare manifestation of extrapulmonary TB, often presenting diagnostic challenges due to its nonspecific symptoms. At Sapiens Clinic in Malleshwaram, we specialize in the comprehensive evaluation and management of hand TB, aiming to restore function and prevent complications.",
+            link: "tuberculosis",
+            seoLink: "tuberculosis-treatment-in-malleshwaram-bangalore"
+        },
+        {
+            name: "Congenital anomalies",
+            image: assets.congenitalAnomalies,
+            para: "Congenital anomalies of the upper limb encompass a diverse group of conditions present at birth, affecting the hand, wrist and elbow. These anomalies can range from minor differences to significant malformations, impacting function and appearance. At Sapiens Clinic in Malleshwaram, we specialize in the comprehensive evaluation and management of these conditions, aiming to enhance functionality and quality of life for our patients.",
+            link: "congenital-anomalies",
+            seoLink: "congenital-anomalies-treatment-in-malleshwaram-bangalore"
+        }
     ]
 
     const elbow = [
+        // { 
+        //     name: "Fractures(Humerus/radius/ulna)", 
+        //     image: assets.egImage, 
+        //     para: "", 
+        //     link: "fractures-humerus-radius-ulna", 
+        //     seoLink: "fractures-humerus-radius-ulna-treatment-in-malleshwaram-bangalore" 
+        // },
         {
-            link: "",
-            text: "Fractures (Humerus/radius/ulna)",
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+            name: "Elbow replacement/ Elbow arthroplasty",
+            image: assets.ElbowReplacement,
+            para: "Elbow replacement, or elbow arthroplasty, is a surgical procedure to replace damaged parts of the elbow joint with artificial components. This intervention is considered when conservative treatments fail to alleviate severe elbow pain and dysfunction caused by conditions like arthritis, fractures, or other joint diseases. At Sapiens Clinic in Malleshwaram, we specialize in comprehensive evaluation and management of elbow conditions, aiming to restore function and improve quality of life for our patients.",
+            link: "elbow-replacement-elbow-arthroplasty",
+            seoLink: "elbow-replacement-arthroplasty-treatment-in-malleshwaram-bangalore"
         },
         {
-            link: "",
-            text: "Arthritis of elbow",
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+            name: "Elbow arthroscopy",
+            image: assets.ElbowArthroscopyth,
+            para: "Elbow arthroscopy is a minimally invasive surgical procedure that allows orthopedic surgeons to diagnose and treat various elbow joint conditions using small incisions and specialized instruments. At Sapiens Clinic in Malleshwaram, we offer advanced elbow arthroscopy techniques to address a range of elbow disorders, aiming to restore function and alleviate pain with reduced recovery times.",
+            link: "elbow-arthroscopy",
+            seoLink: "elbow-arthroscopy-treatment-in-malleshwaram-bangalore"
         },
         {
-            link: "",
-            text: "Elbow arthroscopy",
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+            name: "Synovitis of elbow",
+            image: assets.ElbowSynovitis,
+            para: "Synovitis of the elbow is a condition characterized by inflammation of the synovial membrane-the lining of the elbow joint. This inflammation can lead to pain, swelling, and reduced mobility, affecting daily activities. At Sapiens Clinic in Malleshwaram, we specialize in the comprehensive evaluation and management of elbow synovitis, aiming to restore function and improve quality of life for our patients.",
+            link: "synovitis-of-elbow",
+            seoLink: "synovitis-of-elbow-treatment-in-malleshwaram-bangalore"
         },
         {
-            link: "",
-            text: "Stiff elbow",
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: "",
-            text: "Synovitis of elbow",
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: "",
-            text: "Ligament repair or reconstruction of elbow",
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: "",
-            text: "Elbow replacement/ Elbow arthroplasty",
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
+            name: "Ligament repair or reconstruction of elbow",
+            image: assets.LigamentRepairorReconstruction,
+            para: "Elbow ligament injuries, particularly to the ulnar collateral ligament (UCL) can significantly impair arm function, especially in athletes and individuals engaged in repetitive arm movements. At Sapiens Clinic in Malleshwaram, we specialize in the diagnosis and treatment of elbow ligament injuries, offering both conservative and surgical options tailored to each patient's needs.",
+            link: "ligament-repair-or-reconstruction-of-elbow",
+            seoLink: "ligament-repair-or-reconstruction-of-elbow-treatment-in-malleshwaram-bangalore"
+        }
     ]
 
     const Shoulder = [
         {
-            link: "",
-            text: "Shoulder arthroscopy",
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+            name: "Shoulder arthroscopy",
+            image: assets.shoulderarthroscopy,
+            para: "Shoulder arthroscopy is a minimally invasive surgical procedure that allows orthopedic surgeons to diagnose and treat various shoulder joint conditions using small incisions and specialized instruments. At Sapiens Clinic in Malleshwaram, we offer advanced shoulder arthroscopy techniques to address a range of shoulder disorders, aiming to restore function and alleviate pain with reduced recovery times.",
+            link: "shoulder-arthroscopy",
+            seoLink: "shoulder-arthroscopy-treatment-in-malleshwaram-bangalore"
         },
         {
-            link: "",
-            text: "Shoulder replacement/ arthroplasty",
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+            name: "Shoulder replacement/ arthroplasty",
+            image: assets.ShoulderReplacementArthroplasty,
+            para: "Shoulder replacement, or shoulder arthroplasty, is a surgical procedure aimed at relieving pain and restoring function in severely damaged shoulder joints. At Sapiens Clinic in Malleshwaram, we offer advanced shoulder replacement options tailored to individual patient needs, ensuring optimal outcomes and improved quality of life.",
+            link: "shoulder-replacement-arthroplasty",
+            seoLink: "shoulder-replacement-arthroplasty-treatment-in-malleshwaram-bangalore"
         },
         {
-            link: "",
-            text: "Shoulder dislocation",
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+            name: "Rotator cuff tear",
+            image: assets.NormalRotatorCuffFront,
+            para: "A rotator cuff tear is a common shoulder injury that can cause pain, weakness, and limited mobility. At Sapiens Clinic in Malleshwaram, we specialize in diagnosing and treating rotator cuff tears, aiming to restore shoulder function and improve quality of life.",
+            link: "rotator-cuff-tear",
+            seoLink: "rotator-cuff-tear-treatment-in-malleshwaram-bangalore"
         },
         {
-            link: "",
-            text: "Shoulder instability",
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+            name: "Labral tear",
+            image: assets.AnatomyofLabralTear,
+            para: "A labral tear involves damage to the ring of cartilage (labrum) that surrounds the shoulder socket (glenoid) contributing to joint stability. At Sapiens Clinic in Malleshwaram, we specialize in diagnosing and treating labral tears, aiming to restore shoulder function and alleviate pain.",
+            link: "labral-tear",
+            seoLink: "labral-tear-treatment-in-malleshwaram-bangalore"
         },
         {
-            link: "",
-            text: "Rotator cuff tear",
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: "",
-            text: "Labral tear",
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: "",
-            text: "SLAP injuries",
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
+            name: "SLAP injuries",
+            image: assets.slapInjuries,
+            para: "A SLAP (Superior Labrum Anterior to Posterior) injury refers to a tear of the labrum, the ring of cartilage that surrounds the shoulder socket. This type of injury can cause pain, instability, and decreased range of motion in the shoulder. At Sapiens Clinic in Malleshwaram, we specialize in diagnosing and treating SLAP injuries to restore shoulder function and improve quality of life.",
+            link: "slap-injuries",
+            seoLink: "slap-injuries-treatment-in-malleshwaram-bangalore"
+        }
     ]
 
     const congenital = [
         {
-            link: "",
-            text: "Pollicization",
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+            name: "Pollicization",
+            image: assets.pollicization,
+            para: "Pollicization is a specialized surgical procedure designed to reconstruct a functional thumb by transforming an existing finger, typically the index finger, into a thumb. This surgery is crucial for individuals born without a thumb (congenital thumb aplasia) or those who have lost their thumb due to trauma. At Sapiens Clinic in Malleshwaram, we offer expert care in performing pollicization to restore hand function and enhance quality of life.",
+            link: "pollicization",
+            seoLink: "pollicization-treatment-in-malleshwaram-bangalore"
         },
         {
-            link: "",
-            text: "Syndactyly separation",
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+            name: "Malunion",
+            image: assets.MalunionFracture,
+            para: "Malunion refers to a condition where a fractured bone heals in an incorrect position, leading to deformity, functional impairment, and discomfort. At Sapiens Clinic in Malleshwaram, we specialize in diagnosing and treating malunions to restore proper alignment and function to the affected limb.",
+            link: "malunion",
+            seoLink: "malunion-treatment-in-malleshwaram-bangalore"
         },
         {
-            link: "",
-            text: "Malunion",
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+            name: "Tendon transfer",
+            image: assets.tendonTransfer,
+            para: "Tendon transfer surgery is a specialized procedure aimed at restoring lost muscle function by rerouting tendons from functioning muscles to compensate for paralyzed or damaged ones. At Sapiens Clinic in Malleshwaram, we offer expert care in performing tendon transfers to enhance mobility and improve quality of life for our patients.",
+            link: "tendon-transfer",
+            seoLink: "tendon-transfer-treatment-in-malleshwaram-bangalore"
         },
         {
-            link: "",
-            text: "Tendon transfer",
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+            name: "Synovectomy",
+            image: assets.synovectomy,
+            para: "Synovectomy is a surgical procedure aimed at removing inflamed synovial tissue from joints, commonly performed to alleviate pain and improve mobility in conditions like rheumatoid arthritis. At Sapiens Clinic in Malleshwaram, we specialize in both arthroscopic and open synovectomy techniques, tailored to each patient's specific needs.",
+            link: "synovectomy",
+            seoLink: "synovectomy-treatment-in-malleshwaram-bangalore"
         },
         {
-            link: "",
-            text: "Rheumatoid arthritis",
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: "",
-            text: "Synovectomy",
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: "",
-            text: "Nonunion",
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: "",
-            text: "Work related upper limb disorders (WRULD).",
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
+            name: "Nonunion",
+            image: assets.NonUnion,
+            para: "Nonunion refers to a fracture that fails to heal within the expected timeframe, leading to persistent pain, instability, and functional limitations. At Sapiens Clinic in Malleshwaram, we specialize in diagnosing and treating nonunion fractures, aiming to restore bone integrity and improve patient outcomes.",
+            link: "nonunion",
+            seoLink: "nonunion-treatment-in-malleshwaram-bangalore"
+        }
     ]
 
     const nerve = [
         {
-            link: "",
-            text: "Nerve repair",
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+            name: "Nerve repair",
+            image: assets.NerveRepair,
+            para: "Work-Related Upper Limb Disorders (WRULD) encompass a range of musculoskeletal conditions affecting the shoulders, arms, wrists, and hands, often resulting from repetitive tasks, sustained postures, or excessive force in occupational settings. At Sapiens Clinic in Malleshwaram, we specialize in the diagnosis, treatment, and prevention of WRULD, aiming to alleviate symptoms and enhance workplace well-being.",
+            link: "nerve-repair",
+            seoLink: "nerve-repair-treatment-in-malleshwaram-bangalore"
         },
         {
-            link: "",
-            text: "Nerve reconstruction",
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+            name: "Nerve reconstruction",
+            image: assets.NerveReconstruction,
+            para: "Nerve reconstruction surgery is a specialized procedure aimed at repairing damaged nerves to restore function and alleviate pain. At Sapiens Clinic in Malleshwaram, we offer advanced surgical techniques tailored to each patient's needs, ensuring optimal recovery and improved quality of life.",
+            link: "nerve-reconstruction",
+            seoLink: "nerve-reconstruction-treatment-in-malleshwaram-bangalore"
         },
         {
-            link: "",
-            text: "Brachial plexus injury ",
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+            name: "Nerve related problems affecting the hand, brachial plexus injuries, nerve injuries",
+            image: assets.egImage,
+            para: "Nerve-related issues in the upper limb, encompassing conditions like brachial plexus injuries and peripheral nerve injuries, can significantly impair hand and arm function. At Sapiens Clinic in Malleshwaram, we specialize in diagnosing and treating these complex conditions, aiming to restore mobility, reduce pain, and enhance quality of life.",
+            link: "nerve-related-problems-affecting-the-hand-brachial-plexus-injuries-nerve-injuries",
+            seoLink: "nerve-related-problems-hand-treatment-in-malleshwaram-bangalore"
         },
         {
-            link: "",
-            text: "Radial, ulnar, median nerve palsy",
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+            name: "Birth related Brachial plexus",
+            image: assets.BirthRelatedBrachialPlexus,
+            para: "Birth-related brachial plexus injuries (BRBPI) occur when the network of nerves transmitting signals from the spinal cord to the shoulder, arm, and hand is damaged during childbirth. At Sapiens Clinic in Malleshwaram, we specialize in diagnosing and treating BRBPI, aiming to restore function and improve quality of life for affected infants.",
+            link: "birth-related-brachial-plexus",
+            seoLink: "birth-related-brachial-plexus-treatment-in-malleshwaram-bangalore"
         },
         {
-            link: "",
-            text: "Cerebral palsy",
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: "",
-            text: "Spastic or deformity of upper limb",
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: "",
-            text: "Spastic or deformity of upper limb",
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: "",
-            text: "Nerve related problems affecting the hand, brachial plexus injuries, nerve injuries",
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
+            name: "Cerebral palsy",
+            image: assets.CerebralPalsy,
+            para: "Cerebral palsy (CP) encompasses a group of neurological disorders that affect movement, muscle tone and posture, resulting from damage to the developing brain, often before birth. At Sapiens Clinic in Malleshwaram, we specialize in diagnosing and managing CP, aiming to enhance mobility, independence and quality of life for individuals affected by this condition.",
+            link: "cerebral-palsy",
+            seoLink: "cerebral-palsy-treatment-in-malleshwaram-bangalore"
+        }
     ]
 
     const reconstructive = [
         {
-            link: "",
-            text: "Flaps cover to upper or lower limbs",
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+            name: "Flaps cover to upper or lower limbs",
+            image: assets.FlapsCoverToUpperOrLowerLimbs,
+            para: "Flap coverage is a critical surgical technique employed to restore form and function in limbs affected by trauma, infection, tumors, or congenital anomalies. At Sapiens Clinic in Malleshwaram, we specialize in advanced flap reconstruction procedures for both upper and lower limbs, aiming to preserve limbs, enhance mobility and improve quality of life.",
+            link: "flaps-cover-to-upper-or-lower-limbs",
+            seoLink: "flaps-cover-upper-lower-limbs-treatment-in-malleshwaram-bangalore"
         },
         {
-            link: "",
-            text: "VIC (Volkman’s Ischemic Contracture)",
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+            name: "Vascularized bone grafts for non-unions",
+            image: assets.VascularisedFreeFibula,
+            para: "Flap coverage is a critical surgical technique employed to restore form and function in limbs affected by trauma, infection, tumors, or congenital anomalies. At Sapiens Clinic in Malleshwaram, we specialize in advanced flap reconstruction procedures for both upper and lower limbs, aiming to preserve limbs, enhance mobility and improve quality of life.",
+            link: "vascularized-bone-grafts-for-non-unions",
+            seoLink: "vascularized-bone-grafts-non-unions-treatment-in-malleshwaram-bangalore"
         },
         {
-            link: "",
-            text: "Vascularized bone grafts for non-unions",
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+            name: "Free flaps",
+            image: assets.FreeFlab,
+            para: "Free flap reconstruction is an advanced microsurgical technique used to restore form and function in areas affected by trauma, cancer resection, or congenital anomalies. At Sapiens Clinic in Malleshwaram, we specialize in this intricate procedure, aiming to achieve optimal aesthetic and functional outcomes for our patients.",
+            link: "free-flaps",
+            seoLink: "free-flaps-treatment-in-malleshwaram-bangalore"
         },
         {
-            link: "",
-            text: "Free flaps",
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+            name: "Vascularised free fibula",
+            image: assets.VascularisedFreeFibula,
+            para: "The vascularized free fibula graft (VFFG) is a sophisticated microsurgical technique employed to reconstruct extensive bone defects resulting from trauma, tumor resection, or congenital anomalies. At Sapiens Clinic in Malleshwaram, we specialize in this advanced procedure, aiming to restore skeletal integrity and function in complex cases.",
+            link: "vascularised-free-fibula",
+            seoLink: "vascularised-free-fibula-treatment-in-malleshwaram-bangalore"
         },
         {
-            link: "",
-            text: "Reconstruction for the limbs",
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+            name: "Complex reconstruction requiring both soft tissue and bone",
+            image: assets.ComplexReconstructionRequiringBothSoftTissueAndBone,
+            para: "Complex reconstruction involving both soft tissue and bone is a specialized surgical approach aimed at restoring form and function in patients with extensive injuries, tumor resections, or congenital anomalies. At Sapiens Clinic in Malleshwaram, we offer advanced reconstructive procedures tailored to address these multifaceted challenges, ensuring optimal outcomes for our patients.",
+            link: "complex-reconstruction-requiring-both-soft-tissue-and-bone",
+            seoLink: "complex-reconstruction-soft-tissue-bone-treatment-in-malleshwaram-bangalore"
         },
         {
-            link: "",
-            text: "Toe transfers",
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
+            name: "VIC (Volkman’s Ischemic Contracture)",
+            image: assets.VOLKMANNSISCHEMICCONTRACture,
+            para: "Volkmann’s Ischemic Contracture (VIC) is a serious medical condition characterized by a permanent flexion deformity of the hand and wrist, resulting from prolonged muscle and nerve ischemia in the forearm. At Sapiens Clinic in Malleshwaram, we specialize in the diagnosis, management, and surgical correction of VIC, aiming to restore function and improve the quality of life for our patients.",
+            link: "vic-volkmans-ischemic-contracture",
+            seoLink: "vic-volkmans-ischemic-contracture-treatment-in-malleshwaram-bangalore"
         },
         {
-            link: "",
-            text: "Vascularised free fibula",
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: "",
-            text: "Joint transfers",
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: "",
-            text: "Complex reconstruction requiring both soft tissue and bone",
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
-        {
-            link: "",
-            text: "Tendon transfers",
-            img: assets.egImage,
-            txt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur natus in atque, non magnam inventore, ratione quo veritatis veniam suscipit rerum reiciendis itaque exercitationem neque blanditiis hic vero aliquam."
-        },
+            name: "Reconstruction for the limbs",
+            image: assets.LimbReconstruction,
+            para: "Limb reconstruction surgery is a specialized field aimed at restoring the form and function of limbs affected by trauma, congenital anomalies, infections, or tumors. At Sapiens Clinic in Malleshwaram, we offer advanced reconstructive procedures tailored to address complex limb deformities, ensuring optimal outcomes for our patients.",
+            link: "reconstruction-for-the-limbs",
+            seoLink: "reconstruction-for-the-limbs-treatment-in-malleshwaram-bangalore"
+        }
     ]
 
     const publications = [
@@ -699,17 +809,17 @@ const DrDarshan = () => {
                                 upperLimbSurgery.map((surgery, index) => (
                                     <Link to={surgery.link} className={`group relative w-[100%] md:w-[45%] lg:w-[30%] flex items-center gap-3 mt-5 bg-[#D9D9D9] p-2 rounded-2xl hover:bg-[#FFE7BB] cursor-pointer transition-all duration-500`} key={index} >
 
-                                        <div className='relative'>
-                                            <img src={surgery.img} className='w-full' alt="" />
-                                            <div className='absolute top-[79.5%] right-0 bg-[#D9D9D9] text-[30px] w-[40px] h-[40px] rounded-full flex justify-center items-center group-hover:bg-[#FFE7BB] transition-transform duration-500'>
+                                        <div className='relative w-[200px]'>
+                                            <img src={surgery.image} className='w-[200px] h-[130px] rounded-[10px] object-cover' alt="" />
+                                            <div className='absolute top-[79.5%] right-0 bg-[#D9D9D9] text-[30px] w-[35px] h-[35px] rounded-full flex justify-center items-center group-hover:bg-[#FFE7BB] transition-transform duration-500'>
                                                 <FaArrowRight className='w-[20px] h-[20px] rotate-[-45deg] text-[#EF7F1A] group-hover:rotate-0 transition-transform duration-500' />
                                             </div>
                                         </div>
 
                                         <div className='mt-1'>
-                                            <div className='text-[16px] text-[#B22726] font-[700] font-para'>{surgery.text}</div>
+                                            <div className='text-[16px] text-[#B22726] font-[700] font-para'>{surgery.name}</div>
                                             <div className='text-[14px] font-[500] font-para'>
-                                                {surgery.txt.length > 100 ? `${surgery.txt.substring(0, 100)}...` : `surgery.txt`}
+                                                {surgery.para.length > 100 ? `${surgery.para.substring(0, 100)}...` : ``}
                                             </div>
                                         </div>
 
@@ -736,7 +846,7 @@ const DrDarshan = () => {
                             elbow.map((surgery, index) => (
                                 <div className="flex items-center gap-3 mt-5" key={index}>
                                     <img src={assets.handDrag} className='w-[24px] h-[24px] lg:w-[30px] lg:h-[30px]' alt="" />
-                                    <div className="text-[12px] lg:text-[16px] font-text font-[700]">{surgery.text}</div>
+                                    <div className="text-[12px] lg:text-[16px] font-text font-[700]">{surgery.name}</div>
                                 </div>
                             ))
                         }
@@ -751,7 +861,7 @@ const DrDarshan = () => {
                             Shoulder.map((surgery, index) => (
                                 <div className="flex items-center gap-3 mt-5" key={index}>
                                     <img src={assets.handDrag} className='w-[24px] h-[24px] lg:w-[30px] lg:h-[30px]' alt="" />
-                                    <div className="text-[12px] lg:text-[16px] font-text font-[700]">{surgery.text}</div>
+                                    <div className="text-[12px] lg:text-[16px] font-text font-[700]">{surgery.name}</div>
                                 </div>
                             ))
                         }
@@ -766,7 +876,7 @@ const DrDarshan = () => {
                             congenital.map((surgery, index) => (
                                 <div className="flex items-center gap-3 mt-5" key={index}>
                                     <img src={assets.handDrag} className='w-[24px] h-[24px] lg:w-[30px] lg:h-[30px]' alt="" />
-                                    <div className="text-[12px] lg:text-[16px] font-text font-[700]">{surgery.text}</div>
+                                    <div className="text-[12px] lg:text-[16px] font-text font-[700]">{surgery.name}</div>
                                 </div>
                             ))
                         }
@@ -785,26 +895,26 @@ const DrDarshan = () => {
                     <div className='realtive flex flex-wrap justify-center gap-5'>
                         {
                             elbow.map((surgery, index) => (
-                                <div className={`group relative w-[100%] md:w-[45%] lg:w-[30%] flex items-center gap-3 mt-5 bg-[#D9D9D9] p-2 rounded-2xl hover:bg-[#FFE7BB] cursor-pointer transition-all duration-500`} key={index} >
+                                <Link to={surgery.link} className={`group relative w-[100%] md:w-[45%] lg:w-[30%] flex items-center gap-3 mt-5 bg-[#D9D9D9] p-2 rounded-2xl hover:bg-[#FFE7BB] cursor-pointer transition-all duration-500`} key={index} >
 
-                                    <div className='relative'>
-                                        <img src={surgery.img} className='w-full' alt="" />
-                                        <div className='absolute top-[79.5%] right-0 bg-[#D9D9D9] text-[30px] w-[40px] h-[40px] rounded-full flex justify-center items-center group-hover:bg-[#FFE7BB] transition-transform duration-500'>
+                                    <div className='relative w-[200px]'>
+                                        <img src={surgery.image} className='w-[200px] h-[130px] rounded-[10px] object-cover' alt="" />
+                                        <div className='absolute top-[79.5%] right-0 bg-[#D9D9D9] text-[30px] w-[35px] h-[35px] rounded-full flex justify-center items-center group-hover:bg-[#FFE7BB] transition-transform duration-500'>
                                             <FaArrowRight className='w-[20px] h-[20px] rotate-[-45deg] text-[#EF7F1A] group-hover:rotate-0 transition-transform duration-500' />
                                         </div>
                                     </div>
 
                                     <div className='mt-1'>
-                                        <div className='text-[16px] text-[#B22726] font-[700] font-para'>{surgery.text}</div>
+                                        <div className='text-[16px] text-[#B22726] font-[700] font-para'>{surgery.name}</div>
                                         <div className='text-[14px] font-[500] font-para'>
-                                            {surgery.txt.length > 110 ? `${surgery.txt.substring(0, 110)}...` : `surgery.txt`}
+                                            {surgery.para.length > 110 ? `${surgery.para.substring(0, 110)}...` : `surgery.para`}
                                         </div>
                                     </div>
 
                                     {/* <div className='absolute bottom-12 w-full'>
                                             
                                         </div> */}
-                                </div>
+                                </Link>
                             ))
                         }
                     </div>
@@ -822,26 +932,26 @@ const DrDarshan = () => {
                     <div className='realtive flex flex-wrap justify-center gap-5'>
                         {
                             Shoulder.map((surgery, index) => (
-                                <div className={`group relative w-[100%] md:w-[45%] lg:w-[30%] flex items-center gap-3 mt-5 bg-[#D9D9D9] p-2 rounded-2xl hover:bg-[#FFE7BB] cursor-pointer transition-all duration-500`} key={index} >
+                                <Link to={surgery.link} className={`group relative w-[100%] md:w-[45%] lg:w-[30%] flex items-center gap-3 mt-5 bg-[#D9D9D9] p-2 rounded-2xl hover:bg-[#FFE7BB] cursor-pointer transition-all duration-500`} key={index} >
 
-                                    <div className='relative'>
-                                        <img src={surgery.img} className='w-full' alt="" />
-                                        <div className='absolute top-[79.5%] right-0 bg-[#D9D9D9] text-[30px] w-[40px] h-[40px] rounded-full flex justify-center items-center group-hover:bg-[#FFE7BB] transition-transform duration-500'>
+                                    <div className='relative w-[200px]'>
+                                        <img src={surgery.image} className='w-[200px] h-[130px] rounded-[10px] object-cover' alt="" />
+                                        <div className='absolute top-[79.5%] right-0 bg-[#D9D9D9] text-[30px] w-[35px] h-[35px] rounded-full flex justify-center items-center group-hover:bg-[#FFE7BB] transition-transform duration-500'>
                                             <FaArrowRight className='w-[20px] h-[20px] rotate-[-45deg] text-[#EF7F1A] group-hover:rotate-0 transition-transform duration-500' />
                                         </div>
                                     </div>
 
                                     <div className='mt-1'>
-                                        <div className='text-[16px] text-[#B22726] font-[700] font-para'>{surgery.text}</div>
+                                        <div className='text-[16px] text-[#B22726] font-[700] font-para'>{surgery.name}</div>
                                         <div className='text-[14px] font-[500] font-para'>
-                                            {surgery.txt.length > 110 ? `${surgery.txt.substring(0, 110)}...` : `surgery.txt`}
+                                            {surgery.para.length > 110 ? `${surgery.para.substring(0, 110)}...` : `surgery.para`}
                                         </div>
                                     </div>
 
                                     {/* <div className='absolute bottom-12 w-full'>
                                             
                                         </div> */}
-                                </div>
+                                </Link>
                             ))
                         }
                     </div>
@@ -857,26 +967,26 @@ const DrDarshan = () => {
                     <div className='realtive flex flex-wrap justify-center gap-5'>
                         {
                             congenital.map((surgery, index) => (
-                                <div className={`group relative w-[100%] md:w-[45%] lg:w-[30%] flex items-center gap-3 mt-5 bg-[#D9D9D9] p-2 rounded-2xl hover:bg-[#FFE7BB] cursor-pointer transition-all duration-500`} key={index} >
+                                <Link to={surgery.link} className={`group relative w-[100%] md:w-[45%] lg:w-[30%] flex items-center gap-3 mt-5 bg-[#D9D9D9] p-2 rounded-2xl hover:bg-[#FFE7BB] cursor-pointer transition-all duration-500`} key={index} >
 
-                                    <div className='relative'>
-                                        <img src={surgery.img} className='w-full' alt="" />
-                                        <div className='absolute top-[79.5%] right-0 bg-[#D9D9D9] text-[30px] w-[40px] h-[40px] rounded-full flex justify-center items-center group-hover:bg-[#FFE7BB] transition-transform duration-500'>
+                                    <div className='relative w-[200px]'>
+                                        <img src={surgery.image} className='w-[200px] h-[130px] rounded-[10px] object-cover' alt="" />
+                                        <div className='absolute top-[79.5%] right-0 bg-[#D9D9D9] text-[30px] w-[35px] h-[35px] rounded-full flex justify-center items-center group-hover:bg-[#FFE7BB] transition-transform duration-500'>
                                             <FaArrowRight className='w-[20px] h-[20px] rotate-[-45deg] text-[#EF7F1A] group-hover:rotate-0 transition-transform duration-500' />
                                         </div>
                                     </div>
 
                                     <div className='mt-1'>
-                                        <div className='text-[16px] text-[#B22726] font-[700] font-para'>{surgery.text}</div>
+                                        <div className='text-[16px] text-[#B22726] font-[700] font-para'>{surgery.name}</div>
                                         <div className='text-[14px] font-[500] font-para'>
-                                            {surgery.txt.length > 110 ? `${surgery.txt.substring(0, 110)}...` : `surgery.txt`}
+                                            {surgery.para.length > 110 ? `${surgery.para.substring(0, 110)}...` : `surgery.para`}
                                         </div>
                                     </div>
 
                                     {/* <div className='absolute bottom-12 w-full'>
                                             
                                         </div> */}
-                                </div>
+                                </Link>
                             ))
                         }
                     </div>
@@ -894,26 +1004,26 @@ const DrDarshan = () => {
                     <div className='realtive flex flex-wrap justify-center gap-5'>
                         {
                             nerve.map((surgery, index) => (
-                                <div className={`group relative w-[100%] md:w-[45%] lg:w-[30%] flex items-center gap-3 mt-5 bg-[#D9D9D9] p-2 rounded-2xl hover:bg-[#FFE7BB] cursor-pointer transition-all duration-500`} key={index} >
+                                <Link to={surgery.link} className={`group relative w-[100%] md:w-[45%] lg:w-[30%] flex items-center gap-3 mt-5 bg-[#D9D9D9] p-2 rounded-2xl hover:bg-[#FFE7BB] cursor-pointer transition-all duration-500`} key={index} >
 
-                                    <div className='relative'>
-                                        <img src={surgery.img} className='w-full' alt="" />
-                                        <div className='absolute top-[79.5%] right-0 bg-[#D9D9D9] text-[30px] w-[40px] h-[40px] rounded-full flex justify-center items-center group-hover:bg-[#FFE7BB] transition-transform duration-500'>
+                                    <div className='relative w-[200px]'>
+                                        <img src={surgery.image} className='w-[200px] h-[130px] rounded-[10px] object-cover' alt="" />
+                                        <div className='absolute top-[79.5%] right-0 bg-[#D9D9D9] text-[30px] w-[35px] h-[35px] rounded-full flex justify-center items-center group-hover:bg-[#FFE7BB] transition-transform duration-500'>
                                             <FaArrowRight className='w-[20px] h-[20px] rotate-[-45deg] text-[#EF7F1A] group-hover:rotate-0 transition-transform duration-500' />
                                         </div>
                                     </div>
 
                                     <div className='mt-1'>
-                                        <div className='text-[16px] text-[#B22726] font-[700] font-para'>{surgery.text}</div>
+                                        <div className='text-[16px] text-[#B22726] font-[700] font-para'>{surgery.name}</div>
                                         <div className='text-[14px] font-[500] font-para'>
-                                            {surgery.txt.length > 110 ? `${surgery.txt.substring(0, 110)}...` : `surgery.txt`}
+                                            {surgery.para.length > 110 ? `${surgery.para.substring(0, 110)}...` : `surgery.para`}
                                         </div>
                                     </div>
 
                                     {/* <div className='absolute bottom-12 w-full'>
                                             
                                         </div> */}
-                                </div>
+                                </Link>
                             ))
                         }
                     </div>
@@ -931,26 +1041,26 @@ const DrDarshan = () => {
                     <div className='realtive flex flex-wrap justify-center gap-5'>
                         {
                             reconstructive.map((surgery, index) => (
-                                <div className={`group relative w-[100%] md:w-[45%] lg:w-[30%] flex items-center gap-3 mt-5 bg-[#D9D9D9] p-2 rounded-2xl hover:bg-[#FFE7BB] cursor-pointer transition-all duration-500`} key={index} >
+                                <Link to={surgery.link} className={`group relative w-[100%] md:w-[45%] lg:w-[30%] flex items-center gap-3 mt-5 bg-[#D9D9D9] p-2 rounded-2xl hover:bg-[#FFE7BB] cursor-pointer transition-all duration-500`} key={index} >
 
-                                    <div className='relative'>
-                                        <img src={surgery.img} className='w-full' alt="" />
-                                        <div className='absolute top-[79.5%] right-0 bg-[#D9D9D9] text-[30px] w-[40px] h-[40px] rounded-full flex justify-center items-center group-hover:bg-[#FFE7BB] transition-transform duration-500'>
+                                    <div className='relative w-[200px]'>
+                                        <img src={surgery.image} className='w-[200px] h-[130px] rounded-[10px] object-cover' alt="" />
+                                        <div className='absolute top-[79.5%] right-0 bg-[#D9D9D9] text-[30px] w-[35px] h-[35px] rounded-full flex justify-center items-center group-hover:bg-[#FFE7BB] transition-transform duration-500'>
                                             <FaArrowRight className='w-[20px] h-[20px] rotate-[-45deg] text-[#EF7F1A] group-hover:rotate-0 transition-transform duration-500' />
                                         </div>
                                     </div>
 
                                     <div className='mt-1'>
-                                        <div className='text-[16px] text-[#B22726] font-[700] font-para'>{surgery.text}</div>
+                                        <div className='text-[16px] text-[#B22726] font-[700] font-para'>{surgery.name}</div>
                                         <div className='text-[14px] font-[500] font-para'>
-                                            {surgery.txt.length > 100 ? `${surgery.txt.substring(0, 110)}...` : `surgery.txt`}
+                                            {surgery.para.length > 100 ? `${surgery.para.substring(0, 110)}...` : `surgery.para`}
                                         </div>
                                     </div>
 
                                     {/* <div className='absolute bottom-12 w-full'>
                                             
                                         </div> */}
-                                </div>
+                                </Link>
                             ))
                         }
                     </div>
@@ -958,7 +1068,7 @@ const DrDarshan = () => {
             </div>
 
             {/* container 8 */}
-            
+
             <div className='p-10 md:p-20 mt-10 bg-[#B6FEB433]'>
                 <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient">
                     Publications:
@@ -996,7 +1106,7 @@ const DrDarshan = () => {
 
                         <div className='flex gap-3 items-start mt-4'>
                             <img src={assets.locationSvg} alt="" />
-                            <div>   
+                            <div>
                                 <div className='font-heading text-[16px] font-[700] text-white lg:text-[22px]'>Apollo Spectra - Koramangala</div>
                                 <div className='font-para text-[14px] font-[600] text-white mt-1 lg:text-[16px]'>Wednesday and Saturday, 10:00 AM to 1:00 PM</div>
                             </div>
@@ -1012,8 +1122,8 @@ const DrDarshan = () => {
                     </div>
                 </div>
             </div>
-            
-            
+
+
             <div className='p-5 lg:px-25 mt-10'>
                 <div
                     dangerouslySetInnerHTML={{
@@ -1044,13 +1154,13 @@ const DrDarshan = () => {
                                 style={{ background: prof.bgColor }}
                             >
                                 <img src={prof.img} className='w-[124px] h-auto' alt={prof.text} />
-                                <div className='text-center text-black font-[700]'>{prof.text}</div>
+                                <div className='text-center text-black font-[700]'>{prof.name}</div>
                             </div>
                         ))}
                     </div>
                 </div>
             </div>
-            {/* <img src={surgery.img} className='w-full' alt="" /> */}
+            {/* <img src={surgery.image} className='w-full' alt="" /> */}
             <Outlet />
         </PageTransition>
     )

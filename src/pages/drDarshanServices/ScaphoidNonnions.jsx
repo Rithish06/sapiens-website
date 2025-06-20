@@ -1,12 +1,40 @@
 import React from 'react'
+import Servicesbanner from '../../components/services-banner/Servicesbanner'
+import ContactPage from '../services/ContactPage/ContactPage'
+import Faqs from '../../components/faqs/faqs'
 
 const ScaphoidNonnions = () => {
+
+    const faqs = [
+        {
+            ques: "What causes a scaphoid fracture to not heal properly?",
+            ans: "Factors include delayed diagnosis, inadequate immobilization, poor blood supply to the bone and lifestyle habits like smoking."
+        },
+        {
+            ques: "How is scaphoid nonunion diagnosed?",
+            ans: "Through physical examination and imaging tests like X-rays, MRI, or CT scans to assess bone alignment and health."
+        },
+        {
+            ques: "Is surgery always required for scaphoid nonunion?",
+            ans: "Not always. Early-stage nonunions might respond to non-surgical treatments, but advanced cases often require surgical intervention."
+        },
+        {
+            ques: "What is the recovery time after surgery for scaphoid nonunion?",
+            ans: "Recovery varies but typically ranges from 3 to 6 months, including rehabilitation."
+        },
+        {
+            ques: "Can scaphoid nonunion lead to arthritis?",
+            ans: "Yes, untreated nonunion can result in wrist arthritis due to joint instability and abnormal movement."
+        }
+    ];
+
+
     return (
         <div>
+
+            <Servicesbanner serviceName="Scaphoid Nonunion" />
+
             <div class="px-8 lg:px-20 mt-8">
-                <div class="text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]">
-                    Scaphoid Nonunion Treatment in Malleshwaram
-                </div>
                 <div class="flex flex-col lg:flex-row gap-[20px] lg:gap-[50px]">
                     <div>
                         <div class="font-para text-[12px] lg:text-[16px] leading-[26px] mt-4">
@@ -127,6 +155,13 @@ const ScaphoidNonnions = () => {
                 <div class="font-para text-[12px] lg:text-[16px] leading-[26px] mt-4">
                     Early detection and appropriate management of scaphoid fractures are crucial to prevent nonunion and its associated complications. If you're experiencing persistent wrist pain or have concerns about a previous injury, consult <strong>Dr. Darshan Kumar A. Jain</strong>, Orthopedic Specialist at Sapiens Clinic, Malleshwaram, for a comprehensive evaluation and personalized treatment plan.
                 </div>
+            </div>
+
+            <ContactPage />
+
+
+            <div className='mt-15'>
+                <Faqs faqs={faqs} />
             </div>
         </div>
     )

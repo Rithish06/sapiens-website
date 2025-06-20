@@ -36,7 +36,7 @@ const Malunion = () => {
 
   return (
     <div className="min-h-[100vh]">
-      <div className="relative">{/* <Servicesbanner /> */}</div>
+      <div className="relative"><Servicesbanner serviceName = "Malunion: Diagnosis and" /></div>
 
       <div className="px-8 lg:px-20 mt-8">
         <div className="text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px] text-center ">
@@ -291,7 +291,7 @@ const Malunion = () => {
         </div>
       </div>
       <div>
-        <ContactPage contacts={contact[0]} />
+        <ContactPage />
       </div>
       <div>
         <Faqs faqs={faqs} />

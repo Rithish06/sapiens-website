@@ -1,6 +1,7 @@
 import React from 'react'
 import Servicesbanner from '../../components/services-banner/Servicesbanner'
 import Faqs from '../../components/faqs/faqs';
+import ContactPage from '../services/ContactPage/ContactPage';
 
 const RadialFractures = () => {
         const faqs = [
@@ -155,7 +156,11 @@ const RadialFractures = () => {
                 </div>
             </div>
 
-            <Faqs faqs = {faqs} />
+            <ContactPage />
+
+            <div className="mt-15">
+                <Faqs faqs = {faqs} />
+            </div>
         </div>
     )
 }

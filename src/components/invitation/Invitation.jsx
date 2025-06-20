@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 
 const Invitation = (props) => {
     return (
-        <div className= 'border-t-[3px] border-b-[3px] border-zinc-600 mt-20' style={{background: props.bg}}>
-            
+        <div className='border-t-[3px] border-b-[3px] border-zinc-600 mt-20' style={{ background: props.bg }}>
+
             < div className='realtive overflow-hidden py-8' >
                 <div className='w-full flex flex-col justify-between h-[1100px] md:h-[900px]'>
                     {/* <div className='realtive rounded-full w-[300px] h-[300px] bg-[#DFF7EA] -mt-10 -ml-20'></div>
@@ -19,22 +19,26 @@ const Invitation = (props) => {
                     <div className='font-[700] text-[18px] font-para mt-3 lg:text-[22px]'>for</div>
                     <div className='font-[700] text-[18px] font-para text-center mt-3 lg:text-[22px]'>Fellowship in Hand Surgery & Upper limb Surgery <br />(2025-2026)</div>
 
-                    <table className='mt-5 text-[12px] font-[700] lg:text-[25px] font-para'>
-                        <tr className='mt-3'>
-                            <td>Course Co-Ordinator</td>
-                            <td className='px-1'>:</td>
-                            <td className='text-[#001581] cursor-pointer'><Link to="/dr-divya-sundaresh">Dr Darshan Kumar A. Jain</Link></td>
-                        </tr>
-                        <tr className='mt-3'>
-                            <td>Location</td>
-                            <td className='px-1'>:</td>
-                            <td>Bangalore</td>
-                        </tr>
-                        <tr className='mt-3'>
-                            <td>Eligibility</td>
-                            <td className='px-1'>:</td>
-                            <td>MS/DNB Orthopaedic</td>
-                        </tr>
+                    <table className='mt-5 text-[12px] font-[700] lg:text-[25px] font-para border-none outline-none' style={{ border: 'none', borderCollapse: 'collapse', cellPadding: "10px" }}>
+                        <tbody>
+                            <tr className='mt-3 border-none'>
+                                <td className=''>Course Co-Ordinator</td>
+                                <td className='px-2 border-none'>:</td>
+                                <td className='text-[#001581] cursor-pointer border-none pl-1'>
+                                    <Link to="/dr-darshan">Dr Darshan Kumar A. Jain</Link>
+                                </td>
+                            </tr>
+                            <tr className='mt-3 border-none'>
+                                <td className='border-none'>Location</td>
+                                <td className='px-2 border-none'>:</td>
+                                <td className='border-none pl-1'>Bangalore</td>
+                            </tr>
+                            <tr className='mt-3 border-none'>
+                                <td className='border-none'>Eligibility</td>
+                                <td className='px-2 border-none'>:</td>
+                                <td className='border-none pl-1'>MS/DNB Orthopaedic</td>
+                            </tr>
+                        </tbody>
                     </table>
 
                     <div className='mt-5 text-[12px] font-[700] text-center font-para lg:text-[25px]'>With an inclination to deliver best patient care and publishing articles.</div>
@@ -69,12 +73,16 @@ const Invitation = (props) => {
                             <div className='text-[12px] font-para mt-2 font-[600] lg:text-[16px]'><span className='font-[700]'>Course starts on:</span> 1st August 2025</div>
                             <div className='text-[12px] font-para mt-2 font-[600] lg:text-[16px]'>Send in your applications with CV to jaindarshan81@gmail.com<br /> with subject as: <span className='font-[700]'>"Hand surgery fellowship application 2025-2026"</span></div>
                             <div className='text-[12px] font-para mt-3 font-[600] lg:text-[16px]'>Contact Secretary: 7892556378</div>
-
-                            
                         </div>
                     </div>
                 </div>
             </div >
+
+            <div className='flex justify-center my-5'>
+                <Link to="/contact" className="w-64 h-12 px-5 py-3.5 bg-orange-500 rounded-lg inline-flex justify-center items-center cursor-pointer gap-2.5">
+                    <div className="justify-start text-white text-sm font-extrabold font-['Montserrat']">Apply Now</div>
+                </Link>
+            </div>
         </div>
     )
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import Faqs from '../../components/faqs/faqs'
 import Servicesbanner from '../../components/services-banner/Servicesbanner'
+import ContactPage from '../services/ContactPage/ContactPage'
 
 const ScaphoidFractures = () => {
 
@@ -173,6 +174,8 @@ const ScaphoidFractures = () => {
                     </div>
                 </div>
             </div>
+
+            <ContactPage />
 
             <div className="mt-15">
                 <Faqs faqs = {faqs} />
