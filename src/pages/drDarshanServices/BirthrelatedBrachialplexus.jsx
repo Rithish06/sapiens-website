@@ -39,10 +39,10 @@ const BirthrelatedBrachialplexus = () => {
                 </div> */}
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Birth-related brachial plexus injuries (BRBPI) occur when the network of nerves transmitting signals from the spinal cord to the shoulder, arm, and hand is damaged during childbirth. At Sapiens Clinic in Malleshwaram, we specialize in diagnosing and treating BRBPI, aiming to restore function and improve quality of life for affected infants.
                         </div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             The brachial plexus is a bundle of nerves originating from the spinal cord in the neck, extending through the shoulder to the arm and hand. Injuries during birth can result from stretching, compression, or tearing of these nerves, leading to varying degrees of motor and sensory deficits.
                         </div>
 
@@ -139,7 +139,7 @@ const BirthrelatedBrachialplexus = () => {
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Birth-related brachial plexus injuries can significantly impact an infant's development and quality of life. At Sapiens Clinic, Malleshwaram, our multidisciplinary team is dedicated to providing comprehensive care, from accurate diagnosis to personalized treatment plans, ensuring optimal recovery and prevention of future complications.
                         </div>
                     </div>

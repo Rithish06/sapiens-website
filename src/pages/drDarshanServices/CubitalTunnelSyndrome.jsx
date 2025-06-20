@@ -33,7 +33,7 @@ const CubitalTunnelSyndrome = () => {
         <div>
             <Servicesbanner serviceName="Cubital Tunnel Syndrome" />
             <div className='px-8 lg:px-20 mt-8'>
-                <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                     Cubital Tunnel Syndrome is a condition characterized by compression or irritation of the ulnar nerve as it passes through the cubital tunnel on the inside of the elbow. This compression can lead to numbness, tingling, and pain in the forearm and hand, particularly affecting the ring and little fingers. At Sapiens Clinic in Malleshwaram, we specialize in the diagnosis and treatment of Cubital Tunnel Syndrome, offering both non-surgical and surgical options tailored to individual patient needs.
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
@@ -41,7 +41,7 @@ const CubitalTunnelSyndrome = () => {
                         <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px] mt-10'>
                             Understanding Cubital Tunnel Syndrome
                         </div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             The ulnar nerve, commonly known as the "funny bone" nerve, runs from the neck down to the hand, passing through the cubital tunnel at the elbow. Compression of this nerve in the cubital tunnel can disrupt its function, leading to various symptoms in the arm and hand.
                         </div>
                     </div>
@@ -140,7 +140,7 @@ const CubitalTunnelSyndrome = () => {
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><strong>Gradual Return to Activities:</strong> Resuming daily tasks as advised by the healthcare provider.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><strong>Regular Follow-Up:</strong> Monitoring progress and addressing any concerns.</li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Recovery time varies depending on the treatment method and individual patient factors.
                         </div>
                     </div>
@@ -153,7 +153,7 @@ const CubitalTunnelSyndrome = () => {
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Early diagnosis and appropriate treatment of Cubital Tunnel Syndrome are crucial to prevent permanent nerve damage. If you're experiencing symptoms related to this condition, consult Dr. Darshan Kumar A. Jain, Orthopedic Specialist at Sapiens Clinic, Malleshwaram, for a comprehensive evaluation and personalized treatment plan.
                         </div>
                     </div>

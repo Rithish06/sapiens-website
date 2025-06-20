@@ -42,13 +42,13 @@ const Vascularisedfreefibula = () => {
                   <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Vascularized Free Fibula Graft in Malleshwaram</div>
                   <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                       <div>
-                          {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Hand Swellings (Lumps and Bumps) Treatment in Malleshwaram, Bangalore</div> */}
-                          <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>The vascularized free fibula graft (VFFG) is a sophisticated microsurgical technique employed to reconstruct extensive bone defects resulting from trauma, tumor resection, or congenital anomalies. At Sapiens Clinic in Malleshwaram, we specialize in this advanced procedure, aiming to restore skeletal integrity and function in complex cases.</div>
+                          {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Hand Swellings (Lumps and Bumps) Treatment in Malleshwaram, Bangalore</div> */}
+                          <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>The vascularized free fibula graft (VFFG) is a sophisticated microsurgical technique employed to reconstruct extensive bone defects resulting from trauma, tumor resection, or congenital anomalies. At Sapiens Clinic in Malleshwaram, we specialize in this advanced procedure, aiming to restore skeletal integrity and function in complex cases.</div>
                       </div>
                   </div>
   
                   <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Understanding Vascularized Free Fibula Graft</div>
-                  <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>The VFFG procedure involves harvesting a segment of the fibula bone along with its accompanying blood vessels and transplanting it to the site of bone loss. Microsurgical anastomosis is performed to connect the graft's blood vessels to those at the recipient site, ensuring the graft's viability and promoting bone healing.</div>
+                  <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>The VFFG procedure involves harvesting a segment of the fibula bone along with its accompanying blood vessels and transplanting it to the site of bone loss. Microsurgical anastomosis is performed to connect the graft's blood vessels to those at the recipient site, ensuring the graft's viability and promoting bone healing.</div>
   
   
               </div>
@@ -91,13 +91,13 @@ const Vascularisedfreefibula = () => {
                   <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Recovery and Rehabilitation</div>
                   <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                       <div>
-                          <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Recovery timelines vary based on the complexity of the reconstruction and the patient's overall health. Generally, patients can expect :</div>
+                          <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Recovery timelines vary based on the complexity of the reconstruction and the patient's overall health. Generally, patients can expect :</div>
                           <ul className='mt-5  list-desc pl-10'>
                               <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Hospital Stay</b>: Several days to monitor graft integration.</li>
                               <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Physical Therapy</b>: Initiated early to restore function and mobility.</li>
                               <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Follow-Up Visits</b>: Regular assessments to monitor healing and address any concerns.</li>
                           </ul>
-                          <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Adherence to postoperative instructions significantly influences the success of the reconstruction.</div>
+                          <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Adherence to postoperative instructions significantly influences the success of the reconstruction.</div>
                       </div>
                   </div>
               </div>
@@ -107,7 +107,7 @@ const Vascularisedfreefibula = () => {
                   <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Conclusion</div>
                   <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                       <div>
-                          <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>The vascularized free fibula graft stands as a cornerstone in reconstructive surgery, offering solutions for complex bone defects that might otherwise lead to significant disability. At Sapiens Clinic, Malleshwaram, our multidisciplinary team is dedicated to delivering personalized care, employing state-of-the-art techniques to achieve optimal functional and aesthetic outcomes for our patients.</div>
+                          <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>The vascularized free fibula graft stands as a cornerstone in reconstructive surgery, offering solutions for complex bone defects that might otherwise lead to significant disability. At Sapiens Clinic, Malleshwaram, our multidisciplinary team is dedicated to delivering personalized care, employing state-of-the-art techniques to achieve optimal functional and aesthetic outcomes for our patients.</div>
                       </div>
                   </div>
               </div>

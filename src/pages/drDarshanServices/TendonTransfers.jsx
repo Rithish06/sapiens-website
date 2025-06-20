@@ -163,9 +163,7 @@ const TendonTransfers = () => {
 
             <ContactPage />
 
-            <div className="mt-15">
-                <Faqs faqs={faqs} />
-            </div>
+            <Faqs faqs={faqs} />
             
         </div>
     )

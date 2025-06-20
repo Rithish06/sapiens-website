@@ -39,7 +39,7 @@ const Tuberculosis = () => {
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Tuberculosis (TB) of the hand is a rare manifestation of extrapulmonary TB, often presenting diagnostic challenges due to its nonspecific symptoms. At Sapiens Clinic in Malleshwaram, we specialize in the comprehensive evaluation and management of hand TB, aiming to restore function and prevent complications.
                         </div>
                     </div>
@@ -58,7 +58,7 @@ const Tuberculosis = () => {
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Tuberculous Dactylitis (Spina Ventosa):</b> Involvement of the short tubular bones, primarily in children, causing bone expansion and deformity.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Tuberculous Arthritis:</b> Joint involvement leading to pain, swelling and stiffness.</li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             These conditions often result from hematogenous spread from a primary pulmonary focus.
                         </div>
                     </div>
@@ -125,7 +125,7 @@ const Tuberculosis = () => {
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Intensive Phase:</b> Isoniazid, Rifampicin, Pyrazinamide and Ethambutol for 2 months.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Continuation Phase:</b> Isoniazid and Rifampicin for an additional 4-7 months.</li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Adherence to the full course is crucial to prevent recurrence and resistance.
                         </div>
 
@@ -135,7 +135,7 @@ const Tuberculosis = () => {
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Severe Bone Destruction:</b> Necessitating debridement or reconstruction.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Persistent Sinuses:</b> Non-healing despite medical therapy.</li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Surgical options include synovectomy, debridement, and in severe cases, joint fusion.
                         </div>
                     </div>
@@ -153,7 +153,7 @@ const Tuberculosis = () => {
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Regular Monitoring:</b> To detect any signs of recurrence.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Nutritional Support:</b> Enhancing immune response and healing.</li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Early diagnosis and adherence to treatment protocols generally result in favorable outcomes.
                         </div>
                     </div>
@@ -166,7 +166,7 @@ const Tuberculosis = () => {
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Tuberculosis of the hand, though rare, can lead to significant morbidity if not addressed promptly. At Sapiens Clinic, Malleshwaram, Dr. Darshan Kumar A. Jain offers expert evaluation and comprehensive management plans tailored to individual needs. If you experience persistent hand swelling or pain, seek medical attention for timely diagnosis and treatment.
                         </div>
                     </div>

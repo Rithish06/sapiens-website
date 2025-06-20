@@ -33,13 +33,13 @@ const KeyholeSurgeryForHand = () => {
             <Servicesbanner serviceName="Keyhole (Arthroscopic) Surgery for Hand, Wrist, and Elbow" />
 
             <div className='px-8 lg:px-20 mt-8'>
-                <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                     Minimally invasive keyhole surgery, or arthroscopy, has transformed the treatment of various hand, wrist, and elbow conditions. At Sapiens Clinic in Malleshwaram, we specialize in arthroscopic procedures that offer precise diagnosis and effective treatment with minimal discomfort and faster recovery times.
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
                         <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px] mt-10'>What Is Arthroscopy?</div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Arthroscopy is a surgical technique that involves inserting a small camera, known as an arthroscope, into the joint through tiny incisions. This allows orthopedic surgeons to view the internal structures of the joint on a monitor and perform necessary repairs using specialized instruments. The procedure is commonly used for joints such as the knee, shoulder, elbow, ankle, hip and wrist.
                         </div>
                     </div>
@@ -121,7 +121,7 @@ const KeyholeSurgeryForHand = () => {
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><strong>Diagnosis and Treatment:</strong> The surgeon examines the joint and performs necessary repairs.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><strong>Closure:</strong> Instruments are removed, and incisions are closed with sutures or sterile strips.</li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Most arthroscopic procedures are performed on an outpatient basis, allowing patients to return home the same day.
                         </div>
                     </div>
@@ -139,7 +139,7 @@ const KeyholeSurgeryForHand = () => {
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><strong>Physical Therapy:</strong> Exercises to restore strength and mobility.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><strong>Follow-Up Visits:</strong> Monitoring healing progress and addressing any concerns.</li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Recovery times vary depending on the specific procedure and individual patient factors but generally are shorter compared to open surgery.
                         </div>
                     </div>
@@ -152,7 +152,7 @@ const KeyholeSurgeryForHand = () => {
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Arthroscopic surgery offers a minimally invasive solution for various hand, wrist, and elbow conditions, leading to quicker recovery and improved outcomes. If you're experiencing joint issues, consult Dr. Darshan Kumar A. Jain, Orthopedic Specialist at Sapiens Clinic, Malleshwaram, for a comprehensive evaluation and personalized treatment plan.
                         </div>
                     </div>
@@ -160,9 +160,7 @@ const KeyholeSurgeryForHand = () => {
             </div>
 
 
-            <div className="mt-15">
-                <Faqs faqs={faqs} />
-            </div>
+            <Faqs faqs={faqs} />
 
         </div>
     )

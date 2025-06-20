@@ -42,13 +42,13 @@ const Complexreconstructionrequiringbothsofttissueandbone = () => {
                   <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Complex Reconstruction Requiring Both Soft Tissue and Bone in Malleshwaram</div>
                   <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                       <div>
-                          {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Hand Swellings (Lumps and Bumps) Treatment in Malleshwaram, Bangalore</div> */}
-                          <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Complex reconstruction involving both soft tissue and bone is a specialized surgical approach aimed at restoring form and function in patients with extensive injuries, tumor resections, or congenital anomalies. At Sapiens Clinic in Malleshwaram, we offer advanced reconstructive procedures tailored to address these multifaceted challenges, ensuring optimal outcomes for our patients.</div>
+                          {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Hand Swellings (Lumps and Bumps) Treatment in Malleshwaram, Bangalore</div> */}
+                          <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Complex reconstruction involving both soft tissue and bone is a specialized surgical approach aimed at restoring form and function in patients with extensive injuries, tumor resections, or congenital anomalies. At Sapiens Clinic in Malleshwaram, we offer advanced reconstructive procedures tailored to address these multifaceted challenges, ensuring optimal outcomes for our patients.</div>
                       </div>
                   </div>
   
                   <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Understanding Complex Reconstruction</div>
-                  <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>This reconstructive strategy addresses defects that encompass both osseous (bone) and soft tissue components. Such comprehensive reconstruction is essential in cases where trauma, oncologic resections, or congenital conditions result in significant composite tissue loss. The integration of bone and soft tissue repair is crucial for restoring structural integrity and functional capacity.</div>
+                  <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>This reconstructive strategy addresses defects that encompass both osseous (bone) and soft tissue components. Such comprehensive reconstruction is essential in cases where trauma, oncologic resections, or congenital conditions result in significant composite tissue loss. The integration of bone and soft tissue repair is crucial for restoring structural integrity and functional capacity.</div>
   
   
               </div>
@@ -91,14 +91,14 @@ const Complexreconstructionrequiringbothsofttissueandbone = () => {
                   <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Recovery and Rehabilitation</div>
                   <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                       <div>
-                          <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Postoperative care includes :</div>
+                          <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Postoperative care includes :</div>
                           <ul className='mt-5  list-desc pl-10'>
                               <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Monitoring</b>: Regular assessments to ensure graft viability and detect complications.</li>
                               <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Physical Therapy</b>: Customized rehabilitation programs to restore mobility and strength.</li>
                               <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Nutritional Support</b>: Ensuring adequate nutrition to promote healing.</li>
                               <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Psychological Support</b>: Addressing the emotional well-being of patients undergoing extensive reconstruction.</li>
                           </ul>
-                          <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>A comprehensive rehabilitation plan is essential for optimal recovery and return to daily activities.</div>
+                          <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>A comprehensive rehabilitation plan is essential for optimal recovery and return to daily activities.</div>
                       </div>
                   </div>
               </div>
@@ -108,7 +108,7 @@ const Complexreconstructionrequiringbothsofttissueandbone = () => {
                   <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Conclusion</div>
                   <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                       <div>
-                          <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Complex reconstruction requiring both soft tissue and bone is a cornerstone in restoring the quality of life for patients with extensive defects. At Sapiens Clinic, Malleshwaram, our dedicated team employs state-of-the-art techniques and a patient-centric approach to deliver exceptional reconstructive care.</div>
+                          <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Complex reconstruction requiring both soft tissue and bone is a cornerstone in restoring the quality of life for patients with extensive defects. At Sapiens Clinic, Malleshwaram, our dedicated team employs state-of-the-art techniques and a patient-centric approach to deliver exceptional reconstructive care.</div>
                       </div>
                   </div>
               </div>

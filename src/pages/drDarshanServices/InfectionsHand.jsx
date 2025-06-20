@@ -44,7 +44,7 @@ const InfectionsHand = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>What Causes Hand Infections?</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Most hand infections begin with a break in the skin - even tiny ones. Common causes include:</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Most hand infections begin with a break in the skin - even tiny ones. Common causes include:</div>
                         <ul className='mt-5  list-disc pl-10'>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Cuts or puncture wounds</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Animal or human bites</li>
@@ -52,7 +52,7 @@ const InfectionsHand = () => {
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Contaminated injuries</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Spread of infection from another body part</li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>In some cases, conditions like diabetes or compromised immunity can increase the risk and severity of infection.</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>In some cases, conditions like diabetes or compromised immunity can increase the risk and severity of infection.</div>
                     </div>
                 </div>
             </div>

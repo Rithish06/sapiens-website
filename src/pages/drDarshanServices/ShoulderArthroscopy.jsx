@@ -37,7 +37,7 @@ const ShoulderArthroscopy = () => {
                 {/* <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Shoulder Arthroscopy</div> */}
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Shoulder arthroscopy is a minimally invasive surgical procedure that allows orthopedic surgeons to diagnose and treat various shoulder joint conditions using small incisions and specialized instruments. At Sapiens Clinic in Malleshwaram, we offer advanced shoulder arthroscopy techniques to address a range of shoulder disorders, aiming to restore function and alleviate pain with reduced recovery times.
                         </div>
                     </div>
@@ -48,7 +48,7 @@ const ShoulderArthroscopy = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Understanding Shoulder Arthroscopy</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Shoulder arthroscopy involves inserting a small camera, called an arthroscope, into the shoulder joint through a tiny incision. This camera projects images onto a monitor, enabling the surgeon to visualize the joint's interior structures in detail. Additional small incisions are made to insert specialized instruments for performing necessary surgical repairs. This technique minimizes tissue disruption compared to traditional open surgery, leading to less postoperative pain and quicker rehabilitation.
                         </div>
                     </div>
@@ -123,7 +123,7 @@ const ShoulderArthroscopy = () => {
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Surgical Repair:</b> Specialized instruments are used to address identified issues, such as removing loose bodies or repairing damaged tissues.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Closure:</b> Incisions are closed with sutures or steri-strips, and a sterile dressing is applied.</li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             The procedure usually lasts between 30 minutes to an hour, depending on the complexity.
                         </div>
                     </div>
@@ -140,7 +140,7 @@ const ShoulderArthroscopy = () => {
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Activity Modification:</b> Gradual return to daily activities, avoiding strenuous tasks until cleared by the surgeon.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Follow-Up Visits:</b> Regular appointments to monitor healing and progress.</li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Most patients experience significant improvement within a few weeks, with full recovery typically achieved in a few months.
                         </div>
                     </div>
@@ -151,7 +151,7 @@ const ShoulderArthroscopy = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Conclusion</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Shoulder arthroscopy offers a less invasive option for diagnosing and treating various shoulder joint conditions, leading to reduced pain and faster recovery. At Sapiens Clinic, Malleshwaram, Dr. Darshan Kumar A. Jain and our specialized team are committed to providing personalized care using advanced arthroscopic techniques. If you're experiencing persistent shoulder issues, schedule a consultation to explore whether shoulder arthroscopy is suitable for you.
                         </div>
                     </div>
@@ -160,9 +160,7 @@ const ShoulderArthroscopy = () => {
 
             <ContactPage />
 
-            <div className="mt-15">
-                <Faqs faqs={faqs} />
-            </div>
+            <Faqs faqs={faqs} />
         </div>
     )
 }

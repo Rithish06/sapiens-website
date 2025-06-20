@@ -38,7 +38,7 @@ const CongenitalAnomalies = () => {
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Congenital anomalies of the upper limb encompass a diverse group of conditions present at birth, affecting the hand, wrist and elbow. These anomalies can range from minor differences to significant malformations, impacting function and appearance. At Sapiens Clinic in Malleshwaram, we specialize in the comprehensive evaluation and management of these conditions, aiming to enhance functionality and quality of life for our patients.
                         </div>
                     </div>
@@ -60,7 +60,7 @@ const CongenitalAnomalies = () => {
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Constriction Band Syndrome:</b> Formation of constrictive bands leading to deformities or amputations.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Generalized Skeletal Abnormalities:</b> Conditions like Madelung deformity affecting the wrist.</li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             These anomalies can occur in isolation or as part of syndromic conditions.
                         </div>
                     </div>
@@ -79,7 +79,7 @@ const CongenitalAnomalies = () => {
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Maternal Health Conditions:</b> Conditions like diabetes or nutritional deficiencies.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Unknown Factors:</b> In many cases, no specific cause is identified.</li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             It's important to note that most congenital anomalies are not due to anything the parents did or did not do during pregnancy.
                         </div>
                     </div>
@@ -138,7 +138,7 @@ const CongenitalAnomalies = () => {
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Bone and Joint Procedures:</b> Realigning bones or stabilizing joints in cases like Madelung deformity.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Tendon Transfers:</b> Improving movement in underdeveloped muscles or tendons.</li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Surgical timing is carefully planned to coincide with optimal periods of growth and development.
                         </div>
                     </div>
@@ -156,7 +156,7 @@ const CongenitalAnomalies = () => {
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Family Education:</b> Guidance on supporting the child's development and addressing any psychosocial concerns.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Long-Term Follow-Up:</b> Monitoring growth and function, with additional interventions as needed.</li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             The goal is to enable individuals to lead active, independent lives with minimal limitations.
                         </div>
                     </div>
@@ -169,7 +169,7 @@ const CongenitalAnomalies = () => {
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Congenital anomalies of the upper limb, while challenging, can be effectively managed with a comprehensive, individualized approach. At Sapiens Clinic, Malleshwaram, Dr. Darshan Kumar A. Jain and our multidisciplinary team are dedicated to providing expert care, from diagnosis through rehabilitation, ensuring the best possible outcomes for our patients.
                         </div>
                     </div>
@@ -178,9 +178,7 @@ const CongenitalAnomalies = () => {
 
             <ContactPage />
 
-            <div className="mt-15">
-                <Faqs faqs={faqs} />
-            </div>
+            <Faqs faqs={faqs} />
         </div>
     )
 }

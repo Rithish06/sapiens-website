@@ -147,7 +147,7 @@ const Malunion = () => {
                 <b>Swelling and Tenderness</b>: Around the healed fracture area.
               </li>
             </ul>
-            {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'></div> */}
+            {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'></div> */}
           </div>
         </div>
       </div>
@@ -211,7 +211,7 @@ const Malunion = () => {
                 limb length discrepancies
               </li>
             </ul>
-            {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'></div> */}
+            {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'></div> */}
           </div>
         </div>
         <div>

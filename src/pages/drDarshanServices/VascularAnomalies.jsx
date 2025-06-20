@@ -38,7 +38,7 @@ const VascularAnomalies = () => {
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Vascular anomalies are a diverse group of disorders characterized by abnormal development of blood vessels, including arteries, veins, capillaries, and lymphatic vessels. These anomalies can present at birth or develop later in life, affecting various parts of the body and potentially leading to functional and aesthetic concerns. At Sapiens Clinic in Malleshwaram, we offer comprehensive evaluation and individualized treatment plans for patients with vascular anomalies, aiming to restore function and improve quality of life.
                         </div>
                     </div>
@@ -149,7 +149,7 @@ const VascularAnomalies = () => {
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             At Sapiens Clinic, our multidisciplinary team includes specialists in dermatology, interventional radiology, plastic surgery, genetics, and rehabilitation. This collaborative approach ensures comprehensive care, from diagnosis through treatment and follow-up.
                         </div>
                     </div>
@@ -162,7 +162,7 @@ const VascularAnomalies = () => {
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Early recognition and appropriate management of vascular anomalies are essential to prevent complications and improve outcomes. If you or your child has a vascular anomaly, consult Dr. Darshan Kumar A. Jain, Orthopedic Specialist at Sapiens Clinic, Malleshwaram, for a thorough evaluation and personalized treatment plan.
                         </div>
                     </div>
@@ -171,9 +171,7 @@ const VascularAnomalies = () => {
 
             <ContactPage />
 
-            <div className="mt-15">
-                <Faqs faqs={faqs} />
-            </div>
+            <Faqs faqs={faqs} />
         </div>
     )
 }

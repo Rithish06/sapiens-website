@@ -40,7 +40,7 @@ const PostBurnsContracture = () => {
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Post-burn contractures are a common complication following deep burns, leading to the tightening of skin and underlying tissues. This condition can significantly impair movement, especially when it affects joints and may also cause aesthetic concerns. At Sapiens Clinic in Malleshwaram, we offer comprehensive evaluation and individualized treatment plans to restore function and improve quality of life for individuals affected by post-burn contractures.
                         </div>
                     </div>
@@ -53,7 +53,7 @@ const PostBurnsContracture = () => {
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             A post-burn contracture occurs when the skin and underlying tissues tighten during the healing process after a burn injury. This tightening can restrict movement and lead to deformities, particularly when the burn is over a joint. The severity of a contracture depends on factors such as the depth of the burn, the area affected, and the timeliness of treatment.
                         </div>
                     </div>
@@ -184,7 +184,7 @@ const PostBurnsContracture = () => {
                                 <b>Patient Education:</b> Guidance on exercises and care routines to prevent recurrence.
                             </li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Recovery timelines vary based on the severity of the contracture and the treatment approach but generally involve several weeks to months of rehabilitation.
                         </div>
                     </div>
@@ -197,7 +197,7 @@ const PostBurnsContracture = () => {
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Early intervention and a multidisciplinary approach are key to effectively managing post-burn contractures. If you or a loved one is experiencing movement limitations or deformities following a burn injury, consult Dr. Darshan Kumar A. Jain, Orthopedic Specialist at Sapiens Clinic, Malleshwaram, for a comprehensive evaluation and personalized treatment plan.
                         </div>
                     </div>
@@ -206,9 +206,7 @@ const PostBurnsContracture = () => {
 
             <ContactPage />
 
-            <div className="mt-15">
-                <Faqs faqs={faqs} />
-            </div>
+            <Faqs faqs={faqs} />
 
         </div>
     )

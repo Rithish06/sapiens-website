@@ -136,6 +136,7 @@ import Pseudotumor from './images/Pseudo-tumor.png'
 import WallDecompression from './images/Wall-Decompression.png'
 import Orbit from './images/Orbit.jpg'
 import Eyelid from './images/Eyelid.jpg'
+import specialityImg from './images/hand-pain-inflammation.png'
 
 
 
@@ -406,5 +407,6 @@ export const assets = {
     VascularisedFreeFibula,
     VasularAnomalies,
     VOLKMANNSISCHEMICCONTRACture,
-    WristArthroscopy
+    WristArthroscopy,
+    specialityImg
 }

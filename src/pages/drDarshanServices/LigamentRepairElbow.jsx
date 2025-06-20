@@ -38,7 +38,7 @@ const LigamentRepairElbow = () => {
         {/* <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Elbow Ligament Injuries</div> */}
         <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
           <div>
-            <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+            <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
               Elbow ligament injuries, particularly to the ulnar collateral ligament (UCL) can significantly impair arm function, especially in athletes and individuals engaged in repetitive arm movements. At Sapiens Clinic in Malleshwaram, we specialize in the diagnosis and treatment of elbow ligament injuries, offering both conservative and surgical options tailored to each patient's needs.
             </div>
           </div>
@@ -49,7 +49,7 @@ const LigamentRepairElbow = () => {
         <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Understanding Elbow Ligament Injuries</div>
         <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
           <div>
-            <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+            <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
               The elbow joint is stabilized by several ligaments, with the UCL playing a crucial role in resisting valgus stress, especially during overhead throwing motions. Injuries to these ligaments can range from mild sprains to complete tears, leading to pain, instability and decreased performance.
             </div>
           </div>
@@ -66,7 +66,7 @@ const LigamentRepairElbow = () => {
               <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Trauma:</b> Sudden impacts or falls onto an outstretched arm.</li>
               <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Degeneration:</b> Age-related wear and tear weakening ligament integrity.</li>
             </ul>
-            <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+            <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
               Athletes in overhead sports, manual laborers, and individuals with previous elbow injuries are at increased risk.
             </div>
           </div>
@@ -106,21 +106,21 @@ const LigamentRepairElbow = () => {
         <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Treatment Options</div>
         <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
           <div>
-            <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'><b>Non-Surgical Management</b></div>
-            <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>For partial tears or less active individuals, conservative treatments may suffice:</div>
+            <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'><b>Non-Surgical Management</b></div>
+            <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>For partial tears or less active individuals, conservative treatments may suffice:</div>
             <ul className='mt-5 list-disc pl-10'>
               <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Rest and Activity Modification:</b> Avoiding aggravating activities.</li>
               <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Physical Therapy:</b> Strengthening surrounding muscles to compensate for ligament laxity.</li>
               <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Bracing:</b> Providing external support during healing.</li>
             </ul>
 
-            <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'><b>Surgical Intervention</b></div>
-            <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Surgery is considered for complete tears or when conservative measures fail:</div>
+            <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'><b>Surgical Intervention</b></div>
+            <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Surgery is considered for complete tears or when conservative measures fail:</div>
             <ul className='mt-5 list-disc pl-10'>
               <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>UCL Repair:</b> Suitable for acute avulsion injuries with good tissue quality.</li>
               <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>UCL Reconstruction (Tommy John Surgery):</b> Involves replacing the damaged ligament with a tendon graft from the patient or a donor. This procedure is common among athletes aiming to return to high-level performance.</li>
             </ul>
-            <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+            <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
               Advanced techniques, such as the use of an InternalBrace™, may be employed to augment the repair and facilitate faster recovery.
             </div>
           </div>
@@ -138,7 +138,7 @@ const LigamentRepairElbow = () => {
               <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Strength Training:</b> Focusing on forearm and shoulder muscles.</li>
               <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Return-to-Play Protocols:</b> Guided programs to safely resume athletic activities.</li>
             </ul>
-            <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+            <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
               Full recovery can take 6 to 12 months, depending on the procedure and individual factors.
             </div>
           </div>
@@ -149,7 +149,7 @@ const LigamentRepairElbow = () => {
         <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Conclusion</div>
         <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
           <div>
-            <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+            <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
               Elbow ligament injuries can be debilitating, but with accurate diagnosis and appropriate treatment, patients can achieve significant improvement or return to their previous level of activity. At Sapiens Clinic, Malleshwaram, Dr. Darshan Kumar A. Jain and our dedicated team are committed to providing personalized care, utilizing the latest techniques and evidence-based practices to ensure the best outcomes for our patients.
             </div>
           </div>

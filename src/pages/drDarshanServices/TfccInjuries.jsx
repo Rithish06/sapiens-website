@@ -37,7 +37,7 @@ const TfccInjuries = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>TFCC Injuries – Overview</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             The Triangular Fibrocartilage Complex (TFCC) is a crucial structure located on the ulnar (little finger) side of the wrist, providing stability and facilitating smooth motion between the forearm and hand. Injuries to the TFCC can result in pain, weakness, and limited wrist function. At Sapiens Clinic in Malleshwaram, we specialize in diagnosing and treating TFCC injuries to restore wrist health and functionality.
                         </div>
                     </div>
@@ -48,7 +48,7 @@ const TfccInjuries = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>What Is a TFCC Injury?</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             The TFCC comprises ligaments, tendons, and cartilage that stabilize the distal radioulnar joint and the ulnar side of the wrist. Injuries can occur due to:
                         </div>
                         <ul className='mt-5 list-disc pl-10'>
@@ -56,7 +56,7 @@ const TfccInjuries = () => {
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Repetitive wrist motions (e.g., in sports or manual labor)</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Degenerative changes associated with aging</li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             These injuries can range from minor tears to complete disruptions of the complex.
                         </div>
                     </div>
@@ -98,13 +98,13 @@ const TfccInjuries = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Treatment Options</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'><b>Non-Surgical Treatments</b></div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'><b>Non-Surgical Treatments</b></div>
                         <ul className='mt-5 list-disc pl-10'>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Immobilization:</b> Using a splint or cast to allow the TFCC to heal.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Physical Therapy:</b> Exercises to restore strength and flexibility.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Medications:</b> Nonsteroidal anti-inflammatory drugs (NSAIDs) to reduce pain and inflammation.</li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'><b>Surgical Treatments</b></div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'><b>Surgical Treatments</b></div>
                         <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Surgery may be necessary for persistent or severe injuries:</b></div>
                         <ul className='mt-5 list-disc pl-10'>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Arthroscopic Repair:</b> Minimally invasive procedure to debride or repair the torn TFCC.</li>
@@ -147,7 +147,7 @@ const TfccInjuries = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Conclusion</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             TFCC injuries can significantly impact wrist function and quality of life. Early diagnosis and appropriate treatment are essential for recovery. If you're experiencing wrist pain or instability, consult Dr. Darshan Kumar A. Jain, Orthopedic Specialist at Sapiens Clinic, Malleshwaram, for a comprehensive evaluation and personalized treatment plan.
                         </div>
                     </div>
@@ -156,9 +156,7 @@ const TfccInjuries = () => {
 
             <ContactPage />
 
-            <div className="mt-15">
-                <Faqs faqs={faqs} />
-            </div>
+            <Faqs faqs={faqs} />
         </div>
     )
 }

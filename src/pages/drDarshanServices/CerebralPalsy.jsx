@@ -39,7 +39,7 @@ const CerebralPalsy = () => {
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Cerebral Palsy (CP) is a group of neurological disorders that affect movement, muscle tone, and posture. It is caused by damage to the developing brain, often before birth, and manifests in early childhood. At Sapiens Clinic in Malleshwaram, we provide comprehensive evaluation and individualized treatment plans to support children and adults living with CP.
                         </div>
                     </div>
@@ -52,7 +52,7 @@ const CerebralPalsy = () => {
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Cerebral Palsy is a non-progressive condition, meaning the brain injury does not worsen over time. However, the physical manifestations can change as a person grows. CP affects each individual differently, with varying degrees of motor impairment and associated conditions.
                         </div>
                     </div>
@@ -130,7 +130,7 @@ const CerebralPalsy = () => {
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>While there is no cure for CP, various treatments can improve quality of life:</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>While there is no cure for CP, various treatments can improve quality of life:</div>
 
                         <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[600]'>Therapies</div>
                         <ul className='mt-5  list-disc pl-10'>
@@ -141,7 +141,7 @@ const CerebralPalsy = () => {
                         </ul>
 
                         <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[600]'>Medications</div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Medications may be prescribed to manage symptoms such as muscle spasticity or seizures. Common medications include:
                         </div>
                         <ul className='mt-5  list-disc pl-10'>
@@ -172,7 +172,7 @@ const CerebralPalsy = () => {
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Effective management of CP requires a team of healthcare professionals, including:
                         </div>
                         <ul className='mt-5  list-disc pl-10'>
@@ -182,7 +182,7 @@ const CerebralPalsy = () => {
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Occupational and speech therapists.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Social workers and psychologists.</li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             At Sapiens Clinic, we coordinate care across specialties to provide comprehensive support tailored to each individual's needs.
                         </div>
                     </div>
@@ -195,7 +195,7 @@ const CerebralPalsy = () => {
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Early intervention and a personalized treatment plan are key to managing Cerebral Palsy effectively. If you or a loved one is affected by CP, consult Dr. Darshan Kumar A. Jain, Orthopedic Specialist at Sapiens Clinic, Malleshwaram, for a thorough evaluation and compassionate care.
                         </div>
                     </div>

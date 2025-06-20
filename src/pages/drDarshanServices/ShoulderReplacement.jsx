@@ -37,7 +37,7 @@ const ShoulderReplacement = () => {
                 {/* <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Shoulder Replacement</div> */}
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Shoulder replacement, or shoulder arthroplasty, is a surgical procedure aimed at relieving pain and restoring function in severely damaged shoulder joints. At Sapiens Clinic in Malleshwaram, we offer advanced shoulder replacement options tailored to individual patient needs, ensuring optimal outcomes and improved quality of life.
                         </div>
                     </div>
@@ -48,7 +48,7 @@ const ShoulderReplacement = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Understanding Shoulder Replacement</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             The shoulder is a ball-and-socket joint comprising the humeral head (ball) and the glenoid cavity (socket). In shoulder arthroplasty, damaged parts of the shoulder joint are replaced with artificial components made of metal and plastic to mimic the natural anatomy and movement of the shoulder. This procedure is considered when conservative treatments fail to alleviate chronic shoulder pain and dysfunction.
                         </div>
                     </div>
@@ -67,7 +67,7 @@ const ShoulderReplacement = () => {
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Rotator Cuff Tear Arthropathy:</b> Arthritis resulting from massive rotator cuff tears.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Avascular Necrosis:</b> Loss of blood supply to the bone leading to bone death.</li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Risk factors include advanced age, repetitive shoulder stress, previous shoulder injuries, and certain systemic diseases.
                         </div>
                     </div>
@@ -108,21 +108,21 @@ const ShoulderReplacement = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Treatment Options</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'><b>Depending on the severity of joint damage and patient-specific factors, treatment options include:</b></div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'><b>Non-Surgical Management</b></div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'><b>Depending on the severity of joint damage and patient-specific factors, treatment options include:</b></div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'><b>Non-Surgical Management</b></div>
                         <ul className='mt-5 list-disc pl-10'>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Medications:</b> NSAIDs for pain relief.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Physical Therapy:</b> Exercises to improve strength and flexibility.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Corticosteroid Injections:</b> To reduce inflammation.</li>
                         </ul>
 
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'><b>Surgical Interventions</b></div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'><b>Surgical Interventions</b></div>
                         <ul className='mt-5 list-disc pl-10'>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Total Shoulder Replacement (Anatomic Arthroplasty):</b> Both the humeral head and glenoid cavity are replaced with prosthetic components that mimic natural anatomy.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Reverse Shoulder Replacement:</b> The positions of the ball and socket are reversed, beneficial in cases with rotator cuff deficiencies.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Partial Shoulder Replacement (Hemiarthroplasty):</b> Only the humeral head is replaced, suitable when the glenoid cavity is intact.</li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             The choice of procedure depends on factors like the extent of joint damage, rotator cuff integrity, and patient activity levels.
                         </div>
                     </div>
@@ -140,7 +140,7 @@ const ShoulderReplacement = () => {
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Physical Therapy:</b> Gradual exercises to restore range of motion and strength.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Activity Modification:</b> Avoiding strenuous activities until cleared by the surgeon.</li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Recovery timelines vary but typically involve several weeks of rehabilitation, with most patients resuming normal activities within 3 to 6 months.
                         </div>
                     </div>
@@ -151,7 +151,7 @@ const ShoulderReplacement = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Conclusion</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Shoulder replacement surgery offers significant relief from chronic pain and improved joint function for individuals with severe shoulder joint damage. At Sapiens Clinic, Malleshwaram, Dr. Darshan Kumar A. Jain and our dedicated team are committed to providing personalized care, utilizing advanced surgical techniques to ensure the best possible outcomes. If you're experiencing persistent shoulder issues, schedule a consultation to explore your treatment options.
                         </div>
                     </div>
@@ -160,9 +160,7 @@ const ShoulderReplacement = () => {
 
             <ContactPage />
 
-            <div className="mt-15">
-                <Faqs faqs={faqs} />
-            </div>
+            <Faqs faqs={faqs} />
         </div>
     )
 }

@@ -133,7 +133,7 @@ const SlapInjuries = () => {
                 "give out."
               </li>
             </ul>
-            {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'></div> */}
+            {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'></div> */}
           </div>
         </div>
       </div>
@@ -202,7 +202,7 @@ const SlapInjuries = () => {
                 inflammation.
               </li>
             </ul>
-            {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'></div> */}
+            {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'></div> */}
           </div>
         </div>
         <div>
@@ -225,7 +225,7 @@ const SlapInjuries = () => {
               studies.
             </li>
           </ul>
-          {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'></div> */}
+          {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'></div> */}
         </div>
         <div>
           <div className="font-para text-[12px] lg:text-[16px] leading-[26px] mt-4">
@@ -244,7 +244,7 @@ const SlapInjuries = () => {
               tension on the labrum
             </li>
           </ul>
-          {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'></div> */}
+          {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'></div> */}
         </div>
       </div>
       <div className="px-8 lg:px-20 mt-8">

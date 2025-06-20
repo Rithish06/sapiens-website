@@ -39,7 +39,7 @@ const BirthDefects = () => {
             <div className='px-8 lg:px-20 mt-8'>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                            Birth defects, also known as congenital anomalies Birth defects, also known as congenital anomalies, are structural or functional abnormalities present at birth that can affect various parts of the body, including the heart, brain, limbs, and internal organs. These conditions can range from mild to severe and may impact a child's health, development, and quality of life. At Sapiens Clinic in Malleshwaram, we offer comprehensive evaluation, diagnosis, and management of birth defects to ensure the best possible outcomes for affected children and their families.
                         </div>
                     </div>
@@ -57,7 +57,7 @@ const BirthDefects = () => {
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Functional or Developmental Defects: Problems with how a body part or system works, including intellectual disabilities, sensory issues, and metabolic disorders.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Chromosomal Abnormalities: Conditions like Down syndrome and Edwards syndrome resulting from changes in chromosome number or structure.</li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             These defects can result from genetic factors, environmental exposures, or a combination of both.
                         </div>
                     </div>

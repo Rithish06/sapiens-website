@@ -39,7 +39,7 @@ const GiantCellTumor = () => {
                 </div> */}
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Giant Cell Tumors (GCTs) are rare, typically benign bone tumors known for their aggressive local behavior. They predominantly affect young adults and can lead to significant bone destruction if not addressed promptly. At Sapiens Clinic in Malleshwaram, we specialize in the comprehensive evaluation and management of GCTs, aiming to preserve function and prevent recurrence.
                         </div>
                     </div>
@@ -52,7 +52,7 @@ const GiantCellTumor = () => {
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             GCTs commonly arise at the ends of long bones, especially around the knee (distal femur and proximal tibia), but can also occur in the distal radius, sacrum, and spine. Histologically, they are characterized by numerous multinucleated giant cells interspersed among mononuclear stromal cells. While generally benign, GCTs can be locally aggressive and in rare cases, metastasize to the lungs.
                         </div>
                     </div>
@@ -135,7 +135,7 @@ const GiantCellTumor = () => {
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Physical Therapy:</b> To restore mobility and strength.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Regular Monitoring:</b> Periodic imaging to detect any recurrence early.</li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Recovery timelines vary based on the treatment modality and tumor location but generally span several months.
                         </div>
                     </div>
@@ -148,7 +148,7 @@ const GiantCellTumor = () => {
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Early detection and a multidisciplinary approach are key to managing Giant Cell Tumors effectively. If you or a loved one is experiencing persistent bone pain or swelling, consult Dr. Darshan Kumar A. Jain, Orthopedic Specialist at Sapiens Clinic, Malleshwaram, for a comprehensive evaluation and personalized treatment plan.
                         </div>
                     </div>
@@ -157,9 +157,7 @@ const GiantCellTumor = () => {
 
             <ContactPage />
 
-            <div className="mt-15">
-                <Faqs faqs={faqs} />
-            </div>
+            <Faqs faqs={faqs} />
         </div>
     )
 }

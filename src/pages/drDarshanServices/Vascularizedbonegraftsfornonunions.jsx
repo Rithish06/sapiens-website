@@ -42,13 +42,13 @@ const Vascularizedbonegraftsfornonunions = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Vascularized Bone Grafts for Non-Unions in Malleshwaram</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Hand Swellings (Lumps and Bumps) Treatment in Malleshwaram, Bangalore</div> */}
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Non-union fractures, where broken bones fail to heal properly, can lead to prolonged pain and functional impairment. At Sapiens Clinic in Malleshwaram, we specialize in advanced surgical interventions, including vascularized bone grafts, to promote healing in challenging non-union cases, aiming to restore mobility and enhance quality of life.</div>
+                        {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Hand Swellings (Lumps and Bumps) Treatment in Malleshwaram, Bangalore</div> */}
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Non-union fractures, where broken bones fail to heal properly, can lead to prolonged pain and functional impairment. At Sapiens Clinic in Malleshwaram, we specialize in advanced surgical interventions, including vascularized bone grafts, to promote healing in challenging non-union cases, aiming to restore mobility and enhance quality of life.</div>
                     </div>
                 </div>
 
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Understanding Vascularized Bone Grafts</div>
-                <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Vascularized bone grafting involves transplanting bone tissue along with its blood supply from one part of the body to another. This technique is particularly effective in treating non-unions, as the preserved blood vessels in the graft enhance integration and healing at the recipient site.</div>
+                <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Vascularized bone grafting involves transplanting bone tissue along with its blood supply from one part of the body to another. This technique is particularly effective in treating non-unions, as the preserved blood vessels in the graft enhance integration and healing at the recipient site.</div>
 
 
             </div>
@@ -81,7 +81,7 @@ const Vascularizedbonegraftsfornonunions = () => {
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Instability</b>: In the affected limb or joint.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Visible Deformity</b>: Or abnormal movement at the fracture site.</li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Early consultation with a specialist is recommended if these symptoms persist.</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Early consultation with a specialist is recommended if these symptoms persist.</div>
                     </div>
 
                 </div>
@@ -91,13 +91,13 @@ const Vascularizedbonegraftsfornonunions = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Diagnosis</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Accurate diagnosis involves :</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Accurate diagnosis involves :</div>
                         <ul className='mt-5  list-desc pl-10'>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Clinical Evaluation</b>: Assessing symptoms and medical history.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Imaging Studies</b>: X-rays, CT scans, or MRI to evaluate bone healing.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Laboratory Tests</b>: To detect underlying infections or conditions affecting bone health.</li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>These assessments help determine the appropriate treatment strategy.</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>These assessments help determine the appropriate treatment strategy.</div>
                     </div>
                 </div>
             </div>
@@ -106,7 +106,7 @@ const Vascularizedbonegraftsfornonunions = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Treatment Options</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Management of non-unions may include :</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Management of non-unions may include :</div>
                         <ul className='mt-5  list-disc pl-10'>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Conservative Measures</b>: Such as bone stimulators or bracing in select cases.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Surgical Interventions</b> :
@@ -117,7 +117,7 @@ const Vascularizedbonegraftsfornonunions = () => {
                                 </ul>
                             </li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>The choice of treatment depends on the fracture's location, severity, and patient-specific factors.</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>The choice of treatment depends on the fracture's location, severity, and patient-specific factors.</div>
                     </div>
 
                 </div>
@@ -127,13 +127,13 @@ const Vascularizedbonegraftsfornonunions = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Recovery and Rehabilitation</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Postoperative care is vital for successful outcomes :</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Postoperative care is vital for successful outcomes :</div>
                         <ul className='mt-5  list-disc pl-10'>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Immobilization</b>: To allow the graft to integrate.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Physical Therapy</b>: To restore strength and mobility.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Regular Monitoring</b>: Through follow-up visits and imaging studies.</li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Recovery timelines vary, but adherence to rehabilitation protocols enhances healing prospects.</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Recovery timelines vary, but adherence to rehabilitation protocols enhances healing prospects.</div>
                     </div>
                 </div>
             </div>
@@ -142,7 +142,7 @@ const Vascularizedbonegraftsfornonunions = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Conclusion</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Vascularized bone grafting offers a promising solution for patients with challenging non-union fractures. At Sapiens Clinic, Malleshwaram, our multidisciplinary team is dedicated to providing personalized care, utilizing advanced surgical techniques to facilitate bone healing and restore function.</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Vascularized bone grafting offers a promising solution for patients with challenging non-union fractures. At Sapiens Clinic, Malleshwaram, our multidisciplinary team is dedicated to providing personalized care, utilizing advanced surgical techniques to facilitate bone healing and restore function.</div>
                     </div>
                 </div>
             </div>

@@ -39,9 +39,9 @@ const CarpalTunnel = () => {
                 {/* <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'></div> */}
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'><b>Say Goodbye to Wrist Numbness & Tingling with Expert Care at Sapiens Clinic</b></div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>If your fingers often feel numb, your wrist hurts when you type, or you keep dropping things without reason - it might not just be tiredness. These are classic signs of Carpal Tunnel Syndrome, a common but often overlooked nerve condition of the hand.</div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>At Sapiens Clinic, Malleshwaram, we help you find relief and regain normal hand function with accurate diagnosis and personalized treatment that works for your lifestyle.</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'><b>Say Goodbye to Wrist Numbness & Tingling with Expert Care at Sapiens Clinic</b></div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>If your fingers often feel numb, your wrist hurts when you type, or you keep dropping things without reason - it might not just be tiredness. These are classic signs of Carpal Tunnel Syndrome, a common but often overlooked nerve condition of the hand.</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>At Sapiens Clinic, Malleshwaram, we help you find relief and regain normal hand function with accurate diagnosis and personalized treatment that works for your lifestyle.</div>
                     </div>
                 </div>
             </div>
@@ -50,7 +50,7 @@ const CarpalTunnel = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>What is Carpal Tunnel Syndrome?</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Carpal Tunnel Syndrome (CTS) happens when the median nerve, which runs through a narrow passage in the wrist called the carpal tunnel, gets compressed. This nerve controls sensation in the thumb, index, middle, and half of the ring finger, as well as some hand muscles. When it’s pinched, you’ll experience symptoms that can range from mildly annoying to deeply disruptive.</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Carpal Tunnel Syndrome (CTS) happens when the median nerve, which runs through a narrow passage in the wrist called the carpal tunnel, gets compressed. This nerve controls sensation in the thumb, index, middle, and half of the ring finger, as well as some hand muscles. When it’s pinched, you’ll experience symptoms that can range from mildly annoying to deeply disruptive.</div>
                     </div>
                 </div>
             </div>
@@ -59,14 +59,14 @@ const CarpalTunnel = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Common Symptoms</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'></div> */}
+                        {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'></div> */}
                         <ul className='mt-5  list-disc pl-10'>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Numbness or tingling in the fingers - especially the thumb, index, and middle</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Pain that travels from the wrist into the arm</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Weakness in the hand or difficulty gripping objects</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Symptoms that worsen at night or after repetitive hand use</li>
                         </ul>
-                        {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'></div> */}
+                        {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'></div> */}
                     </div>
                 </div>
             </div>
@@ -75,7 +75,7 @@ const CarpalTunnel = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Causes and Risk Factors</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>This condition often develops gradually and can be caused by a combination of factors:</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>This condition often develops gradually and can be caused by a combination of factors:</div>
                         <ul className='mt-5  list-disc pl-10'>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Repetitive hand or wrist movements (like typing, texting, or using tools)</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Prolonged wrist flexion or extension during sleep or work</li>
@@ -83,7 +83,7 @@ const CarpalTunnel = () => {
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Pregnancy-related swelling</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Diabetes, thyroid dysfunction or inflammatory arthritis.</li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>It’s more common in women and people between 30 to 60 years old.</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>It’s more common in women and people between 30 to 60 years old.</div>
                     </div>
                 </div>
             </div>
@@ -92,7 +92,7 @@ const CarpalTunnel = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>How We Diagnose It</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>We start with a physical exam and simple in-clinic tests to reproduce your symptoms. Depending on your condition, we may recommend nerve studies to confirm how severely the nerve is compressed. This helps us design a treatment plan that’s right for you - not just the textbook version.</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>We start with a physical exam and simple in-clinic tests to reproduce your symptoms. Depending on your condition, we may recommend nerve studies to confirm how severely the nerve is compressed. This helps us design a treatment plan that’s right for you - not just the textbook version.</div>
                     </div>
                 </div>
             </div>
@@ -101,8 +101,8 @@ const CarpalTunnel = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Treatment Options at Sapiens Clinic</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'><b>Non-Surgical Care</b></div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Most patients respond well to conservative treatments, especially in early stages:</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'><b>Non-Surgical Care</b></div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Most patients respond well to conservative treatments, especially in early stages:</div>
                         <ul className='mt-5  list-disc pl-10'>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Night Splinting</b>:  Keeps your wrist in a neutral position while you sleep</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Activity Modification</b>: Avoiding or adjusting triggering movements</li>
@@ -110,7 +110,7 @@ const CarpalTunnel = () => {
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Corticosteroid Injections</b>: For stronger, longer-lasting relief</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Hand Therapy</b>: Gentle exercises to improve flexibility and reduce pressure</li>
                         </ul>
-                        {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'></div> */}
+                        {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'></div> */}
                     </div>
                 </div>
             </div>
@@ -119,7 +119,7 @@ const CarpalTunnel = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Surgical Care</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>For persistent or advanced cases, a small outpatient procedure called carpal tunnel release may be advised. It relieves pressure on the nerve by cutting the ligament pressing on it - allowing the nerve to breathe, so to speak. Most people recover quickly and experience significant improvement.</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>For persistent or advanced cases, a small outpatient procedure called carpal tunnel release may be advised. It relieves pressure on the nerve by cutting the ligament pressing on it - allowing the nerve to breathe, so to speak. Most people recover quickly and experience significant improvement.</div>
                     </div>
                 </div>
             </div>
@@ -128,8 +128,8 @@ const CarpalTunnel = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Why Sapiens Clinic?</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>You’re not just a wrist. We listen to your lifestyle, your work, your routine - and then craft treatment that suits you. From diagnosis to recovery, everything is done with personal attention and the right mix of science and simplicity.</div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>With extensive experience in hand and wrist conditions, Dr. Darshan Kumar A. Jain leads the care here with a focus on restoring movement, relieving pain and preventing recurrence.</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>You’re not just a wrist. We listen to your lifestyle, your work, your routine - and then craft treatment that suits you. From diagnosis to recovery, everything is done with personal attention and the right mix of science and simplicity.</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>With extensive experience in hand and wrist conditions, Dr. Darshan Kumar A. Jain leads the care here with a focus on restoring movement, relieving pain and preventing recurrence.</div>
                     </div>
                 </div>
             </div>
@@ -138,8 +138,8 @@ const CarpalTunnel = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Ready to Get Back to a Pain-Free Life?</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>If your wrist symptoms are slowing you down or making everyday tasks uncomfortable, it’s time to act. Carpal Tunnel Syndrome is treatable - and the earlier, the better.</div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Reach out to Sapiens Clinic, Malleshwaram today to book your consultation. Healing starts with one step.</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>If your wrist symptoms are slowing you down or making everyday tasks uncomfortable, it’s time to act. Carpal Tunnel Syndrome is treatable - and the earlier, the better.</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Reach out to Sapiens Clinic, Malleshwaram today to book your consultation. Healing starts with one step.</div>
                     </div>
                 </div>
             </div>

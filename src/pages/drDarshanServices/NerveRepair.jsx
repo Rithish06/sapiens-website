@@ -116,7 +116,7 @@ const NerveRepair = () => {
         <div className="flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]">
           <div>
             <div className="font-para text-[12px] lg:text-[16px] leading-[26px] mt-3">Early evaluation plays a key role in achieving the best outcomes after a nerve injury. It's ideal to consult a specialist within the first 1 to 2 months of injury. In most cases, surgical intervention within 3 months offers the best chance for effective nerve repair and functional recovery.</div>
-            {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'></div> */}
+            {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'></div> */}
           </div>
         </div>
       </div>

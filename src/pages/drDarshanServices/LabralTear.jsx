@@ -152,7 +152,7 @@ const LabralTear = () => {
                 activities.
               </li>
             </ul>
-            {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'></div> */}
+            {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'></div> */}
           </div>
         </div>
       </div>
@@ -222,7 +222,7 @@ const LabralTear = () => {
                 inflammation.
               </li>
             </ul>
-            {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'></div> */}
+            {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'></div> */}
           </div>
         </div>
         <div>
@@ -245,7 +245,7 @@ const LabralTear = () => {
               studies.
             </li>
           </ul>
-          {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'></div> */}
+          {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'></div> */}
         </div>
         <div>
           <div className="font-para text-[12px] lg:text-[16px] leading-[26px] mt-4">
@@ -264,7 +264,7 @@ const LabralTear = () => {
               tension on the labrum, often used in SLAP tears.
             </li>
           </ul>
-          {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'></div> */}
+          {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'></div> */}
         </div>
       </div>
       <div className="px-8 lg:px-20 mt-8">

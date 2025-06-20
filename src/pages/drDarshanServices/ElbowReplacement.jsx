@@ -39,7 +39,7 @@ const ElbowReplacement = () => {
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Elbow replacement, or elbow arthroplasty, is a surgical procedure to replace damaged parts of the elbow joint with artificial components. This intervention is considered when conservative treatments fail to alleviate severe elbow pain and dysfunction caused by conditions like arthritis, fractures, or other joint diseases. At Sapiens Clinic in Malleshwaram, we specialize in comprehensive evaluation and management of elbow conditions, aiming to restore function and improve quality of life for our patients.
                         </div>
                     </div>
@@ -52,7 +52,7 @@ const ElbowReplacement = () => {
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             The elbow joint comprises three bones: the humerus (upper arm bone), the ulna, and the radius (forearm bones). Elbow replacement involves removing the damaged sections of these bones and replacing them with metal and plastic implants designed to mimic the natural movement of the elbow. This procedure can be total or partial, depending on the extent of joint damage.
                         </div>
                     </div>
@@ -127,7 +127,7 @@ const ElbowReplacement = () => {
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Implant Placement:</b> Artificial components are inserted and fixed in place.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Closure:</b> The incision is closed, and the arm is bandaged.</li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             The surgery typically lasts 1.5 to 2 hours.
                         </div>
                     </div>
@@ -146,7 +146,7 @@ const ElbowReplacement = () => {
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Physical Therapy:</b> Initiated soon after surgery to regain motion and strength.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Activity Restrictions:</b> Avoiding heavy lifting and repetitive movements for several weeks.</li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Full recovery may take several months, with gradual improvement in function and reduction in pain.
                         </div>
                     </div>
@@ -159,7 +159,7 @@ const ElbowReplacement = () => {
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Elbow replacement surgery offers significant relief from pain and improved joint function for patients with severe elbow conditions. At Sapiens Clinic, Malleshwaram, Dr. Darshan Kumar A. Jain and our dedicated team provide expert care, from diagnosis through rehabilitation, ensuring optimal outcomes for our patients. If you're experiencing persistent elbow pain or dysfunction, schedule a consultation to explore your treatment options.
                         </div>
                     </div>

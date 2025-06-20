@@ -42,13 +42,13 @@ const Reconstructionforthelimbs = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Limb Reconstruction Surgery in Malleshwaram</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Hand Swellings (Lumps and Bumps) Treatment in Malleshwaram, Bangalore</div> */}
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Limb reconstruction surgery is a specialized field aimed at restoring the form and function of limbs affected by trauma, congenital anomalies, infections, or tumors. At Sapiens Clinic in Malleshwaram, we offer advanced reconstructive procedures tailored to address complex limb deformities, ensuring optimal outcomes for our patients.</div>
+                        {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Hand Swellings (Lumps and Bumps) Treatment in Malleshwaram, Bangalore</div> */}
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Limb reconstruction surgery is a specialized field aimed at restoring the form and function of limbs affected by trauma, congenital anomalies, infections, or tumors. At Sapiens Clinic in Malleshwaram, we offer advanced reconstructive procedures tailored to address complex limb deformities, ensuring optimal outcomes for our patients.</div>
                     </div>
                 </div>
 
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Understanding Limb Reconstruction</div>
-                <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Limb reconstruction involves a combination of orthopedic and plastic surgical techniques to correct deformities, length discrepancies, and functional impairments in the upper or lower extremities. This multidisciplinary approach addresses both the skeletal and soft tissue components, facilitating comprehensive rehabilitation.</div>
+                <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Limb reconstruction involves a combination of orthopedic and plastic surgical techniques to correct deformities, length discrepancies, and functional impairments in the upper or lower extremities. This multidisciplinary approach addresses both the skeletal and soft tissue components, facilitating comprehensive rehabilitation.</div>
 
 
             </div>
@@ -92,7 +92,7 @@ const Reconstructionforthelimbs = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Recovery and Rehabilitation</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Postoperative care is crucial for successful outcomes :</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Postoperative care is crucial for successful outcomes :</div>
                         <ul className='mt-5  list-disc pl-10'>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Physical Therapy</b>: Customized exercises to restore mobility and strength.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Regular Monitoring</b>: Follow-up visits to assess healing progress and make necessary adjustments.</li>
@@ -109,7 +109,7 @@ const Reconstructionforthelimbs = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Conclusion</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Limb reconstruction surgery offers hope for individuals facing limb deformities or functional impairments. At Sapiens Clinic, Malleshwaram, our dedicated team employs cutting-edge techniques and a patient-centric approach to restore mobility and improve quality of life.</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Limb reconstruction surgery offers hope for individuals facing limb deformities or functional impairments. At Sapiens Clinic, Malleshwaram, our dedicated team employs cutting-edge techniques and a patient-centric approach to restore mobility and improve quality of life.</div>
                     </div>
                 </div>
             </div>

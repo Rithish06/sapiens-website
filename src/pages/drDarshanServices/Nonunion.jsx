@@ -103,7 +103,7 @@ const Nonunion = () => {
                 affect bone regeneration.
               </li>
             </ul>
-            {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'></div> */}
+            {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'></div> */}
           </div>
         </div>
       </div>
@@ -134,7 +134,7 @@ const Nonunion = () => {
                 the affected limb
               </li>
             </ul>
-            {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'></div> */}
+            {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'></div> */}
           </div>
         </div>
       </div>
@@ -197,7 +197,7 @@ const Nonunion = () => {
                 conditions affecting bone health.
               </li>
             </ul>
-            {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'></div> */}
+            {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'></div> */}
           </div>
         </div>
         <div>

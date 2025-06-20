@@ -29,7 +29,7 @@ const Footer = () => {
                         <div className='text-[20px] md:text-[24px] font-[700] font-roboto'>Follow us</div>
                         <a href="https://www.facebook.com/profile.php?id=100089038095094" target='_blank'><div className='text-[12px] md:text-[16px] font-[400] font-roboto mt-3 cursor-pointer hover:text-orange'>Facebook</div></a>
                         <a href="https://www.instagram.com/sapiensclinicmalleswaram/" target='_blank'><div className='text-[12px] md:text-[16px] font-[400] font-roboto mt-3 cursor-pointer hover:text-orange'>Instagram</div></a>
-                        <a href="https://www.youtube.com/@SapiensClinicMalleshwaram" target='_blank'><div className='text-[12px] md:text-[16px] font-[400] font-roboto mt-3 cursor-pointer hover:text-orange'>Youtube</div></a>
+                        <a href="https://www.youtube.com/@SapiensClinicMalleshwaram" target='_blank'><div className='text-[12px] md:text-[16px] font-[400] font-roboto mt-3 cursor-pointer hover:text-orange'>YouTube</div></a>
                     </div>
                 </div>
             </div>

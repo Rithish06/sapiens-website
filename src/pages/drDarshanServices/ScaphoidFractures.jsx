@@ -36,8 +36,8 @@ const ScaphoidFractures = () => {
                 {/* <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'></div> */}
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>A scaphoid fracture is one of the most common wrist injuries, typically caused by a fall onto an outstretched hand. It affects the scaphoid bone—a small but critical bone located on the thumb side of the wrist. Because this bone has limited blood supply, delayed or improper treatment can lead to poor healing, chronic pain, or long-term complications.</div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>At Sapiens Clinic, Malleshwaram, we provide specialized evaluation and treatment for scaphoid fractures, ensuring timely healing and restoration of wrist function.</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>A scaphoid fracture is one of the most common wrist injuries, typically caused by a fall onto an outstretched hand. It affects the scaphoid bone—a small but critical bone located on the thumb side of the wrist. Because this bone has limited blood supply, delayed or improper treatment can lead to poor healing, chronic pain, or long-term complications.</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>At Sapiens Clinic, Malleshwaram, we provide specialized evaluation and treatment for scaphoid fractures, ensuring timely healing and restoration of wrist function.</div>
                     </div>
                 </div>
             </div>
@@ -46,8 +46,8 @@ const ScaphoidFractures = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>What Is a Scaphoid Fracture?</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>The scaphoid connects the two rows of wrist bones and helps maintain stability and movement. When fractured, especially through trauma or impact, it may go unnoticed at first due to minimal swelling or mild symptoms.</div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'><b>These fractures are classified as:</b></div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>The scaphoid connects the two rows of wrist bones and helps maintain stability and movement. When fractured, especially through trauma or impact, it may go unnoticed at first due to minimal swelling or mild symptoms.</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'><b>These fractures are classified as:</b></div>
                         <ul className='mt-5  list-disc pl-10'>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Non-displaced:</b> The bone is broken but remains properly aligned</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Displaced:</b> The bone fragments have shifted out of position, often requiring surgical correction</li>
@@ -74,8 +74,8 @@ const ScaphoidFractures = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Symptoms</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Symptoms may develop gradually, which is why many scaphoid fractures go undiagnosed early. Watch out for:</div>
-                        {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'></div> */}
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Symptoms may develop gradually, which is why many scaphoid fractures go undiagnosed early. Watch out for:</div>
+                        {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'></div> */}
                         <ul className='mt-5  list-disc pl-10'>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Pain on the thumb side of the wrist, especially with movement</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Swelling or bruising around the wrist</li>
@@ -91,7 +91,7 @@ const ScaphoidFractures = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Diagnosis</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Early detection is key to prevent complications. At the clinic, diagnosis may involve:</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Early detection is key to prevent complications. At the clinic, diagnosis may involve:</div>
                         <ul className='mt-5  list-disc pl-10'>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Physical examination</b>: Checking wrist tenderness, swelling, and movement</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>X-rays</b>: Initial imaging; may not always show the fracture in the early phase</li>
@@ -105,8 +105,8 @@ const ScaphoidFractures = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Treatment Options</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Treatment depends on the fracture's location, alignment, and how long it's been since the injury:</div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'><b>Non-surgical Treatment</b></div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Treatment depends on the fracture's location, alignment, and how long it's been since the injury:</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'><b>Non-surgical Treatment</b></div>
                         <ul className='mt-5  list-disc pl-10'>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Casting</b>: Using a splint or cast to allow the ligament to heal.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Immobilization</b>: Exercises to restore strength and flexibility.</li>
@@ -117,8 +117,8 @@ const ScaphoidFractures = () => {
 
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'><b>Surgical Treatments</b></div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Surgery may be necessary in cases of:</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'><b>Surgical Treatments</b></div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Surgery may be necessary in cases of:</div>
                         <ul className='mt-5  list-disc pl-10'>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Displaced fractures</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Fractures not healing with conservative treatment</li>
@@ -129,7 +129,7 @@ const ScaphoidFractures = () => {
 
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'><b>Surgical options include:</b></div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'><b>Surgical options include:</b></div>
                         <ul className='mt-5  list-disc pl-10'>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Internal fixation</b> using screws or pins to stabilize the bone</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Bone grafting</b> if the fracture shows signs of delayed healing or avascular necrosis</li>
@@ -142,7 +142,7 @@ const ScaphoidFractures = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Recovery & Rehabilitation</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Recovery from a scaphoid fracture varies based on the treatment:</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Recovery from a scaphoid fracture varies based on the treatment:</div>
                         <ul className='mt-5  list-disc pl-10'>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Healing time</b> ranges from 6 to 12 weeks for non-displaced fractures, and longer if surgery is performed</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Physiotherapy</b> helps restore wrist strength, flexibility, and function</li>
@@ -170,7 +170,7 @@ const ScaphoidFractures = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Conclusion</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>A scaphoid fracture may seem minor at first, but without proper care, it can lead to significant wrist dysfunction. Early treatment not only ensures faster recovery but also reduces the risk of complications like nonunion or avascular necrosis. If you've suffered a wrist injury or are experiencing persistent wrist pain, consult Dr. Darshan Kumar A. Jain, Hand and Upper Limb Specialist at Sapiens Clinic, Malleshwaram, for expert diagnosis and personalized care.</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>A scaphoid fracture may seem minor at first, but without proper care, it can lead to significant wrist dysfunction. Early treatment not only ensures faster recovery but also reduces the risk of complications like nonunion or avascular necrosis. If you've suffered a wrist injury or are experiencing persistent wrist pain, consult Dr. Darshan Kumar A. Jain, Hand and Upper Limb Specialist at Sapiens Clinic, Malleshwaram, for expert diagnosis and personalized care.</div>
                     </div>
                 </div>
             </div>

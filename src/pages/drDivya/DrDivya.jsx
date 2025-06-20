@@ -732,7 +732,7 @@ const DrDivya = () => {
                 {/* container 4 */}
                 <div className='p-5 lg:px-20 bounce' ref={(el) => addBounceRef(el, 1)}>
                     <div className="font-heading text-[28px] text-center lg:text-[38px] font-[700] bg-orange-gradient bounce" ref={(el) => addBounceRef(el, 2)}>
-                        Services provided
+                        Services Provided
                     </div>
 
                     <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient text-center my-10 bounce">
@@ -981,7 +981,7 @@ const DrDivya = () => {
                 </div>
 
                 {/* container 12 */}
-                <div className='p-10  md:p-20 mt-10 bg-[#B6FEB433]'>
+                <div className='p-10  md:p-20  bg-[#B6FEB433]'>
                     <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient">
                         Publications:
                     </div>

@@ -42,13 +42,13 @@ const Nerverelatedproblems = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Nerve-Related Problems Affecting the Hand and Upper Limb in Malleshwaram</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Hand Swellings (Lumps and Bumps) Treatment in Malleshwaram, Bangalore</div> */}
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Nerve-related issues in the upper limb, encompassing conditions like brachial plexus injuries and peripheral nerve injuries, can significantly impair hand and arm function. At Sapiens Clinic in Malleshwaram, we specialize in diagnosing and treating these complex conditions, aiming to restore mobility, reduce pain, and enhance quality of life.</div>
+                        {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Hand Swellings (Lumps and Bumps) Treatment in Malleshwaram, Bangalore</div> */}
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Nerve-related issues in the upper limb, encompassing conditions like brachial plexus injuries and peripheral nerve injuries, can significantly impair hand and arm function. At Sapiens Clinic in Malleshwaram, we specialize in diagnosing and treating these complex conditions, aiming to restore mobility, reduce pain, and enhance quality of life.</div>
                     </div>
                 </div>
 
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Understanding Nerve Injuries</div>
-                <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>The upper limb's functionality relies on a network of nerves that transmit signals between the brain and muscles. Injuries or compressions to these nerves can lead to symptoms ranging from mild tingling to complete loss of movement.</div>
+                <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>The upper limb's functionality relies on a network of nerves that transmit signals between the brain and muscles. Injuries or compressions to these nerves can lead to symptoms ranging from mild tingling to complete loss of movement.</div>
 
 
             </div>
@@ -90,7 +90,7 @@ const Nerverelatedproblems = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Diagnosis</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Accurate diagnosis involves :</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Accurate diagnosis involves :</div>
                         <ul className='mt-5  list-disc pl-10'>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Clinical Examination</b>: Assessing muscle strength, reflexes, and sensory function.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Imaging Studies</b>: MRI or ultrasound to visualize nerve structures.</li>
@@ -105,7 +105,7 @@ const Nerverelatedproblems = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Treatment Options</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Management strategies are tailored based on the specific condition :</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Management strategies are tailored based on the specific condition :</div>
                         <ul className='mt-5  list-disc pl-10'>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Conservative Therapies:</b>
                                 <ul className="mt-5  list-disc pl-10">
@@ -132,7 +132,7 @@ const Nerverelatedproblems = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Recovery and Rehabilitation</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Post-treatment rehabilitation focuses on :</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Post-treatment rehabilitation focuses on :</div>
                         <ul className='mt-5  list-disc pl-10'>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Restoring Function</b>: Through targeted exercises and therapies.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Pain Management</b>: Utilizing medications and therapeutic modalities.</li>
@@ -148,7 +148,7 @@ const Nerverelatedproblems = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Conclusion</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Nerve-related problems in the hand and upper limb can significantly impact daily activities and overall well-being. At Sapiens Clinic, Malleshwaram, our multidisciplinary team is dedicated to providing comprehensive care, from accurate diagnosis to personalized treatment plans, ensuring optimal recovery and prevention of future injuries.</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Nerve-related problems in the hand and upper limb can significantly impact daily activities and overall well-being. At Sapiens Clinic, Malleshwaram, our multidisciplinary team is dedicated to providing comprehensive care, from accurate diagnosis to personalized treatment plans, ensuring optimal recovery and prevention of future injuries.</div>
                     </div>
                 </div>
             </div>

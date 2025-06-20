@@ -33,15 +33,15 @@ const KienbockDisease = () => {
             <Servicesbanner serviceName=" Kienbock’s Disease" />
 
             <div className='px-8 lg:px-20 mt-8'>
-                <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                     Kienböck’s disease is a rare and progressive condition in which the lunate bone - one of the small bones in the wrist - loses its blood supply.
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Over time, this leads to bone death (avascular necrosis), collapse, and arthritis if left untreated. The disease can cause significant pain, stiffness, and loss of wrist function.
                         </div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             At Sapiens Clinic, Malleshwaram, we focus on early diagnosis and customized treatment to preserve wrist motion, relieve pain and prevent long-term joint damage.
                         </div>
                     </div>
@@ -54,7 +54,7 @@ const KienbockDisease = () => {
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             The lunate bone plays a key role in wrist movement. When blood flow to this bone is disrupted, the bone begins to break down. As the condition progresses, the structure of the lunate deteriorates, affecting the balance and mechanics of the wrist joint.
                         </div>
                         <ul className='mt-5 list-disc pl-10'>
@@ -90,7 +90,7 @@ const KienbockDisease = () => {
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Early diagnosis is crucial to manage the condition before joint damage becomes permanent. Diagnostic methods include:
                         </div>
                         <ul className='mt-5 list-disc pl-10'>
@@ -129,7 +129,7 @@ const KienbockDisease = () => {
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Proximal row carpectomy:</b> Removes a row of small wrist bones to reduce pain and retain limited motion.</li>
                         </ul>
 
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Each treatment plan is customized based on the severity of the condition, age, lifestyle, and hand dominance of the patient.
                         </div>
                     </div>
@@ -158,7 +158,7 @@ const KienbockDisease = () => {
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Kienböck’s disease can significantly impact wrist function and quality of life if not diagnosed early. The good news is that with the right care, its progression can often be slowed or managed effectively. If you're experiencing ongoing wrist pain or stiffness, don't delay evaluation. For accurate diagnosis and expert care, consult Dr. Darshan Kumar A. Jain, Hand and Upper Limb Specialist at Sapiens Clinic, Malleshwaram.
                         </div>
                     </div>
@@ -167,9 +167,7 @@ const KienbockDisease = () => {
 
             <ContactPage />
 
-            <div className="mt-15">
-                <Faqs faqs={faqs} />
-            </div>
+            <Faqs faqs={faqs} />
 
         </div>
     )

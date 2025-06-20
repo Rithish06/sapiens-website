@@ -42,13 +42,13 @@ const Flapscovertoupperorlowerlimbs = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Flap Coverage for Upper and Lower Limb Reconstruction in Malleshwaram</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Hand Swellings (Lumps and Bumps) Treatment in Malleshwaram, Bangalore</div> */}
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Flap coverage is a critical surgical technique employed to restore form and function in limbs affected by trauma, infection, tumors, or congenital anomalies. At Sapiens Clinic in Malleshwaram, we specialize in advanced flap reconstruction procedures for both upper and lower limbs, aiming to preserve limbs, enhance mobility and improve quality of life.</div>
+                        {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Hand Swellings (Lumps and Bumps) Treatment in Malleshwaram, Bangalore</div> */}
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Flap coverage is a critical surgical technique employed to restore form and function in limbs affected by trauma, infection, tumors, or congenital anomalies. At Sapiens Clinic in Malleshwaram, we specialize in advanced flap reconstruction procedures for both upper and lower limbs, aiming to preserve limbs, enhance mobility and improve quality of life.</div>
                     </div>
                 </div>
 
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Understanding Flap Coverage</div>
-                <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Flap coverage involves the transfer of healthy tissue—comprising skin, muscle, fat, or bone—from one part of the body to another to cover defects. This technique is essential when wounds are too extensive for primary closure or skin grafts, especially when vital structures like bones, tendons, or nerves are exposed.</div>
+                <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Flap coverage involves the transfer of healthy tissue—comprising skin, muscle, fat, or bone—from one part of the body to another to cover defects. This technique is essential when wounds are too extensive for primary closure or skin grafts, especially when vital structures like bones, tendons, or nerves are exposed.</div>
 
 
             </div>
@@ -83,7 +83,7 @@ const Flapscovertoupperorlowerlimbs = () => {
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Muscle Flaps</b>: Muscle tissue is used to fill dead space and provide robust coverage.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Fasciocutaneous Flaps</b>: Skin and fascia are transferred together for coverage.</li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>The choice of flap depends on multiple factors, including the patient's health status and specific reconstructive needs.</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>The choice of flap depends on multiple factors, including the patient's health status and specific reconstructive needs.</div>
                     </div>
 
                 </div>
@@ -93,8 +93,8 @@ const Flapscovertoupperorlowerlimbs = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Local Flaps</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>The flap coverage procedure involves meticulous planning and execution:</div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'><b>Assessment</b>: Comprehensive evaluation of the wound and overall patient health.</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>The flap coverage procedure involves meticulous planning and execution:</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'><b>Assessment</b>: Comprehensive evaluation of the wound and overall patient health.</div>
                         <ul className='mt-5  list-decimal pl-10'>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Donor Site Selection</b>: Identifying suitable tissue for transfer.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Flap Harvesting</b>: Careful dissection of the chosen tissue while preserving its blood supply.</li>
@@ -102,7 +102,7 @@ const Flapscovertoupperorlowerlimbs = () => {
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Anastomosis (for free flaps)</b>: Connecting blood vessels under a microscope to establish circulation.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Closure</b>: Suturing the donor and recipient sites.</li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Postoperative monitoring is crucial to ensure flap viability and detect any complications early.</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Postoperative monitoring is crucial to ensure flap viability and detect any complications early.</div>
                     </div>
                 </div>
             </div>
@@ -111,14 +111,14 @@ const Flapscovertoupperorlowerlimbs = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Recovery and Rehabilitation</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Recovery timelines vary based on the complexity of the procedure and individual patient factors. Generally, patients can expect :</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Recovery timelines vary based on the complexity of the procedure and individual patient factors. Generally, patients can expect :</div>
                         <ul className='mt-5  list-disc pl-10'>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Hospital Stay</b>: Several days to monitor flap integration.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Physical Therapy</b>: Initiated early to restore function and prevent stiffness.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Follow-Up Visits</b>: Regular assessments to monitor healing and address any concerns.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Return to Activities</b>: Gradual resumption of daily activities as advised by the medical team.</li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Adherence to postoperative instructions significantly influences the success of the reconstruction.</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Adherence to postoperative instructions significantly influences the success of the reconstruction.</div>
                     </div>
 
                 </div>
@@ -128,7 +128,7 @@ const Flapscovertoupperorlowerlimbs = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Conclusion</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Flap coverage stands as a cornerstone in reconstructive surgery, offering solutions for complex limb defects that might otherwise lead to amputation or significant disability. At Sapiens Clinic, Malleshwaram, our multidisciplinary team is dedicated to delivering personalized care, employing state-of-the-art techniques to achieve optimal functional and aesthetic outcomes for our patients.</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Flap coverage stands as a cornerstone in reconstructive surgery, offering solutions for complex limb defects that might otherwise lead to amputation or significant disability. At Sapiens Clinic, Malleshwaram, our multidisciplinary team is dedicated to delivering personalized care, employing state-of-the-art techniques to achieve optimal functional and aesthetic outcomes for our patients.</div>
                     </div>
                 </div>
             </div>

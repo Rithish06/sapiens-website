@@ -42,13 +42,13 @@ const VICVolkmanIschemicContracture = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Volkmann’s Ischemic Contracture (VIC) Treatment in Malleshwaram</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Hand Swellings (Lumps and Bumps) Treatment in Malleshwaram, Bangalore</div> */}
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Volkmann’s Ischemic Contracture (VIC) is a serious medical condition characterized by a permanent flexion deformity of the hand and wrist, resulting from prolonged muscle and nerve ischemia in the forearm. At Sapiens Clinic in Malleshwaram, we specialize in the diagnosis, management, and surgical correction of VIC, aiming to restore function and improve the quality of life for our patients.</div>
+                        {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Hand Swellings (Lumps and Bumps) Treatment in Malleshwaram, Bangalore</div> */}
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Volkmann’s Ischemic Contracture (VIC) is a serious medical condition characterized by a permanent flexion deformity of the hand and wrist, resulting from prolonged muscle and nerve ischemia in the forearm. At Sapiens Clinic in Malleshwaram, we specialize in the diagnosis, management, and surgical correction of VIC, aiming to restore function and improve the quality of life for our patients.</div>
                     </div>
                 </div>
 
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Understanding Volkmann’s Ischemic Contracture</div>
-                <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>VIC arises when increased pressure within the forearm compartments-often due to trauma, fractures, or tight bandaging—leads to compromised blood flow (ischemia). This ischemia causes muscle and nerve damage, particularly affecting the flexor muscles of the forearm, leading to fibrosis and shortening of these muscles. The result is a claw-like deformity of the hand and fingers, with restricted and painful passive extension.</div>
+                <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>VIC arises when increased pressure within the forearm compartments-often due to trauma, fractures, or tight bandaging—leads to compromised blood flow (ischemia). This ischemia causes muscle and nerve damage, particularly affecting the flexor muscles of the forearm, leading to fibrosis and shortening of these muscles. The result is a claw-like deformity of the hand and fingers, with restricted and painful passive extension.</div>
 
 
             </div>
@@ -91,7 +91,7 @@ const VICVolkmanIschemicContracture = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Diagnosis</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Diagnosis involves a combination of clinical evaluation and diagnostic tests :</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Diagnosis involves a combination of clinical evaluation and diagnostic tests :</div>
                         <ul className='mt-5  list-disc pl-10'>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Physical Examination</b>: Assessing for signs of compartment syndrome and contracture.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Imaging Studies</b>: X-rays to identify fractures; MRI or ultrasound to assess soft tissue damage.</li>
@@ -105,7 +105,7 @@ const VICVolkmanIschemicContracture = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Treatment Options</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Management of VIC depends on the stage and severity of the condition :</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Management of VIC depends on the stage and severity of the condition :</div>
                         <ul className='mt-5  list-desc pl-10'>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Acute Phase</b> :
                                 <ul className="mt-5  list-disc pl-10">
@@ -135,13 +135,13 @@ const VICVolkmanIschemicContracture = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Recovery and Rehabilitation</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Postoperative rehabilitation is vital for functional recovery :</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Postoperative rehabilitation is vital for functional recovery :</div>
                         <ul className='mt-5  list-disc pl-10'>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Splinting</b>: To maintain proper positioning of the hand and wrist.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Occupational Therapy</b>: To regain strength and dexterity.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Regular Follow-Up</b>: Monitoring for complications and assessing progress.</li>
                         </ul>
-                    <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Recovery timelines vary based on the severity of the contracture and the specific surgical procedures performed.</div>
+                    <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Recovery timelines vary based on the severity of the contracture and the specific surgical procedures performed.</div>
                     </div>
 
                 </div>
@@ -152,7 +152,7 @@ const VICVolkmanIschemicContracture = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Conclusion</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Volkmann’s Ischemic Contracture is a preventable yet potentially debilitating condition. Early recognition and prompt intervention are key to preventing permanent damage. At Sapiens Clinic, Malleshwaram, our multidisciplinary team is dedicated to providing comprehensive care, employing advanced surgical techniques and personalized rehabilitation programs to restore function and improve patient outcomes.</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Volkmann’s Ischemic Contracture is a preventable yet potentially debilitating condition. Early recognition and prompt intervention are key to preventing permanent damage. At Sapiens Clinic, Malleshwaram, our multidisciplinary team is dedicated to providing comprehensive care, employing advanced surgical techniques and personalized rehabilitation programs to restore function and improve patient outcomes.</div>
                     </div>
                 </div>
             </div>

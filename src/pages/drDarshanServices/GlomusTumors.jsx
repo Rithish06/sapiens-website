@@ -41,7 +41,7 @@ const GlomusTumors = () => {
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Glomus tumors are rare, benign vascular neoplasms arising from the glomus body, a thermoregulatory shunt concentrated in the fingers and toes. These tumors most commonly occur under the fingernails (subungual region) and are characterized by severe pain, tenderness, and sensitivity to cold. At Sapiens Clinic in Malleshwaram, we offer comprehensive evaluation and personalized treatment plans for individuals presenting with glomus tumors, ensuring optimal functional and aesthetic outcomes.
                         </div>
                     </div>
@@ -54,7 +54,7 @@ const GlomusTumors = () => {
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Glomus tumors are typically small, solitary lesions that can cause significant discomfort. They may present with a bluish discoloration under the nail and can lead to nail deformity if left untreated. While benign, their location and symptoms often necessitate medical intervention.
                         </div>
                     </div>
@@ -114,7 +114,7 @@ const GlomusTumors = () => {
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             The primary treatment for glomus tumors is surgical excision. Complete removal typically results in immediate symptom relief and low recurrence rates. The procedure is usually performed under local anesthesia, with care taken to preserve nail integrity.
                         </div>
                     </div>
@@ -127,7 +127,7 @@ const GlomusTumors = () => {
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Postoperative recovery is generally swift, with most patients resuming normal activities within a few days. Pain relief is often immediate, and cosmetic outcomes are favorable. Follow-up appointments ensure proper healing and monitor for potential recurrence.
                         </div>
                     </div>
@@ -140,7 +140,7 @@ const GlomusTumors = () => {
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Early recognition and appropriate management of glomus tumors are essential to alleviate pain and prevent complications. If you experience persistent fingertip pain or notice discoloration under your nail, consult Dr. Darshan Kumar A. Jain, Orthopedic Specialist at Sapiens Clinic, Malleshwaram, for a comprehensive evaluation and personalized treatment plan.
                         </div>
                     </div>
@@ -149,9 +149,7 @@ const GlomusTumors = () => {
 
             <ContactPage />
 
-            <div className="mt-15">
-                <Faqs faqs={faqs} />
-            </div>
+            <Faqs faqs={faqs} />
 
         </div>
     )

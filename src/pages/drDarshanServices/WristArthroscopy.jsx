@@ -33,15 +33,15 @@ const WristArthroscopy = () => {
             <Servicesbanner serviceName="Wrist Arthroscopy" />
 
             <div className='px-8 lg:px-20 mt-8'>
-                <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                     Wrist arthroscopy is a minimally invasive surgical procedure that allows orthopedic specialists to diagnose and treat various wrist conditions with precision. At Sapiens Clinic in Malleshwaram, we utilize advanced arthroscopic techniques to provide effective solutions for patients experiencing wrist pain, instability or limited mobility.
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             <strong>What Is Wrist Arthroscopy?</strong>
                         </div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Wrist arthroscopy involves inserting a small camera, known as an arthroscope, into the wrist joint through tiny incisions. This camera projects images onto a monitor, enabling the surgeon to examine the intricate structures within the wrist, such as ligaments, cartilage, and bones. The procedure can be both diagnostic and therapeutic, allowing for the treatment of various conditions without the need for large incisions.
                         </div>
                     </div>
@@ -97,7 +97,7 @@ const WristArthroscopy = () => {
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><strong>Treatment:</strong> If necessary, surgical instruments are used to repair or remove damaged tissues.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><strong>Closure:</strong> Instruments are removed, and incisions are closed with sutures or sterile strips.</li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             The entire procedure usually lasts less than an hour, and patients can often return home the same day.
                         </div>
                     </div>
@@ -116,7 +116,7 @@ const WristArthroscopy = () => {
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><strong>Physical Therapy:</strong> Exercises to restore strength and flexibility are initiated as advised.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><strong>Follow-Up:</strong> Regular check-ups ensure proper healing and address any concerns.</li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Most patients experience significant improvement within a few weeks, with full recovery typically achieved in a few months.
                         </div>
                     </div>
@@ -129,7 +129,7 @@ const WristArthroscopy = () => {
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Wrist arthroscopy is a valuable tool in diagnosing and treating various wrist conditions with minimal invasiveness. If you're experiencing persistent wrist issues, consult Dr. Darshan Kumar A. Jain, Orthopedic Specialist at Sapiens Clinic, Malleshwaram, for a comprehensive evaluation and personalized treatment plan.
                         </div>
                     </div>

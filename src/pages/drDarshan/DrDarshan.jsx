@@ -771,7 +771,7 @@ const DrDarshan = () => {
 
                 <div className="font-heading text-[28px] text-center lg:text-[38px] font-[700] bg-orange-gradient">Specialty : Hand Surgery & Microsurgery</div>
 
-                <div className="flex flex-col mt-10 lg:flex-row lg:gap-0">
+                <div className="flex flex-col mt-10 lg:flex-row lg:items-center lg:gap-0">
                     <div className="w-full lg:50%">
 
                         {speciality.map((speciality, index) => (
@@ -783,7 +783,8 @@ const DrDarshan = () => {
                     </div>
                     <div className="w-full lg:50%">
                         {/* <img src="" alt="" /> */}
-                        <div className='w-full h-300px lg:h-full bg-gray-300 rounded-2xl'></div>
+                        {/* <div className='w-full h-300px lg:h-full bg-gray-300 rounded-2xl'></div> */}
+                        <img src={assets.specialityImg} className='w-full h-280px lg:h-full rounded-2xl' />
                     </div>
                 </div>
             </div>
@@ -793,7 +794,7 @@ const DrDarshan = () => {
             <div className='relative lg:gap-0 px-5 md:px-0 md:py-0 mxl:py-10 bounce' ref={el => bounceElements.current[1] = el}>
                 {/* Section Title */}
                 <div className="font-heading text-[28px] text-center lg:text-[38px] font-[700] bg-orange-gradient" ref={el => bounceElements.current[2] = el}>
-                    Services provided
+                    Services Provided
                 </div>
 
                 {/* upperLimb */}

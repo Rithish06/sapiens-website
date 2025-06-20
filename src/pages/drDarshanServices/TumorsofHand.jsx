@@ -39,7 +39,7 @@ const TumorsofHand = () => {
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Hand tumors encompass a variety of growths that can develop in the tissues of the hand, including skin, fat, nerves, blood vessels, tendons, ligaments and bones. While most hand tumors are benign (non-cancerous), some can be malignant (cancerous) necessitating prompt evaluation and management. At Sapiens Clinic in Malleshwaram, we offer comprehensive assessment and personalized treatment plans for individuals presenting with hand tumors, ensuring optimal functional and aesthetic outcomes.
                         </div>
                     </div>
@@ -167,7 +167,7 @@ const TumorsofHand = () => {
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Early detection and appropriate management of hand tumors are vital to prevent complications and preserve hand function. If you notice any unusual lumps or changes in your hand, consult Dr. Darshan Kumar A. Jain, Orthopedic Specialist at Sapiens Clinic, Malleshwaram, for a comprehensive evaluation and personalized treatment plan.
                         </div>
                     </div>
@@ -176,9 +176,7 @@ const TumorsofHand = () => {
 
             <ContactPage />
 
-            <div className="mt-15">
-                <Faqs faqs={faqs} />
-            </div>
+            <Faqs faqs={faqs} />
         </div>
     )
 }

@@ -40,7 +40,7 @@ const UclInjuries = () => {
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Ulnar Collateral Ligament (UCL) injuries are prevalent among athletes engaged in overhead throwing activities, such as baseball, javelin, and tennis. These injuries can lead to elbow instability and pain, affecting performance and daily activities. At Sapiens Clinic in Malleshwaram, we provide comprehensive evaluation and personalized treatment plans to address UCL injuries effectively.
                         </div>
                     </div>
@@ -53,7 +53,7 @@ const UclInjuries = () => {
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             The UCL is a critical ligament on the inner side of the elbow, providing stability during overhead arm movements. Injuries to the UCL can result from acute trauma or repetitive stress, leading to partial or complete tears. Such injuries are commonly referred to as "Tommy John" injuries, named after the baseball pitcher who first underwent successful UCL reconstruction surgery.
                         </div>
                     </div>
@@ -142,7 +142,7 @@ const UclInjuries = () => {
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Non-Surgical:</b> Several weeks to months, depending on injury severity.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Post-Surgical:</b> Typically 9-12 months for athletes to return to competitive play.</li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             A structured rehabilitation program is crucial, focusing on gradual strengthening and restoring range of motion.
                         </div>
                     </div>
@@ -155,7 +155,7 @@ const UclInjuries = () => {
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Early intervention and a tailored treatment approach are vital for optimal recovery from UCL injuries. If you experience elbow pain or instability, consult Dr. Darshan Kumar A. Jain, Orthopedic Specialist at Sapiens Clinic, Malleshwaram, for expert evaluation and management.
                         </div>
                     </div>
@@ -164,9 +164,7 @@ const UclInjuries = () => {
 
             <ContactPage />
 
-            <div className="mt-15">
-                <Faqs faqs={faqs} />
-            </div>
+            <Faqs faqs={faqs} />
 
         </div>
     )

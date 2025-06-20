@@ -99,7 +99,7 @@ const RotatorCuffTear = () => {
                 or swimming are at higher risk.
               </li>
             </ul>
-            {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'></div> */}
+            {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'></div> */}
           </div>
         </div>
       </div>
@@ -129,7 +129,7 @@ const RotatorCuffTear = () => {
                 moving the shoulder.
               </li>
             </ul>
-            {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'></div> */}
+            {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'></div> */}
           </div>
         </div>
       </div>
@@ -157,7 +157,7 @@ const RotatorCuffTear = () => {
                 as arthritis.
               </li>
             </ul>
-            {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'></div> */}
+            {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'></div> */}
           </div>
         </div>
       </div>
@@ -191,7 +191,7 @@ const RotatorCuffTear = () => {
                 inflammation.
               </li>
             </ul>
-            {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'></div> */}
+            {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'></div> */}
           </div>
         </div>
         <div>
@@ -213,7 +213,7 @@ const RotatorCuffTear = () => {
               <b>Loss of Function</b>: Significant weakness or limited mobility
             </li>
           </ul>
-          {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'></div> */}
+          {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'></div> */}
         </div>
         <div>
           <div className="font-para text-[12px] lg:text-[16px] leading-[26px] mt-4">
@@ -236,7 +236,7 @@ const RotatorCuffTear = () => {
               injuries.
             </li>
           </ul>
-          {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'></div> */}
+          {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'></div> */}
         </div>
       </div>
       <div className="px-8 lg:px-20 mt-8">

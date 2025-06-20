@@ -34,7 +34,7 @@ const ScapholunateLigamentInjury = () => {
             <Servicesbanner serviceName="Scapholunate Ligament Injury" />
 
             <div className='px-8 lg:px-20 mt-8'>
-                <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                     The scapholunate ligament is a key stabilizer of the wrist, connecting the scaphoid and lunate bones.Injury to this ligament can lead to wrist instability, pain and if untreated, progressive arthritis. At Sapiens Clinic in Malleshwaram, we specialize in the accurate diagnosis and effective treatment of scapholunate ligament injuries, aiming to restore wrist function and alleviate discomfort.
                 </div>
             </div>
@@ -45,7 +45,7 @@ const ScapholunateLigamentInjury = () => {
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             A scapholunate ligament injury occurs when the ligament connecting the scaphoid and lunate bones in the wrist is stretched or torn. This can result in abnormal movement between these bones, leading to wrist instability. Common causes include:
                         </div>
                         <ul className='mt-5  list-disc pl-10'>
@@ -53,7 +53,7 @@ const ScapholunateLigamentInjury = () => {
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Sports injuries</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Motor vehicle accidents</li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             The severity of the injury can range from a mild sprain to a complete tear, affecting the stability and function of the wrist.
                         </div>
                     </div>
@@ -74,7 +74,7 @@ const ScapholunateLigamentInjury = () => {
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Clicking or popping sensations:</b> during wrist movement</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Limited range of motion:</b></li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             These symptoms can develop immediately after injury or gradually over time if the injury is not addressed.
                         </div>
                     </div>
@@ -164,7 +164,7 @@ const ScapholunateLigamentInjury = () => {
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Early detection and appropriate management of scapholunate ligament injuries are vital to prevent long-term complications. If you're experiencing wrist pain or instability, consult Dr. Darshan Kumar A. Jain, Orthopedic Specialist at Sapiens Clinic, Malleshwaram, for a comprehensive evaluation and personalized treatment plan.
                         </div>
                     </div>
@@ -173,9 +173,7 @@ const ScapholunateLigamentInjury = () => {
 
             <ContactPage />
 
-            <div className="mt-15">
-                <Faqs faqs={faqs} />
-            </div>
+            <Faqs faqs={faqs} />
 
         </div>
     )

@@ -37,7 +37,7 @@ const SynovitisOfElbow = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Synovitis of the Elbow</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Synovitis of the elbow is a condition characterized by inflammation of the synovial membrane—the lining of the elbow joint. This inflammation can lead to pain, swelling, and reduced mobility, affecting daily activities. At Sapiens Clinic in Malleshwaram, we specialize in the comprehensive evaluation and management of elbow synovitis, aiming to restore function and improve quality of life for our patients.
                         </div>
                     </div>
@@ -48,7 +48,7 @@ const SynovitisOfElbow = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Understanding Elbow Synovitis</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             The synovial membrane produces synovial fluid, which lubricates the elbow joint, facilitating smooth movement. When this membrane becomes inflamed, it results in synovitis, leading to discomfort and impaired joint function. Synovitis can be acute or chronic and may arise from various underlying conditions.
                         </div>
                     </div>
@@ -67,7 +67,7 @@ const SynovitisOfElbow = () => {
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Injury or Trauma:</b> Direct impact or repetitive stress on the elbow.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Infection:</b> Bacterial or viral infections affecting the joint.</li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Risk factors include age, repetitive elbow movements, previous joint injuries, and underlying autoimmune conditions.
                         </div>
                     </div>
@@ -107,7 +107,7 @@ const SynovitisOfElbow = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Treatment Options</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'><b>Non-Surgical Treatments</b></div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'><b>Non-Surgical Treatments</b></div>
                         <ul className='mt-5 list-disc pl-10'>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Medications:</b> NSAIDs to reduce pain and inflammation; corticosteroids for severe inflammation.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Physical Therapy:</b> Exercises to improve flexibility and strength.</li>
@@ -115,7 +115,7 @@ const SynovitisOfElbow = () => {
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Joint Aspiration:</b> Removal of excess synovial fluid to relieve pressure.</li>
                         </ul>
 
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'><b>Surgical Treatments</b></div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'><b>Surgical Treatments</b></div>
                         <ul className='mt-5 list-disc pl-10'>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Arthroscopic Synovectomy:</b> Minimally invasive removal of inflamed synovial tissue.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Open Synovectomy:</b> Surgical removal of the synovial membrane in more severe cases.</li>
@@ -133,7 +133,7 @@ const SynovitisOfElbow = () => {
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Pain Management:</b> Medications and modalities to control discomfort.</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Regular Follow-Up:</b> Monitoring progress and adjusting treatment as needed.</li>
                         </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Recovery time varies depending on the treatment approach and individual factors.
                         </div>
                     </div>
@@ -144,7 +144,7 @@ const SynovitisOfElbow = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Conclusion</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>
                             Elbow synovitis can significantly impact daily activities, but with timely and appropriate management, symptoms can be alleviated, and function restored. At Sapiens Clinic, Malleshwaram, Dr. Darshan Kumar A. Jain and our dedicated team are committed to providing comprehensive care tailored to each patient's needs. If you're experiencing elbow pain or stiffness, schedule a consultation to explore your treatment options.
                         </div>
                     </div>
@@ -153,9 +153,7 @@ const SynovitisOfElbow = () => {
 
             <ContactPage />
 
-            <div className="mt-15">
-                <Faqs faqs={faqs} />
-            </div>
+            <Faqs faqs={faqs} />
         </div>
     )
 }

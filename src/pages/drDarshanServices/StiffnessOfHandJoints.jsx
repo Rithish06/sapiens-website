@@ -61,16 +61,16 @@ const StiffnessOfHandJoints = () => {
                         <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-5'><b>1. Post-Injury or Post-Surgery Stiffness</b></div>
                         <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>After a fracture, ligament injury, or surgical procedure (like tendon repair or joint fixation), the hand may stiffen up - especially if the area was immobilized for a long time without rehabilitation.</div>
 
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'><b>2. Inflammatory Conditions</b></div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'><b>2. Inflammatory Conditions</b></div>
                         <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Autoimmune diseases like rheumatoid arthritis, psoriatic arthritis, or lupus cause chronic inflammation that can damage joints and surrounding soft tissues, leading to morning stiffness, swelling, and joint pain.</div>
 
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'><b>3. Osteoarthritis</b></div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'><b>3. Osteoarthritis</b></div>
                         <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>With age or overuse, the cartilage in your joints wears down. This “wear-and-tear” arthritis can lead to stiffness, especially in the finger joints, thumb base, or wrist.</div>
 
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'><b>4. Diabetes-Related Stiffness</b></div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'><b>4. Diabetes-Related Stiffness</b></div>
                         <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>People with diabetes may develop diabetic cheiroarthropathy, a condition where the skin thickens and the joints feel tight, especially in the fingers.</div>
 
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>5. Tendon Adhesions or Contractures</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>5. Tendon Adhesions or Contractures</div>
                         <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Sometimes the issue is not in the joint itself, but in the tendons or soft tissues around it. Trigger finger, Dupuytren’s contracture, or tenosynovitis can all restrict movement and cause locking or catching of fingers.</div>
                     </div>
                 </div>
@@ -114,17 +114,17 @@ const StiffnessOfHandJoints = () => {
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
                         <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>We believe in treating the cause, not just the symptom. Once we identify what’s behind the stiffness, your treatment may include:</div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'><b> 1. Physical Therapy & Rehabilitation</b></div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'><b> 1. Physical Therapy & Rehabilitation</b></div>
                         <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Gentle exercises to stretch the fingers, mobilize the wrist, and retrain normal hand movements. We also guide you on using heat/cold therapy at home and ergonomic hand positioning.</div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'><b>2. Medications</b></div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'><b>2. Medications</b></div>
                         <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Anti-inflammatory tablets or topical gels can help in cases where swelling is contributing to the stiffness. If autoimmune inflammation is present, immunosuppressants may be needed.</div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'><b>3. Splinting or Taping</b></div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'><b>3. Splinting or Taping</b></div>
                         <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Supportive splints may be used to position joints correctly and relieve strain - especially in conditions like trigger finger or early Dupuytren’s.</div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'><b>4. Steroid Injections</b></div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'><b>4. Steroid Injections</b></div>
                         <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>For stubborn inflammatory stiffness, a corticosteroid injection into the joint or tendon sheath can reduce pain and improve motion within days.</div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'><b>5. Surgical Options (If Required)</b></div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'><b>5. Surgical Options (If Required)</b></div>
                         <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>When stiffness is due to tendon adhesions, contractures, or joint fusion, surgery may be needed to release scar tissue, repair tendons, or restore joint alignment.</div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>When it comes to treating hand stiffness, it’s not just about improving movement - it’s about restoring your independence and comfort in the little things you do every day. At Sapiens Clinic, your care is guided by Dr. Darshan Kumar A. Jain, a skilled orthopedic and hand specialist with years of experience managing complex joint and soft tissue conditions. His approach combines precision with a deep understanding of how hand stiffness impacts your quality of life-ensuring every treatment plan is not only medically sound but also practical for your lifestyle.</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>When it comes to treating hand stiffness, it’s not just about improving movement - it’s about restoring your independence and comfort in the little things you do every day. At Sapiens Clinic, your care is guided by Dr. Darshan Kumar A. Jain, a skilled orthopedic and hand specialist with years of experience managing complex joint and soft tissue conditions. His approach combines precision with a deep understanding of how hand stiffness impacts your quality of life-ensuring every treatment plan is not only medically sound but also practical for your lifestyle.</div>
                     </div>
                 </div>
             </div>
