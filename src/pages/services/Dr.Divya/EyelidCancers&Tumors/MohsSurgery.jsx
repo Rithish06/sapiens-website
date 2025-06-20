@@ -29,12 +29,6 @@ const MohsSurgery = () => {
     ]
 
 
-    const contact = [
-        {
-            heading:"",
-            para:""
-        }
-    ]
     return (
         <div>
             <div>
@@ -181,7 +175,7 @@ const MohsSurgery = () => {
 
             {/* contact-part */}
             <div>
-                <ContactPage contacts={contact[0]}/>
+                <ContactPage />
             </div>
 
             {/* faqs */}

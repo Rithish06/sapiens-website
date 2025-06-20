@@ -30,12 +30,7 @@ const EyelidRetraction = () => {
         },
     ]
 
-    const contact = [
-        {
-            heading:"",
-            para:""
-        }
-    ]
+
 
     return (
         <div>
@@ -194,7 +189,7 @@ const EyelidRetraction = () => {
 
             {/* contact-part */}
             <div>
-                <ContactPage contacts={contact[0]}/>
+                <ContactPage/>
             </div>
 
             <div>

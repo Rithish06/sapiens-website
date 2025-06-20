@@ -29,13 +29,6 @@ const Sebaceouscellcarcinoma = () => {
         },
     ]
 
-
-    const contact = [
-        {
-            heading:"",
-            para:""
-        }
-    ]
     return (
         <div>
             <div>
@@ -176,7 +169,7 @@ const Sebaceouscellcarcinoma = () => {
 
             {/* content-part */}
             <div>
-                <ContactPage contacts={contact[0]}/>
+                <ContactPage />
             </div>
 
             {/* faqs */}

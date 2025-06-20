@@ -105,7 +105,7 @@ const App = () => {
         {/* <RouterOutlet />
             <CarpalTunnel />
             <RouterOutlet /> */}
-        {/* <RouterOutlet /> */}
+        <RouterOutlet />
         {/* <CarpalTunnel /> */}
         {/* <SportInjuredHand /> */}
         {/* <StiffnessOfHandJoints /> */}
@@ -135,7 +135,7 @@ const App = () => {
         {/* <EyelidRetraction/> */}
         {/* <EyelidSynkinesis/> */}
         {/* <SurgicalBlepharoplasty/> */}
-        <ChoroidalMelanoma/>
+        {/* <ChoroidalMelanoma/> */}
       </div>
       {/* <Career /> */}
       <Footer />

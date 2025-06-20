@@ -28,12 +28,6 @@ const OrbitalTumors = () => {
         },
     ]
 
-    const contact = [
-        {
-            heading:"",
-            para:""
-        }
-    ]
     return (
         <div>
             <div>
@@ -152,7 +146,7 @@ const OrbitalTumors = () => {
 
             {/* contact-part */}
             <div>
-                <ContactPage contacts={contact[0]}/>
+                <ContactPage />
             </div>
 
             {/* faqs */}

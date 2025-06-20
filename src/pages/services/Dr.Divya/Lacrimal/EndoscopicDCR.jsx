@@ -28,12 +28,7 @@ const EndoscopicDCR = () => {
         },
     ]
 
-    const contact =[
-        {
-            heading:"Recovery and Postoperative Care",
-            para:"Recovery from Endoscopic DCR is typically smooth and well-tolerated. Our team provides a customized post-surgery care plan which includes"
-        }
-    ]
+
     return (
         <div>
             <div>
@@ -151,7 +146,7 @@ const EndoscopicDCR = () => {
 
             {/* contact-part */}
             <div>
-                <ContactPage contacts={contact[0]}/>
+                <ContactPage/>
             </div>
 
             {/* faqs */}

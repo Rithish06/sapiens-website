@@ -30,13 +30,6 @@ const Eyelid = () => {
         },
     ]
 
-
-    const contact = [
-        {
-            heading:"",
-            para:""
-        }
-    ]
   return (
     <div>
         <div>
@@ -108,7 +101,7 @@ const Eyelid = () => {
 
         {/* contact */}
         <div>
-            <ContactPage contacts={contact[0]}/>
+            <ContactPage />
         </div>
 
         {/* faqs */}

@@ -29,13 +29,6 @@ const WallDecompression3 = () => {
         },
     ]
 
-
-    const contact = [
-        {
-            heading:"Why Choose Sapiens Clinic, Malleshwaram?",
-            para:"At Sapiens Clinic, our focus is not only on surgical precision but also on restoring comfort, vision, and aesthetics with minimal downtime. Our experienced oculoplastic team in Malleshwaram combines medical expertise with advanced surgical techniques to ensure patient safety and satisfaction throughout the treatment journey."
-        }
-    ]
     return (
         <div>
             <div>
@@ -54,12 +47,12 @@ const WallDecompression3 = () => {
 
                 <div className="flex flex-col lg:flex-row gap-10 mt-10 items-center">
                     {/* img */}
-                    <div className="lg:w-[35%]">
+                    {/* <div className="lg:w-[35%]">
                         <img src={assets.eximg} alt="" className="lg:w-[84%]" />
-                    </div>
+                    </div> */}
 
                     {/* content */}
-                    <div className="lg:w-[65%]">
+                    <div className="">
                         <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Understanding Orbital Anatomy</div>
                         <div className="text-[12px] md:text-[16px] font-[500] font-para leading-7 mt-5">The orbit is a tightly packed cavity formed by seven bones and surrounded by muscles, fat and nerves. Even a slight increase in muscle or tissue volume—common in Graves’ orbitopathy - can lead to pressure buildup, discomfort, bulging eyes, and optic nerve compression. 3 and 4 wall decompression surgeries are designed to alleviate this pressure by carefully removing specific orbital walls and/or orbital fat</div>
                     </div>
@@ -70,7 +63,7 @@ const WallDecompression3 = () => {
 
                 <div className="flex flex-col-reverse lg:flex-row gap-10 mt-10 items-center">
                     {/* content */}
-                    <div className="lg:w-[65%]">
+                    <div className="">
                         <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">When Is 3 or 4 Wall Decompression Needed?</div>
                         <div className="text-[12px] md:text-[16px] font-para font-[500] leading-7">
                             <div className="mt-2">Our oculoplastic specialists may recommend this surgery in cases of :</div>
@@ -85,21 +78,21 @@ const WallDecompression3 = () => {
                     </div>
 
                     {/* img */}
-                    <div className="lg:w-[35%]">
+                    {/* <div className="lg:w-[35%]">
                         <img src={assets.eximg} alt="" className="lg:w-[84%]" />
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* container 4 */}
 
                 <div className="flex flex-col lg:flex-row items-center gap-10 mt-10">
                     {/* img */}
-                    <div className="lg:w-[35%]">
+                    {/* <div className="lg:w-[35%]">
                         <img src={assets.eximg} alt="" className="lg:w-[84%]" />
-                    </div>
+                    </div> */}
 
                     {/* content */}
-                    <div className="lg:w-[65%]">
+                    <div className="">
                         <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Who May Not Be Suitable for This Surgery?</div>
                         <div className="text-[12px] md:text-[16px] font-[500] font-para leading-7 mt-5">
                             <div className="mt-2">While effective, this surgery may not be advised for patients with :</div>
@@ -135,9 +128,9 @@ const WallDecompression3 = () => {
                     </div>
 
                     {/* img */}
-                    <div className="lg:w-[35%]">
+                    {/* <div className="lg:w-[35%]">
                         <img src={assets.eximg} alt="" className="lg:w-[84%]" />
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* container 6 */}
@@ -145,12 +138,12 @@ const WallDecompression3 = () => {
 
                 <div className="flex flex-col lg:flex-row items-center gap-10 mt-10">
                     {/* img */}
-                    <div className="lg:w-[35%]">
+                    {/* <div className="lg:w-[35%]">
                         <img src={assets.eximg} alt="" className="lg:w-[84%]" />
-                    </div>
+                    </div> */}
 
                     {/* content */}
-                    <div className="lg:w-[65%]">
+                    <div className="">
                         <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Potential Risks and Complications</div>
                         <div className="text-[12px] md:text-[16px] font-[500] font-para leading-7 mt-5">
                             <div className="mt-2">As with any advanced surgery, there are risks, including :</div>
@@ -164,14 +157,14 @@ const WallDecompression3 = () => {
 
                             <div className="mt-2">All patients receive close monitoring post-surgery to reduce risks and support safe recovery.</div>
                         </div>
-                    </div>
+                    </div>  
                 </div>
 
                 {/* container 7 */}
 
                 <div className="flex flex-col-reverse lg:flex-row items-center gap-10 mt-10">
                     {/* content */}
-                    <div className="lg:w-[65%]">
+                    <div className="">
                         <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Recovery and Postoperative Care</div>
                         <div className="text-[12px] md:text-[16px] font-[500] font-para leading-7">
                             <ul className="list-disc ml-5 mt-2">
@@ -187,15 +180,15 @@ const WallDecompression3 = () => {
                     </div>
 
                     {/* img */}
-                    <div className="lg:w-[35%]">
+                    {/* <div className="lg:w-[35%]">
                         <img src={assets.eximg} alt="" className="lg:w-[84%]" />
-                    </div>
+                    </div> */}
                 </div>
             </div>
             
             {/* contact-part */}
             <div>
-                <ContactPage contacts={contact[0]}/>
+                <ContactPage/>
             </div>
 
             {/* faq */}

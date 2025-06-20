@@ -28,13 +28,6 @@ const Evisceration = () => {
         },
     ]
 
-
-    const contact =[
-        {
-            heading:"",
-            para:""
-        }
-    ]
   return (
     <div>
         <div>
@@ -215,7 +208,7 @@ const Evisceration = () => {
 
         {/* contact-part */}
         <div>
-            <ContactPage contacts={contact[0]}/>
+            <ContactPage />
         </div>
 
         {/* faqs */}

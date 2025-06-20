@@ -28,12 +28,6 @@ const Tenzelsflap = () => {
         },
     ]
 
-    const contact = [
-        {
-            heading:"",
-            para:""
-        }
-    ]
   return (
     <div>
         <div>
@@ -143,7 +137,7 @@ const Tenzelsflap = () => {
 
         {/* contact-part */}
         <div>
-            <ContactPage contacts={contact[0]}/>
+            <ContactPage />
         </div>
 
         {/* faqs */}

@@ -29,12 +29,6 @@ const Dacryoplasty = () => {
     ]
 
 
-    const contact = [
-        {
-            heading:"Schedule Your Consultation",
-            para:"If you're experiencing symptoms of a blocked tear duct, such as excessive tearing or recurrent eye infections, contact Sapiens Clinic in Malleshwaram today to schedule a consultation. Our team is dedicated to providing you with the highest quality care and effective treatment options."
-        }
-    ]
   return (
     <div>
         <div>
@@ -133,7 +127,7 @@ const Dacryoplasty = () => {
 
         {/* contact-part */}
         <div>
-            <ContactPage contacts={contact[0]}/>
+            <ContactPage/>
         </div>
 
         {/* faqs */}

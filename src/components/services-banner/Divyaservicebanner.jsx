@@ -19,8 +19,8 @@ const Divyaservicebanner = (props) => {
                 </div>
 
                 <div className='absolute lg:h-[90vh] top-55 xl:top-0 lg:top-0 md:top-18 md:right-0 lg:right-0 flex flex-col lg:items-end justify-center md:flex-row md:justify-end overflow-y-hidden'>
-                    <div className='line-blur md:w-[100px] xl:h-[526px] lg:h-[470px] md:h-[306px] h-[50px] w-full bg-[#FFF6E0] md:blur-[10px] blur-sm top-7 relative md:left-15 md:top-0'></div>
-                    <img className='md:w-auto xl:h-[526px] lg:h-[470px] md:h-[306px] h-auto w-full max-w-[450px] md:max-w-full' src={assets.divyaservicebannerimg} alt="" />
+                    <div className='line-blur md:w-[100px] xl:h-[526px] lg:h-[420px] md:h-[306px] h-[50px] w-full bg-[#FFF6E0] md:blur-[10px] blur-sm top-7 relative md:left-15 md:top-0'></div>
+                    <img className='md:w-full xl:h-[526px] lg:h-[420px] md:h-[306px] h-auto w-full max-w-[450px] md:max-w-full' src={assets.divyaservicebannerimg} alt="" />
                 </div>
             </div>
         </div>

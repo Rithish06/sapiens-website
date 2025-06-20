@@ -28,13 +28,7 @@ const HughesFlap = () =>{
         },
     ]
     
-    
-    const contact = [
-        {
-            heading:"",
-            para:""
-        }
-    ]
+  
   return (
     <div>
         <div>
@@ -167,7 +161,7 @@ const HughesFlap = () =>{
 
         {/* contact-page */}
         <div>
-            <ContactPage contacts={contact[0]}/>
+            <ContactPage />
         </div>
 
         {/* faqs */}
