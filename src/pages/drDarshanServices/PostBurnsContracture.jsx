@@ -1,6 +1,7 @@
 import React from 'react'
 import Servicesbanner from '../../components/services-banner/Servicesbanner'
 import Faqs from '../../components/faqs/faqs'
+import ContactPage from '../services/ContactPage/ContactPage';
 
 const PostBurnsContracture = () => {
 
@@ -202,6 +203,8 @@ const PostBurnsContracture = () => {
                     </div>
                 </div>
             </div>
+
+            <ContactPage />
 
             <div className="mt-15">
                 <Faqs faqs={faqs} />

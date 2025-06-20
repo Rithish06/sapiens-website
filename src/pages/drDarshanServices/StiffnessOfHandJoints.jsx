@@ -1,14 +1,16 @@
 import React from 'react'
 import Faqs from '../../components/faqs/faqs'
+import Servicesbanner from '../../components/services-banner/Servicesbanner'
+import ContactPage from '../services/ContactPage/ContactPage'
 const StiffnessOfHandJoints = () => {
 
     const faqs = [
         {
-            ques : '1. Why do my fingers feel stiff in the morning?',
+            ques : 'Why do my fingers feel stiff in the morning?',
             ans : "Morning stiffness is often a sign of inflammatory arthritis but can also happen after prolonged inactivity. If it lasts more than 30 minutes daily, it's best to get evaluated."
         },
         {
-            ques : '2. Can stiffness be reversed completely?',
+            ques : 'Can stiffness be reversed completely?',
             ans : 'Yes, in many cases - especially if treated early. With guided physiotherapy, splinting, and (when needed) minor procedures, patients regain excellent hand function.'
         },
         {
@@ -16,17 +18,19 @@ const StiffnessOfHandJoints = () => {
             ans : 'Stiffness after immobilization is common. You may need guided rehab or treatment for underlying scar tissue or joint contracture.'
         },
         {
-            ques : '4. Do I always need surgery for stiff hands?',
+            ques : 'Do I always need surgery for stiff hands?',
             ans : 'Not at all. Surgery is usually a last resort. Most cases respond well to conservative treatment and rehab, especially when addressed early.'
         },
         {
-            ques : '5. Can diabetes cause hand stiffness?',
+            ques : 'Can diabetes cause hand stiffness?',
             ans : 'Yes. In diabetic patients, hand stiffness may be due to glycation of soft tissues. It needs to be managed with exercises, glucose control and sometimes injections or therapy.'
         },
     ]
 
     return (
         <div>
+
+            <Servicesbanner serviceName = "Stiffness of Hand Joints" />
 
             <div className='px-8 lg:px-20 mt-8'>
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Helping Your Hands Move Freely Again</div>
@@ -124,6 +128,8 @@ const StiffnessOfHandJoints = () => {
                     </div>
                 </div>
             </div>
+
+            <ContactPage />
 
             <div className='mt-15'>
                 <Faqs faqs={faqs} />

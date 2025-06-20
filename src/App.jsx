@@ -52,7 +52,7 @@ import ScaphoidFractures from './pages/drDarshanServices/ScaphoidFractures';
 import Servicesbanner from './components/services-banner/Servicesbanner';
 import RadialFractures from './pages/drDarshanServices/RadialFractures';
 import BirthrelatedBrachialplexus from './pages/drDarshanServices/BirthrelatedBrachialplexus'
-import Cerebralpalsy from './pages/drDarshanServices/Cerebralpalsy';
+// import Cerebralpalsy from './pages/drDarshanServices/Cerebralpalsy';
 import Flapscovertoupperorlowerlimbs from './pages/drDarshanServices/Flapscovertoupperorlowerlimbs';
 import Vascularizedbonegraftsfornonunions from './pages/drDarshanServices/Vascularizedbonegraftsfornonunions';
 import Freeflaps from './pages/drDarshanServices/Freeflaps';
@@ -86,6 +86,7 @@ import SynovitisOfElbow from './pages/drDarshanServices/SynovitisOfElbow';
 import LigamentRepairElbow from './pages/drDarshanServices/LigamentRepairElbow';
 import ShoulderArthroscopy from './pages/drDarshanServices/ShoulderArthroscopy';
 import ShoulderReplacement from './pages/drDarshanServices/ShoulderReplacement';
+import { assets } from './assets/assets';
 
 const App = () => {
 

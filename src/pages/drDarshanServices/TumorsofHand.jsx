@@ -1,6 +1,7 @@
 import React from 'react'
 import Servicesbanner from '../../components/services-banner/Servicesbanner'
 import Faqs from '../../components/faqs/faqs'
+import ContactPage from '../services/ContactPage/ContactPage';
 
 const TumorsofHand = () => {
 
@@ -30,7 +31,7 @@ const TumorsofHand = () => {
 
     return (
         <div>
-            <Servicesbanner ServiceName="Tumors of Hand" />
+            <Servicesbanner serviceName="Tumors of Hand" />
 
             <div className='px-8 lg:px-20 mt-8'>
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>
@@ -172,6 +173,8 @@ const TumorsofHand = () => {
                     </div>
                 </div>
             </div>
+
+            <ContactPage />
 
             <div className="mt-15">
                 <Faqs faqs={faqs} />

@@ -45,7 +45,66 @@ import Career from '../../pages/career/Career'
 import AllBlog from '../../pages/blog/AllBlog'
 import SingleBlogPage from '../../pages/blog/SingleBlogPage'
 import KienbockDisease from '../../pages/drDarshanServices/KienbockDisease'
+
+
+// dr darshan services
+
 import CarpalTunnel from '../../pages/drDarshanServices/CarpalTunnel'
+import CubitalTunnelSyndrome from '../../pages/drDarshanServices/CubitalTunnelSyndrome'
+import ArthritisInvolvingFinger from '../../pages/drDarshanServices/ArthritisInvolvingFinger'
+import BirthrelatedBrachialplexus from '../../pages/drDarshanServices/BirthrelatedBrachialplexus'
+import BirthDefects from '../../pages/drDarshanServices/BirthDefects'
+import CerebralPalsy from '../../pages/drDarshanServices/CerebralPalsy'
+import Complexreconstructionrequiringbothsofttissueandbone from '../../pages/drDarshanServices/Complexreconstructionrequiringbothsofttissueandbone'
+// import CubitalTunnelSyndrome from '../../pages/drDarshanServices/CubitalTunnelSyndrome'
+import ElbowArthroscopy from '../../pages/drDarshanServices/ElbowArthroscopy'
+import ElbowReplacement from '../../pages/drDarshanServices/ElbowReplacement'
+import Flapscovertoupperorlowerlimbs from '../../pages/drDarshanServices/Flapscovertoupperorlowerlimbs'
+import Freeflaps from '../../pages/drDarshanServices/Freeflaps'
+import GiantCellTumor from '../../pages/drDarshanServices/GiantCellTumor'
+import GlomusTumors from '../../pages/drDarshanServices/GlomusTumors'
+import HandandWristFracture from '../../pages/drDarshanServices/HandandWristFracture'
+import InfectionsHand from '../../pages/drDarshanServices/InfectionsHand'
+import KeyholeSurgeryForHand from '../../pages/drDarshanServices/KeyholeSurgeryForHand'
+// import KienbockDisease from '../../pages/drDarshanServices/KienbockDisease'
+import LabralTear from '../../pages/drDarshanServices/LabralTear'
+import LigamentRepairElbow from '../../pages/drDarshanServices/LigamentRepairElbow'
+import Malunion from '../../pages/drDarshanServices/Malunion'
+import NervePalsy from '../../pages/drDarshanServices/NervePalsy'
+import NerveReconstruction from '../../pages/drDarshanServices/NerveReconstruction'
+import Nerverelatedproblems from '../../pages/drDarshanServices/Nerverelatedproblems'
+import NerveRepair from '../../pages/drDarshanServices/NerveRepair'
+import Nonunion from '../../pages/drDarshanServices/Nonunion'
+import Pollicization from '../../pages/drDarshanServices/Pollicization'
+import PostBurnsContracture from '../../pages/drDarshanServices/PostBurnsContracture'
+import QuervainsTenosynovitis from '../../pages/drDarshanServices/QuervainsTenosynovitis'
+import RadialFractures from '../../pages/drDarshanServices/RadialFractures'
+import Reconstructionforthelimbs from '../../pages/drDarshanServices/Reconstructionforthelimbs'
+import RotatorCuffTear from '../../pages/drDarshanServices/RotatorCuffTear'
+import ScaphoidFractures from '../../pages/drDarshanServices/ScaphoidFractures'
+import ShoulderArthroscopy from '../../pages/drDarshanServices/ShoulderArthroscopy'
+import ShoulderReplacement from '../../pages/drDarshanServices/ShoulderReplacement'
+import SlapInjuries from '../../pages/drDarshanServices/SlapInjuries'
+import SwellingLumps from '../../pages/drDarshanServices/SwellingLumps'
+import Synovectomy from '../../pages/drDarshanServices/Synovectomy'
+import SynovitisOfElbow from '../../pages/drDarshanServices/SynovitisOfElbow'
+import TendonTransfer from '../../pages/drDarshanServices/TendonTransfer'
+import TendonTransfers from '../../pages/drDarshanServices/TendonTransfers'
+import Tuberculosis from '../../pages/drDarshanServices/Tuberculosis'
+import TumorsofHand from '../../pages/drDarshanServices/TumorsofHand'
+import UclInjuries from '../../pages/drDarshanServices/UclInjuries'
+import VascularAnomalies from '../../pages/drDarshanServices/VascularAnomalies'
+import Vascularisedfreefibula from '../../pages/drDarshanServices/Vascularisedfreefibula'
+import Vascularizedbonegraftsfornonunions from '../../pages/drDarshanServices/Vascularizedbonegraftsfornonunions'
+import VICVolkmanIschemicContracture from '../../pages/drDarshanServices/VICVolkmanIschemicContracture'
+import WristArthroscopy from '../../pages/drDarshanServices/WristArthroscopy'
+import StiffnessOfHandJoints from '../../pages/drDarshanServices/StiffnessOfHandJoints'
+import ScaphoidNonnions from '../../pages/drDarshanServices/ScaphoidNonnions'
+import CongenitalAnomalies from '../../pages/drDarshanServices/CongenitalAnomalies'
+import ScapholunateLigamentInjury from '../../pages/drDarshanServices/ScapholunateLigamentInjury'
+import TfccInjuries from '../../pages/drDarshanServices/TfccInjuries'
+import DeQuervainsTenosynovitis from '../../pages/drDarshanServices/DeQuervainsTenosynovitis'
+
 
 // pages
 
@@ -59,9 +118,58 @@ const RouterOutlet = () => {
 
         <Route path="/dr-darshan">
           <Route index element={<DrDarshan />} />
-          <Route path="de-quervains-tenosynovitis-treatment" element={<DeQuervain />} />
-          <Route path="kienbocks-disease-treatment-bangalore" element={<KienbockDisease />} />
-          <Route path='carpal-tunnel-treatment' element={<CarpalTunnel />} />
+
+          {/* Auto-generated nested routes */}
+          <Route path="carpal-tunnel-syndrome" element={<CarpalTunnel />} />
+          <Route path="stiffness-of-joints-of-the-hand" element={<StiffnessOfHandJoints />} />
+          <Route path="infections-of-the-hand" element={<InfectionsHand />} />
+          <Route path="de-quervains-tenosynovitis" element={<DeQuervainsTenosynovitis />} />
+          <Route path="swellings-lumps-and-bumps-of-the-hand" element={<SwellingLumps/>} />
+          <Route path="kienbocks-disease-avascular-necrosis-of-lunate" element={<KienbockDisease/>} />
+          <Route path="scaphoid-fractures" element={<ScaphoidFractures/>} />
+          <Route path="scaphoid-non-unions" element={<ScaphoidNonnions/>} />
+          <Route path="scapholunate-ligament-injury" element={<ScapholunateLigamentInjury />} />
+          <Route path="radius-fracture" element={<RadialFractures/>} />
+          <Route path="tfcc-triangular-fibrocartilage-complex-injury" element={<TfccInjuries />} />
+          <Route path="tendon-transfers-for-hand" element={<TendonTransfers />} />
+          <Route path="wrist-arthroscopy" element={<WristArthroscopy />} />
+          <Route path="cubital-tunnel-syndrome" element={<CubitalTunnelSyndrome />} />
+          <Route path="cerebral-palsy" element={<CerebralPalsy />} />
+          <Route path="tumors-of-hand" element={<TumorsofHand />} />
+          <Route path="post-burns-contracture" element={<PostBurnsContracture />} />
+          <Route path="vascular-anomalies" element={<VascularAnomalies />} />
+          <Route path="ucl-injury" element={<UclInjuries />} />
+          <Route path="glomus-tumors" element={<GlomusTumors />} />
+          <Route path="giant-cell-tumor-gct" element={<GiantCellTumor />} />
+          <Route path="tuberculosis" element={<Tuberculosis />} />
+          <Route path="congenital-anomalies" element={<CongenitalAnomalies />} />
+          <Route path="elbow-replacement-elbow-arthroplasty" element={<ElbowReplacement/>} />
+          <Route path="elbow-arthroscopy" element={<ElbowArthroscopy />} />
+          <Route path="synovitis-of-elbow" element={<SynovitisOfElbow />} />
+          <Route path="ligament-repair-or-reconstruction-of-elbow" element={<LigamentRepairElbow />} />
+          <Route path="shoulder-arthroscopy" element={<ShoulderArthroscopy />} />
+          <Route path="shoulder-replacement-arthroplasty" element={<ShoulderReplacement />} />
+          <Route path="rotator-cuff-tear" element={<RotatorCuffTear />} />
+          <Route path="labral-tear" element={<LabralTear />} />
+          <Route path="slap-injuries" element={<SlapInjuries />} />
+          <Route path="pollicization" element={<Pollicization />} />
+          <Route path="malunion" element={<Malunion />} />
+          <Route path="tendon-transfer" element={<TendonTransfer />} />
+          <Route path="synovectomy" element={<Synovectomy/>} />
+          <Route path="nonunion" element={<Nonunion/>} />
+          <Route path="birth-related-brachial-plexus" element={<BirthrelatedBrachialplexus />} />
+          <Route path="flaps-cover-to-upper-or-lower-limbs" element={<Flapscovertoupperorlowerlimbs />} />
+          <Route path="vascularized-bone-grafts-for-non-unions" element={<Vascularizedbonegraftsfornonunions />} />
+          <Route path="free-flaps" element={<Freeflaps />} />
+          <Route path="vascularised-free-fibula" element={<Vascularisedfreefibula />} />
+          <Route path="complex-reconstruction-requiring-both-soft-tissue-and-bone" element={<Complexreconstructionrequiringbothsofttissueandbone />} />
+          <Route path="vic-volkmans-ischemic-contracture-treatment-in-malleshwaram-bangalore" element={<VICVolkmanIschemicContracture />} />
+          <Route path="reconstruction-for-the-limbs-treatment-in-malleshwaram-bangalore" element={<Reconstructionforthelimbs />} />
+          <Route path="nerve-repair" element={<NerveRepair />} />
+          <Route path="nerve-reconstruction" element={<NerveReconstruction />} />
+          <Route path="nerve-related-problems-affecting-the-hand-brachial-plexus-injuries-nerve-injuries" element={<Nerverelatedproblems />} />
+          <Route path="vic-volkmans-ischemic-contracture" element={<VICVolkmanIschemicContracture />} />
+          <Route path="reconstruction-for-the-limbs" element={<Reconstructionforthelimbs />} />   
         </Route>
 
         <Route path="/dr-divya-sundaresh">
@@ -119,10 +227,10 @@ const RouterOutlet = () => {
           <Route path='Exenteration' element={<Exenteration />} />
         </Route>
 
-          <Route path='/blog'>
-            <Route index element={<AllBlog />}></Route>
-            <Route path=":slug" element={<SingleBlogPage />}></Route>
-          </Route>
+        <Route path='/blog'>
+          <Route index element={<AllBlog />}></Route>
+          <Route path=":slug" element={<SingleBlogPage />}></Route>
+        </Route>
 
         <Route path='/career' element={<Career />} />
 

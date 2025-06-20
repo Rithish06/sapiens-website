@@ -36,12 +36,12 @@ const RotatorCuffTear = () => {
 
   return (
     <div className="min-h-[100vh]">
-      <div className="relative">{/* <Servicesbanner /> */}</div>
+      <Servicesbanner serviceName = "Rotator Cuff Tear Diagnosis and" />
 
       <div className="px-8 lg:px-20 mt-8">
-        <div className="text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px] text-center ">
+        {/* <div className="text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px] text-center ">
           Rotator Cuff Tear: Diagnosis and Treatment in Malleshwaram
-        </div>
+        </div> */}
         <div className="flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]">
           <div>
             <div className="font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 text-center">
@@ -287,7 +287,7 @@ const RotatorCuffTear = () => {
         </div>
       </div>
       <div>
-        <ContactPage contacts={contact[0]} />
+        <ContactPage />
       </div>
       <div>
         <Faqs faqs={faqs} />

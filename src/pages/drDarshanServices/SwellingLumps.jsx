@@ -1,5 +1,7 @@
 import React from 'react'
 import Faqs from '../../components/faqs/faqs'
+import Servicesbanner from '../../components/services-banner/Servicesbanner'
+import ContactPage from '../services/ContactPage/ContactPage'
 
 const SwellingLumps = () => {
 
@@ -28,8 +30,11 @@ const SwellingLumps = () => {
 
     return (
         <div>
+
+            <Servicesbanner serviceName = "Hand Swellings (Lumps and Bumps)" />
+
             <div className='px-8 lg:px-20 mt-8'>
-                <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'></div>
+                {/* <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'></div> */}
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
                         {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>Hand Swellings (Lumps and Bumps) Treatment in Malleshwaram, Bangalore</div> */}
@@ -127,6 +132,9 @@ const SwellingLumps = () => {
                     </div>
                 </div>
             </div>
+
+            <ContactPage />
+
 
             <div className='mt-15'>
                 <Faqs faqs = {faqs} />

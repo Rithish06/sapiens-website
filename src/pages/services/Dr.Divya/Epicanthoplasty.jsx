@@ -199,7 +199,7 @@ const Epicanthoplasty = () => {
 
       {/* contact-part */}
       <div>
-        <ContactPage/>
+        <ContactPage />
       </div>
 
       {/* faqs */}

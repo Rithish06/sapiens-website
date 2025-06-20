@@ -14,7 +14,7 @@ const Navbar = () => {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     const [navBg, setNavBg] = useState(false)
 
-    const shouldShowSimpleLogo = location.pathname === '/' && windowWidth > 1024;
+    const shouldShowSimpleLogo = (location.pathname === '/' || location.pathname === '/career') && windowWidth > 760;
     const logoToShow = shouldShowSimpleLogo ? assets.logo : assets.colorLogo;
 
 

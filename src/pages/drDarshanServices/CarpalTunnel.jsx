@@ -1,6 +1,8 @@
 import React from 'react'
 import Faqs from '../../components/faqs/faqs'
 import Servicesbanner from '../../components/services-banner/Servicesbanner'
+import Contact from '../contactUs/Contact'
+import ContactPage from '../services/ContactPage/ContactPage'
 
 const CarpalTunnel = () => {
 
@@ -30,7 +32,7 @@ const CarpalTunnel = () => {
     return (
         <div className='min-h-[100vh]'>
             <div className='relative'>
-                {/* <Servicesbanner /> */}
+                <Servicesbanner serviceName = "Carpal Tunnel Syndrome" />
             </div>
 
             <div className='px-8 lg:px-20 mt-8'>
@@ -40,19 +42,6 @@ const CarpalTunnel = () => {
                         <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'><b>Say Goodbye to Wrist Numbness & Tingling with Expert Care at Sapiens Clinic</b></div>
                         <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>If your fingers often feel numb, your wrist hurts when you type, or you keep dropping things without reason - it might not just be tiredness. These are classic signs of Carpal Tunnel Syndrome, a common but often overlooked nerve condition of the hand.</div>
                         <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'>At Sapiens Clinic, Malleshwaram, we help you find relief and regain normal hand function with accurate diagnosis and personalized treatment that works for your lifestyle.</div>
-                    </div>
-                </div>
-            </div>
-
-            <div className='px-8 lg:px-20 mt-8'>
-                <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'></div>
-                <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
-                    <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'></div>
-                        <ul className='mt-5  list-disc pl-10'>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'></li>
-                        </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4'></div>
                     </div>
                 </div>
             </div>
@@ -154,6 +143,8 @@ const CarpalTunnel = () => {
                     </div>
                 </div>
             </div>
+
+            <ContactPage />
 
             <div className='mt-15'>
                 <Faqs faqs={faqs} />
