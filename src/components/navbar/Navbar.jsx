@@ -180,7 +180,7 @@ const Navbar = () => {
                         Blog
                     </NavLink>
                 </div>
-                <Link target='_blank'
+                <Link
                     to='/contact'
                     className='bg-orange-500 mxl:w-[20%] text-white font-bold lg:hidden mxl:flex flex items-center justify-center lg:text-[14px] mxl:text-[16px] cursor-pointer hover:bg-orange-600 transition-colors'
                 >
@@ -249,7 +249,7 @@ const Navbar = () => {
                     </NavLink>
 
                     <NavLink
-                        to="/"
+                        to="/blog"
                         onClick={closeMobileMenu}
                         className={({ isActive }) =>
                             `text-[16px] cursor-pointer transition-colors font-medium ${isActive ? 'text-orange-500' : 'text-[#1E1E1E] hover:text-orange-500'

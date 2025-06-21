@@ -9,9 +9,11 @@ const SingleBlogPost = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
+    const API_URL = import.meta.env.VITE_API_URL;
+
     useEffect(() => {
         axios
-            .get(`https://blog.sapiensclinic.com/wp-json/wp/v2/posts?slug=${slug}&_embed`)
+            .get(`${API_URL}/wp/v2/posts?slug=${slug}&_embed`)
             .then((response) => {
                 if (response.data.length > 0) {
                     setPost(response.data[0]);
@@ -23,23 +25,28 @@ const SingleBlogPost = () => {
             .catch((err) => {
                 setError('Error fetching post');
                 setLoading(false);
+                console.error(err);
             });
     }, [slug]);
 
-    if (loading) return (
-        <div className="flex justify-center items-center min-h-screen">
-            <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-teal-500"></div>
-        </div>
-    );
+    if (loading) {
+        return (
+            <div className="flex justify-center items-center min-h-screen">
+                <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-teal-500"></div>
+            </div>
+        );
+    }
 
-    if (error) return (
-        <div className="container mx-auto px-4 py-20 text-center">
-            <h1 className="text-2xl font-bold text-red-500">{error}</h1>
-            <Link to="/blog" className="mt-4 inline-block text-teal-600 hover:underline">
-                Back to Blog
-            </Link>
-        </div>
-    );
+    if (error) {
+        return (
+            <div className="container mx-auto px-4 py-20 text-center">
+                <h1 className="text-2xl font-bold text-red-500">{error}</h1>
+                <Link to="/blog" className="mt-4 inline-block text-teal-600 hover:underline">
+                    Back to Blog
+                </Link>
+            </div>
+        );
+    }
 
     return (
         <div className="container mx-auto px-4 py-55 sm:px-6 lg:px-8">
@@ -66,7 +73,7 @@ const SingleBlogPost = () => {
                     </div>
                 )}
 
-                {/* Title */}
+                {/* Title and Date */}
                 <div className='flex justify-between items-end'>
                     <h1
                         className="text-3xl md:text-4xl lg:text-5xl font-bold bg-orange-gradient mb-6"
@@ -78,6 +85,7 @@ const SingleBlogPost = () => {
                     </div>
                 </div>
 
+                {/* Content */}
                 <div className="prose max-w-none prose-lg">
                     <div
                         className="content-wrapper"
