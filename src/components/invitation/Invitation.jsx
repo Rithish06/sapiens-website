@@ -25,7 +25,7 @@ const Invitation = (props) => {
                                 <td className=''>Course Co-Ordinator</td>
                                 <td className='px-2 border-none'>:</td>
                                 <td className='text-[#001581] cursor-pointer border-none pl-1'>
-                                    <Link to="/dr-darshan">Dr Darshan Kumar A. Jain</Link>
+                                    <Link to="/dr-darshan-kumar-a-jain">Dr Darshan Kumar A. Jain</Link>
                                 </td>
                             </tr>
                             <tr className='mt-3 border-none'>
@@ -79,7 +79,7 @@ const Invitation = (props) => {
             </div >
 
             <div className='flex justify-center my-5'>
-                <Link to="/contact" className="w-64 h-12 px-5 py-3.5 bg-orange-500 rounded-lg inline-flex justify-center items-center cursor-pointer gap-2.5">
+                <Link to="/contact-clinic-bangalore" className="w-64 h-12 px-5 py-3.5 bg-orange-500 rounded-lg inline-flex justify-center items-center cursor-pointer gap-2.5">
                     <div className="justify-start text-white text-sm font-extrabold font-['Montserrat']">Apply Now</div>
                 </Link>
             </div>

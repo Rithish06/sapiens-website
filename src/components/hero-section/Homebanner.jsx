@@ -64,9 +64,9 @@ const HomeBanner = ({learnMoreFunction}) => {
 							alt="Slide 1 Mobile"
 						/>
 						<div className="absolute inset-0 flex flex-col justify-start gap-2 lg:gap-1.5 mxl:gap-2 s:mt-[10%] px-2 md:px-5 lg:px-10 z-20 top-[10%] md:top-1 lg:top-[12%] mxl:top-[20%]">
-							<div className="text-[16px] font-heading font-[700] s:text-[19px] md:text-[22px] lg:text-[28px] mxl:text-[44px] text-white">
+							<h2 className="text-[16px] font-heading font-[700] s:text-[19px] md:text-[22px] lg:text-[28px] mxl:text-[44px] text-white">
 								Dr. Darshan Kumar A. Jain
-							</div>
+							</h2>
 							<div className="text-[10px] font-heading font-[600] s:text-[12px] md:text-[16px] lg:text-[18px] mxl:text-[24px] text-white">
 								MBBS, MS, FNB, MNAMS, PGDHHM
 							</div>
@@ -77,10 +77,10 @@ const HomeBanner = ({learnMoreFunction}) => {
 								As a board-certified Hand Surgery Specialist, Dr. Darshan Kumar A. Jain provides personalized treatment plans that focus on improving mobility, reducing pain, and enhancing overall quality of life. Whether you're dealing with finger pain, hand cramps, or require microsurgery for hand injuries, Dr. Darshan Kumar A. Jain ensures comprehensive care designed to meet your specific needs.
 							</div>
 							<div className="flex gap-6 mt-3 md:mt-2 lg:mt-4 mxl:mt-5">
-								<button onClick={learnMoreFunction} className="bg-[#EF7F1A] px-3 py-2 text-[12px] rounded-sm font-para font-[800] lg:text-[14px] lg:px-4 lg:py-2.5 text-white cursor-pointer">
+								<Link to="/dr-darshan-kumar-a-jain" className="bg-[#EF7F1A] px-3 py-2 text-[12px] rounded-sm font-para font-[800] lg:text-[14px] lg:px-4 lg:py-2.5 text-white cursor-pointer">
 									Learn More
-								</button>
-								<Link to="/contact">
+								</Link>
+								<Link to="/contact-clinic-bangalore">
 									<button className="bg-white px-3 py-2 text-[12px] rounded-sm font-para font-[800] lg:text-[14px] lg:px-4 lg:py-2.5 text-[#001F3F] cursor-pointer">
 										Contact Us
 									</button>
@@ -108,9 +108,9 @@ const HomeBanner = ({learnMoreFunction}) => {
 							alt="Slide 1 Mobile"
 						/>
 						<div className="absolute inset-0 flex flex-col justify-start gap-2 lg:gap-1.5 mxl:gap-2 s:mt-[10%] px-2 md:px-5 lg:px-10 z-20 top-[10%] md:top-1 lg:top-[12%] mxl:top-[20%]">
-							<div className="text-[16px] font-heading font-[700] s:text-[19px] md:text-[22px] lg:text-[28px] mxl:text-[44px] text-white">
+							<h2 className="text-[16px] font-heading font-[700] s:text-[19px] md:text-[22px] lg:text-[28px] mxl:text-[44px] text-white">
 								Dr. Divya Sundaresh
-							</div>
+							</h2>
 							<div className="text-[10px] font-heading font-[600] s:text-[12px] md:text-[16px] lg:text-[18px] mxl:text-[24px] text-white">
 								DO, DNB, FICO, FRCS (Glas), FAICO (Oculoplasty),
 							</div>
@@ -121,10 +121,10 @@ const HomeBanner = ({learnMoreFunction}) => {
 								Whether you need a comprehensive eye checkup, eye test, or require advanced treatments like cataract surgery or retina surgery, Dr. Divya D Sundaresh provides expert care to improve vision and maintain eye health.
 							</div>
 							<div className="flex gap-6 mt-3 lg:mt-4 mxl:mt-6">
-								<button onClick={learnMoreFunction} className="bg-[#EF7F1A] px-3 py-2 text-[12px] rounded-sm font-para font-[800] lg:text-[14px] lg:px-4 lg:py-2.5 text-white cursor-pointer">
+								<Link to="/dr-divya-sundaresh" className="bg-[#EF7F1A] px-3 py-2 text-[12px] rounded-sm font-para font-[800] lg:text-[14px] lg:px-4 lg:py-2.5 text-white cursor-pointer">
 									Learn More
-								</button>
-								<Link to="/contact">
+								</Link>
+								<Link to="/contact-clinic-bangalore">
 									<button className="bg-white px-3 py-2 text-[12px] rounded-sm font-para font-[800] lg:text-[14px] lg:px-4 lg:py-2.5 text-[#001F3F] cursor-pointer">
 										Contact Us
 									</button>

@@ -11,6 +11,8 @@ gsap.registerPlugin(ScrollTrigger)
 
 import { useGSAP } from '@gsap/react'
 
+import { Helmet } from 'react-helmet'
+
 // import { scrollAnimateFromTo } from '../../components/gsap'
 import PageTransition from "../../components/PageTransition";
 import Invitation from '../../components/invitation/Invitation'
@@ -411,6 +413,13 @@ const Home = () => {
 
 	return (
 		<PageTransition>
+
+			<Helmet>
+				<title>Expert Hand & Eye Care in Bangalore | Sapiens Clinic</title>
+				<meta name="description" content="Advanced hand surgery & eye care in Bangalore. Trusted across Karnataka & South India." />
+				<meta name="keywords" content="hand and upper limb specialist in Bangalore, best orthopedic surgeon in Karnataka, ophthalmology clinic in Bangalore, advanced hand surgery South India, oculoplastic surgeon India, eye care clinic Bangalore, Dr Darshan Jain orthopaedic, hand surgery India, hand reconstruction specialist Karnataka" />
+			</Helmet>
+
 			<div className='overflow-x-hidden' ref={containerRef}>
 				<Homebanner learnMoreFunction={handleLearnMoreClick} />
 				{/* Home */}
@@ -429,15 +438,15 @@ const Home = () => {
 
 					<div className="my:0 lg:my-5 fadex px-[0] pt-[3%] lg:px-[5%] mxl:px-[14%] lg:pt-5%" ref={fadexRef}>
 						<div className='bg-[#FFEDEDCC] px-5 py-10 rounded-b-[80px] lg:rounded-b-[160px] flex flex-col lg:flex-row gap-1 lg:gap-10 items-center lg:p-10 '>
-							<div className='font-heading text-[22px] md:text-[36px] font-[700] color-black text-center w-full] lg:w-[33%]'>Advanced Care in<br /><span className='bg-orange-gradient' >Hand Surgery &Ophthalmology</span></div>
+							<div className='font-heading text-[22px] md:text-[36px] font-[700] color-black text-center w-full] lg:w-[33%]'>Advanced Care in<br /><span className='bg-orange-gradient' >Hand Surgery & Ophthalmology</span></div>
 							<div className="font-para text-[12px] md:text-[16px] color-black mt-5 text-center w-full lg:w-[65%]">At Sapiens Clinic, we are committed to providing specialized medical care in hand surgery and ophthalmology in Malleshwaram, Bangalore. Our team of expert doctors ensures precise diagnosis and effective treatments for a range of conditions, from hand injuries, wrist pain, and limb surgeries to advanced eye care, including cataract surgery and retina treatments. With state-of-the-art technology and patient-centric care, we aim to be the best orthopedic and eye hospital in Bangalore</div>
 						</div>
 					</div>
 
 					<div className='bounce px-[5%] pt-[3%] lg:px-[10%] lg:pt-5%' ref={(el) => addBounceRef(el, 1)}>
 						<div className='font-heading text-[22px] md:text-[30px] font-[700] color-black text-center mt-15'>OUR DEPARTMENTS</div>
-						<div className='font-heading text-[22px] md:text-[40px] font-[700] color-black text-center bg-orange-gradient mt-4'>Orthopedic</div>
-						<div className='font-heading text-[20px] md:text-[30px] font-[600] color-black text-center bg-orange-gradient mt-4'>Expert Hand Surgery & Upper limb Care</div>
+						<h2 className='font-heading text-[22px] md:text-[40px] font-[700] color-black text-center bg-orange-gradient mt-4'>Orthopedic</h2>
+						<h1 className='font-heading text-[20px] md:text-[30px] font-[600] color-black text-center bg-orange-gradient mt-4'>Expert Hand Surgery & Upper limb Care in Bangalore</h1>
 						<div className="font-para text-[12px] md:text-[16px] color-black mt-5 text-center">Our hand surgery and limb care department, led by Dr. Darshan Kumar A. Jain, offers expert treatment for hand injuries, wrist pain, fractures, nerve damage, and arthritis. Whether you need microsurgery for hand injuries, carpal tunnel syndrome treatment, or limb reconstruction surgery, we provide advanced medical solutions for faster recovery. As a top hand surgeon in Bangalore, Dr. Darshan Kumar A. Jain ensures that every patient receives personalized, high-quality orthopedic care.</div>
 						<div className="font-para text-[12px] md:text-[16px] color-black mt-5 text-center">If you are experiencing hand pain, wrist swelling, finger cramps, or thumb pain, our clinic provides affordable hand surgery in Bangalore with a focus on precision and long-term relief. We also specialize in limb reconstruction surgery, fracture repair, and nerve injury treatments, making us a leading limb surgery clinic in Bangalore.</div>
 					</div>
@@ -447,8 +456,8 @@ const Home = () => {
 					</div>
 
 					<div className='mt-15 bounce px-[5%] pt-[3%] lg:px-[10%] lg:pt-5%' ref={(el) => addBounceRef(el, 2)}>
-						<div className='font-heading text-[22px] md:text-[40px] font-[700] color-black text-center bg-orange-gradient mt-4'>Opthalmology</div>
-						<div className='font-heading text-[20px] md:text-[30px] font-[600] color-black text-center bg-orange-gradient mt-4'>Comprehensive Eye Care & Ophthalmology Services</div>
+						<h2 className='font-heading text-[22px] md:text-[40px] font-[700] color-black text-center bg-orange-gradient mt-4'>Opthalmology</h2>
+						<h1 className='font-heading text-[20px] md:text-[30px] font-[600] color-black text-center bg-orange-gradient mt-4'>Comprehensive Eye Care & Ophthalmology Services</h1>
 						<div className="font-para text-[12px] md:text-[16px] color-black mt-5 text-center">Under the expertise of Dr. Divya D Sundaresh, Sapiens Clinic is recognized as a top eye hospital in Malleshwaram, Bangalore. We provide advanced ophthalmology treatments, including cataract surgery, retina care, squint eye correction and eye infection treatments. Whether you need a routine eye checkup or specialized eye surgery, our clinic ensures expert eye care services in Bangalore.</div>
 						<div className="font-para text-[12px] md:text-[16px] color-black mt-5 text-center">We specialize in ophthalmology treatments for conditions like blurry vision, eye allergies and corneal disorders. Our eye specialists in Bangalore use cutting-edge techniques to deliver high-precision cataract surgery and retina treatments, ensuring improved vision and long-term eye health.</div>
 					</div>
@@ -470,8 +479,8 @@ const Home = () => {
 								<div className='text-[20px] lg:text-[24px] mxl:text-[26px] font-[700] font-para text-white text-center'>Inviting Applications for</div>
 								<div className='text-[16px] lg:text-[18px] lg:w-[70%] mxl:text-[20px] font-[700] font-para text-white text-center mt-3'>Fellowship in Hand Surgery & Upper limb Surgery</div>
 								<div className='text-[14px] lg:text-[16px] mxl:text-[18px] font-[700] font-para text-white mt-3 text-center'>(2025-2026)</div>
-								
-								<Link to='/contact' className='bg-white text-[#B22726] font-para font-[800] text-[14px] rounded-[8px] px-10 py-3 mt-8'>Apply Now</Link>
+
+								<Link to='/contact-clinic-bangalore' className='bg-white text-[#B22726] font-para font-[800] text-[14px] rounded-[8px] px-10 py-3 mt-8'>Apply Now</Link>
 							</div>
 						</div>
 

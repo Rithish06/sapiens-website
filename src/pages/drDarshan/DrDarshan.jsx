@@ -14,6 +14,7 @@ import { useGSAP } from '@gsap/react';
 import { Link } from 'react-router-dom';
 
 import PageTransition from "../../components/PageTransition";
+import { Helmet } from 'react-helmet';
 
 const DrDarshan = () => {
 
@@ -732,6 +733,13 @@ const DrDarshan = () => {
 
     return (
         <PageTransition>
+
+            <Helmet>
+                <title>Dr. Darshan Kumar A. Jain | Hand & Upper Limb Surgeon Bangalore</title>
+                <meta name="description" content="Expert in hand & upper limb surgery in Bangalore. Trusted across Karnataka, South India & beyond for advanced care." />
+                <meta name="keywords" content="Dr Darshan Jain Bangalore, best hand surgeon in Bangalore, upper limb specialist Karnataka, hand and wrist surgery South India, orthopedic hand surgeon India, hand trauma expert Bangalore, microsurgery for hand injuries, advanced hand surgery Bangalore, tendon and nerve repair doctor Bangalore" />
+            </Helmet>
+
             <div className='relative' ref={comp}>
                 <img src={assets.drDarshanDesktopBanner} className='relative w-full h-auto hidden lg:block' alt="" />
                 <img src={assets.drDarshanBannerTablet} className='relative w-full h-auto hidden sm:block lg:hidden' alt="" />
@@ -739,10 +747,10 @@ const DrDarshan = () => {
 
                 <div className='flex justify-end absolute w-full top-20 sm:top-28 lg:top-45 mxl:top-75 anime'>
                     <div className="w-full px-5 sm:w-[60%]">
-                        <div className='font-heading text-[18px] s:text-[22px] mm:text-[24px] lg:text-[30px] mxl:text-[44px] font-700 font-black'>Dr. Darshan Kumar A. Jain</div>
-                        <div className='font-heading text-[10px] s:text-[12px] mm:text-[24px] lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[32px] mt-2'>MBBS, MS Ortho (KMC Manipal),</div>
-                        <div className='font-heading text-[10px] s:text-[12px] mm:text-[24px] lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[32px]'>FNB, Clinical Fellow National University Hospital, (Singapore),</div>
-                        <div className='font-heading text-[10px] s:text-[12px] mm:text-[24px] lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[32px]'>MNAMS, PGDHHM, Diploma in Tissue Banking (Singapore)</div>
+                        <h1 className='font-heading text-[18px] s:text-[22px] mm:text-[24px] lg:text-[30px] mxl:text-[44px] font-700 font-black'>Dr. Darshan Kumar A. Jain</h1>
+                        <div className='font-heading text-[10px] s:text-[11px] mm:text-[24px] lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[32px] mt-2'>MBBS, MS Ortho (KMC Manipal),</div>
+                        <div className='font-heading text-[10px] s:text-[11px] mm:text-[24px] lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[32px]'>FNB, Clinical Fellow National University Hospital, (Singapore),</div>
+                        <div className='font-heading text-[10px] s:text-[11px] mm:text-[24px] lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[32px]'>MNAMS, PGDHHM, Diploma in Tissue Banking (Singapore)</div>
                         <ul className='mt-5 ml-5 list-disc '>
                             <li className='font-para text-[10px] s:text-[12px] lg:text-[18px] mxl:text-[20px] font-[500] mxl:leading-[40px]'>Consultant Hand & Microsurgeon</li>
                             <li className='font-para text-[10px] s:text-[12px] lg:text-[18px] mxl:text-[20px] font-[500] mxl:leading-[40px]'>Consultant Upper Limb/ Upper Extremity Surgeon</li>
@@ -769,7 +777,7 @@ const DrDarshan = () => {
             {/* container 3 */}
             <div className="lg:gap-0 p-5 md:p-10 mxl:p-20 fadex" ref={fadexElement}>
 
-                <div className="font-heading text-[28px] text-center lg:text-[38px] font-[700] bg-orange-gradient">Specialty : Hand Surgery & Microsurgery</div>
+                <h2 className="font-heading text-[28px] text-center lg:text-[38px] font-[700] bg-orange-gradient">Specialty : Hand Surgery & Microsurgery</h2>
 
                 <div className="flex flex-col mt-10 lg:flex-row lg:items-center lg:gap-0">
                     <div className="w-full lg:50%">
@@ -800,9 +808,9 @@ const DrDarshan = () => {
                 {/* upperLimb */}
 
                 <div className='relative py-5 md:p-10 rounded-2xl overflow-hidden'>
-                    <div className="font-heading text-[12px] mm:text-[16px] md:text-[20px] lg:text-[24px] font-[700] bg-orange-gradient text-center bounce" ref={el => bounceElements.current[3] = el}>
+                    <h2 className="font-heading text-[12px] mm:text-[16px] md:text-[20px] lg:text-[24px] font-[700] bg-orange-gradient text-center bounce" ref={el => bounceElements.current[3] = el}>
                         <span className='border-[2px] border-[#EF7F1A] py-2 px-8 rounded-tl-[50px] rounded-br-[50px]'>Upper limb Surgery : Hand & Wrist</span>
-                    </div>
+                    </h2>
 
                     <div className="realtive mt-8 z-10 relative bounce" ref={el => bounceElements.current[4] = el}>
                         <div className='realtive flex flex-wrap justify-center gap-5'>
@@ -888,9 +896,9 @@ const DrDarshan = () => {
             {/* container 5 */}
 
             <div className='relative p-5 md:p-10 rounded-2xl overflow-hidden'>
-                <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient text-center bounce" ref={el => bounceElements.current[7] = el}>
+                <h2 className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient text-center bounce" ref={el => bounceElements.current[7] = el}>
                     <span className='border-[2px] border-[#EF7F1A] py-2 px-8 rounded-tl-[50px] rounded-br-[50px]'>Elbow</span>
-                </div>
+                </h2>
 
                 <div className="relative mt-8 z-10 bounce" ref={el => bounceElements.current[8] = el}>
                     <div className='realtive flex flex-wrap justify-center gap-5'>
@@ -925,9 +933,9 @@ const DrDarshan = () => {
             {/* conatiner 6 */}
 
             <div className='relative p-5 md:p-10 rounded-2xl overflow-hidden'>
-                <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient text-center bounce" ref={el => bounceElements.current[7] = el}>
+                <h2 className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient text-center bounce" ref={el => bounceElements.current[7] = el}>
                     <span className='border-[2px] border-[#EF7F1A] py-2 px-8 rounded-tl-[50px] rounded-br-[50px]'>Shoulder</span>
-                </div>
+                </h2>
 
                 <div className="relative mt-8 z-10 bounce" ref={el => bounceElements.current[8] = el}>
                     <div className='realtive flex flex-wrap justify-center gap-5'>
@@ -960,9 +968,9 @@ const DrDarshan = () => {
             </div>
 
             <div className='relative p-5 md:p-10 rounded-2xl overflow-hidden'>
-                <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient text-center bounce" ref={el => bounceElements.current[9] = el}>
+                <h2 className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient text-center bounce" ref={el => bounceElements.current[9] = el}>
                     <span className='border-[2px] border-[#EF7F1A] py-2 px-8 rounded-tl-[50px] rounded-br-[50px]'>Congenital</span>
-                </div>
+                </h2>
 
                 <div className="relative mt-8 z-10 bounce" ref={el => bounceElements.current[8] = el}>
                     <div className='realtive flex flex-wrap justify-center gap-5'>
@@ -997,9 +1005,9 @@ const DrDarshan = () => {
             {/* container 6 */}
 
             <div className='relative p-5 md:p-10 rounded-2xl overflow-hidden'>
-                <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient text-center bounce" ref={el => bounceElements.current[11] = el}>
+                <h2 className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient text-center bounce" ref={el => bounceElements.current[11] = el}>
                     <span className='border-[2px] border-[#EF7F1A] py-2 px-8 rounded-tl-[50px] rounded-br-[50px]'>Peripheral nerve surgery</span>
-                </div>
+                </h2>
 
                 <div className="relative mt-8 z-10 bounce" ref={el => bounceElements.current[8] = el}>
                     <div className='realtive flex flex-wrap justify-center gap-5'>

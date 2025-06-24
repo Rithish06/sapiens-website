@@ -114,9 +114,9 @@ const RouterOutlet = () => {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact-clinic-bangalore" element={<Contact />} />
 
-        <Route path="/dr-darshan">
+        <Route path="/dr-darshan-kumar-a-jain">
           <Route index element={<DrDarshan />} />
 
           {/* Auto-generated nested routes */}
@@ -227,12 +227,12 @@ const RouterOutlet = () => {
           <Route path='Exenteration' element={<Exenteration />} />
         </Route>
 
-        <Route path='/blog'>
+        <Route path='/hand-eye-care-blog-bangalore'>
           <Route index element={<AllBlog />}></Route>
           <Route path=":slug" element={<SingleBlogPage />}></Route>
         </Route>
 
-        <Route path='/career' element={<Career />} />
+        <Route path='/fellowship-medical-jobs-bangalore' element={<Career />} />
 
         {/* <Route path='/' /> */}
 

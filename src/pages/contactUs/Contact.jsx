@@ -15,6 +15,8 @@ import { init } from '@emailjs/browser';
 import 'react-toastify/dist/ReactToastify.css';
 import { Toaster, toast } from 'sonner';
 
+import { Helmet } from 'react-helmet';
+
 const Contact = () => {
 
     useLayoutEffect(() => {
@@ -165,6 +167,13 @@ const Contact = () => {
 
     return (
         <PageTransition>
+
+            <Helmet>
+                <title>Contact Sapiens Clinic | Book Appointment in Bangalore</title>
+                <meta name = "description" content='Reach out to Sapiens Clinic in Bangalore for expert care. Book appointments with top specialists in hand & eye surgery.' />
+                <meta name = "keywords" content='contact Sapiens Clinic Bangalore, book appointment Sapiens Clinic, clinic phone number Bangalore, hand surgery consultation Karnataka, eye specialist appointment Bangalore, best clinic in Malleshwaram, how to reach Sapiens Clinic, contact eye surgeon Bangalore, contact orthopedic doctor Bangalore' />
+            </Helmet>
+
             <div ref={containerRef}>
                 <div className=' anime'>
                     <img src={assets.contactMobileBanner} className='relative w-full h-auto md:hidden' alt="" />
@@ -345,7 +354,7 @@ const Contact = () => {
                 {/* container 3 */}
                 <div className="mt-20 px-5 lg:px-20 mxl:px-30 flex flex-col gap-10 lg:flex-row lg:gap-0 items-center pin" ref={pinRef}>
                     <div>
-                        <div className="text-[30px] font-[700] font-heading bg-orange-gradient text-center md:text-[40px]">Orthopedic</div>
+                        <h2 className="text-[30px] font-[700] font-heading bg-orange-gradient text-center md:text-[40px]">Orthopedic</h2>
                         <div className='flex flex-col gap-5 items-center mt-5'>
                             <div className='w-[95%] border-1 bg-[#FFF8F8] border-black rounded-xl p-3 text-center  max-w-[390px] mxl:max-w-[590px]'>
                                 <div className='bg-orange-gradient text-[24px] font-[700] mxl:text-[36px] font-logo'>Sapiens Clinic</div>
@@ -367,7 +376,7 @@ const Contact = () => {
                     <div className='h-[2px] bg-black w-[80%] mx-auto lg:w-[2px] lg:h-[450px]'></div>
 
                     <div>
-                        <div className="text-[36px] font-[700] font-heading bg-orange-gradient text-center md:text-[40px]">Opthalmology</div>
+                        <h2 className="text-[36px] font-[700] font-heading bg-orange-gradient text-center md:text-[40px]">Opthalmology</h2>
 
                         <div className='flex flex-col gap-5 items-center mt-5'>
                             <div className='w-[95%] border-1 bg-[#FFF8F8] border-black rounded-xl p-3 text-center max-w-[390px]  mxl:max-w-[590px]'>

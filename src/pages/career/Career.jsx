@@ -1,10 +1,18 @@
 import React from 'react'
 import { assets } from '../../assets/assets'
 import Invitation from '../../components/invitation/Invitation'
+import { Helmet } from 'react-helmet'
 
 const Career = () => {
     return (
         <div className='relative'>
+
+            <Helmet>
+                <title>Fellowship & Careers | Sapiens Clinic Bangalore Jobs</title>
+                <meta name='description' content='Apply for fellowships or careers at Sapiens Clinic Bangalore. Advance in hand surgery & oculoplasty training in India.' />
+                <meta name='keywords' content='fellowship in hand surgery Bangalore, oculoplasty training India, medical careers Sapiens Clinic, orthopedic fellowship Bangalore, join Sapiens Clinic team, ophthalmology jobs Bangalore, surgical training South India, hand surgery observership India, careers in eye care Bangalore' />
+            </Helmet>
+
             <div className='relative'>
                 <img src={assets.careerPage} className='hidden md:block relative w-full h-auto' alt="" />
                 <img src={assets.carrePageBgMobile} className='relative top-20  w-full h-auto md:hidden' alt="" />

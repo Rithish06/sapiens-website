@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 const AllBlog = () => {
     const [posts, setPosts] = useState([]);
@@ -14,10 +15,13 @@ const AllBlog = () => {
                 setPosts(response.data);
                 setLoading(false);
                 console.log(response.data);
+                console.log("Local API:", import.meta.env.VITE_API_URL);
             })
             .catch((error) => {
                 console.error('Error fetching WordPress posts:', error);
                 setLoading(false);
+                console.log("Local API:", import.meta.env.VITE_API_URL);
+
             });
     }, []);
 
@@ -51,10 +55,17 @@ const AllBlog = () => {
 
     return (
         <div className='pt-60 px-5 lg:px-25'>
+
+            <Helmet>
+                <title>Health Blog | Hand & Eye Care Insights by Sapiens Clinic</title>
+                <meta name = "description" content='Explore expert blogs on hand surgery & eye care. Get tips from top specialists at Sapiens Clinic in Bangalore.' />
+                <meta name = "keywords" content='hand surgery blog Bangalore, eye care blog India, orthopedic tips South India, oculoplasty articles Bangalore, Sapiens Clinic blog, health insights Bangalore, expert medical blog Karnataka, hand surgeon advice India, eye health articles Bangalore' />
+            </Helmet>
+
             <div className='text-center font-para text-[30px] lg:text-[56px] font-[700] leading-[60px] bg-orange-gradient'>The Blogs</div>
             <div className='grid grid-cols-1 lg:grid-cols-2 mt-10 gap-x-3 gap-y-5'>
                 {posts.map((post) => (
-                    <Link key={post.id} to={`/blog/${post.slug}`} className='w-full'>
+                    <Link key={post.id} to={`/hand-eye-care-blog-bangalore/${post.slug}`} className='w-full'>
                         <div className='flex gap-5 lg:gap-20 items-center px-5 py-3 w-full min-h-[200px]'>
                             {post._embedded?.['wp:featuredmedia']?.[0]?.source_url && (
                                 <div className='w-[30%]'>

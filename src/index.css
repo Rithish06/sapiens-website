@@ -18,10 +18,10 @@
   --font-heading: "Rubik";
   --font-lobster: "lobster two";
   --font-roboto: "roboto";
-  --font-rc: "roboto condensed"
+  --font-rc: "roboto condensed";
 
     /* break points */
-    --breakpoint-xs: 330px;
+  --breakpoint-xs: 330px;
   --breakpoint-s: 360px;
   --brekpoint-mm: 380px;
   --brekpoint-ms: 400px;

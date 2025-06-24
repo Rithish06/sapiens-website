@@ -3,7 +3,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import { assets } from '../../assets/assets';
 import TimeLine from '../../components/timline/Timeline'
 import { Link, Outlet } from 'react-router-dom';
-
+import { Helmet } from 'react-helmet'
 
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -664,6 +664,13 @@ const DrDivya = () => {
 
     return (
         <PageTransition>
+
+			<Helmet>
+				<title>Dr. Divya Sundaresh | Oculoplasty Specialist Bangalore</title>
+				<meta name="description" content="Leading oculoplasty & eye surgeon in Bangalore. Expert in eyelid, lacrimal & orbital surgery across South India." />
+				<meta name="keywords" content="Dr Divya Sundaresh Bangalore, oculoplasty specialist in Bangalore, best eye surgeon Karnataka, lacrimal surgery expert India, eyelid surgery Bangalore, orbital surgery doctor Bangalore, ophthalmologist Malleshwaram, tear duct surgery Bangalore, oculoplastic surgeon South India" />
+			</Helmet>
+
             <div ref={containerRef}>
                 {/* container 1 */}
 
@@ -674,7 +681,7 @@ const DrDivya = () => {
 
                     <div className='flex justify-end absolute w-full top-20 sm:top-28 lg:top-45 mxl:top-75 anime'>
                         <div className="w-full px-5 sm:w-[60%]">
-                            <div className='font-heading text-[18px] s:text-[24px] lg:text-[30px] mxl:text-[44px] font-700 font-black'>Dr. Divya Sundaresh</div>
+                            <h1 className='font-heading text-[18px] s:text-[24px] lg:text-[30px] mxl:text-[44px] font-700 font-black'>Dr. Divya Sundaresh</h1>
                             <div className='font-heading text-[10px] s:text-[12px] lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[32px] mt-2'>DO, DNB, FICO, FRCS (Glas), FAICO (Oculoplasty),</div>
                             <div className='font-heading text-[10px] s:text-[12px] lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[32px]'>Ex Medical Officer, Aravind Eye Hospital</div>
                             {/* <div className='font-heading text-[10px] s:text-[12px] lg:text-[18px] mxl:text-[20px] font-400 mxl:leading-[32px]'>MNAMS, PGDHHM, Diploma in Tissue Banking (Singapore)</div> */}
@@ -706,7 +713,7 @@ const DrDivya = () => {
                 {/* container 3 */}
                 <div className="lg:gap-0 p-5 md:p-10 mxl:p-20 fadex" ref={fadexRef}>
 
-                    <div className="font-heading text-[28px] text-center lg:text-[38px] font-[700] bg-orange-gradient">Specialised Expertise in Orbit & Oculoplasty</div>
+                    <h2 className="font-heading text-[28px] text-center lg:text-[38px] font-[700] bg-orange-gradient">Specialised Expertise in Orbit & Oculoplasty</h2>
 
                     <div className="flex flex-col mt-10 lg:flex-row lg:gap-0">
                         <div className="w-full">
@@ -735,9 +742,9 @@ const DrDivya = () => {
                         Services Provided
                     </div>
 
-                    <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient text-center my-10 bounce">
+                    <h2 className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient text-center my-10 bounce">
                         <span className='border-[2px] border-[#EF7F1A] py-2 px-8 rounded-tl-[50px] rounded-br-[50px]'>Eyelid</span>
-                    </div>
+                    </h2>
 
                     {/* Grid List */}
                     <div className="flex flex-wrap gap-[50px] justify-center bounce" ref={(el) => addBounceRef(el, 3)}>
@@ -768,9 +775,9 @@ const DrDivya = () => {
                     </div> */}
 
                    
-                        <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient text-center my-10 bounce">
+                        <h2 className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient text-center my-10 bounce">
                             <span className='border-[2px] border-[#EF7F1A] py-2 px-8 rounded-tl-[50px] rounded-br-[50px]'>Orbit</span>
-                        </div>
+                        </h2>
 
 
                     {/* Grid List */}
@@ -801,9 +808,9 @@ const DrDivya = () => {
                         Services provided
                     </div> */}
 
-                    <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient text-center my-10 bounce">
+                    <h2 className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient text-center my-10 bounce">
                         <span className='border-[2px] border-[#EF7F1A] py-2 px-8 rounded-tl-[50px] rounded-br-[50px]'>Lacrimal</span>
-                    </div>
+                    </h2>
 
                     {/* Grid List */}
                     <div className="flex flex-wrap gap-[50px] justify-center bounce" ref={(el) => addBounceRef(el, 3)}>
@@ -835,9 +842,9 @@ const DrDivya = () => {
                     </div> */}
 
                    
-                        <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient text-center my-10 bounce">
+                        <h2 className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient text-center my-10 bounce">
                             <span className='border-[2px] border-[#EF7F1A] py-2 px-8 rounded-tl-[50px] rounded-br-[50px]'>Orbital Tumors</span>
-                        </div>
+                        </h2>
                     
 
                     {/* Grid List */}
@@ -870,9 +877,9 @@ const DrDivya = () => {
                     </div> */}
 
                     
-                        <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient text-center my-10 bounce">
+                        <h2 className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient text-center my-10 bounce">
                             <span className='border-[2px] border-[#EF7F1A] py-2 px-8 rounded-tl-[50px] rounded-br-[50px]'>Ocular Surface Tumors</span>
-                        </div>
+                        </h2>
                         
 
                     {/* Grid List */}
@@ -903,9 +910,9 @@ const DrDivya = () => {
                         Services provided
                     </div> */}
 
-                    <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient text-center my-10 bounce">
+                    <h2 className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient text-center my-10 bounce">
                         <span className='border-[2px] border-[#EF7F1A] py-2 px-8 rounded-tl-[50px] rounded-br-[50px]'>Eyelid Cancers & Tumors</span>
-                    </div>
+                    </h2>
 
                     {/* Grid List */}
                     <div className="flex flex-wrap gap-[50px] justify-center bounce" ref={(el) => addBounceRef(el, 3)}>
@@ -936,9 +943,9 @@ const DrDivya = () => {
                         Services provided
                     </div> */}
 
-                    <div className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient text-center my-10 bounce">
+                    <h2 className="font-heading text-[20px] lg:text-[24px] font-[700] bg-orange-gradient text-center my-10 bounce">
                         <span className='border-[2px] border-[#EF7F1A] py-2 px-8 rounded-tl-[50px] rounded-br-[50px]'>Retinal Tumors</span>
-                    </div>
+                    </h2>
 
                     {/* Grid List */}
                     <div className="flex flex-wrap gap-[50px] justify-center bounce" ref={(el) => addBounceRef(el, 3)}>

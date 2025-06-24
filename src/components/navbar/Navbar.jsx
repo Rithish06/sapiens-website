@@ -129,7 +129,7 @@ const Navbar = () => {
                     </NavLink>
 
                     <NavLink
-                        to="/dr-darshan"
+                        to="/dr-darshan-kumar-a-jain"
                         className={({ isActive }) =>
                             `transition-colors ${isActive ? 'text-orange-500' : 'text-white hover:text-orange-500'
                             }`
@@ -151,7 +151,7 @@ const Navbar = () => {
                     </NavLink>
 
                     <NavLink
-                        to="/contact"
+                        to="/contact-clinic-bangalore"
                         className={({ isActive }) =>
                             `lg:text-[14px] mxl:text-[16px] cursor-pointer transition-colors font-medium ${isActive ? 'text-orange-500' : 'text-white hover:text-orange-500'
                             }`
@@ -161,7 +161,7 @@ const Navbar = () => {
                     </NavLink>
 
                     <NavLink
-                        to="/career"
+                        to="/fellowship-medical-jobs-bangalore"
                         className={({ isActive }) =>
                             `lg:text-[14px] mxl:text-[16px] cursor-pointer transition-colors font-medium ${isActive ? 'text-orange-500' : 'text-white hover:text-orange-500'
                             }`
@@ -171,7 +171,7 @@ const Navbar = () => {
                     </NavLink>
 
                     <NavLink
-                        to="/blog"
+                        to="hand-eye-care-blog-bangalore"
                         className={({ isActive }) =>
                             `lg:text-[14px] mxl:text-[16px] cursor-pointer transition-colors font-medium ${isActive ? 'text-orange-500' : 'text-white hover:text-orange-500'
                             }`
@@ -181,7 +181,7 @@ const Navbar = () => {
                     </NavLink>
                 </div>
                 <Link
-                    to='/contact'
+                    to='/contact-clinic-bangalore'
                     className='bg-orange-500 mxl:w-[20%] text-white font-bold lg:hidden mxl:flex flex items-center justify-center lg:text-[14px] mxl:text-[16px] cursor-pointer hover:bg-orange-600 transition-colors'
                 >
                     Book Appointment
@@ -203,7 +203,7 @@ const Navbar = () => {
                     </NavLink>
 
                     <NavLink
-                        to="/dr-darshan"
+                        to="/dr-darshan-kumar-a-jain"
                         onClick={closeMobileMenu}
                         className={({ isActive }) =>
                             `transition-colors ${isActive ? 'text-orange-500' : 'text-[#1E1E1E] hover:text-orange-500'
@@ -227,7 +227,7 @@ const Navbar = () => {
                     </NavLink>
 
                     <NavLink
-                        to="/contact"
+                        to="/contact-clinic-bangalore"
                         onClick={closeMobileMenu}
                         className={({ isActive }) =>
                             `text-[16px] cursor-pointer transition-colors font-medium ${isActive ? 'text-orange-500' : 'text-[#1E1E1E] hover:text-orange-500'
@@ -238,7 +238,7 @@ const Navbar = () => {
                     </NavLink>
 
                     <NavLink
-                        to="/career"
+                        to="/fellowship-medical-jobs-bangalore"
                         onClick={closeMobileMenu}
                         className={({ isActive }) =>
                             `text-[16px] cursor-pointer transition-colors font-medium ${isActive ? 'text-orange-500' : 'text-[#1E1E1E] hover:text-orange-500'
@@ -249,7 +249,7 @@ const Navbar = () => {
                     </NavLink>
 
                     <NavLink
-                        to="/blog"
+                        to="hand-eye-care-blog-bangalore"
                         onClick={closeMobileMenu}
                         className={({ isActive }) =>
                             `text-[16px] cursor-pointer transition-colors font-medium ${isActive ? 'text-orange-500' : 'text-[#1E1E1E] hover:text-orange-500'
@@ -296,7 +296,7 @@ const Navbar = () => {
                     </a>
 
                     <Link
-                        to='/contact'
+                        to='/contact-clinic-bangalore'
                         onClick={closeMobileMenu}
                         className='bg-orange-500 w-full md:w-[40%] h-14 text-white font-bold flex items-center justify-center text-[16px] cursor-pointer mt-6 md:mt-0 md:ml-8 hover:bg-orange-600 transition-colors'
                     >

@@ -38,7 +38,7 @@ const Servicesbanner = (props) => {
                         <button onClick={scrollWindow} className="font-para text-[12px] lg:text-[13px] xl:text-[14px] py-2 px-5 lg:py-4 lg:px-10 font-bold text-white bg-[#EF7F1A] rounded-lg  cursor-pointer">
                             Learn More
                         </button>
-                        <Link to="/contact">
+                        <Link to="/contact-clinic-bangalore">
                             <button className="font-para text-[12px] lg:text-[13px] xl:text-[14px] py-2 px-5 lg:py-4 lg:px-10 font-bold text-[#B22726] border-[#B22726] border-2 rounded-lg cursor-pointer">
                                 Contact Us
                             </button>
@@ -58,7 +58,7 @@ const Servicesbanner = (props) => {
                     <button className="font-para text-[12px] lg:text-[13px] xl:text-[14px] py-2 px-5 lg:py-4 lg:px-10 font-bold text-white bg-[#EF7F1A] rounded-lg  cursor-pointer">
                         Learn More
                     </button>
-                    <Link to="/contact">
+                    <Link to="/contact-clinic-bangalore">
                         <button className="font-para text-[12px] lg:text-[13px] xl:text-[14px] py-2 px-5 lg:py-4 lg:px-10 font-bold text-[#B22726] rounded-lg cursor-pointer">
                             Contact Us
                         </button>

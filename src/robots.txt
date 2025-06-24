@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /dr-darshan-kumar-a-jain-best-orthopedic-surgeon-in-bangalore.php
+Disallow: /dr-divya-sundaresh-best-ophthalmologist-in-bangalore.php
+Disallow: /contact-sapiens-clinic-in-malleshwaram.php
