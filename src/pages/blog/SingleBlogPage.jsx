@@ -12,27 +12,58 @@ const SingleBlogPost = () => {
 
     const API_URL = import.meta.env.VITE_API_URL;
 
+    console.log(API_URL);
+
+    // useEffect(() => {
+    //     if (!slug) return;
+
+    //     console.log("Fetching blog post for slug:", slug);
+    //     axios
+    //         .get(`${API_URL}?/wp/v2/posts?slug=${slug}&_embed`)
+    //         .then((response) => {
+    //             if (response.data.length > 0) {
+    //                 setPost(response.data[0]);
+    //             } else {
+    //                 setError('Post not found');
+    //             }
+    //             setLoading(false);
+    //         })
+    //         .catch((err) => {
+    //             setError('Error fetching post');
+    //             setLoading(false);
+    //             console.error(err);
+    //         });
+    // }, [slug]);
     useEffect(() => {
-        axios
-            .get(`${API_URL}/wp/v2/posts?slug=${slug}&_embed`)
-            .then((response) => {
-                if (response.data.length > 0) {
-                    setPost(response.data[0]);
+        if (!slug) return;
+    
+        console.log("Fetching blog post for slug:", slug);
+    
+        const fetchPost = async () => {
+            try {
+                const response = await fetch(`${API_URL}?/wp/v2/posts?slug=${slug}&_embed`);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+    
+                const data = await response.json();
+    
+                if (data.length > 0) {
+                    setPost(data[0]);
                 } else {
                     setError('Post not found');
                 }
-                setLoading(false);
-
-                console.log("Local API:", import.meta.env.VITE_API_URL);
-            })
-            .catch((err) => {
+            } catch (err) {
+                console.error('Error fetching post:', err);
                 setError('Error fetching post');
+            } finally {
                 setLoading(false);
-                console.error(err);
-
-                console.log("Local API:", import.meta.env.VITE_API_URL);
-            });
+            }
+        };
+    
+        fetchPost();
     }, [slug]);
+    
 
     if (loading) {
         return (

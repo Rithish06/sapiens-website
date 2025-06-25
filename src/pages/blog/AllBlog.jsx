@@ -8,22 +8,42 @@ const AllBlog = () => {
     const [loading, setLoading] = useState(true);
 
     const API_URL = import.meta.env.VITE_API_URL;
+    console.log(API_URL)
+
+    // useEffect(() => {
+    //     axios.get(`${API_URL}/wp/v2/posts?_embed&per_page=100`)
+    //         .then((response) => {
+    //             setPosts(response.data);
+    //             setLoading(false);
+    //             console.log(response.data);
+    //         })
+    //         .catch((error) => {
+    //             console.error('Error fetching WordPress posts:', error);
+    //             setLoading(false);
+    //         });
+    // }, []);
 
     useEffect(() => {
-        axios.get(`${API_URL}/wp/v2/posts?_embed&per_page=100`)
-            .then((response) => {
-                setPosts(response.data);
-                setLoading(false);
-                console.log(response.data);
-                console.log("Local API:", import.meta.env.VITE_API_URL);
-            })
-            .catch((error) => {
+        const fetchPosts = async () => {
+            try {
+                const response = await fetch(`${API_URL}?/wp/v2/posts?_embed&per_page=100`);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+                setPosts(data);
+                console.log(data);
+            } catch (error) {
                 console.error('Error fetching WordPress posts:', error);
+                setError('Failed to load posts');
+            } finally {
                 setLoading(false);
-                console.log("Local API:", import.meta.env.VITE_API_URL);
-
-            });
+            }
+        };
+    
+        fetchPosts();
     }, []);
+    
 
     if (loading) {
         return (
