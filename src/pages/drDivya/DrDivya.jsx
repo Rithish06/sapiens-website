@@ -208,7 +208,7 @@ const DrDivya = () => {
         },
         {
             color: "#8095FF",
-            text: "Facial cosmetic procedures- Blepharoplasty, Brow lifts, Facelifts, Botox, Tissue fillers, Facial Rejuvenation, Facial Nerve Palsy"
+            text: "Facial cosmetic procedures- Blepharoplasty, Brow lifts, Facelifts, Tissue fillers, Facial Rejuvenation, Facial Nerve Palsy"
         },
         {
             color: "#88FFF5",
@@ -618,10 +618,6 @@ const DrDivya = () => {
         {
             link: "",
             text: "E-learning in ophthalmology among undergraduate medical students in India during the COVID-19 pandemic. Ksheeraja Y, Soumya Ramani, Ananth Bhandary, Divya D. Sundaresh Ophthalmol J 2021;6:137-142 DOI: 10.5603/OJ.2021.0025 (original article, DOAJ indexed, 4th author)"
-        },
-        {
-            link: "",
-            text: "Divya D Sundaresh, Soumya Ramani, Rachna Kotian. Ocular safety of hydroxychloroquine in prophylaxis of COVID-19. Ophthalmol J 2024; Vol. 9, 155–16. DOI: 10.5603/oj.93870"
         },
     ]
 
