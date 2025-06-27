@@ -2,6 +2,7 @@ import React from "react";
 import Faqs from "../../components/faqs/faqs";
 import Servicesbanner from "../../components/services-banner/Servicesbanner";
 import ContactPage from "../services/ContactPage/ContactPage";
+import { Helmet } from "react-helmet";
 
 const RotatorCuffTear = () => {
   const faqs = [
@@ -36,6 +37,12 @@ const RotatorCuffTear = () => {
 
   return (
     <div className="min-h-[100vh]">
+
+      <Helmet>
+        <title>Rotator Cuff Tear Surgeon in Bangalore | Dr. Darshan Kumar A Jain</title>
+        <meta name="description" content="Dr. Darshan Kumar A Jain offers expert treatment for rotator cuff tears in Bangalore, Karnataka. Restore shoulder strength today." />
+      </Helmet>
+
       <Servicesbanner serviceName = "Rotator Cuff Tear Diagnosis and" />
 
       <div className="px-8 lg:px-20 mt-8">

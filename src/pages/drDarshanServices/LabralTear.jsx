@@ -2,6 +2,7 @@ import React from "react";
 import Faqs from "../../components/faqs/faqs";
 import Servicesbanner from "../../components/services-banner/Servicesbanner";
 import ContactPage from "../services/ContactPage/ContactPage";
+import { Helmet } from "react-helmet";
 
 const LabralTear = () => {
   const faqs = [
@@ -36,6 +37,12 @@ const LabralTear = () => {
 
   return (
     <div className="min-h-[100vh]">
+      
+      <Helmet>
+        <title>Labral Tear Surgeon in Bangalore | Dr. Darshan Kumar A Jain</title>
+        <meta name="description" content="Dr. Darshan Kumar A Jain offers advanced labral tear treatment in Bangalore, Karnataka. Expert care for shoulder joint recovery." />
+      </Helmet>
+
       <div className="relative"><Servicesbanner serviceName = "Labral Tear: Diagnosis and" /></div>
 
       <div className="px-8 lg:px-20 mt-8">

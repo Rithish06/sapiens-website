@@ -2,6 +2,7 @@ import React from "react";
 import Faqs from "../../components/faqs/faqs";
 import Servicesbanner from "../../components/services-banner/Servicesbanner";
 import ContactPage from "../services/ContactPage/ContactPage";
+import { Helmet } from "react-helmet";
 
 const SlapInjuries = () => {
   const faqs = [
@@ -36,6 +37,12 @@ const SlapInjuries = () => {
 
   return (
     <div className="min-h-[100vh]">
+
+      <Helmet>
+        <title>SLAP Tear Treatment in Bangalore by Dr. Darshan Kumar A Jain</title>
+        <meta name="description" content="Get expert SLAP tear treatment in Bangalore, Karnataka from Dr. Darshan Kumar A Jain — trusted for advanced shoulder care." />
+      </Helmet>
+
       <div className="relative"><Servicesbanner serviceName = "SLAP Injuries: Diagnosis and" /></div>
 
       <div className="px-8 lg:px-20 mt-8">

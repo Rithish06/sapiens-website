@@ -1,6 +1,7 @@
 import React from 'react'
 import Servicesbanner from '../../components/services-banner/Servicesbanner'
 import Faqs from '../../components/faqs/faqs'
+import { Helmet } from 'react-helmet'
 
 const BirthrelatedBrachialplexus = () => {
 
@@ -29,6 +30,12 @@ const BirthrelatedBrachialplexus = () => {
     ]
     return (
         <div>
+
+            <Helmet>
+                <title>Birth Brachial Plexus Treatment in Bangalore | Dr. Darshan Kumar A Jain</title>
+                <meta className='Dr. Darshan Kumar A Jain offers expert treatment for birth-related brachial plexus injuries in Bangalore, Karnataka. Gentle, skilled care.' />
+            </Helmet>
+
             <div>
                 <Servicesbanner serviceName="Birth-Related Brachial Plexus Injury" />
             </div>

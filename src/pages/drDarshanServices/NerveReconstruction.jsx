@@ -2,6 +2,7 @@ import React from "react";
 import Faqs from "../../components/faqs/faqs";
 import Servicesbanner from "../../components/services-banner/Servicesbanner";
 import ContactPage from "../services/ContactPage/ContactPage";
+import { Helmet } from "react-helmet";
 
 const NerveReconstruction = () => {
   const faqs = [
@@ -36,6 +37,12 @@ const NerveReconstruction = () => {
 
   return (
     <div className="min-h-[100vh]">
+
+      <Helmet>
+        <title>Nerve Reconstruction in Bangalore by Dr. Darshan Kumar A Jain</title>
+        <meta name="description" content="Dr. Darshan Kumar A Jain offers expert nerve reconstruction in Bangalore, Karnataka to restore hand function after severe injuries." />
+      </Helmet>
+
       <div className="relative"><Servicesbanner serviceName = "Nerve Reconstruction Surgery" /></div>
 
       <div className="px-8 lg:px-20 mt-8">

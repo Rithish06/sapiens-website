@@ -2,6 +2,7 @@ import React from "react";
 import Faqs from "../../components/faqs/faqs";
 import Servicesbanner from "../../components/services-banner/Servicesbanner";
 import ContactPage from "../services/ContactPage/ContactPage";
+import { Helmet } from "react-helmet";
 
 const Pollicization = () => {
   const faqs = [
@@ -36,6 +37,12 @@ const Pollicization = () => {
 
   return (
     <div className="min-h-[100vh]">
+
+      <Helmet>
+        <title>Pollicization Surgery in Bangalore by Dr. Darshan Kumar A Jain</title>
+        <meta name="description" content="Dr. Darshan Kumar A Jain offers expert pollicization surgery in Bangalore, Karnataka to restore thumb function and hand mobility." />
+      </Helmet>
+
       <div className="relative"><Servicesbanner serviceName="Pollicization: Thumb Reconstruction Surgery" /></div>
 
       <div className="px-8 lg:px-20 mt-8">

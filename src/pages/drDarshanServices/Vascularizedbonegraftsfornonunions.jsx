@@ -2,6 +2,7 @@ import React from 'react'
 import Servicesbanner from '../../components/services-banner/Servicesbanner'
 import Faqs from '../../components/faqs/faqs'
 import ContactPage from '../services/ContactPage/ContactPage'
+import { Helmet } from 'react-helmet'
 
 const Vascularizedbonegraftsfornonunions = () => {
    const faqs = [
@@ -35,6 +36,12 @@ const Vascularizedbonegraftsfornonunions = () => {
     ]
     return (
         <div>
+
+            <Helmet>
+                <title>Vascularized Bone Grafting in Bangalore by Dr. Darshan Kumar A Jain</title>
+                <meta name='description' content='Dr. Darshan Kumar A Jain offers vascularized bone grafting for non-unions in Bangalore, Karnataka. Restore strength and healing.' />
+            </Helmet>
+
             <div>
                 <Servicesbanner serviceName = "Vascularized bone grafts for non-unions"/>
             </div>

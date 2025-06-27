@@ -2,6 +2,7 @@ import React from "react";
 import Faqs from "../../components/faqs/faqs";
 import Servicesbanner from "../../components/services-banner/Servicesbanner";
 import ContactPage from "../services/ContactPage/ContactPage";
+import { Helmet } from "react-helmet";
 
 const Malunion = () => {
   const faqs = [
@@ -36,6 +37,12 @@ const Malunion = () => {
 
   return (
     <div className="min-h-[100vh]">
+      
+      <Helmet>
+        <title>Malunion Treatment in Bangalore by Dr. Darshan Kumar A Jain</title>
+        <meta name="description" content="Dr. Darshan Kumar A Jain offers advanced malunion treatment in Bangalore, Karnataka. Restore bone alignment and function." />
+      </Helmet>
+
       <div className="relative"><Servicesbanner serviceName = "Malunion: Diagnosis and" /></div>
 
       <div className="px-8 lg:px-20 mt-8">

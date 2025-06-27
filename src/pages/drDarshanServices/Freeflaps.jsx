@@ -2,6 +2,7 @@ import React from 'react'
 import Servicesbanner from '../../components/services-banner/Servicesbanner'
 import Faqs from '../../components/faqs/faqs'
 import ContactPage from '../services/ContactPage/ContactPage'
+import { Helmet } from 'react-helmet'
 
 const Freeflaps = () => {
   const faqs = [
@@ -35,6 +36,12 @@ const Freeflaps = () => {
       ]
       return (
           <div>
+
+            <Helmet>
+                <title>Free Flap Surgery in Bangalore by Dr. Darshan Kumar A Jain</title>
+                <meta name='description' content='Dr. Darshan Kumar A Jain offers expert free flap surgery in Bangalore, Karnataka for complex tissue reconstruction and recovery.' />
+            </Helmet>
+
               <div>
                   <Servicesbanner serviceName = "Free flaps"/>
               </div>

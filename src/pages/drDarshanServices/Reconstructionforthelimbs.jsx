@@ -2,6 +2,7 @@ import React from 'react'
 import Servicesbanner from '../../components/services-banner/Servicesbanner'
 import Faqs from '../../components/faqs/faqs'
 import ContactPage from '../services/ContactPage/ContactPage'
+import { Helmet } from 'react-helmet'
 
 const Reconstructionforthelimbs = () => {
   const faqs = [
@@ -27,14 +28,14 @@ const Reconstructionforthelimbs = () => {
         },
     ]
 
-    const Contact = [
-        {
-            heading: "",
-            para: ""
-        }
-    ]
     return (
         <div>
+
+            <Helmet>
+                <title>Limb Reconstruction in Bangalore by Dr. Darshan Kumar A Jain</title>
+                <meta name='description' content='Dr. Darshan Kumar A Jain offers expert limb reconstruction in Bangalore, Karnataka for restoring function after trauma or defects.' />
+            </Helmet>
+
             <div>
                 <Servicesbanner serviceName="Reconstruction for the limbs" />
             </div>
@@ -115,7 +116,7 @@ const Reconstructionforthelimbs = () => {
             </div>
 
             <div>
-                <ContactPage contacts={Contact} />
+                <ContactPage />
             </div>
             <div className='mt-15'>
                 <Faqs faqs={faqs} />

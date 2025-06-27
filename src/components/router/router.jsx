@@ -124,12 +124,12 @@ const RouterOutlet = () => {
           <Route path="stiffness-of-joints-of-the-hand" element={<StiffnessOfHandJoints />} />
           <Route path="infections-of-the-hand" element={<InfectionsHand />} />
           <Route path="de-quervains-tenosynovitis" element={<DeQuervainsTenosynovitis />} />
-          <Route path="swellings-lumps-and-bumps-of-the-hand" element={<SwellingLumps/>} />
-          <Route path="kienbocks-disease-avascular-necrosis-of-lunate" element={<KienbockDisease/>} />
-          <Route path="scaphoid-fractures" element={<ScaphoidFractures/>} />
-          <Route path="scaphoid-non-unions" element={<ScaphoidNonnions/>} />
+          <Route path="swellings-lumps-and-bumps-of-the-hand" element={<SwellingLumps />} />
+          <Route path="kienbocks-disease-avascular-necrosis-of-lunate" element={<KienbockDisease />} />
+          <Route path="scaphoid-fractures" element={<ScaphoidFractures />} />
+          <Route path="scaphoid-non-unions" element={<ScaphoidNonnions />} />
           <Route path="scapholunate-ligament-injury" element={<ScapholunateLigamentInjury />} />
-          <Route path="radius-fracture" element={<RadialFractures/>} />
+          <Route path="radius-fracture" element={<RadialFractures />} />
           <Route path="tfcc-triangular-fibrocartilage-complex-injury" element={<TfccInjuries />} />
           <Route path="tendon-transfers-for-hand" element={<TendonTransfers />} />
           <Route path="wrist-arthroscopy" element={<WristArthroscopy />} />
@@ -143,7 +143,7 @@ const RouterOutlet = () => {
           <Route path="giant-cell-tumor-gct" element={<GiantCellTumor />} />
           <Route path="tuberculosis" element={<Tuberculosis />} />
           <Route path="congenital-anomalies" element={<CongenitalAnomalies />} />
-          <Route path="elbow-replacement-elbow-arthroplasty" element={<ElbowReplacement/>} />
+          <Route path="elbow-replacement-elbow-arthroplasty" element={<ElbowReplacement />} />
           <Route path="elbow-arthroscopy" element={<ElbowArthroscopy />} />
           <Route path="synovitis-of-elbow" element={<SynovitisOfElbow />} />
           <Route path="ligament-repair-or-reconstruction-of-elbow" element={<LigamentRepairElbow />} />
@@ -155,77 +155,78 @@ const RouterOutlet = () => {
           <Route path="pollicization" element={<Pollicization />} />
           <Route path="malunion" element={<Malunion />} />
           <Route path="tendon-transfer" element={<TendonTransfer />} />
-          <Route path="synovectomy" element={<Synovectomy/>} />
-          <Route path="nonunion" element={<Nonunion/>} />
+          <Route path="synovectomy" element={<Synovectomy />} />
+          <Route path="nonunion" element={<Nonunion />} />
           <Route path="birth-related-brachial-plexus" element={<BirthrelatedBrachialplexus />} />
           <Route path="flaps-cover-to-upper-or-lower-limbs" element={<Flapscovertoupperorlowerlimbs />} />
           <Route path="vascularized-bone-grafts-for-non-unions" element={<Vascularizedbonegraftsfornonunions />} />
           <Route path="free-flaps" element={<Freeflaps />} />
           <Route path="vascularised-free-fibula" element={<Vascularisedfreefibula />} />
           <Route path="complex-reconstruction-requiring-both-soft-tissue-and-bone" element={<Complexreconstructionrequiringbothsofttissueandbone />} />
-          <Route path="vic-volkmans-ischemic-contracture-treatment-in-malleshwaram-bangalore" element={<VICVolkmanIschemicContracture />} />
-          <Route path="reconstruction-for-the-limbs-treatment-in-malleshwaram-bangalore" element={<Reconstructionforthelimbs />} />
+          {/* <Route path="vic-volkmans-ischemic-contracture-treatment-in-malleshwaram-bangalore" element={<VICVolkmanIschemicContracture />} />
+          <Route path="reconstruction-for-the-limbs-treatment-in-malleshwaram-bangalore" element={<Reconstructionforthelimbs />} /> */}
           <Route path="nerve-repair" element={<NerveRepair />} />
           <Route path="nerve-reconstruction" element={<NerveReconstruction />} />
           <Route path="nerve-related-problems-affecting-the-hand-brachial-plexus-injuries-nerve-injuries" element={<Nerverelatedproblems />} />
           <Route path="vic-volkmans-ischemic-contracture" element={<VICVolkmanIschemicContracture />} />
-          <Route path="reconstruction-for-the-limbs" element={<Reconstructionforthelimbs />} />   
+          <Route path="reconstruction-for-the-limbs" element={<Reconstructionforthelimbs />} />
         </Route>
 
         <Route path="/dr-divya-sundaresh">
           <Route index element={<DrDivya />} />
-          <Route path="de-quervains-tenosynovitis-treatment" element={<DeQuervain />} />
+          {/* <Route path="de-quervains-tenosynovitis-treatment" element={<DeQuervain />} /> */}
 
           {/* Eyelid */}
-          <Route path='Eyelid' element={<Eyelid />} />
-          <Route path='Asian-Blepharoplasty' element={<AsianBlepharoplasty />} />
-          <Route path='Entropion-Repair' element={<EntropionRepair />} />
-          <Route path='Canthal-Resection' element={<CanthalResection />} />
-          <Route path='Canthopexy' element={<Canthopexy />} />
-          <Route path='Epicanthoplasty' element={<Epicanthoplasty />} />
-          <Route path='Eyelid-Retraction' element={<EyelidRetraction />} />
-          <Route path='Blepharophimosis' element={<Blepharophimosis />} />
-          <Route path='Eyelid-Synkinesis' element={<EyelidSynkinesis />} />
+          <Route path='eyelid' element={<Eyelid />} />
+          <Route path='asian-blepharoplasty' element={<AsianBlepharoplasty />} />
+          <Route path='entropion-repair' element={<EntropionRepair />} />
+          <Route path='canthal-resection' element={<CanthalResection />} />
+          <Route path='canthopexy' element={<Canthopexy />} />
+          <Route path='epicanthoplasty' element={<Epicanthoplasty />} />
+          <Route path='eyelid-retraction' element={<EyelidRetraction />} />
+          <Route path='blepharophimosis' element={<Blepharophimosis />} />
+          <Route path='eyelid-synkinesis' element={<EyelidSynkinesis />} />
 
           {/* Orbit */}
-          <Route path='Orbital-Disease' element={<OrbitalDisease />} />
-          <Route path='Orbital-Decompression' element={<OrbitalDecompression />} />
-          <Route path='Wall-Decompression' element={<WallDecompression />} />
-          <Route path='Wall-Decompression-3' element={<WallDecompression3 />} />
+          <Route path='orbital-disease' element={<OrbitalDisease />} />
+          <Route path='orbital-decompression' element={<OrbitalDecompression />} />
+          <Route path='wall-decompression' element={<WallDecompression />} />
+          <Route path='wall-decompression-3' element={<WallDecompression3 />} />
 
           {/* Lacrimal */}
-          <Route path='Endoscopic-DCR' element={<EndoscopicDCR />} />
-          <Route path='CDCR-DCT-Ballon' element={<CDCRDCTBallon />} />
-          <Route path='Dacryoplasty' element={<Dacryoplasty />} />
-          <Route path='Lester-Jones-Surgery' element={<LesterJonesSurgery />} />
+          <Route path='endoscopic-dcr' element={<EndoscopicDCR />} />
+          <Route path='cdcr-dct-ballon' element={<CDCRDCTBallon />} />
+          <Route path='dacryoplasty' element={<Dacryoplasty />} />
+          <Route path='lester-jones-surgery' element={<LesterJonesSurgery />} />
 
           {/* Orbital Tumors */}
-          <Route path='Orbital-Tumors' element={<OrbitalTumors />} />
-          <Route path='Cavernous-Hemangioma' element={<CavernousHemangioma />} />
-          <Route path='Orbital-Lymphoma' element={<OrbitalLymphoma />} />
-          <Route path='Pseudo-tumor' element={<Pseudotumor />} />
+          <Route path='orbital-tumors' element={<OrbitalTumors />} />
+          <Route path='cavernous-hemangioma' element={<CavernousHemangioma />} />
+          <Route path='orbital-lymphoma' element={<OrbitalLymphoma />} />
+          <Route path='pseudo-tumor' element={<Pseudotumor />} />
 
           {/* Ocular Surface Tumors */}
-          <Route path='Ocular-Surface-Tumors' element={<OcularSurfaceTumors />} />
-          <Route path='Conjuctival-Cyst' element={<ConjuctivalCyst />} />
-          <Route path='Removal-Surgery' element={<RemovalSurgery />} />
+          <Route path='ocular-surface-tumors' element={<OcularSurfaceTumors />} />
+          <Route path='conjuctival-cyst' element={<ConjuctivalCyst />} />
+          <Route path='removal-surgery' element={<RemovalSurgery />} />
 
           {/* Eyelid Cancers & Tumors */}
-          <Route path='Sebaceous-cell-carcinoma' element={<Sebaceouscellcarcinoma />} />
-          <Route path='Malignant-melanomas' element={<Malignantmelanomas />} />
-          <Route path='Mohs-Surgery' element={<MohsSurgery />} />
-          <Route path='Tenzels-flap' element={<Tenzelsflap />} />
-          <Route path='Hughes-Flap' element={<HughesFlap />} />
-          <Route path='Cutler-Beard-Flap' element={<CutlerBeardFlap />} />
-          <Route path='Mustardes-Flap' element={<MustardesFlap />} />
+          <Route path='sebaceous-cell-carcinoma' element={<Sebaceouscellcarcinoma />} />
+          <Route path='malignant-melanomas' element={<Malignantmelanomas />} />
+          <Route path='mohs-surgery' element={<MohsSurgery />} />
+          <Route path='tenzels-flap' element={<Tenzelsflap />} />
+          <Route path='hughes-flap' element={<HughesFlap />} />
+          <Route path='cutler-beard-flap' element={<CutlerBeardFlap />} />
+          <Route path='mustardes-flap' element={<MustardesFlap />} />
 
           {/* Retinal Tumors */}
-          <Route path='Choroidal-Metastasis' element={<ChoroidalMetastasis />} />
-          <Route path='Choroidal-Melanoma' element={<ChoroidalMelanoma />} />
-          <Route path='Enucleation' element={<Enucleation />} />
-          <Route path='Evisceration' element={<Evisceration />} />
-          <Route path='Exenteration' element={<Exenteration />} />
+          <Route path='choroidal-metastasis' element={<ChoroidalMetastasis />} />
+          <Route path='choroidal-melanoma' element={<ChoroidalMelanoma />} />
+          <Route path='enucleation' element={<Enucleation />} />
+          <Route path='evisceration' element={<Evisceration />} />
+          <Route path='exenteration' element={<Exenteration />} />
         </Route>
+
 
         <Route path='/hand-eye-care-blog-bangalore'>
           <Route index element={<AllBlog />}></Route>

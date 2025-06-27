@@ -2,6 +2,7 @@ import React from 'react'
 import Servicesbanner from '../../components/services-banner/Servicesbanner'
 import Faqs from '../../components/faqs/faqs'
 import ContactPage from '../services/ContactPage/ContactPage'
+import { Helmet } from 'react-helmet'
 
 const Nerverelatedproblems = () => {
     const faqs = [
@@ -35,6 +36,12 @@ const Nerverelatedproblems = () => {
     ]
     return (
         <div>
+
+            <Helmet>
+                <title>Brachial Plexus Injury Care in Bangalore | Dr. Darshan Kumar A Jain</title>
+                <meta name='description' content='Dr. Darshan Kumar A Jain offers expert care for brachial plexus and hand nerve injuries in Bangalore, Karnataka. Restore function now.' />
+            </Helmet>
+
             <div>
                 <Servicesbanner serviceName="Nerve related problems affecting the hand, brachial plexus injuries, nerve injuries" />
             </div>

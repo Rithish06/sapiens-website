@@ -2,6 +2,7 @@ import React from 'react'
 import Servicesbanner from '../../components/services-banner/Servicesbanner'
 import Faqs from '../../components/faqs/faqs'
 import ContactPage from '../services/ContactPage/ContactPage'
+import { Helmet } from 'react-helmet'
 
 const Flapscovertoupperorlowerlimbs = () => {
    const faqs = [
@@ -35,6 +36,12 @@ const Flapscovertoupperorlowerlimbs = () => {
     ]
     return (
         <div>
+
+            <Helmet>
+                <title>Flap Cover Surgery for Limbs in Bangalore by Dr. Darshan Kumar A Jain</title>
+                <meta name='description' content='Get expert flap cover surgery for upper and lower limbs in Bangalore, Karnataka by Dr. Darshan Kumar A Jain. Restore form and function.' />
+            </Helmet>
+
             <div>
                 <Servicesbanner serviceName = "Flaps cover to upper or lower limbs"/>
             </div>

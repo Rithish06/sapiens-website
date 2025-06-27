@@ -2,6 +2,7 @@ import React from 'react'
 import Servicesbanner from '../../components/services-banner/Servicesbanner'
 import Faqs from '../../components/faqs/faqs'
 import ContactPage from '../services/ContactPage/ContactPage'
+import { Helmet } from 'react-helmet'
 
 const Vascularisedfreefibula = () => {
    const faqs = [
@@ -35,6 +36,12 @@ const Vascularisedfreefibula = () => {
       ]
       return (
           <div>
+
+                <Helmet>
+                    <title>Vascularized Free Fibula Surgery in Bangalore | Dr. Darshan Kumar A Jain</title>
+                    <meta name='description' content='Dr. Darshan Kumar A Jain offers vascularized free fibula surgery in Bangalore, Karnataka for complex bone reconstruction and healing.' />
+                </Helmet>
+
               <div>
                   <Servicesbanner serviceName = "Vascularised free fibula"/>
               </div>

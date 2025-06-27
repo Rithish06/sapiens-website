@@ -2,6 +2,7 @@ import React from "react";
 import Faqs from "../../components/faqs/faqs";
 import Servicesbanner from "../../components/services-banner/Servicesbanner";
 import ContactPage from "../services/ContactPage/ContactPage";
+import { Helmet } from "react-helmet";
 
 const Synovectomy = () => {
   const faqs = [
@@ -34,6 +35,12 @@ const Synovectomy = () => {
   ];
   return (
     <div className="min-h-[100vh]">
+
+      <Helmet>
+        <title>Synovectomy Surgery in Bangalore by Dr. Darshan Kumar A Jain</title>
+        <meta name="description" content="Dr. Darshan Kumar A Jain provides expert synovectomy surgery in Bangalore, Karnataka for chronic joint inflammation and pain relief." />
+      </Helmet>
+
       <div className="relative"><Servicesbanner serviceName = "Synovectomy Surgery" /></div>
 
       <div className="px-8 lg:px-20 mt-8">

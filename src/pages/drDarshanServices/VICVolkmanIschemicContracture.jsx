@@ -2,6 +2,7 @@ import React from 'react'
 import Servicesbanner from '../../components/services-banner/Servicesbanner'
 import Faqs from '../../components/faqs/faqs'
 import ContactPage from '../services/ContactPage/ContactPage'
+import { Helmet } from 'react-helmet'
 
 const VICVolkmanIschemicContracture = () => {
     const faqs = [
@@ -35,6 +36,12 @@ const VICVolkmanIschemicContracture = () => {
     ]
     return (
         <div>
+
+            <Helmet>
+                <title>VIC Treatment in Bangalore by Dr. Darshan Kumar A Jain</title>
+                <meta name='description' content='Dr. Darshan Kumar A Jain provides expert treatment for Volkmann’s ischemic contracture in Bangalore, Karnataka. Regain hand function.' />
+            </Helmet>
+
             <div>
                 <Servicesbanner serviceName="VIC (Volkman’s Ischemic Contracture)" />
             </div>
