@@ -2,6 +2,7 @@ import React from 'react'
 import Servicesbanner from '../../components/services-banner/Servicesbanner'
 import Faqs from '../../components/faqs/faqs'
 import ContactPage from '../services/ContactPage/ContactPage';
+import { Helmet } from 'react-helmet';
 
 const PostBurnsContracture = () => {
 
@@ -31,6 +32,13 @@ const PostBurnsContracture = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Post Burn Contracture Care in Bangalore | Dr. Darshan Kumar A Jain</title>
+                <meta name='description' content='Dr. Darshan Kumar A Jain provides expert post burn contracture treatment in Bangalore, Karnataka. Restore mobility and function.' />
+            </Helmet>
+
+
+
 
             <Servicesbanner serviceName="Post Burns Contracture" />
 

@@ -2,6 +2,7 @@ import React from 'react'
 import Servicesbanner from '../../components/services-banner/Servicesbanner'
 import Faqs from '../../components/faqs/faqs'
 import ContactPage from '../services/ContactPage/ContactPage';
+import { Helmet } from 'react-helmet';
 
 const TfccInjuries = () => {
 
@@ -31,6 +32,13 @@ const TfccInjuries = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>TFCC Injury Treatment in Bangalore | Dr. Darshan Kumar A Jain</title>
+                <meta name='description' content='Dr. Darshan Kumar A Jain provides expert TFCC injury treatment in Bangalore, Karnataka. Restore wrist stability and function.' />
+            </Helmet>
+
+
+
             <Servicesbanner serviceName="TFCC (Triangular Fibrocartilage Complex) injury" />
 
             <div className='px-8 lg:px-20 mt-8'>

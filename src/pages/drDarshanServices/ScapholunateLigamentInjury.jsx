@@ -2,6 +2,7 @@ import React from 'react'
 import Servicesbanner from '../../components/services-banner/Servicesbanner'
 import Faqs from '../../components/faqs/faqs'
 import ContactPage from '../services/ContactPage/ContactPage';
+import { Helmet } from 'react-helmet';
 
 const ScapholunateLigamentInjury = () => {
 
@@ -30,6 +31,11 @@ const ScapholunateLigamentInjury = () => {
 
     return (
         <div>
+
+            <Helmet>
+                <title>Scapholunate Injury Treatment in Bangalore | Dr. Darshan Kumar A Jain</title>
+                <meta name='description' content='Dr. Darshan Kumar A Jain provides expert scapholunate ligament injury treatment in Bangalore, Karnataka. Restore wrist stability.' />
+            </Helmet>
 
             <Servicesbanner serviceName="Scapholunate Ligament Injury" />
 

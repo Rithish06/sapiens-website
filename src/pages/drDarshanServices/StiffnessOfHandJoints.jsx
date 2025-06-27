@@ -2,6 +2,7 @@ import React from 'react'
 import Faqs from '../../components/faqs/faqs'
 import Servicesbanner from '../../components/services-banner/Servicesbanner'
 import ContactPage from '../services/ContactPage/ContactPage'
+import { Helmet } from 'react-helmet'
 const StiffnessOfHandJoints = () => {
 
     const faqs = [
@@ -29,6 +30,10 @@ const StiffnessOfHandJoints = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Hand Joint Stiffness Treatment in Bangalore | Dr. Darshan Kumar A Jain</title>
+                <meta name="description" content="Dr. Darshan Kumar A Jain offers expert hand joint stiffness treatment in Bangalore. Get precise care from a trusted specialist." />
+            </Helmet>
 
             <Servicesbanner serviceName = "Stiffness of Hand Joints" />
 

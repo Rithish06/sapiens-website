@@ -2,6 +2,7 @@ import React from 'react'
 import Servicesbanner from '../../components/services-banner/Servicesbanner';
 import Faqs from '../../components/faqs/faqs';
 import ContactPage from '../services/ContactPage/ContactPage';
+import { Helmet } from 'react-helmet';
 
 const DeQuervainsTenosynovitis = () => {
 
@@ -31,6 +32,11 @@ const DeQuervainsTenosynovitis = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>De Quervain’s Treatment Bangalore | Dr. Darshan Kumar A Jain</title>
+                <meta name='description' content='Dr. Darshan Kumar A Jain offers expert De Quervain’s treatment in Bangalore. Relieve thumb pain with precise care.'/>
+            </Helmet>
+
             <Servicesbanner serviceName="De Quervain’s Tenosynovitis" />
 
             <div className='px-8 lg:px-20 mt-8'>
@@ -103,7 +109,7 @@ const DeQuervainsTenosynovitis = () => {
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
                         <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'><b>a) Non-Surgical Management</b></div>
-                        <div  className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Most cases improve with conservative measures like:</b></div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Most cases improve with conservative measures like:</b></div>
                         <ul className='mt-5 list-disc pl-10'>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Thumb and wrist splints:</b> to immobilize the area and allow healing</li>
                             <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Anti-inflammatory medications:</b> to reduce swelling and ease discomfort</li>
@@ -144,7 +150,7 @@ const DeQuervainsTenosynovitis = () => {
                 </div>
             </div>
 
-                <ContactPage />
+            <ContactPage />
 
             <Faqs faqs={faqs} />
         </div>

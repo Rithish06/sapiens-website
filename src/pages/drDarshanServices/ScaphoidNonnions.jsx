@@ -2,6 +2,7 @@ import React from 'react'
 import Servicesbanner from '../../components/services-banner/Servicesbanner'
 import ContactPage from '../services/ContactPage/ContactPage'
 import Faqs from '../../components/faqs/faqs'
+import { Helmet } from 'react-helmet'
 
 const ScaphoidNonnions = () => {
 
@@ -31,6 +32,11 @@ const ScaphoidNonnions = () => {
 
     return (
         <div>
+
+            <Helmet>
+                <title>Scaphoid Nonunion Treatment in Bangalore | Dr. Darshan Kumar A Jain</title>
+                <meta name='description' content='Dr. Darshan Kumar A Jain offers advanced care for scaphoid nonunions in Bangalore, Karnataka. Restore wrist strength and function.'/>
+            </Helmet>
 
             <Servicesbanner serviceName="Scaphoid Nonunion" />
 

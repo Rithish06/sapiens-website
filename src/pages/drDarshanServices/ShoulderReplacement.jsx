@@ -2,6 +2,7 @@ import React from 'react'
 import Servicesbanner from '../../components/services-banner/Servicesbanner'
 import Faqs from '../../components/faqs/faqs'
 import ContactPage from '../services/ContactPage/ContactPage';
+import { Helmet } from 'react-helmet';
 
 const ShoulderReplacement = () => {
 
@@ -31,6 +32,13 @@ const ShoulderReplacement = () => {
 
     return (
         <div>
+
+            <Helmet>
+                <title>Shoulder Replacement Surgeon in Bangalore | Dr. Darshan Kumar A Jain</title>
+                <meta name='description' content='Dr. Darshan Kumar A Jain offers expert shoulder replacement surgery in Bangalore, Karnataka. Regain mobility with precision care.' />
+            </Helmet>
+
+
             <Servicesbanner serviceName="Shoulder Replacement (Arthroplasty): Diagnosis and" />
 
             <div className='px-8 lg:px-20 mt-8'>

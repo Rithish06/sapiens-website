@@ -2,6 +2,7 @@ import React from 'react'
 import Servicesbanner from '../../components/services-banner/Servicesbanner'
 import Faqs from '../../components/faqs/faqs'
 import ContactPage from '../services/ContactPage/ContactPage';
+import { Helmet } from 'react-helmet';
 
 const KienbockDisease = () => {
 
@@ -30,6 +31,12 @@ const KienbockDisease = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Kienböck’s Disease Treatment in Bangalore | Dr. Darshan Jain</title>
+                <meta name='description' content='Dr. Darshan Kumar A Jain provides expert care for Kienböck’s disease in Bangalore, Karnataka. Regain wrist function with precision.'/>
+            </Helmet>
+
+
             <Servicesbanner serviceName=" Kienbock’s Disease" />
 
             <div className='px-8 lg:px-20 mt-8'>

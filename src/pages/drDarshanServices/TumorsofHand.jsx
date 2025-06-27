@@ -2,6 +2,7 @@ import React from 'react'
 import Servicesbanner from '../../components/services-banner/Servicesbanner'
 import Faqs from '../../components/faqs/faqs'
 import ContactPage from '../services/ContactPage/ContactPage';
+import { Helmet } from 'react-helmet';
 
 const TumorsofHand = () => {
 
@@ -31,6 +32,12 @@ const TumorsofHand = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Hand Tumor Treatment in Bangalore | Dr. Darshan Kumar A Jain</title>
+                <meta name='description' content='Dr. Darshan Kumar A Jain offers expert hand tumor treatment in Bangalore, Karnataka. Safe surgical care for benign and rare growths.' />
+            </Helmet>
+
+
             <Servicesbanner serviceName="Tumors of Hand" />
 
             <div className='px-8 lg:px-20 mt-8'>
