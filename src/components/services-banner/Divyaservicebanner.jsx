@@ -16,11 +16,11 @@ const Divyaservicebanner = (props) => {
         <div>
             <div className='overflow-hidden'>
                 <img className='relative hidden md:block lg:h-[90vh] w-full' src={assets.servicebanner} alt="Servicesbanner" />
-                <img className='relative hidden md:block lg:h-[90vh] w-full' src={assets.servicebanner} alt="Servicesbanner" />
+                {/* <img className='relative hidden md:block lg:h-[90vh] w-full' src={assets.servicebanner} alt="Servicesbanner" /> */}
                 <div className='relative bg-[#FFF6E0] md:hidden h-[83vh]'> </div>
                 <div className='absolute top-20 xl:top-70 lg:top-55 md:top-40 md:ml-5  flex flex-col justify-center  items-center md:w-[50%] w-full'>
                     <div className='font-para text-[22px] xl:text-[50px] lg:text-[40px] md:text-[25px] text-center 2xl:w-[80%] font-[700] bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent xl:leading-[56px] lg:leading-[50px]'>{props.servicename}</div>
-                    <div className='font-para text-[22px] xl:text-[50px] lg:text-[40px] md:text-[25px] text-center 2xl:w-[80%] font-[700] bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent xl:leading-[56px] lg:leading-[50px]'>{props.servicename}</div>
+                    {/* <div className='font-para text-[22px] xl:text-[50px] lg:text-[40px] md:text-[25px] text-center 2xl:w-[80%] font-[700] bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent xl:leading-[56px] lg:leading-[50px]'>{props.servicename}</div> */}
                     <div className='font-para text-[16px] xl:text-[38px] lg:text-[25px] md:text-[20px] font-[700]'>in Malleshwaram, Bangalore</div>
                     <div className='absolute top-25 xl:top-57 lg:top-60 lg:flex lg:gap-10 md:top-35'>
                         <button onClick={scrollWindow} className='font-para cursor-pointer text-[12px] py-2 px-5 lg:text-[13px] xl:text-[14px] font-[800] text-[#FFFFFF] bg-[#EF7F1A] lg:py-4 lg:px-10 rounded-lg '>Learn More</button>
