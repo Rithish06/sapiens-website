@@ -1,6 +1,8 @@
 import React from 'react'
 import Servicesbanner from '../../components/services-banner/Servicesbanner';
 import Faqs from '../../components/faqs/faqs';
+import ContactPage from '../services/ContactPage/ContactPage';
+import { Helmet } from 'react-helmet';
 
 const UclInjuries = () => {
 
@@ -30,6 +32,11 @@ const UclInjuries = () => {
 
     return (
         <div>
+
+            <Helmet>
+                <title>UCL Injury Treatment in Bangalore | Dr. Darshan Kumar A Jain</title>
+                <meta name='description' content='Dr. Darshan Kumar A Jain provides expert UCL injury treatment in Bangalore, Karnataka. Restore elbow stability and strength. ' />
+            </Helmet>
 
             <Servicesbanner serviceName="UCL Injuries" />
 

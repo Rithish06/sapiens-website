@@ -1,6 +1,8 @@
 import React from 'react'
 import Servicesbanner from '../../components/services-banner/Servicesbanner'
 import Faqs from '../../components/faqs/faqs'
+import ContactPage from '../services/ContactPage/ContactPage';
+import { Helmet } from 'react-helmet';
 
 const ShoulderArthroscopy = () => {
 
@@ -30,7 +32,13 @@ const ShoulderArthroscopy = () => {
 
     return (
         <div>
-            <Servicesbanner serviceName = "Shoulder Arthroscopy: Diagnosis and" />
+            <Helmet>
+                <title>Shoulder Arthroscopy Surgeon in Bangalore | Dr. Darshan Kumar A Jain</title>
+                <meta name='description' content='Dr. Darshan Kumar A Jain offers advanced shoulder arthroscopy in Bangalore, Karnataka. Minimally invasive care for joint relief.' />
+            </Helmet>
+
+
+            <Servicesbanner serviceName="Shoulder Arthroscopy: Diagnosis and" />
 
             <div className='px-8 lg:px-20 mt-8'>
                 {/* <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Shoulder Arthroscopy</div> */}

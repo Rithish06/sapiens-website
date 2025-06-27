@@ -1,6 +1,8 @@
 import React from 'react'
 import Servicesbanner from '../../components/services-banner/Servicesbanner';
 import Faqs from '../../components/faqs/faqs';
+import ContactPage from '../services/ContactPage/ContactPage';
+import { Helmet } from 'react-helmet';
 
 const ElbowReplacement = () => {
 
@@ -29,6 +31,11 @@ const ElbowReplacement = () => {
 
     return (
         <div>
+
+            <Helmet>
+                <title>Elbow Replacement Surgeon in Bangalore | Dr. Darshan Kumar A Jain</title>
+                <meta name='description' content='Dr. Darshan Kumar A Jain offers advanced elbow replacement surgery in Bangalore, Karnataka. Trusted care for joint restoration.' />
+            </Helmet>
 
             <Servicesbanner serviceName="Elbow Replacement (Elbow Arthroplasty): Diagnosis and " />
 

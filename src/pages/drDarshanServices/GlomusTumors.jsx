@@ -1,6 +1,8 @@
 import React from 'react'
 import Servicesbanner from '../../components/services-banner/Servicesbanner'
 import Faqs from '../../components/faqs/faqs'
+import ContactPage from '../services/ContactPage/ContactPage';
+import { Helmet } from 'react-helmet';
 
 const GlomusTumors = () => {
 
@@ -31,6 +33,11 @@ const GlomusTumors = () => {
 
     return (
         <div>
+
+            <Helmet>
+                <title>Glomus Tumor Treatment in Bangalore | Dr. Darshan Kumar A Jain</title>
+                <meta name='description' content='Dr. Darshan Kumar A Jain offers expert glomus tumor treatment in Bangalore, Karnataka. Precise care for painful nail bed tumors.' />
+            </Helmet>
 
             <Servicesbanner serviceName="Glomus tumors" />
 

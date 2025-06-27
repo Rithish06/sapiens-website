@@ -1,6 +1,8 @@
 import React from 'react'
 import Servicesbanner from '../../components/services-banner/Servicesbanner'
 import Faqs from '../../components/faqs/faqs'
+import ContactPage from '../services/ContactPage/ContactPage';
+import { Helmet } from 'react-helmet';
 
 const VascularAnomalies = () => {
 
@@ -29,6 +31,12 @@ const VascularAnomalies = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Vascular Anomaly Treatment in Bangalore | Dr. Darshan Kumar A Jain</title>
+                <meta name='description' content='Dr. Darshan Kumar A Jain offers advanced vascular anomaly treatment in Bangalore, Karnataka. Expert care for rare hand conditions.' />
+            </Helmet>
+
+
             <Servicesbanner serviceName="Vascular Anomalies" />
 
             <div className='px-8 lg:px-20 mt-8'>

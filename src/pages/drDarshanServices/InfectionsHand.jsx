@@ -1,5 +1,8 @@
 import React from 'react'
 import Faqs from '../../components/faqs/faqs'
+import Servicesbanner from '../../components/services-banner/Servicesbanner'
+import ContactPage from '../services/ContactPage/ContactPage'
+import { Helmet } from 'react-helmet'
 
 const InfectionsHand = () => {
   const faqs = [
@@ -27,6 +30,10 @@ const InfectionsHand = () => {
 
     return (
         <div className='min-h-[100vh]'>
+            <Helmet>
+                <title>Treat Hand Infections in Bangalore | Dr. Darshan Kumar A Jain</title>
+                <meta name='description' content='Dr. Darshan Kumar A Jain offers expert care for hand infections in Bangalore. Book timely treatment to avoid complications.'/>
+            </Helmet>
             <div className='relative'>
                 {/* <Servicesbanner /> */}
             </div>
