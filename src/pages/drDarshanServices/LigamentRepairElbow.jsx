@@ -2,6 +2,7 @@ import React from 'react'
 import Servicesbanner from '../../components/services-banner/Servicesbanner'
 import Faqs from '../../components/faqs/faqs'
 import ContactPage from '../services/ContactPage/ContactPage';
+import { Helmet } from 'react-helmet';
 
 
 const LigamentRepairElbow = () => {
@@ -32,6 +33,13 @@ const LigamentRepairElbow = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Elbow Ligament Repair in Bangalore | Dr. Darshan Kumar A Jain</title>
+        <meta name='description' content='Dr. Darshan Kumar A Jain offers expert elbow ligament repair and reconstruction in Bangalore, Karnataka. Restore joint stability.' />
+      </Helmet>
+
+
+
       <Servicesbanner serviceName="Ligament Repair or Reconstruction of Elbow" />
 
       <div className='px-8 lg:px-20 mt-8'>

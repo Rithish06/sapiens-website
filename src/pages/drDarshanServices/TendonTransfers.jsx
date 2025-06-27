@@ -2,6 +2,7 @@ import React from 'react'
 import Servicesbanner from '../../components/services-banner/Servicesbanner'
 import Faqs from '../../components/faqs/faqs'
 import ContactPage from '../services/ContactPage/ContactPage';
+import { Helmet } from 'react-helmet';
 
 const TendonTransfers = () => {
 
@@ -31,6 +32,13 @@ const TendonTransfers = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Tendon Transfer Surgery in Bangalore | Dr. Darshan Kumar A Jain</title>
+                <meta name='description' content='Dr. Darshan Kumar A Jain offers expert tendon transfer surgery in Bangalore, Karnataka for hand function restoration and mobility.' />
+            </Helmet>
+
+
+
             <Servicesbanner serviceName="Tendon transfers ( for hand )" />
 
             {/* <!-- Section 1: Introduction --> */}
@@ -164,7 +172,7 @@ const TendonTransfers = () => {
             <ContactPage />
 
             <Faqs faqs={faqs} />
-            
+
         </div>
     )
 }

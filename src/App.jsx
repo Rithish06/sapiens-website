@@ -3,6 +3,7 @@ import RouterOutlet from './components/router/router'
 import Navbar from './components/navbar/Navbar'
 import Footer from './components/footer/Footer'
 import { useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import SurgicalBlepharoplasty from './pages/services/Dr.Divya/SurgicalBlepharoplasty'
 import AsianBlepharoplasty from './pages/services/Dr.Divya/AsianBlepharoplasty'
 import EntropionRepair from './pages/services/Dr.Divya/EntropionRepair'
@@ -87,6 +88,15 @@ import LigamentRepairElbow from './pages/drDarshanServices/LigamentRepairElbow';
 import ShoulderArthroscopy from './pages/drDarshanServices/ShoulderArthroscopy';
 import ShoulderReplacement from './pages/drDarshanServices/ShoulderReplacement';
 import { assets } from './assets/assets';
+import BirthrelatedBrachialplexus from './pages/drDarshanServices/BirthrelatedBrachialplexus'
+import Cerebralpalsy from './pages/drDarshanServices/Cerebralpalsy';
+import Flapscovertoupperorlowerlimbs from './pages/drDarshanServices/Flapscovertoupperorlowerlimbs';
+import Vascularizedbonegraftsfornonunions from './pages/drDarshanServices/Vascularizedbonegraftsfornonunions';
+import Freeflaps from './pages/drDarshanServices/Freeflaps';
+import Complexreconstructionrequiringbothsofttissueandbone from './pages/drDarshanServices/Complexreconstructionrequiringbothsofttissueandbone';
+import VICVolkmanIschemicContracture from './pages/drDarshanServices/VICVolkmanIschemicContracture';
+import Reconstructionforthelimbs from './pages/drDarshanServices/Reconstructionforthelimbs';
+import Nerverelatedproblems from './pages/drDarshanServices/Nerverelatedproblems';
 
 const App = () => {
 

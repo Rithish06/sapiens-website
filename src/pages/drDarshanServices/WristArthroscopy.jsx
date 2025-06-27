@@ -2,6 +2,7 @@ import React from 'react'
 import Faqs from '../../components/faqs/faqs';
 import Servicesbanner from '../../components/services-banner/Servicesbanner';
 import ContactPage from '../services/ContactPage/ContactPage';
+import { Helmet } from 'react-helmet';
 
 const WristArthroscopy = () => {
 
@@ -30,6 +31,13 @@ const WristArthroscopy = () => {
 
     return (
         <div>
+
+            <Helmet>
+                <title>Wrist Arthroscopy in Bangalore | Dr. Darshan Kumar A Jain</title>
+                <meta name='description' content='Dr. Darshan Kumar A Jain offers advanced wrist arthroscopy in Bangalore, Karnataka. Minimally invasive care for joint issues.' />
+            </Helmet>
+
+
             <Servicesbanner serviceName="Wrist Arthroscopy" />
 
             <div className='px-8 lg:px-20 mt-8'>
@@ -139,9 +147,9 @@ const WristArthroscopy = () => {
             <ContactPage />
 
             <div className="mt-15">
-                <Faqs faqs = {faqs} />  
+                <Faqs faqs={faqs} />
             </div>
-            
+
         </div>
     )
 }

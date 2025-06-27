@@ -75,6 +75,9 @@ import drDivyaHomePageBannerImage from './images/dr-divya-home-banner-image.png'
 import servicebanner from './images/servicebanner.png'
 import divyaservicebannerimg from './images/divyaservicebannerimg.png'
 
+import servicebanner from './images/servicebanner.png'
+import divyaservicebannerimg from './images/divyaservicebannerimg.png'
+
 
 // dr darshan services image
 import egImage from './images/eg-image.png'

@@ -2,35 +2,43 @@ import React from 'react'
 import Faqs from '../../components/faqs/faqs'
 import Servicesbanner from '../../components/services-banner/Servicesbanner'
 import ContactPage from '../services/ContactPage/ContactPage'
+import { Helmet } from 'react-helmet'
 
 const ScaphoidFractures = () => {
 
     const faqs = [
         {
-            ques : "Can a scaphoid fracture heal on its own?",
-            ans : "Some minor fractures may heal naturally, but medical supervision is essential to ensure proper alignment and recovery."
+            ques: "Can a scaphoid fracture heal on its own?",
+            ans: "Some minor fractures may heal naturally, but medical supervision is essential to ensure proper alignment and recovery."
         },
         {
-            ques : "How long does it take for a scaphoid fracture to heal?",
-            ans : "Typically, healing takes 6 to 12 weeks, though it may take longer if the fracture is complex or delayed in diagnosis."
+            ques: "How long does it take for a scaphoid fracture to heal?",
+            ans: "Typically, healing takes 6 to 12 weeks, though it may take longer if the fracture is complex or delayed in diagnosis."
         },
         {
-            ques : "Is surgery always required for a scaphoid fracture?",
-            ans : "No, surgery is recommended only for displaced fractures or those not healing with conservative treatment."
+            ques: "Is surgery always required for a scaphoid fracture?",
+            ans: "No, surgery is recommended only for displaced fractures or those not healing with conservative treatment."
         },
         {
-            ques : "What happens if a scaphoid fracture is left untreated?",
-            ans : "It can lead to nonunion, persistent pain, wrist instability, and even arthritis in the long term"
+            ques: "What happens if a scaphoid fracture is left untreated?",
+            ans: "It can lead to nonunion, persistent pain, wrist instability, and even arthritis in the long term"
         },
         {
-            ques : "Can I return to sports after a scaphoid fracture?",
-            ans : "Yes, but only after complete healing and rehabilitation. Your doctor will guide you on a safe timeline for return."
+            ques: "Can I return to sports after a scaphoid fracture?",
+            ans: "Yes, but only after complete healing and rehabilitation. Your doctor will guide you on a safe timeline for return."
         },
     ]
 
     return (
         <div>
-            <Servicesbanner serviceName = "Scaphoid Fractures" />
+            <Helmet>
+                <title>Scaphoid Fracture Treatment in Bangalore | Dr. Darshan Kumar A Jain</title>
+                <meta name='description' content='Dr. Darshan Kumar A Jain provides expert scaphoid fracture treatment in Bangalore, Karnataka. Accurate care for lasting recovery.'/>
+            </Helmet>
+
+
+
+            <Servicesbanner serviceName="Scaphoid Fractures" />
 
             <div className='px-8 lg:px-20 mt-8'>
                 {/* <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'></div> */}
@@ -178,7 +186,7 @@ const ScaphoidFractures = () => {
             <ContactPage />
 
             <div className="mt-15">
-                <Faqs faqs = {faqs} />
+                <Faqs faqs={faqs} />
             </div>
         </div>
     )

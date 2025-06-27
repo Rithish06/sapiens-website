@@ -2,6 +2,7 @@ import React from 'react'
 import Faqs from '../../components/faqs/faqs';
 import Servicesbanner from '../../components/services-banner/Servicesbanner';
 import ContactPage from '../services/ContactPage/ContactPage';
+import { Helmet } from 'react-helmet';
 
 const CubitalTunnelSyndrome = () => {
 
@@ -31,6 +32,12 @@ const CubitalTunnelSyndrome = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Cubital Tunnel Treatment in Bangalore | Dr. Darshan Kumar A Jain</title>
+                <meta name='description' content='Dr. Darshan Kumar A Jain offers expert cubital tunnel syndrome treatment in Bangalore, Karnataka. Relieve ulnar nerve pressure.' />
+            </Helmet>
+
+
             <Servicesbanner serviceName="Cubital Tunnel Syndrome" />
             <div className='px-8 lg:px-20 mt-8'>
                 <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>

@@ -2,6 +2,7 @@ import React from 'react'
 import Servicesbanner from '../../components/services-banner/Servicesbanner'
 import Faqs from '../../components/faqs/faqs'
 import ContactPage from '../services/ContactPage/ContactPage';
+import { Helmet } from 'react-helmet';
 
 const Tuberculosis = () => {
 
@@ -30,6 +31,11 @@ const Tuberculosis = () => {
 
     return (
         <div>
+
+            <Helmet>
+                <title>Hand Tuberculosis Treatment in Bangalore | Dr. Darshan Kumar A Jain</title>
+                <meta name='description' content='Dr. Darshan Kumar A Jain offers specialized hand tuberculosis treatment in Bangalore, Karnataka. Accurate diagnosis and care.' />
+            </Helmet>
 
             <Servicesbanner serviceName="Tuberculosis" />
 

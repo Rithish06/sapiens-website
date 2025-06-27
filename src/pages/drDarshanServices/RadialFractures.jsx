@@ -2,9 +2,10 @@ import React from 'react'
 import Servicesbanner from '../../components/services-banner/Servicesbanner'
 import Faqs from '../../components/faqs/faqs';
 import ContactPage from '../services/ContactPage/ContactPage';
+import { Helmet } from 'react-helmet';
 
 const RadialFractures = () => {
-        const faqs = [
+    const faqs = [
         {
             ques: "How long does it take for a radius fracture to heal?",
             ans: "Healing time varies but typically ranges from 6 to 8 weeks, with additional time for rehabilitation."
@@ -28,7 +29,14 @@ const RadialFractures = () => {
     ];
     return (
         <div>
-            <Servicesbanner serviceName = "Radius Fracture" />
+
+            <Helmet>
+                <title>Radius Fracture Treatment in Bangalore | Dr. Darshan Kumar A Jain</title>
+                <meta name='description' content='Dr. Darshan Kumar A Jain offers expert radius fracture treatment in Bangalore, Karnataka. Regain function with precise care.' />
+            </Helmet>
+
+
+            <Servicesbanner serviceName="Radius Fracture" />
             {/* <!-- Section 1: Introduction --> */}
             <div class="px-8 lg:px-20 mt-8">
                 {/* <div class="text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]">
@@ -159,7 +167,7 @@ const RadialFractures = () => {
             <ContactPage />
 
             <div className="mt-15">
-                <Faqs faqs = {faqs} />
+                <Faqs faqs={faqs} />
             </div>
         </div>
     )

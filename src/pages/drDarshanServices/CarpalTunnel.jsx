@@ -3,6 +3,7 @@ import Faqs from '../../components/faqs/faqs'
 import Servicesbanner from '../../components/services-banner/Servicesbanner'
 import Contact from '../contactUs/Contact'
 import ContactPage from '../services/ContactPage/ContactPage'
+import { Helmet } from 'react-helmet'
 
 const CarpalTunnel = () => {
 
@@ -30,9 +31,14 @@ const CarpalTunnel = () => {
     ]
 
     return (
+
         <div className='min-h-[100vh]'>
+            <Helmet>
+                <title>Carpal Tunnel Specialist in Bangalore | Dr. Darshan Jain</title>
+                <meta name="description" content="Get expert treatment for carpal tunnel syndrome in Bangalore from Dr. Darshan Kumar A Jain, hand & nerve specialist." />
+            </Helmet>
             <div className='relative'>
-                <Servicesbanner serviceName = "Carpal Tunnel Syndrome" />
+                <Servicesbanner serviceName="Carpal Tunnel Syndrome" />
             </div>
 
             <div className='px-8 lg:px-20 mt-8'>

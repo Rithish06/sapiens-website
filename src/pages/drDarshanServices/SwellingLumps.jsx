@@ -2,6 +2,7 @@ import React from 'react'
 import Faqs from '../../components/faqs/faqs'
 import Servicesbanner from '../../components/services-banner/Servicesbanner'
 import ContactPage from '../services/ContactPage/ContactPage'
+import { Helmet } from 'react-helmet'
 
 const SwellingLumps = () => {
 
@@ -30,6 +31,11 @@ const SwellingLumps = () => {
 
     return (
         <div>
+
+            <Helmet>
+                <title>Hand Lump Treatment in Bangalore | Dr. Darshan Kumar A Jain</title>
+                <meta name='description' content='Dr. Darshan Kumar A Jain offers expert hand lump and swelling treatment in Bangalore, Karnataka with precision care.'/>
+            </Helmet>
 
             <Servicesbanner serviceName = "Hand Swellings (Lumps and Bumps)" />
 
