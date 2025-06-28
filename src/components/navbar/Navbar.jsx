@@ -50,6 +50,22 @@ const Navbar = () => {
         };
     }, [windowWidth]);
 
+    const handleCallClick = () => {
+        if (window.gtag) {
+            window.gtag('event', 'conversion', {
+                send_to: 'AW-11415701805/HR33CKH__uQaEK2St8Mq',
+                value: 1.0,
+                currency: 'INR',
+                event_callback: function () {
+                    window.location.href = 'tel:+917892556378';
+                    console.log("call tracked")
+                }
+            });
+        } else {
+            window.location.href = 'tel:+917892556378';
+        }
+    };
+
     const closeMobileMenu = () => {
         setIsOpen(false);
     };
@@ -80,7 +96,7 @@ const Navbar = () => {
                         </div>
                     </div>
 
-                    <a href="tel:+917892556378" className="flex items-center gap-5 cursor-pointer">
+                    <a href="tel:+917892556378" onClick={handleCallClick} className="flex items-center gap-5 cursor-pointer">
                         <div className="flex justify-center items-center lg:w-[40px] lg:h-[40px] mxl:w-[50px] mxl:h-[50px] border border-orange-500 rounded-full">
                             <IoCall className="text-orange-500 lg:text-xl mxl:text-2xl" />
                         </div>
@@ -271,7 +287,7 @@ const Navbar = () => {
                         </div>
                     </div>
 
-                    <a target='_blank' href="tel:+917892556378" className="flex items-center gap-5 cursor-pointer">
+                    <a target='_blank' href="tel:+917892556378" onClick={handleCallClick} className="flex items-center gap-5 cursor-pointer">
                         <div className="flex items-center gap-5">
                             <div className="flex justify-center items-center w-[50px] h-[50px] border border-orange-500 rounded-full">
                                 <IoCall className="text-orange-500 text-3xl" />

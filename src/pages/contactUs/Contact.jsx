@@ -155,6 +155,20 @@ const Contact = () => {
             .then(() => {
                 toast.success("Email sent successfully!");
                 reset();
+
+                if (window.gtag) {
+                    window.gtag('event', 'conversion', {
+                        send_to: 'AW-11415701805/V_4RCJK49-QaEK2St8Mq',
+                        value: 1.0,
+                        currency: 'INR',
+                        event_callback: function () {
+                            console.log('Google Ads conversion tracked');
+                        }
+                    });
+
+                    console.log("form submitted")
+                }
+
             })
             .catch(() => {
                 toast.error("Failed to send email");
@@ -170,8 +184,8 @@ const Contact = () => {
 
             <Helmet>
                 <title>Contact Sapiens Clinic | Book Appointment in Bangalore</title>
-                <meta name = "description" content='Reach out to Sapiens Clinic in Bangalore for expert care. Book appointments with top specialists in hand & eye surgery.' />
-                <meta name = "keywords" content='contact Sapiens Clinic Bangalore, book appointment Sapiens Clinic, clinic phone number Bangalore, hand surgery consultation Karnataka, eye specialist appointment Bangalore, best clinic in Malleshwaram, how to reach Sapiens Clinic, contact eye surgeon Bangalore, contact orthopedic doctor Bangalore' />
+                <meta name="description" content='Reach out to Sapiens Clinic in Bangalore for expert care. Book appointments with top specialists in hand & eye surgery.' />
+                <meta name="keywords" content='contact Sapiens Clinic Bangalore, book appointment Sapiens Clinic, clinic phone number Bangalore, hand surgery consultation Karnataka, eye specialist appointment Bangalore, best clinic in Malleshwaram, how to reach Sapiens Clinic, contact eye surgeon Bangalore, contact orthopedic doctor Bangalore' />
             </Helmet>
 
             <div ref={containerRef}>

@@ -5,28 +5,44 @@ import { assets } from '../../../assets/assets';
 const ContactPage = () => {
 
   const {
-      register,
-      handleSubmit,
-      watch,
-      formState: { errors },
-    } = useForm()
-    
-    const onSubmit = (data) => {
-        setIsSubmitting(true);
-        emailjs.send(
-            "service_b8jvt4d",
-            "template_c06irsg",
-            data
-        )
-            .then(() => {
-                toast.success("Email sent successfully!");
-                reset();
-            })
-            .catch(() => {
-                toast.error("Failed to send email");
-            })
-            .finally(() => setIsSubmitting(false));
-    };
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm()
+
+  const onSubmit = (data) => {
+    setIsSubmitting(true);
+    emailjs.send(
+      "service_b8jvt4d",
+      "template_c06irsg",
+      data
+    )
+      .then(() => {
+        toast.success("Email sent successfully!");
+
+        if (window.gtag) {
+          window.gtag('event', 'conversion', {
+            send_to: 'AW-11415701805/V_4RCJK49-QaEK2St8Mq',
+            value: 1.0,
+            currency: 'INR',
+            event_callback: function () {
+              console.log('Google Ads conversion tracked');
+            }
+          });
+
+          console.log("form submitted")
+        }
+
+        reset();
+
+
+      })
+      .catch(() => {
+        toast.error("Failed to send email");
+      })
+      .finally(() => setIsSubmitting(false));
+  };
 
   return (
     <div className='mt-10'>
