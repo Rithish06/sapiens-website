@@ -2,6 +2,7 @@ import React from 'react'
 import Divyaservicebanner from '../../../../components/services-banner/Divyaservicebanner'
 import ContactPage from '../../ContactPage/ContactPage'
 import Faqs from '../../../../components/faqs/faqs'
+import { Helmet } from 'react-helmet'
 
 const OcularSurfaceTumors = () => {
 
@@ -30,8 +31,13 @@ const OcularSurfaceTumors = () => {
 
     return (
         <div>
+
+            <Helmet>
+                <title>Ocular surface tumor treatment Bangalore | Dr. Divya D Sundaresh</title>
+                <meta name="description" content='Dr. Divya D Sundaresh offers ocular surface tumor treatment in Bangalore, Karnataka with advanced diagnostics and precise care.' />
+            </Helmet>
             <div>
-                <Divyaservicebanner servicename = 'Ocular Surface Tumors Treatment'/>
+                <Divyaservicebanner servicename='Ocular Surface Tumors Treatment' />
             </div>
 
             <div className="lg:mx-20 md:mt-10 xs:mt-29 mx-5 mt-10">

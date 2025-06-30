@@ -2,37 +2,43 @@ import React from 'react'
 import Divyaservicebanner from '../../../../components/services-banner/Divyaservicebanner'
 import ContactPage from '../../ContactPage/ContactPage'
 import Faqs from '../../../../components/faqs/faqs'
+import { Helmet } from 'react-helmet'
 
 const EndoscopicDCR = () => {
 
     const faqs = [
         {
-            ques:"Is Endoscopic DCR painful?",
-            ans:"No, the procedure is performed under anaesthesia and most patients report minimal discomfort during recovery."
+            ques: "Is Endoscopic DCR painful?",
+            ans: "No, the procedure is performed under anaesthesia and most patients report minimal discomfort during recovery."
         },
         {
-            ques:"Will there be any visible scars?",
-            ans:"No, endoscopic DCR is entirely internal with no cuts on the skin."
+            ques: "Will there be any visible scars?",
+            ans: "No, endoscopic DCR is entirely internal with no cuts on the skin."
         },
         {
-            ques:"How long does the silicone stent stay in place?",
-            ans:"The stent is typically removed 6–12 weeks after the procedure."
+            ques: "How long does the silicone stent stay in place?",
+            ans: "The stent is typically removed 6–12 weeks after the procedure."
         },
         {
-            ques:"What if tearing persists after surgery?",
-            ans:"Our team evaluates and addresses any residual issues through follow-up or revision if needed."
+            ques: "What if tearing persists after surgery?",
+            ans: "Our team evaluates and addresses any residual issues through follow-up or revision if needed."
         },
         {
-            ques:"Can this surgery treat infections too?",
-            ans:"Yes. Endoscopic DCR clears the blocked duct, resolving chronic infections like dacryocystitis."
+            ques: "Can this surgery treat infections too?",
+            ans: "Yes. Endoscopic DCR clears the blocked duct, resolving chronic infections like dacryocystitis."
         },
     ]
 
 
     return (
         <div>
+
+            <Helmet>
+                <title>Endoscopic DCR eye surgery in Bangalore | Dr. Divya D Sundaresh</title>
+                <meta name="description" content='Dr. Divya D Sundaresh performs endoscopic DCR eye surgery in Bangalore, Karnataka to treat blocked tear ducts with minimal scarring.' />
+            </Helmet>
             <div>
-                <Divyaservicebanner servicename = 'Endoscopic DCR Surgery'/>
+                <Divyaservicebanner servicename='Endoscopic DCR Surgery' />
             </div>
 
             <div className="lg:mx-20 md:mt-10 xs:mt-20 mt-10 mx-5">
@@ -146,12 +152,12 @@ const EndoscopicDCR = () => {
 
             {/* contact-part */}
             <div>
-                <ContactPage/>
+                <ContactPage />
             </div>
 
             {/* faqs */}
             <div>
-                <Faqs faqs={faqs}/>
+                <Faqs faqs={faqs} />
             </div>
         </div>
     )

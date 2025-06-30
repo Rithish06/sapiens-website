@@ -2,36 +2,42 @@ import React from 'react'
 import Divyaservicebanner from '../../../../components/services-banner/Divyaservicebanner'
 import ContactPage from '../../ContactPage/ContactPage'
 import Faqs from '../../../../components/faqs/faqs'
+import { Helmet } from 'react-helmet'
 
 const Malignantmelanomas = () => {
 
-    const faqs =[
+    const faqs = [
         {
-            ques:"What are early signs of eyelid melanoma?",
-            ans:"A dark, persistent spot or patch on the eyelid that grows, bleeds, or changes shape. It may resemble a mole or stye."
+            ques: "What are early signs of eyelid melanoma?",
+            ans: "A dark, persistent spot or patch on the eyelid that grows, bleeds, or changes shape. It may resemble a mole or stye."
         },
         {
-            ques:"Is eyelid melanoma life-threatening?",
-            ans:" It can be, if not treated early. Melanoma is known for its ability to spread quickly to other parts of the body."
+            ques: "Is eyelid melanoma life-threatening?",
+            ans: " It can be, if not treated early. Melanoma is known for its ability to spread quickly to other parts of the body."
         },
         {
-            ques:"How do I know if the lesion is cancerous?",
-            ans:" A biopsy is the definitive way to diagnose melanoma. Clinical features can suggest suspicion, but lab confirmation is necessary."
+            ques: "How do I know if the lesion is cancerous?",
+            ans: " A biopsy is the definitive way to diagnose melanoma. Clinical features can suggest suspicion, but lab confirmation is necessary."
         },
         {
-            ques:"What is the success rate of surgery?",
-            ans:"When detected early and removed completely, the success rate is high. Follow-ups are crucial to monitor for recurrence."
+            ques: "What is the success rate of surgery?",
+            ans: "When detected early and removed completely, the success rate is high. Follow-ups are crucial to monitor for recurrence."
         },
         {
-            ques:"Will the surgery leave a visible scar?",
-            ans:" Our oculoplastic surgeons use minimally invasive techniques to ensure excellent cosmetic and functional outcomes. Any scarring can be managed cosmetically after healing."
+            ques: "Will the surgery leave a visible scar?",
+            ans: " Our oculoplastic surgeons use minimally invasive techniques to ensure excellent cosmetic and functional outcomes. Any scarring can be managed cosmetically after healing."
         },
     ]
 
     return (
         <div>
+
+            <Helmet>
+                <title>Malignant melanoma eyelid surgery Bangalore | Dr. Divya D Sundaresh</title>
+                <meta name="description" content='Dr. Divya D Sundaresh offers malignant melanoma eyelid surgery in Bangalore, Karnataka for precise removal and reconstructive care.' />
+            </Helmet>
             <div>
-                <Divyaservicebanner servicename = 'Malignant Melanoma Eyelid Surgery'/>
+                <Divyaservicebanner servicename='Malignant Melanoma Eyelid Surgery' />
             </div>
 
             <div className="lg:mx-20 md:mt-20 xs:mt-29 mx-5 mt-10">
@@ -165,7 +171,7 @@ const Malignantmelanomas = () => {
 
             {/* faqs */}
             <div>
-                <Faqs faqs={faqs}/>
+                <Faqs faqs={faqs} />
             </div>
         </div>
     )

@@ -3,37 +3,43 @@ import Divyaservicebanner from '../../../components/services-banner/Divyaservice
 import { assets } from '../../../assets/assets'
 import Faqs from '../../../components/faqs/faqs'
 import ContactPage from '../ContactPage/ContactPage'
+import { Helmet } from 'react-helmet'
 
 const EntropionRepair = () => {
 
-    const faqs =[
+    const faqs = [
         {
-            ques:"What happens if entropion is left untreated?",
-            ans:"It can cause corneal damage, infections, and eventual loss of vision due to constant friction."
+            ques: "What happens if entropion is left untreated?",
+            ans: "It can cause corneal damage, infections, and eventual loss of vision due to constant friction."
         },
         {
-            ques:"Is entropion repair surgery painful?",
-            ans:" No, the procedure is performed under local anesthesia with minimal discomfort. Mild swelling is expected post-op."
+            ques: "Is entropion repair surgery painful?",
+            ans: " No, the procedure is performed under local anesthesia with minimal discomfort. Mild swelling is expected post-op."
         },
         {
-            ques:"Can entropion come back after surgery?",
-            ans:" While rare, recurrence is possible, especially in cases with underlying inflammatory disease. Regular follow-ups help monitor recovery."
+            ques: "Can entropion come back after surgery?",
+            ans: " While rare, recurrence is possible, especially in cases with underlying inflammatory disease. Regular follow-ups help monitor recovery."
         },
         {
-            ques:"How soon can I resume normal activities?",
-            ans:" Most patients return to routine life within 7–10 days. Heavy lifting or eye rubbing should be avoided for 2 weeks."
+            ques: "How soon can I resume normal activities?",
+            ans: " Most patients return to routine life within 7–10 days. Heavy lifting or eye rubbing should be avoided for 2 weeks."
         },
         {
-            ques:"Is surgery the only solution?",
-            ans:" Not always. In early or mild cases, conservative treatments can help manage symptoms. Surgery is recommended for lasting relief."
+            ques: "Is surgery the only solution?",
+            ans: " Not always. In early or mild cases, conservative treatments can help manage symptoms. Surgery is recommended for lasting relief."
         },
     ]
 
 
     return (
         <div>
+
+            <Helmet>
+                <title>Dr. Divya D Sundaresh - Entropion Repair Specialist Bangalore</title>
+                <meta name="description" content='Dr. Divya D Sundaresh provides expert entropion repair in Bangalore, Karnataka to restore eyelid alignment and eye comfort.' />
+            </Helmet>
             <div>
-                <Divyaservicebanner servicename= 'Entropion Repair Surgery'/>
+                <Divyaservicebanner servicename='Entropion Repair Surgery' />
             </div>
 
             {/* container 1 */}
@@ -241,7 +247,7 @@ const EntropionRepair = () => {
 
             {/* faqs */}
             <div>
-                <Faqs faqs={faqs}/>
+                <Faqs faqs={faqs} />
             </div>
         </div>
     )

@@ -4,36 +4,42 @@ import { Controller } from 'react-hook-form'
 import ContactPage from '../../ContactPage/ContactPage'
 import { FaQ } from 'react-icons/fa6'
 import Faqs from '../../../../components/faqs/faqs'
+import { Helmet } from 'react-helmet'
 
 const ConjuctivalCyst = () => {
 
     const faqs = [
         {
-            ques:"How do I know if I have a cyst or a tumor?",
-            ans:"Only a specialist can determine this after an examination. While cysts are usually clear or fluid-filled, tumors may appear pigmented or nodular."
+            ques: "How do I know if I have a cyst or a tumor?",
+            ans: "Only a specialist can determine this after an examination. While cysts are usually clear or fluid-filled, tumors may appear pigmented or nodular."
         },
         {
-            ques:"Is conjunctival cyst surgery painful?",
-            ans:"No. It is done under local anesthesia and is quick and comfortable."
+            ques: "Is conjunctival cyst surgery painful?",
+            ans: "No. It is done under local anesthesia and is quick and comfortable."
         },
         {
-            ques:"Will I need chemotherapy or radiation for eye tumors?",
-            ans:"Only in selected malignant cases. Your doctor will guide you based on biopsy results."
+            ques: "Will I need chemotherapy or radiation for eye tumors?",
+            ans: "Only in selected malignant cases. Your doctor will guide you based on biopsy results."
         },
         {
-            ques:"Can these cysts or tumors come back?",
-            ans:"Yes, both cysts and tumors can recur. That’s why regular monitoring is important."
+            ques: "Can these cysts or tumors come back?",
+            ans: "Yes, both cysts and tumors can recur. That’s why regular monitoring is important."
         },
         {
-            ques:"Will there be visible scars?  ",
-            ans:"Scars are minimal and typically hidden in the natural conjunctival folds."
+            ques: "Will there be visible scars?  ",
+            ans: "Scars are minimal and typically hidden in the natural conjunctival folds."
         },
     ]
 
     return (
         <div>
+
+            <Helmet>
+                <title>Conjunctival cyst removal in Bangalore | Dr. Divya D Sundaresh</title>
+                <meta name="description" content='Dr. Divya D Sundaresh offers conjunctival cyst removal in Bangalore, Karnataka with minimally invasive techniques and eye-safe care.' />
+            </Helmet>
             <div>
-                <Divyaservicebanner servicename = 'Conjunctival Cyst and Tumor Treatment'/>
+                <Divyaservicebanner servicename='Conjunctival Cyst and Tumor Treatment' />
             </div>
 
             <div className="lg:mx-20 md:mt-10 xs:mt-29 mx-5 mt-10">
@@ -169,7 +175,7 @@ const ConjuctivalCyst = () => {
 
             {/* faqs */}
             <div>
-                <Faqs faqs={faqs}/>
+                <Faqs faqs={faqs} />
             </div>
         </div>
     )

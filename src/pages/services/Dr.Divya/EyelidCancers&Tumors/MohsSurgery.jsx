@@ -2,37 +2,43 @@ import React from 'react'
 import Divyaservicebanner from '../../../../components/services-banner/Divyaservicebanner'
 import ContactPage from '../../ContactPage/ContactPage'
 import Faqs from '../../../../components/faqs/faqs'
+import { Helmet } from 'react-helmet'
 
 const MohsSurgery = () => {
 
     const faqs = [
         {
-            ques:"Is Mohs surgery painful?",
-            ans:" It is done under local anesthesia and is generally well tolerated."
+            ques: "Is Mohs surgery painful?",
+            ans: " It is done under local anesthesia and is generally well tolerated."
         },
         {
-            ques:"Will I have a scar?",
-            ans:" Yes, but the scar is often minimal and strategically placed. Our surgeons focus on both removal and cosmetic restoration."
+            ques: "Will I have a scar?",
+            ans: " Yes, but the scar is often minimal and strategically placed. Our surgeons focus on both removal and cosmetic restoration."
         },
         {
-            ques:"How long does the procedure take?",
-            ans:"Anywhere from 2 to 6 hours depending on the extent of the tumor and how many layers need removal."
+            ques: "How long does the procedure take?",
+            ans: "Anywhere from 2 to 6 hours depending on the extent of the tumor and how many layers need removal."
         },
         {
-            ques:"Is Mohs surgery only for skin cancers on the face?",
-            ans:" While it is most commonly used on the face, it can be used on any area requiring tissue preservation."
+            ques: "Is Mohs surgery only for skin cancers on the face?",
+            ans: " While it is most commonly used on the face, it can be used on any area requiring tissue preservation."
         },
         {
-            ques:"Can skin cancer come back after Mohs? ",
-            ans:"Mohs offers the lowest recurrence rate, but regular follow-ups are recommended for long-term monitoring."
+            ques: "Can skin cancer come back after Mohs? ",
+            ans: "Mohs offers the lowest recurrence rate, but regular follow-ups are recommended for long-term monitoring."
         },
     ]
 
 
     return (
         <div>
+
+            <Helmet>
+                <title>Mohs eyelid surgery in Bangalore | Dr. Divya D Sundaresh</title>
+                <meta name="description" content='Dr. Divya D Sundaresh performs Mohs eyelid surgery in Bangalore, Karnataka for precise removal of eyelid and periocular tumors.' />
+            </Helmet>
             <div>
-                <Divyaservicebanner servicename = 'Mohs Surgery'/>
+                <Divyaservicebanner servicename='Mohs Surgery' />
             </div>
 
             <div className="lg:mx-20 md:mt-10 xs:mt-29 mx-5 mt-10">
@@ -180,7 +186,7 @@ const MohsSurgery = () => {
 
             {/* faqs */}
             <div>
-                <Faqs faqs={faqs}/>
+                <Faqs faqs={faqs} />
             </div>
         </div>
     )

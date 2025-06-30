@@ -2,36 +2,42 @@ import React from 'react'
 import Divyaservicebanner from '../../../../components/services-banner/Divyaservicebanner'
 import ContactPage from '../../ContactPage/ContactPage'
 import Faqs from '../../../../components/faqs/faqs'
+import { Helmet } from 'react-helmet'
 
 const OrbitalTumors = () => {
 
     const faqs = [
         {
-            ques:"What causes orbital tumors?",
-            ans:"Orbital tumors can be congenital, benign, or malignant. They may arise from fat, muscle, glandular, nerve, or vascular tissue within the orbit. In some cases, they may result from metastasis of cancers elsewhere in the body."
+            ques: "What causes orbital tumors?",
+            ans: "Orbital tumors can be congenital, benign, or malignant. They may arise from fat, muscle, glandular, nerve, or vascular tissue within the orbit. In some cases, they may result from metastasis of cancers elsewhere in the body."
         },
         {
-            ques:"Are all orbital tumors cancerous?",
-            ans:"No. Many orbital tumors, such as dermoid cysts and cavernous hemangiomas, are benign. However, some-like lymphoma or metastases-can be malignant and require more intensive treatment."
+            ques: "Are all orbital tumors cancerous?",
+            ans: "No. Many orbital tumors, such as dermoid cysts and cavernous hemangiomas, are benign. However, some-like lymphoma or metastases-can be malignant and require more intensive treatment."
         },
         {
-            ques:"How are orbital tumors diagnosed?",
-            ans:"Diagnosis typically includes a clinical examination followed by imaging tests such as MRI or CT scans. In some cases, a biopsy may be performed to confirm the nature of the tumor."
+            ques: "How are orbital tumors diagnosed?",
+            ans: "Diagnosis typically includes a clinical examination followed by imaging tests such as MRI or CT scans. In some cases, a biopsy may be performed to confirm the nature of the tumor."
         },
         {
-            ques:"Will I lose my vision if I have an orbital tumor?",
-            ans:"Not all orbital tumors cause vision loss. However, untreated tumors may press on the optic nerve or displace the eye, leading to vision changes. Early diagnosis and treatment can help prevent such complications."
+            ques: "Will I lose my vision if I have an orbital tumor?",
+            ans: "Not all orbital tumors cause vision loss. However, untreated tumors may press on the optic nerve or displace the eye, leading to vision changes. Early diagnosis and treatment can help prevent such complications."
         },
         {
-            ques:"What is the recovery time after orbital tumor surgery?",
-            ans:"Recovery depends on the type and extent of the surgery. Most patients return to daily activities within 2-4 weeks, but full healing and follow-up monitoring may continue for several months."
+            ques: "What is the recovery time after orbital tumor surgery?",
+            ans: "Recovery depends on the type and extent of the surgery. Most patients return to daily activities within 2-4 weeks, but full healing and follow-up monitoring may continue for several months."
         },
     ]
 
     return (
         <div>
+
+            <Helmet>
+                <title>Orbital tumor surgery in Bangalore | Dr. Divya D Sundaresh</title>
+                <meta name="description" content='Dr. Divya D Sundaresh offers orbital tumor surgery in Bangalore, Karnataka with precise diagnosis and advanced surgical care.' />
+            </Helmet>
             <div>
-                <Divyaservicebanner servicename = 'Orbital Tumor Treatment'/>
+                <Divyaservicebanner servicename='Orbital Tumor Treatment' />
             </div>
 
             <div className="lg:mx-20 md:mt-10 xs:mt-29 mx-5 mt-10">
@@ -73,7 +79,7 @@ const OrbitalTumors = () => {
                         </ul>
 
                         <div className="mt-2 text-[12px] md:text-[16px] font-[500] font-para leading-7"> If you experience any of these symptoms, it's essential to consult an orbital specialist without delay.</div>
-                    </div> 
+                    </div>
                 </div>
 
                 {/* container 3 */}
@@ -151,7 +157,7 @@ const OrbitalTumors = () => {
 
             {/* faqs */}
             <div>
-                <Faqs faqs={faqs}/>
+                <Faqs faqs={faqs} />
             </div>
         </div>
     )

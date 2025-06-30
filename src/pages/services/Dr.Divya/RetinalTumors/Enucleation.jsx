@@ -2,6 +2,7 @@ import React from 'react'
 import Divyaservicebanner from '../../../../components/services-banner/Divyaservicebanner'
 import ContactPage from '../../ContactPage/ContactPage'
 import Faqs from '../../../../components/faqs/faqs'
+import { Helmet } from 'react-helmet'
 
 const Enucleation = () => {
 
@@ -27,8 +28,13 @@ const Enucleation = () => {
 
     return (
         <div>
+
+            <Helmet>
+                <title>Eye enucleation surgery Bangalore | Dr. Divya D Sundaresh</title>
+                <meta name="description" content='Dr. Divya D Sundaresh performs eye enucleation surgery in Bangalore, Karnataka for severe eye disease, trauma or ocular tumors.' />
+            </Helmet>
             <div>
-                <Divyaservicebanner servicename = 'Enucleation Surgery'/>
+                <Divyaservicebanner servicename='Enucleation Surgery' />
             </div>
 
             <div className="lg:mx-20 md:mt-10 xs:mt-29 mx-5 mt-10">

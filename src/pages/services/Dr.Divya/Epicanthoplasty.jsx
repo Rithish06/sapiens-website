@@ -3,6 +3,7 @@ import Divyaservicebanner from '../../../components/services-banner/Divyaservice
 import { assets } from '../../../assets/assets'
 import Faqs from '../../../components/faqs/faqs'
 import ContactPage from '../ContactPage/ContactPage'
+import { Helmet } from 'react-helmet'
 
 const Epicanthoplasty = () => {
 
@@ -32,8 +33,13 @@ const Epicanthoplasty = () => {
 
   return (
     <div>
+
+      <Helmet>
+        <title>Dr. Divya D Sundaresh - Epicanthoplasty Surgeon in Bangalore</title>
+        <meta name="description" content='Dr. Divya D Sundaresh provides expert epicanthoplasty in Bangalore, Karnataka to refine the inner eye fold with precision and care.' />
+      </Helmet>
       <div>
-        <Divyaservicebanner servicename= 'Epicanthoplasty Surgery'/>
+        <Divyaservicebanner servicename='Epicanthoplasty Surgery' />
       </div>
 
       <div className='lg:mx-20 xs:mt-29 md:mt-10 mt-10  mx-5'>

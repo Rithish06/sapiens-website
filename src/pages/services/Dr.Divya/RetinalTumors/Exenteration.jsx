@@ -2,36 +2,42 @@ import React from 'react'
 import Divyaservicebanner from '../../../../components/services-banner/Divyaservicebanner'
 import ContactPage from '../../ContactPage/ContactPage'
 import Faqs from '../../../../components/faqs/faqs'
+import { Helmet } from 'react-helmet'
 
 const Exenteration = () => {
 
     const faqs = [
         {
-            ques:"What conditions require orbital exenteration?",
-            ans:"Orbital exenteration is typically performed to treat advanced or aggressive tumors of the orbit, such as ocular melanomas, basal cell carcinoma, squamous cell carcinoma, or life-threatening infections that involve the eye and surrounding structures."
+            ques: "What conditions require orbital exenteration?",
+            ans: "Orbital exenteration is typically performed to treat advanced or aggressive tumors of the orbit, such as ocular melanomas, basal cell carcinoma, squamous cell carcinoma, or life-threatening infections that involve the eye and surrounding structures."
         },
         {
-            ques:"Will I lose vision after exenteration?",
-            ans:"Yes, exenteration involves removal of the eye, resulting in complete loss of vision in the affected eye. Our team helps you prepare for this emotionally and offers prosthetic rehabilitation for cosmetic restoration."
+            ques: "Will I lose vision after exenteration?",
+            ans: "Yes, exenteration involves removal of the eye, resulting in complete loss of vision in the affected eye. Our team helps you prepare for this emotionally and offers prosthetic rehabilitation for cosmetic restoration."
         },
         {
-            ques:"What type of anesthesia is used during the surgery?",
-            ans:"Exenteration is usually performed under general anesthesia. In elderly patients or those with specific health conditions, local anesthesia with sedation may be considered."
+            ques: "What type of anesthesia is used during the surgery?",
+            ans: "Exenteration is usually performed under general anesthesia. In elderly patients or those with specific health conditions, local anesthesia with sedation may be considered."
         },
         {
-            ques:"Can an artificial eye be placed after exenteration?",
-            ans:"Yes. After healing, a custom-designed orbital prosthesis (external artificial eye) can be fitted for cosmetic purposes. This is often attached to spectacles or retained magnetically, depending on the reconstruction."
+            ques: "Can an artificial eye be placed after exenteration?",
+            ans: "Yes. After healing, a custom-designed orbital prosthesis (external artificial eye) can be fitted for cosmetic purposes. This is often attached to spectacles or retained magnetically, depending on the reconstruction."
         },
         {
-            ques:"How long is the recovery period after surgery?",
-            ans:"Initial recovery takes about 2-3 weeks, with complete healing and prosthetic placement typically achieved in 6-8 weeks. Long-term follow-ups will be required for monitoring and any adjustments."
+            ques: "How long is the recovery period after surgery?",
+            ans: "Initial recovery takes about 2-3 weeks, with complete healing and prosthetic placement typically achieved in 6-8 weeks. Long-term follow-ups will be required for monitoring and any adjustments."
         },
     ]
 
     return (
         <div>
+
+            <Helmet>
+                <title>Orbital exenteration surgery Bangalore | Dr. Divya D Sundaresh</title>
+                <meta name="description" content='Dr. Divya D Sundaresh performs orbital exenteration surgery in Bangalore, Karnataka for advanced eye tumors requiring removal.' />
+            </Helmet>
             <div>
-                <Divyaservicebanner servicename = 'Orbital Exenteration Surgery'/>
+                <Divyaservicebanner servicename='Orbital Exenteration Surgery' />
             </div>
 
             <div className="lg:mx-20 md:mt-10 xs:mt-29 mx-5 mt-10">
@@ -211,7 +217,7 @@ const Exenteration = () => {
 
             {/* faqs */}
             <div>
-                <Faqs faqs={faqs}/>
+                <Faqs faqs={faqs} />
             </div>
         </div>
     )

@@ -3,36 +3,42 @@ import Divyaservicebanner from '../../../../components/services-banner/Divyaserv
 import { assets } from '../../../../assets/assets'
 import ContactPage from '../../ContactPage/ContactPage'
 import Faqs from '../../../../components/faqs/faqs'
+import { Helmet } from 'react-helmet'
 
 const WallDecompression3 = () => {
 
     const faqs = [
         {
-            ques:"How long is the hospital stay after the surgery?",
-            ans:"Most patients stay for 1-2 days post-surgery, depending on recovery speed."
+            ques: "How long is the hospital stay after the surgery?",
+            ans: "Most patients stay for 1-2 days post-surgery, depending on recovery speed."
         },
         {
-            ques:"Will the surgery improve my vision?",
-            ans:"Yes, especially if vision loss is related to optic nerve compression. It can also enhance eye alignment and cosmetic appearance."
+            ques: "Will the surgery improve my vision?",
+            ans: "Yes, especially if vision loss is related to optic nerve compression. It can also enhance eye alignment and cosmetic appearance."
         },
         {
-            ques:"What type of anesthesia is used?",
-            ans:"General anesthesia is used for comfort and surgical precision."
+            ques: "What type of anesthesia is used?",
+            ans: "General anesthesia is used for comfort and surgical precision."
         },
         {
-            ques:"How soon can I return to work or normal activities?",
-            ans:"Patients can generally resume light activities after 1–2 weeks, but strenuous tasks should be avoided for 4 weeks."
+            ques: "How soon can I return to work or normal activities?",
+            ans: "Patients can generally resume light activities after 1–2 weeks, but strenuous tasks should be avoided for 4 weeks."
         },
         {
-            ques:"Is the result of the surgery permanent?",
-            ans:"Yes, the structural correction is long-lasting. Additional procedures may be required if cosmetic or functional adjustments are needed later."
+            ques: "Is the result of the surgery permanent?",
+            ans: "Yes, the structural correction is long-lasting. Additional procedures may be required if cosmetic or functional adjustments are needed later."
         },
     ]
 
     return (
         <div>
+
+            <Helmet>
+                <title>3 & 4 wall eye decompression surgery Bangalore | Dr. Divya D Sundaresh</title>
+                <meta name="description" content='Dr. Divya D Sundaresh performs 3 & 4 wall eye decompression surgery in Bangalore, Karnataka to treat bulging eyes and orbital pressure.' />
+            </Helmet>
             <div>
-                <Divyaservicebanner servicename = '3 and 4 Wall Orbital Decompression Surgery'/>
+                <Divyaservicebanner servicename='3 and 4 Wall Orbital Decompression Surgery' />
             </div>
 
             <div className='lg:mx-20 xs:mt-20 md:mt-10 mx-5 mt-10'>
@@ -157,7 +163,7 @@ const WallDecompression3 = () => {
 
                             <div className="mt-2">All patients receive close monitoring post-surgery to reduce risks and support safe recovery.</div>
                         </div>
-                    </div>  
+                    </div>
                 </div>
 
                 {/* container 7 */}
@@ -185,15 +191,15 @@ const WallDecompression3 = () => {
                     </div> */}
                 </div>
             </div>
-            
+
             {/* contact-part */}
             <div>
-                <ContactPage/>
+                <ContactPage />
             </div>
 
             {/* faq */}
             <div>
-                <Faqs faqs={faqs}/>
+                <Faqs faqs={faqs} />
             </div>
         </div>
     )

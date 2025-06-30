@@ -3,6 +3,7 @@ import Divyaservicebanner from '../../../components/services-banner/Divyaservice
 import { assets } from '../../../assets/assets'
 import Faqs from '../../../components/faqs/faqs'
 import ContactPage from '../ContactPage/ContactPage'
+import { Helmet } from 'react-helmet'
 
 
 const AsianBlepharoplasty = () => {
@@ -33,9 +34,14 @@ const AsianBlepharoplasty = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Dr. Divya D Sundaresh - Asian Blepharoplasty Expert in Bangalore</title>
+                <meta name="description" content='Personalized Asian blepharoplasty in Bangalore by Dr. Divya D Sundaresh, offering precise and natural eyelid enhancement.' />
+            </Helmet>
+
             <div>
                 <div>
-                    <Divyaservicebanner servicename='Asian Blepharoplasty (Double Eyelid Surgery)'/>
+                    <Divyaservicebanner servicename='Asian Blepharoplasty (Double Eyelid Surgery)' />
                 </div>
 
                 {/* container 1 */}
