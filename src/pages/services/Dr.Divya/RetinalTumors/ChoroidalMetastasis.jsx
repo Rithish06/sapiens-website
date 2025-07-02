@@ -45,7 +45,7 @@ const ChoroidalMetastasis = () => {
                 {/* container 1 */}
                 <div className="flex flex-col items-center">
                     {/* <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Choroidal Metastasis Treatment in Malleshwaram</div> */}
-                    <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Expert Diagnosis and Advanced Ocular Oncology Care at Sapiens Clinic</div>
+                    <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Expert Diagnosis and Advanced Ocular Oncology Care at Sapiens Clinic, Bangalore</div>
                     <div className="text-[12px] md:text-[16px] font-[500] font-para leading-7 mt-2">
                         <ul>
                             <li>Are you experiencing symptoms like <b>blurry vision</b>, <b>flashes of light</b>, or <b>floating spots</b> in your field of vision?</li>

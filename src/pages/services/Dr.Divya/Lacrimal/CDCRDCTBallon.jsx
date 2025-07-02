@@ -45,7 +45,7 @@ const CDCRDCTBallon = () => {
                 <div className="flex flex-col items-center">
 
                     {/* container 1 */}
-                    <div className="text-[18px] md:text-[20px] lg:text-[30px] font-heading font-[600] bg-orange-gradient">Advanced Lacrimal Procedures at Sapiens Clinic Malleshwaram</div>
+                    <div className="text-[18px] md:text-[20px] lg:text-[30px] font-heading font-[600] bg-orange-gradient">Advanced Lacrimal Procedures at Sapiens Clinic, Bangalore</div>
                     <div className="text-[12px] md:text-[16px] font-[500] font-para leading-7 mt-2">At Sapiens Clinic, Malleshwaram, we offer highly specialized care for patients dealing with excessive tearing, recurrent eye infections, or blocked tear ducts. Our expertise in lacrimal procedures such as <b>CDCR (Conjunctivodacryocystorhinostomy), DCT (Dacryocystectomy)</b> and <b>Balloon Dacryoplasty</b> ensures patients receive effective, minimally invasive and long-lasting relief.</div>
                 </div>
 

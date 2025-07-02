@@ -44,7 +44,7 @@ const PostBurnsContracture = () => {
 
             <div className='px-8 lg:px-20 mt-8'>
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>
-                    Post-Burn Contracture Management in Malleshwaram
+                    Post-Burn Contracture Management in Bangalore
                 </div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>

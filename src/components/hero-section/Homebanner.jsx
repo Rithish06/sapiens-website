@@ -71,7 +71,7 @@ const HomeBanner = ({learnMoreFunction}) => {
 								MBBS, MS, FNB, MNAMS, PGDHHM
 							</div>
 							<div className="font-para text-[8px] text-white w-[230px] s:w-[280px] lg:w-1/2 s:text-[9px] lg:text-[12px] mxl:text-[16px]  mt-2">
-								Dr. Darshan Kumar A. Jain is a highly experienced hand surgeon in Malleshwaram, Bangalore, specializing in the treatment of various upper limb conditions. With expertise in managing hand injuries, wrist pain, elbow issues, brachial nerve conditions and shoulder-related problems, Dr. Darshan Kumar A. Jain is committed to delivering advanced care for patients seeking effective solutions.
+								Dr. Darshan Kumar A. Jain is a highly experienced hand surgeon in  Bangalore, specializing in the treatment of various upper limb conditions. With expertise in managing hand injuries, wrist pain, elbow issues, brachial nerve conditions and shoulder-related problems, Dr. Darshan Kumar A. Jain is committed to delivering advanced care for patients seeking effective solutions.
 							</div>
 							<div className="font-para text-[8px] text-white w-[230px] s:w-[280px] lg:w-1/2 s:text-[9px] lg:text-[12px] mxl:text-[16px] mt-2">
 								As a board-certified Hand Surgery Specialist, Dr. Darshan Kumar A. Jain provides personalized treatment plans that focus on improving mobility, reducing pain, and enhancing overall quality of life. Whether you're dealing with finger pain, hand cramps, or require microsurgery for hand injuries, Dr. Darshan Kumar A. Jain ensures comprehensive care designed to meet your specific needs.
@@ -115,7 +115,7 @@ const HomeBanner = ({learnMoreFunction}) => {
 								DO, DNB, FICO, FRCS (Glas), FAICO (Oculoplasty),
 							</div>
 							<div className="font-para text-[8px] text-white w-[230px] s:w-[280px] lg:w-1/2 s:text-[9px] lg:text-[12px] mxl:text-[16px]  mt-2">
-								Dr. Divya D Sundaresh, an experienced ophthalmologist in Bangalore, specializes in orbit surgery, oculoplasty and facial aesthetics. As a leading eye specialist in Malleshwaram, she also excels in treating conditions like cataracts, eye injuries, squint eye and eye allergies.
+								Dr. Divya D Sundaresh, an experienced ophthalmologist in Bangalore, specializes in orbit surgery, oculoplasty and facial aesthetics. As a leading eye specialist in  she also excels in treating conditions like cataracts, eye injuries, squint eye and eye allergies.
 							</div>
 							<div className="font-para text-[8px] text-white w-[230px] s:w-[280px] lg:w-1/2 s:text-[9px] lg:text-[12px] mxl:text-[16px] mt-2">
 								Whether you need a comprehensive eye checkup, eye test, or require advanced treatments like cataract surgery or retina surgery, Dr. Divya D Sundaresh provides expert care to improve vision and maintain eye health.

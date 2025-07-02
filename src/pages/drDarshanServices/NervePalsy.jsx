@@ -29,7 +29,7 @@ const NervePalsy = () => {
         <div>
 
             <div className='px-8 lg:px-20 mt-8'>
-                <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Radial, Ulnar and Median Nerve Palsy Treatment in Malleshwaram</div>
+                <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Radial, Ulnar and Median Nerve Palsy Treatment in Bangalore</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
                         <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Nerve palsies affecting the radial, ulnar, and median nerves can significantly impair hand and arm function, leading to challenges in daily activities. At Sapiens Clinic in Malleshwaram, we specialize in diagnosing and treating these conditions, aiming to restore mobility, reduce pain, and enhance quality of life.</div>

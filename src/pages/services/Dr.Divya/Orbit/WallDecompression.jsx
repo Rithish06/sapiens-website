@@ -46,7 +46,7 @@ const WallDecompression = () => {
       <div className='lg:mx-20 xs:mt-25 md:mt-10 mx-5 mt-10'>
         {/* container 1 */}
         <div className='flex flex-col items-center lg:leading-7 leading-6 '>
-          <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient'>Two-Wall Orbital Decompression Surgery at Sapiens Clinic, Malleshwaram</div>
+          <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient'>Two-Wall Orbital Decompression Surgery at Sapiens Clinic, Bangalore</div>
           <div className='text-[12px] md:text-[16px] font-[500] font-para mt-5'>Two-wall orbital decompression surgery is a critical oculoplastic procedure used to treat prominent eye bulging (proptosis), most commonly caused by thyroid eye disease. At Sapiens Clinic in Malleshwaram, we offer precise, personalized care to help alleviate the discomfort and visual complications caused by this condition. Our surgical approach creates additional space within the orbit, allowing the protruding eye to settle back into a more natural and functional position.</div>
         </div>
 

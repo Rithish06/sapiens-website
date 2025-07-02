@@ -46,7 +46,7 @@ const Eyelid = () => {
             <div className="lg:mx-20 md:mt-10 xs:mt-29 mx-5 mt-20">
                 {/* container 1 */}
                 <div className="flex flex-col items-center">
-                    <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Eyelid Disease Care at Sapiens Clinic, Malleshwaram</div>
+                    <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Eyelid Disease Care at Sapiens Clinic, Bangalore</div>
                     <div className="text-[12px] md:text-[16px]  font-[500] font-para leading-7 mt-2">Do your eyes often feel tired, or do your eyelids appear droopy or puffy? Do you find yourself struggling with blurry vision or eye irritation? You might be experiencing an eyelid condition that requires professional attention. At Sapiens Clinic in Malleshwaram, we specialize in the diagnosis and treatment of various eyelid diseases to restore comfort, function and aesthetics to your eyes.</div>
                 </div>
 

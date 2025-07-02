@@ -44,7 +44,7 @@ const LesterJonesSurgery = () => {
 
                 {/* container 1 */}
                 <div className="flex flex-col items-center">
-                    <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Lester Jones Surgery at Sapiens Clinic, Malleshwaram</div>
+                    <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Lester Jones Surgery at Sapiens Clinic, Bangalore</div>
                     <div className="text-[14px] md:text-[20px] lg:text-[24px] font-[600] font-heading bg-orange-gradient">What is Lester Jones Surgery?</div>
                     <div className="text-[12px] md:text-[16px] font-[500] font-para leading-7 mt-2">Lester Jones surgery is a specialized procedure performed to treat severe tear drainage system obstruction, particularly when the canalicular ducts are blocked and traditional DCR surgeries have failed. Named after the Lester Jones tube used in the procedure, this surgery involves placing a tiny, polished Pyrex glass tube that bypasses the blocked drainage system and allows tears to flow directly from the eye into the nasal cavity.</div>
                 </div>

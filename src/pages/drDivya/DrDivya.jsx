@@ -274,6 +274,12 @@ const DrDivya = () => {
             img: assets.eyelidsynkinesis,
             txt: "Eyelid synkinesis is a facial nerve disorder in which the eyelid moves involuntarily - often blinking or closing - when another part of the face is activated, such as during smiling or chewing. This occurs due to misdirected nerve regrowth following a facial nerve injury, leading to unintentional and often uncomfortable muscle movements. Though not life-threatening, it can be both functionally and emotionally distressing."
         },
+        {
+            link: '/dr-divya-sundaresh/eyelid-retraction',
+            text: 'Eyelid Retraction',
+            img: assets.eyelidsynkinesis,
+            txt: "Eyelid retraction occurs when the upper eyelid is pulled higher or the lower eyelid drops lower than its natural position, exposing more of the eye’s surface. This condition not only affects appearance but also causes discomfort, dryness, and in more severe cases, damage to the cornea. At Sapiens Clinic, Malleshwaram, we offer effective treatment options to restore eyelid function and protect eye health."
+        },
 
     ]
 
