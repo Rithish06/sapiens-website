@@ -33,7 +33,7 @@ const BirthrelatedBrachialplexus = () => {
 
             <Helmet>
                 <title>Birth Brachial Plexus Treatment in Bangalore | Dr. Darshan Kumar A Jain</title>
-                <meta className='Dr. Darshan Kumar A Jain offers expert treatment for birth-related brachial plexus injuries in Bangalore, Karnataka. Gentle, skilled care.' />
+                <meta name='description' content='Dr. Darshan Kumar A Jain offers expert treatment for birth-related brachial plexus injuries in Bangalore, Karnataka. Gentle, skilled care.' />
             </Helmet>
 
             <div>

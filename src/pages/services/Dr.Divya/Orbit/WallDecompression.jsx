@@ -4,37 +4,43 @@ import { assets } from '../../../../assets/assets'
 import ContactPage from '../../ContactPage/ContactPage'
 import Contact from '../../../contactUs/Contact'
 import Faqs from '../../../../components/faqs/faqs'
+import { Helmet } from 'react-helmet'
 
 const WallDecompression = () => {
 
   const faqs = [
     {
-      ques:"How long is the recovery after two-wall decompression?",
-      ans:"Most patients recover well within 2–3 weeks. Swelling and bruising usually resolve in the first 10-14 days."
+      ques: "How long is the recovery after two-wall decompression?",
+      ans: "Most patients recover well within 2–3 weeks. Swelling and bruising usually resolve in the first 10-14 days."
     },
     {
-      ques:"Will my eye look completely normal after surgery?",
-      ans:"While the eye will settle back into the orbit, slight differences in appearance may remain. We aim for symmetry and comfort, and further refinements can be discussed if needed."
+      ques: "Will my eye look completely normal after surgery?",
+      ans: "While the eye will settle back into the orbit, slight differences in appearance may remain. We aim for symmetry and comfort, and further refinements can be discussed if needed."
     },
     {
-      ques:"Is two-wall decompression permanent?",
-      ans:"Yes, it offers long-term relief from proptosis. Further surgery is rarely needed unless additional eye changes occur."
+      ques: "Is two-wall decompression permanent?",
+      ans: "Yes, it offers long-term relief from proptosis. Further surgery is rarely needed unless additional eye changes occur."
     },
     {
-      ques:"Can the surgery worsen double vision?",
-      ans:"Some patients may experience temporary double vision postoperatively, especially those with significant muscle involvement. Our surgical planning helps minimize this risk."
+      ques: "Can the surgery worsen double vision?",
+      ans: "Some patients may experience temporary double vision postoperatively, especially those with significant muscle involvement. Our surgical planning helps minimize this risk."
     },
     {
-      ques:"Is the surgery covered by insurance?",
-      ans:"If the condition is affecting vision or causing functional issues, some insurance providers may offer coverage. We’ll help you with documentation as needed."
+      ques: "Is the surgery covered by insurance?",
+      ans: "If the condition is affecting vision or causing functional issues, some insurance providers may offer coverage. We’ll help you with documentation as needed."
     },
   ]
 
 
   return (
     <div>
+
+      <Helmet>
+        <title>Two-wall orbital decompression in Bangalore by Dr. Divya D Sundaresh</title>
+        <meta name="description" content='Dr. Divya D Sundaresh offers two-wall orbital decompression surgery in Bangalore, Karnataka to relieve eye bulging and pressure.' />
+      </Helmet>
       <div>
-        <Divyaservicebanner servicename = 'Two-Wall Orbital Decompression Surgery'/>
+        <Divyaservicebanner servicename='Two-Wall Orbital Decompression Surgery' />
       </div>
 
       <div className='lg:mx-20 xs:mt-25 md:mt-10 mx-5 mt-10'>
@@ -151,11 +157,11 @@ const WallDecompression = () => {
       </div>
 
       <div>
-        <ContactPage/>
+        <ContactPage />
       </div>
 
       <div>
-        <Faqs faqs={faqs}/>
+        <Faqs faqs={faqs} />
       </div>
 
     </div>

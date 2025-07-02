@@ -3,36 +3,42 @@ import Divyaservicebanner from '../../../components/services-banner/Divyaservice
 import { assets } from '../../../assets/assets'
 import Faqs from '../../../components/faqs/faqs'
 import ContactPage from '../ContactPage/ContactPage'
+import { Helmet } from 'react-helmet'
 
 const EyelidSynkinesis = () => {
 
-    const faqs= [
+    const faqs = [
         {
-            ques:"Is eyelid synkinesis permanent?",
-            ans:"While the nerve miswiring is permanent, its effects can be managed and significantly improved with therapy and Botox."
+            ques: "Is eyelid synkinesis permanent?",
+            ans: "While the nerve miswiring is permanent, its effects can be managed and significantly improved with therapy and Botox."
         },
         {
-            ques:"When should I seek treatment?",
-            ans:"If you’ve recovered from Bell’s palsy or facial nerve injury and are noticing abnormal eye movements, consult a specialist promptly."
+            ques: "When should I seek treatment?",
+            ans: "If you’ve recovered from Bell’s palsy or facial nerve injury and are noticing abnormal eye movements, consult a specialist promptly."
         },
         {
-            ques:"How soon can I expect improvement with Botox?",
-            ans:"Most patients see relief within 3–7 days after injection, with effects lasting 3–4 months."
+            ques: "How soon can I expect improvement with Botox?",
+            ans: "Most patients see relief within 3–7 days after injection, with effects lasting 3–4 months."
         },
         {
-            ques:"Is surgery always necessary?",
-            ans:"Not at all. Surgery is considered only if conservative measures don’t bring sufficient relief."
+            ques: "Is surgery always necessary?",
+            ans: "Not at all. Surgery is considered only if conservative measures don’t bring sufficient relief."
         },
         {
-            ques:"Can this condition affect both eyes?",
-            ans:"It typically affects one side, but severity can vary. Early assessment helps manage symptoms more effectively."
+            ques: "Can this condition affect both eyes?",
+            ans: "It typically affects one side, but severity can vary. Early assessment helps manage symptoms more effectively."
         },
     ]
 
     return (
         <div>
+
+            <Helmet>
+                <title>Dr. Divya D Sundaresh - Eyelid Synkinesis Specialist Bangalore</title>
+                <meta name="description" content='Dr. Divya D Sundaresh offers expert treatment for eyelid synkinesis in Bangalore, Karnataka. Restore natural, independent movement.' />
+            </Helmet>
             <div>
-                <Divyaservicebanner servicename = 'Eyelid Synkinesis Treatment'/>
+                <Divyaservicebanner servicename='Eyelid Synkinesis Treatment' />
             </div>
 
             <div className='lg:mx-20 md:mt-10 mx-5 xs:mt-29 mt-10'>
@@ -45,7 +51,7 @@ const EyelidSynkinesis = () => {
                         <div className='text-[12px] md:text-[16px] font-[500] font-para mt-2 leading-7 '>Eyelid synkinesis is a facial nerve disorder in which the eyelid moves involuntarily - often blinking or closing - when another part of the face is activated, such as during smiling or chewing. This occurs due to misdirected nerve regrowth following a facial nerve injury, leading to unintentional and often uncomfortable muscle movements. Though not life-threatening, it can be both functionally and emotionally distressing.</div>
                     </div>
                 </div>
-                
+
                 {/* container 2 */}
 
                 <div className='flex lg:flex-row flex-col lg:gap-10 gap-5 mt-10 items-center'>
@@ -150,12 +156,12 @@ const EyelidSynkinesis = () => {
 
             {/* contact-part */}
             <div>
-                <ContactPage/>
+                <ContactPage />
             </div>
 
             {/* faqs */}
             <div>
-                <Faqs faqs={faqs}/>
+                <Faqs faqs={faqs} />
             </div>
         </div>
     )

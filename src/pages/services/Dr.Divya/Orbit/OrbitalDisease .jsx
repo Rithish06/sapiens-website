@@ -3,6 +3,7 @@ import Divyaservicebanner from '../../../../components/services-banner/Divyaserv
 import { assets } from '../../../../assets/assets'
 import Faqs from '../../../../components/faqs/faqs'
 import ContactPage from '../../ContactPage/ContactPage'
+import { Helmet } from 'react-helmet'
 
 const OrbitalDisease = () => {
 
@@ -31,8 +32,13 @@ const OrbitalDisease = () => {
 
     return (
         <div>
+
+            <Helmet>
+                <title>Dr. Divya D Sundaresh - Orbital Disease Expert in Bangalore</title>
+                <meta name="description" content='Dr. Divya D Sundaresh offers expert care for orbital diseases in Bangalore, Karnataka with precise diagnosis and advanced treatment.' />
+            </Helmet>
             <div>
-                <Divyaservicebanner servicename = 'Orbital Disease Treatment'/>
+                <Divyaservicebanner servicename='Orbital Disease Treatment' />
             </div>
 
             <div className="lg:mx-20 mx-5 sx:mt-29 md:mt-10 mt-10">
@@ -173,7 +179,7 @@ const OrbitalDisease = () => {
 
             {/* contact-part */}
             <div>
-                <ContactPage/>
+                <ContactPage />
             </div>
             <div>
                 <Faqs faqs={faqs} />

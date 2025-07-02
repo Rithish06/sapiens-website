@@ -2,36 +2,42 @@ import React from 'react'
 import Divyaservicebanner from '../../../../components/services-banner/Divyaservicebanner'
 import ContactPage from '../../ContactPage/ContactPage'
 import Faqs from '../../../../components/faqs/faqs'
+import { Helmet } from 'react-helmet'
 
 const Pseudotumor = () => {
 
-    const faqs =[
+    const faqs = [
         {
-            ques:"Is pseudotumor a real tumor?",
-            ans:"No, it mimics a brain tumor but doesn't involve an actual mass or malignancy."
+            ques: "Is pseudotumor a real tumor?",
+            ans: "No, it mimics a brain tumor but doesn't involve an actual mass or malignancy."
         },
         {
-            ques:"Can pseudotumor lead to permanent vision loss?",
-            ans:"Can pseudotumor lead to permanent vision loss?"
+            ques: "Can pseudotumor lead to permanent vision loss?",
+            ans: "Can pseudotumor lead to permanent vision loss?"
         },
         {
-            ques:"Is surgery always necessary?",
-            ans:"Not always. Many patients respond well to medication and lifestyle changes."
+            ques: "Is surgery always necessary?",
+            ans: "Not always. Many patients respond well to medication and lifestyle changes."
         },
         {
-            ques:"Can pseudotumor come back after treatment?",
-            ans:"Yes, especially if underlying risk factors like weight gain are not addressed."
+            ques: "Can pseudotumor come back after treatment?",
+            ans: "Yes, especially if underlying risk factors like weight gain are not addressed."
         },
         {
-            ques:"How often should I follow up after treatment?",
-            ans:"Initially every 1-2 months, then periodically based on your doctor’s guidance."
+            ques: "How often should I follow up after treatment?",
+            ans: "Initially every 1-2 months, then periodically based on your doctor’s guidance."
         },
     ]
 
     return (
         <div>
+
+            <Helmet>
+                <title>Pseudotumor orbit treatment in Bangalore | Dr. Divya D Sundaresh</title>
+                <meta name="description" content='Dr. Divya D Sundaresh provides expert treatment for orbital pseudotumor in Bangalore, Karnataka with advanced diagnostic care.' />
+            </Helmet>
             <div>
-                <Divyaservicebanner servicename = 'Pseudotumor Treatment'/>
+                <Divyaservicebanner servicename='Pseudotumor Treatment' />
             </div>
 
             <div className="lg:mx-20 md:mt-10 xs:mt-29 mx-5 mt-10">
@@ -182,12 +188,12 @@ const Pseudotumor = () => {
 
             {/* contact-part */}
             <div>
-                <ContactPage/>
+                <ContactPage />
             </div>
 
             {/* faqs */}
             <div>
-                <Faqs faqs={faqs}/>
+                <Faqs faqs={faqs} />
             </div>
         </div>
     )

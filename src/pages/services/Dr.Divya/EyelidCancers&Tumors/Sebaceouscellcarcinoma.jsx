@@ -3,36 +3,42 @@ import Divyaservicebanner from '../../../../components/services-banner/Divyaserv
 import ContactPage from '../../ContactPage/ContactPage'
 import { FaQ } from 'react-icons/fa6'
 import Faqs from '../../../../components/faqs/faqs'
+import { Helmet } from 'react-helmet'
 
 const Sebaceouscellcarcinoma = () => {
 
-    const faqs =[
+    const faqs = [
         {
-            ques:"Why does sebaceous carcinoma mostly affect the eyelids?",
-            ans:"The eyelids contain a high density of meibomian glands, making them a common site for sebaceous cancer."
+            ques: "Why does sebaceous carcinoma mostly affect the eyelids?",
+            ans: "The eyelids contain a high density of meibomian glands, making them a common site for sebaceous cancer."
         },
         {
-            ques:"Can sebaceous carcinoma be misdiagnosed?",
-            ans:"Yes. It is often mistaken for styes or chalazions, especially in its early stages. Biopsy is crucial for correct diagnosis."
+            ques: "Can sebaceous carcinoma be misdiagnosed?",
+            ans: "Yes. It is often mistaken for styes or chalazions, especially in its early stages. Biopsy is crucial for correct diagnosis."
         },
         {
-            ques:"Is this cancer life-threatening?",
-            ans:"If diagnosed and treated early, outcomes are excellent. However, delayed diagnosis can lead to local invasion or metastasis."
+            ques: "Is this cancer life-threatening?",
+            ans: "If diagnosed and treated early, outcomes are excellent. However, delayed diagnosis can lead to local invasion or metastasis."
         },
         {
-            ques:"What are the risk factors?",
-            ans:"Advanced age, previous radiation exposure, weakened immunity, and certain genetic conditions."
+            ques: "What are the risk factors?",
+            ans: "Advanced age, previous radiation exposure, weakened immunity, and certain genetic conditions."
         },
         {
-            ques:"Will the surgery affect how my eye looks?",
-            ans:"Our oculoplastic team uses precise reconstruction techniques to restore both form and function with minimal cosmetic compromise."
+            ques: "Will the surgery affect how my eye looks?",
+            ans: "Our oculoplastic team uses precise reconstruction techniques to restore both form and function with minimal cosmetic compromise."
         },
     ]
 
     return (
         <div>
+
+            <Helmet>
+                <title>Sebaceous carcinoma eyelid surgery Bangalore | Dr. Divya D Sundaresh.</title>
+                <meta name="description" content='Dr. Divya D Sundaresh performs sebaceous carcinoma eyelid surgery in Bangalore, Karnataka with precise removal and reconstructive care.' />
+            </Helmet>
             <div>
-                <Divyaservicebanner servicename = 'Sebaceous Carcinoma Eyelid Surgery'/>
+                <Divyaservicebanner servicename='Sebaceous Carcinoma Eyelid Surgery' />
             </div>
 
             <div className="lg:mx-20 md:mt-10 xs:mt-29 mx-5 mt-10">
@@ -174,7 +180,7 @@ const Sebaceouscellcarcinoma = () => {
 
             {/* faqs */}
             <div>
-                <Faqs faqs={faqs}/>
+                <Faqs faqs={faqs} />
             </div>
         </div>
     )

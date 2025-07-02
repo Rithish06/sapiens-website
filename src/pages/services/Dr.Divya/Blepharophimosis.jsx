@@ -4,42 +4,48 @@ import { assets } from '../../../assets/assets'
 import Faqs from '../../../components/faqs/faqs'
 import ContactPage from '../ContactPage/ContactPage'
 import Contact from '../../contactUs/Contact'
+import { Helmet } from 'react-helmet'
 
 const Blepharophimosis = () => {
 
     const faqs = [
         {
-            ques:"At what age is blepharophimosis surgery typically performed?",
-            ans:"Surgery is usually done between 3 to 5 years of age, once the facial structures are developed and before the condition affects visual development."
+            ques: "At what age is blepharophimosis surgery typically performed?",
+            ans: "Surgery is usually done between 3 to 5 years of age, once the facial structures are developed and before the condition affects visual development."
         },
         {
-            ques:"Is the surgery painful?",
-            ans:"No. The procedure is done under general anesthesia, and any post-surgical discomfort is usually mild and well-managed with medications."
+            ques: "Is the surgery painful?",
+            ans: "No. The procedure is done under general anesthesia, and any post-surgical discomfort is usually mild and well-managed with medications."
         },
         {
-            ques:"Will this surgery improve my child's vision?",
-            ans:"Yes. By correcting droopy eyelids and misaligned canthi, the surgery can prevent vision problems and improve both function and appearance."
+            ques: "Will this surgery improve my child's vision?",
+            ans: "Yes. By correcting droopy eyelids and misaligned canthi, the surgery can prevent vision problems and improve both function and appearance."
         },
         {
-            ques:"How long is the recovery period?",
-            ans:"Most children recover in about 4 to 6 weeks, with stitches typically removed after a week and visible improvement within a few days."
+            ques: "How long is the recovery period?",
+            ans: "Most children recover in about 4 to 6 weeks, with stitches typically removed after a week and visible improvement within a few days."
         },
         {
-            ques:"Is the surgery done in one stage or multiple stages?",
-            ans:"Depending on the severity, it may be done in a single-stage or multi-stage approach, as determined by the oculoplastic surgeon during evaluation."
+            ques: "Is the surgery done in one stage or multiple stages?",
+            ans: "Depending on the severity, it may be done in a single-stage or multi-stage approach, as determined by the oculoplastic surgeon during evaluation."
         },
     ]
 
 
     return (
         <div>
+
+            <Helmet>
+                <title>Dr. Divya D Sundaresh - Blepharophimosis Surgeon Bangalore</title>
+                <meta name="description" content='Dr. Divya D Sundaresh provides expert blepharophimosis surgery in Bangalore, Karnataka for improved eyelid function and appearance.' />
+            </Helmet>
             <div>
-                <Divyaservicebanner servicename='Blepharophimosis Correction Surgery'/>
+                <Divyaservicebanner servicename='Blepharophimosis Correction Surgery' />
             </div>
 
-            
+
             <div className='lg:mx-20 mx-5 xs:mt-29  md:mt-10 mt-10 '>
-                
+
                 {/* container 1 */}
                 <div className='flex flex-col items-center'>
                     {/* <div className='text-[18px] md:text-[20px] lg:text-[30px] font-heading font-[600] bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>Blepharophimosis Correction Surgery in Malleshwaram</div> */}
@@ -72,7 +78,7 @@ const Blepharophimosis = () => {
                         </div>
                     </div>
                 </div>
-                
+
                 {/* container 3 */}
 
                 <div className='flex lg:flex-row flex-col-reverse md:gap-10 gap-5 mt-10 items-center'>
@@ -214,7 +220,7 @@ const Blepharophimosis = () => {
                         <img src={assets.eximg} className=' lg:w-[84%]' alt="" />
                     </div> */}
                     {/* content */}
-                    <div  className=''>
+                    <div className=''>
                         <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>Cost of Blepharophimosis Surgery in Malleshwaram</div>
                         <div className='text-[12px] md:text-[16px] font-[500] font-para'>
                             <div className='mt-2'>The cost of blepharophimosis surgery varies based on :</div>
@@ -236,7 +242,7 @@ const Blepharophimosis = () => {
 
                 </div>
             </div>
-            
+
             {/* container 9 */}
             <div>
                 <ContactPage />
@@ -245,7 +251,7 @@ const Blepharophimosis = () => {
             {/* container 10 */}
 
             <div>
-                <Faqs faqs={faqs}/>
+                <Faqs faqs={faqs} />
             </div>
         </div>
     )

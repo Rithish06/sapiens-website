@@ -3,36 +3,42 @@ import Divyaservicebanner from '../../../../components/services-banner/Divyaserv
 import { assets } from '../../../../assets/assets'
 import Faqs from '../../../../components/faqs/faqs'
 import ContactPage from '../../ContactPage/ContactPage'
+import { Helmet } from 'react-helmet'
 
 const OrbitalDecompression = () => {
 
     const faqs = [
         {
-            ques:"Is orbital decompression surgery painful?",
-            ans:"You’ll be under anesthesia during surgery. Post-operative discomfort is manageable with medications."
+            ques: "Is orbital decompression surgery painful?",
+            ans: "You’ll be under anesthesia during surgery. Post-operative discomfort is manageable with medications."
         },
         {
-            ques:"How long does it take to recover?",
-            ans:"Most patients resume regular activity in 2-3 weeks, though full healing may take longer depending on the extent of decompression."
+            ques: "How long does it take to recover?",
+            ans: "Most patients resume regular activity in 2-3 weeks, though full healing may take longer depending on the extent of decompression."
         },
         {
-            ques:"Can this surgery fix double vision?",
-            ans:"In some cases, it may resolve pressure-related diplopia. In others, strabismus correction may be needed later."
+            ques: "Can this surgery fix double vision?",
+            ans: "In some cases, it may resolve pressure-related diplopia. In others, strabismus correction may be needed later."
         },
         {
-            ques:"Will my eye appearance return to normal?",
-            ans:"The surgery significantly reduces eye bulging and improves appearance, but some patients may need further eyelid or strabismus correction."
+            ques: "Will my eye appearance return to normal?",
+            ans: "The surgery significantly reduces eye bulging and improves appearance, but some patients may need further eyelid or strabismus correction."
         },
         {
-            ques:"Is this surgery covered by insurance?",
-            ans:"If medically necessary (e.g., vision-threatening conditions), it may be partially or fully covered. We’ll assist you with documentation."
+            ques: "Is this surgery covered by insurance?",
+            ans: "If medically necessary (e.g., vision-threatening conditions), it may be partially or fully covered. We’ll assist you with documentation."
         },
 
     ]
     return (
         <div>
+
+            <Helmet>
+                <title>Dr. Divya D Sundaresh - Orbital Decompression Surgeon Bangalore</title>
+                <meta name="description" content='Dr. Divya D Sundaresh performs orbital decompression in Bangalore, Karnataka to relieve pressure and restore natural eye positioning.' />
+            </Helmet>
             <div>
-                <Divyaservicebanner servicename = 'Orbital Decompression Surgery'/>
+                <Divyaservicebanner servicename='Orbital Decompression Surgery' />
             </div>
 
             <div className="lg:mx-20 md:mt-10 mt-10 xs:mt-29 mx-5">
@@ -175,11 +181,11 @@ const OrbitalDecompression = () => {
                 </div>
             </div>
             <div>
-                <ContactPage/>
+                <ContactPage />
             </div>
 
             <div>
-                <Faqs faqs={faqs}/>
+                <Faqs faqs={faqs} />
             </div>
         </div>
     )

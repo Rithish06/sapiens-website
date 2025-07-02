@@ -2,36 +2,42 @@ import React from 'react'
 import Divyaservicebanner from '../../../../components/services-banner/Divyaservicebanner'
 import ContactPage from '../../ContactPage/ContactPage'
 import Faqs from '../../../../components/faqs/faqs'
+import { Helmet } from 'react-helmet'
 
 const LesterJonesSurgery = () => {
 
     const faqs = [
         {
-            ques:"Is the Lester Jones tube visible? ",
-            ans:"The tube is typically well-hidden in the inner corner of the eye and rarely noticeable."
+            ques: "Is the Lester Jones tube visible? ",
+            ans: "The tube is typically well-hidden in the inner corner of the eye and rarely noticeable."
         },
         {
-            ques:"Will I feel the tube inside my eye? ",
-            ans:"Most patients do not feel the tube once the area has healed."
+            ques: "Will I feel the tube inside my eye? ",
+            ans: "Most patients do not feel the tube once the area has healed."
         },
         {
-            ques:"How long does the tube last? ",
-            ans:"It can remain in place for many years but may occasionally need replacement or repositioning."
+            ques: "How long does the tube last? ",
+            ans: "It can remain in place for many years but may occasionally need replacement or repositioning."
         },
         {
-            ques:"Can I wear contact lenses after surgery? ",
-            ans:"You may resume wearing contacts after healing, but this will be determined during follow-up visits."
+            ques: "Can I wear contact lenses after surgery? ",
+            ans: "You may resume wearing contacts after healing, but this will be determined during follow-up visits."
         },
         {
-            ques:"Is this surgery permanent? ",
-            ans:"The tube provides a long-term solution, but regular follow-up is needed to ensure it remains functional."
+            ques: "Is this surgery permanent? ",
+            ans: "The tube provides a long-term solution, but regular follow-up is needed to ensure it remains functional."
         },
     ]
 
     return (
         <div>
+
+            <Helmet>
+                <title>Lester Jones eye surgery in Bangalore | Dr. Divya D Sundaresh</title>
+                <meta name="description" content='Dr. Divya D Sundaresh performs Lester Jones eye surgery in Bangalore, Karnataka for severe tear duct blockages and dry eye relief.' />
+            </Helmet>
             <div>
-                <Divyaservicebanner servicename = 'Lester Jones Surgery'/>
+                <Divyaservicebanner servicename='Lester Jones Surgery' />
             </div>
 
             <div className="lg:mx-20 md:mt-10 xs:mt-29 mx-5 mt-10">
@@ -162,12 +168,12 @@ const LesterJonesSurgery = () => {
 
             {/* contact-part */}
             <div>
-                <ContactPage/>
+                <ContactPage />
             </div>
 
             {/* faqs */}
             <div>
-                <Faqs faqs={faqs}/>
+                <Faqs faqs={faqs} />
             </div>
         </div>
     )

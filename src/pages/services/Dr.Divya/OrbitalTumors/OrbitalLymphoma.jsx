@@ -2,36 +2,42 @@ import React from 'react'
 import Divyaservicebanner from '../../../../components/services-banner/Divyaservicebanner'
 import ContactPage from '../../ContactPage/ContactPage'
 import Faqs from '../../../../components/faqs/faqs'
+import { Helmet } from 'react-helmet'
 
 const OrbitalLymphoma = () => {
 
     const faqs = [
         {
-            ques:"Is orbital lymphoma always cancerous?",
-            ans:"Yes, orbital lymphoma is a type of cancer, typically non-Hodgkin's B-cell lymphoma. However, it is usually slow-growing and treatable when detected early."
+            ques: "Is orbital lymphoma always cancerous?",
+            ans: "Yes, orbital lymphoma is a type of cancer, typically non-Hodgkin's B-cell lymphoma. However, it is usually slow-growing and treatable when detected early."
         },
         {
-            ques:"How is orbital lymphoma different from other eye tumors?",
-            ans:"Unlike many eye tumors that originate within the eyeball, orbital lymphoma arises in the surrounding soft tissues of the orbit."
+            ques: "How is orbital lymphoma different from other eye tumors?",
+            ans: "Unlike many eye tumors that originate within the eyeball, orbital lymphoma arises in the surrounding soft tissues of the orbit."
         },
         {
-            ques:"Can orbital lymphoma cause blindness?",
-            ans:"If left untreated, it can compress the optic nerve or damage ocular structures, potentially leading to vision loss."
+            ques: "Can orbital lymphoma cause blindness?",
+            ans: "If left untreated, it can compress the optic nerve or damage ocular structures, potentially leading to vision loss."
         },
         {
-            ques:"Is surgery required to treat orbital lymphoma?",
-            ans:"Surgery is typically used for biopsy and diagnosis. Treatment is usually managed with radiation and/or chemotherapy."
+            ques: "Is surgery required to treat orbital lymphoma?",
+            ans: "Surgery is typically used for biopsy and diagnosis. Treatment is usually managed with radiation and/or chemotherapy."
         },
         {
-            ques:"How long is recovery after treatment?",
-            ans:"Recovery varies, but most patients return to normal activities within a few weeks after radiation therapy. Long-term follow-up is essential."
+            ques: "How long is recovery after treatment?",
+            ans: "Recovery varies, but most patients return to normal activities within a few weeks after radiation therapy. Long-term follow-up is essential."
         },
     ]
 
     return (
         <div>
+
+            <Helmet>
+                <title>Orbital lymphoma treatment in Bangalore | Dr. Divya D Sundaresh</title>
+                <meta name="description" content='Dr. Divya D Sundaresh offers orbital lymphoma diagnosis and treatment in Bangalore, Karnataka with expert care and surgical precision.' />
+            </Helmet>
             <div>
-                <Divyaservicebanner servicename = 'Orbital Lymphoma Treatment'/>
+                <Divyaservicebanner servicename='Orbital Lymphoma Treatment' />
             </div>
 
             <div className="lg:mx-20 md:mt-10 xs:mt-29 mx-5 mt-10">
@@ -180,7 +186,7 @@ const OrbitalLymphoma = () => {
 
             {/* faqs */}
             <div>
-                <Faqs faqs={faqs}/>
+                <Faqs faqs={faqs} />
             </div>
         </div>
     )

@@ -3,6 +3,7 @@ import Divyaservicebanner from '../../../components/services-banner/Divyaservice
 import { assets } from '../../../assets/assets'
 import Faqs from '../../../components/faqs/faqs'
 import ContactPage from '../ContactPage/ContactPage'
+import { Helmet } from 'react-helmet'
 
 const CanthalResection = () => {
 
@@ -28,6 +29,10 @@ const CanthalResection = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Dr. Divya D Sundaresh - Canthal Resection Expert Bangalore</title>
+                <meta name="description" content='Dr. Divya D Sundaresh performs precise canthal resection in Bangalore, Karnataka to correct eyelid malposition and improve function.' />
+            </Helmet>
             <div>
                 <Divyaservicebanner servicename ='Canthal Resection (Epicanthoplasty)'/>
             </div>

@@ -2,6 +2,7 @@ import React from 'react'
 import Divyaservicebanner from '../../../../components/services-banner/Divyaservicebanner'
 import ContactPage from '../../ContactPage/ContactPage'
 import Faqs from '../../../../components/faqs/faqs'
+import { Helmet } from 'react-helmet'
 
 const CDCRDCTBallon = () => {
 
@@ -30,8 +31,13 @@ const CDCRDCTBallon = () => {
 
     return (
         <div>
+
+            <Helmet>
+                <title>CDCR, DCT & Balloon eye surgeries Bangalore | Dr. Divya D Sundaresh</title>
+                <meta name="description" content='Dr. Divya D Sundaresh offers CDCR, DCT & balloon eye surgeries in Bangalore, Karnataka for tear duct block and lacrimal system issues.' />
+            </Helmet>
             <div>
-                <Divyaservicebanner servicename = 'Advanced Lacrimal Procedures'/>
+                <Divyaservicebanner servicename='Advanced Lacrimal Procedures' />
             </div>
 
             <div className="lg:mx-20 md:mt-10 xs:mt-29 mx-5 mt-10">

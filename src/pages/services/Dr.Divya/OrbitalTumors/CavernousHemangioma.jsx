@@ -2,6 +2,7 @@ import React from 'react'
 import Divyaservicebanner from '../../../../components/services-banner/Divyaservicebanner'
 import ContactPage from '../../ContactPage/ContactPage'
 import Faqs from '../../../../components/faqs/faqs'
+import { Helmet } from 'react-helmet'
 
 const CavernousHemangioma = () => {
 
@@ -30,8 +31,13 @@ const CavernousHemangioma = () => {
 
     return (
         <div>
+
+            <Helmet>
+                <title>Cavernous hemangioma eye surgery Bangalore | Dr. Divya D Sundaresh</title>
+                <meta name="description" content='Dr. Divya D Sundaresh offers eye surgery for cavernous hemangioma in Bangalore, Karnataka with safe removal and orbital care.' />
+            </Helmet>
             <div>
-                <Divyaservicebanner servicename ='Cavernous Hemangioma Treatment'/>
+                <Divyaservicebanner servicename='Cavernous Hemangioma Treatment' />
             </div>
 
             <div className="lg:mx-20 md:mt-10 xs:mt-29 mx-5 mt-10">
