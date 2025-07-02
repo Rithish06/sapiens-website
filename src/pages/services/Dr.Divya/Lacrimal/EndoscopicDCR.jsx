@@ -45,7 +45,7 @@ const EndoscopicDCR = () => {
                 {/* container 1 */}
                 <div className="flex flex-col items-center">
                     {/* <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Endoscopic DCR Surgery in Malleshwaram</div> */}
-                    <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient mt-2">Restoring Comfort and Natural Tear Flow at Sapiens Clinic</div>
+                    <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient mt-2">Restoring Comfort and Natural Tear Flow at Sapiens Clinic, Bangalore</div>
                     <div className="text-[12px] md:text-[16px] font-[500] font-para leading-7 mt-2">At Sapiens Clinic, Malleshwaram, Endoscopic Dacryocystorhinostomy (DCR) is offered as a modern, minimally invasive solution for patients with tear duct blockages. When the nasolacrimal duct is obstructed-whether due to infection, inflammation or congenital factors-it can lead to watery eyes (epiphora), frequent eye infections, and discomfort. Our expert oculoplastic team performs this advanced procedure to restore natural tear drainage and eliminate symptoms without external incisions or scarring.</div>
                 </div>
 

@@ -40,7 +40,7 @@ const Reconstructionforthelimbs = () => {
                 <Servicesbanner serviceName="Reconstruction for the limbs" />
             </div>
             <div className='px-8 lg:px-20 mt-8'>
-                <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Limb Reconstruction Surgery in Malleshwaram</div>
+                <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Limb Reconstruction Surgery in Bangalore</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
                         {/* <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Hand Swellings (Lumps and Bumps) Treatment in Malleshwaram, Bangalore</div> */}

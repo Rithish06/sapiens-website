@@ -45,7 +45,7 @@ const OrbitalDecompression = () => {
 
                 {/* container 1 */}
                 <div className="flex flex-col items-center">
-                    <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent">Orbital Decompression Surgery in Malleshwaram</div>
+                    <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent">Orbital Decompression Surgery in Bangalore</div>
                     <div className="text-[12px] md:text-[16px] font-[500] font-para leading-7">At Sapiens Clinic, Malleshwaram, orbital decompression surgery is performed to relieve pressure within the eye socket (orbit) and to reposition bulging eyes caused by thyroid eye disease (Graves' orbitopathy). This specialized procedure increases the orbital space by removing sections of bone and when necessary, reducing orbital fat, helping restore comfort, eye appearance and vision quality.</div>
                 </div>
 

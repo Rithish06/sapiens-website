@@ -46,7 +46,7 @@ const ConjuctivalCyst = () => {
                 {/* container 1 */}
                 <div className="flex flex-col items-center">
                     {/* <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Conjunctival Cyst and Tumor Treatment in Malleshwaram</div> */}
-                    <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Advanced Eye Surface Surgery at Sapiens Clinic</div>
+                    <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Advanced Eye Surface Surgery at Sapiens Clinic, Bangalore</div>
                     <div className="text-[12px] md:text-[16px] font-[500] font-para leading-7 mt-2">
                         <ul>
                             <li>Do you see a small bump or clear blister on the white part of your eye?</li>

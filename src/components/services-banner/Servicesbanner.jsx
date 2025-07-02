@@ -28,7 +28,7 @@ const Servicesbanner = (props) => {
                             {props.serviceName}
                         </h1>
                         <p className="text-[13px] xs:text-[14px] md:text-[17px] lg:text-[22px] xl:text-[30px] font-para font-bold mt-2">
-                            Treatment in Malleshwaram, Bangalore
+                            Treatment in Bangalore
                         </p>
                     </div>
 

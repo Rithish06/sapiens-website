@@ -44,7 +44,7 @@ const OrbitalLymphoma = () => {
 
                 {/* container 1 */}
                 <div className="flex flex-col items-center">
-                    <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Orbital Lymphoma Treatment in Malleshwaram | Sapiens Clinic</div>
+                    <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Orbital Lymphoma Treatment in Bangalore | Sapiens Clinic</div>
                     <div className="text-[12px] md:text-[16px] font-[500] font-para leading-7 mt-2">Orbital lymphoma is a type of cancer that affects the tissues surrounding the eye (orbit). While it is typically non-Hodgkin's B-cell lymphoma, it can involve the eyelids, extraocular muscles, lacrimal gland, or the soft tissues behind the eye. At Sapiens Clinic in Malleshwaram, we specialize in the diagnosis and management of orbital lymphoma through a multidisciplinary approach involving oculoplastic surgeons and oncology experts.</div>
                 </div>
 

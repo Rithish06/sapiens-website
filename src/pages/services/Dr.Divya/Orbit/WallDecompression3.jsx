@@ -45,7 +45,7 @@ const WallDecompression3 = () => {
 
                 {/* container 1 */}
                 <div className="flex flex-col items-center mt-10">
-                    <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">3 and 4 Wall Orbital Decompression Surgery in Malleshwaram</div>
+                    <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">3 and 4 Wall Orbital Decompression Surgery in Bangalore</div>
                     <div className="text-[12px] md:text-[16px] font-[500] font-para leading-7 mt-5">At Sapiens Clinic in Malleshwaram, we offer advanced 3 and 4 wall orbital decompression surgeries for patients experiencing severe thyroid eye disease (Graves’ orbitopathy) or exophthalmos (protruding eyes). These conditions can place immense pressure within the eye socket, affecting eye movement, vision and facial symmetry. Our goal with decompression surgery is to expand orbital space, relieve pressure on the optic nerve and restore both visual function and cosmetic balance.</div>
                 </div>
 

@@ -393,7 +393,7 @@ const Home = () => {
 		},
 		{
 			ques: "How can I book a consultation with Dr. Darshan Kumar A. Jain or Dr. Divya D Sundaresh?",
-			ans: "Patients can schedule a consultation with Dr. Darshan Kumar A. Jain for hand surgery and microsurgery or Dr. Divya D Sundaresh for oculoplasty and cataract treatments at Sapiens Clinic in Malleshwaram, Bangalore. Appointments can be booked through the clinic’s official website or by calling the clinic directly. Early diagnosis and timely intervention ensure better treatment outcomes for various hand and eye conditions."
+			ans: "Patients can schedule a consultation with Dr. Darshan Kumar A. Jain for hand surgery and microsurgery or Dr. Divya D Sundaresh for oculoplasty and cataract treatments at Sapiens Clinic in  Bangalore. Appointments can be booked through the clinic’s official website or by calling the clinic directly. Early diagnosis and timely intervention ensure better treatment outcomes for various hand and eye conditions."
 		},
 	]
 
@@ -439,7 +439,7 @@ const Home = () => {
 					<div className="my:0 lg:my-5 fadex px-[0] pt-[3%] lg:px-[5%] mxl:px-[14%] lg:pt-5%" ref={fadexRef}>
 						<div className='bg-[#FFEDEDCC] px-5 py-10 rounded-b-[80px] lg:rounded-b-[160px] flex flex-col lg:flex-row gap-1 lg:gap-10 items-center lg:p-10 '>
 							<div className='font-heading text-[22px] md:text-[36px] font-[700] color-black text-center w-full] lg:w-[33%]'>Advanced Care in<br /><span className='bg-orange-gradient' >Hand Surgery & Ophthalmology</span></div>
-							<div className="font-para text-[12px] md:text-[16px] color-black mt-5 text-center w-full lg:w-[65%]">At Sapiens Clinic, we are committed to providing specialized medical care in hand surgery and ophthalmology in Malleshwaram, Bangalore. Our team of expert doctors ensures precise diagnosis and effective treatments for a range of conditions, from hand injuries, wrist pain, and limb surgeries to advanced eye care, including cataract surgery and retina treatments. With state-of-the-art technology and patient-centric care, we aim to be the best orthopedic and eye hospital in Bangalore</div>
+							<div className="font-para text-[12px] md:text-[16px] color-black mt-5 text-center w-full lg:w-[65%]">At Sapiens Clinic, we are committed to providing specialized medical care in hand surgery and ophthalmology in  Bangalore. Our team of expert doctors ensures precise diagnosis and effective treatments for a range of conditions, from hand injuries, wrist pain, and limb surgeries to advanced eye care, including cataract surgery and retina treatments. With state-of-the-art technology and patient-centric care, we aim to be the best orthopedic and eye hospital in Bangalore</div>
 						</div>
 					</div>
 
@@ -458,7 +458,7 @@ const Home = () => {
 					<div className='mt-15 bounce px-[5%] pt-[3%] lg:px-[10%] lg:pt-5%' ref={(el) => addBounceRef(el, 2)}>
 						<h2 className='font-heading text-[22px] md:text-[40px] font-[700] color-black text-center bg-orange-gradient mt-4'>Opthalmology</h2>
 						<h1 className='font-heading text-[20px] md:text-[30px] font-[600] color-black text-center bg-orange-gradient mt-4'>Comprehensive Eye Care & Ophthalmology Services</h1>
-						<div className="font-para text-[12px] md:text-[16px] color-black mt-5 text-center">Under the expertise of Dr. Divya D Sundaresh, Sapiens Clinic is recognized as a top eye hospital in Malleshwaram, Bangalore. We provide advanced ophthalmology treatments, including cataract surgery, retina care, squint eye correction and eye infection treatments. Whether you need a routine eye checkup or specialized eye surgery, our clinic ensures expert eye care services in Bangalore.</div>
+						<div className="font-para text-[12px] md:text-[16px] color-black mt-5 text-center">Under the expertise of Dr. Divya D Sundaresh, Sapiens Clinic is recognized as a top eye hospital in  Bangalore. We provide advanced ophthalmology treatments, including cataract surgery, retina care, squint eye correction and eye infection treatments. Whether you need a routine eye checkup or specialized eye surgery, our clinic ensures expert eye care services in Bangalore.</div>
 						<div className="font-para text-[12px] md:text-[16px] color-black mt-5 text-center">We specialize in ophthalmology treatments for conditions like blurry vision, eye allergies and corneal disorders. Our eye specialists in Bangalore use cutting-edge techniques to deliver high-precision cataract surgery and retina treatments, ensuring improved vision and long-term eye health.</div>
 					</div>
 
@@ -494,7 +494,7 @@ const Home = () => {
 						<ul className='ml-2 list-disc rotaterev' ref={rotateRevRef}>
 							<li className='font-para font-[700] text-[12px] md:text-[16px] color-black mt-3'>Top Orthopedic & Eye Specialists in Bangalore</li>
 							<li className='font-para font-[700] text-[12px] md:text-[16px] color-black mt-3'>Expert Hand Surgeon & Microsurgeon - Dr. Darshan Kumar A. Jain</li>
-							<li className='font-para font-[700] text-[12px] md:text-[16px] color-black mt-3'>Best Ophthalmologist in Malleshwaram Bangalore - Dr. Divya D Sundaresh</li>
+							<li className='font-para font-[700] text-[12px] md:text-[16px] color-black mt-3'>Best Ophthalmologist in Bangalore - Dr. Divya D Sundaresh</li>
 							<li className='font-para font-[700] text-[12px] md:text-[16px] color-black mt-3'>State-of-the-Art Facilities for Hand Surgery, Limb Reconstruction & Eye Care</li>
 							<li className='font-para font-[700] text-[12px] md:text-[16px] color-black mt-3'>Affordable Eye & Hand Surgery in Bangalore with High Success Rates</li>
 							<li className='font-para font-[700] text-[12px] md:text-[16px] color-black mt-3'>Personalized Care with Advanced Medical Technology</li>

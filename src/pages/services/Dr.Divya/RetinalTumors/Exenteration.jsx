@@ -44,7 +44,7 @@ const Exenteration = () => {
 
                 {/* container 1 */}
                 <div className="flex flex-col items-center">
-                    <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Orbital Exenteration Surgery at Sapiens Clinic, Malleshwaram</div>
+                    <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Orbital Exenteration Surgery at Sapiens Clinic, Bangalore</div>
                     <div className="text-[12px] md:text-[16px] font-[500] font-para leading-7 mt-2">
                         <div className="mt-2">Exenteration, or orbital exenteration, is a highly specialized surgical procedure used to remove the eye along with the surrounding tissues such as muscles, optic nerves, fatty tissue, and, in some cases, the eyelids. This surgery is usually recommended in advanced or aggressive tumors of the orbit that cannot be managed through conservative treatment methods. Depending on the extent of tissue removal, exenteration is classified as <b>total, subtotal, or extended</b>.</div>
                         <div className="mt-2">At <b>Sapiens Clinic, Malleshwaram</b>, we approach this delicate procedure with exceptional precision, balancing oncologic safety with post-operative function and aesthetics.</div>

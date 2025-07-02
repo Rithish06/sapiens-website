@@ -41,7 +41,7 @@ const Enucleation = () => {
 
                 {/* container 1 */}
                 <div className="flex flex-col items-center">
-                    <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Enucleation Surgery at Sapiens Clinic, Malleshwaram</div>
+                    <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Enucleation Surgery at Sapiens Clinic, Bangalore</div>
                     <div className="text-[14px] md:text-[20px] lg:text-[24px] font-[600] font-heading bg-orange-gradient mt-2">Advanced Eyecare for Complex Ocular Conditions</div>
                     <div className="text-[12px] md:text-[16px] font-[500] font-para leading-7 mt-2">
                         <div className="mt-2">Enucleation is a specialized surgical procedure performed to <b>remove the entire eyeball</b> in cases where the eye is severely damaged, painful or affected by malignancy. At <b>Sapiens Clinic, Malleshwaram</b>, our expert oculoplastic team performs enucleation with precision and care, ensuring optimal socket reconstruction for future prosthetic placement and cosmetic restoration.</div>

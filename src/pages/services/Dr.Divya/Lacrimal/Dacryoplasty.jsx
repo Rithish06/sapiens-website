@@ -45,7 +45,7 @@ const Dacryoplasty = () => {
 
                 {/* container 1 */}
                 <div className="flex flex-col items-center">
-                    <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Dacryoplasty Services at Sapiens Clinic Malleshwaram</div>
+                    <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Dacryoplasty Services at Sapiens Clinic, Bangalore</div>
                     <div className="text-[14px] md:text-[20px] lg:text-[24px] font-[600] font-heading bg-orange-gradient">What Is Dacryoplasty?</div>
                     <div className="text-[12px] md:text-[16px] font-[500] font-para leading-7 mt-2">Dacryoplasty is a minimally invasive procedure designed to treat nasolacrimal duct obstructions (NLDO), which can cause excessive tearing (epiphora) and recurrent eye infections. Utilizing balloon catheter technology, dacryoplasty gently dilates the blocked tear duct, restoring normal tear drainage without the need for extensive surgery.</div>
                 </div>

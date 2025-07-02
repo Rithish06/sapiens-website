@@ -41,7 +41,7 @@ const EyelidRetraction = () => {
             <div className='lg:mx-20 xs:mt-29 md:mt-10 mx-5 mt-10'>
                 {/* container 1 */}
                 <div className='flex flex-col items-center'>
-                    <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>Eyelid Retraction Treatment in Malleshwaram</div>
+                    <div className='text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-gradient-to-b from-[#EF7F1A] to-[#B22726] bg-clip-text text-transparent'>Eyelid Retraction Treatment in Bangalore</div>
                     <div className='text-[12px] md:text-[16px] font-[500] font-para leading-7 mt-2'><b>Eyelid retraction</b> occurs when the upper eyelid is pulled higher or the lower eyelid drops lower than its natural position, exposing more of the eye’s surface. This condition not only affects appearance but also causes discomfort, dryness, and in more severe cases, damage to the cornea. At Sapiens Clinic, Malleshwaram, we offer effective treatment options to restore eyelid function and protect eye health.</div>
                 </div>
 

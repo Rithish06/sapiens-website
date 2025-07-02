@@ -41,7 +41,7 @@ const ChoroidalMelanoma = () => {
                 {/* container 1 */}
                 <div className="flex flex-col items-center">
                     {/* <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Choroidal Melanoma Treatment in Malleshwaram</div> */}
-                    <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Specialized Eye Cancer Care at Sapiens Clinic</div>
+                    <div className="text-[18px] md:text-[20px] lg:text-[30px] font-[600] font-heading bg-orange-gradient">Specialized Eye Cancer Care at Sapiens Clinic, Bangalore</div>
                     <div className="text-[12px] md:text-[16px] font-[500] font-para leading-7 mt-2">
                         <ul>
                             <li>Are you noticing unusual <b>flashes of light</b>, <b> floaters</b>, or a <b>sudden drop in vision</b>?</li>
