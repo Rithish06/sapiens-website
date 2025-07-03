@@ -2,8 +2,10 @@ User-agent: *
 Disallow: /dr-darshan-kumar-a-jain-best-orthopedic-surgeon-in-bangalore.php
 Disallow: /dr-divya-sundaresh-best-ophthalmologist-in-bangalore.php
 Disallow: /contact-sapiens-clinic-in-malleshwaram.php
+Disallow: /contact.php
 Disallow: /darshan.php
-Disallow: /dr-divya-sundaresh
+Disallow: /divya.php
+Disallow: /dr-darshan
 Disallow: /home
 Disallow: /index.php
 Disallow: /contact
@@ -11,7 +13,6 @@ Disallow: /dr-darshan/malunion
 Disallow: /vic-volkmans-ischemic-contracture
 Disallow: /infections-of-the-hand
 Disallow: /scaphoid-non-unions
-Disallow: /hand-eye-care-blog-bangalore
 Disallow: /dr-darshan/tendon-transfers-for-hand
 Disallow: /dr-darshan/ligament-repair-or-reconstruction-of-elbow
 Disallow: /dr-darshan/carpal-tunnel-syndrome
@@ -21,3 +22,14 @@ Disallow: /dr-darshan/tendon-transfer
 Disallow: /dr-darshan/shoulder-replacement-arthroplasty
 Disallow: /dr-divya-sundaresh/Evisceration
 Disallow: /dr-darshan/cerebral-palsy
+Disallow: /appointment.php
+Disallow: /dr-divya-sundaresh-best-ophthalmologist-in-bangalore.php
+Disallow: /dr-darshan/giant-cell-tumor-gct
+Disallow: /dr-darshan/birth-related-brachial-plexus
+Disallow: /dr-darshan/nerve-related-problems-affecting-the-hand-brachial-plexus-injuries-nerve-injuries
+Disallow: /dr-darshan/carpal-tunnel-syndrome
+Disallow: /dr-darshan/tendon-transfer
+Disallow: /dr-darshan/cerebral-palsy
+Disallow: /dr-darshan/ligament-repair-or-reconstruction-of-elbow
+Disallow: /dr-darshan/kienbocks-disease-avascular-necrosis-of-lunate
+Disallow: /dr-darshan/scaphoid-non-unions

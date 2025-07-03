@@ -31,6 +31,12 @@ const GiantCellTumor = () => {
 
     return (
         <div>
+
+            <Helmet>
+				<title>Giant cell tumor treatment Bangalore | Dr. Darshan Kumar A Jain</title>
+				<meta name="description" content="Dr. Darshan Kumar A Jain offers expert giant cell tumor (GCT) treatment in Bangalore, Karnataka to relieve pain and restore bone health." />
+			</Helmet>
+
             <Servicesbanner serviceName="Giant  Cell Tumor (GCT)" />
 
             <div className='px-8 lg:px-20 mt-8'>
