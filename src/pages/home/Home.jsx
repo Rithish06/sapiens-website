@@ -255,43 +255,50 @@ const Home = () => {
 			img1: assets.fracture,
 			img2: assets.fractureColor,
 			name: "Fracture",
-			bgColor: "#FEE9B4"
+			bgColor: "#FEE9B4",
+			alttext : "Fracture treatment being performed at Sapiens Clinic, Bangalore"
 		},
 		{
 			img1: assets.microsurgery,
 			img2: assets.microsurgeryColor,
 			name: "Microsurgery",
-			bgColor: "#B6FEB4"
+			bgColor: "#B6FEB4",
+			alttext : "Microsurgery setup at Sapiens Clinic, Bangalore"
 		},
 		{
 			img1: assets.arthroscopy,
 			img2: assets.arthroscopyColor,
 			name: "Arthroscopy",
-			bgColor: "#FCB4FE"
+			bgColor: "#FCB4FE",
+			alttext : "Arthroscopy procedure at Sapiens Clinic, Malleshwaram, Bangalore"
 		},
 		{
 			img1: assets.fingertipInjuries,
 			img2: assets.fingertipInjuriescolor,
 			name: "Fingertip Injuries",
-			bgColor: "#FEB4B5"
+			bgColor: "#FEB4B5",
+			alttext : "Fingertip injury treatment at Sapiens Clinic, Bangalore"
 		},
 		{
 			img1: assets.jointReplacement,
 			img2: assets.jointRepalcementColor,
 			name: "Joint Replacement",
-			bgColor: "#B4C0FE"
+			bgColor: "#B4C0FE",
+			alttext : "Joint replacement surgery at Sapiens Clinic, Bangalore Karnataka"
 		},
 		{
 			img1: assets.birthDefects,
 			img2: assets.birthDefectsColor,
 			name: "Birth Defects",
-			bgColor: "#B4FEFD"
+			bgColor: "#B4FEFD",
+			alttext : "Treatment for congenital hand defects at Sapiens Clinic, Bangalore"
 		},
 		{
 			img1: assets.keyHoleWristSurgery,
 			img2: assets.keyHoleWristSurgeryColor,
 			name: "Key-hole wrist Surgery",
-			bgColor: "#FEFAB4"
+			bgColor: "#FEFAB4",
+			alttext : "Keyhole wrist surgery at Sapiens Clinic, Bangalore Karnataka"
 		},
 	]
 
@@ -300,37 +307,43 @@ const Home = () => {
 			img1: assets.traumaCare,
 			img2: assets.traumaCareColor,
 			name: "Trauma Care",
-			bgColor: "#B4C0FE"
+			bgColor: "#B4C0FE",
+			altext : "Trauma care and emergency hand treatment at Sapiens Clinic, Bangalore"
 		},
 		{
 			img1: assets.plasticSurgery,
 			img2: assets.plasticSurgeryCOlor,
 			name: "Ophthalmic Plastic Surgery",
-			bgColor: "#B4FEFD"
+			bgColor: "#B4FEFD",
+			altext : "Ophthalmic plastic surgery procedure at Sapiens Clinic, Bangalore"
 		},
 		{
 			img1: assets.opthalmic,
 			img2: assets.opthalmicOncologyColor,
 			name: "Ophthalmic oncology",
-			bgColor: "#FEB4B5"
+			bgColor: "#FEB4B5",
+			altext : "Ophthalmic oncology treatment at Sapiens Clinic, Bangalore"
 		},
 		{
 			img1: assets.eyelid,
 			img2: assets.eyelidColor,
 			name: "Eyelid reconstructive surgeries",
-			bgColor: "#FCB4FE"
+			bgColor: "#FCB4FE",
+			altext : "Eyelid reconstruction surgery at Sapiens Clinic, Bangalore Karnataka"
 		},
 		{
 			img1: assets.facial,
 			img2: assets.facialCosmeticColor,
 			name: "Facial Cosmetic procedures",
-			bgColor: "#B6FEB4"
+			bgColor: "#B6FEB4",
+			altext : "Facial cosmetic procedure at Sapiens Clinic, Bangalore"
 		},
 		{
 			img1: assets.eyeDisease,
 			img2: assets.thyroidEyeDiseaseColor,
 			name: "Thyroid Eye Disease",
-			bgColor: "#FEE9B4"
+			bgColor: "#FEE9B4",
+			altext : "Thyroid eye disease management at Sapiens Clinic, Bangalore Karnataka"
 		}
 	]
 
@@ -426,8 +439,8 @@ const Home = () => {
 
 				<div className="">
 					<div className="flex flex-col gap-10 items-center justify-center my-5 md:flex-row pin mt-20 px-[5%] pt-[3%] lg:px-[10%] lg:pt-5%s" ref={pinRef}>
-						<img src={assets.sapiensClinicImage} className='w-full h-auto md:w-[50%]' alt="" />
-						<img src={assets.homeContainer2} className='w-full h-auto md:w-[50%]' alt="" />
+						<img src={assets.sapiensClinicImage} className='w-full h-auto md:w-[50%]' alt="Front view of Sapiens Clinic, Malleshwaram, Bangalore" />
+						<img src={assets.homeContainer2} className='w-full h-auto md:w-[50%]' alt="Clinic interiors of Sapiens Clinic in Malleshwaram, Bangalore" />
 					</div>
 
 					<div className='my-10 fadeIn px-[5%] pt-[3%] lg:px-[10%] lg:pt-5%' ref={targetRef}>
@@ -471,7 +484,7 @@ const Home = () => {
 					<div className='px-[5%] lg:px-[12%] w-full mt-26'>
 
 						<div className='flex justify-center lg:justify-start lg:items-center lg:h-[300px]'>
-							<img src={assets.careerHomeImage} className='relative w-[60%] lg:w-[380px] lg:h-[260px] z-[3] rounded-[8px]' alt="" />
+							<img src={assets.careerHomeImage} className='relative w-[60%] lg:w-[380px] lg:h-[260px] z-[3] rounded-[8px]' alt="Hand surgeon using surgical instrument at Sapiens Clinic, Bangalore" />
 						</div>
 
 						<div className='flex justify-end  h-[300px] relative -mt-[40px] lg:-mt-[300px]'>

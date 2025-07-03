@@ -111,45 +111,13 @@ const App = () => {
 
   return (
     <div>
+      
       <Navbar />
       <div className='relative'>
-        {/* <RouterOutlet />
-            <CarpalTunnel />
-            <RouterOutlet /> */}
         <RouterOutlet />
-        {/* <CarpalTunnel /> */}
-        {/* <SportInjuredHand /> */}
-        {/* <StiffnessOfHandJoints /> */}
-        {/* <HandandWristFracture /> */}
-        {/* <ScaphoidFractures /> */}
-        {/* <Servicesbanner /> */}
-        {/* <ScaphoidFractures /> */}
-        {/* <RadialFractures /> */}
-
-        {/* <BirthrelatedBrachialplexus/> */}
-        {/* <Cerebralpalsy/> */}
-        {/* <Flapscovertoupperorlowerlimbs/> */}
-        {/* <Vascularizedbonegraftsfornonunions/> */}
-        {/* <Freeflaps/> */}
-        {/* <Complexreconstructionrequiringbothsofttissueandbone/> */}
-        {/* <VICVolkmanIschemicContracture/> */}
-        {/* <Reconstructionforthelimbs/> */}
-        {/* <Nerverelatedproblems/> */}
-
-        {/* <AsianBlepharoplasty/> */}
-        {/* <Blepharophimosis/> */}
-        {/* <CanthalResection/> */}
-        {/* <Canthopexy/> */}
-        {/* <EntropionRepair/> */}
-        {/* <Epicanthoplasty/> */}
-        {/* <Eyelid/> */}
-        {/* <EyelidRetraction/> */}
-        {/* <EyelidSynkinesis/> */}
-        {/* <SurgicalBlepharoplasty/> */}
-        {/* <ChoroidalMelanoma/> */}
       </div>
-      {/* <Career /> */}
       <Footer />
+
     </div>
   )
 }

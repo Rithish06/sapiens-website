@@ -32,6 +32,12 @@ const Canthopexy = () => {
 
     return (
         <div>
+
+            <Helmet>
+				<title>Canthopexy eyelid surgery Bangalore | Dr. Divya D Sundaresh</title>
+				<meta name="description" content="Dr. Divya D Sundaresh offers canthopexy eyelid surgery in Bangalore, Karnataka to tighten and lift eyelids for better eye support.." />
+			</Helmet>
+
             <div>
                 <Divyaservicebanner servicename='Canthopexy Surgery'/>
             </div>

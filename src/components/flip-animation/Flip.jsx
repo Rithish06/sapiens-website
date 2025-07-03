@@ -40,11 +40,11 @@ const Flip = (props) => {
                             onMouseOver={() => handleFlip(index, true)}
                             onMouseLeave={() => handleFlip(index, false)}>
                             <div className="absolute inset-0 flex items-center justify-center backface-hidden w-[57px] h-[57px] lg:w-[100px] lg:h-[100px] bg rounded-full" style={{background : card.bgColor }}>
-                                <img src={card.img1} className='w-[32px] h-[32px] lg:w-[55px] lg:h-[55px]' alt="" />
+                                <img src={card.img1} className='w-[32px] h-[32px] lg:w-[55px] lg:h-[55px]' alt={card.alttext} />
                             </div>
 
                             <div className="absolute inset-0 flex items-center justify-center backface-hidden w-[57px] h-[57px] lg:w-[100px] lg:h-[100px] bg rounded-full" style={{background : "white", transform: "rotateY(180deg)"}}>
-                                <img src={card.img2} className='w-[32px] h-[32px] lg:w-[55px] lg:h-[55px]' alt="" />
+                                <img src={card.img2} className='w-[32px] h-[32px] lg:w-[55px] lg:h-[55px]' alt={card.alttext} />
                             </div>
 
                         </div>

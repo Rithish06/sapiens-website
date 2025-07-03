@@ -56,12 +56,12 @@ const HomeBanner = ({learnMoreFunction}) => {
 						<img
 							src={assets.homeBannerDesktop}
 							className="hidden md:block w-full h-auto md:mt-0 lg:mt-0 md:mb-25"
-							alt="Slide 1"
+							alt="Dr. Darshan Kumar A. Jain, hand surgeon at Sapiens Clinic, Bangalore Karnataka"
 						/>
 						<img
 							src={assets.homeBannerBgMobile}
 							className="md:hidden w-full h-auto s:h-[500px] mt-10"
-							alt="Slide 1 Mobile"
+							alt="Dr. Darshan Kumar A. Jain, hand surgeon at Sapiens Clinic, Bangalore Karnataka"
 						/>
 						<div className="absolute inset-0 flex flex-col justify-start gap-2 lg:gap-1.5 mxl:gap-2 s:mt-[10%] px-2 md:px-5 lg:px-10 z-20 top-[10%] md:top-1 lg:top-[12%] mxl:top-[20%]">
 							<h2 className="text-[16px] font-heading font-[700] s:text-[19px] md:text-[22px] lg:text-[28px] mxl:text-[44px] text-white">
@@ -88,7 +88,7 @@ const HomeBanner = ({learnMoreFunction}) => {
 							</div>
 						</div>
 					</div>
-					<img src={assets.drdarshan} className="w-full h-auto md:hidden" alt="" />
+					<img src={assets.drdarshan} className="w-full h-auto md:hidden" alt="Dr. Darshan Kumar A. Jain, hand surgeon at Sapiens Clinic, Bangalore Karnataka" />
 				</div>
 
 				{/* Slide 2 */}
@@ -100,12 +100,12 @@ const HomeBanner = ({learnMoreFunction}) => {
 						<img
 							src={assets.drDivyaHomeBanner}
 							className="hidden md:block w-full h-auto md:mt-0 lg:mt-0"
-							alt="Slide 1"
+							alt="Dr. Divya Sundaresh, ophthalmologist at Sapiens Clinic, Bangalore Karnataka"
 						/>
 						<img
 							src={assets.homeBannerBgMobile}
 							className="md:hidden w-full h-auto s:h-[500px]"
-							alt="Slide 1 Mobile"
+							alt="Dr. Divya Sundaresh, ophthalmologist at Sapiens Clinic, Bangalore Karnataka"
 						/>
 						<div className="absolute inset-0 flex flex-col justify-start gap-2 lg:gap-1.5 mxl:gap-2 s:mt-[10%] px-2 md:px-5 lg:px-10 z-20 top-[10%] md:top-1 lg:top-[12%] mxl:top-[20%]">
 							<h2 className="text-[16px] font-heading font-[700] s:text-[19px] md:text-[22px] lg:text-[28px] mxl:text-[44px] text-white">
@@ -132,7 +132,7 @@ const HomeBanner = ({learnMoreFunction}) => {
 							</div>
 						</div>
 					</div>
-					<img src={assets.drDivyaHomePageBannerImage} className="w-full h-auto md:hidden" alt="" />
+					<img src={assets.drDivyaHomePageBannerImage} alt="Dr. Divya Sundaresh, ophthalmologist at Sapiens Clinic, Bangalore Karnataka"  className="w-full h-auto md:hidden" />
 				</div>
 
 				{/* Single Pagination Container */}

@@ -34,6 +34,12 @@ const EyelidRetraction = () => {
 
     return (
         <div>
+            
+            <Helmet>
+				<title>Eyelid retraction surgery in Bangalore by Dr. Divya D Sundaresh</title>
+				<meta name="description" content="Get expert eyelid retraction surgery in Bangalore with Dr. Divya D Sundaresh for restoring natural eyelid position and eye comfort." />
+			</Helmet>
+
             <div>
                 <Divyaservicebanner servicename = 'Eyelid Retraction Treatment'/>
             </div>
