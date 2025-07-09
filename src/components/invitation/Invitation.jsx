@@ -14,7 +14,7 @@ const Invitation = (props) => {
                 </div>
                 <div className='relative h-[1100px] -mt-[1100px] flex flex-col items-center justify-center md:h-[900px] md:-mt-[900px]'>
 
-                    <img src={assets.colorLogo} alt="" className='w-[160px] md:w-[224px] mt-3 mx-auto' />
+                    <img src={assets.colorLogo} alt="Logo of Sapiens Clinic, Bangalore Karnataka" className='w-[160px] md:w-[224px] mt-3 mx-auto' />
                     <div className='font-[700] text-[18px] font-para lg:text-[22px]'>Inviting Applications </div>
                     <div className='font-[700] text-[18px] font-para mt-3 lg:text-[22px]'>for</div>
                     <div className='font-[700] text-[18px] font-para text-center mt-3 lg:text-[22px]'>Fellowship in Hand Surgery & Upper limb Surgery <br />(2025-2026)</div>

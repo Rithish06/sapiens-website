@@ -714,9 +714,9 @@ const DrDivya = () => {
                 {/* container 1 */}
 
                 <div className='relative'>
-                    <img src={assets.drDivyaBanner} className='relative w-full h-auto hidden lg:block' alt="" />
-                    <img src={assets.drDivyaBannerTablet} className='relative w-full h-auto hidden sm:block lg:hidden' alt="" />
-                    <img src={assets.drDivyaBannerMobile} className="relative w-full h-auto sm:hidden" alt='' />
+                    <img src={assets.drDivyaBanner} className='relative w-full h-auto hidden lg:block' alt="Dr. Divya Sundaresh, ophthalmologist at Sapiens Clinic, Bangalore Karnataka" />
+                    <img src={assets.drDivyaBannerTablet} className='relative w-full h-auto hidden sm:block lg:hidden' alt="Dr. Divya Sundaresh, ophthalmologist at Sapiens Clinic, Bangalore Karnataka" />
+                    <img src={assets.drDivyaBannerMobile} className="relative w-full h-auto sm:hidden" alt='Dr. Divya Sundaresh, ophthalmologist at Sapiens Clinic, Bangalore Karnataka' />
 
                     <div className='flex justify-end absolute w-full top-20 sm:top-28 lg:top-45 mxl:top-75 anime'>
                         <div className="w-full px-5 sm:w-[60%]">
@@ -741,7 +741,7 @@ const DrDivya = () => {
                         <div className='font-para text-[12px] lg:text-[16px] font-[500] mt-4'>Dr. Divya Sundaresh has over 10 years of ophthalmology expertise. She did a Senior Housemanship in Ophthalmology at Regional Institute of Ophthalmology, Egmore, Chennai under Prof. Velayutham after graduating from Ramaiah Medical College. She earned her post-graduation ophthalmology degree from Aravind Eye Hospital in Madurai.</div>
                         <div className='font-para text-[12px] lg:text-[16px] font-[500] mt-3'>She specialises in orbital infections, orbital disorders such thyroid orbitopathy, eye lid reconstructions, face cosmetic procedures, and eye malignancies.</div>
                         <div className='flex justify-center mt-10'>
-                            <img src={assets.contactOpthalmology} className='w-[100%] h-auto md:w-[350px] max-w-[500px]' alt="" />
+                            <img src={assets.contactOpthalmology} className='w-[100%] h-auto md:w-[350px] max-w-[500px]' alt="Ophthalmology treatment by Dr. Divya Sundaresh at Sapiens Clinic Bangalore, Karnataka" />
                         </div>
                     </div>
                     <div className="w-full lg:50%">

@@ -790,9 +790,9 @@ const DrDarshan = () => {
             </Helmet>
 
             <div className='relative' ref={comp}>
-                <img src={assets.drDarshanDesktopBanner} className='relative w-full h-auto hidden lg:block' alt="" />
-                <img src={assets.drDarshanBannerTablet} className='relative w-full h-auto hidden sm:block lg:hidden' alt="" />
-                <img src={assets.drDarshanBannerMobile} className="relative w-full h-auto sm:hidden" alt='' />
+                <img src={assets.drDarshanDesktopBanner} className='relative w-full h-auto hidden lg:block' alt="Dr. Darshan Kumar A. Jain, hand surgeon at Sapiens Clinic, Bangalore Karnataka" />
+                <img src={assets.drDarshanBannerTablet} className='relative w-full h-auto hidden sm:block lg:hidden' alt="Dr. Darshan Kumar A. Jain, hand surgeon at Sapiens Clinic, Bangalore Karnataka" />
+                <img src={assets.drDarshanBannerMobile} className="relative w-full h-auto sm:hidden" alt='Dr. Darshan Kumar A. Jain, hand surgeon at Sapiens Clinic, Bangalore Karnataka' />
 
                 <div className='flex justify-end absolute w-full top-20 sm:top-28 lg:top-45 mxl:top-75 anime'>
                     <div className="w-full px-5 sm:w-[60%]">
@@ -1145,17 +1145,17 @@ const DrDarshan = () => {
 
             <div className='relative'>
                 <div className='realtive'>
-                    <img src={assets.locationBg} className='realtive w-full md:h-[450px] lg:h-[500px] mxl:h-[650px] hidden md:block' alt="" />
-                    <img src={assets.locationBgMobile} alt="" className='w-full h-[840px] md:hidden' />
+                    <img src={assets.locationBg} className='realtive w-full md:h-[450px] lg:h-[500px] mxl:h-[650px] hidden md:block' alt="Dr. Darsha Kumar A. Jain Consultation Location Sections" />
+                    <img src={assets.locationBgMobile} alt="Dr. Darsha Kumar A. Jain Consultation Location Sections" className='w-full h-[840px] md:hidden' />
                 </div>
                 <div className="absolute top-0 z-5 flex flex-col items-center gap-15 md:gap-30 justify-center px-5 py-15 md:flex-row">
-                    <img src={assets.locationImage} className='w-[90%] md:w-[40%]' alt="" />
+                    <img src={assets.locationImage} className='w-[90%] md:w-[40%]' alt="Dr. Darshan Kumar A. Jain providing consultation and performing surgery at Sapiens Clinic" />
 
                     <div className='flex flex-col gap-5 lg:gap-10'>
                         <div className='text-[24px] text-white text-center md:text-left font-[700] font-heading mt-5 lg:text-[40px]'>Consultation Locations</div>
 
                         <div className='flex gap-3 items-start mt-4'>
-                            <img src={assets.locationSvg} alt="" />
+                            <img src={assets.locationSvg} alt="Consultations locations of Dr. Darshan Kumar A. Jain Bangalore, Karnataka" />
                             <div>
                                 <div className='font-logo text-[30px] font-[400] text-white lg:text-[44px] leading-9'>Sapiens Clinic</div>
                                 <div className='font-para text-[14px] font-[600] text-white mt-1 lg:text-[16px]'>Mon to sat 12:00 noon to 8:00 PM, Sunday Holiday</div>
@@ -1163,7 +1163,7 @@ const DrDarshan = () => {
                         </div>
 
                         <div className='flex gap-3 items-start mt-4'>
-                            <img src={assets.locationSvg} alt="" />
+                            <img src={assets.locationSvg} alt="Apollo Spectra - Koramangala" />
                             <div>
                                 <div className='font-heading text-[16px] font-[700] text-white lg:text-[22px]'>Apollo Spectra - Koramangala</div>
                                 <div className='font-para text-[14px] font-[600] text-white mt-1 lg:text-[16px]'>Wednesday and Saturday, 10:00 AM to 1:00 PM</div>
@@ -1171,7 +1171,7 @@ const DrDarshan = () => {
                         </div>
 
                         <div className='flex gap-3 items-start mt-4'>
-                            <img src={assets.locationSvg} alt="" />
+                            <img src={assets.locationSvg} alt="Rxdx Healthcare, Whitefiled" />
                             <div>
                                 <div className='font-heading text-[16px] font-[700] text-white lg:text-[22px]'>Rxdx Healthcare, Whitefiled</div>
                                 <div className='font-para text-[14px] font-[600] text-white mt-1 lg:text-[16px]'>Every Monday Morning, 10:00 AM to 12:00 PM</div>

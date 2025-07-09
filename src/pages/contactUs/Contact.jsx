@@ -190,9 +190,9 @@ const Contact = () => {
 
             <div ref={containerRef}>
                 <div className=' anime'>
-                    <img src={assets.contactMobileBanner} className='relative w-full h-auto md:hidden' alt="" />
-                    <img src={assets.contactUsDesktopBanner} className='hidden lg:block lg:h-[90vh] mxl:w-full mxl:h-auto' alt="" />
-                    <img src={assets.contactUsTabletBanner} className='hidden md:block lg:hidden w-full h-[60vh]' alt="" />
+                    <img src={assets.contactMobileBanner} className='relative w-full h-auto md:hidden' alt="Consult Dr. Divya Sundaresh and Dr. Darshan Kumar A. Jain at Sapiens Clinic for expert eye and orthopedic care" />
+                    <img src={assets.contactUsDesktopBanner} className='hidden lg:block lg:h-[90vh] mxl:w-full mxl:h-auto' alt="Consult Dr. Divya Sundaresh and Dr. Darshan Kumar A. Jain at Sapiens Clinic for expert eye and orthopedic care" />
+                    <img src={assets.contactUsTabletBanner} className='hidden md:block lg:hidden w-full h-[60vh]' alt="Consult Dr. Divya Sundaresh and Dr. Darshan Kumar A. Jain at Sapiens Clinic for expert eye and orthopedic care" />
                     {/* <div className='relative w-full h-[100vh] hidden md:blocmgk bg-amber-50 md:justify-center'></div> */}
 
                     <div className="absolute flex flex-col gap-5 top-15 md:flex-row md:justify-center w-full lg:top-50 mxl:top-60">
@@ -398,7 +398,7 @@ const Contact = () => {
                                 <div className='text-[14px] font-para font-[600] mxl:text-[24px]'>Ophthalmology : Morning 10:00am to 03:00pm</div>
                             </div>
                             <div className='w-[95%] flex justify-center'>
-                                <img src={assets.contactOpthalmology} className='w-[80%] h-auto max-w-[380px]' alt="" />
+                                <img src={assets.contactOpthalmology} className='w-[80%] h-auto max-w-[380px]' alt="Ophthalmology treatment by Dr. Divya Sundaresh at Sapiens Clinic Bangalore, Karnataka" />
                             </div>
                         </div>
                     </div>
@@ -414,15 +414,15 @@ const Contact = () => {
                             <div className='px-4 lg:px-14'>
                                 <div className="text-[18px] font-[700] mt-4 font-para lg:text-[24px]">ADDRESS : </div>
                                 <div className='flex gap-3 mt-6 items-center'>
-                                    <img src={assets.contactLocation} className='w-[20px] h-[20px]' alt="" />
+                                    <img src={assets.contactLocation} className='w-[20px] h-[20px]' alt="Location of Sapiens clinic Bangalore Karnataka" />
                                     <div className='text-[12px] font-para font-[500] lg:text-[16px]'>18/3, 1st Main Ranganathapura 18th cross, entrance, opposite Sankey tank, Malleshwaram, Bengaluru, Karnataka 560003.</div>
                                 </div>
                                 <div className='flex gap-3 mt-6 items-center'>
-                                    <img src={assets.contactCall} className='w-[20px] h-[20px] mb-1' alt="" />
+                                    <img src={assets.contactCall} className='w-[20px] h-[20px] mb-1' alt="Dr. Darshan Kumar A. Jain and Dr. Divya Sundaresh giving treatment at sapiens clinic" />
                                     <div className='text-[14px] font-para font-[500]  lg:text-[18px]'><b>Phone :</b> 7892556378</div>
                                 </div>
                                 <div className='flex gap-3 mt-6 items-center'>
-                                    <img src={assets.contactEmail} className='w-[20px] h-[20px] mb-0.5' alt="" />
+                                    <img src={assets.contactEmail} className='w-[20px] h-[20px] mb-0.5' alt="Contact through Phone or email Sapiens Clinic Bangalore" />
                                     <div className='text-[12px] font-para font-[500] lg:text-[18px]'><b>Email Us :</b> sapiensclinic@gmail.com</div>
                                 </div>
                             </div>
@@ -431,22 +431,22 @@ const Contact = () => {
                         <div className="flex flex-col items-center md:items-start md:w-[70%] lg:w-[95%]  lg:pl-10">
                             <div className="text-[18px] font-[700] px-4 mt-14 font-para text-center md:text-left lg:text-[24px] lg:px-14 lg:ml-10">For Emergency Contact Details:</div>
                             <div className='flex gap-3 mt-6 px-4  lg:px-14'>
-                                <img src={assets.handicon} className='w-[20px] h-[20px]' alt="" />
+                                <img src={assets.handicon} className='w-[20px] h-[20px]' alt="Contact for for appointment with hand surgeon at Sapiens Clinic Bangalore" />
                                 <div className='lg:flex lg:items-center gap-5'>
                                     <div className='text-[12px] font-para font-[500]  lg:text-[20px]'>Dr. Darshan Kumar A Jain</div>
                                     <div className='flex items-center gap-3'>
-                                        <img src={assets.bulb} className='w-[20px] auto' alt="" />
+                                        <img src={assets.bulb} className='w-[20px] auto' alt="Call Dr. Darshan Kumar A. Jain for for consultation at Sapiens Clinic Bangalore" />
                                         <div className='text-[#B22726] text-[18px] font-[700] font-para'>8095679126</div>
                                     </div>
                                 </div>
                             </div>
 
                             <div className='flex gap-3 mt-6 px-4 lg:px-14'>
-                                <img src={assets.eyeicon} className='w-[20px] h-[20px]' alt="" />
+                                <img src={assets.eyeicon} className='w-[20px] h-[20px]' alt="Call Dr. Divya Sundaresh for for consultation at Sapiens Clinic Bangalore" />
                                 <div className='lg:flex lg:items-center gap-5'>
                                     <div className='text-[12px] font-para font-[500] lg:text-[20px]'>Dr. Divya Sundaresh</div>
                                     <div className='flex items-center gap-3 lg:'>
-                                        <img src={assets.bulb} className='w-[20px] auto' alt="" />
+                                        <img src={assets.bulb} className='w-[20px] auto' alt="Call for Eye doctor consultation at Sapiens Clinic Bangalore" />
                                         <div className='text-[#B22726] text-[18px] font-[700] font-para'>6364675657</div>
                                     </div>
                                 </div>
@@ -454,7 +454,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className='w-full lg:w-[45%] h-auto flex justify-center lg:justify-start mt-10 lg:mt-0'>
-                        <img src={assets.contactUsImage} className='w-full h-auto md:w-[70%] lg:w-[100%] object-cover mt-4 md:mt-0' alt="" />
+                        <img src={assets.contactUsImage} className='w-full h-auto md:w-[70%] lg:w-[100%] object-cover mt-4 md:mt-0' alt="Dr. Darshan Kumar A. Jain and Dr. Divya Sundaresh giving treatment at sapiens clinic" />
                     </div>
                 </div>
             </div>

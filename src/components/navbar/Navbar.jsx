@@ -80,7 +80,7 @@ const Navbar = () => {
             <div className="px-4 py-1 flex items-center justify-between lg:px-20 font-poppins">
                 {/* Logo */}
                 <NavLink to="/">
-                    <img src={logoToShow} className='w-[130px] h-auto md:w-[140px] lg:w-[180px] mxl:h-auto' alt="logo" />
+                    <img src={logoToShow} className='w-[130px] h-auto md:w-[140px] lg:w-[180px] mxl:h-auto' alt="Logo of Sapiens Clinic, Bangalore Karnataka" />
                     {/* <img src={assets.logo} className='w-[85px] h-auto lg:w-[180px] mxl:w-[224px] mxl:h-auto' alt="logo" /> */}
                 </NavLink>
 

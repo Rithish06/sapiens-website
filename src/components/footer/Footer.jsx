@@ -9,7 +9,7 @@ const Footer = () => {
             <div className='lg:flex lg:gap-5'>
                 <div className='flex flex-col items-center lg:items-center lg:w-50%'>
                     <div className="flex gap-3 items-center justify-center md:w-[90%]">
-                        <img src={assets.logo} className='w-[134px] h-auto md:w-[224px] cursor-pointer' alt="" />
+                        <img src={assets.logo} className='w-[134px] h-auto md:w-[224px] cursor-pointer' alt="Logo of Sapiens Clinic, Bangalore Karnataka" />
                         <div className='text-[20px] md:text-[36px] text-white font-[700] font-roboto md:w-[316px] mt-4 lg:mt-9'>Hand Surgery & Eye Care Centre</div>
                     </div>
                     <div className="text-[12px] md:text-[16px] text-white max-w-[700px]  font-roboto leading-[26px] mt-4 md:w-[90%]">Specializing in upper limb surgery and comprehensive eye care, we focus on accurate diagnosis, modern treatment techniques and patient-centered outcomes. Every procedure is backed by clinical expertise and delivered with precision and care.</div>

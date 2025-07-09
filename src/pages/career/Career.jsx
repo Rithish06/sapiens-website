@@ -14,8 +14,8 @@ const Career = () => {
             </Helmet>
 
             <div className='relative'>
-                <img src={assets.careerPage} className='hidden md:block relative w-full h-auto' alt="" />
-                <img src={assets.carrePageBgMobile} className='relative top-20  w-full h-auto md:hidden' alt="" />
+                <img src={assets.careerPage} className='hidden md:block relative w-full h-auto' alt="Career Opportunities at Sapiens Clinic, Bangalore Karnataka" />
+                <img src={assets.carrePageBgMobile} className='relative top-20  w-full h-auto md:hidden' alt="Career Opportunities at Sapiens Clinic, Bangalore Karnataka" />
 
                 <div className='w-[60%] right-5 md:left-0 md:w-full absolute top-30 md:top-40 lg:top-50 flex flex-col mxl:top-80'>
                     <div className='text-[30px] md:text-[40px] lg:text-[76px] font-[700] font-heading text-center md:ml-66 text-white'>Work With Us</div>
