@@ -12,6 +12,8 @@ gsap.registerPlugin(ScrollTrigger)
 import { useGSAP } from '@gsap/react';
 import PageTransition from "../../components/PageTransition";
 
+import ContactPage from '../services/ContactPage/ContactPage';
+
 const DrDivya = () => {
 
     // const comp = useRef();
@@ -20,9 +22,6 @@ const DrDivya = () => {
     const revealRef = useRef();
     const fadexRef = useRef();
     const bounceRefs = useRef([]);
-
-
-    
 
     useGSAP(() => {
         // Global ScrollTrigger config
@@ -1007,6 +1006,8 @@ const DrDivya = () => {
                         }
                     </div>
                 </div>
+
+                <ContactPage />
 
                 {/* container 11 */}
                 <div className='p-10 md:p-20 mt-10 bg-[#FFD46633]'>

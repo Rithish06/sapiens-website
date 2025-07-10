@@ -1,6 +1,7 @@
 import React from 'react'
 import { useForm } from "react-hook-form";
 import { assets } from '../../../assets/assets';
+import { FaArrowRight } from "react-icons/fa";
 
 const ContactPage = () => {
 
@@ -35,8 +36,6 @@ const ContactPage = () => {
         }
 
         reset();
-
-
       })
       .catch(() => {
         toast.error("Failed to send email");
@@ -91,7 +90,7 @@ const ContactPage = () => {
               </div>
 
               {errors.message && <span className='text-[12px] text-red-400'>message is required</span>}
-              <button type="submit" className='xl:w-[40%] outline-none focus:border-none focus:outline-none focus:ring-0 text-white font-para font-[800] xl:text-[14px] sm:text-[10px] px-2 py-3 bg-[#EF7F1A] mt-4 rounded-sm flex items-center justify-center gap-2 cursor-pointer mxl:mt-10 xs:text-[12px] text-[12px]'>Submit Now <img src={assets.arrowleft} alt="Book an appointment with Dr. Darshan Kumar A. Jain and Dr. Divya Sundaresh" /> </button>
+              <button type="submit" className='xl:w-[40%] outline-none focus:border-none focus:outline-none focus:ring-0 text-white font-para font-[800] xl:text-[14px] sm:text-[10px] px-2 py-3 bg-[#EF7F1A] mt-4 rounded-sm flex items-center justify-center gap-2 cursor-pointer mxl:mt-10 xs:text-[12px] text-[12px]'>Submit Now <div><FaArrowRight /></div> </button>
             </form>
           </div>
         </div>
