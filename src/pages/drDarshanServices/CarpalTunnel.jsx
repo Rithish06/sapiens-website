@@ -56,7 +56,7 @@ const CarpalTunnel = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>What is Carpal Tunnel Syndrome?</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Carpal Tunnel Syndrome (CTS) happens when the median nerve, which runs through a narrow passage in the wrist called the carpal tunnel, gets compressed. This nerve controls sensation in the thumb, index, middle, and half of the ring finger, as well as some hand muscles. When it’s pinched, you’ll experience symptoms that can range from mildly annoying to deeply disruptive.</div>
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Carpal Tunnel Syndrome (CTS) happens when the median nerve, which runs through a narrow passage in the wrist called the <a href="https://www.medanta.org/patient-education-blog/carpal-tunnel-syndrome-symptoms-diagnosis-treatment" target='_blank' className='text-blue-600'>carpal tunnel</a>, gets compressed. This nerve controls sensation in the thumb, index, middle, and half of the ring finger, as well as some hand muscles. When it’s pinched, you’ll experience symptoms that can range from mildly annoying to deeply disruptive.</div>
                     </div>
                 </div>
             </div>

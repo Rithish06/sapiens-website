@@ -366,7 +366,7 @@ const Contact = () => {
                 </div>
 
                 {/* container 3 */}
-                <div className="mt-20 px-5 lg:px-20 mxl:px-30 flex flex-col gap-10 lg:flex-row lg:gap-0 items-center pin" ref={pinRef}>
+                <div className="mt-20 px-5 lg:px-20 mxl:px-30 flex flex-col gap-10 lg:flex-row lg:gap-0 pin" ref={pinRef}>
                     <div>
                         <h2 className="text-[30px] font-[700] font-heading bg-orange-gradient text-center md:text-[40px]">Orthopedic</h2>
                         <div className='flex flex-col gap-5 items-center mt-5'>
@@ -380,14 +380,14 @@ const Contact = () => {
                                 <div className='text-[14px] font-para font-[600] mxl:text-[24px]'>Wednesday and Saturday, 10:00 AM to <br />1:00 PM</div>
                             </div>
 
-                            <div className='w-[95%] border-1 bg-[#FFF8F8] border-black rounded-xl p-3 text-center  max-w-[390px] mxl:max-w-[590px]'>
+                            {/* <div className='w-[95%] border-1 bg-[#FFF8F8] border-black rounded-xl p-3 text-center  max-w-[390px] mxl:max-w-[590px]'>
                                 <div className='bg-orange-gradient text-[18px] font-[700] mxl:text-[24px] font-heading'>Rxdx Healthcare, Whitefiled:</div>
                                 <div className='text-[14px] font-para font-[600] mxl:text-[24px]'>Every Monday Morning, 10:00 AM to <br />12:00 PM</div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
 
-                    <div className='h-[2px] bg-black w-[80%] mx-auto lg:w-[2px] lg:h-[450px]'></div>
+                    <div className='h-[2px] bg-black w-[80%] mx-auto my-auto lg:w-[2px] lg:h-[400px]'></div>
 
                     <div>
                         <h2 className="text-[36px] font-[700] font-heading bg-orange-gradient text-center md:text-[40px]">Opthalmology</h2>
@@ -395,11 +395,15 @@ const Contact = () => {
                         <div className='flex flex-col gap-5 items-center mt-5'>
                             <div className='w-[95%] border-1 bg-[#FFF8F8] border-black rounded-xl p-3 text-center max-w-[390px]  mxl:max-w-[590px]'>
                                 <div className='bg-orange-gradient text-[18px] font-[700] mxl:text-[24px] font-heading'>Sapiens Clinic</div>
-                                <div className='text-[14px] font-para font-[600] mxl:text-[24px]'>Ophthalmology : Morning 10:00am to 03:00pm</div>
+                                <div className='text-[14px] font-para font-[600] mxl:text-[24px]'>Ophthalmology : Monday to Saturday 4 PM to 7 PM</div>
                             </div>
-                            <div className='w-[95%] flex justify-center'>
+                            <div className='w-[95%] border-1 bg-[#FFF8F8] border-black rounded-xl p-3 text-center max-w-[390px]  mxl:max-w-[590px]'>
+                                <div className='bg-orange-gradient text-[18px] font-[700] mxl:text-[24px] font-heading'>Bhagawan Mahaveer Jain Hospital</div>
+                                <div className='text-[14px] font-para font-[600] mxl:text-[24px]'>Ophthalmology : Monday to Saturday 9 PM to 2 PM</div>
+                            </div>
+                            {/* <div className='w-[95%] flex justify-center'>
                                 <img src={assets.contactOpthalmology} className='w-[80%] h-auto max-w-[380px]' alt="Ophthalmology treatment by Dr. Divya Sundaresh at Sapiens Clinic Bangalore, Karnataka" />
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

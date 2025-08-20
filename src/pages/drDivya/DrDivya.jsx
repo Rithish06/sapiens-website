@@ -183,7 +183,7 @@ const DrDivya = () => {
         },
         {
             color: "#C0A5FF",
-            text: "Trauma Care – Eyelid & Canalicular laceration repair, Repair of Orbital (eye socket) and other facial fractures"
+            text: "Trauma Care – <a href = 'https://perfecteyesltd.com/blog/eyelid-anatomy/' target = '_blank' class = 'text-blue-600'>Eyelid</a> & Canalicular laceration repair, Repair of Orbital (eye socket) and other facial fractures"
         },
         {
             color: "#FF9A8D",
@@ -765,9 +765,7 @@ const DrDivya = () => {
                                         className="w-[30px] h-[30px] rounded-r-full flex-shrink-0"
                                     ></div>
 
-                                    <div className="font-para text-[12px] lg:text-[16px] font-[500]">
-                                        {speciality.text}
-                                    </div>
+                                    <div className="font-para text-[12px] lg:text-[16px] font-[500]" dangerouslySetInnerHTML={{__html:speciality.text}}></div>
                                 </div>
                             ))}
                         </div>

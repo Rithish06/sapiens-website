@@ -128,7 +128,7 @@ const InfectionsHand = () => {
                 <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Recovery & Care</div>
                 <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
                     <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'></div>With early intervention, most hand infections resolve without complications. Recovery time depends on the type and severity of the infection, but rest, medication adherence, and proper wound care are key. Your healthcare provider will monitor healing and may recommend physiotherapy to restore motion if required.
+                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'></div>With early intervention, most <a href='https://teachmesurgery.com/plastic-surgery/infections/hand-infections/' className='text-blue-600' target='_blank'>hand infections</a> resolve without complications. Recovery time depends on the type and severity of the infection, but rest, medication adherence, and proper wound care are key. Your healthcare provider will monitor healing and may recommend physiotherapy to restore motion if required.
                     </div>
                 </div>
             </div>
