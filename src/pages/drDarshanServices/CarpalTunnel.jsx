@@ -117,7 +117,7 @@ const EyelidSurgeryPage = () => {
     ];
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-orange-50 via-pink-50 to-rose-100">
+        <div className="min-h-screen bg-gradient-to-br from-orange-50 via-pink-50 to-rose-100 overflow-x-hidden">
             {/* Hero Section */}
             <div className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-gray-900">
                 <div className="absolute inset-0 bg-black opacity-20"></div>
