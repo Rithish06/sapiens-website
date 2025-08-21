@@ -190,9 +190,9 @@ const Contact = () => {
 
             <div ref={containerRef}>
                 <div className=' anime'>
-                    <img src={assets.contactMobileBanner} className='relative w-full h-auto md:hidden' alt="Consult Dr. Divya Sundaresh and Dr. Darshan Kumar A. Jain at Sapiens Clinic for expert eye and orthopedic care" />
-                    <img src={assets.contactUsDesktopBanner} className='hidden lg:block lg:h-[90vh] mxl:w-full mxl:h-auto' alt="Consult Dr. Divya Sundaresh and Dr. Darshan Kumar A. Jain at Sapiens Clinic for expert eye and orthopedic care" />
-                    <img src={assets.contactUsTabletBanner} className='hidden md:block lg:hidden w-full h-[60vh]' alt="Consult Dr. Divya Sundaresh and Dr. Darshan Kumar A. Jain at Sapiens Clinic for expert eye and orthopedic care" />
+                    <img src={assets.contactMobileBanner} loading="lazy" className='relative w-full h-auto md:hidden' alt="Consult Dr. Divya Sundaresh and Dr. Darshan Kumar A. Jain at Sapiens Clinic for expert eye and orthopedic care" />
+                    <img src={assets.contactUsDesktopBanner} loading="lazy" className='hidden lg:block lg:h-[90vh] mxl:w-full mxl:h-auto' alt="Consult Dr. Divya Sundaresh and Dr. Darshan Kumar A. Jain at Sapiens Clinic for expert eye and orthopedic care" />
+                    <img src={assets.contactUsTabletBanner} loading="lazy" className='hidden md:block lg:hidden w-full h-[60vh]' alt="Consult Dr. Divya Sundaresh and Dr. Darshan Kumar A. Jain at Sapiens Clinic for expert eye and orthopedic care" />
                     {/* <div className='relative w-full h-[100vh] hidden md:blocmgk bg-amber-50 md:justify-center'></div> */}
 
                     <div className="absolute flex flex-col gap-5 top-15 md:flex-row md:justify-center w-full lg:top-50 mxl:top-60">

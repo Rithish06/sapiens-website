@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { assets } from '../../assets/assets';
 import { FaHome } from "react-icons/fa";
@@ -16,7 +16,6 @@ const Navbar = () => {
 
     const shouldShowSimpleLogo = (location.pathname === '/' || location.pathname === '/fellowship-medical-jobs-bangalore') && windowWidth > 760;
     const logoToShow = shouldShowSimpleLogo ? assets.logo : assets.colorLogo;
-
 
     useEffect(() => {
         const handleResize = () => {
