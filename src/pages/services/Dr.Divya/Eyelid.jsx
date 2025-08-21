@@ -669,7 +669,7 @@ const EyelidSurgeryPage = () => {
     ];
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-orange-50 via-pink-50 to-rose-100">
+        <div className="min-h-screen bg-gradient-to-br from-orange-50 via-pink-50 to-rose-100 overflow-x-hidden">
             {/* Hero Section */}
             <div className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-gray-900">
                 <div className="absolute inset-0 bg-black opacity-20"></div>
@@ -758,7 +758,7 @@ const EyelidSurgeryPage = () => {
                                 <div className="relative">
                                     <div className="bg-gradient-to-br from-orange-100 to-pink-100 rounded-3xl p-8">
                                         <h4 className="text-xl font-bold text-gray-900 mb-6 text-center">Thousands of Successful Surgeries</h4>
-                                        <div className="grid grid-cols-2 gap-4 text-center">
+                                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-center">
                                             <div className="bg-white rounded-2xl p-4 shadow-lg border border-orange-100">
                                                 <div className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-pink-600 bg-clip-text text-transparent">5000+</div>
                                                 <div className="text-sm text-gray-600">Happy Patients</div>
