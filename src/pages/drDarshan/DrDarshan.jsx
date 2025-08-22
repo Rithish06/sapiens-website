@@ -792,9 +792,9 @@ const DrDarshan = () => {
             </Helmet>
 
             <div className='relative' ref={comp}>
-                <img src={assets.drDarshanDesktopBanner} className='relative w-full h-auto hidden lg:block' alt="Dr. Darshan Kumar A. Jain, hand surgeon at Sapiens Clinic, Bangalore Karnataka" />
-                <img src={assets.drDarshanBannerTablet} className='relative w-full h-auto hidden sm:block lg:hidden' alt="Dr. Darshan Kumar A. Jain, hand surgeon at Sapiens Clinic, Bangalore Karnataka" />
-                <img src={assets.drDarshanBannerMobile} className="relative w-full h-auto sm:hidden" alt='Dr. Darshan Kumar A. Jain, hand surgeon at Sapiens Clinic, Bangalore Karnataka' />
+                <img src={assets.drDarshanDesktopBanner} loading='lazy' className='relative w-full h-auto hidden lg:block' alt="Dr. Darshan Kumar A. Jain, hand surgeon at Sapiens Clinic, Bangalore Karnataka" />
+                <img src={assets.drDarshanBannerTablet} loading='lazy' className='relative w-full h-auto hidden sm:block lg:hidden' alt="Dr. Darshan Kumar A. Jain, hand surgeon at Sapiens Clinic, Bangalore Karnataka" />
+                <img src={assets.drDarshanBannerMobile} loading='lazy' className="relative w-full h-auto sm:hidden" alt='Dr. Darshan Kumar A. Jain, hand surgeon at Sapiens Clinic, Bangalore Karnataka' />
 
                 <div className='flex justify-end absolute w-full top-20 sm:top-28 lg:top-45 mxl:top-75 anime'>
                     <div className="w-full px-5 sm:w-[60%]">
@@ -843,7 +843,7 @@ const DrDarshan = () => {
                     <div className="w-full lg:50%">
                         {/* <img src="" alt="" /> */}
                         {/* <div className='w-full h-300px lg:h-full bg-gray-300 rounded-2xl'></div> */}
-                        <img src={assets.specialityImg} className='w-full h-280px lg:h-full rounded-2xl' />
+                        <img loading='lazy' src={assets.specialityImg} className='w-full h-280px lg:h-full rounded-2xl' />
                     </div>
                 </div>
             </div>
@@ -870,7 +870,7 @@ const DrDarshan = () => {
                                     <Link to={surgery.link} className={`group relative w-[100%] md:w-[45%] lg:w-[30%] flex items-center gap-3 mt-5 bg-[#D9D9D9] p-2 rounded-2xl hover:bg-[#FFE7BB] cursor-pointer transition-all duration-500`} key={index} >
 
                                         <div className='relative w-[200px]'>
-                                            <img src={surgery.image} className='w-[200px] h-[130px] rounded-[10px] object-cover' alt={surgery.alttext} />
+                                            <img loading='lazy' src={surgery.image} className='w-[200px] h-[130px] rounded-[10px] object-cover' alt={surgery.alttext} />
                                             <div className='absolute top-[79.5%] right-0 bg-[#D9D9D9] text-[30px] w-[35px] h-[35px] rounded-full flex justify-center items-center group-hover:bg-[#FFE7BB] transition-transform duration-500'>
                                                 <FaArrowRight className='w-[20px] h-[20px] rotate-[-45deg] text-[#EF7F1A] group-hover:rotate-0 transition-transform duration-500' />
                                             </div>
@@ -958,7 +958,7 @@ const DrDarshan = () => {
                                 <Link to={surgery.link} className={`group relative w-[100%] md:w-[45%] lg:w-[30%] flex items-center gap-3 mt-5 bg-[#D9D9D9] p-2 rounded-2xl hover:bg-[#FFE7BB] cursor-pointer transition-all duration-500`} key={index} >
 
                                     <div className='relative w-[200px]'>
-                                        <img src={surgery.image} className='w-[200px] h-[130px] rounded-[10px] object-cover' alt={surgery.alttext} />
+                                        <img src={surgery.image} loading='lazy' className='w-[200px] h-[130px] rounded-[10px] object-cover' alt={surgery.alttext} />
                                         <div className='absolute top-[79.5%] right-0 bg-[#D9D9D9] text-[30px] w-[35px] h-[35px] rounded-full flex justify-center items-center group-hover:bg-[#FFE7BB] transition-transform duration-500'>
                                             <FaArrowRight className='w-[20px] h-[20px] rotate-[-45deg] text-[#EF7F1A] group-hover:rotate-0 transition-transform duration-500' />
                                         </div>
@@ -995,7 +995,7 @@ const DrDarshan = () => {
                                 <Link to={surgery.link} className={`group relative w-[100%] md:w-[45%] lg:w-[30%] flex items-center gap-3 mt-5 bg-[#D9D9D9] p-2 rounded-2xl hover:bg-[#FFE7BB] cursor-pointer transition-all duration-500`} key={index} >
 
                                     <div className='relative w-[200px]'>
-                                        <img src={surgery.image} className='w-[200px] h-[130px] rounded-[10px] object-cover' alt={surgery.alttext} />
+                                        <img src={surgery.image} loading='lazy' className='w-[200px] h-[130px] rounded-[10px] object-cover' alt={surgery.alttext} />
                                         <div className='absolute top-[79.5%] right-0 bg-[#D9D9D9] text-[30px] w-[35px] h-[35px] rounded-full flex justify-center items-center group-hover:bg-[#FFE7BB] transition-transform duration-500'>
                                             <FaArrowRight className='w-[20px] h-[20px] rotate-[-45deg] text-[#EF7F1A] group-hover:rotate-0 transition-transform duration-500' />
                                         </div>
@@ -1030,7 +1030,7 @@ const DrDarshan = () => {
                                 <Link to={surgery.link} className={`group relative w-[100%] md:w-[45%] lg:w-[30%] flex items-center gap-3 mt-5 bg-[#D9D9D9] p-2 rounded-2xl hover:bg-[#FFE7BB] cursor-pointer transition-all duration-500`} key={index} >
 
                                     <div className='relative w-[200px]'>
-                                        <img src={surgery.image} className='w-[200px] h-[130px] rounded-[10px] object-cover' alt={surgery.alttext} />
+                                        <img src={surgery.image} loading='lazy' className='w-[200px] h-[130px] rounded-[10px] object-cover' alt={surgery.alttext} />
                                         <div className='absolute top-[79.5%] right-0 bg-[#D9D9D9] text-[30px] w-[35px] h-[35px] rounded-full flex justify-center items-center group-hover:bg-[#FFE7BB] transition-transform duration-500'>
                                             <FaArrowRight className='w-[20px] h-[20px] rotate-[-45deg] text-[#EF7F1A] group-hover:rotate-0 transition-transform duration-500' />
                                         </div>
@@ -1067,7 +1067,7 @@ const DrDarshan = () => {
                                 <Link to={surgery.link} className={`group relative w-[100%] md:w-[45%] lg:w-[30%] flex items-center gap-3 mt-5 bg-[#D9D9D9] p-2 rounded-2xl hover:bg-[#FFE7BB] cursor-pointer transition-all duration-500`} key={index} >
 
                                     <div className='relative w-[200px]'>
-                                        <img src={surgery.image} className='w-[200px] h-[130px] rounded-[10px] object-cover' alt={surgery.alttext} />
+                                        <img src={surgery.image} loading='lazy' className='w-[200px] h-[130px] rounded-[10px] object-cover' alt={surgery.alttext} />
                                         <div className='absolute top-[79.5%] right-0 bg-[#D9D9D9] text-[30px] w-[35px] h-[35px] rounded-full flex justify-center items-center group-hover:bg-[#FFE7BB] transition-transform duration-500'>
                                             <FaArrowRight className='w-[20px] h-[20px] rotate-[-45deg] text-[#EF7F1A] group-hover:rotate-0 transition-transform duration-500' />
                                         </div>
@@ -1104,7 +1104,7 @@ const DrDarshan = () => {
                                 <Link to={surgery.link} className={`group relative w-[100%] md:w-[45%] lg:w-[30%] flex items-center gap-3 mt-5 bg-[#D9D9D9] p-2 rounded-2xl hover:bg-[#FFE7BB] cursor-pointer transition-all duration-500`} key={index} >
 
                                     <div className='relative w-[200px]'>
-                                        <img src={surgery.image} className='w-[200px] h-[130px] rounded-[10px] object-cover' alt={surgery.alttext} />
+                                        <img src={surgery.image} loading='lazy' className='w-[200px] h-[130px] rounded-[10px] object-cover' alt={surgery.alttext} />
                                         <div className='absolute top-[79.5%] right-0 bg-[#D9D9D9] text-[30px] w-[35px] h-[35px] rounded-full flex justify-center items-center group-hover:bg-[#FFE7BB] transition-transform duration-500'>
                                             <FaArrowRight className='w-[20px] h-[20px] rotate-[-45deg] text-[#EF7F1A] group-hover:rotate-0 transition-transform duration-500' />
                                         </div>
@@ -1141,7 +1141,7 @@ const DrDarshan = () => {
                     {
                         publications.map((surgery, index) => (
                             <div className="flex items-center gap-3 mt-3" key={index}>
-                                <img src={assets.handDrag} className='w-[24px] h-[24px] lg:w-[30px] lg:h-[30px]' alt={surgery.alttext} />
+                                <img src={assets.handDrag} loading='lazy' className='w-[24px] h-[24px] lg:w-[30px] lg:h-[30px]' alt={surgery.alttext} />
                                 <div className="text-[12px] lg:text-[16px] font-text font-[600]">{surgery.text}</div>
                             </div>
                         ))
@@ -1151,17 +1151,17 @@ const DrDarshan = () => {
 
             <div className='relative'>
                 <div className='realtive'>
-                    <img src={assets.locationBg} className='realtive w-full md:h-[450px] lg:h-[500px] mxl:h-[650px] hidden md:block' alt="Dr. Darsha Kumar A. Jain Consultation Location Sections" />
-                    <img src={assets.locationBgMobile} alt="Dr. Darsha Kumar A. Jain Consultation Location Sections" className='w-full h-[840px] md:hidden' />
+                    <img src={assets.locationBg} loading='lazy' className='realtive w-full md:h-[450px] lg:h-[500px] mxl:h-[650px] hidden md:block' alt="Dr. Darsha Kumar A. Jain Consultation Location Sections" />
+                    <img src={assets.locationBgMobile} loading='lazy' alt="Dr. Darsha Kumar A. Jain Consultation Location Sections" className='w-full h-[840px] md:hidden' />
                 </div>
                 <div className="absolute top-0 z-5 flex flex-col items-center gap-15 md:gap-30 justify-center px-5 py-15 md:flex-row">
-                    <img src={assets.locationImage} className='w-[90%] md:w-[40%]' alt="Dr. Darshan Kumar A. Jain providing consultation and performing surgery at Sapiens Clinic" />
+                    <img src={assets.locationImage} loading='lazy' className='w-[90%] md:w-[40%]' alt="Dr. Darshan Kumar A. Jain providing consultation and performing surgery at Sapiens Clinic" />
 
                     <div className='flex flex-col gap-5 lg:gap-10'>
                         <div className='text-[24px] text-white text-center md:text-left font-[700] font-heading mt-5 lg:text-[40px]'>Consultation Locations</div>
 
                         <div className='flex gap-3 items-start mt-4'>
-                            <img src={assets.locationSvg} alt="Consultations locations of Dr. Darshan Kumar A. Jain Bangalore, Karnataka" />
+                            <img src={assets.locationSvg} loading='lazy' alt="Consultations locations of Dr. Darshan Kumar A. Jain Bangalore, Karnataka" />
                             <div>
                                 <div className='font-logo text-[30px] font-[400] text-white lg:text-[44px] leading-9'>Sapiens Clinic</div>
                                 <div className='font-para text-[14px] font-[600] text-white mt-1 lg:text-[16px]'>Mon to sat 12:00 noon to 8:00 PM, Sunday Holiday</div>
@@ -1169,7 +1169,7 @@ const DrDarshan = () => {
                         </div>
 
                         <div className='flex gap-3 items-start mt-4'>
-                            <img src={assets.locationSvg} alt="Apollo Spectra - Koramangala" />
+                            <img src={assets.locationSvg} loading='lazy' alt="Apollo Spectra - Koramangala" />
                             <div>
                                 <div className='font-heading text-[16px] font-[700] text-white lg:text-[22px]'>Apollo Spectra - Koramangala</div>
                                 <div className='font-para text-[14px] font-[600] text-white mt-1 lg:text-[16px]'>Wednesday and Saturday, 10:00 AM to 1:00 PM</div>
@@ -1177,7 +1177,7 @@ const DrDarshan = () => {
                         </div>
 
                         <div className='flex gap-3 items-start mt-4'>
-                            <img src={assets.locationSvg} alt="Rxdx Healthcare, Whitefiled" />
+                            <img src={assets.locationSvg} loading='lazy' alt="Rxdx Healthcare, Whitefiled" />
                             <div>
                                 <div className='font-heading text-[16px] font-[700] text-white lg:text-[22px]'>Rxdx Healthcare, Whitefiled</div>
                                 <div className='font-para text-[14px] font-[600] text-white mt-1 lg:text-[16px]'>Every Monday Morning, 10:00 AM to 12:00 PM</div>
@@ -1217,7 +1217,7 @@ const DrDarshan = () => {
                                 className='w-[230px] h-[260px] rounded-2xl flex flex-col gap-3 px-1 items-center justify-center flex-shrink-0'
                                 style={{ background: prof.bgColor }}
                             >
-                                <img src={prof.img} className='w-[124px] h-auto' alt={prof.text} />
+                                <img src={prof.img} loading='lazy' className='w-[124px] h-auto' alt={prof.text} />
                                 <div className='text-center text-black font-[700]'>{prof.name}</div>
                             </div>
                         ))}

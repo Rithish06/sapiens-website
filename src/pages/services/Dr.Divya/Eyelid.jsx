@@ -565,6 +565,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { ChevronDown, Eye, Shield, Clock, Star, Phone, Mail, MapPin, CheckCircle, Award, Users, Zap } from 'lucide-react';
 
+import { useForm } from 'react-hook-form';
+
 const EyelidSurgeryPage = () => {
     const [activeTab, setActiveTab] = useState(0);
     const [activeFaq, setActiveFaq] = useState(null);
@@ -667,6 +669,32 @@ const EyelidSurgeryPage = () => {
             ans: "Yes - in a positive way. Most procedures restore a natural and refreshed appearance, often reversing signs of aging."
         }
     ];
+
+
+    const {
+        register,
+        handleSubmit,
+        formState: { errors, isSubmitting },
+        reset
+    } = useForm({
+        mode: 'onChange'
+    });
+
+    // Indian phone number validation regex
+    const indianPhoneRegex = /^(\+91|91)?[6789]\d{9}$/;
+
+    const onSubmit = async (data) => {
+        try {
+            // Simulate form submission
+            console.log('Form Data:', data);
+            await new Promise(resolve => setTimeout(resolve, 1000));
+            alert('Appointment request submitted successfully!');
+            reset();
+        } catch (error) {
+            console.error('Error submitting form:', error);
+            alert('Error submitting form. Please try again.');
+        }
+    };
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-orange-50 via-pink-50 to-rose-100 overflow-x-hidden">
@@ -1025,7 +1053,7 @@ const EyelidSurgeryPage = () => {
                             </div>
 
                             {/* Right Form */}
-                            <div ref={formRef} className="bg-white rounded-3xl shadow-2xl p-8 md:p-12 border border-orange-100 relative overflow-hidden">
+                            <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-12 border border-orange-100 relative overflow-hidden">
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-orange-400/10 to-pink-400/10 rounded-full -translate-y-16 translate-x-16"></div>
 
                                 <div className="relative z-10">
@@ -1038,57 +1066,130 @@ const EyelidSurgeryPage = () => {
                                         <p className="text-gray-600">Don't let eyelid problems hold you back. Whether it's interfering with daily activities, work or confidence, expert help is just a call away.</p>
                                     </div>
 
-                                    <form className="space-y-6">
+                                    <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                                         <div className="grid md:grid-cols-2 gap-4">
                                             <div className="relative group">
                                                 <input
+                                                    {...register('firstName', {
+                                                        required: 'First name is required',
+                                                        minLength: {
+                                                            value: 2,
+                                                            message: 'First name must be at least 2 characters'
+                                                        },
+                                                        pattern: {
+                                                            value: /^[A-Za-z\s]+$/,
+                                                            message: 'First name should contain only letters'
+                                                        }
+                                                    })}
                                                     type="text"
                                                     placeholder="First Name*"
-                                                    required
-                                                    className="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:border-orange-500 focus:outline-none transition-all duration-300 text-gray-900 bg-gray-50 focus:bg-white group-hover:border-orange-300"
+                                                    className={`w-full px-4 py-4 border-2 rounded-xl focus:outline-none transition-all duration-300 text-gray-900 bg-gray-50 focus:bg-white group-hover:border-orange-300 ${errors.firstName
+                                                        ? 'border-red-500 focus:border-red-500'
+                                                        : 'border-gray-200 focus:border-orange-500'
+                                                        }`}
                                                 />
+                                                {errors.firstName && (
+                                                    <p className="mt-1 text-sm text-red-600">{errors.firstName.message}</p>
+                                                )}
                                             </div>
                                             <div className="relative group">
                                                 <input
+                                                    {...register('lastName', {
+                                                        pattern: {
+                                                            value: /^[A-Za-z\s]*$/,
+                                                            message: 'Last name should contain only letters'
+                                                        }
+                                                    })}
                                                     type="text"
                                                     placeholder="Last Name"
-                                                    className="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:border-orange-500 focus:outline-none transition-all duration-300 text-gray-900 bg-gray-50 focus:bg-white group-hover:border-orange-300"
+                                                    className={`w-full px-4 py-4 border-2 rounded-xl focus:outline-none transition-all duration-300 text-gray-900 bg-gray-50 focus:bg-white group-hover:border-orange-300 ${errors.lastName
+                                                        ? 'border-red-500 focus:border-red-500'
+                                                        : 'border-gray-200 focus:border-orange-500'
+                                                        }`}
                                                 />
+                                                {errors.lastName && (
+                                                    <p className="mt-1 text-sm text-red-600">{errors.lastName.message}</p>
+                                                )}
                                             </div>
                                         </div>
 
                                         <div className="grid md:grid-cols-2 gap-4">
                                             <div className="relative group">
                                                 <input
+                                                    {...register('phoneNumber', {
+                                                        required: 'Phone number is required',
+                                                        pattern: {
+                                                            value: indianPhoneRegex,
+                                                            message: 'Please enter a valid Indian phone number (e.g., +919876543210 or 9876543210)'
+                                                        }
+                                                    })}
                                                     type="tel"
-                                                    placeholder="Phone Number*"
-                                                    required
-                                                    className="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:border-orange-500 focus:outline-none transition-all duration-300 text-gray-900 bg-gray-50 focus:bg-white group-hover:border-orange-300"
+                                                    placeholder="Phone Number* (+91 or 10 digits starting with 6,7,8,9)"
+                                                    className={`w-full px-4 py-4 border-2 rounded-xl focus:outline-none transition-all duration-300 text-gray-900 bg-gray-50 focus:bg-white group-hover:border-orange-300 ${errors.phoneNumber
+                                                        ? 'border-red-500 focus:border-red-500'
+                                                        : 'border-gray-200 focus:border-orange-500'
+                                                        }`}
                                                 />
+                                                {errors.phoneNumber && (
+                                                    <p className="mt-1 text-sm text-red-600">{errors.phoneNumber.message}</p>
+                                                )}
                                             </div>
                                             <div className="relative group">
                                                 <input
+                                                    {...register('email', {
+                                                        pattern: {
+                                                            value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                                                            message: 'Please enter a valid email address'
+                                                        }
+                                                    })}
                                                     type="email"
                                                     placeholder="Email"
-                                                    className="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:border-orange-500 focus:outline-none transition-all duration-300 text-gray-900 bg-gray-50 focus:bg-white group-hover:border-orange-300"
+                                                    className={`w-full px-4 py-4 border-2 rounded-xl focus:outline-none transition-all duration-300 text-gray-900 bg-gray-50 focus:bg-white group-hover:border-orange-300 ${errors.email
+                                                        ? 'border-red-500 focus:border-red-500'
+                                                        : 'border-gray-200 focus:border-orange-500'
+                                                        }`}
                                                 />
+                                                {errors.email && (
+                                                    <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>
+                                                )}
                                             </div>
                                         </div>
 
                                         <div className="relative group">
                                             <textarea
-                                                placeholder="Message*"
-                                                required
+                                                {...register('message', {
+                                                    required: 'Message is required',
+                                                    minLength: {
+                                                        value: 10,
+                                                        message: 'Message must be at least 10 characters long'
+                                                    },
+                                                    maxLength: {
+                                                        value: 500,
+                                                        message: 'Message must not exceed 500 characters'
+                                                    }
+                                                })}
+                                                placeholder="Message* (Describe your condition or concerns)"
                                                 rows="4"
-                                                className="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:border-orange-500 focus:outline-none transition-all duration-300 text-gray-900 resize-none bg-gray-50 focus:bg-white group-hover:border-orange-300"
-                                            ></textarea>
+                                                className={`w-full px-4 py-4 border-2 rounded-xl focus:outline-none transition-all duration-300 text-gray-900 resize-none bg-gray-50 focus:bg-white group-hover:border-orange-300 ${errors.message
+                                                    ? 'border-red-500 focus:border-red-500'
+                                                    : 'border-gray-200 focus:border-orange-500'
+                                                    }`}
+                                            />
+                                            {errors.message && (
+                                                <p className="mt-1 text-sm text-red-600">{errors.message.message}</p>
+                                            )}
                                         </div>
 
                                         <button
-                                            type="submit"
-                                            className="group w-full md:w-auto px-8 py-4 bg-gradient-to-r from-orange-500 to-pink-600 text-white rounded-xl font-bold text-lg hover:from-orange-600 hover:to-pink-700 transform hover:scale-105 transition-all duration-300 shadow-xl flex items-center justify-center gap-3"
+                                            type="button"
+                                            onClick={handleSubmit(onSubmit)}
+                                            disabled={isSubmitting}
+                                            className={`group w-full md:w-auto px-8 py-4 bg-gradient-to-r from-orange-500 to-pink-600 text-white rounded-xl font-bold text-lg transform transition-all duration-300 shadow-xl flex items-center justify-center gap-3 ${isSubmitting
+                                                ? 'opacity-75 cursor-not-allowed'
+                                                : 'hover:from-orange-600 hover:to-pink-700 hover:scale-105'
+                                                }`}
                                         >
-                                            Submit Now
+                                            {isSubmitting ? 'Submitting...' : 'Submit Now'}
                                             <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                                             </svg>

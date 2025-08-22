@@ -713,9 +713,9 @@ const DrDivya = () => {
                 {/* container 1 */}
 
                 <div className='relative'>
-                    <img src={assets.drDivyaBanner} className='relative w-full h-auto hidden lg:block' alt="Dr. Divya Sundaresh, ophthalmologist at Sapiens Clinic, Bangalore Karnataka" />
-                    <img src={assets.drDivyaBannerTablet} className='relative w-full h-auto hidden sm:block lg:hidden' alt="Dr. Divya Sundaresh, ophthalmologist at Sapiens Clinic, Bangalore Karnataka" />
-                    <img src={assets.drDivyaBannerMobile} className="relative w-full h-auto sm:hidden" alt='Dr. Divya Sundaresh, ophthalmologist at Sapiens Clinic, Bangalore Karnataka' />
+                    <img src={assets.drDivyaBanner} loading='lazy' className='relative w-full h-auto hidden lg:block' alt="Dr. Divya Sundaresh, ophthalmologist at Sapiens Clinic, Bangalore Karnataka" />
+                    <img src={assets.drDivyaBannerTablet} loading='lazy' className='relative w-full h-auto hidden sm:block lg:hidden' alt="Dr. Divya Sundaresh, ophthalmologist at Sapiens Clinic, Bangalore Karnataka" />
+                    <img src={assets.drDivyaBannerMobile} loading='lazy' className="relative w-full h-auto sm:hidden" alt='Dr. Divya Sundaresh, ophthalmologist at Sapiens Clinic, Bangalore Karnataka' />
 
                     <div className='flex justify-end absolute w-full top-20 sm:top-28 lg:top-45 mxl:top-75 anime'>
                         <div className="w-full px-5 sm:w-[60%]">
@@ -740,7 +740,7 @@ const DrDivya = () => {
                         <div className='font-para text-[12px] lg:text-[16px] font-[500] mt-4'>Dr. Divya Sundaresh has over 10 years of ophthalmology expertise. She did a Senior Housemanship in Ophthalmology at Regional Institute of Ophthalmology, Egmore, Chennai under Prof. Velayutham after graduating from Ramaiah Medical College. She earned her post-graduation ophthalmology degree from Aravind Eye Hospital in Madurai.</div>
                         <div className='font-para text-[12px] lg:text-[16px] font-[500] mt-3'>She specialises in orbital infections, orbital disorders such thyroid orbitopathy, eye lid reconstructions, face cosmetic procedures, and eye malignancies.</div>
                         <div className='flex justify-center mt-10'>
-                            <img src={assets.contactOpthalmology} className='w-[100%] h-auto md:w-[350px] max-w-[500px]' alt="Ophthalmology treatment by Dr. Divya Sundaresh at Sapiens Clinic Bangalore, Karnataka" />
+                            <img src={assets.contactOpthalmology} loading='lazy' className='w-[100%] h-auto md:w-[350px] max-w-[500px]' alt="Ophthalmology treatment by Dr. Divya Sundaresh at Sapiens Clinic Bangalore, Karnataka" />
                         </div>
                     </div>
                     <div className="w-full lg:50%">
@@ -788,7 +788,7 @@ const DrDivya = () => {
                             Eyelid.map((surgery, index) => (
                                 <Link to={surgery.link}>
                                     <div className='flex flex-col items-center cursor-pointer' key={index}>
-                                        <img src={surgery.img} className='relative w-[120px] h-[120px] object-cover rounded-full' alt={surgery.alttext} />
+                                        <img src={surgery.img} loading='lazy' className='relative w-[120px] h-[120px] object-cover rounded-full' alt={surgery.alttext} />
                                         <div className='group realtive -mt-[60px] w-[230px] h-[230px] bg-[#D9D9D9] flex justify-center items-end rounded-t-full hover:bg-[#B22726] transition-all duration-500' >
                                             <div className='h-[65%] w-[80%]'>
                                                 <div className='text-[14px] font-[700] font-para text-center group-hover:text-white trasition-transform duration-500'>{surgery.text}</div>
@@ -822,7 +822,7 @@ const DrDivya = () => {
                             Orbit.map((surgery, index) => (
                                 <Link to={surgery.link}>
                                     <div className='flex flex-col items-center cursor-pointer' key={index}>
-                                    <img src={surgery.img} className='relative w-[120px] h-[120px] object-cover rounded-full' alt={surgery.alttext} />
+                                    <img src={surgery.img} loading='lazy' className='relative w-[120px] h-[120px] object-cover rounded-full' alt={surgery.alttext} />
                                         <div className='group realtive -mt-[60px] w-[230px] h-[230px] bg-[#D9D9D9] flex justify-center items-end rounded-t-full hover:bg-[#B22726] transition-all duration-500' >
                                             <div className='h-[65%] w-[80%]'>
                                                 <div className='text-[14px] font-[700] font-para text-center group-hover:text-white trasition-transform duration-500'>{surgery.text}</div>
@@ -854,7 +854,7 @@ const DrDivya = () => {
                             Lacrimal.map((surgery, index) => (
                                 <Link to={surgery.link}>
                                     <div className='flex flex-col items-center cursor-pointer' key={index}>
-                                     <img src={surgery.img} className='relative w-[120px] h-[120px] object-cover rounded-full' alt={surgery.alttext} />
+                                     <img src={surgery.img} loading='lazy' className='relative w-[120px] h-[120px] object-cover rounded-full' alt={surgery.alttext} />
                                         <div className='group realtive -mt-[60px] w-[230px] h-[230px] bg-[#D9D9D9] flex justify-center items-end rounded-t-full hover:bg-[#B22726] transition-all duration-500' >
                                             <div className='h-[65%] w-[80%]'>
                                                 <div className='text-[14px] font-[700] font-para text-center group-hover:text-white trasition-transform duration-500'>{surgery.text}</div>
@@ -889,7 +889,7 @@ const DrDivya = () => {
                             OrbitalTumors.map((surgery, index) => (
                                 <Link to={surgery.link}>
                                     <div className='flex flex-col items-center cursor-pointer' key={index}>
-                                     <img src={surgery.img} className='relative w-[120px] h-[120px] object-cover rounded-full' alt={surgery.alttext} />
+                                     <img src={surgery.img} loading='lazy' className='relative w-[120px] h-[120px] object-cover rounded-full' alt={surgery.alttext} />
                                         <div className='group realtive -mt-[60px] w-[230px] h-[230px] bg-[#D9D9D9] flex justify-center items-end rounded-t-full hover:bg-[#B22726] transition-all duration-500' >
                                             <div className='h-[65%] w-[80%]'>
                                                 <div className='text-[14px] font-[700] font-para text-center group-hover:text-white trasition-transform duration-500'>{surgery.text}</div>
@@ -924,7 +924,7 @@ const DrDivya = () => {
                             OcularSurfaceTumors.map((surgery, index) => (
                                 <Link to={surgery.link}>
                                     <div className='flex flex-col items-center cursor-pointer' key={index}>
-                                    <img src={surgery.img} className='relative w-[120px] h-[120px] object-cover rounded-full' alt={surgery.alttext} />
+                                    <img src={surgery.img} loading='lazy' className='relative w-[120px] h-[120px] object-cover rounded-full' alt={surgery.alttext} />
                                         <div className='group realtive -mt-[60px] w-[230px] h-[230px] bg-[#D9D9D9] flex justify-center items-end rounded-t-full hover:bg-[#B22726] transition-all duration-500' >
                                             <div className='h-[65%] w-[80%]'>
                                                 <div className='text-[14px] font-[700] font-para text-center group-hover:text-white trasition-transform duration-500'>{surgery.text}</div>
@@ -956,7 +956,7 @@ const DrDivya = () => {
                             EyelidCancers.map((surgery, index) => (
                                 <Link to={surgery.link}>
                                     <div className='flex flex-col items-center cursor-pointer' key={index}>
-                                        <img src={surgery.img} className='relative w-[120px] h-[120px] object-cover rounded-full' alt={surgery.alttext} />
+                                        <img src={surgery.img} loading='lazy' className='relative w-[120px] h-[120px] object-cover rounded-full' alt={surgery.alttext} />
                                         <div className='group realtive -mt-[60px] w-[230px] h-[230px] bg-[#D9D9D9] flex justify-center items-end rounded-t-full hover:bg-[#B22726] transition-all duration-500' >
                                             <div className='h-[65%] w-[80%]'>
                                                 <div className='text-[14px] font-[700] font-para text-center group-hover:text-white trasition-transform duration-500'>{surgery.text}</div>
@@ -989,7 +989,7 @@ const DrDivya = () => {
                             RetinalTumors.map((surgery, index) => (
                                 <Link to={surgery.link}>
                                     <div className='flex flex-col items-center cursor-pointer' key={index}>
-                                        <img src={surgery.img} className='relative w-[120px] h-[120px] object-cover rounded-full' alt={surgery.alttext} />
+                                        <img src={surgery.img} loading='lazy' className='relative w-[120px] h-[120px] object-cover rounded-full' alt={surgery.alttext} />
                                         <div className='group realtive -mt-[60px] w-[230px] h-[230px] bg-[#D9D9D9] flex justify-center items-end rounded-t-full hover:bg-[#B22726] transition-all duration-500' >
                                             <div className='h-[65%] w-[80%]'>
                                                 <div className='text-[14px] font-[700] font-para text-center group-hover:text-white trasition-transform duration-500'>{surgery.text}</div>
@@ -1061,7 +1061,7 @@ const DrDivya = () => {
                                 className='w-[140px] h-[160px] md:w-[230px] md:h-[260px] rounded-2xl flex flex-col gap-3 items-center justify-center px-1 flex-shrink-0'
                                 style={{ background: prof.bgColor }}
                             >
-                                <img src={prof.img} className='w-[80px] md::w-[124px] h-auto' alt={prof.text} />
+                                <img src={prof.img} loading='lazy' className='w-[80px] md::w-[124px] h-auto' alt={prof.text} />
                                 <div className='text-center text-black font-[700] font-para text-[12px] md:text-[16px]'>{prof.text}</div>
                             </div>
                         ))}

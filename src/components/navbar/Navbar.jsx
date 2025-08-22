@@ -13,18 +13,43 @@ const Navbar = () => {
     const [mobileFixed, setMobileFixed] = useState(false);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     const [navBg, setNavBg] = useState(false)
+    const [textColor, setTextColor] = useState(false)
 
-    const shouldShowSimpleLogo = (location.pathname === '/' || location.pathname === '/fellowship-medical-jobs-bangalore') && windowWidth > 760;
-    const logoToShow = shouldShowSimpleLogo ? assets.logo : assets.colorLogo;
+    const path = location.pathname;
+    const isHomeOrCareer = path === '/' || path === '/fellowship-medical-jobs-bangalore';
+
+    const isDivyaChild =
+        path.startsWith('/dr-divya-sundaresh/') && path !== '/dr-divya-sundaresh';
+    const isDarshanChild =
+        path.startsWith('/dr-darshan-kumar-a-jain/') && path !== '/dr-darshan-kumar-a-jain';
+
+    const logoShouldBeWhite = (windowWidth > 760 && (isDivyaChild || isDarshanChild || isHomeOrCareer));
+
+    const logoToShow = logoShouldBeWhite ? assets.logo : assets.colorLogo;
+
 
     useEffect(() => {
         const handleResize = () => {
             setWindowWidth(window.innerWidth);
         };
 
+        if (
+            (
+                path.startsWith('/dr-divya-sundaresh/') ||
+                path.startsWith('/dr-darshan-kumar-a-jain/')
+            ) &&
+            path !== '/dr-divya-sundaresh' &&
+            path !== '/dr-darshan-kumar-a-jain' &&
+            windowWidth > 760
+        ) {
+            setTextColor(true);
+        }else{
+            setTextColor(false);
+        }
+
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
-    }, []);
+    }, [windowWidth, path]);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -47,7 +72,7 @@ const Navbar = () => {
             window.removeEventListener('scroll', handleScroll);
             window.removeEventListener('scroll', handleScrollMobile);
         };
-    }, [windowWidth]);
+    }, [windowWidth, path]);
 
     const handleCallClick = () => {
         if (window.gtag) {
@@ -90,7 +115,7 @@ const Navbar = () => {
                             <FaHome className="text-orange-500 lg:text-xl mxl:text-2xl" />
                         </div>
                         <div>
-                            <div className="lg:text-[14px] mxl:text-[16px] font-[500]">Evening OPD Consultation</div>
+                            <div className={`lg:text-[14px] mxl:text-[16px] font-[500] ${textColor ? "text-[#fff]" : "text-[#000]"}`}>Evening OPD Consultation</div>
                             <div className="lg:text-[12px] mxl:text-[14px] text-[#808080]">Mon to Sat 4:00 PM to 7:30 PM</div>
                         </div>
                     </div>
@@ -100,7 +125,7 @@ const Navbar = () => {
                             <IoCall className="text-orange-500 lg:text-xl mxl:text-2xl" />
                         </div>
                         <div>
-                            <div className="lg:text-[14px] mxl:text-[16px] font-[500]">Phone Number</div>
+                            <div className={`lg:text-[14px] mxl:text-[16px] font-[500] ${textColor ? "text-[#fff]" : "text-[#000]"}`}>Phone Number</div>
                             <div className="lg:text-[12px] mxl:text-[14px] text-[#808080]">+91 78925 56378</div>
                         </div>
                     </a>
@@ -110,7 +135,7 @@ const Navbar = () => {
                             <TfiEmail className="text-orange-500 lg:text-xl mxl:text-2xl" />
                         </div>
                         <div>
-                            <div className="lg:text-[14px] mxl:text-[16px] font-[500]">Email Us Here</div>
+                            <div className={`lg:text-[14px] mxl:text-[16px] font-[500] ${textColor ? "text-[#fff]" : "text-[#000]"}`}>Email Us Here</div>
                             <div className="lg:text-[12px] mxl:text-[14px] text-[#808080]">sapiensclinic@gmail.com</div>
                         </div>
                     </a>
