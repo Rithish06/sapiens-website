@@ -709,7 +709,7 @@ const EyelidSurgeryPage = () => {
 
                 <div className="relative z-10 container mx-auto px-6 py-20 lg:py-32">
                     <div className="max-w-4xl mx-auto text-center">
-                        <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-orange-500/20 to-pink-500/20 backdrop-blur-sm rounded-full text-orange-200 text-sm mb-8 animate-fade-in border border-orange-300/30">
+                        <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-orange-500/20 to-pink-500/20 backdrop-blur-sm rounded-full text-orange-200 text-sm mb-8 animate-fade-in border border-orange-300/30 mt-20">
                             <Eye className="w-4 h-4 mr-2" />
                             Professional Eyelid Surgery
                         </div>
