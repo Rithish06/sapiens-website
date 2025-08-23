@@ -953,7 +953,7 @@ const EyelidSurgeryPage = () => {
                                         </div>
                                     </div>
 
-                                    <button className="w-full py-4 bg-gradient-to-r from-orange-500 to-pink-600 text-white rounded-2xl font-bold text-lg hover:from-orange-600 hover:to-pink-700 transform hover:scale-105 transition-all duration-300 shadow-xl">
+                                    <button onClick={scrolltoForm} className="w-full py-4 bg-gradient-to-r from-orange-500 to-pink-600 text-white rounded-2xl font-bold text-lg hover:from-orange-600 hover:to-pink-700 transform hover:scale-105 transition-all duration-300 shadow-xl">
                                         Start Your Transformation Today
                                     </button>
                                 </div>
@@ -1053,7 +1053,7 @@ const EyelidSurgeryPage = () => {
                             </div>
 
                             {/* Right Form */}
-                            <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-12 border border-orange-100 relative overflow-hidden">
+                            <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-12 border border-orange-100 relative overflow-hidden" ref={formRef}>
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-orange-400/10 to-pink-400/10 rounded-full -translate-y-16 translate-x-16"></div>
 
                                 <div className="relative z-10">
