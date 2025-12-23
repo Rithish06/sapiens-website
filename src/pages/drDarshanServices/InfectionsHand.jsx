@@ -1,169 +1,505 @@
-import React from 'react'
-import Faqs from '../../components/faqs/faqs'
-import Servicesbanner from '../../components/services-banner/Servicesbanner'
-import ContactPage from '../services/ContactPage/ContactPage'
-import { Helmet } from 'react-helmet'
+import React, { useState, useEffect, useRef } from 'react';
+import { ChevronDown, Hand, Shield, Clock, Phone, Mail, CheckCircle, Award, Users, Stethoscope, Search, HandHeart, Activity, MapPin, Zap, AlertTriangle } from 'lucide-react';
 
-const InfectionsHand = () => {
-  const faqs = [
+const HandInfectionPage = () => {
+    const [activeFaq, setActiveFaq] = useState(null);
+    const [isVisible, setIsVisible] = useState({});
+
+    const formRef = useRef()
+    const learnmoreRef = useRef()
+
+    const scrolltoForm = () => {
+        formRef.current?.scrollIntoView({ behavior: "smooth" })
+    }
+
+    const scrolltoContaier2 = () => {
+        learnmoreRef.current?.scrollIntoView({ behavior: "smooth" })
+    }
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        setIsVisible(prev => ({ ...prev, [entry.target.id]: true }));
+                    }
+                });
+            },
+            { threshold: 0.1 }
+        );
+
+        const elements = document.querySelectorAll('[id^="section-"]');
+        elements.forEach((el) => observer.observe(el));
+
+        return () => observer.disconnect();
+    }, []);
+
+    const procedures = [
         {
-            ques: "What should I do if I have a red, swollen finger that’s painful to move?",
-            ans: "You may have an infection in the tendon sheath or fingertip. Avoid using the hand and seek medical attention immediately."
+            title: "Medical Management",
+            subtitle: "Early & Targeted Treatment",
+            description: "In early or mild infections, treatment may include antibiotics, wound care, immobilization and close monitoring to control infection and reduce inflammation.",
+            icon: <Stethoscope className="w-8 h-8" />
         },
         {
-            ques: "Can a hand infection heal without antibiotics?",
-            ans: "Superficial infections may respond to good hygiene, but most require antibiotics to avoid spreading."
+            title: "Surgical Drainage & Debridement",
+            subtitle: "Precise Infection Control",
+            description: "For abscesses or deep infections, surgical drainage is performed to remove pus and infected tissue. This helps reduce pain, stop infection spread, and promote faster healing while preserving vital hand structures.",
+            icon: <Shield className="w-8 h-8" />
         },
         {
-            ques: "How do I know if my hand infection is serious?",
-            ans: "If you experience spreading redness, fever, or worsening pain, it could be a deeper infection needing urgent care."
+            title: "Recovery & Follow-Up Care",
+            subtitle: "Functional Healing with Monitoring",
+            description: "Recovery depends on the severity of infection. Most patients experience gradual improvement with proper care. Follow-up visits ensure infection resolution, wound healing and restoration of hand movement and strength.",
+            icon: <Activity className="w-8 h-8" />
+        },
+    ];
+
+    const whyChooseUs = [
+        {
+            title: "Specialized Hand Infection Expertise",
+            description: "Extensive experience in treating superficial and deep hand infections using safe and effective techniques.",
+            icon: <Stethoscope className="w-6 h-6" />
         },
         {
-            ques: "Will I need surgery for a hand infection?",
-            ans: "Only if the infection involves tendons, joints, or bones, or if an abscess is present that needs drainage."
+            title: "Accurate Diagnosis Before Treatment",
+            description: "Careful assessment to identify the infection source and determine the most appropriate treatment approach.",
+            icon: <Search className="w-6 h-6" />
         },
         {
-            ques: "How long does it take to recover from a hand infection?",
-            ans: "Most superficial infections improve in a few days with treatment. Deeper infections may take several weeks and sometimes require rehabilitation."
+            title: "Complete Care from Consultation to Recovery",
+            description: "From diagnosis to healing, we provide continuous care focused on infection control and functional recovery.",
+            icon: <HandHeart className="w-6 h-6" />
         },
-    ]
+        {
+            title: "Safe, Modern Clinical Facility",
+            description: "Our clinic is equipped for both medical and surgical management of hand infections, following strict safety and hygiene standards.",
+            icon: <Shield className="w-6 h-6" />
+        },
+    ];
+
+    const symptoms = [
+        "Swelling, redness, or warmth in hand or fingers",
+        "Pain that worsens or doesn't improve",
+        "Pus or drainage from wound",
+        "Difficulty moving fingers or stiffness",
+        "Fever or signs of spreading infection"
+    ];
 
     return (
-        <div className='min-h-[100vh]'>
-            <Helmet>
-                <title>Treat Hand Infections in Bangalore | Dr. Darshan Kumar A Jain</title>
-                <meta name='description' content='Dr. Darshan Kumar A Jain offers expert care for hand infections in Bangalore. Book timely treatment to avoid complications.'/>
-            </Helmet>
-            <div className='relative'>
-                <Servicesbanner serviceName = "Hand Infection" />
-            </div>
-
-            <div className='px-8 lg:px-20 mt-8'>
-                {/* <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Hand Infection Treatment in Malleshwaram</div> */}
-                <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
-                    <div>Even a small injury to the hand can become serious if an infection develops. Hand infections can spread quickly due to the complex anatomy of tendons, joints, and nerves, often resulting in pain, swelling, and loss of function if not treated early. Whether caused by a cut, bite or underlying health condition, early diagnosis and timely care are essential to prevent long-term damage.</div>
+        <div className="min-h-screen bg-gradient-to-br from-orange-50 via-pink-50 to-rose-100 overflow-x-hidden">
+            {/* Hero Section */}
+            <div className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-gray-900">
+                <div className="absolute inset-0 bg-black opacity-20"></div>
+                <div className="absolute inset-0">
+                    <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-orange-500/10 to-pink-500/10"></div>
+                    <div className="absolute top-20 right-20 w-64 h-64 bg-gradient-to-br from-orange-500/15 to-pink-500/15 rounded-full blur-3xl animate-pulse"></div>
+                    <div className="absolute bottom-20 left-20 w-48 h-48 bg-gradient-to-br from-rose-400/15 to-orange-400/15 rounded-full blur-3xl animate-pulse"></div>
                 </div>
-            </div>
 
-            <div className='px-8 lg:px-20 mt-8'>
-                <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>What Causes Hand Infections?</div>
-                <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
-                    <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>Most hand infections begin with a break in the skin - even tiny ones. Common causes include:</div>
-                        <ul className='mt-5  list-disc pl-10'>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Cuts or puncture wounds</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Animal or human bites</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Untreated blisters or hangnails</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Contaminated injuries</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Spread of infection from another body part</li>
-                        </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-4 font-[500]'>In some cases, conditions like diabetes or compromised immunity can increase the risk and severity of infection.</div>
+                <div className="relative z-10 container mx-auto px-6 py-20 lg:py-32">
+                    <div className="max-w-4xl mx-auto text-center mt-20">
+                        <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-orange-500/20 to-pink-500/20 backdrop-blur-sm rounded-full text-orange-200 text-sm mb-8 animate-fade-in border border-orange-300/30">
+                            <AlertTriangle className="w-4 h-4 mr-2" />
+                            Hand Infection Treatment
+                        </div>
+
+                        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+                            <span className="bg-gradient-to-r from-orange-300 via-pink-300 to-rose-300 bg-clip-text text-transparent">
+                                Hand Infection Treatment
+                            </span>
+                            <br />
+                            <span className="text-2xl md:text-4xl lg:text-5xl text-slate-200">in Bangalore</span>
+                        </h1>
+
+                        <p className="text-base md:text-xl text-slate-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+                            Experiencing swelling, redness, pain, or pus in your hand or fingers? Noticing warmth, difficulty moving your fingers or worsening pain after a minor cut or injury? Our hand infection treatment focuses on early diagnosis and timely medical or surgical care to control infection, relieve pain, and restore hand function.
+                        </p>
+
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                            <button onClick={scrolltoForm} className="group px-5 py-3 md:px-8 md:py-4 bg-gradient-to-r from-orange-500 to-pink-600 text-white rounded-full font-semibold text-lg hover:from-orange-600 hover:to-pink-700 transform hover:scale-105 transition-all duration-300 shadow-xl cursor-pointer">
+                                Schedule Consultation Today
+                                <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+                            </button>
+                            <button onClick={scrolltoContaier2} className="px-8 py-4 border-2 border-orange-300/30 text-orange-200 rounded-full font-semibold text-lg hover:bg-gradient-to-r hover:from-orange-500/10 hover:to-pink-500/10 backdrop-blur-sm transition-all duration-300 cursor-pointer">
+                                Learn More
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div className='px-8 lg:px-20 mt-8'>
-                <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Common Types of Hand Infections</div>
-                <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
-                    <div>
-                        <ul className='mt-5  list-disc pl-10'>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Paronychia</b>: Infection around the fingernail, often due to nail trauma or biting</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Felon</b>: Deep fingertip infection causing intense pressure and swelling</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Cellulitis</b>: A widespread skin infection that appears red, swollen, and warm</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Flexor Tenosynovitis</b>: Involves infection within the tendon sheath, severely affecting finger motion</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Septic Arthritis</b>: Infection inside a joint, which can lead to cartilage damage</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Osteomyelitis</b>: A serious bone infection that may require surgical care</li>
-                        </ul>
+            {/* Expert Treatment Section */}
+            <section ref={learnmoreRef} id="section-expert" className={`py-20 transition-all duration-1000 ${isVisible['section-expert'] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+                <div className="container mx-auto px-6">
+                    <div className="max-w-6xl mx-auto">
+                        <div className="text-center mb-16">
+                            <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-orange-100 to-pink-100 text-orange-800 rounded-full text-sm font-medium mb-6 border border-orange-200">
+                                <Award className="w-4 h-4 mr-2" />
+                                Expert Care
+                            </div>
+
+                            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                                Expert Hand Infection Treatment
+                                <span className="bg-gradient-to-r from-orange-500 to-pink-600 bg-clip-text text-transparent"> That Restores Function</span>
+                            </h2>
+
+                            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
+                                Hand infections may start small but can progress rapidly if left untreated. Infections can affect the skin, soft tissues, tendons, joints or bones, leading to severe pain, stiffness and functional impairment.
+                            </p>
+
+                            <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                                At our Bangalore-based clinic, hand infections are carefully evaluated to identify the source, depth, and severity of infection. Based on this assessment, we provide prompt and effective treatment - ranging from medications to minor surgical procedures - to eliminate infection, prevent complications and preserve hand movement and strength.
+                            </p>
+                        </div>
+
+                        <div className="bg-gradient-to-r from-white to-orange-50 rounded-3xl p-8 md:p-12 shadow-2xl border border-orange-100">
+                            <div className="grid md:grid-cols-2 gap-8 items-center">
+                                <div className="space-y-6">
+                                    <div className="flex items-center">
+                                        <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-pink-600 rounded-2xl flex items-center justify-center mr-6">
+                                            <Users className="w-8 h-8 text-white" />
+                                        </div>
+                                        <div>
+                                            <h3 className="text-2xl font-bold text-gray-900">Dr. Darshan Kumar A. Jain</h3>
+                                            <p className="bg-gradient-to-r from-orange-600 to-pink-700 bg-clip-text text-transparent font-semibold">Expert Hand & Plastic Surgeon</p>
+                                        </div>
+                                    </div>
+
+                                    <p className="text-lg text-gray-700 leading-relaxed">
+                                        Dr. Darshan Kumar A. Jain is a highly experienced hand and plastic surgeon in Bangalore with specialized expertise in diagnosing and treating all types of hand infections. He has successfully managed a wide range of cases, from superficial skin infections to deep-seated tendon and joint infections.
+                                    </p>
+
+                                    <div className="bg-gradient-to-r from-orange-500 to-pink-600 text-white p-6 rounded-2xl">
+                                        <p className="font-medium">
+                                            With advanced surgical training and a meticulous approach, he focuses on infection control, tissue preservation and functional recovery of the hand.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="relative">
+                                    <div className="bg-gradient-to-br from-orange-100 to-pink-100 rounded-3xl p-8">
+                                        <h4 className="text-xl font-bold text-gray-900 mb-6 text-center">Proven Track Record</h4>
+                                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-center">
+                                            <div className="bg-white rounded-2xl p-4 shadow-lg border border-orange-100">
+                                                <div className="text-2xl sm:text-lg font-bold bg-gradient-to-r from-orange-500 to-pink-600 bg-clip-text text-transparent">5000+</div>
+                                                <div className="text-sm text-gray-600">Happy Patients</div>
+                                            </div>
+                                            <div className="bg-white rounded-2xl p-4 shadow-lg border border-orange-100">
+                                                <div className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-pink-600 bg-clip-text text-transparent">15+</div>
+                                                <div className="text-sm text-gray-600">Years Experience</div>
+                                            </div>
+                                            <div className="bg-white rounded-2xl p-4 shadow-lg border border-orange-100">
+                                                <div className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-pink-600 bg-clip-text text-transparent">Specialist</div>
+                                                <div className="text-sm text-gray-600">Hand Infections</div>
+                                            </div>
+                                            <div className="bg-white rounded-2xl p-4 shadow-lg border border-orange-100">
+                                                <div className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-pink-600 bg-clip-text text-transparent">Advanced</div>
+                                                <div className="text-sm text-gray-600">Treatment Options</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="absolute -bottom-4 -right-4 w-20 h-20 bg-gradient-to-br from-orange-400 to-pink-500 rounded-full opacity-80 animate-pulse"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Treatment Procedures Section */}
+            <section id="section-surgeries" className={`py-20 bg-white transition-all duration-1000 ${isVisible['section-surgeries'] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+                <div className="container mx-auto px-6">
+                    <div className="max-w-6xl mx-auto">
+                        <div className="text-center mb-16">
+                            <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-pink-100 to-rose-100 text-pink-800 rounded-full text-sm font-medium mb-6 border border-pink-200">
+                                <Shield className="w-4 h-4 mr-2" />
+                                Treatment Approach
+                            </div>
+
+                            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                                How Hand Infection Treatment
+                                <span className="bg-gradient-to-r from-orange-500 to-pink-600 bg-clip-text text-transparent"> Is Performed?</span>
+                            </h2>
+
+                            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                                Hand infection treatment depends on the type, severity and structures involved. The primary goal is to control infection early and prevent long-term damage.
+                            </p>
+                        </div>
+
+                        <div className="grid md:grid-cols-3 gap-8">
+                            {procedures.map((procedure, index) => (
+                                <div
+                                    key={index}
+                                    className="group relative bg-gradient-to-br from-white to-orange-50 rounded-2xl p-8 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-500 border border-orange-100"
+                                    style={{ animationDelay: `${index * 200}ms` }}
+                                >
+                                    <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-orange-400/10 to-pink-400/10 rounded-full -translate-y-16 translate-x-16 group-hover:scale-110 transition-transform duration-500"></div>
+
+                                    <div className="relative z-10">
+                                        <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-orange-500 to-pink-600 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                                            <div className="text-white">
+                                                {procedure.icon}
+                                            </div>
+                                        </div>
+
+                                        <h3 className="text-2xl font-bold text-gray-900 mb-2">{procedure.title}</h3>
+                                        <p className="bg-gradient-to-r from-orange-600 to-pink-700 bg-clip-text text-transparent font-semibold mb-4">{procedure.subtitle}</p>
+                                        <p className="text-gray-600 leading-relaxed">{procedure.description}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Why Choose Us Section */}
+            <section id="section-whychoose" className={`py-20 bg-gradient-to-r from-orange-50 to-pink-100 transition-all duration-1000 ${isVisible['section-whychoose'] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+                <div className="container mx-auto px-6">
+                    <div className="max-w-6xl mx-auto">
+                        <div className="text-center mb-16">
+                            <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-rose-100 to-orange-100 text-rose-800 rounded-full text-sm font-medium mb-6 border border-rose-200">
+                                <Award className="w-4 h-4 mr-2" />
+                                Why Choose Us
+                            </div>
+
+                            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                                Why Choose Our
+                                <span className="bg-gradient-to-r from-orange-500 to-pink-600 bg-clip-text text-transparent"> Hand Infection Clinic?</span>
+                            </h2>
+
+                            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+                                Choosing the right specialist for hand infection treatment is crucial to prevent complications and loss of hand function. Our clinic combines surgical expertise, early intervention and patient-focused care.
+                            </p>
+                        </div>
+
+                        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                            {whyChooseUs.map((item, index) => (
+                                <div
+                                    key={index}
+                                    className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 border border-orange-100 group"
+                                >
+                                    <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-pink-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                                        <div className="text-white">
+                                            {item.icon}
+                                        </div>
+                                    </div>
+
+                                    <h3 className="text-lg font-bold text-gray-900 mb-3">{item.title}</h3>
+                                    <p className="text-gray-600 text-sm leading-relaxed">{item.description}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Call to Action Section */}
+            <section id="section-transform" className={`py-20 bg-white transition-all duration-1000 ${isVisible['section-transform'] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+                <div className="container mx-auto px-6">
+                    <div className="max-w-6xl mx-auto">
+                        <div className="bg-gradient-to-r from-slate-900 to-gray-900 rounded-3xl p-8 md:p-16 text-white relative overflow-hidden">
+                            <div className="absolute inset-0">
+                                <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-orange-400/20 to-pink-400/20 rounded-full blur-3xl"></div>
+                                <div className="absolute bottom-0 left-0 w-48 h-48 bg-gradient-to-br from-rose-400/20 to-orange-400/20 rounded-full blur-3xl"></div>
+                            </div>
+
+                            <div className="relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+                                <div className="space-y-6">
+                                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+                                        Restore Hand Health with
+                                        <span className="bg-gradient-to-r from-orange-300 to-pink-300 bg-clip-text text-transparent"> Expert Hand Infection Treatment</span>
+                                    </h2>
+
+                                    <p className="text-xl text-slate-300 leading-relaxed">
+                                        Don't ignore pain, swelling or redness in your hand. Early treatment of hand infections can prevent serious complications and permanent damage. Our specialized care ensures timely intervention, effective infection control, and safe recovery.
+                                    </p>
+
+                                    <div className="bg-gradient-to-r from-orange-500/10 to-pink-500/10 backdrop-blur-sm rounded-2xl p-6 border border-orange-300/30">
+                                        <p className="text-orange-200 font-medium">
+                                            Dr. Darshan Kumar A. Jain and the experienced clinical team provide comprehensive hand infection treatment with a focus on precision, safety, and long-term hand function. Patients across Bangalore and surrounding areas have regained pain-free hand movement and confidence through timely care.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="space-y-6">
+                                    <div className="bg-gradient-to-r from-orange-500/10 to-pink-500/10 backdrop-blur-sm rounded-2xl p-6 border border-orange-300/30">
+                                        <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-orange-300 to-pink-300 bg-clip-text text-transparent">Warning Signs to Watch For:</h3>
+                                        <div className="space-y-3">
+                                            {symptoms.map((symptom, index) => (
+                                                <div key={index} className="flex items-center">
+                                                    <AlertTriangle className="w-5 h-5 text-orange-300 mr-3 flex-shrink-0" />
+                                                    <span className="text-slate-300">{symptom}</span>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+
+                                    <button onClick={scrolltoForm} className="cursor-pointer w-full py-4 bg-gradient-to-r from-orange-500 to-pink-600 text-white rounded-2xl font-bold text-lg hover:from-orange-600 hover:to-pink-700 transform hover:scale-105 transition-all duration-300 shadow-xl">
+                                        Schedule Consultation Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Contact Form Section */}
+            <section className="py-20 bg-gradient-to-r from-orange-50 via-pink-50 to-rose-50 relative overflow-hidden">
+                <div className="absolute inset-0">
+                    <div className="absolute top-20 right-20 w-64 h-64 bg-gradient-to-br from-orange-200/20 to-pink-200/20 rounded-full blur-3xl"></div>
+                    <div className="absolute bottom-20 left-20 w-48 h-48 bg-gradient-to-br from-pink-200/20 to-rose-200/20 rounded-full blur-3xl"></div>
+                </div>
+
+                <div className="relative z-10 container mx-auto px-6">
+                    <div className="max-w-7xl mx-auto">
+                        <div className="grid lg:grid-cols-2 gap-12 items-center">
+                            {/* Left Content */}
+                            <div className="space-y-8">
+                                <div className="text-center lg:text-left">
+                                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                                        Your Trusted Specialists in
+                                        <span className="bg-gradient-to-r from-orange-500 to-pink-600 bg-clip-text text-transparent"> Hands & Eyes</span>
+                                    </h2>
+
+                                    <p className="text-lg text-gray-600 leading-relaxed">
+                                        We offer advanced care for hand, upper limb, and eye conditions with a focus on precision and personalized treatment. Combining expert diagnostics, surgical expertise and a patient-first approach, our goal is to restore comfort, function and confidence for every individual we treat.
+                                    </p>
+                                </div>
+
+                                <div className="grid md:grid-cols-3 gap-6">
+                                    <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 text-center group border border-orange-100">
+                                        <Phone className="w-10 h-10 text-orange-600 mx-auto mb-4 group-hover:scale-110 transition-transform" />
+                                        <h3 className="font-bold text-gray-900 mb-2">Phone Number</h3>
+                                        <p className="bg-gradient-to-r from-orange-600 to-pink-700 bg-clip-text text-transparent font-semibold">+91 78925 56378</p>
+                                    </div>
+
+                                    <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 text-center group border border-orange-100">
+                                        <Mail className="w-10 h-10 text-pink-600 mx-auto mb-4 group-hover:scale-110 transition-transform" />
+                                        <h3 className="font-bold text-gray-900 mb-2">Email Us Here</h3>
+                                        <p className="bg-gradient-to-r from-orange-600 to-pink-700 bg-clip-text text-transparent font-semibold text-sm">sapiensclinic@gmail.com</p>
+                                    </div>
+
+                                    <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 text-center group border border-orange-100">
+                                        <Clock className="w-10 h-10 text-rose-600 mx-auto mb-4 group-hover:scale-110 transition-transform" />
+                                        <h3 className="font-bold text-gray-900 mb-2">Evening OPD</h3>
+                                        <p className="bg-gradient-to-r from-orange-600 to-pink-700 bg-clip-text text-transparent font-semibold text-sm">Mon to Sat 4:00 PM to 7:30 PM</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Right Form */}
+                            {/* Right Form */}
+                            <div ref={formRef} className="bg-white rounded-3xl shadow-2xl p-8 md:p-12 border border-orange-100 relative overflow-hidden">
+                                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-orange-400/10 to-pink-400/10 rounded-full -translate-y-16 translate-x-16"></div>
+
+                                <div className="relative z-10">
+                                    <div className="text-center mb-8">
+                                        <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-orange-100 to-pink-100 text-orange-800 rounded-full text-sm font-medium mb-4 border border-orange-200">
+                                            <Mail className="w-4 h-4 mr-2" />
+                                            Book Appointment
+                                        </div>
+                                        <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">Book an Appointment</h3>
+                                        <p className="text-gray-600">Don't let eyelid problems hold you back. Whether it's interfering with daily activities, work or confidence, expert help is just a call away.</p>
+                                    </div>
+
+                                    <form className="space-y-6">
+                                        <div className="grid md:grid-cols-2 gap-4">
+                                            <div className="relative group">
+                                                <input
+                                                    type="text"
+                                                    placeholder="First Name*"
+                                                    required
+                                                    className="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:border-orange-500 focus:outline-none transition-all duration-300 text-gray-900 bg-gray-50 focus:bg-white group-hover:border-orange-300"
+                                                />
+                                            </div>
+                                            <div className="relative group">
+                                                <input
+                                                    type="text"
+                                                    placeholder="Last Name"
+                                                    className="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:border-orange-500 focus:outline-none transition-all duration-300 text-gray-900 bg-gray-50 focus:bg-white group-hover:border-orange-300"
+                                                />
+                                            </div>
+                                        </div>
+
+                                        <div className="grid md:grid-cols-2 gap-4">
+                                            <div className="relative group">
+                                                <input
+                                                    type="tel"
+                                                    placeholder="Phone Number*"
+                                                    required
+                                                    className="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:border-orange-500 focus:outline-none transition-all duration-300 text-gray-900 bg-gray-50 focus:bg-white group-hover:border-orange-300"
+                                                />
+                                            </div>
+                                            <div className="relative group">
+                                                <input
+                                                    type="email"
+                                                    placeholder="Email"
+                                                    className="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:border-orange-500 focus:outline-none transition-all duration-300 text-gray-900 bg-gray-50 focus:bg-white group-hover:border-orange-300"
+                                                />
+                                            </div>
+                                        </div>
+
+                                        <div className="relative group">
+                                            <textarea
+                                                placeholder="Message*"
+                                                required
+                                                rows="4"
+                                                className="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:border-orange-500 focus:outline-none transition-all duration-300 text-gray-900 resize-none bg-gray-50 focus:bg-white group-hover:border-orange-300"
+                                            ></textarea>
+                                        </div>
+
+                                        <button
+                                            type="submit"
+                                            className="group w-full md:w-auto px-8 py-4 bg-gradient-to-r from-orange-500 to-pink-600 text-white rounded-xl font-bold text-lg hover:from-orange-600 hover:to-pink-700 transform hover:scale-105 transition-all duration-300 shadow-xl flex items-center justify-center gap-3"
+                                        >
+                                            Submit Now
+                                            <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Safety Banner */}
+            <div className="bg-gradient-to-r from-orange-500 to-pink-600 py-6">
+                <div className="container mx-auto px-6">
+                    <div className="flex items-center justify-center text-center">
+                        <Shield className="w-6 h-6 text-white mr-3" />
+                        <p className="text-white font-semibold text-lg">
+                            Proven surgical techniques • Advanced technology • Experienced specialists • Comprehensive care
+                        </p>
                     </div>
                 </div>
             </div>
 
-            <div className='px-8 lg:px-20 mt-8'>
-                <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Symptoms to Look Out For</div>
-                <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
-                    <div>
-                        <ul className='mt-5  list-disc pl-10'>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Swelling, redness or warmth in the hand or fingers</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Sharp or throbbing pain, especially when moving the hand</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Pus or discharge from a wound</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Difficulty bending or straightening a finger</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Fever or chills in advanced cases</li>
-                        </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Ignoring these symptoms may allow the infection to progress deeper into tissues, tendons, or bones.</div>
-                    </div>
-                </div>
-            </div>
-
-            <div className='px-8 lg:px-20 mt-8'>
-                <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Diagnosis</div>
-                <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
-                    <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>A thorough clinical exam is the first step. Based on your symptoms, your doctor may order:</div>
-                        <ul className='mt-5  list-disc pl-10'>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Blood tests</b> to check for signs of infection</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Wound cultures</b> to identify the bacteria causing it</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>X-rays or MRIs</b> to evaluate whether deeper structures are involved</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div className='px-8 lg:px-20 mt-8'>
-                <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Treatment Options</div>
-                <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
-                    <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Treatment depends on how deep and severe the infection is. Options may include:</div>
-                        <ul className='mt-5  list-disc pl-10'>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Antibiotics</b>: Oral or IV antibiotics are commonly prescribed to clear the infection</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Drainage</b>: For abscesses or collections of pus, minor procedures may be done to relieve pressure</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Immobilization</b>: A splint may be used to rest the hand and reduce irritation</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'><b>Surgical intervention</b>: Deep infections involving tendons or bones might require urgent surgery to prevent complications</li>
-                        </ul>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Delays in treatment can lead to tendon rupture, joint stiffness, or permanent loss of movement.</div>
-                    </div>
-                </div>
-            </div>
-
-            <div className='px-8 lg:px-20 mt-8'>
-                <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Recovery & Care</div>
-                <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
-                    <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'></div>With early intervention, most <a href='https://teachmesurgery.com/plastic-surgery/infections/hand-infections/' className='text-blue-600' target='_blank'>hand infections</a> resolve without complications. Recovery time depends on the type and severity of the infection, but rest, medication adherence, and proper wound care are key. Your healthcare provider will monitor healing and may recommend physiotherapy to restore motion if required.
-                    </div>
-                </div>
-            </div>
-
-            <div className='px-8 lg:px-20 mt-8'>
-                <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Prevention Tips</div>
-                <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
-                    <div>
-                        <ul className='mt-5  list-disc pl-10'>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Clean even minor wounds immediately</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Avoid biting nails or cuticles</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Wear protective gloves when handling sharp or soiled objects</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Keep chronic conditions like diabetes well-controlled</li>
-                            <li className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Don’t ignore signs like redness, swelling, or pus</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div className='px-8 lg:px-20 mt-8'>
-                <div className='text-[18px] font-[600] bg-orange-gradient font-heading lg:text-[30px]'>Conclusion</div>
-                <div className='flex flex-column lg:flex-row gap-[20px] lg:gap-[50px]'>
-                    <div>
-                        <div className='font-para text-[12px] lg:text-[16px] leading-[26px] mt-3'>Hand infections can progress quickly if ignored, leading to serious complications such as tendon damage, joint stiffness, or even permanent loss of function. What starts as a small injury can affect deeper structures like nerves, bones, or joints if not treated promptly. If you’re experiencing persistent pain, swelling, or signs of infection in your hand or fingers, don’t delay seeking expert care. For accurate diagnosis, focused treatment, and long-term recovery support, consult Dr. Darshan Kumar A. Jain, renowned Hand and Upper Limb Specialist at Sapiens Clinic, Malleshwaram.</div>
-                    </div>
-                </div>
-            </div>
-
-            <ContactPage />
-
-            <div className='mt-15'>
-                <Faqs faqs={faqs} />
-            </div>
+            <style jsx>{`
+                                   @keyframes fade-in {
+                                     from { opacity: 0; transform: translateY(20px); }
+                                     to { opacity: 1; transform: translateY(0); }
+                                   }
+                                   
+                                   .animate-fade-in {
+                                     animation: fade-in 0.8s ease-out;
+                                   }
+                                   
+                                   .bg-orange-gradient {
+                                     background: linear-gradient(135deg, #f97316 0%, #ec4899 100%);
+                                     -webkit-background-clip: text;
+                                     -webkit-text-fill-color: transparent;
+                                     background-clip: text;
+                                   }
+                                 `}</style>
         </div>
-    )
-}
+    );
+};
 
-export default InfectionsHand
+export default HandInfectionPage
