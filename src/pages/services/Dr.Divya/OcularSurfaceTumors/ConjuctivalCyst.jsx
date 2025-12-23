@@ -49,6 +49,33 @@ const ConjunctivalCyst = () => {
         },
     ];
 
+        const faqs = [
+            {
+                ques: "What are the common symptoms of a conjunctival cyst?",
+                ans: "Common symptoms include a visible bump on the white of the eye, redness, watering, irritation, and a constant foreign-body sensation, especially during blinking."
+            },
+            {
+                ques: "Are conjunctival cysts dangerous?",
+                ans: "Most conjunctival cysts are not dangerous. However, if they increase in size or cause persistent discomfort, redness, or vision disturbance, medical evaluation is recommended."
+            },
+            {
+                ques: "Do conjunctival cysts go away on their own?",
+                ans: "Some small cysts may remain stable without treatment. However, cysts that cause irritation, recur frequently, or interfere with daily activities usually require medical or surgical management."
+            },
+            {
+                ques: "When should I see a doctor for a conjunctival cyst?",
+                ans: "You should seek evaluation if the cyst causes persistent irritation, redness, pain, vision disturbance, or if it continues to grow over time."
+            },
+            {
+                ques: "Can a conjunctival cyst come back after treatment?",
+                ans: "Recurrence is uncommon when the cyst is completely removed. Follow-up visits help ensure proper healing and reduce the chance of recurrence."
+            },
+            {
+                ques: "Is conjunctival cyst removal painful?",
+                ans: "Conjunctival cyst removal is typically performed under local anesthesia and is generally painless. Mild discomfort after the procedure is temporary and managed with prescribed eye drops."
+            },
+        ]
+
     const whyChooseUs = [
         {
             title: "Specialized Ocular Surface Expertise",
@@ -177,23 +204,23 @@ const ConjunctivalCyst = () => {
 
                                 <div className="relative">
                                     <div className="bg-gradient-to-br from-orange-100 to-pink-100 rounded-3xl p-8">
-                                        <h4 className="text-xl font-bold text-gray-900 mb-6 text-center">Proven Excellence</h4>
+                                        <h4 className="text-xl font-bold text-gray-900 mb-6 text-center">Thousands of Successful Surgeries</h4>
                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-center">
                                             <div className="bg-white rounded-2xl p-4 shadow-lg border border-orange-100">
-                                                <div className="text-2xl sm:text-lg font-bold bg-gradient-to-r from-orange-500 to-pink-600 bg-clip-text text-transparent">Expert</div>
-                                                <div className="text-sm text-gray-600">Oculoplastic Care</div>
+                                                <div className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-pink-600 bg-clip-text text-transparent">5000+</div>
+                                                <div className="text-sm text-gray-600">Happy Patients</div>
                                             </div>
                                             <div className="bg-white rounded-2xl p-4 shadow-lg border border-orange-100">
-                                                <div className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-pink-600 bg-clip-text text-transparent">Minimally</div>
-                                                <div className="text-sm text-gray-600">Invasive Approach</div>
+                                                <div className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-pink-600 bg-clip-text text-transparent">15+</div>
+                                                <div className="text-sm text-gray-600">Years Experience</div>
                                             </div>
                                             <div className="bg-white rounded-2xl p-4 shadow-lg border border-orange-100">
-                                                <div className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-pink-600 bg-clip-text text-transparent">Specialized</div>
-                                                <div className="text-sm text-gray-600">Eye Surface Care</div>
+                                                <div className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-pink-600 bg-clip-text text-transparent">98%</div>
+                                                <div className="text-sm text-gray-600">Success Rate</div>
                                             </div>
                                             <div className="bg-white rounded-2xl p-4 shadow-lg border border-orange-100">
-                                                <div className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-pink-600 bg-clip-text text-transparent">Trusted</div>
-                                                <div className="text-sm text-gray-600">By Patients</div>
+                                                <div className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-pink-600 bg-clip-text text-transparent">24/7</div>
+                                                <div className="text-sm text-gray-600">Support</div>
                                             </div>
                                         </div>
                                     </div>
@@ -218,7 +245,7 @@ const ConjunctivalCyst = () => {
 
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                                 How Conjunctival Cyst Removal
-                                <span className="bg-gradient-to-r from-orange-500 to-pink-600 bg-clip-text text-transparent"> Is Performed</span>
+                                <span className="bg-gradient-to-r from-orange-500 to-pink-600 bg-clip-text text-transparent"> Is Performed?</span>
                             </h2>
 
                             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -266,7 +293,7 @@ const ConjunctivalCyst = () => {
                         <div className="text-center mb-16">
                             <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-rose-100 to-orange-100 text-rose-800 rounded-full text-sm font-medium mb-6 border border-rose-200">
                                 <Award className="w-4 h-4 mr-2" />
-                                Why Choose Us
+                                Why Choose Us?
                             </div>
 
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
@@ -350,6 +377,51 @@ const ConjunctivalCyst = () => {
                     </div>
                 </div>
             </section>
+
+                        {/* FAQ Section */}
+                        <section id="section-faqs" className={`py-20 bg-gradient-to-r from-orange-50 to-pink-50 transition-all duration-1000 ${isVisible['section-faqs'] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+                            <div className="container mx-auto px-6">
+                                <div className="max-w-4xl mx-auto">
+                                    <div className="text-center mb-16">
+                                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                                            Frequently Asked
+                                            <span className="bg-gradient-to-r from-orange-500 to-pink-600 bg-clip-text text-transparent"> Questions</span>
+                                        </h2>
+                                        <p className="text-xl text-gray-600">Get answers to common questions about eyelid surgery and treatments</p>
+                                    </div>
+            
+                                    <div className="space-y-4">
+                                        {faqs.map((faq, index) => (
+                                            <div
+                                                key={index}
+                                                className="bg-white rounded-2xl shadow-lg border border-orange-100 overflow-hidden hover:shadow-xl transition-all duration-300"
+                                            >
+                                                <button
+                                                    className="w-full p-6 text-left flex items-center justify-between group cursor-pointer"
+                                                    onClick={() => setActiveFaq(activeFaq === index ? null : index)}
+                                                >
+                                                    <h3 className="text-lg md:text-xl font-semibold text-gray-900 group-hover:bg-gradient-to-r group-hover:from-orange-600 group-hover:to-pink-600 group-hover:bg-clip-text group-hover:text-transparent transition-colors">
+                                                        {faq.ques}
+                                                    </h3>
+                                                    <ChevronDown
+                                                        className={`w-6 h-6 text-gray-500 group-hover:text-orange-600 transition-all duration-300 ${activeFaq === index ? 'rotate-180' : ''
+                                                            }`}
+                                                    />
+                                                </button>
+            
+                                                <div className={`overflow-hidden transition-all duration-300 ${activeFaq === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                                                    }`}>
+                                                    <div className="px-6 pb-6">
+                                                        <div className="h-px bg-gradient-to-r from-orange-200 to-pink-200 mb-4"></div>
+                                                        <p className="text-gray-600 leading-relaxed">{faq.ans}</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
 
             {/* Contact Form Section */}
             <section className="py-20 bg-gradient-to-r from-orange-50 via-pink-50 to-rose-50 relative overflow-hidden">

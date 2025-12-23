@@ -34,6 +34,8 @@ const HandInfectionPage = () => {
         return () => observer.disconnect();
     }, []);
 
+
+
     const procedures = [
         {
             title: "Medical Management",
@@ -85,6 +87,29 @@ const HandInfectionPage = () => {
         "Difficulty moving fingers or stiffness",
         "Fever or signs of spreading infection"
     ];
+
+    const faqs = [
+        {
+            ques : "What are the common symptoms of a hand infection?",
+            ans : "Common symptoms include swelling, redness, pain, warmth, pus discharge, difficulty moving fingers, and worsening pain after an injury. Fever may occur in more severe infections."
+        },
+        {
+            ques : "Is a hand infection serious?",
+            ans : "Yes, hand infections can become serious if left untreated. They can spread quickly and lead to stiffness, loss of hand function, or permanent damage, making early treatment important."
+        },
+        {
+            ques : "Can a hand infection heal on its own?",
+            ans : "Mild infections may improve with early care, but most hand infections require medical treatment. Delaying treatment can allow the infection to worsen and spread to deeper structures."
+        },
+        {
+            ques : "How is a hand infection diagnosed?",
+            ans : "Diagnosis is based on clinical examination, medical history, and assessment of symptoms. In some cases, imaging or laboratory tests may be required to determine the depth and severity of infection."
+        },
+        {
+            ques : "When is surgery required for a hand infection?",
+            ans : "Surgery is required when there is an abscess (collection of pus), deep tissue infection, tendon involvement, joint infection, or when symptoms do not improve with medications alone."
+        },
+    ]
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-orange-50 via-pink-50 to-rose-100 overflow-x-hidden">
@@ -215,7 +240,7 @@ const HandInfectionPage = () => {
                         <div className="text-center mb-16">
                             <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-pink-100 to-rose-100 text-pink-800 rounded-full text-sm font-medium mb-6 border border-pink-200">
                                 <Shield className="w-4 h-4 mr-2" />
-                                Treatment Approach
+                                Treatment Approac
                             </div>
 
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
@@ -262,7 +287,7 @@ const HandInfectionPage = () => {
                         <div className="text-center mb-16">
                             <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-rose-100 to-orange-100 text-rose-800 rounded-full text-sm font-medium mb-6 border border-rose-200">
                                 <Award className="w-4 h-4 mr-2" />
-                                Why Choose Us
+                                Why Choose Us?
                             </div>
 
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
@@ -342,6 +367,51 @@ const HandInfectionPage = () => {
                                     </button>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* FAQ Section */}
+            <section id="section-faqs" className={`py-20 bg-gradient-to-r from-orange-50 to-pink-50 transition-all duration-1000 ${isVisible['section-faqs'] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+                <div className="container mx-auto px-6">
+                    <div className="max-w-4xl mx-auto">
+                        <div className="text-center mb-16">
+                            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                                Frequently Asked
+                                <span className="bg-gradient-to-r from-orange-500 to-pink-600 bg-clip-text text-transparent"> Questions</span>
+                            </h2>
+                            <p className="text-xl text-gray-600">Get answers to common questions about eyelid surgery and treatments</p>
+                        </div>
+
+                        <div className="space-y-4">
+                            {faqs.map((faq, index) => (
+                                <div
+                                    key={index}
+                                    className="bg-white rounded-2xl shadow-lg border border-orange-100 overflow-hidden hover:shadow-xl transition-all duration-300"
+                                >
+                                    <button
+                                        className="w-full p-6 text-left flex items-center justify-between group cursor-pointer"
+                                        onClick={() => setActiveFaq(activeFaq === index ? null : index)}
+                                    >
+                                        <h3 className="text-lg md:text-xl font-semibold text-gray-900 group-hover:bg-gradient-to-r group-hover:from-orange-600 group-hover:to-pink-600 group-hover:bg-clip-text group-hover:text-transparent transition-colors">
+                                            {faq.ques}
+                                        </h3>
+                                        <ChevronDown
+                                            className={`w-6 h-6 text-gray-500 group-hover:text-orange-600 transition-all duration-300 ${activeFaq === index ? 'rotate-180' : ''
+                                                }`}
+                                        />
+                                    </button>
+
+                                    <div className={`overflow-hidden transition-all duration-300 ${activeFaq === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                                        }`}>
+                                        <div className="px-6 pb-6">
+                                            <div className="h-px bg-gradient-to-r from-orange-200 to-pink-200 mb-4"></div>
+                                            <p className="text-gray-600 leading-relaxed">{faq.ans}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>
