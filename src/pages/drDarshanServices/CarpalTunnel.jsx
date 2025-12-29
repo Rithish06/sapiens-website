@@ -297,8 +297,9 @@ const EyelidSurgeryPage = () => {
                             </h2>
 
                             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-                                Finding the right eyelid doctor in Bangalore, Karnataka is crucial for achieving the results you want. Our surgical center combines advanced technology with personalized care to ensure your safety and satisfaction.
+                                Finding the right carpal tunnel specialist in Bangalore, Karnataka is essential for effective pain relief and restored hand function. Our treatment center combines advanced diagnostic techniques with personalized care to ensure safe procedures and lasting results.
                             </p>
+
                         </div>
 
                         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -392,7 +393,7 @@ const EyelidSurgeryPage = () => {
                                 Frequently Asked
                                 <span className="bg-gradient-to-r from-orange-500 to-pink-600 bg-clip-text text-transparent"> Questions</span>
                             </h2>
-                            <p className="text-xl text-gray-600">Get answers to common questions about eyelid surgery and treatments</p>
+                            <p className="text-xl text-gray-600">Get answers to common questions Carpal Tunnel Syndrome and treatments</p>
                         </div>
 
                         <div className="space-y-4">
