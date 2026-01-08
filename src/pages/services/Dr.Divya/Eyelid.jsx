@@ -566,6 +566,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { ChevronDown, Eye, Shield, Clock, Star, Phone, Mail, MapPin, CheckCircle, Award, Users, Zap } from 'lucide-react';
 
 import { useForm } from 'react-hook-form';
+import NewContactForm from '../ContactPage/NewContactForm';
 
 const EyelidSurgeryPage = () => {
     const [activeTab, setActiveTab] = useState(0);
@@ -1200,6 +1201,10 @@ const EyelidSurgeryPage = () => {
                         </div>
                     </div>
                 </div>
+            </section>
+                                
+            <section ref={formRef}>
+                 <NewContactForm formDescription="Don't let eyelid problems hold you back. Whether it's interfering with daily activities, work or confidence, expert help is just a call away." />
             </section>
 
             {/* Safety Banner */}

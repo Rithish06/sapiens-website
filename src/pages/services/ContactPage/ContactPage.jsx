@@ -12,6 +12,8 @@ const ContactPage = () => {
     formState: { errors },
   } = useForm()
 
+
+
   const onSubmit = (data) => {
     setIsSubmitting(true);
     emailjs.send(

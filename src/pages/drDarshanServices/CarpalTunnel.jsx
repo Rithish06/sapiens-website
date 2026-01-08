@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { ChevronDown, Eye, Hand, Shield, Clock, Star, Phone, Mail, CheckCircle, Award, Users, Zap, Stethoscope, Search, HandHeart, Activity, MapPin } from 'lucide-react';
+import NewContactForm from '../services/ContactPage/NewContactForm';
 
 const EyelidSurgeryPage = () => {
     const [activeTab, setActiveTab] = useState(0);
@@ -142,9 +143,9 @@ const EyelidSurgeryPage = () => {
                             <span className="text-2xl md:text-4xl lg:text-5xl text-slate-200"> in Bangalore, Karnataka</span>
                         </h1>
 
-                        {/* <p className="text-[10px] md:text-2xl text-slate-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-                            If numbness, tingling, or wrist pain is making it hard to work, sleep, or enjoy life, it’s time to visit a carpal tunnel specialist. At Sapiens Clinic, Bangalore, Karnataka, Dr. Darshan Kumar A. Jain offers advanced carpal tunnel syndrome treatment to give you fast relief, restore hand strength, and prevent permanent nerve damage.
-                        </p> */}
+                        <p className="text-[10px] md:text-2xl text-slate-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+                            Feeling tingling, numbness, or hand weakness that worsens at night? Our expert carpal tunnel care helps relieve nerve compression and restore comfortable hand use.
+                        </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                             <button onClick={scrolltoForm} className="group px-5 py-3 md:px-8 md:py-4 bg-gradient-to-r from-orange-500 to-pink-600 text-white rounded-full font-semibold text-lg hover:from-orange-600 hover:to-pink-700 transform hover:scale-105 transition-all duration-300 shadow-xl cursor-pointer">
@@ -484,7 +485,7 @@ const EyelidSurgeryPage = () => {
                                             Book Appointment
                                         </div>
                                         <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">Book an Appointment</h3>
-                                        <p className="text-gray-600">Don't let eyelid problems hold you back. Whether it's interfering with daily activities, work or confidence, expert help is just a call away.</p>
+                                        <p className="text-gray-600">Don't let Carpal Tunnel problems hold you back. Whether it's interfering with daily activities, work or confidence, expert help is just a call away.</p>
                                     </div>
 
                                     <form className="space-y-6">
@@ -549,6 +550,8 @@ const EyelidSurgeryPage = () => {
                     </div>
                 </div>
             </section>
+
+            <NewContactForm />
 
             {/* Safety Banner */}
             <div className="bg-gradient-to-r from-orange-500 to-pink-600 py-6">

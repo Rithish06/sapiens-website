@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { ChevronDown, Hand, Shield, Clock, Phone, Mail, CheckCircle, Award, Users, Stethoscope, Search, HandHeart, Activity, MapPin, Zap, AlertTriangle } from 'lucide-react';
+import NewContactForm from '../services/ContactPage/NewContactForm';
 
 const HandInfectionPage = () => {
     const [activeFaq, setActiveFaq] = useState(null);
@@ -381,7 +382,7 @@ const HandInfectionPage = () => {
                                 Frequently Asked
                                 <span className="bg-gradient-to-r from-orange-500 to-pink-600 bg-clip-text text-transparent"> Questions</span>
                             </h2>
-                            <p className="text-xl text-gray-600">Get answers to common questions about eyelid surgery and treatments</p>
+                            <p className="text-xl text-gray-600">Get answers to common questions about Hand Infection surgery and treatments</p>
                         </div>
 
                         <div className="space-y-4">
@@ -417,126 +418,8 @@ const HandInfectionPage = () => {
                 </div>
             </section>
 
-            {/* Contact Form Section */}
-            <section className="py-20 bg-gradient-to-r from-orange-50 via-pink-50 to-rose-50 relative overflow-hidden">
-                <div className="absolute inset-0">
-                    <div className="absolute top-20 right-20 w-64 h-64 bg-gradient-to-br from-orange-200/20 to-pink-200/20 rounded-full blur-3xl"></div>
-                    <div className="absolute bottom-20 left-20 w-48 h-48 bg-gradient-to-br from-pink-200/20 to-rose-200/20 rounded-full blur-3xl"></div>
-                </div>
-
-                <div className="relative z-10 container mx-auto px-6">
-                    <div className="max-w-7xl mx-auto">
-                        <div className="grid lg:grid-cols-2 gap-12 items-center">
-                            {/* Left Content */}
-                            <div className="space-y-8">
-                                <div className="text-center lg:text-left">
-                                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-                                        Your Trusted Specialists in
-                                        <span className="bg-gradient-to-r from-orange-500 to-pink-600 bg-clip-text text-transparent"> Hands & Eyes</span>
-                                    </h2>
-
-                                    <p className="text-lg text-gray-600 leading-relaxed">
-                                        We offer advanced care for hand, upper limb, and eye conditions with a focus on precision and personalized treatment. Combining expert diagnostics, surgical expertise and a patient-first approach, our goal is to restore comfort, function and confidence for every individual we treat.
-                                    </p>
-                                </div>
-
-                                <div className="grid md:grid-cols-3 gap-6">
-                                    <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 text-center group border border-orange-100">
-                                        <Phone className="w-10 h-10 text-orange-600 mx-auto mb-4 group-hover:scale-110 transition-transform" />
-                                        <h3 className="font-bold text-gray-900 mb-2">Phone Number</h3>
-                                        <p className="bg-gradient-to-r from-orange-600 to-pink-700 bg-clip-text text-transparent font-semibold">+91 78925 56378</p>
-                                    </div>
-
-                                    <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 text-center group border border-orange-100">
-                                        <Mail className="w-10 h-10 text-pink-600 mx-auto mb-4 group-hover:scale-110 transition-transform" />
-                                        <h3 className="font-bold text-gray-900 mb-2">Email Us Here</h3>
-                                        <p className="bg-gradient-to-r from-orange-600 to-pink-700 bg-clip-text text-transparent font-semibold text-sm">sapiensclinic@gmail.com</p>
-                                    </div>
-
-                                    <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 text-center group border border-orange-100">
-                                        <Clock className="w-10 h-10 text-rose-600 mx-auto mb-4 group-hover:scale-110 transition-transform" />
-                                        <h3 className="font-bold text-gray-900 mb-2">Evening OPD</h3>
-                                        <p className="bg-gradient-to-r from-orange-600 to-pink-700 bg-clip-text text-transparent font-semibold text-sm">Mon to Sat 4:00 PM to 7:30 PM</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Right Form */}
-                            {/* Right Form */}
-                            <div ref={formRef} className="bg-white rounded-3xl shadow-2xl p-8 md:p-12 border border-orange-100 relative overflow-hidden">
-                                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-orange-400/10 to-pink-400/10 rounded-full -translate-y-16 translate-x-16"></div>
-
-                                <div className="relative z-10">
-                                    <div className="text-center mb-8">
-                                        <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-orange-100 to-pink-100 text-orange-800 rounded-full text-sm font-medium mb-4 border border-orange-200">
-                                            <Mail className="w-4 h-4 mr-2" />
-                                            Book Appointment
-                                        </div>
-                                        <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">Book an Appointment</h3>
-                                        <p className="text-gray-600">Don't let eyelid problems hold you back. Whether it's interfering with daily activities, work or confidence, expert help is just a call away.</p>
-                                    </div>
-
-                                    <form className="space-y-6">
-                                        <div className="grid md:grid-cols-2 gap-4">
-                                            <div className="relative group">
-                                                <input
-                                                    type="text"
-                                                    placeholder="First Name*"
-                                                    required
-                                                    className="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:border-orange-500 focus:outline-none transition-all duration-300 text-gray-900 bg-gray-50 focus:bg-white group-hover:border-orange-300"
-                                                />
-                                            </div>
-                                            <div className="relative group">
-                                                <input
-                                                    type="text"
-                                                    placeholder="Last Name"
-                                                    className="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:border-orange-500 focus:outline-none transition-all duration-300 text-gray-900 bg-gray-50 focus:bg-white group-hover:border-orange-300"
-                                                />
-                                            </div>
-                                        </div>
-
-                                        <div className="grid md:grid-cols-2 gap-4">
-                                            <div className="relative group">
-                                                <input
-                                                    type="tel"
-                                                    placeholder="Phone Number*"
-                                                    required
-                                                    className="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:border-orange-500 focus:outline-none transition-all duration-300 text-gray-900 bg-gray-50 focus:bg-white group-hover:border-orange-300"
-                                                />
-                                            </div>
-                                            <div className="relative group">
-                                                <input
-                                                    type="email"
-                                                    placeholder="Email"
-                                                    className="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:border-orange-500 focus:outline-none transition-all duration-300 text-gray-900 bg-gray-50 focus:bg-white group-hover:border-orange-300"
-                                                />
-                                            </div>
-                                        </div>
-
-                                        <div className="relative group">
-                                            <textarea
-                                                placeholder="Message*"
-                                                required
-                                                rows="4"
-                                                className="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:border-orange-500 focus:outline-none transition-all duration-300 text-gray-900 resize-none bg-gray-50 focus:bg-white group-hover:border-orange-300"
-                                            ></textarea>
-                                        </div>
-
-                                        <button
-                                            type="submit"
-                                            className="group w-full md:w-auto px-8 py-4 bg-gradient-to-r from-orange-500 to-pink-600 text-white rounded-xl font-bold text-lg hover:from-orange-600 hover:to-pink-700 transform hover:scale-105 transition-all duration-300 shadow-xl flex items-center justify-center gap-3"
-                                        >
-                                            Submit Now
-                                            <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                            </svg>
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <section ref={formRef}>
+                <NewContactForm formDescription="Don’t ignore hand infections-early treatment prevents complications, restores function, and protects your daily work and comfort." />
             </section>
 
             {/* Safety Banner */}
