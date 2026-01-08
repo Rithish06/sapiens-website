@@ -402,7 +402,7 @@ const EntropionRepairPage = () => {
                         </h1>
 
                         <p className="text-xl md:text-2xl text-slate-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-                            Don’t let eye irritation or visible cysts affect comfort or confidence-expert conjunctival cyst care restores eye health safely.
+                            Persistent eye irritation from inward-turning lids can be corrected-expert entropion repair restores comfort and confidence.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -705,7 +705,7 @@ const EntropionRepairPage = () => {
                                 Frequently Asked
                                 <span className="bg-gradient-to-r from-orange-500 to-pink-600 bg-clip-text text-transparent"> Questions</span>
                             </h2>
-                            <p className="text-xl text-gray-600">Get answers to common questions Carpal Tunnel Syndrome and treatments</p>
+                            <p className="text-xl text-gray-600">Get answers to common questions about entropion and its treatment options</p>
                         </div>
 
                         <div className="space-y-4">

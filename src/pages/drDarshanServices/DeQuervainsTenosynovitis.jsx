@@ -435,7 +435,7 @@ const DeQuervainPage = () => {
                                             Frequently Asked
                                             <span className="bg-gradient-to-r from-orange-500 to-pink-600 bg-clip-text text-transparent"> Questions</span>
                                         </h2>
-                                        <p className="text-xl text-gray-600">Get answers to common questions Carpal Tunnel Syndrome and treatments</p>
+                                        <p className="text-xl text-gray-600">Get answers to common questions about De Quervain’s Tenosynovitis and its treatment options</p>
                                     </div>
             
                                     <div className="space-y-4">

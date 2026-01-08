@@ -383,6 +383,7 @@ const Contact = () => {
                             <div className='w-[95%] border-1 bg-[#FFF8F8] border-black rounded-xl p-3 text-center  max-w-[390px] mxl:max-w-[590px]'>
                                 <div className='bg-orange-gradient text-[18px] font-[700] mxl:text-[24px] font-heading'>Fortis Hospital – Bannerghatta Road</div>
                                 <div className='text-[14px] font-para font-[600] mxl:text-[24px]'>Tuesday, Thursday & Saturday, 10:30 AM to <br />1:00 PM</div>
+                                <div className='text-[12px] font-para font-[600] mxl:text-[18px]'>For Appointments Call: <a href="tel:08066214444" className='text-orange-700'>080 6621 4444</a></div>
                             </div>
 
                             <div className='w-[95%] border-1 bg-[#FFF8F8] border-black rounded-xl p-3 text-center  max-w-[390px] mxl:max-w-[590px]'>
