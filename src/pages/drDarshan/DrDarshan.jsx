@@ -1171,8 +1171,16 @@ const DrDarshan = () => {
                         <div className='flex gap-3 items-start mt-4'>
                             <img src={assets.locationSvg} loading='lazy' alt="Apollo Spectra - Koramangala" />
                             <div>
-                                <div className='font-heading text-[16px] font-[700] text-white lg:text-[22px]'>Apollo Spectra - Koramangala</div>
-                                <div className='font-para text-[14px] font-[600] text-white mt-1 lg:text-[16px]'>Wednesday and Saturday, 10:00 AM to 1:00 PM</div>
+                                <div className='font-heading text-[16px] font-[700] text-white lg:text-[22px]'>Fortis Hospital – Bannerghatta Road</div>
+                                <div className='font-para text-[14px] font-[600] text-white mt-1 lg:text-[16px]'>Tuesday, Thursday & Saturday, 10:30 AM to 1:00 PM</div>
+                            </div>
+                        </div>
+
+                        <div className='flex gap-3 items-start mt-4'>
+                            <img src={assets.locationSvg} loading='lazy' alt="Apollo Spectra - Koramangala" />
+                            <div>
+                                <div className='font-heading text-[16px] font-[700] text-white lg:text-[22px]'>Fortis Hospital – Cunningham Road</div>
+                                <div className='font-para text-[14px] font-[600] text-white mt-1 lg:text-[16px]'>Tuesday, Thursday & Saturday, 10:30 AM to 1:00 PM</div>
                             </div>
                         </div>
 

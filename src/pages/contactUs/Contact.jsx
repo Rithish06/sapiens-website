@@ -375,9 +375,19 @@ const Contact = () => {
                                 <div className='text-[14px] font-para font-[600] mxl:text-[24px]'>Mon to sat 12:00 noon to 8:00 PM, Sunday Holiday</div>
                             </div>
 
-                            <div className='w-[95%] border-1 bg-[#FFF8F8] border-black rounded-xl p-3 text-center  max-w-[390px] mxl:max-w-[590px]'>
+                            {/* <div className='w-[95%] border-1 bg-[#FFF8F8] border-black rounded-xl p-3 text-center  max-w-[390px] mxl:max-w-[590px]'>
                                 <div className='bg-orange-gradient text-[18px] font-[700] mxl:text-[24px] font-heading'>Apollo Spectra - Koramangala</div>
                                 <div className='text-[14px] font-para font-[600] mxl:text-[24px]'>Wednesday and Saturday, 10:00 AM to <br />1:00 PM</div>
+                            </div> */}
+
+                            <div className='w-[95%] border-1 bg-[#FFF8F8] border-black rounded-xl p-3 text-center  max-w-[390px] mxl:max-w-[590px]'>
+                                <div className='bg-orange-gradient text-[18px] font-[700] mxl:text-[24px] font-heading'>Fortis Hospital – Bannerghatta Road</div>
+                                <div className='text-[14px] font-para font-[600] mxl:text-[24px]'>Tuesday, Thursday & Saturday, 10:30 AM to <br />1:00 PM</div>
+                            </div>
+
+                            <div className='w-[95%] border-1 bg-[#FFF8F8] border-black rounded-xl p-3 text-center  max-w-[390px] mxl:max-w-[590px]'>
+                                <div className='bg-orange-gradient text-[18px] font-[700] mxl:text-[24px] font-heading'>Fortis Hospital – Cunningham Road</div>
+                                <div className='text-[14px] font-para font-[600] mxl:text-[24px]'>Monday, Wednesday & Friday, 10:30 AM to <br />1:00 PM</div>
                             </div>
 
                             {/* <div className='w-[95%] border-1 bg-[#FFF8F8] border-black rounded-xl p-3 text-center  max-w-[390px] mxl:max-w-[590px]'>
