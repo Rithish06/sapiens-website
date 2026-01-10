@@ -88,6 +88,7 @@ import LigamentRepairElbow from './pages/drDarshanServices/LigamentRepairElbow';
 import ShoulderArthroscopy from './pages/drDarshanServices/ShoulderArthroscopy';
 import ShoulderReplacement from './pages/drDarshanServices/ShoulderReplacement';
 import { assets } from './assets/assets';
+import ImagePopup from './components/img-popup/img-popup';
 // import BirthrelatedBrachialplexus from './pages/drDarshanServices/BirthrelatedBrachialplexus'
 // import Cerebralpalsy from './pages/drDarshanServices/Cerebralpalsy';
 // import Flapscovertoupperorlowerlimbs from './pages/drDarshanServices/Flapscovertoupperorlowerlimbs';
@@ -114,6 +115,7 @@ const App = () => {
       
       <Navbar />
       <div className='relative'>
+       <ImagePopup/>
         <RouterOutlet />
       </div>
       <Footer />
