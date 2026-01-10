@@ -212,6 +212,9 @@ import VasularAnomalies from './DrDarshanServices/Vasular-anomalies.png'
 import VOLKMANNSISCHEMICCONTRACture from './DrDarshanServices/VOLKMANNS-ISCHEMIC-CONTRACture.jpg'
 import WristArthroscopy from './DrDarshanServices/Wrist-Arthroscopy.jpg'
 
+// popup-img
+import popUpImg from './images/pop-up-img.png'
+
 export const assets = {
     logo,
     colorLogo,
@@ -411,5 +414,6 @@ export const assets = {
     VasularAnomalies,
     VOLKMANNSISCHEMICCONTRACture,
     WristArthroscopy,
-    specialityImg
+    specialityImg,
+    popUpImg
 }
