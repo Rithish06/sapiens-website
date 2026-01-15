@@ -115,7 +115,7 @@ const App = () => {
       
       <Navbar />
       <div className='relative'>
-       <ImagePopup/>
+       {/* <ImagePopup/> */}
         <RouterOutlet />
       </div>
       <Footer />
