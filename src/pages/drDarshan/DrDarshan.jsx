@@ -1186,9 +1186,9 @@ const DrDarshan = () => {
                         </div>
 
                         <div className='flex gap-3 items-start mt-4'>
-                            <img src={assets.locationSvg} loading='lazy' alt="Rxdx Healthcare, Whitefiled" />
+                            <img src={assets.locationSvg} loading='lazy' alt="Rxdx Healthcare, Whitefield" />
                             <div>
-                                <div className='font-heading text-[16px] font-[700] text-white lg:text-[22px]'>Rxdx Healthcare, Whitefiled</div>
+                                <div className='font-heading text-[16px] font-[700] text-white lg:text-[22px]'>Rxdx Healthcare, whitefield</div>
                                 <div className='font-para text-[14px] font-[600] text-white mt-1 lg:text-[16px]'>Every Monday Morning, 10:00 AM to 12:00 PM</div>
                             </div>
                         </div>
