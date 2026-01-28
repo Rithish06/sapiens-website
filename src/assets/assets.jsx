@@ -20,6 +20,7 @@ import traumaCare from './svgs/trauma-care.svg'
 import faqs from './svgs/faqs.svg'
 import faqPlus from './svgs/faq-plus-icon.svg'
 import homeBannerDesktop from './images/homeBannerDesktop.png'
+import homeBannerImg from './images/homeBannerDesktop1.png'
 import contactMobileBanner from './images/contactPageBannerMobile.png'
 import contactUsDesktopBg from './images/contactUsDesktopBg.png'
 import contactOpthalmology from './images/contactPageOpthalmology.png'
@@ -74,6 +75,7 @@ import eximg from './images/ex-img.png'
 import drDivyaHomePageBannerImage from './images/dr-divya-home-banner-image.png'
 import servicebanner from './images/servicebanner.png'
 import divyaservicebannerimg from './images/divyaservicebannerimg.png'
+import drdarshanMob from './images/Dr-Darshan-Kumar-A-Jain1.png'
 
 // import servicebanner from './images/servicebanner.png'
 // import divyaservicebannerimg from './images/divyaservicebannerimg.png'
@@ -415,5 +417,7 @@ export const assets = {
     VOLKMANNSISCHEMICCONTRACture,
     WristArthroscopy,
     specialityImg,
-    popUpImg
+    popUpImg,
+    homeBannerImg,
+    drdarshanMob
 }

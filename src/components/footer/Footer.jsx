@@ -424,7 +424,7 @@ const Footer = () => {
                 <a target='_blank' href='https://maps.app.goo.gl/wMhxex5pi2v5qLas9' className='text-[10px] md:text-[16px] font-[400] font-roboto cursor-pointer hover:text-orange'>Clinic Map</a>
                 <a target='_blank' href='https://maps.app.goo.gl/rZYZCTqmQ8UNRcwY8' className='text-[10px] md:text-[16px] font-[400] font-roboto cursor-pointer hover:text-orange'>Parking Location</a>
             </div>
-            <div className='text-[12px] text-center font-[300] font-roboto text-white mt-8 md:text-[16px]'>© 2025 All Rights Reserved</div>
+            <div className='text-[12px] text-center font-[300] font-roboto text-white mt-8 md:text-[16px]'>© {new Date().getFullYear()} All Rights Reserved</div>
         </div>
     )
 }
