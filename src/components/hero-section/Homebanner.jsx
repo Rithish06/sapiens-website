@@ -54,7 +54,7 @@ const HomeBanner = ({learnMoreFunction}) => {
 				>
 					<div className="relative">
 						<img
-							src={assets.homeBannerDesktop}
+							src={assets.homeBannerImg}
 							className="hidden md:block w-full h-auto md:mt-0 lg:mt-0 md:mb-25"
 							alt="Dr. Darshan Kumar A. Jain, hand surgeon at Sapiens Clinic, Bangalore Karnataka"
 						/>
@@ -88,7 +88,7 @@ const HomeBanner = ({learnMoreFunction}) => {
 							</div>
 						</div>
 					</div>
-					<img src={assets.drdarshan} className="w-full h-auto md:hidden" alt="Dr. Darshan Kumar A. Jain, hand surgeon at Sapiens Clinic, Bangalore Karnataka" />
+					<img src={assets.drdarshanMob} className="w-full h-auto md:hidden" alt="Dr. Darshan Kumar A. Jain, hand surgeon at Sapiens Clinic, Bangalore Karnataka" />
 				</div>
 
 				{/* Slide 2 */}
