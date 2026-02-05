@@ -426,7 +426,7 @@ const ConjunctivalCyst = () => {
 
 
             <section ref={formRef} >
-                <NewContactForm formDescription="Don’t let eye irritation or visible cysts affect comfort or confidence—expert conjunctival cyst care restores eye health safely." />
+                <NewContactForm formDescription="Don’t let eye irritation or visible cysts affect comfort or confidence-expert conjunctival cyst care restores eye health safely." />
             </section>
             
             {/* Safety Banner */}
